@@ -39,4 +39,5 @@ gd_load <-
 					)
 				) %>%
 				select(-a, -b)
+		return(output)
 	}
