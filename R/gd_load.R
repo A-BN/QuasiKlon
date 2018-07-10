@@ -23,8 +23,8 @@ gd_load <-
 		
 		gd_df <- # Arranged data frame
 			gd_tmp %>%
-				filter(type != 'RA', type != 'MC', type != 'JC', type != 'UN') %>%
-				mutate(new_seq = 
+				dplyr::filter(type != 'RA', type != 'MC', type != 'JC', type != 'UN') %>%
+				dplyr::mutate(new_seq = 
 					case_when(
 					  	type == 'SNP' ~ a,
 					   	type == 'SUB' ~ b,
@@ -32,9 +32,9 @@ gd_load <-
 					  	type == 'INS' ~ a
 					 )
 				) %>%
-				mutate(size = 
+				dplyr::mutate(size =
 					case_when(
-						type == 'SNP' ~ 'NA',
+						type == 'SNP' ~ 0,
 						type == 'SUB' ~ a,
 						type == 'DEL' ~ a,
 						type == 'MOB' ~ c,
@@ -43,12 +43,14 @@ gd_load <-
 						type == 'INV' ~ a
 					)
 				) %>%
-				mutate(repeat_name = if_else(type == 'MOB', a, 'NA')) %>%
-				mutate(strand = if_else(type == 'MOB', b, 'NA')) %>%
-				mutate(size = if_else(type == 'MOB', b, 'NA')) %>%
-				mutate(new_copy_number = if_else(type == 'AMP', b, 'NA')) %>%
-				mutate(region = if_else(type == 'region', b, 'NA')) %>%
-				select(-a, -b, -c)
+				dplyr::mutate(repeat_name = if_else(type == 'MOB', a, 'NA')) %>%
+				dplyr::mutate(strand = if_else(type == 'MOB', b, 0)) %>%
+				dplyr::mutate(size = if_else(type == 'MOB', b, 0)) %>%
+				dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, 0)) %>%
+				dplyr::mutate(region = if_else(type == 'MOB', b, 'NA')) %>%
+				dplyr::select(-a, -b, -c)
 		
 		return(gd_df)
 	}
+
+gd_load(gd_file = gd_file)
