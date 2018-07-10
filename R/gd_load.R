@@ -28,7 +28,7 @@ gd_load <-
 			seq_id=character(),
 			position=integer(),
 			new_seq=character(),
-			size=integer(),
+			size=character(),
 			repeat_name=character(),
 			strand=integer(),
 			region=character(),
@@ -38,29 +38,35 @@ gd_load <-
 		gd_df <- # Arranged data frame
 			gd_tmp %>%
 				dplyr::filter(type != 'RA', type != 'MC', type != 'JC', type != 'UN') %>%
-				dplyr::mutate(new_seq = case_when(type == 'SNP' ~ a,
-					   	type == 'SUB' ~ b,
-				#	   	type == 'DEL' ~ 0,
-					  	type == 'INS' ~ a)) 
-				dplyr::mutate(size =
-					case_when(
-				#		type == 'SNP' ~ 0,
-						type == 'SUB' ~ a,
-						type == 'DEL' ~ a,
-						type == 'MOB' ~ c,
-						type == 'AMP' ~ a,
-						type == 'CON' ~ a,
-						type == 'INV' ~ a
-					)
-				) %>%
-			#	dplyr::mutate(repeat_name = if_else(type == 'MOB', a, 0)) %>%
-			#	dplyr::mutate(strand = if_else(type == 'MOB', b, 0)) %>%
-			#	dplyr::mutate(size = if_else(type == 'MOB', b, 0)) %>%
-			#	dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, 0)) %>%
-			#	dplyr::mutate(region = if_else(type == 'MOB', b, 0)) %>%
-			#	dplyr::select(-a, -b, -c)
+			
+				dplyr::mutate(new_seq = case_when(
+					type=='SNP' ~ a,
+					type=='SUB' ~ b,
+					type=='DEL' ~ '0',
+					type=='INS' ~ a)) %>%
+
+				dplyr::mutate(size = case_when(
+					type == 'SNP' ~ '0',
+					type == 'SUB' ~ a,
+					type == 'DEL' ~ a, # Do not work
+					type == 'MOB' ~ c,
+					type == 'AMP' ~ a,
+					type == 'CON' ~ a,
+					type == 'INV' ~ a)) %>%
+			
+				dplyr::mutate(repeat_name = if_else(type == 'MOB', a, '0')) %>%
+			
+				dplyr::mutate(strand = if_else(type == 'MOB', b, '0')) %>%
+			
+				dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, '0')) %>%
+			
+				dplyr::mutate(region = if_else(type == 'MOB', b, '0')) %>%
+
+				dplyr::select(-a, -b, -c)
 		
 		return(gd_df)
 	}
+
+gd_file="R/output.gd"
 
 test = gd_load(gd_file = gd_file)
