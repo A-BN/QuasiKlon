@@ -6,37 +6,20 @@
 #' @export
 
 library(dplyr)
-
+library(stringr)
 gd_merge <-
-	function(gd_list) {
-		# gd_df <- data.frame(
-		# 		type=character(),
-		# 		evidence_id=integer(),
-		# 		parent_ids=character(), # character because the comma is for spliting
-		# 		seq_id=character(),
-		# 		position=integer(),
-		# 		new_seq=character(),
-		# 		size=character(),
-		# 		repeat_name=character(),
-		# 		strand=character(),
-		# 		new_copy_number=character(),
-		# 		region=character()
-		# 	)
-		
-		tmp = list()
-		
-		for (gd_file in gd_list) {
-			tmp_df <- gd_load(gd_file)
-			tmp_df <-
-				tmp_df %>%
-					dplyr::mutate(gd_origin = 
-						strsplit(basename(gd_file), '.')[1] # Remove extension (if there is one and path)
-					) 
-			# tmp <- list(c(unlist(tmp, recursive = F), tmp_df))
-			
-			# rbind(gd_df, tmp_df)
-		}
-		return(tmp)
-	}
+  function(gd_list) {
+    gd_merge_df <- list()
+    for (i in 1:length(gd_list)) {
+      curr_name <- 
+        str_replace(string = gd_list[[i]], pattern = ".*/(.*)\\.gd", replacement = "\\1")
+      gd_merge_df[[i]] <- gd_load(gd_list[[i]])
+      gd_merge_df[[i]]$origin <- curr_name
+    }
+    gd_merge_df <- do.call(what = rbind, args = gd_merge_df)
+    return(gd_merge_df)
+  }
 
-bla <- gd_merge(list('R/output.gd', 'R/output_b.gd'))
+
+gd_list <- c('example_gd/output.gd', 'example_gd/output_b.gd', 'example_gd/output_c.gd')
+bla <- gd_merge(gd_list)

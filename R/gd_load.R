@@ -8,22 +8,22 @@
 library(dplyr)
 library(readr)
 
-gd_colnames <- 
-  c('type', 'evidence_id', 'parent_ids', 'seq_id', 'position', 'NewOrSize', 'SizeOrNew')
-gd_coltypes <-
-  cols(type = col_character(),
-       evidence_id = col_integer(),
-       parent_ids = col_character(),
-       seq_id = col_character(),
-       position = col_integer(),
-       NewOrSize = col_character(),
-       SizeOrNew = col_character() 
-       )
-unwanted_types <-
-  c("MOB","RA", "MC", "JC", "UN")
-
 gd_load <-
   function(gd_file) {
+    gd_colnames <- 
+      c('type', 'evidence_id', 'parent_ids', 'seq_id', 'position', 'NewOrSize', 'SizeOrNew')
+    gd_coltypes <-
+      cols(type = col_character(),
+           evidence_id = col_integer(),
+           parent_ids = col_character(),
+           seq_id = col_character(),
+           position = col_integer(),
+           NewOrSize = col_character(),
+           SizeOrNew = col_character() 
+      )
+    unwanted_types <-
+      c("MOB","RA", "MC", "JC", "UN")
+    
     gd_in <- read_delim(gd_file, # Raw data frame with few columns called wrongly
                          delim = "\t",
                          comment='#',
@@ -46,9 +46,10 @@ gd_load <-
           type == 'CON' ~ NewOrSize,
           type == 'INV' ~ NewOrSize))) %>%
         dplyr::select(-NewOrSize, -SizeOrNew)
+   if(nrow(gd_df) == 0) gd_df[1, ] <- NA
     return(gd_df)
   }
 
-gd_file <- "R/output.gd"
+gd_file <- "example_gd/output_b.gd"
 
 test <- gd_load(gd_file = gd_file)
