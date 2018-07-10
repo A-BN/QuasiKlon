@@ -9,7 +9,7 @@ library(dplyr)
 
 gd_load <-
 	function(gd_file) {
-		output_ <- read_delim(gd_file, 
+		gd_tmp <- read_delim(gd_file, # Raw data frame with few columns called wrongly
 			delim = "\t",
 			comment='#',
 			col_names=c('type',
@@ -17,27 +17,38 @@ gd_load <-
 				'parent-ids',
 				'seq_id',
 				'position',
-				'a',  # temp column name for type-based calling
-				'b')) 
+				'a',  # temp column name for rename column name
+				'b',
+				'c')) 
 		
-		output <- 
-			output_ %>%
+		gd_df <- # Arranged data frame
+			gd_tmp %>%
 				filter(type != 'RA', type != 'MC', type != 'JC', type != 'UN') %>%
-			
 				mutate(new_seq = 
 					case_when(
 					  	type == 'SNP' ~ a,
 					   	type == 'SUB' ~ b,
-					   	type == 'DEL' ~ '0'
+					   	type == 'DEL' ~ 'NA',
+					  	type == 'INS' ~ a
 					 )
 				) %>%
 				mutate(size = 
 					case_when(
-						type == 'SNP' ~ '0',
+						type == 'SNP' ~ 'NA',
 						type == 'SUB' ~ a,
-						type == 'DEL' ~ a
+						type == 'DEL' ~ a,
+						type == 'MOB' ~ c,
+						type == 'AMP' ~ a,
+						type == 'CON' ~ a,
+						type == 'INV' ~ a
 					)
 				) %>%
-				select(-a, -b)
-		return(output)
+				mutate(repeat_name = if_else(type == 'MOB', a, 'NA')) %>%
+				mutate(strand = if_else(type == 'MOB', b, 'NA')) %>%
+				mutate(size = if_else(type == 'MOB', b, 'NA')) %>%
+				mutate(new_copy_number = if_else(type == 'AMP', b, 'NA')) %>%
+				mutate(region = if_else(type == 'region', b, 'NA')) %>%
+				select(-a, -b, -c)
+		
+		return(gd_df)
 	}
