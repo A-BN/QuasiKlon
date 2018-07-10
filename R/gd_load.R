@@ -28,7 +28,7 @@ gd_load <-
 					case_when(
 					  	type == 'SNP' ~ a,
 					   	type == 'SUB' ~ b,
-					   	type == 'DEL' ~ 'NA',
+					   	type == 'DEL' ~ 0,
 					  	type == 'INS' ~ a
 					 )
 				) %>%
@@ -43,14 +43,14 @@ gd_load <-
 						type == 'INV' ~ a
 					)
 				) %>%
-				dplyr::mutate(repeat_name = if_else(type == 'MOB', a, 'NA')) %>%
+				dplyr::mutate(repeat_name = if_else(type == 'MOB', a, 0)) %>%
 				dplyr::mutate(strand = if_else(type == 'MOB', b, 0)) %>%
 				dplyr::mutate(size = if_else(type == 'MOB', b, 0)) %>%
 				dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, 0)) %>%
-				dplyr::mutate(region = if_else(type == 'MOB', b, 'NA')) %>%
+				dplyr::mutate(region = if_else(type == 'MOB', b, 0)) %>%
 				dplyr::select(-a, -b, -c)
 		
 		return(gd_df)
 	}
 
-gd_load(gd_file = gd_file)
+test = gd_load(gd_file = gd_file)
