@@ -6,67 +6,49 @@
 #' @export
 
 library(dplyr)
+library(readr)
+
+gd_colnames <- 
+  c('type', 'evidence_id', 'parent_ids', 'seq_id', 'position', 'NewOrSize', 'SizeOrNew')
+gd_coltypes <-
+  cols(type = col_character(),
+       evidence_id = col_integer(),
+       parent_ids = col_character(),
+       seq_id = col_character(),
+       position = col_integer(),
+       NewOrSize = col_character(),
+       SizeOrNew = col_character() 
+       )
+unwanted_types <-
+  c("MOB","RA", "MC", "JC", "UN")
 
 gd_load <-
-	function(gd_file) {
-		gd_tmp <- read_delim(gd_file, # Raw data frame with few columns called wrongly
-			delim = "\t",
-			comment='#',
-			col_names=c('type',
-				'evidence-id',
-				'parent-ids',
-				'seq_id',
-				'position',
-				'a',  # temp column name for rename column name
-				'b',
-				'c')
-		) 
-		
-		gd_df <- data.frame(type=character(),
-			evidence_id=integer(),
-			parent_ids=character(), # character because the comma is for spliting
-			seq_id=character(),
-			position=integer(),
-			new_seq=character(),
-			size=character(),
-			repeat_name=character(),
-			strand=integer(),
-			region=character(),
-			new_copy_number=integer()
-		)
-		
-		gd_df <- # Arranged data frame
-			gd_tmp %>%
-				dplyr::filter(type != 'RA', type != 'MC', type != 'JC', type != 'UN') %>%
-			
-				dplyr::mutate(new_seq = case_when(
-					type=='SNP' ~ a,
-					type=='SUB' ~ b,
-					type=='DEL' ~ '0',
-					type=='INS' ~ a)) %>%
+  function(gd_file) {
+    gd_in <- read_delim(gd_file, # Raw data frame with few columns called wrongly
+                         delim = "\t",
+                         comment='#',
+                         col_names= gd_colnames,
+                         col_types = gd_coltypes) 
+   gd_df <- # Arranged data frame
+      gd_in %>%
+        dplyr::filter(! type %in% unwanted_types) %>%
+      
+        dplyr::mutate(new_seq = case_when(
+          type=='SNP' ~ NewOrSize,
+          type=='SUB' ~ SizeOrNew,
+          type=='DEL' ~ 'N',
+          type=='INS' ~ NewOrSize)) %>%
+        dplyr::mutate(size = as.integer(case_when(
+          type == 'SNP' ~ '0',
+          type == 'SUB' ~ NewOrSize,
+          type == 'DEL' ~ NewOrSize, # Do not work
+          type == 'AMP' ~ NewOrSize,
+          type == 'CON' ~ NewOrSize,
+          type == 'INV' ~ NewOrSize))) %>%
+        dplyr::select(-NewOrSize, -SizeOrNew)
+    return(gd_df)
+  }
 
-				dplyr::mutate(size = case_when(
-					type == 'SNP' ~ '0',
-					type == 'SUB' ~ a,
-					type == 'DEL' ~ a, # Do not work
-					type == 'MOB' ~ c,
-					type == 'AMP' ~ a,
-					type == 'CON' ~ a,
-					type == 'INV' ~ a)) %>%
-			
-				dplyr::mutate(repeat_name = if_else(type == 'MOB', a, '0')) %>%
-			
-				dplyr::mutate(strand = if_else(type == 'MOB', b, '0')) %>%
-			
-				dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, '0')) %>%
-			
-				dplyr::mutate(region = if_else(type == 'MOB', b, '0')) %>%
+gd_file <- "R/output.gd"
 
-				dplyr::select(-a, -b, -c)
-		
-		return(gd_df)
-	}
-
-gd_file="R/output.gd"
-
-test = gd_load(gd_file = gd_file)
+test <- gd_load(gd_file = gd_file)
