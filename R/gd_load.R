@@ -19,22 +19,32 @@ gd_load <-
 				'position',
 				'a',  # temp column name for rename column name
 				'b',
-				'c')) 
+				'c')
+		) 
+		
+		gd_df <- data.frame(type=character(),
+			evidence_id=integer(),
+			parent_ids=character(), # character because the comma is for spliting
+			seq_id=character(),
+			position=integer(),
+			new_seq=character(),
+			size=integer(),
+			repeat_name=character(),
+			strand=integer(),
+			region=character(),
+			new_copy_number=integer()
+		)
 		
 		gd_df <- # Arranged data frame
 			gd_tmp %>%
 				dplyr::filter(type != 'RA', type != 'MC', type != 'JC', type != 'UN') %>%
-				dplyr::mutate(new_seq = 
-					case_when(
-					  	type == 'SNP' ~ a,
+				dplyr::mutate(new_seq = case_when(type == 'SNP' ~ a,
 					   	type == 'SUB' ~ b,
-					   	type == 'DEL' ~ 0,
-					  	type == 'INS' ~ a
-					 )
-				) %>%
+				#	   	type == 'DEL' ~ 0,
+					  	type == 'INS' ~ a)) 
 				dplyr::mutate(size =
 					case_when(
-						type == 'SNP' ~ 0,
+				#		type == 'SNP' ~ 0,
 						type == 'SUB' ~ a,
 						type == 'DEL' ~ a,
 						type == 'MOB' ~ c,
@@ -43,12 +53,12 @@ gd_load <-
 						type == 'INV' ~ a
 					)
 				) %>%
-				dplyr::mutate(repeat_name = if_else(type == 'MOB', a, 0)) %>%
-				dplyr::mutate(strand = if_else(type == 'MOB', b, 0)) %>%
-				dplyr::mutate(size = if_else(type == 'MOB', b, 0)) %>%
-				dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, 0)) %>%
-				dplyr::mutate(region = if_else(type == 'MOB', b, 0)) %>%
-				dplyr::select(-a, -b, -c)
+			#	dplyr::mutate(repeat_name = if_else(type == 'MOB', a, 0)) %>%
+			#	dplyr::mutate(strand = if_else(type == 'MOB', b, 0)) %>%
+			#	dplyr::mutate(size = if_else(type == 'MOB', b, 0)) %>%
+			#	dplyr::mutate(new_copy_number = if_else(type == 'AMP', b, 0)) %>%
+			#	dplyr::mutate(region = if_else(type == 'MOB', b, 0)) %>%
+			#	dplyr::select(-a, -b, -c)
 		
 		return(gd_df)
 	}
