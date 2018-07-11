@@ -11,8 +11,13 @@ gd_subtract <-
 	function(gd_list, reference = 0) {
 		# Get merged list TODO = as argument?
 		gd_df <- gd_merge(gd_list)
-		gd_df <-
-			gd_df %>% group_by(gd_origin) # Why?
+		
+		gd_subtract_result <-
+			gd_df %>%
+				group_by(type, position) %>%
+				summarize(n()) %>%
+				filter(`n()` > 1) %>%
+				View()
 		
 		# parcours chaque gd
 			# si tu rencontres une mutation (= position + type + new_seq + size ?)
@@ -21,7 +26,7 @@ gd_subtract <-
 		# exporte ce nouveau dataframe (voire output-le)
 		
 		if(reference == 0) {
-			# Don't use it
+			# Don't use that block please
 			reference = gd_df[gd_origin==unique(gd_origin)[1]]
 		}
 		
