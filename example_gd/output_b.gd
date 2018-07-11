@@ -1,4863 +1,1390 @@
 #=GENOME_DIFF	1.0
-#=CREATED	15:32:05 06 Jul 2018
+#=CREATED	21:32:22 06 Jul 2018
 #=PROGRAM	breseq 0.32.1 revision aa8f2595a244
-#=COMMAND	../../tools/breseq-0.32.1-Linux-x86_64/bin/breseq --reference ../data/prokka/1006617/1006617b_S12_L001_R1_001/1006617b_S12_L001_R1_001.gff --num-processors 6 --output ../data/breseq/1006617/1006617d_S14_L001_R1_001.fastq.gz ../data/reads/1006617//1006617d_S14_L001_R1_001.fastq.gz ../data/reads/1006617//1006617d_S14_L001_R2_001.fastq.gz
-#=REFSEQ	../data/prokka/1006617/1006617b_S12_L001_R1_001/1006617b_S12_L001_R1_001.gff
-#=READSEQ	../data/reads/1006617//1006617d_S14_L001_R1_001.fastq.gz
-#=READSEQ	../data/reads/1006617//1006617d_S14_L001_R2_001.fastq.gz
-#=CONVERTED-BASES	155361178
-#=CONVERTED-READS	690155
-#=INPUT-BASES	155376170
-#=INPUT-READS	690322
-#=MAPPED-BASES	121863406
-#=MAPPED-READS	579814
-RA	1	.	NODE_10_length_180151_cov_12.256382	178861	0	T	C	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=84.8	fisher_strand_p_value=1	frequency=2.093e-01	ks_quality_p_value=1	major_base=T	major_cov=16/18	major_frequency=7.907e-01	minor_base=C	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=2.093e-01	polymorphism_score=13.6	prediction=polymorphism	ref_cov=16/18	total_cov=20/23
-RA	2	.	NODE_10_length_180151_cov_12.256382	179167	0	A	C	bias_e_value=3907660	bias_p_value=0.778605	consensus_reject=FREQUENCY_CUTOFF	consensus_score=36.5	fisher_strand_p_value=0.602796	frequency=5.667e-01	ks_quality_p_value=0.685865	major_base=C	major_cov=15/19	major_frequency=5.667e-01	minor_base=A	minor_cov=14/12	new_cov=15/19	polymorphism_frequency=5.667e-01	polymorphism_score=74.5	prediction=polymorphism	ref_cov=14/12	total_cov=29/32
-RA	3	.	NODE_10_length_180151_cov_12.256382	179214	0	C	T	bias_e_value=1984600	bias_p_value=0.395435	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.8	fisher_strand_p_value=1	frequency=5.147e-01	ks_quality_p_value=0.130101	major_base=T	major_cov=17/18	major_frequency=5.147e-01	minor_base=C	minor_cov=17/16	new_cov=17/18	polymorphism_frequency=5.147e-01	polymorphism_score=97.9	prediction=polymorphism	ref_cov=17/16	total_cov=35/34
-RA	4	.	NODE_10_length_180151_cov_12.256382	179218	0	T	C	bias_e_value=4984770	bias_p_value=0.993221	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.6	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=0.885846	major_base=C	major_cov=16/17	major_frequency=5.000e-01	minor_base=T	minor_cov=17/16	new_cov=16/17	polymorphism_frequency=5.000e-01	polymorphism_score=90.2	prediction=polymorphism	ref_cov=17/16	total_cov=34/33
-RA	5	.	NODE_10_length_180151_cov_12.256382	179224	0	A	G	bias_e_value=4035670	bias_p_value=0.804112	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-6.6	fisher_strand_p_value=0.805707	frequency=4.769e-01	ks_quality_p_value=0.55048	major_base=A	major_cov=18/16	major_frequency=5.231e-01	minor_base=G	minor_cov=15/16	new_cov=15/16	polymorphism_frequency=4.769e-01	polymorphism_score=91.5	prediction=polymorphism	ref_cov=18/16	total_cov=33/32
-RA	6	.	NODE_10_length_180151_cov_12.256382	179225	0	T	A	bias_e_value=5015660	bias_p_value=0.999376	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.6	fisher_strand_p_value=1	frequency=4.769e-01	ks_quality_p_value=0.964871	major_base=T	major_cov=17/17	major_frequency=5.231e-01	minor_base=A	minor_cov=15/16	new_cov=15/16	polymorphism_frequency=4.769e-01	polymorphism_score=96.7	prediction=polymorphism	ref_cov=17/17	total_cov=33/33
-RA	7	.	NODE_10_length_180151_cov_12.256382	179234	0	A	T	bias_e_value=4878640	bias_p_value=0.972075	consensus_reject=FREQUENCY_CUTOFF	consensus_score=16.2	fisher_strand_p_value=0.805011	frequency=4.462e-01	ks_quality_p_value=0.960455	major_base=A	major_cov=19/17	major_frequency=5.538e-01	minor_base=T	minor_cov=14/15	new_cov=14/15	polymorphism_frequency=4.462e-01	polymorphism_score=90.6	prediction=polymorphism	ref_cov=19/17	total_cov=33/32
-RA	8	.	NODE_10_length_180151_cov_12.256382	179241	0	G	T	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.2	fisher_strand_p_value=1	frequency=4.483e-01	ks_quality_p_value=1	major_base=G	major_cov=17/15	major_frequency=5.517e-01	minor_base=T	minor_cov=13/13	new_cov=13/13	polymorphism_frequency=4.483e-01	polymorphism_score=79.1	prediction=polymorphism	ref_cov=17/15	total_cov=30/28
-RA	9	.	NODE_10_length_180151_cov_12.256382	179275	0	T	C	bias_e_value=4775410	bias_p_value=0.951506	consensus_reject=FREQUENCY_CUTOFF	consensus_score=19.6	fisher_strand_p_value=1	frequency=4.259e-01	ks_quality_p_value=0.705195	major_base=T	major_cov=17/14	major_frequency=5.741e-01	minor_base=C	minor_cov=12/11	new_cov=12/11	polymorphism_frequency=4.259e-01	polymorphism_score=61.2	prediction=polymorphism	ref_cov=17/14	total_cov=29/25
-RA	10	.	NODE_10_length_180151_cov_12.256382	179302	0	A	T	bias_e_value=4839840	bias_p_value=0.964343	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.3	fisher_strand_p_value=0.769723	frequency=4.222e-01	ks_quality_p_value=0.968043	major_base=A	major_cov=15/11	major_frequency=5.778e-01	minor_base=T	minor_cov=10/9	new_cov=10/9	polymorphism_frequency=4.222e-01	polymorphism_score=55.4	prediction=polymorphism	ref_cov=15/11	total_cov=25/20
-RA	11	.	NODE_10_length_180151_cov_12.256382	179461	0	T	C	bias_e_value=2919960	bias_p_value=0.581806	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-1.3	fisher_strand_p_value=1	frequency=4.667e-01	ks_quality_p_value=0.239508	major_base=T	major_cov=16/16	major_frequency=5.333e-01	minor_base=C	minor_cov=14/14	new_cov=14/14	polymorphism_frequency=4.667e-01	polymorphism_score=85.3	prediction=polymorphism	ref_cov=16/16	total_cov=30/30
-RA	12	.	NODE_10_length_180151_cov_12.256382	179520	0	C	T	bias_e_value=4411500	bias_p_value=0.878996	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.9	fisher_strand_p_value=0.55031	frequency=5.333e-01	ks_quality_p_value=1	major_base=T	major_cov=12/12	major_frequency=5.333e-01	minor_base=C	minor_cov=8/13	new_cov=12/12	polymorphism_frequency=5.333e-01	polymorphism_score=59.6	prediction=polymorphism	ref_cov=8/13	total_cov=20/26
-RA	13	.	NODE_10_length_180151_cov_12.256382	179533	0	A	G	bias_e_value=4745750	bias_p_value=0.945596	consensus_reject=FREQUENCY_CUTOFF	consensus_score=28.8	fisher_strand_p_value=0.773439	frequency=5.800e-01	ks_quality_p_value=0.890598	major_base=G	major_cov=13/16	major_frequency=5.800e-01	minor_base=A	minor_cov=8/13	new_cov=13/16	polymorphism_frequency=5.800e-01	polymorphism_score=49.7	prediction=polymorphism	ref_cov=8/13	total_cov=21/29
-RA	14	.	NODE_10_length_180151_cov_12.256382	179581	0	C	T	bias_e_value=4363280	bias_p_value=0.869389	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-1.8	fisher_strand_p_value=0.592041	frequency=5.273e-01	ks_quality_p_value=0.902985	major_base=T	major_cov=11/18	major_frequency=5.273e-01	minor_base=C	minor_cov=12/14	new_cov=11/18	polymorphism_frequency=5.273e-01	polymorphism_score=75.6	prediction=polymorphism	ref_cov=12/14	total_cov=23/32
-RA	15	.	NODE_10_length_180151_cov_12.256382	179584	0	A	G	bias_e_value=4503910	bias_p_value=0.89741	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.6	fisher_strand_p_value=0.582706	frequency=5.370e-01	ks_quality_p_value=1	major_base=G	major_cov=11/18	major_frequency=5.370e-01	minor_base=A	minor_cov=12/13	new_cov=11/18	polymorphism_frequency=5.370e-01	polymorphism_score=68.3	prediction=polymorphism	ref_cov=12/13	total_cov=23/32
-RA	16	.	NODE_10_length_180151_cov_12.256382	179608	0	A	G	bias_e_value=4533440	bias_p_value=0.903292	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.2	fisher_strand_p_value=0.595546	frequency=4.464e-01	ks_quality_p_value=0.997055	major_base=A	major_cov=15/16	major_frequency=5.536e-01	minor_base=G	minor_cov=10/15	new_cov=10/15	polymorphism_frequency=4.464e-01	polymorphism_score=71.3	prediction=polymorphism	ref_cov=15/16	total_cov=25/31
-RA	17	.	NODE_10_length_180151_cov_12.256382	179632	0	C	A	bias_e_value=4172040	bias_p_value=0.831285	consensus_reject=FREQUENCY_CUTOFF	consensus_score=62.2	fisher_strand_p_value=0.580418	frequency=3.750e-01	ks_quality_p_value=0.8246	major_base=C	major_cov=17/18	major_frequency=6.250e-01	minor_base=A	minor_cov=8/13	new_cov=8/13	polymorphism_frequency=3.750e-01	polymorphism_score=60.5	prediction=polymorphism	ref_cov=17/18	total_cov=25/31
-RA	18	.	NODE_10_length_180151_cov_12.256382	179659	0	A	G	bias_e_value=4883540	bias_p_value=0.973051	consensus_reject=FREQUENCY_CUTOFF	consensus_score=26.7	fisher_strand_p_value=0.795281	frequency=4.068e-01	ks_quality_p_value=0.977024	major_base=A	major_cov=16/19	major_frequency=5.932e-01	minor_base=G	minor_cov=10/14	new_cov=10/14	polymorphism_frequency=4.068e-01	polymorphism_score=67.7	prediction=polymorphism	ref_cov=16/19	total_cov=26/34
-RA	19	.	NODE_10_length_180151_cov_12.256382	179691	0	G	T	bias_e_value=2562670	bias_p_value=0.510615	consensus_reject=FREQUENCY_CUTOFF	consensus_score=45.6	fisher_strand_p_value=0.791332	frequency=3.793e-01	ks_quality_p_value=0.243983	major_base=G	major_cov=18/18	major_frequency=6.207e-01	minor_base=T	minor_cov=10/12	new_cov=10/12	polymorphism_frequency=3.793e-01	polymorphism_score=67.9	prediction=polymorphism	ref_cov=18/18	total_cov=28/30
-RA	20	.	NODE_10_length_180151_cov_12.256382	179710	0	G	A	bias_e_value=464326	bias_p_value=0.0925174	consensus_reject=FREQUENCY_CUTOFF	consensus_score=26.1	fisher_strand_p_value=1	frequency=4.211e-01	ks_quality_p_value=0.0185508	major_base=G	major_cov=16/17	major_frequency=5.789e-01	minor_base=A	minor_cov=11/13	new_cov=11/13	polymorphism_frequency=4.211e-01	polymorphism_score=63.3	prediction=polymorphism	ref_cov=16/17	total_cov=27/30
-RA	21	.	NODE_10_length_180151_cov_12.256382	179728	0	C	T	bias_e_value=4484590	bias_p_value=0.893559	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.5	fisher_strand_p_value=0.795194	frequency=4.643e-01	ks_quality_p_value=0.723918	major_base=C	major_cov=15/15	major_frequency=5.357e-01	minor_base=T	minor_cov=12/14	new_cov=12/14	polymorphism_frequency=4.643e-01	polymorphism_score=66.2	prediction=polymorphism	ref_cov=15/15	total_cov=28/29
-RA	22	.	NODE_10_length_180151_cov_12.256382	179735	0	A	G	bias_e_value=3403110	bias_p_value=0.678073	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.1	fisher_strand_p_value=1	frequency=4.444e-01	ks_quality_p_value=0.3143	major_base=A	major_cov=15/15	major_frequency=5.556e-01	minor_base=G	minor_cov=12/12	new_cov=12/12	polymorphism_frequency=4.444e-01	polymorphism_score=71.4	prediction=polymorphism	ref_cov=15/15	total_cov=27/27
-RA	23	.	NODE_10_length_180151_cov_12.256382	179736	0	C	T	bias_e_value=4837080	bias_p_value=0.963794	consensus_reject=FREQUENCY_CUTOFF	consensus_score=12.2	fisher_strand_p_value=1	frequency=4.615e-01	ks_quality_p_value=0.743265	major_base=C	major_cov=14/14	major_frequency=5.385e-01	minor_base=T	minor_cov=12/12	new_cov=12/12	polymorphism_frequency=4.615e-01	polymorphism_score=64.5	prediction=polymorphism	ref_cov=14/14	total_cov=27/27
-RA	24	.	NODE_10_length_180151_cov_12.256382	179737	0	A	T	bias_e_value=4905370	bias_p_value=0.9774	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=6.7	fisher_strand_p_value=1	frequency=4.630e-01	ks_quality_p_value=0.795072	major_base=A	major_cov=15/14	major_frequency=5.370e-01	minor_base=T	minor_cov=12/13	new_cov=12/13	polymorphism_frequency=4.630e-01	polymorphism_score=79.3	prediction=polymorphism	ref_cov=15/14	total_cov=27/27
-RA	25	.	NODE_10_length_180151_cov_12.256382	179774	0	T	C	bias_e_value=2764770	bias_p_value=0.550884	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.1	fisher_strand_p_value=0.797452	frequency=4.590e-01	ks_quality_p_value=0.274041	major_base=T	major_cov=17/16	major_frequency=5.410e-01	minor_base=C	minor_cov=16/12	new_cov=16/12	polymorphism_frequency=4.590e-01	polymorphism_score=82.2	prediction=polymorphism	ref_cov=17/16	total_cov=33/28
-RA	26	.	NODE_10_length_180151_cov_12.256382	179789	0	C	T	bias_e_value=2429780	bias_p_value=0.484136	consensus_reject=FREQUENCY_CUTOFF	consensus_score=16.9	fisher_strand_p_value=0.442539	frequency=4.444e-01	ks_quality_p_value=0.400803	major_base=C	major_cov=18/17	major_frequency=5.556e-01	minor_base=T	minor_cov=18/10	new_cov=18/10	polymorphism_frequency=4.444e-01	polymorphism_score=76.4	prediction=polymorphism	ref_cov=18/17	total_cov=36/27
-RA	27	.	NODE_10_length_180151_cov_12.256382	179828	0	A	G	bias_e_value=1260750	bias_p_value=0.251207	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.2	fisher_strand_p_value=0.231799	frequency=4.930e-01	ks_quality_p_value=0.294009	major_base=A	major_cov=18/18	major_frequency=5.070e-01	minor_base=G	minor_cov=23/12	new_cov=23/12	polymorphism_frequency=4.930e-01	polymorphism_score=101.5	prediction=polymorphism	ref_cov=18/18	total_cov=42/31
-RA	28	.	NODE_10_length_180151_cov_12.256382	180024	0	G	A	bias_e_value=4275660	bias_p_value=0.851929	consensus_reject=FREQUENCY_CUTOFF	consensus_score=74.1	fisher_strand_p_value=0.542085	frequency=2.857e-01	ks_quality_p_value=0.936781	major_base=G	major_cov=21/14	major_frequency=7.143e-01	minor_base=A	minor_cov=7/7	new_cov=7/7	polymorphism_frequency=2.857e-01	polymorphism_score=29.2	prediction=polymorphism	ref_cov=21/14	total_cov=28/21
-RA	29	.	NODE_12_length_132508_cov_13.954518	132351	0	G	A	bias_e_value=5018790	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.6	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=1	major_base=A	major_cov=7/6	major_frequency=5.000e-01	minor_base=G	minor_cov=6/7	new_cov=7/6	polymorphism_frequency=5.000e-01	polymorphism_score=31.9	prediction=polymorphism	ref_cov=6/7	total_cov=13/13
-RA	30	.	NODE_15_length_102314_cov_11.442395	128	0	G	A	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=119.9	fisher_strand_p_value=1	frequency=2.321e-01	ks_quality_p_value=1	major_base=G	major_cov=25/18	major_frequency=7.679e-01	minor_base=A	minor_cov=7/6	new_cov=7/6	polymorphism_frequency=2.321e-01	polymorphism_score=25.7	prediction=polymorphism	ref_cov=25/18	total_cov=32/24
-RA	31	.	NODE_15_length_102314_cov_11.442395	189	0	T	C	bias_e_value=3499470	bias_p_value=0.697274	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.1	fisher_strand_p_value=0.432758	frequency=3.651e-01	ks_quality_p_value=0.765506	major_base=T	major_cov=24/16	major_frequency=6.349e-01	minor_base=C	minor_cov=11/12	new_cov=11/12	polymorphism_frequency=3.651e-01	polymorphism_score=62.1	prediction=polymorphism	ref_cov=24/16	total_cov=35/28
-RA	32	.	NODE_15_length_102314_cov_11.442395	296	0	C	T	bias_e_value=4455910	bias_p_value=0.887846	consensus_reject=FREQUENCY_CUTOFF	consensus_score=47.6	fisher_strand_p_value=0.576959	frequency=6.481e-01	ks_quality_p_value=0.980095	major_base=T	major_cov=17/18	major_frequency=6.481e-01	minor_base=C	minor_cov=11/8	new_cov=17/18	polymorphism_frequency=6.481e-01	polymorphism_score=48.2	prediction=polymorphism	ref_cov=11/8	total_cov=29/26
-RA	33	.	NODE_20_length_61103_cov_11.817174	17649	0	A	C	bias_e_value=3555080	bias_p_value=0.708354	consensus_reject=FREQUENCY_CUTOFF	consensus_score=31.4	fisher_strand_p_value=1	frequency=2.083e-01	ks_quality_p_value=0.341447	major_base=A	major_cov=11/8	major_frequency=7.917e-01	minor_base=C	minor_cov=3/2	new_cov=3/2	polymorphism_frequency=2.083e-01	polymorphism_score=13.2	prediction=polymorphism	ref_cov=11/8	total_cov=14/10
-RA	34	.	NODE_20_length_61103_cov_11.817174	41614	0	T	C	bias_e_value=3439250	bias_p_value=0.685274	consensus_reject=FREQUENCY_CUTOFF	consensus_score=12.2	fisher_strand_p_value=0.47106	frequency=4.062e-01	ks_quality_p_value=0.68054	major_base=T	major_cov=9/10	major_frequency=5.938e-01	minor_base=C	minor_cov=4/9	new_cov=4/9	polymorphism_frequency=4.062e-01	polymorphism_score=33.7	prediction=polymorphism	ref_cov=9/10	total_cov=13/19
-RA	35	.	NODE_20_length_61103_cov_11.817174	41616	0	G	A	bias_e_value=4067210	bias_p_value=0.810397	consensus_reject=FREQUENCY_CUTOFF	consensus_score=22.2	fisher_strand_p_value=0.47106	frequency=4.062e-01	ks_quality_p_value=0.958138	major_base=G	major_cov=9/10	major_frequency=5.938e-01	minor_base=A	minor_cov=4/9	new_cov=4/9	polymorphism_frequency=4.062e-01	polymorphism_score=29.9	prediction=polymorphism	ref_cov=9/10	total_cov=13/19
-RA	36	.	NODE_20_length_61103_cov_11.817174	41659	0	G	A	bias_e_value=2580820	bias_p_value=0.514231	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.5	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=0.195278	major_base=G	major_cov=9/11	major_frequency=6.667e-01	minor_base=A	minor_cov=4/6	new_cov=4/6	polymorphism_frequency=3.333e-01	polymorphism_score=22.1	prediction=polymorphism	ref_cov=9/11	total_cov=13/17
-RA	37	.	NODE_20_length_61103_cov_11.817174	41674	0	T	C	bias_e_value=2862700	bias_p_value=0.570395	consensus_reject=FREQUENCY_CUTOFF	consensus_score=31.0	fisher_strand_p_value=1	frequency=3.226e-01	ks_quality_p_value=0.231616	major_base=T	major_cov=10/11	major_frequency=6.774e-01	minor_base=C	minor_cov=4/6	new_cov=4/6	polymorphism_frequency=3.226e-01	polymorphism_score=25.3	prediction=polymorphism	ref_cov=10/11	total_cov=14/17
-RA	38	.	NODE_20_length_61103_cov_11.817174	41680	0	G	C	bias_e_value=2255490	bias_p_value=0.449408	consensus_reject=FREQUENCY_CUTOFF	consensus_score=65.3	fisher_strand_p_value=0.42682	frequency=2.333e-01	ks_quality_p_value=0.370018	major_base=G	major_cov=11/12	major_frequency=7.667e-01	minor_base=C	minor_cov=2/5	new_cov=2/5	polymorphism_frequency=2.333e-01	polymorphism_score=19.3	prediction=polymorphism	ref_cov=11/12	total_cov=13/17
-RA	39	.	NODE_20_length_61103_cov_11.817174	41684	0	G	A	bias_e_value=1057700	bias_p_value=0.210748	consensus_reject=FREQUENCY_CUTOFF	consensus_score=53.7	fisher_strand_p_value=0.667186	frequency=2.258e-01	ks_quality_p_value=0.080493	major_base=G	major_cov=11/13	major_frequency=7.742e-01	minor_base=A	minor_cov=2/5	new_cov=2/5	polymorphism_frequency=2.258e-01	polymorphism_score=12.9	prediction=polymorphism	ref_cov=11/13	total_cov=13/18
-RA	40	.	NODE_20_length_61103_cov_11.817174	41710	0	A	G	bias_e_value=1796570	bias_p_value=0.357969	consensus_reject=FREQUENCY_CUTOFF	consensus_score=40.6	fisher_strand_p_value=0.664527	frequency=2.414e-01	ks_quality_p_value=0.169072	major_base=A	major_cov=10/12	major_frequency=7.586e-01	minor_base=G	minor_cov=2/5	new_cov=2/5	polymorphism_frequency=2.414e-01	polymorphism_score=15.0	prediction=polymorphism	ref_cov=10/12	total_cov=12/17
-RA	41	.	NODE_20_length_61103_cov_11.817174	41734	0	C	T	bias_e_value=4308470	bias_p_value=0.858467	consensus_reject=FREQUENCY_CUTOFF	consensus_score=36.8	fisher_strand_p_value=0.667984	frequency=2.692e-01	ks_quality_p_value=0.774869	major_base=C	major_cov=8/11	major_frequency=7.308e-01	minor_base=T	minor_cov=2/5	new_cov=2/5	polymorphism_frequency=2.692e-01	polymorphism_score=12.8	prediction=polymorphism	ref_cov=8/11	total_cov=10/16
-RA	42	.	NODE_20_length_61103_cov_11.817174	41752	0	A	G	bias_e_value=4589690	bias_p_value=0.9145	consensus_reject=FREQUENCY_CUTOFF	consensus_score=43.5	fisher_strand_p_value=0.664527	frequency=2.414e-01	ks_quality_p_value=0.92711	major_base=A	major_cov=10/12	major_frequency=7.586e-01	minor_base=G	minor_cov=2/5	new_cov=2/5	polymorphism_frequency=2.414e-01	polymorphism_score=13.3	prediction=polymorphism	ref_cov=10/12	total_cov=12/17
-RA	43	.	NODE_21_length_54475_cov_10.137963	52860	0	G	C	bias_e_value=4059160	bias_p_value=0.808792	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=4.1	fisher_strand_p_value=1	frequency=6.000e-01	ks_quality_p_value=0.449329	major_base=C	major_cov=5/4	major_frequency=6.000e-01	minor_base=G	minor_cov=4/2	new_cov=5/4	polymorphism_frequency=6.000e-01	polymorphism_score=16.8	prediction=polymorphism	ref_cov=4/2	total_cov=9/6
-RA	44	.	NODE_21_length_54475_cov_10.137963	54064	0	T	C	bias_e_value=4853790	bias_p_value=0.967124	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.9	fisher_strand_p_value=1	frequency=3.500e-01	ks_quality_p_value=0.754788	major_base=T	major_cov=8/5	major_frequency=6.500e-01	minor_base=C	minor_cov=4/3	new_cov=4/3	polymorphism_frequency=3.500e-01	polymorphism_score=13.6	prediction=polymorphism	ref_cov=8/5	total_cov=12/8
-RA	45	.	NODE_21_length_54475_cov_10.137963	54130	0	T	G	bias_e_value=4783870	bias_p_value=0.953192	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.3	fisher_strand_p_value=1	frequency=3.043e-01	ks_quality_p_value=0.71007	major_base=T	major_cov=8/8	major_frequency=6.957e-01	minor_base=G	minor_cov=4/3	new_cov=4/3	polymorphism_frequency=3.043e-01	polymorphism_score=18.8	prediction=polymorphism	ref_cov=8/8	total_cov=12/11
-RA	46	.	NODE_21_length_54475_cov_10.137963	54132	0	G	A	bias_e_value=4644200	bias_p_value=0.925361	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.8	fisher_strand_p_value=1	frequency=3.043e-01	ks_quality_p_value=0.639413	major_base=G	major_cov=8/8	major_frequency=6.957e-01	minor_base=A	minor_cov=4/3	new_cov=4/3	polymorphism_frequency=3.043e-01	polymorphism_score=13.1	prediction=polymorphism	ref_cov=8/8	total_cov=12/11
-RA	47	.	NODE_21_length_54475_cov_10.137963	54171	0	T	G	bias_e_value=4794830	bias_p_value=0.955375	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.3	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=0.716531	major_base=T	major_cov=9/9	major_frequency=6.667e-01	minor_base=G	minor_cov=5/4	new_cov=5/4	polymorphism_frequency=3.333e-01	polymorphism_score=24.5	prediction=polymorphism	ref_cov=9/9	total_cov=14/13
-RA	48	.	NODE_21_length_54475_cov_10.137963	54324	0	A	G	bias_e_value=5018030	bias_p_value=0.999849	consensus_reject=FREQUENCY_CUTOFF	consensus_score=30.8	fisher_strand_p_value=1	frequency=2.917e-01	ks_quality_p_value=0.982645	major_base=A	major_cov=9/8	major_frequency=7.083e-01	minor_base=G	minor_cov=3/4	new_cov=3/4	polymorphism_frequency=2.917e-01	polymorphism_score=10.5	prediction=polymorphism	ref_cov=9/8	total_cov=13/12
-RA	49	.	NODE_23_length_41671_cov_14.019233	128	0	T	C	bias_e_value=4808330	bias_p_value=0.958065	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.6	fisher_strand_p_value=1	frequency=5.405e-01	ks_quality_p_value=0.724742	major_base=C	major_cov=11/9	major_frequency=5.405e-01	minor_base=T	minor_cov=10/7	new_cov=11/9	polymorphism_frequency=5.405e-01	polymorphism_score=42.7	prediction=polymorphism	ref_cov=10/7	total_cov=21/16
-RA	50	.	NODE_24_length_41047_cov_15.347752	631	0	A	G	bias_e_value=2368430	bias_p_value=0.471912	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.9	fisher_strand_p_value=0.170383	frequency=5.472e-01	ks_quality_p_value=1	major_base=G	major_cov=17/12	major_frequency=5.472e-01	minor_base=A	minor_cov=9/15	new_cov=17/12	polymorphism_frequency=5.472e-01	polymorphism_score=59.0	prediction=polymorphism	ref_cov=9/15	total_cov=26/27
-RA	51	.	NODE_24_length_41047_cov_15.347752	647	0	C	G	bias_e_value=3022930	bias_p_value=0.602321	consensus_reject=FREQUENCY_CUTOFF	consensus_score=64.0	fisher_strand_p_value=0.259333	frequency=6.481e-01	ks_quality_p_value=0.980095	major_base=G	major_cov=21/14	major_frequency=6.481e-01	minor_base=C	minor_cov=8/11	new_cov=21/14	polymorphism_frequency=6.481e-01	polymorphism_score=60.2	prediction=polymorphism	ref_cov=8/11	total_cov=29/26
-RA	52	.	NODE_24_length_41047_cov_15.347752	653	0	C	T	bias_e_value=1994550	bias_p_value=0.397416	consensus_reject=FREQUENCY_CUTOFF	consensus_score=71.5	fisher_strand_p_value=0.574243	frequency=3.091e-01	ks_quality_p_value=0.228256	major_base=C	major_cov=19/19	major_frequency=6.909e-01	minor_base=T	minor_cov=10/7	new_cov=10/7	polymorphism_frequency=3.091e-01	polymorphism_score=41.0	prediction=polymorphism	ref_cov=19/19	total_cov=29/26
-RA	53	.	NODE_24_length_41047_cov_15.347752	680	0	C	T	bias_e_value=2331070	bias_p_value=0.464468	consensus_reject=FREQUENCY_CUTOFF	consensus_score=69.2	fisher_strand_p_value=0.778934	frequency=3.214e-01	ks_quality_p_value=0.213377	major_base=C	major_cov=19/19	major_frequency=6.786e-01	minor_base=T	minor_cov=10/8	new_cov=10/8	polymorphism_frequency=3.214e-01	polymorphism_score=42.6	prediction=polymorphism	ref_cov=19/19	total_cov=29/27
-RA	54	.	NODE_24_length_41047_cov_15.347752	741	0	C	T	bias_e_value=1071230	bias_p_value=0.213445	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.4	fisher_strand_p_value=0.612282	frequency=3.692e-01	ks_quality_p_value=0.0892213	major_base=C	major_cov=19/22	major_frequency=6.308e-01	minor_base=T	minor_cov=13/11	new_cov=13/11	polymorphism_frequency=3.692e-01	polymorphism_score=61.6	prediction=polymorphism	ref_cov=19/22	total_cov=32/33
-RA	55	.	NODE_24_length_41047_cov_15.347752	769	0	T	C	bias_e_value=4403550	bias_p_value=0.877412	consensus_reject=FREQUENCY_CUTOFF	consensus_score=41.1	fisher_strand_p_value=1	frequency=3.750e-01	ks_quality_p_value=0.547669	major_base=T	major_cov=21/19	major_frequency=6.250e-01	minor_base=C	minor_cov=13/11	new_cov=13/11	polymorphism_frequency=3.750e-01	polymorphism_score=65.3	prediction=polymorphism	ref_cov=21/19	total_cov=34/30
-RA	56	.	NODE_24_length_41047_cov_15.347752	785	0	T	G	bias_e_value=4984290	bias_p_value=0.993126	consensus_reject=FREQUENCY_CUTOFF	consensus_score=64.9	fisher_strand_p_value=1	frequency=6.190e-01	ks_quality_p_value=0.88506	major_base=G	major_cov=21/18	major_frequency=6.190e-01	minor_base=T	minor_cov=13/11	new_cov=21/18	polymorphism_frequency=6.190e-01	polymorphism_score=63.4	prediction=polymorphism	ref_cov=13/11	total_cov=34/29
-RA	57	.	NODE_24_length_41047_cov_15.347752	811	0	A	G	bias_e_value=4760090	bias_p_value=0.948454	consensus_reject=FREQUENCY_CUTOFF	consensus_score=63.9	fisher_strand_p_value=0.795714	frequency=6.393e-01	ks_quality_p_value=0.875448	major_base=G	major_cov=21/18	major_frequency=6.393e-01	minor_base=A	minor_cov=11/11	new_cov=21/18	polymorphism_frequency=6.393e-01	polymorphism_score=51.6	prediction=polymorphism	ref_cov=11/11	total_cov=32/29
-RA	58	.	NODE_24_length_41047_cov_15.347752	847	0	T	G	bias_e_value=4772830	bias_p_value=0.950993	consensus_reject=FREQUENCY_CUTOFF	consensus_score=74.3	fisher_strand_p_value=1	frequency=6.552e-01	ks_quality_p_value=0.70373	major_base=G	major_cov=20/18	major_frequency=6.552e-01	minor_base=T	minor_cov=10/10	new_cov=20/18	polymorphism_frequency=6.552e-01	polymorphism_score=51.2	prediction=polymorphism	ref_cov=10/10	total_cov=30/28
-RA	59	.	NODE_24_length_41047_cov_15.347752	894	0	A	G	bias_e_value=5018550	bias_p_value=0.999952	consensus_reject=FREQUENCY_CUTOFF	consensus_score=98.0	fisher_strand_p_value=1	frequency=6.806e-01	ks_quality_p_value=0.990189	major_base=G	major_cov=25/24	major_frequency=6.806e-01	minor_base=A	minor_cov=12/11	new_cov=25/24	polymorphism_frequency=6.806e-01	polymorphism_score=54.3	prediction=polymorphism	ref_cov=12/11	total_cov=37/36
-RA	60	.	NODE_24_length_41047_cov_15.347752	961	0	C	T	bias_e_value=4500650	bias_p_value=0.896759	consensus_reject=FREQUENCY_CUTOFF	consensus_score=46.8	fisher_strand_p_value=0.581504	frequency=6.364e-01	ks_quality_p_value=1	major_base=T	major_cov=16/19	major_frequency=6.364e-01	minor_base=C	minor_cov=11/9	new_cov=16/19	polymorphism_frequency=6.364e-01	polymorphism_score=51.4	prediction=polymorphism	ref_cov=11/9	total_cov=27/29
-RA	61	.	NODE_24_length_41047_cov_15.347752	4933	0	C	A	bias_e_value=4440170	bias_p_value=0.884708	consensus_reject=FREQUENCY_CUTOFF	consensus_score=33.3	fisher_strand_p_value=1	frequency=4.333e-01	ks_quality_p_value=0.560017	major_base=C	major_cov=16/18	major_frequency=5.667e-01	minor_base=A	minor_cov=12/14	new_cov=12/14	polymorphism_frequency=4.333e-01	polymorphism_score=76.6	prediction=polymorphism	ref_cov=16/18	total_cov=28/32
-RA	62	.	NODE_24_length_41047_cov_15.347752	4938	0	T	C	bias_e_value=4344690	bias_p_value=0.865685	consensus_reject=FREQUENCY_CUTOFF	consensus_score=11.7	fisher_strand_p_value=1	frequency=4.333e-01	ks_quality_p_value=0.528742	major_base=T	major_cov=16/18	major_frequency=5.667e-01	minor_base=C	minor_cov=12/14	new_cov=12/14	polymorphism_frequency=4.333e-01	polymorphism_score=78.3	prediction=polymorphism	ref_cov=16/18	total_cov=28/32
-RA	63	.	NODE_24_length_41047_cov_15.347752	4946	0	G	A	bias_e_value=2315230	bias_p_value=0.461313	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.4	fisher_strand_p_value=1	frequency=4.231e-01	ks_quality_p_value=0.164453	major_base=G	major_cov=14/16	major_frequency=5.769e-01	minor_base=A	minor_cov=10/12	new_cov=10/12	polymorphism_frequency=4.231e-01	polymorphism_score=58.9	prediction=polymorphism	ref_cov=14/16	total_cov=24/28
-RA	64	.	NODE_24_length_41047_cov_15.347752	19711	0	T	G	bias_e_value=4979100	bias_p_value=0.992092	consensus_reject=FREQUENCY_CUTOFF	consensus_score=115.5	fisher_strand_p_value=1	frequency=2.131e-01	ks_quality_p_value=0.876904	major_base=T	major_cov=27/21	major_frequency=7.869e-01	minor_base=G	minor_cov=8/5	new_cov=8/5	polymorphism_frequency=2.131e-01	polymorphism_score=30.1	prediction=polymorphism	ref_cov=27/21	total_cov=36/26
-RA	65	.	NODE_24_length_41047_cov_15.347752	19845	0	A	G	bias_e_value=5000170	bias_p_value=0.99629	consensus_reject=FREQUENCY_CUTOFF	consensus_score=52.1	fisher_strand_p_value=1	frequency=5.644e-01	ks_quality_p_value=0.915107	major_base=G	major_cov=31/26	major_frequency=5.644e-01	minor_base=A	minor_cov=24/20	new_cov=31/26	polymorphism_frequency=5.644e-01	polymorphism_score=110.8	prediction=polymorphism	ref_cov=24/20	total_cov=55/46
-RA	66	.	NODE_24_length_41047_cov_15.347752	19879	0	G	A	bias_e_value=4433970	bias_p_value=0.883474	consensus_reject=FREQUENCY_CUTOFF	consensus_score=184.1	fisher_strand_p_value=0.669746	frequency=2.661e-01	ks_quality_p_value=0.832996	major_base=G	major_cov=40/40	major_frequency=7.339e-01	minor_base=A	minor_cov=16/13	new_cov=16/13	polymorphism_frequency=2.661e-01	polymorphism_score=67.3	prediction=polymorphism	ref_cov=40/40	total_cov=56/53
-RA	67	.	NODE_24_length_41047_cov_15.347752	19898	0	T	C	bias_e_value=4925620	bias_p_value=0.981435	consensus_reject=FREQUENCY_CUTOFF	consensus_score=165.1	fisher_strand_p_value=1	frequency=2.613e-01	ks_quality_p_value=0.813603	major_base=T	major_cov=41/41	major_frequency=7.387e-01	minor_base=C	minor_cov=15/14	new_cov=15/14	polymorphism_frequency=2.613e-01	polymorphism_score=73.0	prediction=polymorphism	ref_cov=41/41	total_cov=56/56
-RA	68	.	NODE_24_length_41047_cov_15.347752	19947	0	C	A	bias_e_value=4393730	bias_p_value=0.875457	consensus_reject=FREQUENCY_CUTOFF	consensus_score=200.4	fisher_strand_p_value=0.561474	frequency=3.197e-01	ks_quality_p_value=0.969658	major_base=C	major_cov=39/44	major_frequency=6.803e-01	minor_base=A	minor_cov=21/18	new_cov=21/18	polymorphism_frequency=3.197e-01	polymorphism_score=100.0	prediction=polymorphism	ref_cov=39/44	total_cov=60/67
-RA	69	.	NODE_24_length_41047_cov_15.347752	19994	0	T	C	bias_e_value=4443220	bias_p_value=0.885317	consensus_reject=FREQUENCY_CUTOFF	consensus_score=130.7	fisher_strand_p_value=0.584592	frequency=3.383e-01	ks_quality_p_value=0.95976	major_base=T	major_cov=40/48	major_frequency=6.617e-01	minor_base=C	minor_cov=23/22	new_cov=23/22	polymorphism_frequency=3.383e-01	polymorphism_score=123.3	prediction=polymorphism	ref_cov=40/48	total_cov=63/70
-RA	70	.	NODE_24_length_41047_cov_15.347752	20016	0	G	A	bias_e_value=4807890	bias_p_value=0.957977	consensus_reject=FREQUENCY_CUTOFF	consensus_score=124.7	fisher_strand_p_value=0.739706	frequency=4.027e-01	ks_quality_p_value=0.9794	major_base=G	major_cov=43/46	major_frequency=5.973e-01	minor_base=A	minor_cov=31/29	new_cov=31/29	polymorphism_frequency=4.027e-01	polymorphism_score=153.6	prediction=polymorphism	ref_cov=43/46	total_cov=74/75
-RA	71	.	NODE_24_length_41047_cov_15.347752	20019	0	C	T	bias_e_value=4960940	bias_p_value=0.988472	consensus_reject=FREQUENCY_CUTOFF	consensus_score=77.5	fisher_strand_p_value=0.863216	frequency=4.328e-01	ks_quality_p_value=0.987069	major_base=C	major_cov=38/38	major_frequency=5.672e-01	minor_base=T	minor_cov=30/28	new_cov=30/28	polymorphism_frequency=4.328e-01	polymorphism_score=155.3	prediction=polymorphism	ref_cov=38/38	total_cov=68/66
-RA	72	.	NODE_24_length_41047_cov_15.347752	20041	0	G	A	bias_e_value=4788480	bias_p_value=0.95411	consensus_reject=FREQUENCY_CUTOFF	consensus_score=115.8	fisher_strand_p_value=0.71988	frequency=3.923e-01	ks_quality_p_value=0.990117	major_base=G	major_cov=40/39	major_frequency=6.077e-01	minor_base=A	minor_cov=28/23	new_cov=28/23	polymorphism_frequency=3.923e-01	polymorphism_score=131.4	prediction=polymorphism	ref_cov=40/39	total_cov=69/65
-RA	73	.	NODE_24_length_41047_cov_15.347752	20073	0	C	T	bias_e_value=4805650	bias_p_value=0.95753	consensus_reject=FREQUENCY_CUTOFF	consensus_score=103.0	fisher_strand_p_value=0.7332	frequency=4.143e-01	ks_quality_p_value=0.986207	major_base=C	major_cov=41/41	major_frequency=5.857e-01	minor_base=T	minor_cov=31/27	new_cov=31/27	polymorphism_frequency=4.143e-01	polymorphism_score=150.8	prediction=polymorphism	ref_cov=41/41	total_cov=73/68
-RA	74	.	NODE_24_length_41047_cov_15.347752	20084	0	C	T	bias_e_value=5017590	bias_p_value=0.999761	consensus_reject=FREQUENCY_CUTOFF	consensus_score=110.2	fisher_strand_p_value=1	frequency=3.969e-01	ks_quality_p_value=0.978206	major_base=C	major_cov=40/39	major_frequency=6.031e-01	minor_base=T	minor_cov=27/25	new_cov=27/25	polymorphism_frequency=3.969e-01	polymorphism_score=133.0	prediction=polymorphism	ref_cov=40/39	total_cov=68/66
-RA	75	.	NODE_24_length_41047_cov_15.347752	20112	0	T	C	bias_e_value=4952400	bias_p_value=0.986772	consensus_reject=FREQUENCY_CUTOFF	consensus_score=245.0	fisher_strand_p_value=1	frequency=7.656e-01	ks_quality_p_value=0.841816	major_base=C	major_cov=48/50	major_frequency=7.656e-01	minor_base=T	minor_cov=15/15	new_cov=48/50	polymorphism_frequency=7.656e-01	polymorphism_score=69.5	prediction=polymorphism	ref_cov=15/15	total_cov=63/66
-RA	76	.	NODE_24_length_41047_cov_15.347752	20116	0	C	T	bias_e_value=3489820	bias_p_value=0.695351	consensus_reject=FREQUENCY_CUTOFF	consensus_score=169.1	fisher_strand_p_value=0.848964	frequency=3.226e-01	ks_quality_p_value=0.388169	major_base=C	major_cov=42/42	major_frequency=6.774e-01	minor_base=T	minor_cov=19/21	new_cov=19/21	polymorphism_frequency=3.226e-01	polymorphism_score=92.8	prediction=polymorphism	ref_cov=42/42	total_cov=62/64
-RA	77	.	NODE_24_length_41047_cov_15.347752	20219	0	C	T	bias_e_value=4327010	bias_p_value=0.862161	consensus_reject=FREQUENCY_CUTOFF	consensus_score=89.3	fisher_strand_p_value=0.809882	frequency=6.875e-01	ks_quality_p_value=0.646089	major_base=T	major_cov=28/27	major_frequency=6.875e-01	minor_base=C	minor_cov=14/11	new_cov=28/27	polymorphism_frequency=6.875e-01	polymorphism_score=62.7	prediction=polymorphism	ref_cov=14/11	total_cov=42/38
-RA	78	.	NODE_24_length_41047_cov_15.347752	20231	0	T	C	bias_e_value=4725430	bias_p_value=0.941547	consensus_reject=FREQUENCY_CUTOFF	consensus_score=113.9	fisher_strand_p_value=0.813751	frequency=6.941e-01	ks_quality_p_value=0.833403	major_base=C	major_cov=31/28	major_frequency=6.941e-01	minor_base=T	minor_cov=15/11	new_cov=31/28	polymorphism_frequency=6.941e-01	polymorphism_score=61.2	prediction=polymorphism	ref_cov=15/11	total_cov=46/39
-RA	79	.	NODE_24_length_41047_cov_15.347752	20254	0	T	A	bias_e_value=4991280	bias_p_value=0.994519	consensus_reject=FREQUENCY_CUTOFF	consensus_score=123.0	fisher_strand_p_value=1	frequency=7.024e-01	ks_quality_p_value=0.897144	major_base=A	major_cov=31/28	major_frequency=7.024e-01	minor_base=T	minor_cov=13/12	new_cov=31/28	polymorphism_frequency=7.024e-01	polymorphism_score=68.0	prediction=polymorphism	ref_cov=13/12	total_cov=45/40
-RA	80	.	NODE_24_length_41047_cov_15.347752	20319	0	G	T	bias_e_value=4917820	bias_p_value=0.979881	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.0	fisher_strand_p_value=0.806229	frequency=6.119e-01	ks_quality_p_value=1	major_base=T	major_cov=19/22	major_frequency=6.119e-01	minor_base=G	minor_cov=13/13	new_cov=19/22	polymorphism_frequency=6.119e-01	polymorphism_score=76.0	prediction=polymorphism	ref_cov=13/13	total_cov=34/36
-RA	81	.	NODE_24_length_41047_cov_15.347752	20331	0	T	C	bias_e_value=4593920	bias_p_value=0.915343	consensus_reject=FREQUENCY_CUTOFF	consensus_score=26.4	fisher_strand_p_value=0.6279	frequency=5.455e-01	ks_quality_p_value=0.983968	major_base=C	major_cov=18/18	major_frequency=5.455e-01	minor_base=T	minor_cov=13/17	new_cov=18/18	polymorphism_frequency=5.455e-01	polymorphism_score=73.7	prediction=polymorphism	ref_cov=13/17	total_cov=32/35
-RA	82	.	NODE_24_length_41047_cov_15.347752	34734	0	T	C	bias_e_value=4619880	bias_p_value=0.920516	consensus_reject=FREQUENCY_CUTOFF	consensus_score=19.4	fisher_strand_p_value=0.659443	frequency=6.667e-01	ks_quality_p_value=0.953497	major_base=C	major_cov=8/6	major_frequency=6.667e-01	minor_base=T	minor_cov=3/4	new_cov=8/6	polymorphism_frequency=6.667e-01	polymorphism_score=12.9	prediction=polymorphism	ref_cov=3/4	total_cov=11/10
-RA	83	.	NODE_24_length_41047_cov_15.347752	34750	0	T	C	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.6	fisher_strand_p_value=1	frequency=5.769e-01	ks_quality_p_value=1	major_base=C	major_cov=8/7	major_frequency=5.769e-01	minor_base=T	minor_cov=6/5	new_cov=8/7	polymorphism_frequency=5.769e-01	polymorphism_score=22.6	prediction=polymorphism	ref_cov=6/5	total_cov=14/13
-RA	84	.	NODE_24_length_41047_cov_15.347752	35119	0	C	T	bias_e_value=4721970	bias_p_value=0.940858	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=7.0	fisher_strand_p_value=1	frequency=5.667e-01	ks_quality_p_value=0.676414	major_base=T	major_cov=8/9	major_frequency=5.667e-01	minor_base=C	minor_cov=7/6	new_cov=8/9	polymorphism_frequency=5.667e-01	polymorphism_score=31.6	prediction=polymorphism	ref_cov=7/6	total_cov=15/15
-RA	85	.	NODE_24_length_41047_cov_15.347752	35130	1	.	T	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=48.5	fisher_strand_p_value=1	frequency=5.333e-01	ks_quality_p_value=1	major_base=T	major_cov=8/8	major_frequency=5.333e-01	minor_base=.	minor_cov=7/7	new_cov=8/8	polymorphism_frequency=5.333e-01	polymorphism_score=46.5	prediction=polymorphism	ref_cov=7/7	total_cov=15/15
-RA	86	.	NODE_29_length_29686_cov_20.061132	29261	0	A	T	bias_e_value=4894810	bias_p_value=0.975297	consensus_reject=FREQUENCY_CUTOFF	consensus_score=35.9	fisher_strand_p_value=1	frequency=2.273e-01	ks_quality_p_value=0.786123	major_base=A	major_cov=8/9	major_frequency=7.727e-01	minor_base=T	minor_cov=2/3	new_cov=2/3	polymorphism_frequency=2.273e-01	polymorphism_score=10.1	prediction=polymorphism	ref_cov=8/9	total_cov=10/12
-RA	87	.	NODE_29_length_29686_cov_20.061132	29417	0	A	T	bias_e_value=4779870	bias_p_value=0.952395	consensus_reject=FREQUENCY_CUTOFF	consensus_score=28.1	fisher_strand_p_value=0.733222	frequency=6.111e-01	ks_quality_p_value=0.965264	major_base=T	major_cov=12/10	major_frequency=6.111e-01	minor_base=A	minor_cov=6/8	new_cov=12/10	polymorphism_frequency=6.111e-01	polymorphism_score=37.6	prediction=polymorphism	ref_cov=6/8	total_cov=19/18
-RA	88	.	NODE_2_length_517362_cov_10.498810	302100	0	C	G	bias_e_value=4783300	bias_p_value=0.953079	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.1	fisher_strand_p_value=1	frequency=2.857e-01	ks_quality_p_value=0.70974	major_base=C	major_cov=7/8	major_frequency=7.143e-01	minor_base=G	minor_cov=3/3	new_cov=3/3	polymorphism_frequency=2.857e-01	polymorphism_score=11.7	prediction=polymorphism	ref_cov=7/8	total_cov=10/12
-RA	89	.	NODE_2_length_517362_cov_10.498810	302112	0	C	G	bias_e_value=4563090	bias_p_value=0.909201	consensus_reject=FREQUENCY_CUTOFF	consensus_score=16.0	fisher_strand_p_value=1	frequency=2.941e-01	ks_quality_p_value=0.605343	major_base=C	major_cov=5/7	major_frequency=7.059e-01	minor_base=G	minor_cov=2/3	new_cov=2/3	polymorphism_frequency=2.941e-01	polymorphism_score=10.4	prediction=polymorphism	ref_cov=5/7	total_cov=8/11
-RA	90	.	NODE_2_length_517362_cov_10.498810	302115	0	A	G	bias_e_value=5018370	bias_p_value=0.999916	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.0	fisher_strand_p_value=1	frequency=3.889e-01	ks_quality_p_value=0.987097	major_base=A	major_cov=4/7	major_frequency=6.111e-01	minor_base=G	minor_cov=3/4	new_cov=3/4	polymorphism_frequency=3.889e-01	polymorphism_score=12.2	prediction=polymorphism	ref_cov=4/7	total_cov=8/11
-RA	91	.	NODE_2_length_517362_cov_10.498810	302148	0	A	T	bias_e_value=2924810	bias_p_value=0.582771	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=7.7	fisher_strand_p_value=0.596154	frequency=3.125e-01	ks_quality_p_value=0.40289	major_base=A	major_cov=4/7	major_frequency=6.875e-01	minor_base=T	minor_cov=3/2	new_cov=3/2	polymorphism_frequency=3.125e-01	polymorphism_score=11.1	prediction=polymorphism	ref_cov=4/7	total_cov=8/9
-RA	92	.	NODE_2_length_517362_cov_10.498810	302203	0	A	G	bias_e_value=4164670	bias_p_value=0.829816	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.3	fisher_strand_p_value=1	frequency=2.308e-01	ks_quality_p_value=0.476625	major_base=A	major_cov=9/11	major_frequency=7.692e-01	minor_base=G	minor_cov=3/3	new_cov=3/3	polymorphism_frequency=2.308e-01	polymorphism_score=11.7	prediction=polymorphism	ref_cov=9/11	total_cov=12/14
-RA	93	.	NODE_2_length_517362_cov_10.498810	302236	0	C	T	bias_e_value=4697250	bias_p_value=0.935932	consensus_reject=FREQUENCY_CUTOFF	consensus_score=38.2	fisher_strand_p_value=0.686957	frequency=3.214e-01	ks_quality_p_value=0.966731	major_base=C	major_cov=9/10	major_frequency=6.786e-01	minor_base=T	minor_cov=3/6	new_cov=3/6	polymorphism_frequency=3.214e-01	polymorphism_score=17.6	prediction=polymorphism	ref_cov=9/10	total_cov=12/16
-RA	94	.	NODE_2_length_517362_cov_10.498810	302321	0	C	T	bias_e_value=4977950	bias_p_value=0.991863	consensus_reject=FREQUENCY_CUTOFF	consensus_score=38.8	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=0.875173	major_base=C	major_cov=11/9	major_frequency=6.667e-01	minor_base=T	minor_cov=6/4	new_cov=6/4	polymorphism_frequency=3.333e-01	polymorphism_score=21.1	prediction=polymorphism	ref_cov=11/9	total_cov=17/14
-RA	95	.	NODE_2_length_517362_cov_10.498810	302348	0	T	C	bias_e_value=4772420	bias_p_value=0.95091	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.4	fisher_strand_p_value=0.703493	frequency=2.500e-01	ks_quality_p_value=1	major_base=T	major_cov=14/10	major_frequency=7.500e-01	minor_base=C	minor_cov=4/4	new_cov=4/4	polymorphism_frequency=2.500e-01	polymorphism_score=13.8	prediction=polymorphism	ref_cov=14/10	total_cov=18/14
-RA	96	.	NODE_2_length_517362_cov_10.498810	302353	0	C	T	bias_e_value=4710330	bias_p_value=0.938539	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.6	fisher_strand_p_value=0.670548	frequency=2.258e-01	ks_quality_p_value=1	major_base=C	major_cov=14/10	major_frequency=7.742e-01	minor_base=T	minor_cov=3/4	new_cov=3/4	polymorphism_frequency=2.258e-01	polymorphism_score=10.1	prediction=polymorphism	ref_cov=14/10	total_cov=18/14
-RA	97	.	NODE_2_length_517362_cov_10.498810	302354	0	A	G	bias_e_value=4746060	bias_p_value=0.945658	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.2	fisher_strand_p_value=0.703493	frequency=2.500e-01	ks_quality_p_value=0.979382	major_base=A	major_cov=14/10	major_frequency=7.500e-01	minor_base=G	minor_cov=4/4	new_cov=4/4	polymorphism_frequency=2.500e-01	polymorphism_score=14.6	prediction=polymorphism	ref_cov=14/10	total_cov=18/14
-RA	98	.	NODE_30_length_28734_cov_14.265634	36	0	C	A	bias_e_value=4669590	bias_p_value=0.930422	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.9	fisher_strand_p_value=0.769284	frequency=3.913e-01	ks_quality_p_value=0.84619	major_base=C	major_cov=14/14	major_frequency=6.087e-01	minor_base=A	minor_cov=10/8	new_cov=10/8	polymorphism_frequency=3.913e-01	polymorphism_score=48.6	prediction=polymorphism	ref_cov=14/14	total_cov=24/22
-RA	99	.	NODE_30_length_28734_cov_14.265634	128	0	T	G	bias_e_value=2211260	bias_p_value=0.440596	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.1	fisher_strand_p_value=1	frequency=4.894e-01	ks_quality_p_value=0.153195	major_base=T	major_cov=13/11	major_frequency=5.106e-01	minor_base=G	minor_cov=12/11	new_cov=12/11	polymorphism_frequency=4.894e-01	polymorphism_score=82.0	prediction=polymorphism	ref_cov=13/11	total_cov=25/22
-RA	100	.	NODE_30_length_28734_cov_14.265634	273	0	A	G	bias_e_value=1811590	bias_p_value=0.360961	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.3	fisher_strand_p_value=0.581504	frequency=3.818e-01	ks_quality_p_value=0.195571	major_base=A	major_cov=18/16	major_frequency=6.182e-01	minor_base=G	minor_cov=9/12	new_cov=9/12	polymorphism_frequency=3.818e-01	polymorphism_score=59.9	prediction=polymorphism	ref_cov=18/16	total_cov=27/28
-RA	101	.	NODE_30_length_28734_cov_14.265634	433	0	G	A	bias_e_value=4194560	bias_p_value=0.835771	consensus_reject=FREQUENCY_CUTOFF	consensus_score=13.0	fisher_strand_p_value=1	frequency=4.694e-01	ks_quality_p_value=0.484754	major_base=G	major_cov=15/11	major_frequency=5.306e-01	minor_base=A	minor_cov=13/10	new_cov=13/10	polymorphism_frequency=4.694e-01	polymorphism_score=60.4	prediction=polymorphism	ref_cov=15/11	total_cov=28/21
-RA	102	.	NODE_30_length_28734_cov_14.265634	468	0	T	C	bias_e_value=2726150	bias_p_value=0.543188	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.2	fisher_strand_p_value=0.754699	frequency=4.500e-01	ks_quality_p_value=0.28291	major_base=T	major_cov=12/10	major_frequency=5.500e-01	minor_base=C	minor_cov=11/7	new_cov=11/7	polymorphism_frequency=4.500e-01	polymorphism_score=52.0	prediction=polymorphism	ref_cov=12/10	total_cov=23/17
-RA	103	.	NODE_30_length_28734_cov_14.265634	514	0	G	A	bias_e_value=4697980	bias_p_value=0.936077	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.3	fisher_strand_p_value=0.763104	frequency=5.349e-01	ks_quality_p_value=0.870731	major_base=A	major_cov=14/9	major_frequency=5.349e-01	minor_base=G	minor_cov=11/9	new_cov=14/9	polymorphism_frequency=5.349e-01	polymorphism_score=52.8	prediction=polymorphism	ref_cov=11/9	total_cov=25/18
-RA	104	.	NODE_30_length_28734_cov_14.265634	578	0	A	G	bias_e_value=4733390	bias_p_value=0.943133	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.9	fisher_strand_p_value=0.759812	frequency=5.854e-01	ks_quality_p_value=0.897983	major_base=G	major_cov=14/10	major_frequency=5.854e-01	minor_base=A	minor_cov=9/8	new_cov=14/10	polymorphism_frequency=5.854e-01	polymorphism_score=38.2	prediction=polymorphism	ref_cov=9/8	total_cov=23/19
-RA	105	.	NODE_30_length_28734_cov_14.265634	642	0	T	C	bias_e_value=3996700	bias_p_value=0.796347	consensus_reject=FREQUENCY_CUTOFF	consensus_score=30.7	fisher_strand_p_value=0.75772	frequency=6.136e-01	ks_quality_p_value=0.572902	major_base=C	major_cov=15/12	major_frequency=6.136e-01	minor_base=T	minor_cov=8/9	new_cov=15/12	polymorphism_frequency=6.136e-01	polymorphism_score=41.4	prediction=polymorphism	ref_cov=8/9	total_cov=23/22
-RA	106	.	NODE_30_length_28734_cov_14.265634	657	0	A	G	bias_e_value=3861520	bias_p_value=0.769412	consensus_reject=FREQUENCY_CUTOFF	consensus_score=26.3	fisher_strand_p_value=0.763104	frequency=6.087e-01	ks_quality_p_value=0.528334	major_base=G	major_cov=15/13	major_frequency=6.087e-01	minor_base=A	minor_cov=8/10	new_cov=15/13	polymorphism_frequency=6.087e-01	polymorphism_score=39.8	prediction=polymorphism	ref_cov=8/10	total_cov=23/23
-RA	107	.	NODE_30_length_28734_cov_14.265634	679	0	C	G	bias_e_value=1546470	bias_p_value=0.308136	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.6	fisher_strand_p_value=0.772877	frequency=5.208e-01	ks_quality_p_value=0.117212	major_base=G	major_cov=14/11	major_frequency=5.208e-01	minor_base=C	minor_cov=11/12	new_cov=14/11	polymorphism_frequency=5.208e-01	polymorphism_score=76.3	prediction=polymorphism	ref_cov=11/12	total_cov=25/23
-RA	108	.	NODE_30_length_28734_cov_14.265634	935	0	G	T	bias_e_value=4985930	bias_p_value=0.993452	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.6	fisher_strand_p_value=1	frequency=4.667e-01	ks_quality_p_value=0.887766	major_base=G	major_cov=7/9	major_frequency=5.333e-01	minor_base=T	minor_cov=7/7	new_cov=7/7	polymorphism_frequency=4.667e-01	polymorphism_score=38.4	prediction=polymorphism	ref_cov=7/9	total_cov=14/16
-RA	109	.	NODE_31_length_24246_cov_18.602098	11276	0	G	A	bias_e_value=2769800	bias_p_value=0.551886	consensus_reject=FREQUENCY_CUTOFF	consensus_score=18.8	fisher_strand_p_value=0.263542	frequency=3.793e-01	ks_quality_p_value=0.831723	major_base=G	major_cov=7/11	major_frequency=6.207e-01	minor_base=A	minor_cov=7/4	new_cov=7/4	polymorphism_frequency=3.793e-01	polymorphism_score=20.9	prediction=polymorphism	ref_cov=7/11	total_cov=14/15
-RA	110	.	NODE_31_length_24246_cov_18.602098	11295	0	G	C	bias_e_value=1000460	bias_p_value=0.199342	consensus_reject=FREQUENCY_CUTOFF	consensus_score=30.0	fisher_strand_p_value=0.255287	frequency=3.333e-01	ks_quality_p_value=0.195278	major_base=G	major_cov=7/13	major_frequency=6.667e-01	minor_base=C	minor_cov=6/4	new_cov=6/4	polymorphism_frequency=3.333e-01	polymorphism_score=28.4	prediction=polymorphism	ref_cov=7/13	total_cov=13/17
-RA	111	.	NODE_31_length_24246_cov_18.602098	11301	0	C	T	bias_e_value=1781100	bias_p_value=0.354887	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.8	fisher_strand_p_value=0.255287	frequency=3.333e-01	ks_quality_p_value=0.434598	major_base=C	major_cov=7/13	major_frequency=6.667e-01	minor_base=T	minor_cov=6/4	new_cov=6/4	polymorphism_frequency=3.333e-01	polymorphism_score=19.7	prediction=polymorphism	ref_cov=7/13	total_cov=13/17
-RA	112	.	NODE_36_length_12109_cov_16.252963	139	0	A	C	bias_e_value=4605960	bias_p_value=0.917743	consensus_reject=FREQUENCY_CUTOFF	consensus_score=28.7	fisher_strand_p_value=0.640405	frequency=2.500e-01	ks_quality_p_value=0.972604	major_base=A	major_cov=8/10	major_frequency=7.500e-01	minor_base=C	minor_cov=4/2	new_cov=4/2	polymorphism_frequency=2.500e-01	polymorphism_score=10.6	prediction=polymorphism	ref_cov=8/10	total_cov=12/12
-RA	113	.	NODE_37_length_9310_cov_14.248067	128	0	G	A	bias_e_value=4374390	bias_p_value=0.871602	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=6.6	fisher_strand_p_value=0.593212	frequency=4.909e-01	ks_quality_p_value=0.907191	major_base=G	major_cov=15/13	major_frequency=5.091e-01	minor_base=A	minor_cov=12/15	new_cov=12/15	polymorphism_frequency=4.909e-01	polymorphism_score=71.1	prediction=polymorphism	ref_cov=15/13	total_cov=27/28
-RA	114	.	NODE_45_length_3266_cov_14.146862	128	0	A	G	bias_e_value=4422310	bias_p_value=0.88115	consensus_reject=FREQUENCY_CUTOFF	consensus_score=18.7	fisher_strand_p_value=0.666846	frequency=6.522e-01	ks_quality_p_value=0.830683	major_base=G	major_cov=7/8	major_frequency=6.522e-01	minor_base=A	minor_cov=5/3	new_cov=7/8	polymorphism_frequency=6.522e-01	polymorphism_score=16.0	prediction=polymorphism	ref_cov=5/3	total_cov=12/11
-RA	115	.	NODE_45_length_3266_cov_14.146862	209	0	A	G	bias_e_value=4761060	bias_p_value=0.948647	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=3.4	fisher_strand_p_value=0.73028	frequency=4.412e-01	ks_quality_p_value=0.954622	major_base=A	major_cov=11/8	major_frequency=5.588e-01	minor_base=G	minor_cov=7/8	new_cov=7/8	polymorphism_frequency=4.412e-01	polymorphism_score=42.4	prediction=polymorphism	ref_cov=11/8	total_cov=18/16
-RA	116	.	NODE_45_length_3266_cov_14.146862	238	0	G	T	bias_e_value=4493310	bias_p_value=0.895297	consensus_reject=FREQUENCY_CUTOFF	consensus_score=35.9	fisher_strand_p_value=0.70652	frequency=3.667e-01	ks_quality_p_value=0.819253	major_base=G	major_cov=11/8	major_frequency=6.333e-01	minor_base=T	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=3.667e-01	polymorphism_score=28.7	prediction=polymorphism	ref_cov=11/8	total_cov=16/14
-RA	117	.	NODE_45_length_3266_cov_14.146862	294	0	C	T	bias_e_value=3360410	bias_p_value=0.669565	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.6	fisher_strand_p_value=0.307022	frequency=4.054e-01	ks_quality_p_value=1	major_base=C	major_cov=15/7	major_frequency=5.946e-01	minor_base=T	minor_cov=7/8	new_cov=7/8	polymorphism_frequency=4.054e-01	polymorphism_score=32.4	prediction=polymorphism	ref_cov=15/7	total_cov=22/16
-RA	118	.	NODE_45_length_3266_cov_14.146862	377	0	G	A	bias_e_value=4130330	bias_p_value=0.822972	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.2	fisher_strand_p_value=0.730696	frequency=5.405e-01	ks_quality_p_value=0.639811	major_base=A	major_cov=12/8	major_frequency=5.405e-01	minor_base=G	minor_cov=12/5	new_cov=12/8	polymorphism_frequency=5.405e-01	polymorphism_score=47.6	prediction=polymorphism	ref_cov=12/5	total_cov=24/14
-RA	119	.	NODE_45_length_3266_cov_14.146862	516	0	T	G	bias_e_value=4734860	bias_p_value=0.943427	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.7	fisher_strand_p_value=0.777005	frequency=5.490e-01	ks_quality_p_value=0.879104	major_base=G	major_cov=15/13	major_frequency=5.490e-01	minor_base=T	minor_cov=14/9	new_cov=15/13	polymorphism_frequency=5.490e-01	polymorphism_score=58.6	prediction=polymorphism	ref_cov=14/9	total_cov=30/22
-RA	120	.	NODE_45_length_3266_cov_14.146862	546	0	T	G	bias_e_value=3144660	bias_p_value=0.626578	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.5	fisher_strand_p_value=0.561818	frequency=5.306e-01	ks_quality_p_value=0.484754	major_base=G	major_cov=14/12	major_frequency=5.306e-01	minor_base=T	minor_cov=15/8	new_cov=14/12	polymorphism_frequency=5.306e-01	polymorphism_score=60.2	prediction=polymorphism	ref_cov=15/8	total_cov=29/20
-RA	121	.	NODE_45_length_3266_cov_14.146862	556	0	G	A	bias_e_value=1166840	bias_p_value=0.232495	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-6.4	fisher_strand_p_value=0.546718	frequency=5.455e-01	ks_quality_p_value=0.112154	major_base=A	major_cov=13/11	major_frequency=5.455e-01	minor_base=G	minor_cov=13/7	new_cov=13/11	polymorphism_frequency=5.455e-01	polymorphism_score=54.4	prediction=polymorphism	ref_cov=13/7	total_cov=27/18
-RA	122	.	NODE_45_length_3266_cov_14.146862	575	0	T	C	bias_e_value=432636	bias_p_value=0.0862033	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.7	fisher_strand_p_value=0.500041	frequency=5.676e-01	ks_quality_p_value=0.0339658	major_base=C	major_cov=11/10	major_frequency=5.676e-01	minor_base=T	minor_cov=11/5	new_cov=11/10	polymorphism_frequency=5.676e-01	polymorphism_score=37.6	prediction=polymorphism	ref_cov=11/5	total_cov=22/16
-RA	123	.	NODE_45_length_3266_cov_14.146862	597	0	G	T	bias_e_value=369015	bias_p_value=0.0735266	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.9	fisher_strand_p_value=0.500103	frequency=5.429e-01	ks_quality_p_value=0.0278841	major_base=T	major_cov=9/10	major_frequency=5.429e-01	minor_base=G	minor_cov=10/6	new_cov=9/10	polymorphism_frequency=5.429e-01	polymorphism_score=56.3	prediction=polymorphism	ref_cov=10/6	total_cov=19/16
-RA	124	.	NODE_45_length_3266_cov_14.146862	600	0	T	G	bias_e_value=818678	bias_p_value=0.163123	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.9	fisher_strand_p_value=0.490529	frequency=5.152e-01	ks_quality_p_value=0.0780017	major_base=G	major_cov=8/9	major_frequency=5.152e-01	minor_base=T	minor_cov=10/6	new_cov=8/9	polymorphism_frequency=5.152e-01	polymorphism_score=47.6	prediction=polymorphism	ref_cov=10/6	total_cov=18/15
-RA	125	.	NODE_45_length_3266_cov_14.146862	601	0	A	G	bias_e_value=789153	bias_p_value=0.15724	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.6	fisher_strand_p_value=0.490529	frequency=5.152e-01	ks_quality_p_value=0.0743531	major_base=G	major_cov=8/9	major_frequency=5.152e-01	minor_base=A	minor_cov=10/6	new_cov=8/9	polymorphism_frequency=5.152e-01	polymorphism_score=40.1	prediction=polymorphism	ref_cov=10/6	total_cov=18/15
-RA	126	.	NODE_45_length_3266_cov_14.146862	622	0	A	T	bias_e_value=4313830	bias_p_value=0.859536	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.0	fisher_strand_p_value=0.543374	frequency=5.000e-01	ks_quality_p_value=0.955563	major_base=A	major_cov=14/8	major_frequency=5.000e-01	minor_base=T	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=5.000e-01	polymorphism_score=60.5	prediction=polymorphism	ref_cov=14/8	total_cov=25/19
-RA	127	.	NODE_45_length_3266_cov_14.146862	655	0	G	A	bias_e_value=4340360	bias_p_value=0.864821	consensus_reject=FREQUENCY_CUTOFF	consensus_score=17.7	fisher_strand_p_value=0.547169	frequency=4.419e-01	ks_quality_p_value=0.963848	major_base=G	major_cov=14/10	major_frequency=5.581e-01	minor_base=A	minor_cov=9/10	new_cov=9/10	polymorphism_frequency=4.419e-01	polymorphism_score=45.5	prediction=polymorphism	ref_cov=14/10	total_cov=24/20
-RA	128	.	NODE_45_length_3266_cov_14.146862	658	0	G	A	bias_e_value=4336810	bias_p_value=0.864115	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.8	fisher_strand_p_value=0.537029	frequency=4.146e-01	ks_quality_p_value=0.979997	major_base=G	major_cov=14/10	major_frequency=5.854e-01	minor_base=A	minor_cov=8/9	new_cov=8/9	polymorphism_frequency=4.146e-01	polymorphism_score=40.7	prediction=polymorphism	ref_cov=14/10	total_cov=24/19
-RA	129	.	NODE_45_length_3266_cov_14.146862	686	0	C	T	bias_e_value=4290510	bias_p_value=0.854889	consensus_reject=FREQUENCY_CUTOFF	consensus_score=18.9	fisher_strand_p_value=0.77613	frequency=4.400e-01	ks_quality_p_value=0.659954	major_base=C	major_cov=15/13	major_frequency=5.600e-01	minor_base=T	minor_cov=10/12	new_cov=10/12	polymorphism_frequency=4.400e-01	polymorphism_score=57.3	prediction=polymorphism	ref_cov=15/13	total_cov=26/25
-RA	130	.	NODE_45_length_3266_cov_14.146862	728	0	A	G	bias_e_value=3220310	bias_p_value=0.64165	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.8	fisher_strand_p_value=1	frequency=4.906e-01	ks_quality_p_value=0.284124	major_base=A	major_cov=14/13	major_frequency=5.094e-01	minor_base=G	minor_cov=14/12	new_cov=14/12	polymorphism_frequency=4.906e-01	polymorphism_score=78.1	prediction=polymorphism	ref_cov=14/13	total_cov=28/25
-RA	131	.	NODE_45_length_3266_cov_14.146862	732	0	C	T	bias_e_value=5017120	bias_p_value=0.999667	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.3	fisher_strand_p_value=1	frequency=4.906e-01	ks_quality_p_value=0.974318	major_base=C	major_cov=14/13	major_frequency=5.094e-01	minor_base=T	minor_cov=14/12	new_cov=14/12	polymorphism_frequency=4.906e-01	polymorphism_score=68.9	prediction=polymorphism	ref_cov=14/13	total_cov=28/25
-RA	132	.	NODE_45_length_3266_cov_14.146862	733	0	A	G	bias_e_value=4863450	bias_p_value=0.969048	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=4.6	fisher_strand_p_value=0.785696	frequency=5.094e-01	ks_quality_p_value=0.969512	major_base=G	major_cov=15/12	major_frequency=5.094e-01	minor_base=A	minor_cov=13/13	new_cov=15/12	polymorphism_frequency=5.094e-01	polymorphism_score=69.1	prediction=polymorphism	ref_cov=13/13	total_cov=28/25
-RA	133	.	NODE_45_length_3266_cov_14.146862	740	0	A	G	bias_e_value=5014550	bias_p_value=0.999156	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-0.2	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=0.959189	major_base=G	major_cov=13/11	major_frequency=5.000e-01	minor_base=A	minor_cov=13/11	new_cov=13/11	polymorphism_frequency=5.000e-01	polymorphism_score=66.1	prediction=polymorphism	ref_cov=13/11	total_cov=26/22
-RA	134	.	NODE_45_length_3266_cov_14.146862	889	0	G	A	bias_e_value=4859710	bias_p_value=0.968302	consensus_reject=FREQUENCY_CUTOFF	consensus_score=84.6	fisher_strand_p_value=0.768931	frequency=2.830e-01	ks_quality_p_value=0.987108	major_base=G	major_cov=22/16	major_frequency=7.170e-01	minor_base=A	minor_cov=8/7	new_cov=8/7	polymorphism_frequency=2.830e-01	polymorphism_score=33.1	prediction=polymorphism	ref_cov=22/16	total_cov=30/23
-RA	135	.	NODE_45_length_3266_cov_14.146862	2321	0	C	T	bias_e_value=2576390	bias_p_value=0.513349	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-6.4	fisher_strand_p_value=0.756901	frequency=5.238e-01	ks_quality_p_value=0.257284	major_base=T	major_cov=13/9	major_frequency=5.238e-01	minor_base=C	minor_cov=10/10	new_cov=13/9	polymorphism_frequency=5.238e-01	polymorphism_score=56.7	prediction=polymorphism	ref_cov=10/10	total_cov=23/19
-RA	136	.	NODE_45_length_3266_cov_14.146862	2449	0	A	G	bias_e_value=1194320	bias_p_value=0.237969	consensus_reject=FREQUENCY_CUTOFF	consensus_score=31.6	fisher_strand_p_value=0.452106	frequency=6.774e-01	ks_quality_p_value=0.139987	major_base=G	major_cov=11/10	major_frequency=6.774e-01	minor_base=A	minor_cov=7/3	new_cov=11/10	polymorphism_frequency=6.774e-01	polymorphism_score=22.2	prediction=polymorphism	ref_cov=7/3	total_cov=18/13
-RA	137	.	NODE_45_length_3266_cov_14.146862	2452	0	G	C	bias_e_value=3171920	bias_p_value=0.632008	consensus_reject=FREQUENCY_CUTOFF	consensus_score=35.9	fisher_strand_p_value=0.452106	frequency=6.774e-01	ks_quality_p_value=0.611677	major_base=C	major_cov=11/10	major_frequency=6.774e-01	minor_base=G	minor_cov=7/3	new_cov=11/10	polymorphism_frequency=6.774e-01	polymorphism_score=31.5	prediction=polymorphism	ref_cov=7/3	total_cov=18/13
-RA	138	.	NODE_45_length_3266_cov_14.146862	2686	0	G	A	bias_e_value=3953020	bias_p_value=0.787643	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.5	fisher_strand_p_value=0.74487	frequency=6.316e-01	ks_quality_p_value=0.56898	major_base=A	major_cov=12/12	major_frequency=6.316e-01	minor_base=G	minor_cov=6/8	new_cov=12/12	polymorphism_frequency=6.316e-01	polymorphism_score=31.6	prediction=polymorphism	ref_cov=6/8	total_cov=18/20
-RA	139	.	NODE_45_length_3266_cov_14.146862	2884	0	A	C	bias_e_value=2591140	bias_p_value=0.516288	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.2	fisher_strand_p_value=1	frequency=4.118e-01	ks_quality_p_value=0.19654	major_base=A	major_cov=9/11	major_frequency=5.882e-01	minor_base=C	minor_cov=7/7	new_cov=7/7	polymorphism_frequency=4.118e-01	polymorphism_score=45.2	prediction=polymorphism	ref_cov=9/11	total_cov=16/18
-RA	140	.	NODE_45_length_3266_cov_14.146862	2920	0	G	A	bias_e_value=4264290	bias_p_value=0.849665	consensus_reject=FREQUENCY_CUTOFF	consensus_score=12.8	fisher_strand_p_value=1	frequency=4.062e-01	ks_quality_p_value=0.504488	major_base=G	major_cov=8/11	major_frequency=5.938e-01	minor_base=A	minor_cov=6/7	new_cov=6/7	polymorphism_frequency=4.062e-01	polymorphism_score=31.3	prediction=polymorphism	ref_cov=8/11	total_cov=14/18
-RA	141	.	NODE_45_length_3266_cov_14.146862	3004	0	A	G	bias_e_value=2671810	bias_p_value=0.532362	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.9	fisher_strand_p_value=0.509456	frequency=3.023e-01	ks_quality_p_value=0.40548	major_base=A	major_cov=12/18	major_frequency=6.977e-01	minor_base=G	minor_cov=7/6	new_cov=7/6	polymorphism_frequency=3.023e-01	polymorphism_score=32.7	prediction=polymorphism	ref_cov=12/18	total_cov=20/24
-RA	142	.	NODE_45_length_3266_cov_14.146862	3031	0	A	T	bias_e_value=2119210	bias_p_value=0.422255	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.2	fisher_strand_p_value=0.202304	frequency=3.571e-01	ks_quality_p_value=0.70974	major_base=A	major_cov=10/17	major_frequency=6.429e-01	minor_base=T	minor_cov=9/6	new_cov=9/6	polymorphism_frequency=3.571e-01	polymorphism_score=43.6	prediction=polymorphism	ref_cov=10/17	total_cov=19/23
-RA	143	.	NODE_45_length_3266_cov_14.146862	3034	0	T	C	bias_e_value=3029110	bias_p_value=0.603553	consensus_reject=FREQUENCY_CUTOFF	consensus_score=22.9	fisher_strand_p_value=0.341269	frequency=3.721e-01	ks_quality_p_value=0.74742	major_base=T	major_cov=10/17	major_frequency=6.279e-01	minor_base=C	minor_cov=9/7	new_cov=9/7	polymorphism_frequency=3.721e-01	polymorphism_score=43.1	prediction=polymorphism	ref_cov=10/17	total_cov=19/25
-RA	144	.	NODE_45_length_3266_cov_14.146862	3076	0	T	C	bias_e_value=2956280	bias_p_value=0.589043	consensus_reject=FREQUENCY_CUTOFF	consensus_score=11.0	fisher_strand_p_value=0.24461	frequency=5.217e-01	ks_quality_p_value=1	major_base=C	major_cov=12/12	major_frequency=5.217e-01	minor_base=T	minor_cov=7/15	new_cov=12/12	polymorphism_frequency=5.217e-01	polymorphism_score=56.0	prediction=polymorphism	ref_cov=7/15	total_cov=19/27
-RA	145	.	NODE_45_length_3266_cov_14.146862	3088	0	A	G	bias_e_value=2799690	bias_p_value=0.557841	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=8.6	fisher_strand_p_value=0.25159	frequency=5.102e-01	ks_quality_p_value=0.88692	major_base=G	major_cov=13/12	major_frequency=5.102e-01	minor_base=A	minor_cov=8/16	new_cov=13/12	polymorphism_frequency=5.102e-01	polymorphism_score=60.2	prediction=polymorphism	ref_cov=8/16	total_cov=21/28
-RA	146	.	NODE_45_length_3266_cov_14.146862	3139	0	G	A	bias_e_value=2365490	bias_p_value=0.471326	consensus_reject=FREQUENCY_CUTOFF	consensus_score=49.5	fisher_strand_p_value=0.220218	frequency=6.809e-01	ks_quality_p_value=0.772201	major_base=A	major_cov=15/17	major_frequency=6.809e-01	minor_base=G	minor_cov=4/11	new_cov=15/17	polymorphism_frequency=6.809e-01	polymorphism_score=35.0	prediction=polymorphism	ref_cov=4/11	total_cov=20/28
-RA	147	.	NODE_46_length_3035_cov_21.330124	1694	0	A	G	bias_e_value=4732440	bias_p_value=0.942944	consensus_reject=FREQUENCY_CUTOFF	consensus_score=51.8	fisher_strand_p_value=0.731094	frequency=6.923e-01	ks_quality_p_value=0.93258	major_base=G	major_cov=13/14	major_frequency=6.923e-01	minor_base=A	minor_cov=7/5	new_cov=13/14	polymorphism_frequency=6.923e-01	polymorphism_score=25.0	prediction=polymorphism	ref_cov=7/5	total_cov=20/19
-RA	148	.	NODE_46_length_3035_cov_21.330124	1703	0	C	T	bias_e_value=4993560	bias_p_value=0.994973	consensus_reject=FREQUENCY_CUTOFF	consensus_score=36.2	fisher_strand_p_value=1	frequency=6.757e-01	ks_quality_p_value=0.90142	major_base=T	major_cov=13/12	major_frequency=6.757e-01	minor_base=C	minor_cov=7/5	new_cov=13/12	polymorphism_frequency=6.757e-01	polymorphism_score=30.8	prediction=polymorphism	ref_cov=7/5	total_cov=20/19
-RA	149	.	NODE_46_length_3035_cov_21.330124	1725	0	G	A	bias_e_value=4615940	bias_p_value=0.919731	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.6	fisher_strand_p_value=1	frequency=6.429e-01	ks_quality_p_value=0.627089	major_base=A	major_cov=13/14	major_frequency=6.429e-01	minor_base=G	minor_cov=8/7	new_cov=13/14	polymorphism_frequency=6.429e-01	polymorphism_score=38.8	prediction=polymorphism	ref_cov=8/7	total_cov=21/21
-RA	150	.	NODE_46_length_3035_cov_21.330124	1742	0	G	A	bias_e_value=3749630	bias_p_value=0.747118	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.1	fisher_strand_p_value=0.763104	frequency=6.087e-01	ks_quality_p_value=0.497203	major_base=A	major_cov=13/15	major_frequency=6.087e-01	minor_base=G	minor_cov=10/8	new_cov=13/15	polymorphism_frequency=6.087e-01	polymorphism_score=51.7	prediction=polymorphism	ref_cov=10/8	total_cov=23/23
-RA	151	.	NODE_46_length_3035_cov_21.330124	1747	0	A	G	bias_e_value=4800380	bias_p_value=0.956482	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.2	fisher_strand_p_value=0.763104	frequency=6.087e-01	ks_quality_p_value=0.943352	major_base=G	major_cov=13/15	major_frequency=6.087e-01	minor_base=A	minor_cov=10/8	new_cov=13/15	polymorphism_frequency=6.087e-01	polymorphism_score=45.6	prediction=polymorphism	ref_cov=10/8	total_cov=23/23
-RA	152	.	NODE_46_length_3035_cov_21.330124	1764	0	T	A	bias_e_value=4400940	bias_p_value=0.876892	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.0	fisher_strand_p_value=0.546807	frequency=6.087e-01	ks_quality_p_value=1	major_base=A	major_cov=12/16	major_frequency=6.087e-01	minor_base=T	minor_cov=10/8	new_cov=12/16	polymorphism_frequency=6.087e-01	polymorphism_score=49.1	prediction=polymorphism	ref_cov=10/8	total_cov=22/24
-RA	153	.	NODE_46_length_3035_cov_21.330124	1817	0	G	A	bias_e_value=3248160	bias_p_value=0.6472	consensus_reject=FREQUENCY_CUTOFF	consensus_score=19.7	fisher_strand_p_value=0.49786	frequency=6.216e-01	ks_quality_p_value=0.579605	major_base=A	major_cov=11/12	major_frequency=6.216e-01	minor_base=G	minor_cov=9/5	new_cov=11/12	polymorphism_frequency=6.216e-01	polymorphism_score=37.7	prediction=polymorphism	ref_cov=9/5	total_cov=20/17
-RA	154	.	NODE_46_length_3035_cov_21.330124	1951	0	A	G	bias_e_value=4071560	bias_p_value=0.811263	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=6.5	fisher_strand_p_value=1	frequency=4.242e-01	ks_quality_p_value=0.452431	major_base=A	major_cov=11/8	major_frequency=5.758e-01	minor_base=G	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=4.242e-01	polymorphism_score=34.3	prediction=polymorphism	ref_cov=11/8	total_cov=19/14
-RA	155	.	NODE_46_length_3035_cov_21.330124	2024	0	G	A	bias_e_value=3895750	bias_p_value=0.776233	consensus_reject=FREQUENCY_CUTOFF	consensus_score=38.4	fisher_strand_p_value=0.711953	frequency=3.125e-01	ks_quality_p_value=0.57695	major_base=G	major_cov=13/9	major_frequency=6.875e-01	minor_base=A	minor_cov=5/5	new_cov=5/5	polymorphism_frequency=3.125e-01	polymorphism_score=19.4	prediction=polymorphism	ref_cov=13/9	total_cov=19/14
-RA	156	.	NODE_46_length_3035_cov_21.330124	2079	0	G	A	bias_e_value=4767400	bias_p_value=0.94991	consensus_reject=FREQUENCY_CUTOFF	consensus_score=41.9	fisher_strand_p_value=0.734239	frequency=3.421e-01	ks_quality_p_value=0.954277	major_base=G	major_cov=14/11	major_frequency=6.579e-01	minor_base=A	minor_cov=6/7	new_cov=6/7	polymorphism_frequency=3.421e-01	polymorphism_score=28.5	prediction=polymorphism	ref_cov=14/11	total_cov=20/18
-RA	157	.	NODE_46_length_3035_cov_21.330124	2080	0	A	C	bias_e_value=5018710	bias_p_value=0.999984	consensus_reject=FREQUENCY_CUTOFF	consensus_score=28.9	fisher_strand_p_value=1	frequency=3.684e-01	ks_quality_p_value=0.994377	major_base=A	major_cov=13/11	major_frequency=6.316e-01	minor_base=C	minor_cov=7/7	new_cov=7/7	polymorphism_frequency=3.684e-01	polymorphism_score=39.9	prediction=polymorphism	ref_cov=13/11	total_cov=20/18
-RA	158	.	NODE_46_length_3035_cov_21.330124	2132	0	T	C	bias_e_value=4955050	bias_p_value=0.9873	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.3	fisher_strand_p_value=1	frequency=4.634e-01	ks_quality_p_value=0.844919	major_base=T	major_cov=11/11	major_frequency=5.366e-01	minor_base=C	minor_cov=9/10	new_cov=9/10	polymorphism_frequency=4.634e-01	polymorphism_score=53.6	prediction=polymorphism	ref_cov=11/11	total_cov=20/21
-RA	159	.	NODE_46_length_3035_cov_21.330124	2178	0	T	G	bias_e_value=1888330	bias_p_value=0.376252	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.3	fisher_strand_p_value=0.354298	frequency=5.366e-01	ks_quality_p_value=0.341126	major_base=G	major_cov=9/13	major_frequency=5.366e-01	minor_base=T	minor_cov=11/8	new_cov=9/13	polymorphism_frequency=5.366e-01	polymorphism_score=53.0	prediction=polymorphism	ref_cov=11/8	total_cov=21/21
-RA	160	.	NODE_46_length_3035_cov_21.330124	2387	0	A	T	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.7	fisher_strand_p_value=1	frequency=4.062e-01	ks_quality_p_value=1	major_base=A	major_cov=10/9	major_frequency=5.938e-01	minor_base=T	minor_cov=6/7	new_cov=6/7	polymorphism_frequency=4.062e-01	polymorphism_score=27.2	prediction=polymorphism	ref_cov=10/9	total_cov=17/16
-RA	161	.	NODE_46_length_3035_cov_21.330124	2402	0	A	G	bias_e_value=5018790	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.5	fisher_strand_p_value=1	frequency=6.000e-01	ks_quality_p_value=1	major_base=G	major_cov=9/9	major_frequency=6.000e-01	minor_base=A	minor_cov=6/6	new_cov=9/9	polymorphism_frequency=6.000e-01	polymorphism_score=23.4	prediction=polymorphism	ref_cov=6/6	total_cov=16/15
-RA	162	.	NODE_46_length_3035_cov_21.330124	2415	0	T	C	bias_e_value=4753500	bias_p_value=0.947141	consensus_reject=FREQUENCY_CUTOFF	consensus_score=17.1	fisher_strand_p_value=1	frequency=6.129e-01	ks_quality_p_value=0.693001	major_base=C	major_cov=10/9	major_frequency=6.129e-01	minor_base=T	minor_cov=6/6	new_cov=10/9	polymorphism_frequency=6.129e-01	polymorphism_score=27.2	prediction=polymorphism	ref_cov=6/6	total_cov=17/15
-RA	163	.	NODE_46_length_3035_cov_21.330124	2439	0	A	G	bias_e_value=5018790	bias_p_value=0.999999	consensus_reject=FREQUENCY_CUTOFF	consensus_score=17.0	fisher_strand_p_value=1	frequency=5.667e-01	ks_quality_p_value=0.998794	major_base=G	major_cov=9/8	major_frequency=5.667e-01	minor_base=A	minor_cov=6/7	new_cov=9/8	polymorphism_frequency=5.667e-01	polymorphism_score=24.1	prediction=polymorphism	ref_cov=6/7	total_cov=15/15
-RA	164	.	NODE_46_length_3035_cov_21.330124	2460	0	G	A	bias_e_value=3998060	bias_p_value=0.796618	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=8.4	fisher_strand_p_value=0.703567	frequency=4.286e-01	ks_quality_p_value=0.617459	major_base=G	major_cov=9/7	major_frequency=5.714e-01	minor_base=A	minor_cov=5/7	new_cov=5/7	polymorphism_frequency=4.286e-01	polymorphism_score=27.5	prediction=polymorphism	ref_cov=9/7	total_cov=15/14
-RA	165	.	NODE_46_length_3035_cov_21.330124	2528	0	T	C	bias_e_value=4014810	bias_p_value=0.799956	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.2	fisher_strand_p_value=1	frequency=5.312e-01	ks_quality_p_value=0.43845	major_base=C	major_cov=10/7	major_frequency=5.312e-01	minor_base=T	minor_cov=8/7	new_cov=10/7	polymorphism_frequency=5.312e-01	polymorphism_score=38.8	prediction=polymorphism	ref_cov=8/7	total_cov=19/15
-RA	166	.	NODE_46_length_3035_cov_21.330124	2791	0	A	G	bias_e_value=4861770	bias_p_value=0.968714	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=8.1	fisher_strand_p_value=0.760517	frequency=5.250e-01	ks_quality_p_value=1	major_base=G	major_cov=11/10	major_frequency=5.250e-01	minor_base=A	minor_cov=11/8	new_cov=11/10	polymorphism_frequency=5.250e-01	polymorphism_score=46.9	prediction=polymorphism	ref_cov=11/8	total_cov=22/20
-RA	167	.	NODE_46_length_3035_cov_21.330124	2814	0	T	A	bias_e_value=1462600	bias_p_value=0.291424	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.7	fisher_strand_p_value=1	frequency=4.062e-01	ks_quality_p_value=0.0837424	major_base=T	major_cov=11/8	major_frequency=5.938e-01	minor_base=A	minor_cov=7/6	new_cov=7/6	polymorphism_frequency=4.062e-01	polymorphism_score=36.3	prediction=polymorphism	ref_cov=11/8	total_cov=18/15
-RA	168	.	NODE_46_length_3035_cov_21.330124	2908	0	G	A	bias_e_value=3693870	bias_p_value=0.736007	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.3	fisher_strand_p_value=0.370709	frequency=6.957e-01	ks_quality_p_value=0.993037	major_base=A	major_cov=7/9	major_frequency=6.957e-01	minor_base=G	minor_cov=5/2	new_cov=7/9	polymorphism_frequency=6.957e-01	polymorphism_score=15.5	prediction=polymorphism	ref_cov=5/2	total_cov=13/11
-RA	169	.	NODE_4_length_368643_cov_12.847952	364791	0	G	T	bias_e_value=4153570	bias_p_value=0.827604	consensus_reject=FREQUENCY_CUTOFF	consensus_score=13.0	fisher_strand_p_value=0.642415	frequency=7.000e-01	ks_quality_p_value=0.737299	major_base=T	major_cov=9/5	major_frequency=7.000e-01	minor_base=G	minor_cov=3/3	new_cov=9/5	polymorphism_frequency=7.000e-01	polymorphism_score=11.9	prediction=polymorphism	ref_cov=3/3	total_cov=12/8
-RA	170	.	NODE_4_length_368643_cov_12.847952	364813	0	T	G	bias_e_value=4554280	bias_p_value=0.907445	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.7	fisher_strand_p_value=0.65702	frequency=6.522e-01	ks_quality_p_value=0.916053	major_base=G	major_cov=10/5	major_frequency=6.522e-01	minor_base=T	minor_cov=4/4	new_cov=10/5	polymorphism_frequency=6.522e-01	polymorphism_score=15.2	prediction=polymorphism	ref_cov=4/4	total_cov=14/9
-RA	171	.	NODE_4_length_368643_cov_12.847952	364816	0	C	G	bias_e_value=3765210	bias_p_value=0.750223	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.8	fisher_strand_p_value=0.382636	frequency=6.087e-01	ks_quality_p_value=1	major_base=G	major_cov=10/4	major_frequency=6.087e-01	minor_base=C	minor_cov=4/5	new_cov=10/4	polymorphism_frequency=6.087e-01	polymorphism_score=20.2	prediction=polymorphism	ref_cov=4/5	total_cov=14/9
-RA	172	.	NODE_4_length_368643_cov_12.847952	365241	0	C	T	bias_e_value=4747700	bias_p_value=0.945984	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.7	fisher_strand_p_value=0.734539	frequency=5.312e-01	ks_quality_p_value=0.939183	major_base=T	major_cov=8/9	major_frequency=5.312e-01	minor_base=C	minor_cov=6/9	new_cov=8/9	polymorphism_frequency=5.312e-01	polymorphism_score=39.1	prediction=polymorphism	ref_cov=6/9	total_cov=14/18
-RA	173	.	NODE_4_length_368643_cov_12.847952	365248	0	C	T	bias_e_value=4757400	bias_p_value=0.947918	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.8	fisher_strand_p_value=0.734539	frequency=5.312e-01	ks_quality_p_value=0.946346	major_base=T	major_cov=8/9	major_frequency=5.312e-01	minor_base=C	minor_cov=6/9	new_cov=8/9	polymorphism_frequency=5.312e-01	polymorphism_score=42.4	prediction=polymorphism	ref_cov=6/9	total_cov=14/18
-RA	174	.	NODE_4_length_368643_cov_12.847952	365251	0	A	T	bias_e_value=4757400	bias_p_value=0.947918	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.8	fisher_strand_p_value=0.734539	frequency=5.312e-01	ks_quality_p_value=0.946346	major_base=T	major_cov=8/9	major_frequency=5.312e-01	minor_base=A	minor_cov=6/9	new_cov=8/9	polymorphism_frequency=5.312e-01	polymorphism_score=45.0	prediction=polymorphism	ref_cov=6/9	total_cov=14/18
-RA	175	.	NODE_4_length_368643_cov_12.847952	365252	0	C	T	bias_e_value=4757400	bias_p_value=0.947918	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.7	fisher_strand_p_value=0.734539	frequency=5.312e-01	ks_quality_p_value=0.946346	major_base=T	major_cov=8/9	major_frequency=5.312e-01	minor_base=C	minor_cov=6/9	new_cov=8/9	polymorphism_frequency=5.312e-01	polymorphism_score=40.7	prediction=polymorphism	ref_cov=6/9	total_cov=14/18
-RA	176	.	NODE_4_length_368643_cov_12.847952	365278	0	G	A	bias_e_value=5018580	bias_p_value=0.999958	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.8	fisher_strand_p_value=1	frequency=5.357e-01	ks_quality_p_value=0.990884	major_base=A	major_cov=6/9	major_frequency=5.357e-01	minor_base=G	minor_cov=5/8	new_cov=6/9	polymorphism_frequency=5.357e-01	polymorphism_score=35.1	prediction=polymorphism	ref_cov=5/8	total_cov=12/17
-RA	177	.	NODE_4_length_368643_cov_12.847952	365284	0	G	A	bias_e_value=5004680	bias_p_value=0.997189	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.1	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=0.925961	major_base=G	major_cov=5/8	major_frequency=5.000e-01	minor_base=A	minor_cov=6/7	new_cov=6/7	polymorphism_frequency=5.000e-01	polymorphism_score=31.2	prediction=polymorphism	ref_cov=5/8	total_cov=11/15
-RA	178	.	NODE_4_length_368643_cov_12.847952	365293	0	G	A	bias_e_value=4707760	bias_p_value=0.938027	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.1	fisher_strand_p_value=0.669269	frequency=5.652e-01	ks_quality_p_value=1	major_base=A	major_cov=6/7	major_frequency=5.652e-01	minor_base=G	minor_cov=3/7	new_cov=6/7	polymorphism_frequency=5.652e-01	polymorphism_score=25.0	prediction=polymorphism	ref_cov=3/7	total_cov=10/14
-RA	179	.	NODE_5_length_279151_cov_14.249853	175	0	T	A	bias_e_value=4923130	bias_p_value=0.980939	consensus_reject=FREQUENCY_CUTOFF	consensus_score=183.1	fisher_strand_p_value=0.821022	frequency=2.600e-01	ks_quality_p_value=0.988055	major_base=T	major_cov=40/34	major_frequency=7.400e-01	minor_base=A	minor_cov=15/11	new_cov=15/11	polymorphism_frequency=2.600e-01	polymorphism_score=71.6	prediction=polymorphism	ref_cov=40/34	total_cov=58/50
-RA	180	.	NODE_5_length_279151_cov_14.249853	186	0	A	T	bias_e_value=3975970	bias_p_value=0.792216	consensus_reject=FREQUENCY_CUTOFF	consensus_score=163.6	fisher_strand_p_value=1	frequency=2.800e-01	ks_quality_p_value=0.429183	major_base=A	major_cov=40/32	major_frequency=7.200e-01	minor_base=T	minor_cov=16/12	new_cov=16/12	polymorphism_frequency=2.800e-01	polymorphism_score=83.6	prediction=polymorphism	ref_cov=40/32	total_cov=60/51
-RA	181	.	NODE_5_length_279151_cov_14.249853	358	0	C	T	bias_e_value=2723790	bias_p_value=0.542717	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.3	fisher_strand_p_value=0.547062	frequency=5.882e-01	ks_quality_p_value=0.389732	major_base=T	major_cov=33/27	major_frequency=5.882e-01	minor_base=C	minor_cov=20/22	new_cov=33/27	polymorphism_frequency=5.882e-01	polymorphism_score=121.3	prediction=polymorphism	ref_cov=20/22	total_cov=53/49
-RA	182	.	NODE_5_length_279151_cov_14.249853	430	0	A	G	bias_e_value=3242090	bias_p_value=0.645989	consensus_reject=FREQUENCY_CUTOFF	consensus_score=68.4	fisher_strand_p_value=0.766355	frequency=3.019e-01	ks_quality_p_value=0.375269	major_base=A	major_cov=19/18	major_frequency=6.981e-01	minor_base=G	minor_cov=7/9	new_cov=7/9	polymorphism_frequency=3.019e-01	polymorphism_score=39.5	prediction=polymorphism	ref_cov=19/18	total_cov=27/28
-RA	183	.	NODE_9_length_197629_cov_13.429418	431	0	G	A	bias_e_value=4996560	bias_p_value=0.995569	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.0	fisher_strand_p_value=1	frequency=4.375e-01	ks_quality_p_value=0.907354	major_base=G	major_cov=5/4	major_frequency=5.625e-01	minor_base=A	minor_cov=4/3	new_cov=4/3	polymorphism_frequency=4.375e-01	polymorphism_score=11.2	prediction=polymorphism	ref_cov=5/4	total_cov=9/7
-RA	184	.	NODE_9_length_197629_cov_13.429418	518	0	T	G	bias_e_value=4670620	bias_p_value=0.930627	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-0.9	fisher_strand_p_value=1	frequency=5.714e-01	ks_quality_p_value=0.651439	major_base=G	major_cov=3/5	major_frequency=5.714e-01	minor_base=T	minor_cov=2/4	new_cov=3/5	polymorphism_frequency=5.714e-01	polymorphism_score=14.9	prediction=polymorphism	ref_cov=2/4	total_cov=5/9
-RA	185	.	NODE_9_length_197629_cov_13.429418	548	0	G	A	bias_e_value=4384410	bias_p_value=0.873599	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.1	fisher_strand_p_value=0.608392	frequency=4.667e-01	ks_quality_p_value=0.889882	major_base=G	major_cov=2/6	major_frequency=5.333e-01	minor_base=A	minor_cov=3/4	new_cov=3/4	polymorphism_frequency=4.667e-01	polymorphism_score=15.6	prediction=polymorphism	ref_cov=2/6	total_cov=5/10
-RA	186	.	NODE_9_length_197629_cov_13.429418	569	0	T	C	bias_e_value=2449360	bias_p_value=0.488038	consensus_reject=FREQUENCY_CUTOFF	consensus_score=28.7	fisher_strand_p_value=1	frequency=2.800e-01	ks_quality_p_value=0.179636	major_base=T	major_cov=8/10	major_frequency=7.200e-01	minor_base=C	minor_cov=3/4	new_cov=3/4	polymorphism_frequency=2.800e-01	polymorphism_score=15.3	prediction=polymorphism	ref_cov=8/10	total_cov=11/14
-RA	187	.	NODE_9_length_197629_cov_13.429418	749	0	A	G	bias_e_value=4189840	bias_p_value=0.83483	consensus_reject=FREQUENCY_CUTOFF	consensus_score=82.0	fisher_strand_p_value=0.721232	frequency=2.000e-01	ks_quality_p_value=0.67032	major_base=A	major_cov=15/21	major_frequency=8.000e-01	minor_base=G	minor_cov=3/6	new_cov=3/6	polymorphism_frequency=2.000e-01	polymorphism_score=19.9	prediction=polymorphism	ref_cov=15/21	total_cov=18/27
-RA	188	.	NODE_9_length_197629_cov_13.429418	764	0	C	T	bias_e_value=4383430	bias_p_value=0.873403	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.2	fisher_strand_p_value=0.745986	frequency=3.111e-01	ks_quality_p_value=0.725317	major_base=C	major_cov=14/17	major_frequency=6.889e-01	minor_base=T	minor_cov=5/9	new_cov=5/9	polymorphism_frequency=3.111e-01	polymorphism_score=33.2	prediction=polymorphism	ref_cov=14/17	total_cov=19/26
-MC	189	.	NODE_11_length_134295_cov_12.926532	1	108	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=3
-MC	190	.	NODE_11_length_134295_cov_12.926532	100612	102292	1646	20	left_inside_cov=1	left_outside_cov=2	right_inside_cov=1	right_outside_cov=2
-MC	191	.	NODE_12_length_132508_cov_13.954518	132486	132508	0	0	left_inside_cov=1	left_outside_cov=4	right_inside_cov=0	right_outside_cov=NA
-MC	192	.	NODE_14_length_108768_cov_12.038052	108700	108768	0	0	left_inside_cov=1	left_outside_cov=2	right_inside_cov=0	right_outside_cov=NA
-MC	193	.	NODE_1_length_765717_cov_10.426968	548747	548814	0	0	left_inside_cov=1	left_outside_cov=2	right_inside_cov=0	right_outside_cov=2
-MC	194	.	NODE_1_length_765717_cov_10.426968	555184	555220	0	0	left_inside_cov=1	left_outside_cov=2	right_inside_cov=0	right_outside_cov=2
-MC	195	.	NODE_1_length_765717_cov_10.426968	712749	712781	0	0	left_inside_cov=0	left_outside_cov=2	right_inside_cov=1	right_outside_cov=3
-MC	196	.	NODE_20_length_61103_cov_11.817174	1	19	0	15	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=3
-MC	197	.	NODE_20_length_61103_cov_11.817174	5168	5263	0	0	left_inside_cov=1	left_outside_cov=3	right_inside_cov=2	right_outside_cov=3
-MC	198	.	NODE_21_length_54475_cov_10.137963	21194	21222	0	0	left_inside_cov=0	left_outside_cov=2	right_inside_cov=0	right_outside_cov=2
-MC	199	.	NODE_21_length_54475_cov_10.137963	54466	54475	0	0	left_inside_cov=0	left_outside_cov=10	right_inside_cov=0	right_outside_cov=NA
-MC	200	.	NODE_22_length_52579_cov_10.779208	52544	52579	0	0	left_inside_cov=3	left_outside_cov=4	right_inside_cov=0	right_outside_cov=NA
-MC	201	.	NODE_27_length_31923_cov_11.432224	1	34	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=2	right_outside_cov=4
-MC	202	.	NODE_28_length_29983_cov_12.268120	29953	29983	0	0	left_inside_cov=1	left_outside_cov=47	right_inside_cov=0	right_outside_cov=NA
-MC	203	.	NODE_29_length_29686_cov_20.061132	1	116	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=13	right_outside_cov=17
-MC	204	.	NODE_2_length_517362_cov_10.498810	1	51	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=2
-MC	205	.	NODE_31_length_24246_cov_18.602098	1	29	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=1	right_outside_cov=3
-MC	206	.	NODE_32_length_19629_cov_8.975131	8582	8652	0	0	left_inside_cov=2	left_outside_cov=4	right_inside_cov=0	right_outside_cov=3
-MC	207	.	NODE_35_length_13586_cov_17.132476	13484	13586	89	0	left_inside_cov=7	left_outside_cov=9	right_inside_cov=0	right_outside_cov=NA
-MC	208	.	NODE_3_length_452535_cov_10.550749	53697	54492	216	560	left_inside_cov=1	left_outside_cov=2	right_inside_cov=1	right_outside_cov=2
-MC	209	.	NODE_3_length_452535_cov_10.550749	351996	352002	0	0	left_inside_cov=0	left_outside_cov=2	right_inside_cov=0	right_outside_cov=2
-MC	210	.	NODE_3_length_452535_cov_10.550749	383958	383962	0	0	left_inside_cov=0	left_outside_cov=2	right_inside_cov=1	right_outside_cov=2
-MC	211	.	NODE_3_length_452535_cov_10.550749	452384	452535	0	0	left_inside_cov=1	left_outside_cov=3	right_inside_cov=0	right_outside_cov=NA
-MC	212	.	NODE_41_length_5145_cov_11.669390	5048	5145	82	0	left_inside_cov=3	left_outside_cov=5	right_inside_cov=0	right_outside_cov=NA
-MC	213	.	NODE_43_length_3878_cov_31.107971	1	106	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=23	right_outside_cov=24
-MC	214	.	NODE_47_length_2981_cov_99.811142	1	123	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=110
-MC	215	.	NODE_4_length_368643_cov_12.847952	1	63	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=2	right_outside_cov=3
-MC	216	.	NODE_4_length_368643_cov_12.847952	368641	368643	0	0	left_inside_cov=0	left_outside_cov=5	right_inside_cov=0	right_outside_cov=NA
-MC	217	.	NODE_6_length_262854_cov_11.679534	1	36	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=1	right_outside_cov=3
-MC	218	.	NODE_7_length_217756_cov_10.373227	1	20	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=1	right_outside_cov=4
-MC	219	.	NODE_7_length_217756_cov_10.373227	217661	217756	0	0	left_inside_cov=2	left_outside_cov=3	right_inside_cov=0	right_outside_cov=NA
-MC	220	.	NODE_9_length_197629_cov_13.429418	197573	197629	0	0	left_inside_cov=3	left_outside_cov=5	right_inside_cov=0	right_outside_cov=NA
-JC	221	.	NODE_11_length_134295_cov_12.926532	99340	-1	NODE_11_length_134295_cov_12.926532	100398	1	0	alignment_overlap=0	coverage_minus=9	coverage_plus=8	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=224	key=NODE_11_length_134295_cov_12.926532__99340__-1__NODE_11_length_134295_cov_12.926532__100398__1__0____301__301__1__0	max_left=259	max_left_minus=259	max_left_plus=182	max_min_left=101	max_min_left_minus=101	max_min_left_plus=101	max_min_right=118	max_min_right_minus=101	max_min_right_plus=118	max_pos_hash_score=448	max_right=224	max_right_minus=214	max_right_plus=224	neg_log10_pos_hash_p_value=0.5	new_junction_coverage=0.82	new_junction_read_count=17	polymorphism_frequency=1.000e+00	pos_hash_score=13	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=17
-JC	222	.	NODE_12_length_132508_cov_13.954518	132312	1	NODE_38_length_7502_cov_10.476610	7305	1	0	alignment_overlap=0	coverage_minus=4	coverage_plus=3	flanking_left=197	flanking_right=198	frequency=3.768e-01	junction_possible_overlap_registers=224	key=NODE_12_length_132508_cov_13.954518__132312__1__NODE_38_length_7502_cov_10.476610__7305__1__0____197__198__0__0	max_left=173	max_left_minus=173	max_left_plus=173	max_min_left=98	max_min_left_minus=98	max_min_left_plus=98	max_min_right=121	max_min_right_minus=119	max_min_right_plus=121	max_pos_hash_score=448	max_right=197	max_right_minus=197	max_right_plus=121	neg_log10_pos_hash_p_value=1.5	new_junction_coverage=0.55	new_junction_read_count=13	polymorphism_frequency=3.768e-01	pos_hash_score=7	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.51	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=14	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.45	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=29	side_2_redundant=0	total_non_overlap_reads=7
-JC	223	.	NODE_13_length_110849_cov_13.914407	110849	-1	NODE_47_length_2981_cov_99.811142	124	1	0	alignment_overlap=123	coverage_minus=9	coverage_plus=12	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=101	key=NODE_13_length_110849_cov_13.914407__110849__-1__NODE_47_length_2981_cov_99.811142__1__1__123____301__301__0__0	max_left=116	max_left_minus=73	max_left_plus=116	max_min_left=70	max_min_left_minus=63	max_min_left_plus=70	max_min_right=81	max_min_right_minus=23	max_min_right_plus=81	max_pos_hash_score=202	max_right=173	max_right_minus=163	max_right_plus=173	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=0.67	new_junction_read_count=32	polymorphism_frequency=1.000e+00	pos_hash_score=19	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=123	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=101	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=21
-JC	224	.	NODE_15_length_102314_cov_11.442395	410	-1	NODE_28_length_29983_cov_12.268120	29952	-1	0	alignment_overlap=31	coverage_minus=16	coverage_plus=13	flanking_left=301	flanking_right=301	frequency=7.812e-01	junction_possible_overlap_registers=193	key=NODE_15_length_102314_cov_11.442395__410__-1__NODE_28_length_29983_cov_12.268120__29983__-1__31____301__301__0__0	max_left=249	max_left_minus=247	max_left_plus=249	max_min_left=123	max_min_left_minus=79	max_min_left_plus=123	max_min_right=76	max_min_right_minus=76	max_min_right_plus=47	max_pos_hash_score=386	max_right=258	max_right_minus=253	max_right_plus=258	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.10	new_junction_read_count=40	polymorphism_frequency=7.812e-01	pos_hash_score=27	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.15	side_1_overlap=31	side_1_possible_overlap_registers=224	side_1_read_count=26	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=193	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=29
-JC	225	.	NODE_18_length_93152_cov_12.794528	1	1	NODE_41_length_5145_cov_11.669390	1	1	-1	alignment_overlap=-1	coverage_minus=8	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=223	key=NODE_18_length_93152_cov_12.794528__1__1__NODE_41_length_5145_cov_11.669390__1__1__-1__A__301__301__0__0	max_left=185	max_left_minus=185	max_left_plus=70	max_min_left=101	max_min_left_minus=101	max_min_left_plus=70	max_min_right=73	max_min_right_minus=73	max_min_right_plus=0	max_pos_hash_score=446	max_right=296	max_right_minus=296	max_right_plus=264	neg_log10_pos_hash_p_value=0.8	new_junction_coverage=0.55	new_junction_read_count=13	polymorphism_frequency=1.000e+00	pos_hash_score=11	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=11	unique_read_sequence=A
-JC	226	.	NODE_18_length_93152_cov_12.794528	93152	-1	NODE_47_length_2981_cov_99.811142	127	1	0	alignment_overlap=126	coverage_minus=4	coverage_plus=5	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=98	key=NODE_18_length_93152_cov_12.794528__93152__-1__NODE_47_length_2981_cov_99.811142__1__1__126____301__301__0__0	max_left=154	max_left_minus=108	max_left_plus=154	max_min_left=83	max_min_left_minus=83	max_min_left_plus=71	max_min_right=80	max_min_right_minus=80	max_min_right_plus=47	max_pos_hash_score=196	max_right=121	max_right_minus=101	max_right_plus=121	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=0.20	new_junction_read_count=9	polymorphism_frequency=1.000e+00	pos_hash_score=8	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=98	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
-JC	227	.	NODE_20_length_61103_cov_11.817174	86	-1	NODE_25_length_39103_cov_13.864173	39103	-1	0	alignment_overlap=41	coverage_minus=8	coverage_plus=4	flanking_left=86	flanking_right=301	frequency=1	junction_possible_overlap_registers=183	key=NODE_20_length_61103_cov_11.817174__127__-1__NODE_25_length_39103_cov_13.864173__39103__-1__41____86__301__1__0	max_left=86	max_left_minus=86	max_left_plus=84	max_min_left=86	max_min_left_minus=86	max_min_left_plus=84	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=366	max_right=234	max_right_minus=234	max_right_plus=234	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=0.78	new_junction_read_count=17	polymorphism_frequency=1.000e+00	pos_hash_score=12	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=41	side_2_possible_overlap_registers=224	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=12
-JC	228	.	NODE_20_length_61103_cov_11.817174	17593	1	NODE_31_length_24246_cov_18.602098	11314	-1	0	alignment_overlap=7	coverage_minus=5	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=4.036e-01	junction_possible_overlap_registers=217	key=NODE_20_length_61103_cov_11.817174__17593__1__NODE_31_length_24246_cov_18.602098__11321__-1__7____301__301__0__0	max_left=292	max_left_minus=292	max_left_plus=27	max_min_left=116	max_min_left_minus=116	max_min_left_plus=27	max_min_right=1	max_min_right_minus=1	max_min_right_plus=0	max_pos_hash_score=434	max_right=266	max_right_minus=259	max_right_plus=266	neg_log10_pos_hash_p_value=1.3	new_junction_coverage=0.42	new_junction_read_count=12	polymorphism_frequency=4.036e-01	pos_hash_score=7	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.75	side_1_overlap=7	side_1_possible_overlap_registers=224	side_1_read_count=17	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.54	side_2_overlap=0	side_2_possible_overlap_registers=217	side_2_read_count=19	side_2_redundant=0	total_non_overlap_reads=7
-JC	229	.	NODE_21_length_54475_cov_10.137963	52849	1	NODE_21_length_54475_cov_10.137963	54465	-1	0	alignment_overlap=10	coverage_minus=3	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=7.585e-01	junction_possible_overlap_registers=214	key=NODE_21_length_54475_cov_10.137963__52849__1__NODE_21_length_54475_cov_10.137963__54475__-1__10____301__301__0__0	max_left=140	max_left_minus=140	max_left_plus=65	max_min_left=140	max_min_left_minus=140	max_min_left_plus=65	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=428	max_right=285	max_right_minus=220	max_right_plus=285	neg_log10_pos_hash_p_value=0.9	new_junction_coverage=0.49	new_junction_read_count=9	polymorphism_frequency=7.585e-01	pos_hash_score=7	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.31	side_1_overlap=10	side_1_possible_overlap_registers=224	side_1_read_count=6	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=214	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=7
-JC	230	.	NODE_23_length_41671_cov_14.019233	41671	-1	NODE_5_length_279151_cov_14.249853	369	-1	0	alignment_overlap=41	coverage_minus=8	coverage_plus=11	flanking_left=301	flanking_right=301	frequency=4.800e-01	junction_possible_overlap_registers=183	key=NODE_23_length_41671_cov_14.019233__41671__-1__NODE_5_length_279151_cov_14.249853__410__-1__41____301__301__0__0	max_left=201	max_left_minus=155	max_left_plus=201	max_min_left=42	max_min_left_minus=42	max_min_left_plus=35	max_min_right=124	max_min_right_minus=105	max_min_right_plus=124	max_pos_hash_score=366	max_right=255	max_right_minus=222	max_right_plus=255	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=1.01	new_junction_read_count=24	polymorphism_frequency=4.800e-01	pos_hash_score=15	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=41	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=2.25	side_2_overlap=0	side_2_possible_overlap_registers=183	side_2_read_count=52	side_2_redundant=0	total_non_overlap_reads=19
-JC	231	.	NODE_24_length_41047_cov_15.347752	790	-1	NODE_24_length_41047_cov_15.347752	804	1	0	alignment_overlap=3	coverage_minus=15	coverage_plus=8	flanking_left=301	flanking_right=301	frequency=5.898e-01	junction_possible_overlap_registers=221	key=NODE_24_length_41047_cov_15.347752__790__-1__NODE_24_length_41047_cov_15.347752__801__1__3____301__301__0__0	max_left=201	max_left_minus=201	max_left_plus=170	max_min_left=147	max_min_left_minus=147	max_min_left_plus=74	max_min_right=138	max_min_right_minus=138	max_min_right_plus=127	max_pos_hash_score=442	max_right=150	max_right_minus=150	max_right_plus=127	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=1.11	new_junction_read_count=35	polymorphism_frequency=5.898e-01	pos_hash_score=18	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.75	side_1_overlap=3	side_1_possible_overlap_registers=224	side_1_read_count=24	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.79	side_2_overlap=0	side_2_possible_overlap_registers=221	side_2_read_count=25	side_2_redundant=0	total_non_overlap_reads=23
-JC	232	.	NODE_24_length_41047_cov_15.347752	969	-1	NODE_24_length_41047_cov_15.347752	4917	1	-4	alignment_overlap=-4	coverage_minus=8	coverage_plus=5	flanking_left=301	flanking_right=301	frequency=4.824e-01	junction_possible_overlap_registers=220	key=NODE_24_length_41047_cov_15.347752__969__-1__NODE_24_length_41047_cov_15.347752__4917__1__-4__TTAC__301__301__0__0	max_left=133	max_left_minus=133	max_left_plus=133	max_min_left=36	max_min_left_minus=36	max_min_left_plus=0	max_min_right=75	max_min_right_minus=75	max_min_right_plus=75	max_pos_hash_score=440	max_right=75	max_right_minus=75	max_right_plus=75	neg_log10_pos_hash_p_value=1.1	new_junction_coverage=0.86	new_junction_read_count=27	polymorphism_frequency=4.824e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.78	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=25	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.06	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=34	side_2_redundant=0	total_non_overlap_reads=13	unique_read_sequence=TTAC
-JC	233	.	NODE_24_length_41047_cov_15.347752	41047	-1	NODE_40_length_5854_cov_10.182469	5755	1	0	alignment_overlap=27	coverage_minus=10	coverage_plus=10	flanking_left=301	flanking_right=100	frequency=1	junction_possible_overlap_registers=197	key=NODE_24_length_41047_cov_15.347752__41047__-1__NODE_40_length_5854_cov_10.182469__5728__1__27____301__100__0__1	max_left=268	max_left_minus=265	max_left_plus=268	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=100	max_min_right_minus=100	max_min_right_plus=89	max_pos_hash_score=394	max_right=100	max_right_minus=100	max_right_plus=89	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=2.64	new_junction_read_count=62	polymorphism_frequency=1.000e+00	pos_hash_score=13	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=27	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=20
-JC	234	.	NODE_26_length_31945_cov_9.670250	1	1	NODE_9_length_197629_cov_13.429418	863	-1	0	alignment_overlap=127	coverage_minus=2	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=3.243e-01	junction_possible_overlap_registers=97	key=NODE_26_length_31945_cov_9.670250__1__1__NODE_9_length_197629_cov_13.429418__990__-1__127____301__301__0__0	max_left=171	max_left_minus=171	max_left_plus=110	max_min_left=21	max_min_left_minus=0	max_min_left_plus=21	max_min_right=78	max_min_right_minus=78	max_min_right_plus=64	max_pos_hash_score=194	max_right=105	max_right_minus=78	max_right_plus=105	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=0.60	new_junction_read_count=6	polymorphism_frequency=3.243e-01	pos_hash_score=4	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=2.15	side_2_overlap=0	side_2_possible_overlap_registers=97	side_2_read_count=25	side_2_redundant=0	total_non_overlap_reads=4
-JC	235	.	NODE_2_length_517362_cov_10.498810	302093	1	NODE_2_length_517362_cov_10.498810	302365	-1	0	alignment_overlap=5	coverage_minus=2	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=2.157e-01	junction_possible_overlap_registers=219	key=NODE_2_length_517362_cov_10.498810__302093__1__NODE_2_length_517362_cov_10.498810__302370__-1__5____301__301__0__0	max_left=234	max_left_minus=234	max_left_plus=141	max_min_left=126	max_min_left_minus=55	max_min_left_plus=126	max_min_right=140	max_min_right_minus=61	max_min_right_plus=140	max_pos_hash_score=438	max_right=246	max_right_minus=239	max_right_plus=246	neg_log10_pos_hash_p_value=1.4	new_junction_coverage=0.31	new_junction_read_count=6	polymorphism_frequency=2.157e-01	pos_hash_score=5	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.85	side_1_overlap=5	side_1_possible_overlap_registers=224	side_1_read_count=17	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.38	side_2_overlap=0	side_2_possible_overlap_registers=219	side_2_read_count=27	side_2_redundant=0	total_non_overlap_reads=5
-JC	236	.	NODE_2_length_517362_cov_10.498810	517166	1	NODE_8_length_217530_cov_12.850706	244	-1	0	alignment_overlap=0	coverage_minus=1	coverage_plus=2	flanking_left=197	flanking_right=244	frequency=2.308e-01	junction_possible_overlap_registers=224	key=NODE_2_length_517362_cov_10.498810__517166__1__NODE_8_length_217530_cov_12.850706__244__-1__0____197__244__0__0	max_left=197	max_left_minus=171	max_left_plus=197	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=107	max_min_right_minus=73	max_min_right_plus=107	max_pos_hash_score=448	max_right=107	max_right_minus=73	max_right_plus=107	neg_log10_pos_hash_p_value=2.0	new_junction_coverage=0.39	new_junction_read_count=9	polymorphism_frequency=2.308e-01	pos_hash_score=3	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.30	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=26	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.31	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=34	side_2_redundant=0	total_non_overlap_reads=3
-JC	237	.	NODE_30_length_28734_cov_14.265634	1	1	NODE_45_length_3266_cov_14.146862	3266	-1	-62	alignment_overlap=-62	coverage_minus=15	coverage_plus=16	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=162	key=NODE_30_length_28734_cov_14.265634__1__1__NODE_45_length_3266_cov_14.146862__3266__-1__-62__GATGCCCTGGTTCGGCGCAGAAAGCGACCACGGGAAAAGGGGAGACCTGCCCGTAAATCAGT__301__301__0__0	max_left=213	max_left_minus=191	max_left_plus=213	max_min_left=91	max_min_left_minus=91	max_min_left_plus=83	max_min_right=116	max_min_right_minus=116	max_min_right_plus=57	max_pos_hash_score=324	max_right=228	max_right_minus=226	max_right_plus=228	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.34	new_junction_read_count=31	polymorphism_frequency=1.000e+00	pos_hash_score=29	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=31	unique_read_sequence=GATGCCCTGGTTCGGCGCAGAAAGCGACCACGGGAAAAGGGGAGACCTGCCCGTAAATCAGT
-JC	238	.	NODE_30_length_28734_cov_14.265634	28734	-1	NODE_40_length_5854_cov_10.182469	5754	1	0	alignment_overlap=26	coverage_minus=6	coverage_plus=5	flanking_left=301	flanking_right=101	frequency=1	junction_possible_overlap_registers=198	key=NODE_30_length_28734_cov_14.265634__28734__-1__NODE_40_length_5854_cov_10.182469__5728__1__26____301__101__0__1	max_left=256	max_left_minus=256	max_left_plus=203	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=101	max_min_right_minus=101	max_min_right_plus=91	max_pos_hash_score=396	max_right=101	max_right_minus=101	max_right_plus=91	neg_log10_pos_hash_p_value=0.5	new_junction_coverage=0.54	new_junction_read_count=12	polymorphism_frequency=1.000e+00	pos_hash_score=11	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=26	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=11
-JC	239	.	NODE_36_length_12109_cov_16.252963	1	1	NODE_37_length_9310_cov_14.248067	1	1	-12	alignment_overlap=-12	coverage_minus=21	coverage_plus=25	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=212	key=NODE_36_length_12109_cov_16.252963__1__1__NODE_37_length_9310_cov_14.248067__1__1__-12__ATAAGGGCACTG__301__301__0__0	max_left=248	max_left_minus=231	max_left_plus=248	max_min_left=120	max_min_left_minus=120	max_min_left_plus=105	max_min_right=122	max_min_right_minus=122	max_min_right_plus=122	max_pos_hash_score=424	max_right=286	max_right_minus=286	max_right_plus=230	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.67	new_junction_read_count=53	polymorphism_frequency=1.000e+00	pos_hash_score=38	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=46	unique_read_sequence=ATAAGGGCACTG
-JC	240	.	NODE_45_length_3266_cov_14.146862	133	1	NODE_45_length_3266_cov_14.146862	136	-1	-50	alignment_overlap=-50	coverage_minus=7	coverage_plus=6	flanking_left=301	flanking_right=136	frequency=7.071e-01	junction_possible_overlap_registers=174	key=NODE_45_length_3266_cov_14.146862__133__1__NODE_45_length_3266_cov_14.146862__136__-1__-50__ATTACCAGTTCCGGACACTGGCAGGGCAAACGGGTGCTGATCACCGCAGA__301__136__0__0	max_left=240	max_left_minus=187	max_left_plus=240	max_min_left=114	max_min_left_minus=97	max_min_left_plus=114	max_min_right=65	max_min_right_minus=60	max_min_right_plus=65	max_pos_hash_score=348	max_right=136	max_right_minus=136	max_right_plus=125	neg_log10_pos_hash_p_value=0.7	new_junction_coverage=0.55	new_junction_read_count=15	polymorphism_frequency=7.071e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.23	side_1_overlap=0	side_1_possible_overlap_registers=224	side_1_read_count=8	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.23	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=8	side_2_redundant=0	total_non_overlap_reads=13	unique_read_sequence=ATTACCAGTTCCGGACACTGGCAGGGCAAACGGGTGCTGATCACCGCAGA
-JC	241	.	NODE_4_length_368643_cov_12.847952	328145	-1	NODE_4_length_368643_cov_12.847952	328146	1	-3	alignment_overlap=-3	coverage_minus=2	coverage_plus=1	flanking_left=301	flanking_right=301	frequency=1.393e-01	junction_possible_overlap_registers=221	key=NODE_4_length_368643_cov_12.847952__328145__-1__NODE_4_length_368643_cov_12.847952__328146__1__-3__GCT__301__301__0__0	max_left=270	max_left_minus=270	max_left_plus=79	max_min_left=79	max_min_left_minus=79	max_min_left_plus=79	max_min_right=4	max_min_right_minus=4	max_min_right_plus=0	max_pos_hash_score=428	max_right=82	max_right_minus=82	max_right_plus=82	neg_log10_pos_hash_p_value=2.3	new_junction_coverage=0.12	new_junction_read_count=3	polymorphism_frequency=1.393e-01	pos_hash_score=3	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=7	side_1_coverage=0.71	side_1_overlap=0	side_1_possible_overlap_registers=217	side_1_read_count=18	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.73	side_2_overlap=0	side_2_possible_overlap_registers=224	side_2_read_count=19	side_2_redundant=0	total_non_overlap_reads=3	unique_read_sequence=GCT
-JC	242	.	NODE_4_length_368643_cov_12.847952	365353	-1	NODE_4_length_368643_cov_12.847952	365360	1	0	alignment_overlap=7	coverage_minus=2	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=2.109e-01	junction_possible_overlap_registers=217	key=NODE_4_length_368643_cov_12.847952__365353__-1__NODE_4_length_368643_cov_12.847952__365353__1__7____301__301__0__0	max_left=218	max_left_minus=170	max_left_plus=218	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=98	max_min_right_minus=79	max_min_right_plus=98	max_pos_hash_score=434	max_right=98	max_right_minus=79	max_right_plus=98	neg_log10_pos_hash_p_value=1.8	new_junction_coverage=0.20	new_junction_read_count=5	polymorphism_frequency=2.109e-01	pos_hash_score=5	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.73	side_1_overlap=7	side_1_possible_overlap_registers=224	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.75	side_2_overlap=0	side_2_possible_overlap_registers=217	side_2_read_count=19	side_2_redundant=0	total_non_overlap_reads=5
-UN	243	.	NODE_10_length_180151_cov_12.256382	1	60
-UN	244	.	NODE_10_length_180151_cov_12.256382	65	66
-UN	245	.	NODE_10_length_180151_cov_12.256382	7953	7953
-UN	246	.	NODE_10_length_180151_cov_12.256382	7964	7964
-UN	247	.	NODE_10_length_180151_cov_12.256382	7968	7968
-UN	248	.	NODE_10_length_180151_cov_12.256382	7974	7974
-UN	249	.	NODE_10_length_180151_cov_12.256382	7976	7977
-UN	250	.	NODE_10_length_180151_cov_12.256382	7981	7981
-UN	251	.	NODE_10_length_180151_cov_12.256382	7985	7985
-UN	252	.	NODE_10_length_180151_cov_12.256382	7987	7988
-UN	253	.	NODE_10_length_180151_cov_12.256382	7991	7991
-UN	254	.	NODE_10_length_180151_cov_12.256382	7994	7995
-UN	255	.	NODE_10_length_180151_cov_12.256382	8002	8002
-UN	256	.	NODE_10_length_180151_cov_12.256382	8014	8014
-UN	257	.	NODE_10_length_180151_cov_12.256382	8016	8016
-UN	258	.	NODE_10_length_180151_cov_12.256382	9553	9553
-UN	259	.	NODE_10_length_180151_cov_12.256382	9569	9584
-UN	260	.	NODE_10_length_180151_cov_12.256382	9620	9620
-UN	261	.	NODE_10_length_180151_cov_12.256382	9628	9628
-UN	262	.	NODE_10_length_180151_cov_12.256382	9630	9630
-UN	263	.	NODE_10_length_180151_cov_12.256382	9668	9688
-UN	264	.	NODE_10_length_180151_cov_12.256382	9702	9861
-UN	265	.	NODE_10_length_180151_cov_12.256382	10355	10355
-UN	266	.	NODE_10_length_180151_cov_12.256382	10402	10403
-UN	267	.	NODE_10_length_180151_cov_12.256382	10408	10408
-UN	268	.	NODE_10_length_180151_cov_12.256382	10411	10411
-UN	269	.	NODE_10_length_180151_cov_12.256382	10418	10423
-UN	270	.	NODE_10_length_180151_cov_12.256382	10425	10430
-UN	271	.	NODE_10_length_180151_cov_12.256382	10433	10433
-UN	272	.	NODE_10_length_180151_cov_12.256382	10436	10444
-UN	273	.	NODE_10_length_180151_cov_12.256382	10446	10447
-UN	274	.	NODE_10_length_180151_cov_12.256382	10454	10468
-UN	275	.	NODE_10_length_180151_cov_12.256382	10473	10473
-UN	276	.	NODE_10_length_180151_cov_12.256382	10475	10486
-UN	277	.	NODE_10_length_180151_cov_12.256382	10489	10693
-UN	278	.	NODE_10_length_180151_cov_12.256382	10696	10697
-UN	279	.	NODE_10_length_180151_cov_12.256382	10699	10699
-UN	280	.	NODE_10_length_180151_cov_12.256382	10702	10702
-UN	281	.	NODE_10_length_180151_cov_12.256382	10705	10705
-UN	282	.	NODE_10_length_180151_cov_12.256382	10717	10717
-UN	283	.	NODE_10_length_180151_cov_12.256382	10720	10720
-UN	284	.	NODE_10_length_180151_cov_12.256382	10761	10782
-UN	285	.	NODE_10_length_180151_cov_12.256382	10863	10943
-UN	286	.	NODE_10_length_180151_cov_12.256382	11828	11863
-UN	287	.	NODE_10_length_180151_cov_12.256382	11922	11939
-UN	288	.	NODE_10_length_180151_cov_12.256382	11980	11980
-UN	289	.	NODE_10_length_180151_cov_12.256382	11990	11990
-UN	290	.	NODE_10_length_180151_cov_12.256382	11993	11995
-UN	291	.	NODE_10_length_180151_cov_12.256382	11997	12081
-UN	292	.	NODE_10_length_180151_cov_12.256382	12091	12180
-UN	293	.	NODE_10_length_180151_cov_12.256382	15594	15594
-UN	294	.	NODE_10_length_180151_cov_12.256382	15950	15951
-UN	295	.	NODE_10_length_180151_cov_12.256382	15953	15953
-UN	296	.	NODE_10_length_180151_cov_12.256382	15958	15958
-UN	297	.	NODE_10_length_180151_cov_12.256382	15967	15967
-UN	298	.	NODE_10_length_180151_cov_12.256382	15974	15974
-UN	299	.	NODE_10_length_180151_cov_12.256382	15991	15991
-UN	300	.	NODE_10_length_180151_cov_12.256382	16018	16063
-UN	301	.	NODE_10_length_180151_cov_12.256382	16066	16066
-UN	302	.	NODE_10_length_180151_cov_12.256382	16070	16071
-UN	303	.	NODE_10_length_180151_cov_12.256382	16074	16074
-UN	304	.	NODE_10_length_180151_cov_12.256382	16077	16077
-UN	305	.	NODE_10_length_180151_cov_12.256382	16080	16082
-UN	306	.	NODE_10_length_180151_cov_12.256382	16085	16085
-UN	307	.	NODE_10_length_180151_cov_12.256382	16871	16871
-UN	308	.	NODE_10_length_180151_cov_12.256382	16903	16903
-UN	309	.	NODE_10_length_180151_cov_12.256382	16912	16916
-UN	310	.	NODE_10_length_180151_cov_12.256382	16920	16920
-UN	311	.	NODE_10_length_180151_cov_12.256382	16924	16926
-UN	312	.	NODE_10_length_180151_cov_12.256382	16932	16932
-UN	313	.	NODE_10_length_180151_cov_12.256382	16934	16938
-UN	314	.	NODE_10_length_180151_cov_12.256382	16940	16941
-UN	315	.	NODE_10_length_180151_cov_12.256382	16944	16944
-UN	316	.	NODE_10_length_180151_cov_12.256382	16950	16954
-UN	317	.	NODE_10_length_180151_cov_12.256382	16956	16956
-UN	318	.	NODE_10_length_180151_cov_12.256382	16960	16963
-UN	319	.	NODE_10_length_180151_cov_12.256382	16968	16968
-UN	320	.	NODE_10_length_180151_cov_12.256382	16970	16972
-UN	321	.	NODE_10_length_180151_cov_12.256382	17617	17617
-UN	322	.	NODE_10_length_180151_cov_12.256382	17638	17638
-UN	323	.	NODE_10_length_180151_cov_12.256382	17645	17645
-UN	324	.	NODE_10_length_180151_cov_12.256382	29185	29185
-UN	325	.	NODE_10_length_180151_cov_12.256382	30083	30084
-UN	326	.	NODE_10_length_180151_cov_12.256382	114017	114017
-UN	327	.	NODE_10_length_180151_cov_12.256382	117691	117691
-UN	328	.	NODE_10_length_180151_cov_12.256382	118470	118470
-UN	329	.	NODE_10_length_180151_cov_12.256382	118474	118474
-UN	330	.	NODE_10_length_180151_cov_12.256382	124257	124259
-UN	331	.	NODE_10_length_180151_cov_12.256382	124261	124262
-UN	332	.	NODE_10_length_180151_cov_12.256382	125470	125470
-UN	333	.	NODE_10_length_180151_cov_12.256382	136294	136294
-UN	334	.	NODE_10_length_180151_cov_12.256382	155825	155825
-UN	335	.	NODE_10_length_180151_cov_12.256382	162988	162990
-UN	336	.	NODE_10_length_180151_cov_12.256382	162993	162993
-UN	337	.	NODE_10_length_180151_cov_12.256382	162995	162995
-UN	338	.	NODE_10_length_180151_cov_12.256382	162997	162997
-UN	339	.	NODE_10_length_180151_cov_12.256382	162999	163001
-UN	340	.	NODE_10_length_180151_cov_12.256382	163003	163013
-UN	341	.	NODE_10_length_180151_cov_12.256382	163015	163023
-UN	342	.	NODE_10_length_180151_cov_12.256382	163025	163026
-UN	343	.	NODE_10_length_180151_cov_12.256382	163029	163030
-UN	344	.	NODE_10_length_180151_cov_12.256382	163033	163033
-UN	345	.	NODE_10_length_180151_cov_12.256382	163035	163035
-UN	346	.	NODE_10_length_180151_cov_12.256382	163037	163038
-UN	347	.	NODE_10_length_180151_cov_12.256382	163040	163040
-UN	348	.	NODE_10_length_180151_cov_12.256382	163042	163043
-UN	349	.	NODE_10_length_180151_cov_12.256382	163045	163045
-UN	350	.	NODE_10_length_180151_cov_12.256382	179214	179214
-UN	351	.	NODE_10_length_180151_cov_12.256382	179218	179218
-UN	352	.	NODE_10_length_180151_cov_12.256382	179224	179225
-UN	353	.	NODE_10_length_180151_cov_12.256382	179461	179461
-UN	354	.	NODE_10_length_180151_cov_12.256382	179520	179520
-UN	355	.	NODE_10_length_180151_cov_12.256382	179581	179581
-UN	356	.	NODE_10_length_180151_cov_12.256382	179735	179735
-UN	357	.	NODE_10_length_180151_cov_12.256382	179737	179737
-UN	358	.	NODE_10_length_180151_cov_12.256382	179774	179774
-UN	359	.	NODE_10_length_180151_cov_12.256382	179828	179828
-UN	360	.	NODE_10_length_180151_cov_12.256382	180134	180151
-UN	361	.	NODE_11_length_134295_cov_12.926532	1	130
-UN	362	.	NODE_11_length_134295_cov_12.926532	3628	3667
-UN	363	.	NODE_11_length_134295_cov_12.926532	4136	4136
-UN	364	.	NODE_11_length_134295_cov_12.926532	7867	7868
-UN	365	.	NODE_11_length_134295_cov_12.926532	15679	15703
-UN	366	.	NODE_11_length_134295_cov_12.926532	15705	15705
-UN	367	.	NODE_11_length_134295_cov_12.926532	16779	16779
-UN	368	.	NODE_11_length_134295_cov_12.926532	16782	16784
-UN	369	.	NODE_11_length_134295_cov_12.926532	16786	16787
-UN	370	.	NODE_11_length_134295_cov_12.926532	16789	16789
-UN	371	.	NODE_11_length_134295_cov_12.926532	16791	16792
-UN	372	.	NODE_11_length_134295_cov_12.926532	16794	16820
-UN	373	.	NODE_11_length_134295_cov_12.926532	16822	16822
-UN	374	.	NODE_11_length_134295_cov_12.926532	16824	16826
-UN	375	.	NODE_11_length_134295_cov_12.926532	16828	16829
-UN	376	.	NODE_11_length_134295_cov_12.926532	16831	16881
-UN	377	.	NODE_11_length_134295_cov_12.926532	16883	16886
-UN	378	.	NODE_11_length_134295_cov_12.926532	16888	16891
-UN	379	.	NODE_11_length_134295_cov_12.926532	16894	16895
-UN	380	.	NODE_11_length_134295_cov_12.926532	16897	16898
-UN	381	.	NODE_11_length_134295_cov_12.926532	16900	16902
-UN	382	.	NODE_11_length_134295_cov_12.926532	16906	16906
-UN	383	.	NODE_11_length_134295_cov_12.926532	16909	16911
-UN	384	.	NODE_11_length_134295_cov_12.926532	16915	16920
-UN	385	.	NODE_11_length_134295_cov_12.926532	16922	17165
-UN	386	.	NODE_11_length_134295_cov_12.926532	17167	17204
-UN	387	.	NODE_11_length_134295_cov_12.926532	17206	17235
-UN	388	.	NODE_11_length_134295_cov_12.926532	17237	17240
-UN	389	.	NODE_11_length_134295_cov_12.926532	17243	17246
-UN	390	.	NODE_11_length_134295_cov_12.926532	17257	17261
-UN	391	.	NODE_11_length_134295_cov_12.926532	17264	17264
-UN	392	.	NODE_11_length_134295_cov_12.926532	17269	17269
-UN	393	.	NODE_11_length_134295_cov_12.926532	17271	17274
-UN	394	.	NODE_11_length_134295_cov_12.926532	17276	17276
-UN	395	.	NODE_11_length_134295_cov_12.926532	17278	17278
-UN	396	.	NODE_11_length_134295_cov_12.926532	17619	17619
-UN	397	.	NODE_11_length_134295_cov_12.926532	17623	17623
-UN	398	.	NODE_11_length_134295_cov_12.926532	17627	17627
-UN	399	.	NODE_11_length_134295_cov_12.926532	17633	17641
-UN	400	.	NODE_11_length_134295_cov_12.926532	17648	17648
-UN	401	.	NODE_11_length_134295_cov_12.926532	17651	17651
-UN	402	.	NODE_11_length_134295_cov_12.926532	17653	17655
-UN	403	.	NODE_11_length_134295_cov_12.926532	17657	17661
-UN	404	.	NODE_11_length_134295_cov_12.926532	17664	17683
-UN	405	.	NODE_11_length_134295_cov_12.926532	17686	17690
-UN	406	.	NODE_11_length_134295_cov_12.926532	17692	17697
-UN	407	.	NODE_11_length_134295_cov_12.926532	17701	17705
-UN	408	.	NODE_11_length_134295_cov_12.926532	17707	17708
-UN	409	.	NODE_11_length_134295_cov_12.926532	17710	17721
-UN	410	.	NODE_11_length_134295_cov_12.926532	18578	18578
-UN	411	.	NODE_11_length_134295_cov_12.926532	18586	18586
-UN	412	.	NODE_11_length_134295_cov_12.926532	18592	18592
-UN	413	.	NODE_11_length_134295_cov_12.926532	18600	18652
-UN	414	.	NODE_11_length_134295_cov_12.926532	18661	18661
-UN	415	.	NODE_11_length_134295_cov_12.926532	18667	18667
-UN	416	.	NODE_11_length_134295_cov_12.926532	18675	18675
-UN	417	.	NODE_11_length_134295_cov_12.926532	18678	18678
-UN	418	.	NODE_11_length_134295_cov_12.926532	21875	21875
-UN	419	.	NODE_11_length_134295_cov_12.926532	21888	21888
-UN	420	.	NODE_11_length_134295_cov_12.926532	22217	22217
-UN	421	.	NODE_11_length_134295_cov_12.926532	22223	22223
-UN	422	.	NODE_11_length_134295_cov_12.926532	22225	22227
-UN	423	.	NODE_11_length_134295_cov_12.926532	22229	22258
-UN	424	.	NODE_11_length_134295_cov_12.926532	22264	22313
-UN	425	.	NODE_11_length_134295_cov_12.926532	22321	22321
-UN	426	.	NODE_11_length_134295_cov_12.926532	22332	22332
-UN	427	.	NODE_11_length_134295_cov_12.926532	22343	22344
-UN	428	.	NODE_11_length_134295_cov_12.926532	22349	22349
-UN	429	.	NODE_11_length_134295_cov_12.926532	22365	22365
-UN	430	.	NODE_11_length_134295_cov_12.926532	22367	22367
-UN	431	.	NODE_11_length_134295_cov_12.926532	22371	22372
-UN	432	.	NODE_11_length_134295_cov_12.926532	22376	22377
-UN	433	.	NODE_11_length_134295_cov_12.926532	25766	25781
-UN	434	.	NODE_11_length_134295_cov_12.926532	32369	32369
-UN	435	.	NODE_11_length_134295_cov_12.926532	35049	35049
-UN	436	.	NODE_11_length_134295_cov_12.926532	36559	36559
-UN	437	.	NODE_11_length_134295_cov_12.926532	39754	39754
-UN	438	.	NODE_11_length_134295_cov_12.926532	39758	39758
-UN	439	.	NODE_11_length_134295_cov_12.926532	39763	39763
-UN	440	.	NODE_11_length_134295_cov_12.926532	39765	39765
-UN	441	.	NODE_11_length_134295_cov_12.926532	39781	39781
-UN	442	.	NODE_11_length_134295_cov_12.926532	39798	39875
-UN	443	.	NODE_11_length_134295_cov_12.926532	48267	48275
-UN	444	.	NODE_11_length_134295_cov_12.926532	48278	48278
-UN	445	.	NODE_11_length_134295_cov_12.926532	48280	48280
-UN	446	.	NODE_11_length_134295_cov_12.926532	48290	48290
-UN	447	.	NODE_11_length_134295_cov_12.926532	48294	48294
-UN	448	.	NODE_11_length_134295_cov_12.926532	48298	48298
-UN	449	.	NODE_11_length_134295_cov_12.926532	48315	48315
-UN	450	.	NODE_11_length_134295_cov_12.926532	48317	48317
-UN	451	.	NODE_11_length_134295_cov_12.926532	48330	48330
-UN	452	.	NODE_11_length_134295_cov_12.926532	48352	48352
-UN	453	.	NODE_11_length_134295_cov_12.926532	52719	52763
-UN	454	.	NODE_11_length_134295_cov_12.926532	52775	52795
-UN	455	.	NODE_11_length_134295_cov_12.926532	52797	52798
-UN	456	.	NODE_11_length_134295_cov_12.926532	52801	52805
-UN	457	.	NODE_11_length_134295_cov_12.926532	52808	52808
-UN	458	.	NODE_11_length_134295_cov_12.926532	52810	52810
-UN	459	.	NODE_11_length_134295_cov_12.926532	52814	52818
-UN	460	.	NODE_11_length_134295_cov_12.926532	52820	52820
-UN	461	.	NODE_11_length_134295_cov_12.926532	52823	52824
-UN	462	.	NODE_11_length_134295_cov_12.926532	52828	52833
-UN	463	.	NODE_11_length_134295_cov_12.926532	52852	52852
-UN	464	.	NODE_11_length_134295_cov_12.926532	52871	52871
-UN	465	.	NODE_11_length_134295_cov_12.926532	56693	56709
-UN	466	.	NODE_11_length_134295_cov_12.926532	56716	56716
-UN	467	.	NODE_11_length_134295_cov_12.926532	56803	56803
-UN	468	.	NODE_11_length_134295_cov_12.926532	56834	56836
-UN	469	.	NODE_11_length_134295_cov_12.926532	56979	56979
-UN	470	.	NODE_11_length_134295_cov_12.926532	56993	56993
-UN	471	.	NODE_11_length_134295_cov_12.926532	56995	56995
-UN	472	.	NODE_11_length_134295_cov_12.926532	59101	59114
-UN	473	.	NODE_11_length_134295_cov_12.926532	59117	59117
-UN	474	.	NODE_11_length_134295_cov_12.926532	59120	59121
-UN	475	.	NODE_11_length_134295_cov_12.926532	59123	59123
-UN	476	.	NODE_11_length_134295_cov_12.926532	59144	59144
-UN	477	.	NODE_11_length_134295_cov_12.926532	59149	59149
-UN	478	.	NODE_11_length_134295_cov_12.926532	59151	59151
-UN	479	.	NODE_11_length_134295_cov_12.926532	59160	59160
-UN	480	.	NODE_11_length_134295_cov_12.926532	59192	59192
-UN	481	.	NODE_11_length_134295_cov_12.926532	59214	59214
-UN	482	.	NODE_11_length_134295_cov_12.926532	59218	59218
-UN	483	.	NODE_11_length_134295_cov_12.926532	59224	59225
-UN	484	.	NODE_11_length_134295_cov_12.926532	59233	59233
-UN	485	.	NODE_11_length_134295_cov_12.926532	59238	59238
-UN	486	.	NODE_11_length_134295_cov_12.926532	59240	59240
-UN	487	.	NODE_11_length_134295_cov_12.926532	59244	59244
-UN	488	.	NODE_11_length_134295_cov_12.926532	59246	59246
-UN	489	.	NODE_11_length_134295_cov_12.926532	60087	60087
-UN	490	.	NODE_11_length_134295_cov_12.926532	60091	60091
-UN	491	.	NODE_11_length_134295_cov_12.926532	60093	60093
-UN	492	.	NODE_11_length_134295_cov_12.926532	60098	60099
-UN	493	.	NODE_11_length_134295_cov_12.926532	60101	60103
-UN	494	.	NODE_11_length_134295_cov_12.926532	60111	60111
-UN	495	.	NODE_11_length_134295_cov_12.926532	60114	60117
-UN	496	.	NODE_11_length_134295_cov_12.926532	60121	60121
-UN	497	.	NODE_11_length_134295_cov_12.926532	60125	60128
-UN	498	.	NODE_11_length_134295_cov_12.926532	60130	60130
-UN	499	.	NODE_11_length_134295_cov_12.926532	60132	60134
-UN	500	.	NODE_11_length_134295_cov_12.926532	60136	60136
-UN	501	.	NODE_11_length_134295_cov_12.926532	60139	60139
-UN	502	.	NODE_11_length_134295_cov_12.926532	60142	60142
-UN	503	.	NODE_11_length_134295_cov_12.926532	60144	60162
-UN	504	.	NODE_11_length_134295_cov_12.926532	64511	64511
-UN	505	.	NODE_11_length_134295_cov_12.926532	64539	64539
-UN	506	.	NODE_11_length_134295_cov_12.926532	64755	64755
-UN	507	.	NODE_11_length_134295_cov_12.926532	64757	64759
-UN	508	.	NODE_11_length_134295_cov_12.926532	64764	64764
-UN	509	.	NODE_11_length_134295_cov_12.926532	64767	64767
-UN	510	.	NODE_11_length_134295_cov_12.926532	72175	72192
-UN	511	.	NODE_11_length_134295_cov_12.926532	72209	72209
-UN	512	.	NODE_11_length_134295_cov_12.926532	72251	72251
-UN	513	.	NODE_11_length_134295_cov_12.926532	72253	72273
-UN	514	.	NODE_11_length_134295_cov_12.926532	72291	72291
-UN	515	.	NODE_11_length_134295_cov_12.926532	72374	72374
-UN	516	.	NODE_11_length_134295_cov_12.926532	72656	72656
-UN	517	.	NODE_11_length_134295_cov_12.926532	72661	72661
-UN	518	.	NODE_11_length_134295_cov_12.926532	72670	72670
-UN	519	.	NODE_11_length_134295_cov_12.926532	72672	72672
-UN	520	.	NODE_11_length_134295_cov_12.926532	72674	72675
-UN	521	.	NODE_11_length_134295_cov_12.926532	72677	72678
-UN	522	.	NODE_11_length_134295_cov_12.926532	72680	72680
-UN	523	.	NODE_11_length_134295_cov_12.926532	72682	72682
-UN	524	.	NODE_11_length_134295_cov_12.926532	72685	72687
-UN	525	.	NODE_11_length_134295_cov_12.926532	72690	72690
-UN	526	.	NODE_11_length_134295_cov_12.926532	72693	72693
-UN	527	.	NODE_11_length_134295_cov_12.926532	72697	72698
-UN	528	.	NODE_11_length_134295_cov_12.926532	72705	72705
-UN	529	.	NODE_11_length_134295_cov_12.926532	72708	72719
-UN	530	.	NODE_11_length_134295_cov_12.926532	72721	72722
-UN	531	.	NODE_11_length_134295_cov_12.926532	72724	72756
-UN	532	.	NODE_11_length_134295_cov_12.926532	72758	72758
-UN	533	.	NODE_11_length_134295_cov_12.926532	72761	72766
-UN	534	.	NODE_11_length_134295_cov_12.926532	72768	72768
-UN	535	.	NODE_11_length_134295_cov_12.926532	72770	72771
-UN	536	.	NODE_11_length_134295_cov_12.926532	72773	72773
-UN	537	.	NODE_11_length_134295_cov_12.926532	72776	72777
-UN	538	.	NODE_11_length_134295_cov_12.926532	94449	94449
-UN	539	.	NODE_11_length_134295_cov_12.926532	94451	94451
-UN	540	.	NODE_11_length_134295_cov_12.926532	94454	100397
-UN	541	.	NODE_11_length_134295_cov_12.926532	100517	102349
-UN	542	.	NODE_11_length_134295_cov_12.926532	102738	110326
-UN	543	.	NODE_11_length_134295_cov_12.926532	110329	110330
-UN	544	.	NODE_11_length_134295_cov_12.926532	110334	110334
-UN	545	.	NODE_11_length_134295_cov_12.926532	110348	110348
-UN	546	.	NODE_11_length_134295_cov_12.926532	134241	134295
-UN	547	.	NODE_12_length_132508_cov_13.954518	1	9
-UN	548	.	NODE_12_length_132508_cov_13.954518	16041	16112
-UN	549	.	NODE_12_length_132508_cov_13.954518	19802	19802
-UN	550	.	NODE_12_length_132508_cov_13.954518	19806	19806
-UN	551	.	NODE_12_length_132508_cov_13.954518	19831	19832
-UN	552	.	NODE_12_length_132508_cov_13.954518	19836	19851
-UN	553	.	NODE_12_length_132508_cov_13.954518	19858	19858
-UN	554	.	NODE_12_length_132508_cov_13.954518	19874	19877
-UN	555	.	NODE_12_length_132508_cov_13.954518	19886	19887
-UN	556	.	NODE_12_length_132508_cov_13.954518	25649	25649
-UN	557	.	NODE_12_length_132508_cov_13.954518	25651	25651
-UN	558	.	NODE_12_length_132508_cov_13.954518	25662	25662
-UN	559	.	NODE_12_length_132508_cov_13.954518	25666	25667
-UN	560	.	NODE_12_length_132508_cov_13.954518	25677	25677
-UN	561	.	NODE_12_length_132508_cov_13.954518	25679	25679
-UN	562	.	NODE_12_length_132508_cov_13.954518	32230	32230
-UN	563	.	NODE_12_length_132508_cov_13.954518	32232	32232
-UN	564	.	NODE_12_length_132508_cov_13.954518	32262	32262
-UN	565	.	NODE_12_length_132508_cov_13.954518	32277	32281
-UN	566	.	NODE_12_length_132508_cov_13.954518	48290	48290
-UN	567	.	NODE_12_length_132508_cov_13.954518	48293	48293
-UN	568	.	NODE_12_length_132508_cov_13.954518	48312	48315
-UN	569	.	NODE_12_length_132508_cov_13.954518	48317	48340
-UN	570	.	NODE_12_length_132508_cov_13.954518	48344	48344
-UN	571	.	NODE_12_length_132508_cov_13.954518	48396	48396
-UN	572	.	NODE_12_length_132508_cov_13.954518	48402	48402
-UN	573	.	NODE_12_length_132508_cov_13.954518	48404	48404
-UN	574	.	NODE_12_length_132508_cov_13.954518	48408	48409
-UN	575	.	NODE_12_length_132508_cov_13.954518	48413	48414
-UN	576	.	NODE_12_length_132508_cov_13.954518	48420	48420
-UN	577	.	NODE_12_length_132508_cov_13.954518	48422	48422
-UN	578	.	NODE_12_length_132508_cov_13.954518	48424	48424
-UN	579	.	NODE_12_length_132508_cov_13.954518	48426	48427
-UN	580	.	NODE_12_length_132508_cov_13.954518	48434	48434
-UN	581	.	NODE_12_length_132508_cov_13.954518	48436	48437
-UN	582	.	NODE_12_length_132508_cov_13.954518	48444	48444
-UN	583	.	NODE_12_length_132508_cov_13.954518	48446	48446
-UN	584	.	NODE_12_length_132508_cov_13.954518	48450	48450
-UN	585	.	NODE_12_length_132508_cov_13.954518	48459	48459
-UN	586	.	NODE_12_length_132508_cov_13.954518	54021	54022
-UN	587	.	NODE_12_length_132508_cov_13.954518	54024	54025
-UN	588	.	NODE_12_length_132508_cov_13.954518	75005	75005
-UN	589	.	NODE_12_length_132508_cov_13.954518	75041	75043
-UN	590	.	NODE_12_length_132508_cov_13.954518	84062	84062
-UN	591	.	NODE_12_length_132508_cov_13.954518	84076	84078
-UN	592	.	NODE_12_length_132508_cov_13.954518	118443	118443
-UN	593	.	NODE_12_length_132508_cov_13.954518	118458	118458
-UN	594	.	NODE_12_length_132508_cov_13.954518	118461	118491
-UN	595	.	NODE_12_length_132508_cov_13.954518	118493	118494
-UN	596	.	NODE_12_length_132508_cov_13.954518	118496	118496
-UN	597	.	NODE_12_length_132508_cov_13.954518	118504	118506
-UN	598	.	NODE_12_length_132508_cov_13.954518	118508	118508
-UN	599	.	NODE_12_length_132508_cov_13.954518	118511	118512
-UN	600	.	NODE_12_length_132508_cov_13.954518	118515	118518
-UN	601	.	NODE_12_length_132508_cov_13.954518	118520	118521
-UN	602	.	NODE_12_length_132508_cov_13.954518	118524	118765
-UN	603	.	NODE_12_length_132508_cov_13.954518	132351	132351
-UN	604	.	NODE_12_length_132508_cov_13.954518	132483	132508
-UN	605	.	NODE_13_length_110849_cov_13.914407	1	15
-UN	606	.	NODE_13_length_110849_cov_13.914407	88	95
-UN	607	.	NODE_13_length_110849_cov_13.914407	97	98
-UN	608	.	NODE_13_length_110849_cov_13.914407	28109	28109
-UN	609	.	NODE_13_length_110849_cov_13.914407	100586	100586
-UN	610	.	NODE_13_length_110849_cov_13.914407	100590	100591
-UN	611	.	NODE_13_length_110849_cov_13.914407	100594	100594
-UN	612	.	NODE_13_length_110849_cov_13.914407	100597	100598
-UN	613	.	NODE_13_length_110849_cov_13.914407	100600	100604
-UN	614	.	NODE_13_length_110849_cov_13.914407	100608	100609
-UN	615	.	NODE_13_length_110849_cov_13.914407	100611	100613
-UN	616	.	NODE_13_length_110849_cov_13.914407	100615	100615
-UN	617	.	NODE_13_length_110849_cov_13.914407	100618	100618
-UN	618	.	NODE_13_length_110849_cov_13.914407	100620	100625
-UN	619	.	NODE_13_length_110849_cov_13.914407	100629	100629
-UN	620	.	NODE_13_length_110849_cov_13.914407	100633	100635
-UN	621	.	NODE_13_length_110849_cov_13.914407	100637	100637
-UN	622	.	NODE_13_length_110849_cov_13.914407	100639	100646
-UN	623	.	NODE_13_length_110849_cov_13.914407	100648	100667
-UN	624	.	NODE_13_length_110849_cov_13.914407	100669	100669
-UN	625	.	NODE_13_length_110849_cov_13.914407	100672	100673
-UN	626	.	NODE_13_length_110849_cov_13.914407	100675	100679
-UN	627	.	NODE_13_length_110849_cov_13.914407	100682	100683
-UN	628	.	NODE_13_length_110849_cov_13.914407	100693	100693
-UN	629	.	NODE_13_length_110849_cov_13.914407	100696	100696
-UN	630	.	NODE_13_length_110849_cov_13.914407	101820	101910
-UN	631	.	NODE_13_length_110849_cov_13.914407	101913	101913
-UN	632	.	NODE_13_length_110849_cov_13.914407	101918	101920
-UN	633	.	NODE_13_length_110849_cov_13.914407	101924	101927
-UN	634	.	NODE_13_length_110849_cov_13.914407	101931	101932
-UN	635	.	NODE_13_length_110849_cov_13.914407	101935	101935
-UN	636	.	NODE_13_length_110849_cov_13.914407	101938	101939
-UN	637	.	NODE_13_length_110849_cov_13.914407	101947	101947
-UN	638	.	NODE_13_length_110849_cov_13.914407	101952	101952
-UN	639	.	NODE_13_length_110849_cov_13.914407	101955	101957
-UN	640	.	NODE_13_length_110849_cov_13.914407	101962	101962
-UN	641	.	NODE_13_length_110849_cov_13.914407	101965	101967
-UN	642	.	NODE_13_length_110849_cov_13.914407	101979	101979
-UN	643	.	NODE_13_length_110849_cov_13.914407	101983	101984
-UN	644	.	NODE_13_length_110849_cov_13.914407	102090	102090
-UN	645	.	NODE_13_length_110849_cov_13.914407	102092	102092
-UN	646	.	NODE_13_length_110849_cov_13.914407	102094	102095
-UN	647	.	NODE_13_length_110849_cov_13.914407	102097	102097
-UN	648	.	NODE_13_length_110849_cov_13.914407	102100	102102
-UN	649	.	NODE_13_length_110849_cov_13.914407	102104	102105
-UN	650	.	NODE_13_length_110849_cov_13.914407	102107	102107
-UN	651	.	NODE_13_length_110849_cov_13.914407	102109	102109
-UN	652	.	NODE_13_length_110849_cov_13.914407	102111	102141
-UN	653	.	NODE_13_length_110849_cov_13.914407	102175	102175
-UN	654	.	NODE_13_length_110849_cov_13.914407	102178	102184
-UN	655	.	NODE_13_length_110849_cov_13.914407	102260	102260
-UN	656	.	NODE_13_length_110849_cov_13.914407	102282	102282
-UN	657	.	NODE_14_length_108768_cov_12.038052	1	1
-UN	658	.	NODE_14_length_108768_cov_12.038052	25675	25675
-UN	659	.	NODE_14_length_108768_cov_12.038052	31739	31739
-UN	660	.	NODE_14_length_108768_cov_12.038052	32047	32047
-UN	661	.	NODE_14_length_108768_cov_12.038052	32118	32118
-UN	662	.	NODE_14_length_108768_cov_12.038052	32120	32121
-UN	663	.	NODE_14_length_108768_cov_12.038052	32123	32124
-UN	664	.	NODE_14_length_108768_cov_12.038052	32127	32130
-UN	665	.	NODE_14_length_108768_cov_12.038052	32133	32136
-UN	666	.	NODE_14_length_108768_cov_12.038052	32156	32156
-UN	667	.	NODE_14_length_108768_cov_12.038052	32176	32178
-UN	668	.	NODE_14_length_108768_cov_12.038052	32185	32185
-UN	669	.	NODE_14_length_108768_cov_12.038052	32188	32188
-UN	670	.	NODE_14_length_108768_cov_12.038052	32191	32191
-UN	671	.	NODE_14_length_108768_cov_12.038052	32785	32798
-UN	672	.	NODE_14_length_108768_cov_12.038052	32827	32827
-UN	673	.	NODE_14_length_108768_cov_12.038052	32831	32831
-UN	674	.	NODE_14_length_108768_cov_12.038052	32834	32835
-UN	675	.	NODE_14_length_108768_cov_12.038052	32839	32839
-UN	676	.	NODE_14_length_108768_cov_12.038052	32842	32842
-UN	677	.	NODE_14_length_108768_cov_12.038052	32846	32846
-UN	678	.	NODE_14_length_108768_cov_12.038052	32850	32850
-UN	679	.	NODE_14_length_108768_cov_12.038052	32856	32856
-UN	680	.	NODE_14_length_108768_cov_12.038052	32858	32858
-UN	681	.	NODE_14_length_108768_cov_12.038052	32867	32867
-UN	682	.	NODE_14_length_108768_cov_12.038052	32869	32870
-UN	683	.	NODE_14_length_108768_cov_12.038052	34996	34996
-UN	684	.	NODE_14_length_108768_cov_12.038052	37382	37382
-UN	685	.	NODE_14_length_108768_cov_12.038052	37386	37386
-UN	686	.	NODE_14_length_108768_cov_12.038052	37396	37396
-UN	687	.	NODE_14_length_108768_cov_12.038052	54966	54966
-UN	688	.	NODE_14_length_108768_cov_12.038052	80863	80864
-UN	689	.	NODE_14_length_108768_cov_12.038052	80873	80873
-UN	690	.	NODE_14_length_108768_cov_12.038052	80876	80876
-UN	691	.	NODE_14_length_108768_cov_12.038052	80878	80879
-UN	692	.	NODE_14_length_108768_cov_12.038052	80885	80885
-UN	693	.	NODE_14_length_108768_cov_12.038052	80900	80900
-UN	694	.	NODE_14_length_108768_cov_12.038052	80903	80903
-UN	695	.	NODE_14_length_108768_cov_12.038052	80910	80910
-UN	696	.	NODE_14_length_108768_cov_12.038052	80915	80915
-UN	697	.	NODE_14_length_108768_cov_12.038052	80918	80919
-UN	698	.	NODE_14_length_108768_cov_12.038052	80925	80925
-UN	699	.	NODE_14_length_108768_cov_12.038052	80931	80931
-UN	700	.	NODE_14_length_108768_cov_12.038052	80933	80934
-UN	701	.	NODE_14_length_108768_cov_12.038052	80937	80941
-UN	702	.	NODE_14_length_108768_cov_12.038052	80950	80950
-UN	703	.	NODE_14_length_108768_cov_12.038052	80964	80964
-UN	704	.	NODE_14_length_108768_cov_12.038052	80967	80981
-UN	705	.	NODE_14_length_108768_cov_12.038052	80983	80985
-UN	706	.	NODE_14_length_108768_cov_12.038052	80987	81023
-UN	707	.	NODE_14_length_108768_cov_12.038052	81025	81026
-UN	708	.	NODE_14_length_108768_cov_12.038052	81029	81029
-UN	709	.	NODE_14_length_108768_cov_12.038052	96989	96989
-UN	710	.	NODE_14_length_108768_cov_12.038052	96999	96999
-UN	711	.	NODE_14_length_108768_cov_12.038052	97001	97001
-UN	712	.	NODE_14_length_108768_cov_12.038052	97004	97016
-UN	713	.	NODE_14_length_108768_cov_12.038052	97018	97018
-UN	714	.	NODE_14_length_108768_cov_12.038052	97020	97030
-UN	715	.	NODE_14_length_108768_cov_12.038052	97032	97059
-UN	716	.	NODE_14_length_108768_cov_12.038052	97061	97062
-UN	717	.	NODE_14_length_108768_cov_12.038052	97064	97075
-UN	718	.	NODE_14_length_108768_cov_12.038052	97078	97078
-UN	719	.	NODE_14_length_108768_cov_12.038052	97091	97092
-UN	720	.	NODE_14_length_108768_cov_12.038052	97095	97098
-UN	721	.	NODE_14_length_108768_cov_12.038052	97100	97101
-UN	722	.	NODE_14_length_108768_cov_12.038052	97103	97105
-UN	723	.	NODE_14_length_108768_cov_12.038052	97107	97107
-UN	724	.	NODE_14_length_108768_cov_12.038052	102257	102258
-UN	725	.	NODE_14_length_108768_cov_12.038052	103448	103448
-UN	726	.	NODE_14_length_108768_cov_12.038052	103450	103450
-UN	727	.	NODE_14_length_108768_cov_12.038052	105170	105173
-UN	728	.	NODE_14_length_108768_cov_12.038052	105177	105180
-UN	729	.	NODE_14_length_108768_cov_12.038052	105182	105182
-UN	730	.	NODE_14_length_108768_cov_12.038052	105185	105189
-UN	731	.	NODE_14_length_108768_cov_12.038052	105194	105198
-UN	732	.	NODE_14_length_108768_cov_12.038052	105200	105200
-UN	733	.	NODE_14_length_108768_cov_12.038052	105209	105209
-UN	734	.	NODE_14_length_108768_cov_12.038052	105211	105216
-UN	735	.	NODE_14_length_108768_cov_12.038052	105228	105228
-UN	736	.	NODE_14_length_108768_cov_12.038052	105248	105248
-UN	737	.	NODE_14_length_108768_cov_12.038052	105250	105251
-UN	738	.	NODE_14_length_108768_cov_12.038052	105494	105683
-UN	739	.	NODE_14_length_108768_cov_12.038052	105685	105685
-UN	740	.	NODE_14_length_108768_cov_12.038052	105687	105687
-UN	741	.	NODE_14_length_108768_cov_12.038052	105713	105713
-UN	742	.	NODE_14_length_108768_cov_12.038052	105721	105721
-UN	743	.	NODE_14_length_108768_cov_12.038052	106769	106769
-UN	744	.	NODE_14_length_108768_cov_12.038052	107224	107224
-UN	745	.	NODE_14_length_108768_cov_12.038052	107771	107771
-UN	746	.	NODE_14_length_108768_cov_12.038052	107778	107779
-UN	747	.	NODE_14_length_108768_cov_12.038052	107782	107808
-UN	748	.	NODE_14_length_108768_cov_12.038052	107902	108052
-UN	749	.	NODE_14_length_108768_cov_12.038052	108055	108075
-UN	750	.	NODE_14_length_108768_cov_12.038052	108559	108559
-UN	751	.	NODE_14_length_108768_cov_12.038052	108570	108572
-UN	752	.	NODE_14_length_108768_cov_12.038052	108574	108577
-UN	753	.	NODE_14_length_108768_cov_12.038052	108579	108581
-UN	754	.	NODE_14_length_108768_cov_12.038052	108586	108587
-UN	755	.	NODE_14_length_108768_cov_12.038052	108591	108593
-UN	756	.	NODE_14_length_108768_cov_12.038052	108595	108596
-UN	757	.	NODE_14_length_108768_cov_12.038052	108598	108598
-UN	758	.	NODE_14_length_108768_cov_12.038052	108602	108605
-UN	759	.	NODE_14_length_108768_cov_12.038052	108607	108768
-UN	760	.	NODE_15_length_102314_cov_11.442395	1	3
-UN	761	.	NODE_15_length_102314_cov_11.442395	16307	16447
-UN	762	.	NODE_15_length_102314_cov_11.442395	16449	16449
-UN	763	.	NODE_15_length_102314_cov_11.442395	16451	16452
-UN	764	.	NODE_15_length_102314_cov_11.442395	16457	16457
-UN	765	.	NODE_15_length_102314_cov_11.442395	16459	16459
-UN	766	.	NODE_15_length_102314_cov_11.442395	16462	16462
-UN	767	.	NODE_15_length_102314_cov_11.442395	19993	19993
-UN	768	.	NODE_15_length_102314_cov_11.442395	21056	21056
-UN	769	.	NODE_15_length_102314_cov_11.442395	21079	21079
-UN	770	.	NODE_15_length_102314_cov_11.442395	27379	27379
-UN	771	.	NODE_15_length_102314_cov_11.442395	27385	27385
-UN	772	.	NODE_15_length_102314_cov_11.442395	29223	29223
-UN	773	.	NODE_15_length_102314_cov_11.442395	29229	29231
-UN	774	.	NODE_15_length_102314_cov_11.442395	29250	29250
-UN	775	.	NODE_15_length_102314_cov_11.442395	29253	29253
-UN	776	.	NODE_15_length_102314_cov_11.442395	30156	30162
-UN	777	.	NODE_15_length_102314_cov_11.442395	30164	30164
-UN	778	.	NODE_15_length_102314_cov_11.442395	30166	30167
-UN	779	.	NODE_15_length_102314_cov_11.442395	38277	38277
-UN	780	.	NODE_15_length_102314_cov_11.442395	38304	38304
-UN	781	.	NODE_15_length_102314_cov_11.442395	38320	38320
-UN	782	.	NODE_15_length_102314_cov_11.442395	39457	39457
-UN	783	.	NODE_15_length_102314_cov_11.442395	39464	39464
-UN	784	.	NODE_15_length_102314_cov_11.442395	39466	39472
-UN	785	.	NODE_15_length_102314_cov_11.442395	39474	39474
-UN	786	.	NODE_15_length_102314_cov_11.442395	39476	39478
-UN	787	.	NODE_15_length_102314_cov_11.442395	47026	47026
-UN	788	.	NODE_15_length_102314_cov_11.442395	51399	51436
-UN	789	.	NODE_15_length_102314_cov_11.442395	51438	51441
-UN	790	.	NODE_15_length_102314_cov_11.442395	51447	51447
-UN	791	.	NODE_15_length_102314_cov_11.442395	51449	51449
-UN	792	.	NODE_15_length_102314_cov_11.442395	51451	51451
-UN	793	.	NODE_15_length_102314_cov_11.442395	51454	51454
-UN	794	.	NODE_15_length_102314_cov_11.442395	51456	51456
-UN	795	.	NODE_15_length_102314_cov_11.442395	51471	51471
-UN	796	.	NODE_15_length_102314_cov_11.442395	58023	58023
-UN	797	.	NODE_15_length_102314_cov_11.442395	58195	58196
-UN	798	.	NODE_15_length_102314_cov_11.442395	58601	58601
-UN	799	.	NODE_15_length_102314_cov_11.442395	73491	73491
-UN	800	.	NODE_15_length_102314_cov_11.442395	73594	73594
-UN	801	.	NODE_15_length_102314_cov_11.442395	73617	73617
-UN	802	.	NODE_15_length_102314_cov_11.442395	73731	73731
-UN	803	.	NODE_15_length_102314_cov_11.442395	73755	73755
-UN	804	.	NODE_15_length_102314_cov_11.442395	73767	73767
-UN	805	.	NODE_15_length_102314_cov_11.442395	73773	73774
-UN	806	.	NODE_15_length_102314_cov_11.442395	73779	73779
-UN	807	.	NODE_15_length_102314_cov_11.442395	73785	73785
-UN	808	.	NODE_15_length_102314_cov_11.442395	73788	73788
-UN	809	.	NODE_15_length_102314_cov_11.442395	73793	73794
-UN	810	.	NODE_15_length_102314_cov_11.442395	73796	73796
-UN	811	.	NODE_15_length_102314_cov_11.442395	73799	73802
-UN	812	.	NODE_15_length_102314_cov_11.442395	73828	73830
-UN	813	.	NODE_15_length_102314_cov_11.442395	73832	73832
-UN	814	.	NODE_15_length_102314_cov_11.442395	73839	73840
-UN	815	.	NODE_15_length_102314_cov_11.442395	73842	73842
-UN	816	.	NODE_15_length_102314_cov_11.442395	73895	73895
-UN	817	.	NODE_15_length_102314_cov_11.442395	73900	73900
-UN	818	.	NODE_15_length_102314_cov_11.442395	73902	73902
-UN	819	.	NODE_15_length_102314_cov_11.442395	73905	73905
-UN	820	.	NODE_15_length_102314_cov_11.442395	73907	73908
-UN	821	.	NODE_15_length_102314_cov_11.442395	73910	73910
-UN	822	.	NODE_15_length_102314_cov_11.442395	73914	73914
-UN	823	.	NODE_15_length_102314_cov_11.442395	73918	73918
-UN	824	.	NODE_15_length_102314_cov_11.442395	73925	73925
-UN	825	.	NODE_15_length_102314_cov_11.442395	73927	73927
-UN	826	.	NODE_15_length_102314_cov_11.442395	73929	73929
-UN	827	.	NODE_15_length_102314_cov_11.442395	73933	74000
-UN	828	.	NODE_15_length_102314_cov_11.442395	74003	74016
-UN	829	.	NODE_15_length_102314_cov_11.442395	74018	74019
-UN	830	.	NODE_15_length_102314_cov_11.442395	74023	74024
-UN	831	.	NODE_15_length_102314_cov_11.442395	74034	74035
-UN	832	.	NODE_15_length_102314_cov_11.442395	74042	74044
-UN	833	.	NODE_15_length_102314_cov_11.442395	74059	74059
-UN	834	.	NODE_15_length_102314_cov_11.442395	74069	74070
-UN	835	.	NODE_15_length_102314_cov_11.442395	74079	74080
-UN	836	.	NODE_15_length_102314_cov_11.442395	74082	74083
-UN	837	.	NODE_15_length_102314_cov_11.442395	74085	74086
-UN	838	.	NODE_15_length_102314_cov_11.442395	74088	74088
-UN	839	.	NODE_15_length_102314_cov_11.442395	74090	74092
-UN	840	.	NODE_15_length_102314_cov_11.442395	74094	74094
-UN	841	.	NODE_15_length_102314_cov_11.442395	74098	74099
-UN	842	.	NODE_15_length_102314_cov_11.442395	74138	74138
-UN	843	.	NODE_15_length_102314_cov_11.442395	74142	74142
-UN	844	.	NODE_15_length_102314_cov_11.442395	74149	74149
-UN	845	.	NODE_15_length_102314_cov_11.442395	74151	74157
-UN	846	.	NODE_15_length_102314_cov_11.442395	74160	74160
-UN	847	.	NODE_15_length_102314_cov_11.442395	74165	74166
-UN	848	.	NODE_15_length_102314_cov_11.442395	74169	74169
-UN	849	.	NODE_15_length_102314_cov_11.442395	74179	74181
-UN	850	.	NODE_15_length_102314_cov_11.442395	74183	74184
-UN	851	.	NODE_15_length_102314_cov_11.442395	74191	74192
-UN	852	.	NODE_15_length_102314_cov_11.442395	74199	74200
-UN	853	.	NODE_15_length_102314_cov_11.442395	74246	74246
-UN	854	.	NODE_15_length_102314_cov_11.442395	74252	74252
-UN	855	.	NODE_15_length_102314_cov_11.442395	74256	74256
-UN	856	.	NODE_15_length_102314_cov_11.442395	74268	74268
-UN	857	.	NODE_15_length_102314_cov_11.442395	74294	74296
-UN	858	.	NODE_15_length_102314_cov_11.442395	82586	82586
-UN	859	.	NODE_15_length_102314_cov_11.442395	84562	84562
-UN	860	.	NODE_15_length_102314_cov_11.442395	87947	87947
-UN	861	.	NODE_15_length_102314_cov_11.442395	87949	87949
-UN	862	.	NODE_15_length_102314_cov_11.442395	87959	87959
-UN	863	.	NODE_15_length_102314_cov_11.442395	87961	87962
-UN	864	.	NODE_15_length_102314_cov_11.442395	87968	87969
-UN	865	.	NODE_15_length_102314_cov_11.442395	87982	87986
-UN	866	.	NODE_15_length_102314_cov_11.442395	87989	87990
-UN	867	.	NODE_15_length_102314_cov_11.442395	88137	88153
-UN	868	.	NODE_15_length_102314_cov_11.442395	89986	89986
-UN	869	.	NODE_15_length_102314_cov_11.442395	89996	89996
-UN	870	.	NODE_15_length_102314_cov_11.442395	90013	90021
-UN	871	.	NODE_15_length_102314_cov_11.442395	90042	90042
-UN	872	.	NODE_15_length_102314_cov_11.442395	90082	90090
-UN	873	.	NODE_15_length_102314_cov_11.442395	90098	90109
-UN	874	.	NODE_15_length_102314_cov_11.442395	90132	90132
-UN	875	.	NODE_15_length_102314_cov_11.442395	90180	90386
-UN	876	.	NODE_15_length_102314_cov_11.442395	102280	102314
-UN	877	.	NODE_16_length_99288_cov_23.374875	1	7
-UN	878	.	NODE_16_length_99288_cov_23.374875	75751	75751
-UN	879	.	NODE_16_length_99288_cov_23.374875	75753	75753
-UN	880	.	NODE_16_length_99288_cov_23.374875	75763	75764
-UN	881	.	NODE_16_length_99288_cov_23.374875	75768	75769
-UN	882	.	NODE_16_length_99288_cov_23.374875	75912	75916
-UN	883	.	NODE_16_length_99288_cov_23.374875	75918	75921
-UN	884	.	NODE_16_length_99288_cov_23.374875	75923	75932
-UN	885	.	NODE_16_length_99288_cov_23.374875	75941	75941
-UN	886	.	NODE_16_length_99288_cov_23.374875	99286	99288
-UN	887	.	NODE_17_length_96504_cov_13.807392	1	35
-UN	888	.	NODE_17_length_96504_cov_13.807392	43	50
-UN	889	.	NODE_17_length_96504_cov_13.807392	52	52
-UN	890	.	NODE_17_length_96504_cov_13.807392	39447	39447
-UN	891	.	NODE_17_length_96504_cov_13.807392	39520	39520
-UN	892	.	NODE_17_length_96504_cov_13.807392	39534	39534
-UN	893	.	NODE_17_length_96504_cov_13.807392	39548	39549
-UN	894	.	NODE_17_length_96504_cov_13.807392	45089	45096
-UN	895	.	NODE_17_length_96504_cov_13.807392	45105	45106
-UN	896	.	NODE_17_length_96504_cov_13.807392	45111	45111
-UN	897	.	NODE_17_length_96504_cov_13.807392	57073	57092
-UN	898	.	NODE_17_length_96504_cov_13.807392	57097	57098
-UN	899	.	NODE_17_length_96504_cov_13.807392	57101	57101
-UN	900	.	NODE_17_length_96504_cov_13.807392	60179	60179
-UN	901	.	NODE_17_length_96504_cov_13.807392	86597	86611
-UN	902	.	NODE_17_length_96504_cov_13.807392	86614	86689
-UN	903	.	NODE_17_length_96504_cov_13.807392	86691	86691
-UN	904	.	NODE_17_length_96504_cov_13.807392	86693	86693
-UN	905	.	NODE_17_length_96504_cov_13.807392	86695	86697
-UN	906	.	NODE_17_length_96504_cov_13.807392	86701	86701
-UN	907	.	NODE_17_length_96504_cov_13.807392	86703	86703
-UN	908	.	NODE_17_length_96504_cov_13.807392	86705	86705
-UN	909	.	NODE_17_length_96504_cov_13.807392	86709	86712
-UN	910	.	NODE_17_length_96504_cov_13.807392	86714	86714
-UN	911	.	NODE_17_length_96504_cov_13.807392	86716	86716
-UN	912	.	NODE_17_length_96504_cov_13.807392	86718	86718
-UN	913	.	NODE_17_length_96504_cov_13.807392	86720	86726
-UN	914	.	NODE_17_length_96504_cov_13.807392	86728	86728
-UN	915	.	NODE_17_length_96504_cov_13.807392	86734	86734
-UN	916	.	NODE_17_length_96504_cov_13.807392	86737	86738
-UN	917	.	NODE_17_length_96504_cov_13.807392	86740	86741
-UN	918	.	NODE_17_length_96504_cov_13.807392	86747	86747
-UN	919	.	NODE_17_length_96504_cov_13.807392	86752	86752
-UN	920	.	NODE_17_length_96504_cov_13.807392	86757	86757
-UN	921	.	NODE_17_length_96504_cov_13.807392	86759	86760
-UN	922	.	NODE_17_length_96504_cov_13.807392	86767	86768
-UN	923	.	NODE_17_length_96504_cov_13.807392	86793	86842
-UN	924	.	NODE_17_length_96504_cov_13.807392	87052	87052
-UN	925	.	NODE_17_length_96504_cov_13.807392	87058	87058
-UN	926	.	NODE_17_length_96504_cov_13.807392	87154	87154
-UN	927	.	NODE_17_length_96504_cov_13.807392	87156	87157
-UN	928	.	NODE_17_length_96504_cov_13.807392	87159	87160
-UN	929	.	NODE_17_length_96504_cov_13.807392	87168	87169
-UN	930	.	NODE_17_length_96504_cov_13.807392	87171	87174
-UN	931	.	NODE_17_length_96504_cov_13.807392	87178	87178
-UN	932	.	NODE_17_length_96504_cov_13.807392	87180	87181
-UN	933	.	NODE_17_length_96504_cov_13.807392	87184	87184
-UN	934	.	NODE_17_length_96504_cov_13.807392	87188	87190
-UN	935	.	NODE_17_length_96504_cov_13.807392	87192	87194
-UN	936	.	NODE_17_length_96504_cov_13.807392	87196	87196
-UN	937	.	NODE_17_length_96504_cov_13.807392	87199	87199
-UN	938	.	NODE_17_length_96504_cov_13.807392	87202	87202
-UN	939	.	NODE_17_length_96504_cov_13.807392	96476	96476
-UN	940	.	NODE_17_length_96504_cov_13.807392	96498	96504
-UN	941	.	NODE_18_length_93152_cov_12.794528	1482	1482
-UN	942	.	NODE_18_length_93152_cov_12.794528	1495	1495
-UN	943	.	NODE_18_length_93152_cov_12.794528	5533	5551
-UN	944	.	NODE_18_length_93152_cov_12.794528	5559	5591
-UN	945	.	NODE_18_length_93152_cov_12.794528	46330	46330
-UN	946	.	NODE_18_length_93152_cov_12.794528	46336	46336
-UN	947	.	NODE_18_length_93152_cov_12.794528	46341	46344
-UN	948	.	NODE_18_length_93152_cov_12.794528	46346	46346
-UN	949	.	NODE_18_length_93152_cov_12.794528	46353	46353
-UN	950	.	NODE_18_length_93152_cov_12.794528	46355	46355
-UN	951	.	NODE_18_length_93152_cov_12.794528	54091	54093
-UN	952	.	NODE_18_length_93152_cov_12.794528	54095	54103
-UN	953	.	NODE_18_length_93152_cov_12.794528	64226	64226
-UN	954	.	NODE_18_length_93152_cov_12.794528	64272	64272
-UN	955	.	NODE_18_length_93152_cov_12.794528	82341	82341
-UN	956	.	NODE_19_length_80346_cov_13.066655	1	21
-UN	957	.	NODE_19_length_80346_cov_13.066655	59	59
-UN	958	.	NODE_19_length_80346_cov_13.066655	13678	13686
-UN	959	.	NODE_19_length_80346_cov_13.066655	31997	31997
-UN	960	.	NODE_19_length_80346_cov_13.066655	32000	32021
-UN	961	.	NODE_19_length_80346_cov_13.066655	32024	32039
-UN	962	.	NODE_19_length_80346_cov_13.066655	32041	32041
-UN	963	.	NODE_19_length_80346_cov_13.066655	32047	32047
-UN	964	.	NODE_19_length_80346_cov_13.066655	32050	32050
-UN	965	.	NODE_19_length_80346_cov_13.066655	50847	50847
-UN	966	.	NODE_19_length_80346_cov_13.066655	51891	51891
-UN	967	.	NODE_19_length_80346_cov_13.066655	51896	51896
-UN	968	.	NODE_19_length_80346_cov_13.066655	52145	52145
-UN	969	.	NODE_19_length_80346_cov_13.066655	52148	52148
-UN	970	.	NODE_19_length_80346_cov_13.066655	52157	52157
-UN	971	.	NODE_19_length_80346_cov_13.066655	52163	52163
-UN	972	.	NODE_19_length_80346_cov_13.066655	52165	52165
-UN	973	.	NODE_19_length_80346_cov_13.066655	52200	52201
-UN	974	.	NODE_19_length_80346_cov_13.066655	52216	52217
-UN	975	.	NODE_19_length_80346_cov_13.066655	52225	52225
-UN	976	.	NODE_19_length_80346_cov_13.066655	52227	52227
-UN	977	.	NODE_19_length_80346_cov_13.066655	52231	52231
-UN	978	.	NODE_19_length_80346_cov_13.066655	52235	52281
-UN	979	.	NODE_19_length_80346_cov_13.066655	63350	63357
-UN	980	.	NODE_19_length_80346_cov_13.066655	63359	63363
-UN	981	.	NODE_19_length_80346_cov_13.066655	63368	63368
-UN	982	.	NODE_19_length_80346_cov_13.066655	63370	63371
-UN	983	.	NODE_19_length_80346_cov_13.066655	63373	63381
-UN	984	.	NODE_19_length_80346_cov_13.066655	63387	63387
-UN	985	.	NODE_19_length_80346_cov_13.066655	63394	63394
-UN	986	.	NODE_19_length_80346_cov_13.066655	63396	63397
-UN	987	.	NODE_19_length_80346_cov_13.066655	63549	63550
-UN	988	.	NODE_19_length_80346_cov_13.066655	63558	63558
-UN	989	.	NODE_19_length_80346_cov_13.066655	63560	63560
-UN	990	.	NODE_19_length_80346_cov_13.066655	63564	63564
-UN	991	.	NODE_19_length_80346_cov_13.066655	63566	63566
-UN	992	.	NODE_19_length_80346_cov_13.066655	63594	63594
-UN	993	.	NODE_19_length_80346_cov_13.066655	63607	63607
-UN	994	.	NODE_19_length_80346_cov_13.066655	63609	63609
-UN	995	.	NODE_19_length_80346_cov_13.066655	63637	63637
-UN	996	.	NODE_19_length_80346_cov_13.066655	64203	64204
-UN	997	.	NODE_19_length_80346_cov_13.066655	64209	64209
-UN	998	.	NODE_19_length_80346_cov_13.066655	64211	64211
-UN	999	.	NODE_19_length_80346_cov_13.066655	64221	64221
-UN	1000	.	NODE_19_length_80346_cov_13.066655	64479	64479
-UN	1001	.	NODE_19_length_80346_cov_13.066655	64495	64518
-UN	1002	.	NODE_19_length_80346_cov_13.066655	64521	64524
-UN	1003	.	NODE_19_length_80346_cov_13.066655	64528	64544
-UN	1004	.	NODE_19_length_80346_cov_13.066655	64548	64548
-UN	1005	.	NODE_19_length_80346_cov_13.066655	64560	64560
-UN	1006	.	NODE_19_length_80346_cov_13.066655	65553	65553
-UN	1007	.	NODE_19_length_80346_cov_13.066655	65616	65617
-UN	1008	.	NODE_19_length_80346_cov_13.066655	65619	65661
-UN	1009	.	NODE_19_length_80346_cov_13.066655	65663	65663
-UN	1010	.	NODE_19_length_80346_cov_13.066655	65665	65676
-UN	1011	.	NODE_19_length_80346_cov_13.066655	65678	65682
-UN	1012	.	NODE_19_length_80346_cov_13.066655	65689	65689
-UN	1013	.	NODE_19_length_80346_cov_13.066655	65691	65707
-UN	1014	.	NODE_19_length_80346_cov_13.066655	70340	70340
-UN	1015	.	NODE_19_length_80346_cov_13.066655	70342	70342
-UN	1016	.	NODE_19_length_80346_cov_13.066655	70345	70353
-UN	1017	.	NODE_19_length_80346_cov_13.066655	70356	70435
-UN	1018	.	NODE_19_length_80346_cov_13.066655	70438	70444
-UN	1019	.	NODE_19_length_80346_cov_13.066655	70446	70484
-UN	1020	.	NODE_19_length_80346_cov_13.066655	70486	70486
-UN	1021	.	NODE_19_length_80346_cov_13.066655	70499	70500
-UN	1022	.	NODE_19_length_80346_cov_13.066655	70502	70504
-UN	1023	.	NODE_19_length_80346_cov_13.066655	70507	70507
-UN	1024	.	NODE_19_length_80346_cov_13.066655	70509	70509
-UN	1025	.	NODE_19_length_80346_cov_13.066655	70528	70528
-UN	1026	.	NODE_19_length_80346_cov_13.066655	70534	70534
-UN	1027	.	NODE_19_length_80346_cov_13.066655	72094	72094
-UN	1028	.	NODE_19_length_80346_cov_13.066655	74065	74065
-UN	1029	.	NODE_19_length_80346_cov_13.066655	74074	74074
-UN	1030	.	NODE_19_length_80346_cov_13.066655	74109	74109
-UN	1031	.	NODE_19_length_80346_cov_13.066655	74111	74111
-UN	1032	.	NODE_19_length_80346_cov_13.066655	74120	74120
-UN	1033	.	NODE_19_length_80346_cov_13.066655	74122	74122
-UN	1034	.	NODE_19_length_80346_cov_13.066655	74157	74158
-UN	1035	.	NODE_19_length_80346_cov_13.066655	74161	74161
-UN	1036	.	NODE_19_length_80346_cov_13.066655	74164	74164
-UN	1037	.	NODE_19_length_80346_cov_13.066655	74166	74168
-UN	1038	.	NODE_19_length_80346_cov_13.066655	74268	74268
-UN	1039	.	NODE_19_length_80346_cov_13.066655	74276	74276
-UN	1040	.	NODE_19_length_80346_cov_13.066655	74320	74320
-UN	1041	.	NODE_19_length_80346_cov_13.066655	74335	74335
-UN	1042	.	NODE_19_length_80346_cov_13.066655	74340	74340
-UN	1043	.	NODE_19_length_80346_cov_13.066655	74358	74358
-UN	1044	.	NODE_19_length_80346_cov_13.066655	75510	75510
-UN	1045	.	NODE_19_length_80346_cov_13.066655	80253	80253
-UN	1046	.	NODE_19_length_80346_cov_13.066655	80270	80270
-UN	1047	.	NODE_19_length_80346_cov_13.066655	80274	80280
-UN	1048	.	NODE_19_length_80346_cov_13.066655	80282	80346
-UN	1049	.	NODE_1_length_765717_cov_10.426968	1	67
-UN	1050	.	NODE_1_length_765717_cov_10.426968	70	70
-UN	1051	.	NODE_1_length_765717_cov_10.426968	72	73
-UN	1052	.	NODE_1_length_765717_cov_10.426968	80	80
-UN	1053	.	NODE_1_length_765717_cov_10.426968	82	82
-UN	1054	.	NODE_1_length_765717_cov_10.426968	84	86
-UN	1055	.	NODE_1_length_765717_cov_10.426968	88	89
-UN	1056	.	NODE_1_length_765717_cov_10.426968	91	91
-UN	1057	.	NODE_1_length_765717_cov_10.426968	93	94
-UN	1058	.	NODE_1_length_765717_cov_10.426968	96	97
-UN	1059	.	NODE_1_length_765717_cov_10.426968	99	100
-UN	1060	.	NODE_1_length_765717_cov_10.426968	102	102
-UN	1061	.	NODE_1_length_765717_cov_10.426968	105	107
-UN	1062	.	NODE_1_length_765717_cov_10.426968	6515	6602
-UN	1063	.	NODE_1_length_765717_cov_10.426968	25124	25124
-UN	1064	.	NODE_1_length_765717_cov_10.426968	27758	27758
-UN	1065	.	NODE_1_length_765717_cov_10.426968	27764	27764
-UN	1066	.	NODE_1_length_765717_cov_10.426968	27768	27768
-UN	1067	.	NODE_1_length_765717_cov_10.426968	27772	27772
-UN	1068	.	NODE_1_length_765717_cov_10.426968	27779	27779
-UN	1069	.	NODE_1_length_765717_cov_10.426968	27783	27783
-UN	1070	.	NODE_1_length_765717_cov_10.426968	27788	27788
-UN	1071	.	NODE_1_length_765717_cov_10.426968	27796	27796
-UN	1072	.	NODE_1_length_765717_cov_10.426968	27804	27814
-UN	1073	.	NODE_1_length_765717_cov_10.426968	27822	27822
-UN	1074	.	NODE_1_length_765717_cov_10.426968	35107	35107
-UN	1075	.	NODE_1_length_765717_cov_10.426968	35111	35111
-UN	1076	.	NODE_1_length_765717_cov_10.426968	35116	35116
-UN	1077	.	NODE_1_length_765717_cov_10.426968	35174	35175
-UN	1078	.	NODE_1_length_765717_cov_10.426968	35178	35179
-UN	1079	.	NODE_1_length_765717_cov_10.426968	35182	35185
-UN	1080	.	NODE_1_length_765717_cov_10.426968	35187	35187
-UN	1081	.	NODE_1_length_765717_cov_10.426968	35190	35274
-UN	1082	.	NODE_1_length_765717_cov_10.426968	35350	35350
-UN	1083	.	NODE_1_length_765717_cov_10.426968	35364	35372
-UN	1084	.	NODE_1_length_765717_cov_10.426968	35374	35374
-UN	1085	.	NODE_1_length_765717_cov_10.426968	35378	35378
-UN	1086	.	NODE_1_length_765717_cov_10.426968	35391	35395
-UN	1087	.	NODE_1_length_765717_cov_10.426968	35397	35398
-UN	1088	.	NODE_1_length_765717_cov_10.426968	41514	41514
-UN	1089	.	NODE_1_length_765717_cov_10.426968	41518	41521
-UN	1090	.	NODE_1_length_765717_cov_10.426968	41527	41527
-UN	1091	.	NODE_1_length_765717_cov_10.426968	41529	41529
-UN	1092	.	NODE_1_length_765717_cov_10.426968	41535	41535
-UN	1093	.	NODE_1_length_765717_cov_10.426968	41537	41537
-UN	1094	.	NODE_1_length_765717_cov_10.426968	41546	41547
-UN	1095	.	NODE_1_length_765717_cov_10.426968	49437	49437
-UN	1096	.	NODE_1_length_765717_cov_10.426968	49472	49472
-UN	1097	.	NODE_1_length_765717_cov_10.426968	49477	49477
-UN	1098	.	NODE_1_length_765717_cov_10.426968	49480	49484
-UN	1099	.	NODE_1_length_765717_cov_10.426968	49486	49488
-UN	1100	.	NODE_1_length_765717_cov_10.426968	49490	49602
-UN	1101	.	NODE_1_length_765717_cov_10.426968	61460	61460
-UN	1102	.	NODE_1_length_765717_cov_10.426968	61586	61588
-UN	1103	.	NODE_1_length_765717_cov_10.426968	61590	61590
-UN	1104	.	NODE_1_length_765717_cov_10.426968	61592	61638
-UN	1105	.	NODE_1_length_765717_cov_10.426968	61644	61646
-UN	1106	.	NODE_1_length_765717_cov_10.426968	61662	61662
-UN	1107	.	NODE_1_length_765717_cov_10.426968	62441	62441
-UN	1108	.	NODE_1_length_765717_cov_10.426968	62476	62476
-UN	1109	.	NODE_1_length_765717_cov_10.426968	68456	68457
-UN	1110	.	NODE_1_length_765717_cov_10.426968	68500	68500
-UN	1111	.	NODE_1_length_765717_cov_10.426968	69826	69828
-UN	1112	.	NODE_1_length_765717_cov_10.426968	69831	69832
-UN	1113	.	NODE_1_length_765717_cov_10.426968	69834	69834
-UN	1114	.	NODE_1_length_765717_cov_10.426968	69836	69842
-UN	1115	.	NODE_1_length_765717_cov_10.426968	69844	69959
-UN	1116	.	NODE_1_length_765717_cov_10.426968	69961	69961
-UN	1117	.	NODE_1_length_765717_cov_10.426968	69963	69966
-UN	1118	.	NODE_1_length_765717_cov_10.426968	70524	70524
-UN	1119	.	NODE_1_length_765717_cov_10.426968	70559	70559
-UN	1120	.	NODE_1_length_765717_cov_10.426968	70576	70578
-UN	1121	.	NODE_1_length_765717_cov_10.426968	70582	70583
-UN	1122	.	NODE_1_length_765717_cov_10.426968	77211	77211
-UN	1123	.	NODE_1_length_765717_cov_10.426968	77213	77213
-UN	1124	.	NODE_1_length_765717_cov_10.426968	77216	77216
-UN	1125	.	NODE_1_length_765717_cov_10.426968	77219	77220
-UN	1126	.	NODE_1_length_765717_cov_10.426968	77241	77241
-UN	1127	.	NODE_1_length_765717_cov_10.426968	79407	79435
-UN	1128	.	NODE_1_length_765717_cov_10.426968	79437	79437
-UN	1129	.	NODE_1_length_765717_cov_10.426968	79447	79447
-UN	1130	.	NODE_1_length_765717_cov_10.426968	79488	79489
-UN	1131	.	NODE_1_length_765717_cov_10.426968	79496	79496
-UN	1132	.	NODE_1_length_765717_cov_10.426968	79509	79509
-UN	1133	.	NODE_1_length_765717_cov_10.426968	79511	79511
-UN	1134	.	NODE_1_length_765717_cov_10.426968	79513	79513
-UN	1135	.	NODE_1_length_765717_cov_10.426968	80053	80065
-UN	1136	.	NODE_1_length_765717_cov_10.426968	80070	80078
-UN	1137	.	NODE_1_length_765717_cov_10.426968	80102	80120
-UN	1138	.	NODE_1_length_765717_cov_10.426968	84414	84414
-UN	1139	.	NODE_1_length_765717_cov_10.426968	84418	84418
-UN	1140	.	NODE_1_length_765717_cov_10.426968	84425	84425
-UN	1141	.	NODE_1_length_765717_cov_10.426968	84429	84432
-UN	1142	.	NODE_1_length_765717_cov_10.426968	84437	84437
-UN	1143	.	NODE_1_length_765717_cov_10.426968	85379	85379
-UN	1144	.	NODE_1_length_765717_cov_10.426968	85385	85386
-UN	1145	.	NODE_1_length_765717_cov_10.426968	85390	85390
-UN	1146	.	NODE_1_length_765717_cov_10.426968	85392	85392
-UN	1147	.	NODE_1_length_765717_cov_10.426968	85403	85403
-UN	1148	.	NODE_1_length_765717_cov_10.426968	85407	85409
-UN	1149	.	NODE_1_length_765717_cov_10.426968	85411	85414
-UN	1150	.	NODE_1_length_765717_cov_10.426968	85416	85417
-UN	1151	.	NODE_1_length_765717_cov_10.426968	85421	85421
-UN	1152	.	NODE_1_length_765717_cov_10.426968	85426	85426
-UN	1153	.	NODE_1_length_765717_cov_10.426968	90145	90220
-UN	1154	.	NODE_1_length_765717_cov_10.426968	90280	90284
-UN	1155	.	NODE_1_length_765717_cov_10.426968	90286	90286
-UN	1156	.	NODE_1_length_765717_cov_10.426968	90290	90290
-UN	1157	.	NODE_1_length_765717_cov_10.426968	90310	90310
-UN	1158	.	NODE_1_length_765717_cov_10.426968	96303	96304
-UN	1159	.	NODE_1_length_765717_cov_10.426968	96311	96311
-UN	1160	.	NODE_1_length_765717_cov_10.426968	96316	96363
-UN	1161	.	NODE_1_length_765717_cov_10.426968	97248	97248
-UN	1162	.	NODE_1_length_765717_cov_10.426968	97253	97255
-UN	1163	.	NODE_1_length_765717_cov_10.426968	97258	97287
-UN	1164	.	NODE_1_length_765717_cov_10.426968	97290	97290
-UN	1165	.	NODE_1_length_765717_cov_10.426968	97364	97364
-UN	1166	.	NODE_1_length_765717_cov_10.426968	97367	97367
-UN	1167	.	NODE_1_length_765717_cov_10.426968	101555	101555
-UN	1168	.	NODE_1_length_765717_cov_10.426968	101560	101560
-UN	1169	.	NODE_1_length_765717_cov_10.426968	101566	101700
-UN	1170	.	NODE_1_length_765717_cov_10.426968	101718	101719
-UN	1171	.	NODE_1_length_765717_cov_10.426968	101724	101724
-UN	1172	.	NODE_1_length_765717_cov_10.426968	101726	101727
-UN	1173	.	NODE_1_length_765717_cov_10.426968	101731	101733
-UN	1174	.	NODE_1_length_765717_cov_10.426968	125306	125306
-UN	1175	.	NODE_1_length_765717_cov_10.426968	125312	125312
-UN	1176	.	NODE_1_length_765717_cov_10.426968	125335	125335
-UN	1177	.	NODE_1_length_765717_cov_10.426968	125337	125337
-UN	1178	.	NODE_1_length_765717_cov_10.426968	125339	125339
-UN	1179	.	NODE_1_length_765717_cov_10.426968	125355	125355
-UN	1180	.	NODE_1_length_765717_cov_10.426968	125358	125358
-UN	1181	.	NODE_1_length_765717_cov_10.426968	125371	125375
-UN	1182	.	NODE_1_length_765717_cov_10.426968	125378	125378
-UN	1183	.	NODE_1_length_765717_cov_10.426968	125381	125382
-UN	1184	.	NODE_1_length_765717_cov_10.426968	125384	125384
-UN	1185	.	NODE_1_length_765717_cov_10.426968	125386	125386
-UN	1186	.	NODE_1_length_765717_cov_10.426968	125388	125390
-UN	1187	.	NODE_1_length_765717_cov_10.426968	125395	125397
-UN	1188	.	NODE_1_length_765717_cov_10.426968	125400	125401
-UN	1189	.	NODE_1_length_765717_cov_10.426968	125403	125403
-UN	1190	.	NODE_1_length_765717_cov_10.426968	128287	128362
-UN	1191	.	NODE_1_length_765717_cov_10.426968	130658	130659
-UN	1192	.	NODE_1_length_765717_cov_10.426968	136796	136859
-UN	1193	.	NODE_1_length_765717_cov_10.426968	136862	136871
-UN	1194	.	NODE_1_length_765717_cov_10.426968	136873	136884
-UN	1195	.	NODE_1_length_765717_cov_10.426968	136886	136886
-UN	1196	.	NODE_1_length_765717_cov_10.426968	136888	136889
-UN	1197	.	NODE_1_length_765717_cov_10.426968	136892	136892
-UN	1198	.	NODE_1_length_765717_cov_10.426968	136948	136950
-UN	1199	.	NODE_1_length_765717_cov_10.426968	136952	136957
-UN	1200	.	NODE_1_length_765717_cov_10.426968	136960	136960
-UN	1201	.	NODE_1_length_765717_cov_10.426968	136962	136963
-UN	1202	.	NODE_1_length_765717_cov_10.426968	136990	136990
-UN	1203	.	NODE_1_length_765717_cov_10.426968	138950	138950
-UN	1204	.	NODE_1_length_765717_cov_10.426968	138952	138952
-UN	1205	.	NODE_1_length_765717_cov_10.426968	138986	138986
-UN	1206	.	NODE_1_length_765717_cov_10.426968	139014	139014
-UN	1207	.	NODE_1_length_765717_cov_10.426968	139026	139027
-UN	1208	.	NODE_1_length_765717_cov_10.426968	139072	139109
-UN	1209	.	NODE_1_length_765717_cov_10.426968	139149	139152
-UN	1210	.	NODE_1_length_765717_cov_10.426968	139155	139178
-UN	1211	.	NODE_1_length_765717_cov_10.426968	139180	139192
-UN	1212	.	NODE_1_length_765717_cov_10.426968	139197	139197
-UN	1213	.	NODE_1_length_765717_cov_10.426968	139200	139203
-UN	1214	.	NODE_1_length_765717_cov_10.426968	139205	139208
-UN	1215	.	NODE_1_length_765717_cov_10.426968	139212	139315
-UN	1216	.	NODE_1_length_765717_cov_10.426968	141483	141483
-UN	1217	.	NODE_1_length_765717_cov_10.426968	144036	144036
-UN	1218	.	NODE_1_length_765717_cov_10.426968	144042	144042
-UN	1219	.	NODE_1_length_765717_cov_10.426968	144052	144087
-UN	1220	.	NODE_1_length_765717_cov_10.426968	150166	150166
-UN	1221	.	NODE_1_length_765717_cov_10.426968	159593	159593
-UN	1222	.	NODE_1_length_765717_cov_10.426968	159596	159596
-UN	1223	.	NODE_1_length_765717_cov_10.426968	159638	159706
-UN	1224	.	NODE_1_length_765717_cov_10.426968	159711	159711
-UN	1225	.	NODE_1_length_765717_cov_10.426968	159715	159715
-UN	1226	.	NODE_1_length_765717_cov_10.426968	159722	159722
-UN	1227	.	NODE_1_length_765717_cov_10.426968	161490	161491
-UN	1228	.	NODE_1_length_765717_cov_10.426968	161876	161876
-UN	1229	.	NODE_1_length_765717_cov_10.426968	163773	163773
-UN	1230	.	NODE_1_length_765717_cov_10.426968	163798	163799
-UN	1231	.	NODE_1_length_765717_cov_10.426968	163806	163806
-UN	1232	.	NODE_1_length_765717_cov_10.426968	163811	163811
-UN	1233	.	NODE_1_length_765717_cov_10.426968	163813	163814
-UN	1234	.	NODE_1_length_765717_cov_10.426968	163817	163817
-UN	1235	.	NODE_1_length_765717_cov_10.426968	163820	163821
-UN	1236	.	NODE_1_length_765717_cov_10.426968	165345	165427
-UN	1237	.	NODE_1_length_765717_cov_10.426968	168291	168291
-UN	1238	.	NODE_1_length_765717_cov_10.426968	168293	168302
-UN	1239	.	NODE_1_length_765717_cov_10.426968	168442	168442
-UN	1240	.	NODE_1_length_765717_cov_10.426968	168468	168468
-UN	1241	.	NODE_1_length_765717_cov_10.426968	173257	173257
-UN	1242	.	NODE_1_length_765717_cov_10.426968	173271	173271
-UN	1243	.	NODE_1_length_765717_cov_10.426968	173282	173282
-UN	1244	.	NODE_1_length_765717_cov_10.426968	173284	173284
-UN	1245	.	NODE_1_length_765717_cov_10.426968	173286	173286
-UN	1246	.	NODE_1_length_765717_cov_10.426968	173292	173293
-UN	1247	.	NODE_1_length_765717_cov_10.426968	173295	173302
-UN	1248	.	NODE_1_length_765717_cov_10.426968	173304	173316
-UN	1249	.	NODE_1_length_765717_cov_10.426968	173322	173332
-UN	1250	.	NODE_1_length_765717_cov_10.426968	173334	173336
-UN	1251	.	NODE_1_length_765717_cov_10.426968	173339	173340
-UN	1252	.	NODE_1_length_765717_cov_10.426968	173342	173347
-UN	1253	.	NODE_1_length_765717_cov_10.426968	173349	173354
-UN	1254	.	NODE_1_length_765717_cov_10.426968	173358	173359
-UN	1255	.	NODE_1_length_765717_cov_10.426968	173362	173363
-UN	1256	.	NODE_1_length_765717_cov_10.426968	173388	173388
-UN	1257	.	NODE_1_length_765717_cov_10.426968	185685	185685
-UN	1258	.	NODE_1_length_765717_cov_10.426968	185688	185689
-UN	1259	.	NODE_1_length_765717_cov_10.426968	185691	185691
-UN	1260	.	NODE_1_length_765717_cov_10.426968	188118	188125
-UN	1261	.	NODE_1_length_765717_cov_10.426968	188127	188127
-UN	1262	.	NODE_1_length_765717_cov_10.426968	188131	188131
-UN	1263	.	NODE_1_length_765717_cov_10.426968	188134	188134
-UN	1264	.	NODE_1_length_765717_cov_10.426968	188136	188136
-UN	1265	.	NODE_1_length_765717_cov_10.426968	188138	188138
-UN	1266	.	NODE_1_length_765717_cov_10.426968	189222	189222
-UN	1267	.	NODE_1_length_765717_cov_10.426968	189233	189233
-UN	1268	.	NODE_1_length_765717_cov_10.426968	189259	189267
-UN	1269	.	NODE_1_length_765717_cov_10.426968	189309	189344
-UN	1270	.	NODE_1_length_765717_cov_10.426968	191221	191221
-UN	1271	.	NODE_1_length_765717_cov_10.426968	191229	191229
-UN	1272	.	NODE_1_length_765717_cov_10.426968	191233	191235
-UN	1273	.	NODE_1_length_765717_cov_10.426968	191242	191262
-UN	1274	.	NODE_1_length_765717_cov_10.426968	191265	191265
-UN	1275	.	NODE_1_length_765717_cov_10.426968	191286	191286
-UN	1276	.	NODE_1_length_765717_cov_10.426968	191309	191319
-UN	1277	.	NODE_1_length_765717_cov_10.426968	194142	194142
-UN	1278	.	NODE_1_length_765717_cov_10.426968	196098	196108
-UN	1279	.	NODE_1_length_765717_cov_10.426968	196110	196114
-UN	1280	.	NODE_1_length_765717_cov_10.426968	196306	196306
-UN	1281	.	NODE_1_length_765717_cov_10.426968	196319	196319
-UN	1282	.	NODE_1_length_765717_cov_10.426968	196324	196325
-UN	1283	.	NODE_1_length_765717_cov_10.426968	196327	196328
-UN	1284	.	NODE_1_length_765717_cov_10.426968	196330	196333
-UN	1285	.	NODE_1_length_765717_cov_10.426968	196335	196337
-UN	1286	.	NODE_1_length_765717_cov_10.426968	196339	196391
-UN	1287	.	NODE_1_length_765717_cov_10.426968	198438	198438
-UN	1288	.	NODE_1_length_765717_cov_10.426968	198741	198742
-UN	1289	.	NODE_1_length_765717_cov_10.426968	198744	198744
-UN	1290	.	NODE_1_length_765717_cov_10.426968	198747	198747
-UN	1291	.	NODE_1_length_765717_cov_10.426968	198749	198750
-UN	1292	.	NODE_1_length_765717_cov_10.426968	198752	198752
-UN	1293	.	NODE_1_length_765717_cov_10.426968	198819	198881
-UN	1294	.	NODE_1_length_765717_cov_10.426968	198910	198910
-UN	1295	.	NODE_1_length_765717_cov_10.426968	198921	198921
-UN	1296	.	NODE_1_length_765717_cov_10.426968	198931	198932
-UN	1297	.	NODE_1_length_765717_cov_10.426968	198939	198939
-UN	1298	.	NODE_1_length_765717_cov_10.426968	198941	198941
-UN	1299	.	NODE_1_length_765717_cov_10.426968	198943	198943
-UN	1300	.	NODE_1_length_765717_cov_10.426968	198945	198945
-UN	1301	.	NODE_1_length_765717_cov_10.426968	198982	198982
-UN	1302	.	NODE_1_length_765717_cov_10.426968	202912	202912
-UN	1303	.	NODE_1_length_765717_cov_10.426968	202918	202918
-UN	1304	.	NODE_1_length_765717_cov_10.426968	202922	202922
-UN	1305	.	NODE_1_length_765717_cov_10.426968	202931	202931
-UN	1306	.	NODE_1_length_765717_cov_10.426968	202935	202935
-UN	1307	.	NODE_1_length_765717_cov_10.426968	202937	202937
-UN	1308	.	NODE_1_length_765717_cov_10.426968	202950	202950
-UN	1309	.	NODE_1_length_765717_cov_10.426968	202958	202983
-UN	1310	.	NODE_1_length_765717_cov_10.426968	206499	206499
-UN	1311	.	NODE_1_length_765717_cov_10.426968	206502	206502
-UN	1312	.	NODE_1_length_765717_cov_10.426968	206523	206523
-UN	1313	.	NODE_1_length_765717_cov_10.426968	208889	208889
-UN	1314	.	NODE_1_length_765717_cov_10.426968	208898	208899
-UN	1315	.	NODE_1_length_765717_cov_10.426968	208902	208902
-UN	1316	.	NODE_1_length_765717_cov_10.426968	209483	209483
-UN	1317	.	NODE_1_length_765717_cov_10.426968	211230	211310
-UN	1318	.	NODE_1_length_765717_cov_10.426968	211312	211313
-UN	1319	.	NODE_1_length_765717_cov_10.426968	211316	211317
-UN	1320	.	NODE_1_length_765717_cov_10.426968	211523	211523
-UN	1321	.	NODE_1_length_765717_cov_10.426968	211529	211532
-UN	1322	.	NODE_1_length_765717_cov_10.426968	211538	211538
-UN	1323	.	NODE_1_length_765717_cov_10.426968	211545	211545
-UN	1324	.	NODE_1_length_765717_cov_10.426968	211550	211550
-UN	1325	.	NODE_1_length_765717_cov_10.426968	211552	211552
-UN	1326	.	NODE_1_length_765717_cov_10.426968	211918	211918
-UN	1327	.	NODE_1_length_765717_cov_10.426968	211920	211920
-UN	1328	.	NODE_1_length_765717_cov_10.426968	211927	211941
-UN	1329	.	NODE_1_length_765717_cov_10.426968	211943	211944
-UN	1330	.	NODE_1_length_765717_cov_10.426968	211946	211946
-UN	1331	.	NODE_1_length_765717_cov_10.426968	211949	211952
-UN	1332	.	NODE_1_length_765717_cov_10.426968	211955	211957
-UN	1333	.	NODE_1_length_765717_cov_10.426968	211961	211962
-UN	1334	.	NODE_1_length_765717_cov_10.426968	211965	211965
-UN	1335	.	NODE_1_length_765717_cov_10.426968	211973	211973
-UN	1336	.	NODE_1_length_765717_cov_10.426968	211988	211988
-UN	1337	.	NODE_1_length_765717_cov_10.426968	211999	211999
-UN	1338	.	NODE_1_length_765717_cov_10.426968	212008	212008
-UN	1339	.	NODE_1_length_765717_cov_10.426968	212042	212043
-UN	1340	.	NODE_1_length_765717_cov_10.426968	212045	212046
-UN	1341	.	NODE_1_length_765717_cov_10.426968	212369	212377
-UN	1342	.	NODE_1_length_765717_cov_10.426968	212384	212385
-UN	1343	.	NODE_1_length_765717_cov_10.426968	212395	212409
-UN	1344	.	NODE_1_length_765717_cov_10.426968	212446	212446
-UN	1345	.	NODE_1_length_765717_cov_10.426968	212753	212753
-UN	1346	.	NODE_1_length_765717_cov_10.426968	212757	212888
-UN	1347	.	NODE_1_length_765717_cov_10.426968	213115	213115
-UN	1348	.	NODE_1_length_765717_cov_10.426968	213117	213120
-UN	1349	.	NODE_1_length_765717_cov_10.426968	213123	213129
-UN	1350	.	NODE_1_length_765717_cov_10.426968	213131	213131
-UN	1351	.	NODE_1_length_765717_cov_10.426968	213170	213170
-UN	1352	.	NODE_1_length_765717_cov_10.426968	213174	213174
-UN	1353	.	NODE_1_length_765717_cov_10.426968	213183	213183
-UN	1354	.	NODE_1_length_765717_cov_10.426968	213211	213211
-UN	1355	.	NODE_1_length_765717_cov_10.426968	213214	213214
-UN	1356	.	NODE_1_length_765717_cov_10.426968	213230	213230
-UN	1357	.	NODE_1_length_765717_cov_10.426968	213251	213255
-UN	1358	.	NODE_1_length_765717_cov_10.426968	213257	213257
-UN	1359	.	NODE_1_length_765717_cov_10.426968	213259	213261
-UN	1360	.	NODE_1_length_765717_cov_10.426968	213263	213267
-UN	1361	.	NODE_1_length_765717_cov_10.426968	213269	213271
-UN	1362	.	NODE_1_length_765717_cov_10.426968	213273	213274
-UN	1363	.	NODE_1_length_765717_cov_10.426968	213276	213280
-UN	1364	.	NODE_1_length_765717_cov_10.426968	213282	213282
-UN	1365	.	NODE_1_length_765717_cov_10.426968	213284	213285
-UN	1366	.	NODE_1_length_765717_cov_10.426968	213289	213293
-UN	1367	.	NODE_1_length_765717_cov_10.426968	213295	213321
-UN	1368	.	NODE_1_length_765717_cov_10.426968	213323	213323
-UN	1369	.	NODE_1_length_765717_cov_10.426968	213325	213326
-UN	1370	.	NODE_1_length_765717_cov_10.426968	213328	213333
-UN	1371	.	NODE_1_length_765717_cov_10.426968	213335	213338
-UN	1372	.	NODE_1_length_765717_cov_10.426968	213340	213340
-UN	1373	.	NODE_1_length_765717_cov_10.426968	213342	213342
-UN	1374	.	NODE_1_length_765717_cov_10.426968	213346	213347
-UN	1375	.	NODE_1_length_765717_cov_10.426968	213349	213352
-UN	1376	.	NODE_1_length_765717_cov_10.426968	213354	213354
-UN	1377	.	NODE_1_length_765717_cov_10.426968	213356	213356
-UN	1378	.	NODE_1_length_765717_cov_10.426968	213358	213362
-UN	1379	.	NODE_1_length_765717_cov_10.426968	213364	213364
-UN	1380	.	NODE_1_length_765717_cov_10.426968	213371	213371
-UN	1381	.	NODE_1_length_765717_cov_10.426968	213374	213377
-UN	1382	.	NODE_1_length_765717_cov_10.426968	213379	213381
-UN	1383	.	NODE_1_length_765717_cov_10.426968	213383	213383
-UN	1384	.	NODE_1_length_765717_cov_10.426968	213389	213389
-UN	1385	.	NODE_1_length_765717_cov_10.426968	213391	213392
-UN	1386	.	NODE_1_length_765717_cov_10.426968	213432	213432
-UN	1387	.	NODE_1_length_765717_cov_10.426968	213441	213441
-UN	1388	.	NODE_1_length_765717_cov_10.426968	213444	213445
-UN	1389	.	NODE_1_length_765717_cov_10.426968	213447	213447
-UN	1390	.	NODE_1_length_765717_cov_10.426968	213452	213452
-UN	1391	.	NODE_1_length_765717_cov_10.426968	213454	213454
-UN	1392	.	NODE_1_length_765717_cov_10.426968	213457	213457
-UN	1393	.	NODE_1_length_765717_cov_10.426968	214593	214593
-UN	1394	.	NODE_1_length_765717_cov_10.426968	214598	214598
-UN	1395	.	NODE_1_length_765717_cov_10.426968	214609	214609
-UN	1396	.	NODE_1_length_765717_cov_10.426968	215036	215038
-UN	1397	.	NODE_1_length_765717_cov_10.426968	215041	215041
-UN	1398	.	NODE_1_length_765717_cov_10.426968	218473	218491
-UN	1399	.	NODE_1_length_765717_cov_10.426968	221957	221958
-UN	1400	.	NODE_1_length_765717_cov_10.426968	221960	221960
-UN	1401	.	NODE_1_length_765717_cov_10.426968	221963	221963
-UN	1402	.	NODE_1_length_765717_cov_10.426968	221967	221968
-UN	1403	.	NODE_1_length_765717_cov_10.426968	221970	221971
-UN	1404	.	NODE_1_length_765717_cov_10.426968	221973	221974
-UN	1405	.	NODE_1_length_765717_cov_10.426968	221976	221977
-UN	1406	.	NODE_1_length_765717_cov_10.426968	221981	221995
-UN	1407	.	NODE_1_length_765717_cov_10.426968	222203	222203
-UN	1408	.	NODE_1_length_765717_cov_10.426968	225748	225748
-UN	1409	.	NODE_1_length_765717_cov_10.426968	225753	225858
-UN	1410	.	NODE_1_length_765717_cov_10.426968	225860	225923
-UN	1411	.	NODE_1_length_765717_cov_10.426968	225925	225925
-UN	1412	.	NODE_1_length_765717_cov_10.426968	230383	230383
-UN	1413	.	NODE_1_length_765717_cov_10.426968	244063	244063
-UN	1414	.	NODE_1_length_765717_cov_10.426968	244070	244073
-UN	1415	.	NODE_1_length_765717_cov_10.426968	244076	244077
-UN	1416	.	NODE_1_length_765717_cov_10.426968	244082	244083
-UN	1417	.	NODE_1_length_765717_cov_10.426968	244085	244086
-UN	1418	.	NODE_1_length_765717_cov_10.426968	244089	244090
-UN	1419	.	NODE_1_length_765717_cov_10.426968	244095	244095
-UN	1420	.	NODE_1_length_765717_cov_10.426968	244097	244098
-UN	1421	.	NODE_1_length_765717_cov_10.426968	244117	244117
-UN	1422	.	NODE_1_length_765717_cov_10.426968	252429	252473
-UN	1423	.	NODE_1_length_765717_cov_10.426968	252475	252480
-UN	1424	.	NODE_1_length_765717_cov_10.426968	252482	252488
-UN	1425	.	NODE_1_length_765717_cov_10.426968	252955	252958
-UN	1426	.	NODE_1_length_765717_cov_10.426968	262487	262487
-UN	1427	.	NODE_1_length_765717_cov_10.426968	262490	262491
-UN	1428	.	NODE_1_length_765717_cov_10.426968	262493	262493
-UN	1429	.	NODE_1_length_765717_cov_10.426968	262495	262495
-UN	1430	.	NODE_1_length_765717_cov_10.426968	262497	262499
-UN	1431	.	NODE_1_length_765717_cov_10.426968	262501	262502
-UN	1432	.	NODE_1_length_765717_cov_10.426968	262505	262506
-UN	1433	.	NODE_1_length_765717_cov_10.426968	262508	262509
-UN	1434	.	NODE_1_length_765717_cov_10.426968	262511	262512
-UN	1435	.	NODE_1_length_765717_cov_10.426968	272002	272002
-UN	1436	.	NODE_1_length_765717_cov_10.426968	272022	272022
-UN	1437	.	NODE_1_length_765717_cov_10.426968	272032	272032
-UN	1438	.	NODE_1_length_765717_cov_10.426968	272034	272034
-UN	1439	.	NODE_1_length_765717_cov_10.426968	272036	272036
-UN	1440	.	NODE_1_length_765717_cov_10.426968	272038	272038
-UN	1441	.	NODE_1_length_765717_cov_10.426968	272044	272044
-UN	1442	.	NODE_1_length_765717_cov_10.426968	277873	277873
-UN	1443	.	NODE_1_length_765717_cov_10.426968	277894	277894
-UN	1444	.	NODE_1_length_765717_cov_10.426968	277898	277899
-UN	1445	.	NODE_1_length_765717_cov_10.426968	277903	277903
-UN	1446	.	NODE_1_length_765717_cov_10.426968	277912	277912
-UN	1447	.	NODE_1_length_765717_cov_10.426968	277927	277947
-UN	1448	.	NODE_1_length_765717_cov_10.426968	278036	278036
-UN	1449	.	NODE_1_length_765717_cov_10.426968	278043	278043
-UN	1450	.	NODE_1_length_765717_cov_10.426968	278047	278048
-UN	1451	.	NODE_1_length_765717_cov_10.426968	278059	278060
-UN	1452	.	NODE_1_length_765717_cov_10.426968	278062	278062
-UN	1453	.	NODE_1_length_765717_cov_10.426968	278065	278065
-UN	1454	.	NODE_1_length_765717_cov_10.426968	278068	278070
-UN	1455	.	NODE_1_length_765717_cov_10.426968	278073	278073
-UN	1456	.	NODE_1_length_765717_cov_10.426968	282954	282954
-UN	1457	.	NODE_1_length_765717_cov_10.426968	282968	282968
-UN	1458	.	NODE_1_length_765717_cov_10.426968	282970	282970
-UN	1459	.	NODE_1_length_765717_cov_10.426968	282978	282978
-UN	1460	.	NODE_1_length_765717_cov_10.426968	282983	282992
-UN	1461	.	NODE_1_length_765717_cov_10.426968	282996	282997
-UN	1462	.	NODE_1_length_765717_cov_10.426968	283006	283006
-UN	1463	.	NODE_1_length_765717_cov_10.426968	283014	283057
-UN	1464	.	NODE_1_length_765717_cov_10.426968	283076	283076
-UN	1465	.	NODE_1_length_765717_cov_10.426968	283078	283078
-UN	1466	.	NODE_1_length_765717_cov_10.426968	283111	283112
-UN	1467	.	NODE_1_length_765717_cov_10.426968	285780	285780
-UN	1468	.	NODE_1_length_765717_cov_10.426968	285913	285915
-UN	1469	.	NODE_1_length_765717_cov_10.426968	285965	285967
-UN	1470	.	NODE_1_length_765717_cov_10.426968	286060	286064
-UN	1471	.	NODE_1_length_765717_cov_10.426968	288774	288775
-UN	1472	.	NODE_1_length_765717_cov_10.426968	288777	288783
-UN	1473	.	NODE_1_length_765717_cov_10.426968	288786	288787
-UN	1474	.	NODE_1_length_765717_cov_10.426968	288789	288790
-UN	1475	.	NODE_1_length_765717_cov_10.426968	288795	288795
-UN	1476	.	NODE_1_length_765717_cov_10.426968	288801	288801
-UN	1477	.	NODE_1_length_765717_cov_10.426968	288816	288817
-UN	1478	.	NODE_1_length_765717_cov_10.426968	288821	288821
-UN	1479	.	NODE_1_length_765717_cov_10.426968	288823	288823
-UN	1480	.	NODE_1_length_765717_cov_10.426968	288832	288832
-UN	1481	.	NODE_1_length_765717_cov_10.426968	288843	288843
-UN	1482	.	NODE_1_length_765717_cov_10.426968	293243	293267
-UN	1483	.	NODE_1_length_765717_cov_10.426968	293281	293282
-UN	1484	.	NODE_1_length_765717_cov_10.426968	325697	325697
-UN	1485	.	NODE_1_length_765717_cov_10.426968	330230	330233
-UN	1486	.	NODE_1_length_765717_cov_10.426968	330633	330634
-UN	1487	.	NODE_1_length_765717_cov_10.426968	330636	330637
-UN	1488	.	NODE_1_length_765717_cov_10.426968	330642	330642
-UN	1489	.	NODE_1_length_765717_cov_10.426968	330653	330654
-UN	1490	.	NODE_1_length_765717_cov_10.426968	330656	330656
-UN	1491	.	NODE_1_length_765717_cov_10.426968	330661	330661
-UN	1492	.	NODE_1_length_765717_cov_10.426968	331415	331415
-UN	1493	.	NODE_1_length_765717_cov_10.426968	331419	331419
-UN	1494	.	NODE_1_length_765717_cov_10.426968	331425	331426
-UN	1495	.	NODE_1_length_765717_cov_10.426968	331428	331430
-UN	1496	.	NODE_1_length_765717_cov_10.426968	331437	331439
-UN	1497	.	NODE_1_length_765717_cov_10.426968	331441	331441
-UN	1498	.	NODE_1_length_765717_cov_10.426968	331443	331443
-UN	1499	.	NODE_1_length_765717_cov_10.426968	331447	331450
-UN	1500	.	NODE_1_length_765717_cov_10.426968	333302	333302
-UN	1501	.	NODE_1_length_765717_cov_10.426968	333304	333304
-UN	1502	.	NODE_1_length_765717_cov_10.426968	333309	333310
-UN	1503	.	NODE_1_length_765717_cov_10.426968	333314	333314
-UN	1504	.	NODE_1_length_765717_cov_10.426968	333323	333323
-UN	1505	.	NODE_1_length_765717_cov_10.426968	333328	333328
-UN	1506	.	NODE_1_length_765717_cov_10.426968	333339	333339
-UN	1507	.	NODE_1_length_765717_cov_10.426968	333344	333344
-UN	1508	.	NODE_1_length_765717_cov_10.426968	333349	333350
-UN	1509	.	NODE_1_length_765717_cov_10.426968	333355	333358
-UN	1510	.	NODE_1_length_765717_cov_10.426968	333361	333363
-UN	1511	.	NODE_1_length_765717_cov_10.426968	333365	333395
-UN	1512	.	NODE_1_length_765717_cov_10.426968	333397	333402
-UN	1513	.	NODE_1_length_765717_cov_10.426968	333404	333409
-UN	1514	.	NODE_1_length_765717_cov_10.426968	333415	333415
-UN	1515	.	NODE_1_length_765717_cov_10.426968	333418	333419
-UN	1516	.	NODE_1_length_765717_cov_10.426968	333421	333445
-UN	1517	.	NODE_1_length_765717_cov_10.426968	333450	333450
-UN	1518	.	NODE_1_length_765717_cov_10.426968	333563	333578
-UN	1519	.	NODE_1_length_765717_cov_10.426968	333580	333580
-UN	1520	.	NODE_1_length_765717_cov_10.426968	333586	333587
-UN	1521	.	NODE_1_length_765717_cov_10.426968	334051	334051
-UN	1522	.	NODE_1_length_765717_cov_10.426968	335387	335390
-UN	1523	.	NODE_1_length_765717_cov_10.426968	345847	345847
-UN	1524	.	NODE_1_length_765717_cov_10.426968	361310	361311
-UN	1525	.	NODE_1_length_765717_cov_10.426968	361316	361316
-UN	1526	.	NODE_1_length_765717_cov_10.426968	361323	361323
-UN	1527	.	NODE_1_length_765717_cov_10.426968	367040	367040
-UN	1528	.	NODE_1_length_765717_cov_10.426968	367042	367042
-UN	1529	.	NODE_1_length_765717_cov_10.426968	367047	367050
-UN	1530	.	NODE_1_length_765717_cov_10.426968	367052	367052
-UN	1531	.	NODE_1_length_765717_cov_10.426968	367054	367054
-UN	1532	.	NODE_1_length_765717_cov_10.426968	367057	367057
-UN	1533	.	NODE_1_length_765717_cov_10.426968	367060	367060
-UN	1534	.	NODE_1_length_765717_cov_10.426968	367063	367064
-UN	1535	.	NODE_1_length_765717_cov_10.426968	367067	367067
-UN	1536	.	NODE_1_length_765717_cov_10.426968	367073	367074
-UN	1537	.	NODE_1_length_765717_cov_10.426968	367079	367082
-UN	1538	.	NODE_1_length_765717_cov_10.426968	367084	367084
-UN	1539	.	NODE_1_length_765717_cov_10.426968	367086	367097
-UN	1540	.	NODE_1_length_765717_cov_10.426968	369461	369461
-UN	1541	.	NODE_1_length_765717_cov_10.426968	374369	374388
-UN	1542	.	NODE_1_length_765717_cov_10.426968	377499	377499
-UN	1543	.	NODE_1_length_765717_cov_10.426968	377507	377507
-UN	1544	.	NODE_1_length_765717_cov_10.426968	377512	377513
-UN	1545	.	NODE_1_length_765717_cov_10.426968	377524	377524
-UN	1546	.	NODE_1_length_765717_cov_10.426968	377527	377527
-UN	1547	.	NODE_1_length_765717_cov_10.426968	377530	377530
-UN	1548	.	NODE_1_length_765717_cov_10.426968	377533	377533
-UN	1549	.	NODE_1_length_765717_cov_10.426968	377537	377537
-UN	1550	.	NODE_1_length_765717_cov_10.426968	377541	377544
-UN	1551	.	NODE_1_length_765717_cov_10.426968	377546	377549
-UN	1552	.	NODE_1_length_765717_cov_10.426968	377551	377552
-UN	1553	.	NODE_1_length_765717_cov_10.426968	377554	377554
-UN	1554	.	NODE_1_length_765717_cov_10.426968	377557	377557
-UN	1555	.	NODE_1_length_765717_cov_10.426968	377559	377564
-UN	1556	.	NODE_1_length_765717_cov_10.426968	377566	377571
-UN	1557	.	NODE_1_length_765717_cov_10.426968	377574	377575
-UN	1558	.	NODE_1_length_765717_cov_10.426968	382051	382051
-UN	1559	.	NODE_1_length_765717_cov_10.426968	382055	382055
-UN	1560	.	NODE_1_length_765717_cov_10.426968	382059	382059
-UN	1561	.	NODE_1_length_765717_cov_10.426968	382070	382070
-UN	1562	.	NODE_1_length_765717_cov_10.426968	385390	385416
-UN	1563	.	NODE_1_length_765717_cov_10.426968	385419	385419
-UN	1564	.	NODE_1_length_765717_cov_10.426968	385422	385422
-UN	1565	.	NODE_1_length_765717_cov_10.426968	385425	385426
-UN	1566	.	NODE_1_length_765717_cov_10.426968	385472	385477
-UN	1567	.	NODE_1_length_765717_cov_10.426968	385484	385485
-UN	1568	.	NODE_1_length_765717_cov_10.426968	385596	385596
-UN	1569	.	NODE_1_length_765717_cov_10.426968	385709	385710
-UN	1570	.	NODE_1_length_765717_cov_10.426968	385764	385765
-UN	1571	.	NODE_1_length_765717_cov_10.426968	385767	385783
-UN	1572	.	NODE_1_length_765717_cov_10.426968	385785	385788
-UN	1573	.	NODE_1_length_765717_cov_10.426968	385790	385792
-UN	1574	.	NODE_1_length_765717_cov_10.426968	385795	385803
-UN	1575	.	NODE_1_length_765717_cov_10.426968	385806	385806
-UN	1576	.	NODE_1_length_765717_cov_10.426968	386900	386901
-UN	1577	.	NODE_1_length_765717_cov_10.426968	386904	386904
-UN	1578	.	NODE_1_length_765717_cov_10.426968	388154	388154
-UN	1579	.	NODE_1_length_765717_cov_10.426968	388157	388168
-UN	1580	.	NODE_1_length_765717_cov_10.426968	388179	388179
-UN	1581	.	NODE_1_length_765717_cov_10.426968	388183	388183
-UN	1582	.	NODE_1_length_765717_cov_10.426968	388189	388189
-UN	1583	.	NODE_1_length_765717_cov_10.426968	388192	388194
-UN	1584	.	NODE_1_length_765717_cov_10.426968	388196	388196
-UN	1585	.	NODE_1_length_765717_cov_10.426968	388203	388203
-UN	1586	.	NODE_1_length_765717_cov_10.426968	388213	388213
-UN	1587	.	NODE_1_length_765717_cov_10.426968	388224	388224
-UN	1588	.	NODE_1_length_765717_cov_10.426968	404676	404706
-UN	1589	.	NODE_1_length_765717_cov_10.426968	406116	406116
-UN	1590	.	NODE_1_length_765717_cov_10.426968	406169	406171
-UN	1591	.	NODE_1_length_765717_cov_10.426968	407426	407427
-UN	1592	.	NODE_1_length_765717_cov_10.426968	407430	407431
-UN	1593	.	NODE_1_length_765717_cov_10.426968	407435	407435
-UN	1594	.	NODE_1_length_765717_cov_10.426968	407437	407440
-UN	1595	.	NODE_1_length_765717_cov_10.426968	407442	407442
-UN	1596	.	NODE_1_length_765717_cov_10.426968	407445	407445
-UN	1597	.	NODE_1_length_765717_cov_10.426968	407447	407448
-UN	1598	.	NODE_1_length_765717_cov_10.426968	407454	407454
-UN	1599	.	NODE_1_length_765717_cov_10.426968	408067	408069
-UN	1600	.	NODE_1_length_765717_cov_10.426968	408077	408077
-UN	1601	.	NODE_1_length_765717_cov_10.426968	408080	408081
-UN	1602	.	NODE_1_length_765717_cov_10.426968	408084	408084
-UN	1603	.	NODE_1_length_765717_cov_10.426968	408092	408093
-UN	1604	.	NODE_1_length_765717_cov_10.426968	408095	408096
-UN	1605	.	NODE_1_length_765717_cov_10.426968	408098	408098
-UN	1606	.	NODE_1_length_765717_cov_10.426968	408101	408101
-UN	1607	.	NODE_1_length_765717_cov_10.426968	408103	408107
-UN	1608	.	NODE_1_length_765717_cov_10.426968	408109	408109
-UN	1609	.	NODE_1_length_765717_cov_10.426968	408116	408116
-UN	1610	.	NODE_1_length_765717_cov_10.426968	408119	408120
-UN	1611	.	NODE_1_length_765717_cov_10.426968	408122	408126
-UN	1612	.	NODE_1_length_765717_cov_10.426968	433087	433100
-UN	1613	.	NODE_1_length_765717_cov_10.426968	433123	433130
-UN	1614	.	NODE_1_length_765717_cov_10.426968	433163	433163
-UN	1615	.	NODE_1_length_765717_cov_10.426968	433184	433231
-UN	1616	.	NODE_1_length_765717_cov_10.426968	441424	441424
-UN	1617	.	NODE_1_length_765717_cov_10.426968	441431	441431
-UN	1618	.	NODE_1_length_765717_cov_10.426968	441433	441433
-UN	1619	.	NODE_1_length_765717_cov_10.426968	441436	441438
-UN	1620	.	NODE_1_length_765717_cov_10.426968	441445	441447
-UN	1621	.	NODE_1_length_765717_cov_10.426968	441449	441450
-UN	1622	.	NODE_1_length_765717_cov_10.426968	441454	441491
-UN	1623	.	NODE_1_length_765717_cov_10.426968	441503	441503
-UN	1624	.	NODE_1_length_765717_cov_10.426968	442796	442815
-UN	1625	.	NODE_1_length_765717_cov_10.426968	442818	442818
-UN	1626	.	NODE_1_length_765717_cov_10.426968	442823	442823
-UN	1627	.	NODE_1_length_765717_cov_10.426968	442826	442826
-UN	1628	.	NODE_1_length_765717_cov_10.426968	442828	442829
-UN	1629	.	NODE_1_length_765717_cov_10.426968	442843	442843
-UN	1630	.	NODE_1_length_765717_cov_10.426968	442845	442845
-UN	1631	.	NODE_1_length_765717_cov_10.426968	442865	442865
-UN	1632	.	NODE_1_length_765717_cov_10.426968	442869	442907
-UN	1633	.	NODE_1_length_765717_cov_10.426968	442916	442916
-UN	1634	.	NODE_1_length_765717_cov_10.426968	442918	442920
-UN	1635	.	NODE_1_length_765717_cov_10.426968	442939	442942
-UN	1636	.	NODE_1_length_765717_cov_10.426968	442948	442948
-UN	1637	.	NODE_1_length_765717_cov_10.426968	442950	442950
-UN	1638	.	NODE_1_length_765717_cov_10.426968	442952	442952
-UN	1639	.	NODE_1_length_765717_cov_10.426968	443427	443427
-UN	1640	.	NODE_1_length_765717_cov_10.426968	443462	443462
-UN	1641	.	NODE_1_length_765717_cov_10.426968	443465	443465
-UN	1642	.	NODE_1_length_765717_cov_10.426968	443477	443477
-UN	1643	.	NODE_1_length_765717_cov_10.426968	443480	443480
-UN	1644	.	NODE_1_length_765717_cov_10.426968	443483	443483
-UN	1645	.	NODE_1_length_765717_cov_10.426968	443485	443486
-UN	1646	.	NODE_1_length_765717_cov_10.426968	456465	456465
-UN	1647	.	NODE_1_length_765717_cov_10.426968	456470	456504
-UN	1648	.	NODE_1_length_765717_cov_10.426968	456507	456507
-UN	1649	.	NODE_1_length_765717_cov_10.426968	456510	456510
-UN	1650	.	NODE_1_length_765717_cov_10.426968	456526	456526
-UN	1651	.	NODE_1_length_765717_cov_10.426968	456534	456534
-UN	1652	.	NODE_1_length_765717_cov_10.426968	456541	456541
-UN	1653	.	NODE_1_length_765717_cov_10.426968	456566	456567
-UN	1654	.	NODE_1_length_765717_cov_10.426968	459185	459186
-UN	1655	.	NODE_1_length_765717_cov_10.426968	477822	477822
-UN	1656	.	NODE_1_length_765717_cov_10.426968	478399	478399
-UN	1657	.	NODE_1_length_765717_cov_10.426968	485708	485708
-UN	1658	.	NODE_1_length_765717_cov_10.426968	485711	485711
-UN	1659	.	NODE_1_length_765717_cov_10.426968	485744	485744
-UN	1660	.	NODE_1_length_765717_cov_10.426968	485749	485749
-UN	1661	.	NODE_1_length_765717_cov_10.426968	485821	485822
-UN	1662	.	NODE_1_length_765717_cov_10.426968	485829	485829
-UN	1663	.	NODE_1_length_765717_cov_10.426968	488447	488447
-UN	1664	.	NODE_1_length_765717_cov_10.426968	488456	488460
-UN	1665	.	NODE_1_length_765717_cov_10.426968	488465	488465
-UN	1666	.	NODE_1_length_765717_cov_10.426968	495697	495698
-UN	1667	.	NODE_1_length_765717_cov_10.426968	495703	495703
-UN	1668	.	NODE_1_length_765717_cov_10.426968	495729	495729
-UN	1669	.	NODE_1_length_765717_cov_10.426968	495906	495906
-UN	1670	.	NODE_1_length_765717_cov_10.426968	495917	495917
-UN	1671	.	NODE_1_length_765717_cov_10.426968	496022	496022
-UN	1672	.	NODE_1_length_765717_cov_10.426968	496024	496028
-UN	1673	.	NODE_1_length_765717_cov_10.426968	496033	496033
-UN	1674	.	NODE_1_length_765717_cov_10.426968	496035	496036
-UN	1675	.	NODE_1_length_765717_cov_10.426968	496040	496041
-UN	1676	.	NODE_1_length_765717_cov_10.426968	496043	496044
-UN	1677	.	NODE_1_length_765717_cov_10.426968	496046	496046
-UN	1678	.	NODE_1_length_765717_cov_10.426968	503039	503040
-UN	1679	.	NODE_1_length_765717_cov_10.426968	503046	503046
-UN	1680	.	NODE_1_length_765717_cov_10.426968	505479	505480
-UN	1681	.	NODE_1_length_765717_cov_10.426968	505482	505484
-UN	1682	.	NODE_1_length_765717_cov_10.426968	505487	505487
-UN	1683	.	NODE_1_length_765717_cov_10.426968	505489	505492
-UN	1684	.	NODE_1_length_765717_cov_10.426968	505494	505496
-UN	1685	.	NODE_1_length_765717_cov_10.426968	505499	505499
-UN	1686	.	NODE_1_length_765717_cov_10.426968	505502	505502
-UN	1687	.	NODE_1_length_765717_cov_10.426968	505504	505504
-UN	1688	.	NODE_1_length_765717_cov_10.426968	505507	505509
-UN	1689	.	NODE_1_length_765717_cov_10.426968	505511	505511
-UN	1690	.	NODE_1_length_765717_cov_10.426968	505513	505514
-UN	1691	.	NODE_1_length_765717_cov_10.426968	505517	505517
-UN	1692	.	NODE_1_length_765717_cov_10.426968	505519	505543
-UN	1693	.	NODE_1_length_765717_cov_10.426968	505545	505545
-UN	1694	.	NODE_1_length_765717_cov_10.426968	505733	505734
-UN	1695	.	NODE_1_length_765717_cov_10.426968	505736	505741
-UN	1696	.	NODE_1_length_765717_cov_10.426968	505774	505774
-UN	1697	.	NODE_1_length_765717_cov_10.426968	514180	514180
-UN	1698	.	NODE_1_length_765717_cov_10.426968	514196	514196
-UN	1699	.	NODE_1_length_765717_cov_10.426968	514209	514209
-UN	1700	.	NODE_1_length_765717_cov_10.426968	514231	514231
-UN	1701	.	NODE_1_length_765717_cov_10.426968	514409	514428
-UN	1702	.	NODE_1_length_765717_cov_10.426968	525104	525104
-UN	1703	.	NODE_1_length_765717_cov_10.426968	525109	525109
-UN	1704	.	NODE_1_length_765717_cov_10.426968	530229	530229
-UN	1705	.	NODE_1_length_765717_cov_10.426968	546571	546571
-UN	1706	.	NODE_1_length_765717_cov_10.426968	548590	548590
-UN	1707	.	NODE_1_length_765717_cov_10.426968	548594	548594
-UN	1708	.	NODE_1_length_765717_cov_10.426968	548597	548597
-UN	1709	.	NODE_1_length_765717_cov_10.426968	548599	548599
-UN	1710	.	NODE_1_length_765717_cov_10.426968	548601	548602
-UN	1711	.	NODE_1_length_765717_cov_10.426968	548609	548609
-UN	1712	.	NODE_1_length_765717_cov_10.426968	548615	548615
-UN	1713	.	NODE_1_length_765717_cov_10.426968	548629	548629
-UN	1714	.	NODE_1_length_765717_cov_10.426968	548631	548633
-UN	1715	.	NODE_1_length_765717_cov_10.426968	548635	548635
-UN	1716	.	NODE_1_length_765717_cov_10.426968	548641	548641
-UN	1717	.	NODE_1_length_765717_cov_10.426968	548645	548646
-UN	1718	.	NODE_1_length_765717_cov_10.426968	548648	548912
-UN	1719	.	NODE_1_length_765717_cov_10.426968	548960	549034
-UN	1720	.	NODE_1_length_765717_cov_10.426968	550434	550452
-UN	1721	.	NODE_1_length_765717_cov_10.426968	550461	550461
-UN	1722	.	NODE_1_length_765717_cov_10.426968	550910	550910
-UN	1723	.	NODE_1_length_765717_cov_10.426968	554991	554991
-UN	1724	.	NODE_1_length_765717_cov_10.426968	554993	554993
-UN	1725	.	NODE_1_length_765717_cov_10.426968	554998	554998
-UN	1726	.	NODE_1_length_765717_cov_10.426968	555000	555000
-UN	1727	.	NODE_1_length_765717_cov_10.426968	555004	555004
-UN	1728	.	NODE_1_length_765717_cov_10.426968	555006	555007
-UN	1729	.	NODE_1_length_765717_cov_10.426968	555012	555012
-UN	1730	.	NODE_1_length_765717_cov_10.426968	555014	555251
-UN	1731	.	NODE_1_length_765717_cov_10.426968	555455	555455
-UN	1732	.	NODE_1_length_765717_cov_10.426968	555474	555477
-UN	1733	.	NODE_1_length_765717_cov_10.426968	555480	555480
-UN	1734	.	NODE_1_length_765717_cov_10.426968	555482	555482
-UN	1735	.	NODE_1_length_765717_cov_10.426968	555492	555492
-UN	1736	.	NODE_1_length_765717_cov_10.426968	555515	555515
-UN	1737	.	NODE_1_length_765717_cov_10.426968	555541	555541
-UN	1738	.	NODE_1_length_765717_cov_10.426968	559294	559294
-UN	1739	.	NODE_1_length_765717_cov_10.426968	559296	559296
-UN	1740	.	NODE_1_length_765717_cov_10.426968	559306	559307
-UN	1741	.	NODE_1_length_765717_cov_10.426968	559314	559314
-UN	1742	.	NODE_1_length_765717_cov_10.426968	559316	559316
-UN	1743	.	NODE_1_length_765717_cov_10.426968	561509	561509
-UN	1744	.	NODE_1_length_765717_cov_10.426968	561512	561512
-UN	1745	.	NODE_1_length_765717_cov_10.426968	561519	561519
-UN	1746	.	NODE_1_length_765717_cov_10.426968	561531	561531
-UN	1747	.	NODE_1_length_765717_cov_10.426968	561534	561550
-UN	1748	.	NODE_1_length_765717_cov_10.426968	561555	561557
-UN	1749	.	NODE_1_length_765717_cov_10.426968	561562	561562
-UN	1750	.	NODE_1_length_765717_cov_10.426968	561565	561569
-UN	1751	.	NODE_1_length_765717_cov_10.426968	562034	562034
-UN	1752	.	NODE_1_length_765717_cov_10.426968	562037	562037
-UN	1753	.	NODE_1_length_765717_cov_10.426968	562090	562090
-UN	1754	.	NODE_1_length_765717_cov_10.426968	563492	563492
-UN	1755	.	NODE_1_length_765717_cov_10.426968	563496	563497
-UN	1756	.	NODE_1_length_765717_cov_10.426968	563499	563500
-UN	1757	.	NODE_1_length_765717_cov_10.426968	563509	563528
-UN	1758	.	NODE_1_length_765717_cov_10.426968	563530	563541
-UN	1759	.	NODE_1_length_765717_cov_10.426968	563543	563543
-UN	1760	.	NODE_1_length_765717_cov_10.426968	563546	563546
-UN	1761	.	NODE_1_length_765717_cov_10.426968	563561	563561
-UN	1762	.	NODE_1_length_765717_cov_10.426968	563564	563564
-UN	1763	.	NODE_1_length_765717_cov_10.426968	563566	563566
-UN	1764	.	NODE_1_length_765717_cov_10.426968	563568	563570
-UN	1765	.	NODE_1_length_765717_cov_10.426968	563572	563572
-UN	1766	.	NODE_1_length_765717_cov_10.426968	563574	563575
-UN	1767	.	NODE_1_length_765717_cov_10.426968	563577	563577
-UN	1768	.	NODE_1_length_765717_cov_10.426968	563581	563581
-UN	1769	.	NODE_1_length_765717_cov_10.426968	563583	563586
-UN	1770	.	NODE_1_length_765717_cov_10.426968	563588	563588
-UN	1771	.	NODE_1_length_765717_cov_10.426968	563592	563592
-UN	1772	.	NODE_1_length_765717_cov_10.426968	563594	563594
-UN	1773	.	NODE_1_length_765717_cov_10.426968	563596	563596
-UN	1774	.	NODE_1_length_765717_cov_10.426968	563598	563601
-UN	1775	.	NODE_1_length_765717_cov_10.426968	563607	563608
-UN	1776	.	NODE_1_length_765717_cov_10.426968	563611	563612
-UN	1777	.	NODE_1_length_765717_cov_10.426968	563616	563616
-UN	1778	.	NODE_1_length_765717_cov_10.426968	563618	563618
-UN	1779	.	NODE_1_length_765717_cov_10.426968	563621	563621
-UN	1780	.	NODE_1_length_765717_cov_10.426968	568548	568548
-UN	1781	.	NODE_1_length_765717_cov_10.426968	568551	568551
-UN	1782	.	NODE_1_length_765717_cov_10.426968	568562	568562
-UN	1783	.	NODE_1_length_765717_cov_10.426968	568601	568601
-UN	1784	.	NODE_1_length_765717_cov_10.426968	568608	568608
-UN	1785	.	NODE_1_length_765717_cov_10.426968	568631	568631
-UN	1786	.	NODE_1_length_765717_cov_10.426968	568634	568634
-UN	1787	.	NODE_1_length_765717_cov_10.426968	574307	574307
-UN	1788	.	NODE_1_length_765717_cov_10.426968	574339	574339
-UN	1789	.	NODE_1_length_765717_cov_10.426968	574342	574342
-UN	1790	.	NODE_1_length_765717_cov_10.426968	574435	574435
-UN	1791	.	NODE_1_length_765717_cov_10.426968	577965	577965
-UN	1792	.	NODE_1_length_765717_cov_10.426968	577974	577974
-UN	1793	.	NODE_1_length_765717_cov_10.426968	577980	577980
-UN	1794	.	NODE_1_length_765717_cov_10.426968	577983	577983
-UN	1795	.	NODE_1_length_765717_cov_10.426968	579289	579289
-UN	1796	.	NODE_1_length_765717_cov_10.426968	579315	579315
-UN	1797	.	NODE_1_length_765717_cov_10.426968	579725	579725
-UN	1798	.	NODE_1_length_765717_cov_10.426968	579752	579752
-UN	1799	.	NODE_1_length_765717_cov_10.426968	579760	579792
-UN	1800	.	NODE_1_length_765717_cov_10.426968	579794	579796
-UN	1801	.	NODE_1_length_765717_cov_10.426968	580248	580248
-UN	1802	.	NODE_1_length_765717_cov_10.426968	580265	580265
-UN	1803	.	NODE_1_length_765717_cov_10.426968	580269	580269
-UN	1804	.	NODE_1_length_765717_cov_10.426968	580276	580276
-UN	1805	.	NODE_1_length_765717_cov_10.426968	580278	580279
-UN	1806	.	NODE_1_length_765717_cov_10.426968	597390	597390
-UN	1807	.	NODE_1_length_765717_cov_10.426968	597394	597394
-UN	1808	.	NODE_1_length_765717_cov_10.426968	597403	597404
-UN	1809	.	NODE_1_length_765717_cov_10.426968	597411	597411
-UN	1810	.	NODE_1_length_765717_cov_10.426968	597427	597427
-UN	1811	.	NODE_1_length_765717_cov_10.426968	597432	597432
-UN	1812	.	NODE_1_length_765717_cov_10.426968	597435	597435
-UN	1813	.	NODE_1_length_765717_cov_10.426968	597439	597439
-UN	1814	.	NODE_1_length_765717_cov_10.426968	597447	597449
-UN	1815	.	NODE_1_length_765717_cov_10.426968	597451	597459
-UN	1816	.	NODE_1_length_765717_cov_10.426968	597465	597465
-UN	1817	.	NODE_1_length_765717_cov_10.426968	597468	597468
-UN	1818	.	NODE_1_length_765717_cov_10.426968	597470	597470
-UN	1819	.	NODE_1_length_765717_cov_10.426968	597472	597472
-UN	1820	.	NODE_1_length_765717_cov_10.426968	597475	597476
-UN	1821	.	NODE_1_length_765717_cov_10.426968	597519	597519
-UN	1822	.	NODE_1_length_765717_cov_10.426968	597521	597536
-UN	1823	.	NODE_1_length_765717_cov_10.426968	597539	597541
-UN	1824	.	NODE_1_length_765717_cov_10.426968	597546	597546
-UN	1825	.	NODE_1_length_765717_cov_10.426968	597553	597553
-UN	1826	.	NODE_1_length_765717_cov_10.426968	597569	597569
-UN	1827	.	NODE_1_length_765717_cov_10.426968	598129	598151
-UN	1828	.	NODE_1_length_765717_cov_10.426968	599619	599619
-UN	1829	.	NODE_1_length_765717_cov_10.426968	599951	599951
-UN	1830	.	NODE_1_length_765717_cov_10.426968	599959	599959
-UN	1831	.	NODE_1_length_765717_cov_10.426968	602642	602645
-UN	1832	.	NODE_1_length_765717_cov_10.426968	602647	602648
-UN	1833	.	NODE_1_length_765717_cov_10.426968	602651	602651
-UN	1834	.	NODE_1_length_765717_cov_10.426968	602653	602654
-UN	1835	.	NODE_1_length_765717_cov_10.426968	602656	602656
-UN	1836	.	NODE_1_length_765717_cov_10.426968	602660	602660
-UN	1837	.	NODE_1_length_765717_cov_10.426968	602662	602666
-UN	1838	.	NODE_1_length_765717_cov_10.426968	602670	602678
-UN	1839	.	NODE_1_length_765717_cov_10.426968	605487	605487
-UN	1840	.	NODE_1_length_765717_cov_10.426968	608211	608388
-UN	1841	.	NODE_1_length_765717_cov_10.426968	608391	608392
-UN	1842	.	NODE_1_length_765717_cov_10.426968	608405	608405
-UN	1843	.	NODE_1_length_765717_cov_10.426968	608412	608412
-UN	1844	.	NODE_1_length_765717_cov_10.426968	620543	620581
-UN	1845	.	NODE_1_length_765717_cov_10.426968	620583	620583
-UN	1846	.	NODE_1_length_765717_cov_10.426968	620585	620585
-UN	1847	.	NODE_1_length_765717_cov_10.426968	620587	620593
-UN	1848	.	NODE_1_length_765717_cov_10.426968	620595	620658
-UN	1849	.	NODE_1_length_765717_cov_10.426968	620667	620668
-UN	1850	.	NODE_1_length_765717_cov_10.426968	620684	620684
-UN	1851	.	NODE_1_length_765717_cov_10.426968	622316	622316
-UN	1852	.	NODE_1_length_765717_cov_10.426968	622318	622318
-UN	1853	.	NODE_1_length_765717_cov_10.426968	622320	622323
-UN	1854	.	NODE_1_length_765717_cov_10.426968	622492	622492
-UN	1855	.	NODE_1_length_765717_cov_10.426968	622634	622636
-UN	1856	.	NODE_1_length_765717_cov_10.426968	622639	622640
-UN	1857	.	NODE_1_length_765717_cov_10.426968	622644	622649
-UN	1858	.	NODE_1_length_765717_cov_10.426968	622651	622651
-UN	1859	.	NODE_1_length_765717_cov_10.426968	622653	622669
-UN	1860	.	NODE_1_length_765717_cov_10.426968	622671	622675
-UN	1861	.	NODE_1_length_765717_cov_10.426968	622677	622681
-UN	1862	.	NODE_1_length_765717_cov_10.426968	622683	622692
-UN	1863	.	NODE_1_length_765717_cov_10.426968	622695	622697
-UN	1864	.	NODE_1_length_765717_cov_10.426968	622699	622701
-UN	1865	.	NODE_1_length_765717_cov_10.426968	622729	622730
-UN	1866	.	NODE_1_length_765717_cov_10.426968	622732	622732
-UN	1867	.	NODE_1_length_765717_cov_10.426968	622759	622759
-UN	1868	.	NODE_1_length_765717_cov_10.426968	622762	622762
-UN	1869	.	NODE_1_length_765717_cov_10.426968	622778	622778
-UN	1870	.	NODE_1_length_765717_cov_10.426968	622811	622811
-UN	1871	.	NODE_1_length_765717_cov_10.426968	622831	622980
-UN	1872	.	NODE_1_length_765717_cov_10.426968	622982	622982
-UN	1873	.	NODE_1_length_765717_cov_10.426968	622987	623057
-UN	1874	.	NODE_1_length_765717_cov_10.426968	623072	623072
-UN	1875	.	NODE_1_length_765717_cov_10.426968	623204	623204
-UN	1876	.	NODE_1_length_765717_cov_10.426968	623208	623208
-UN	1877	.	NODE_1_length_765717_cov_10.426968	624769	624769
-UN	1878	.	NODE_1_length_765717_cov_10.426968	624779	624779
-UN	1879	.	NODE_1_length_765717_cov_10.426968	624783	624783
-UN	1880	.	NODE_1_length_765717_cov_10.426968	625557	625557
-UN	1881	.	NODE_1_length_765717_cov_10.426968	629362	629362
-UN	1882	.	NODE_1_length_765717_cov_10.426968	629396	629397
-UN	1883	.	NODE_1_length_765717_cov_10.426968	629402	629403
-UN	1884	.	NODE_1_length_765717_cov_10.426968	629415	629415
-UN	1885	.	NODE_1_length_765717_cov_10.426968	629424	629424
-UN	1886	.	NODE_1_length_765717_cov_10.426968	629426	629426
-UN	1887	.	NODE_1_length_765717_cov_10.426968	629429	629429
-UN	1888	.	NODE_1_length_765717_cov_10.426968	629432	629432
-UN	1889	.	NODE_1_length_765717_cov_10.426968	629440	629440
-UN	1890	.	NODE_1_length_765717_cov_10.426968	629475	629480
-UN	1891	.	NODE_1_length_765717_cov_10.426968	629482	629485
-UN	1892	.	NODE_1_length_765717_cov_10.426968	629490	629534
-UN	1893	.	NODE_1_length_765717_cov_10.426968	629540	629541
-UN	1894	.	NODE_1_length_765717_cov_10.426968	629543	629544
-UN	1895	.	NODE_1_length_765717_cov_10.426968	629546	629546
-UN	1896	.	NODE_1_length_765717_cov_10.426968	629550	629551
-UN	1897	.	NODE_1_length_765717_cov_10.426968	629556	629598
-UN	1898	.	NODE_1_length_765717_cov_10.426968	633563	633581
-UN	1899	.	NODE_1_length_765717_cov_10.426968	635534	635535
-UN	1900	.	NODE_1_length_765717_cov_10.426968	635540	635542
-UN	1901	.	NODE_1_length_765717_cov_10.426968	635546	635546
-UN	1902	.	NODE_1_length_765717_cov_10.426968	635549	635551
-UN	1903	.	NODE_1_length_765717_cov_10.426968	635553	635553
-UN	1904	.	NODE_1_length_765717_cov_10.426968	635561	635561
-UN	1905	.	NODE_1_length_765717_cov_10.426968	635563	635563
-UN	1906	.	NODE_1_length_765717_cov_10.426968	635566	635569
-UN	1907	.	NODE_1_length_765717_cov_10.426968	635573	635573
-UN	1908	.	NODE_1_length_765717_cov_10.426968	635575	635576
-UN	1909	.	NODE_1_length_765717_cov_10.426968	635578	635579
-UN	1910	.	NODE_1_length_765717_cov_10.426968	635581	635585
-UN	1911	.	NODE_1_length_765717_cov_10.426968	643489	643489
-UN	1912	.	NODE_1_length_765717_cov_10.426968	643491	643492
-UN	1913	.	NODE_1_length_765717_cov_10.426968	643496	643498
-UN	1914	.	NODE_1_length_765717_cov_10.426968	643502	643502
-UN	1915	.	NODE_1_length_765717_cov_10.426968	643504	643504
-UN	1916	.	NODE_1_length_765717_cov_10.426968	643510	643510
-UN	1917	.	NODE_1_length_765717_cov_10.426968	643514	643514
-UN	1918	.	NODE_1_length_765717_cov_10.426968	650262	650262
-UN	1919	.	NODE_1_length_765717_cov_10.426968	650274	650274
-UN	1920	.	NODE_1_length_765717_cov_10.426968	652268	652268
-UN	1921	.	NODE_1_length_765717_cov_10.426968	652271	652271
-UN	1922	.	NODE_1_length_765717_cov_10.426968	652277	652277
-UN	1923	.	NODE_1_length_765717_cov_10.426968	652288	652288
-UN	1924	.	NODE_1_length_765717_cov_10.426968	652290	652290
-UN	1925	.	NODE_1_length_765717_cov_10.426968	652292	652292
-UN	1926	.	NODE_1_length_765717_cov_10.426968	652298	652298
-UN	1927	.	NODE_1_length_765717_cov_10.426968	652302	652302
-UN	1928	.	NODE_1_length_765717_cov_10.426968	652306	652306
-UN	1929	.	NODE_1_length_765717_cov_10.426968	652311	652311
-UN	1930	.	NODE_1_length_765717_cov_10.426968	652313	652313
-UN	1931	.	NODE_1_length_765717_cov_10.426968	652315	652315
-UN	1932	.	NODE_1_length_765717_cov_10.426968	652317	652317
-UN	1933	.	NODE_1_length_765717_cov_10.426968	652322	652322
-UN	1934	.	NODE_1_length_765717_cov_10.426968	652325	652325
-UN	1935	.	NODE_1_length_765717_cov_10.426968	652331	652331
-UN	1936	.	NODE_1_length_765717_cov_10.426968	652334	652336
-UN	1937	.	NODE_1_length_765717_cov_10.426968	652425	652425
-UN	1938	.	NODE_1_length_765717_cov_10.426968	652427	652427
-UN	1939	.	NODE_1_length_765717_cov_10.426968	652429	652431
-UN	1940	.	NODE_1_length_765717_cov_10.426968	652433	652439
-UN	1941	.	NODE_1_length_765717_cov_10.426968	652442	652446
-UN	1942	.	NODE_1_length_765717_cov_10.426968	652448	652458
-UN	1943	.	NODE_1_length_765717_cov_10.426968	652460	652460
-UN	1944	.	NODE_1_length_765717_cov_10.426968	652466	652466
-UN	1945	.	NODE_1_length_765717_cov_10.426968	652477	652477
-UN	1946	.	NODE_1_length_765717_cov_10.426968	652479	652479
-UN	1947	.	NODE_1_length_765717_cov_10.426968	652484	652485
-UN	1948	.	NODE_1_length_765717_cov_10.426968	652489	652491
-UN	1949	.	NODE_1_length_765717_cov_10.426968	657170	657170
-UN	1950	.	NODE_1_length_765717_cov_10.426968	658478	658505
-UN	1951	.	NODE_1_length_765717_cov_10.426968	658508	658508
-UN	1952	.	NODE_1_length_765717_cov_10.426968	658510	658511
-UN	1953	.	NODE_1_length_765717_cov_10.426968	658514	658518
-UN	1954	.	NODE_1_length_765717_cov_10.426968	658520	658551
-UN	1955	.	NODE_1_length_765717_cov_10.426968	677331	677331
-UN	1956	.	NODE_1_length_765717_cov_10.426968	677344	677361
-UN	1957	.	NODE_1_length_765717_cov_10.426968	690146	690146
-UN	1958	.	NODE_1_length_765717_cov_10.426968	710468	710468
-UN	1959	.	NODE_1_length_765717_cov_10.426968	710470	710470
-UN	1960	.	NODE_1_length_765717_cov_10.426968	710473	710473
-UN	1961	.	NODE_1_length_765717_cov_10.426968	710482	710485
-UN	1962	.	NODE_1_length_765717_cov_10.426968	710492	710492
-UN	1963	.	NODE_1_length_765717_cov_10.426968	710494	710494
-UN	1964	.	NODE_1_length_765717_cov_10.426968	710496	710497
-UN	1965	.	NODE_1_length_765717_cov_10.426968	712709	712796
-UN	1966	.	NODE_1_length_765717_cov_10.426968	735002	735014
-UN	1967	.	NODE_1_length_765717_cov_10.426968	735027	735032
-UN	1968	.	NODE_1_length_765717_cov_10.426968	735131	735131
-UN	1969	.	NODE_1_length_765717_cov_10.426968	735137	735137
-UN	1970	.	NODE_1_length_765717_cov_10.426968	735142	735289
-UN	1971	.	NODE_1_length_765717_cov_10.426968	735294	735294
-UN	1972	.	NODE_1_length_765717_cov_10.426968	740475	740475
-UN	1973	.	NODE_1_length_765717_cov_10.426968	740480	740480
-UN	1974	.	NODE_1_length_765717_cov_10.426968	740482	740483
-UN	1975	.	NODE_1_length_765717_cov_10.426968	740485	740485
-UN	1976	.	NODE_1_length_765717_cov_10.426968	740487	740489
-UN	1977	.	NODE_1_length_765717_cov_10.426968	740491	740492
-UN	1978	.	NODE_1_length_765717_cov_10.426968	740497	740497
-UN	1979	.	NODE_1_length_765717_cov_10.426968	740500	740501
-UN	1980	.	NODE_1_length_765717_cov_10.426968	740506	740511
-UN	1981	.	NODE_1_length_765717_cov_10.426968	740516	740516
-UN	1982	.	NODE_1_length_765717_cov_10.426968	740531	740549
-UN	1983	.	NODE_1_length_765717_cov_10.426968	741600	741600
-UN	1984	.	NODE_1_length_765717_cov_10.426968	746926	746958
-UN	1985	.	NODE_1_length_765717_cov_10.426968	756270	756270
-UN	1986	.	NODE_1_length_765717_cov_10.426968	756793	756793
-UN	1987	.	NODE_1_length_765717_cov_10.426968	756797	756798
-UN	1988	.	NODE_1_length_765717_cov_10.426968	756801	756801
-UN	1989	.	NODE_1_length_765717_cov_10.426968	756803	756805
-UN	1990	.	NODE_1_length_765717_cov_10.426968	756807	756811
-UN	1991	.	NODE_1_length_765717_cov_10.426968	756815	756815
-UN	1992	.	NODE_1_length_765717_cov_10.426968	756820	756822
-UN	1993	.	NODE_1_length_765717_cov_10.426968	756824	756825
-UN	1994	.	NODE_1_length_765717_cov_10.426968	756827	756827
-UN	1995	.	NODE_1_length_765717_cov_10.426968	756831	756845
-UN	1996	.	NODE_1_length_765717_cov_10.426968	756850	756850
-UN	1997	.	NODE_1_length_765717_cov_10.426968	756853	756853
-UN	1998	.	NODE_1_length_765717_cov_10.426968	756855	756856
-UN	1999	.	NODE_1_length_765717_cov_10.426968	756858	756862
-UN	2000	.	NODE_1_length_765717_cov_10.426968	756864	756876
-UN	2001	.	NODE_1_length_765717_cov_10.426968	756878	756879
-UN	2002	.	NODE_1_length_765717_cov_10.426968	756881	756881
-UN	2003	.	NODE_1_length_765717_cov_10.426968	756884	756886
-UN	2004	.	NODE_1_length_765717_cov_10.426968	756888	756888
-UN	2005	.	NODE_1_length_765717_cov_10.426968	756891	756891
-UN	2006	.	NODE_1_length_765717_cov_10.426968	756893	756897
-UN	2007	.	NODE_1_length_765717_cov_10.426968	756899	756903
-UN	2008	.	NODE_1_length_765717_cov_10.426968	765709	765710
-UN	2009	.	NODE_1_length_765717_cov_10.426968	765712	765717
-UN	2010	.	NODE_20_length_61103_cov_11.817174	1	55
-UN	2011	.	NODE_20_length_61103_cov_11.817174	2392	2392
-UN	2012	.	NODE_20_length_61103_cov_11.817174	2415	2415
-UN	2013	.	NODE_20_length_61103_cov_11.817174	2417	2417
-UN	2014	.	NODE_20_length_61103_cov_11.817174	2429	2505
-UN	2015	.	NODE_20_length_61103_cov_11.817174	2508	2510
-UN	2016	.	NODE_20_length_61103_cov_11.817174	2528	2528
-UN	2017	.	NODE_20_length_61103_cov_11.817174	2533	2533
-UN	2018	.	NODE_20_length_61103_cov_11.817174	2535	2535
-UN	2019	.	NODE_20_length_61103_cov_11.817174	2537	2563
-UN	2020	.	NODE_20_length_61103_cov_11.817174	2565	2565
-UN	2021	.	NODE_20_length_61103_cov_11.817174	2567	2571
-UN	2022	.	NODE_20_length_61103_cov_11.817174	2576	2584
-UN	2023	.	NODE_20_length_61103_cov_11.817174	2587	2587
-UN	2024	.	NODE_20_length_61103_cov_11.817174	2589	2589
-UN	2025	.	NODE_20_length_61103_cov_11.817174	2596	2596
-UN	2026	.	NODE_20_length_61103_cov_11.817174	4165	4165
-UN	2027	.	NODE_20_length_61103_cov_11.817174	4706	4706
-UN	2028	.	NODE_20_length_61103_cov_11.817174	4941	4941
-UN	2029	.	NODE_20_length_61103_cov_11.817174	4995	5334
-UN	2030	.	NODE_20_length_61103_cov_11.817174	5346	5346
-UN	2031	.	NODE_20_length_61103_cov_11.817174	5914	5914
-UN	2032	.	NODE_20_length_61103_cov_11.817174	8394	8394
-UN	2033	.	NODE_20_length_61103_cov_11.817174	10868	10868
-UN	2034	.	NODE_20_length_61103_cov_11.817174	11484	11640
-UN	2035	.	NODE_20_length_61103_cov_11.817174	11642	11643
-UN	2036	.	NODE_20_length_61103_cov_11.817174	11650	11650
-UN	2037	.	NODE_20_length_61103_cov_11.817174	11653	11653
-UN	2038	.	NODE_20_length_61103_cov_11.817174	11660	11660
-UN	2039	.	NODE_20_length_61103_cov_11.817174	11664	11664
-UN	2040	.	NODE_20_length_61103_cov_11.817174	11666	11668
-UN	2041	.	NODE_20_length_61103_cov_11.817174	17101	17104
-UN	2042	.	NODE_20_length_61103_cov_11.817174	31465	31465
-UN	2043	.	NODE_20_length_61103_cov_11.817174	31469	31469
-UN	2044	.	NODE_20_length_61103_cov_11.817174	31472	31472
-UN	2045	.	NODE_20_length_61103_cov_11.817174	31487	31487
-UN	2046	.	NODE_20_length_61103_cov_11.817174	31498	31499
-UN	2047	.	NODE_20_length_61103_cov_11.817174	55843	55843
-UN	2048	.	NODE_20_length_61103_cov_11.817174	56483	56483
-UN	2049	.	NODE_20_length_61103_cov_11.817174	56518	56518
-UN	2050	.	NODE_20_length_61103_cov_11.817174	56522	56522
-UN	2051	.	NODE_20_length_61103_cov_11.817174	56537	56546
-UN	2052	.	NODE_20_length_61103_cov_11.817174	56548	56548
-UN	2053	.	NODE_20_length_61103_cov_11.817174	56550	56733
-UN	2054	.	NODE_20_length_61103_cov_11.817174	56741	56741
-UN	2055	.	NODE_20_length_61103_cov_11.817174	57294	57294
-UN	2056	.	NODE_20_length_61103_cov_11.817174	57296	57296
-UN	2057	.	NODE_20_length_61103_cov_11.817174	57301	57301
-UN	2058	.	NODE_20_length_61103_cov_11.817174	57309	57310
-UN	2059	.	NODE_20_length_61103_cov_11.817174	57317	57318
-UN	2060	.	NODE_20_length_61103_cov_11.817174	57320	57320
-UN	2061	.	NODE_20_length_61103_cov_11.817174	57322	57337
-UN	2062	.	NODE_20_length_61103_cov_11.817174	57624	57753
-UN	2063	.	NODE_20_length_61103_cov_11.817174	57755	57805
-UN	2064	.	NODE_20_length_61103_cov_11.817174	60819	60845
-UN	2065	.	NODE_20_length_61103_cov_11.817174	60858	60971
-UN	2066	.	NODE_20_length_61103_cov_11.817174	61061	61103
-UN	2067	.	NODE_21_length_54475_cov_10.137963	1	107
-UN	2068	.	NODE_21_length_54475_cov_10.137963	175	175
-UN	2069	.	NODE_21_length_54475_cov_10.137963	182	182
-UN	2070	.	NODE_21_length_54475_cov_10.137963	186	189
-UN	2071	.	NODE_21_length_54475_cov_10.137963	3611	3612
-UN	2072	.	NODE_21_length_54475_cov_10.137963	3614	3636
-UN	2073	.	NODE_21_length_54475_cov_10.137963	4130	4130
-UN	2074	.	NODE_21_length_54475_cov_10.137963	4155	4155
-UN	2075	.	NODE_21_length_54475_cov_10.137963	8497	8497
-UN	2076	.	NODE_21_length_54475_cov_10.137963	8500	8500
-UN	2077	.	NODE_21_length_54475_cov_10.137963	8511	8511
-UN	2078	.	NODE_21_length_54475_cov_10.137963	8534	8534
-UN	2079	.	NODE_21_length_54475_cov_10.137963	8653	8654
-UN	2080	.	NODE_21_length_54475_cov_10.137963	8656	8656
-UN	2081	.	NODE_21_length_54475_cov_10.137963	8662	8662
-UN	2082	.	NODE_21_length_54475_cov_10.137963	8678	8678
-UN	2083	.	NODE_21_length_54475_cov_10.137963	11901	11903
-UN	2084	.	NODE_21_length_54475_cov_10.137963	11914	11920
-UN	2085	.	NODE_21_length_54475_cov_10.137963	11922	11927
-UN	2086	.	NODE_21_length_54475_cov_10.137963	11931	11950
-UN	2087	.	NODE_21_length_54475_cov_10.137963	11952	11972
-UN	2088	.	NODE_21_length_54475_cov_10.137963	11975	11976
-UN	2089	.	NODE_21_length_54475_cov_10.137963	11980	11980
-UN	2090	.	NODE_21_length_54475_cov_10.137963	11982	11984
-UN	2091	.	NODE_21_length_54475_cov_10.137963	11990	11990
-UN	2092	.	NODE_21_length_54475_cov_10.137963	11993	11993
-UN	2093	.	NODE_21_length_54475_cov_10.137963	11998	11999
-UN	2094	.	NODE_21_length_54475_cov_10.137963	12005	12007
-UN	2095	.	NODE_21_length_54475_cov_10.137963	12009	12009
-UN	2096	.	NODE_21_length_54475_cov_10.137963	13290	13290
-UN	2097	.	NODE_21_length_54475_cov_10.137963	13294	13294
-UN	2098	.	NODE_21_length_54475_cov_10.137963	13296	13297
-UN	2099	.	NODE_21_length_54475_cov_10.137963	13311	13311
-UN	2100	.	NODE_21_length_54475_cov_10.137963	14421	14432
-UN	2101	.	NODE_21_length_54475_cov_10.137963	14435	14441
-UN	2102	.	NODE_21_length_54475_cov_10.137963	14443	14444
-UN	2103	.	NODE_21_length_54475_cov_10.137963	14446	14449
-UN	2104	.	NODE_21_length_54475_cov_10.137963	14451	14458
-UN	2105	.	NODE_21_length_54475_cov_10.137963	14461	14461
-UN	2106	.	NODE_21_length_54475_cov_10.137963	14467	14468
-UN	2107	.	NODE_21_length_54475_cov_10.137963	14472	14472
-UN	2108	.	NODE_21_length_54475_cov_10.137963	14474	14474
-UN	2109	.	NODE_21_length_54475_cov_10.137963	14476	14491
-UN	2110	.	NODE_21_length_54475_cov_10.137963	14853	14854
-UN	2111	.	NODE_21_length_54475_cov_10.137963	20674	20674
-UN	2112	.	NODE_21_length_54475_cov_10.137963	20681	20699
-UN	2113	.	NODE_21_length_54475_cov_10.137963	20738	20741
-UN	2114	.	NODE_21_length_54475_cov_10.137963	21130	21291
-UN	2115	.	NODE_21_length_54475_cov_10.137963	38942	38942
-UN	2116	.	NODE_21_length_54475_cov_10.137963	38958	38958
-UN	2117	.	NODE_21_length_54475_cov_10.137963	38963	38963
-UN	2118	.	NODE_21_length_54475_cov_10.137963	38966	39069
-UN	2119	.	NODE_21_length_54475_cov_10.137963	39071	39081
-UN	2120	.	NODE_21_length_54475_cov_10.137963	39548	39548
-UN	2121	.	NODE_21_length_54475_cov_10.137963	39559	39559
-UN	2122	.	NODE_21_length_54475_cov_10.137963	39629	39629
-UN	2123	.	NODE_21_length_54475_cov_10.137963	39822	39822
-UN	2124	.	NODE_21_length_54475_cov_10.137963	39829	39859
-UN	2125	.	NODE_21_length_54475_cov_10.137963	39861	39861
-UN	2126	.	NODE_21_length_54475_cov_10.137963	39863	39863
-UN	2127	.	NODE_21_length_54475_cov_10.137963	39865	39867
-UN	2128	.	NODE_21_length_54475_cov_10.137963	39870	39870
-UN	2129	.	NODE_21_length_54475_cov_10.137963	39874	39875
-UN	2130	.	NODE_21_length_54475_cov_10.137963	40478	40478
-UN	2131	.	NODE_21_length_54475_cov_10.137963	52824	52824
-UN	2132	.	NODE_21_length_54475_cov_10.137963	52833	52833
-UN	2133	.	NODE_21_length_54475_cov_10.137963	52842	52842
-UN	2134	.	NODE_21_length_54475_cov_10.137963	52860	52860
-UN	2135	.	NODE_21_length_54475_cov_10.137963	52888	52888
-UN	2136	.	NODE_21_length_54475_cov_10.137963	52971	52971
-UN	2137	.	NODE_21_length_54475_cov_10.137963	52974	52974
-UN	2138	.	NODE_21_length_54475_cov_10.137963	52977	52977
-UN	2139	.	NODE_21_length_54475_cov_10.137963	53437	53437
-UN	2140	.	NODE_21_length_54475_cov_10.137963	53442	53442
-UN	2141	.	NODE_21_length_54475_cov_10.137963	53753	53756
-UN	2142	.	NODE_21_length_54475_cov_10.137963	53764	53785
-UN	2143	.	NODE_21_length_54475_cov_10.137963	53787	53787
-UN	2144	.	NODE_21_length_54475_cov_10.137963	53795	53795
-UN	2145	.	NODE_21_length_54475_cov_10.137963	53807	53807
-UN	2146	.	NODE_21_length_54475_cov_10.137963	53810	53820
-UN	2147	.	NODE_21_length_54475_cov_10.137963	53822	53822
-UN	2148	.	NODE_21_length_54475_cov_10.137963	53824	53826
-UN	2149	.	NODE_21_length_54475_cov_10.137963	53831	53833
-UN	2150	.	NODE_21_length_54475_cov_10.137963	53837	53837
-UN	2151	.	NODE_21_length_54475_cov_10.137963	53842	53842
-UN	2152	.	NODE_21_length_54475_cov_10.137963	54064	54064
-UN	2153	.	NODE_21_length_54475_cov_10.137963	54466	54475
-UN	2154	.	NODE_22_length_52579_cov_10.779208	1	35
-UN	2155	.	NODE_22_length_52579_cov_10.779208	37	39
-UN	2156	.	NODE_22_length_52579_cov_10.779208	42	42
-UN	2157	.	NODE_22_length_52579_cov_10.779208	46	47
-UN	2158	.	NODE_22_length_52579_cov_10.779208	50	51
-UN	2159	.	NODE_22_length_52579_cov_10.779208	1904	1904
-UN	2160	.	NODE_22_length_52579_cov_10.779208	1910	1925
-UN	2161	.	NODE_22_length_52579_cov_10.779208	2368	2368
-UN	2162	.	NODE_22_length_52579_cov_10.779208	2372	2372
-UN	2163	.	NODE_22_length_52579_cov_10.779208	5018	5018
-UN	2164	.	NODE_22_length_52579_cov_10.779208	13156	13156
-UN	2165	.	NODE_22_length_52579_cov_10.779208	13213	13213
-UN	2166	.	NODE_22_length_52579_cov_10.779208	19585	19585
-UN	2167	.	NODE_22_length_52579_cov_10.779208	19592	19592
-UN	2168	.	NODE_22_length_52579_cov_10.779208	19896	19896
-UN	2169	.	NODE_22_length_52579_cov_10.779208	19902	19902
-UN	2170	.	NODE_22_length_52579_cov_10.779208	19904	19904
-UN	2171	.	NODE_22_length_52579_cov_10.779208	19906	19911
-UN	2172	.	NODE_22_length_52579_cov_10.779208	19914	19940
-UN	2173	.	NODE_22_length_52579_cov_10.779208	19942	19943
-UN	2174	.	NODE_22_length_52579_cov_10.779208	19946	19946
-UN	2175	.	NODE_22_length_52579_cov_10.779208	19951	19954
-UN	2176	.	NODE_22_length_52579_cov_10.779208	19957	19957
-UN	2177	.	NODE_22_length_52579_cov_10.779208	19965	19965
-UN	2178	.	NODE_22_length_52579_cov_10.779208	25348	25348
-UN	2179	.	NODE_22_length_52579_cov_10.779208	27895	27898
-UN	2180	.	NODE_22_length_52579_cov_10.779208	27900	27901
-UN	2181	.	NODE_22_length_52579_cov_10.779208	27903	27903
-UN	2182	.	NODE_22_length_52579_cov_10.779208	27905	27905
-UN	2183	.	NODE_22_length_52579_cov_10.779208	29751	29751
-UN	2184	.	NODE_22_length_52579_cov_10.779208	29753	29753
-UN	2185	.	NODE_22_length_52579_cov_10.779208	29756	29759
-UN	2186	.	NODE_22_length_52579_cov_10.779208	29761	29767
-UN	2187	.	NODE_22_length_52579_cov_10.779208	29881	29904
-UN	2188	.	NODE_22_length_52579_cov_10.779208	32655	32655
-UN	2189	.	NODE_22_length_52579_cov_10.779208	32659	32664
-UN	2190	.	NODE_22_length_52579_cov_10.779208	32813	32813
-UN	2191	.	NODE_22_length_52579_cov_10.779208	52541	52579
-UN	2192	.	NODE_23_length_41671_cov_14.019233	1	4
-UN	2193	.	NODE_24_length_41047_cov_15.347752	1	23
-UN	2194	.	NODE_24_length_41047_cov_15.347752	35119	35119
-UN	2195	.	NODE_25_length_39103_cov_13.864173	1	48
-UN	2196	.	NODE_25_length_39103_cov_13.864173	8127	8127
-UN	2197	.	NODE_25_length_39103_cov_13.864173	8130	8130
-UN	2198	.	NODE_25_length_39103_cov_13.864173	8132	8132
-UN	2199	.	NODE_25_length_39103_cov_13.864173	8143	8144
-UN	2200	.	NODE_25_length_39103_cov_13.864173	8152	8152
-UN	2201	.	NODE_25_length_39103_cov_13.864173	8166	8166
-UN	2202	.	NODE_25_length_39103_cov_13.864173	8173	8178
-UN	2203	.	NODE_25_length_39103_cov_13.864173	8186	8186
-UN	2204	.	NODE_25_length_39103_cov_13.864173	15986	15986
-UN	2205	.	NODE_25_length_39103_cov_13.864173	16043	16067
-UN	2206	.	NODE_25_length_39103_cov_13.864173	16118	16119
-UN	2207	.	NODE_25_length_39103_cov_13.864173	16124	16124
-UN	2208	.	NODE_25_length_39103_cov_13.864173	16137	16181
-UN	2209	.	NODE_25_length_39103_cov_13.864173	16257	16257
-UN	2210	.	NODE_25_length_39103_cov_13.864173	16263	16263
-UN	2211	.	NODE_25_length_39103_cov_13.864173	19750	19775
-UN	2212	.	NODE_25_length_39103_cov_13.864173	19779	19789
-UN	2213	.	NODE_25_length_39103_cov_13.864173	19798	19798
-UN	2214	.	NODE_25_length_39103_cov_13.864173	19801	19806
-UN	2215	.	NODE_25_length_39103_cov_13.864173	19809	19814
-UN	2216	.	NODE_25_length_39103_cov_13.864173	19816	19818
-UN	2217	.	NODE_25_length_39103_cov_13.864173	19825	19826
-UN	2218	.	NODE_25_length_39103_cov_13.864173	27340	27340
-UN	2219	.	NODE_26_length_31945_cov_9.670250	4485	4485
-UN	2220	.	NODE_26_length_31945_cov_9.670250	4493	4493
-UN	2221	.	NODE_26_length_31945_cov_9.670250	10661	10661
-UN	2222	.	NODE_26_length_31945_cov_9.670250	10715	10715
-UN	2223	.	NODE_26_length_31945_cov_9.670250	14859	14859
-UN	2224	.	NODE_26_length_31945_cov_9.670250	14861	14861
-UN	2225	.	NODE_26_length_31945_cov_9.670250	18239	18261
-UN	2226	.	NODE_26_length_31945_cov_9.670250	19659	19659
-UN	2227	.	NODE_26_length_31945_cov_9.670250	20355	20355
-UN	2228	.	NODE_26_length_31945_cov_9.670250	20362	20362
-UN	2229	.	NODE_26_length_31945_cov_9.670250	21945	21945
-UN	2230	.	NODE_26_length_31945_cov_9.670250	24134	24174
-UN	2231	.	NODE_26_length_31945_cov_9.670250	31868	31868
-UN	2232	.	NODE_26_length_31945_cov_9.670250	31871	31871
-UN	2233	.	NODE_26_length_31945_cov_9.670250	31875	31875
-UN	2234	.	NODE_26_length_31945_cov_9.670250	31877	31877
-UN	2235	.	NODE_26_length_31945_cov_9.670250	31881	31882
-UN	2236	.	NODE_26_length_31945_cov_9.670250	31886	31886
-UN	2237	.	NODE_26_length_31945_cov_9.670250	31889	31889
-UN	2238	.	NODE_26_length_31945_cov_9.670250	31893	31893
-UN	2239	.	NODE_26_length_31945_cov_9.670250	31898	31945
-UN	2240	.	NODE_27_length_31923_cov_11.432224	1	60
-UN	2241	.	NODE_27_length_31923_cov_11.432224	17459	17459
-UN	2242	.	NODE_27_length_31923_cov_11.432224	17461	17461
-UN	2243	.	NODE_27_length_31923_cov_11.432224	17485	17485
-UN	2244	.	NODE_27_length_31923_cov_11.432224	17488	17488
-UN	2245	.	NODE_27_length_31923_cov_11.432224	17490	17490
-UN	2246	.	NODE_27_length_31923_cov_11.432224	17498	17499
-UN	2247	.	NODE_27_length_31923_cov_11.432224	19187	19187
-UN	2248	.	NODE_27_length_31923_cov_11.432224	19190	19190
-UN	2249	.	NODE_27_length_31923_cov_11.432224	19192	19192
-UN	2250	.	NODE_27_length_31923_cov_11.432224	19206	19207
-UN	2251	.	NODE_27_length_31923_cov_11.432224	19215	19215
-UN	2252	.	NODE_27_length_31923_cov_11.432224	19219	19219
-UN	2253	.	NODE_27_length_31923_cov_11.432224	19259	19259
-UN	2254	.	NODE_27_length_31923_cov_11.432224	19273	19273
-UN	2255	.	NODE_27_length_31923_cov_11.432224	19275	19275
-UN	2256	.	NODE_27_length_31923_cov_11.432224	19283	19283
-UN	2257	.	NODE_27_length_31923_cov_11.432224	19511	19511
-UN	2258	.	NODE_27_length_31923_cov_11.432224	19516	19517
-UN	2259	.	NODE_27_length_31923_cov_11.432224	19523	19523
-UN	2260	.	NODE_27_length_31923_cov_11.432224	19526	19526
-UN	2261	.	NODE_27_length_31923_cov_11.432224	19528	19529
-UN	2262	.	NODE_27_length_31923_cov_11.432224	19531	19531
-UN	2263	.	NODE_27_length_31923_cov_11.432224	19534	19535
-UN	2264	.	NODE_27_length_31923_cov_11.432224	19546	19546
-UN	2265	.	NODE_27_length_31923_cov_11.432224	19555	19560
-UN	2266	.	NODE_27_length_31923_cov_11.432224	19633	19664
-UN	2267	.	NODE_27_length_31923_cov_11.432224	22980	22980
-UN	2268	.	NODE_27_length_31923_cov_11.432224	22983	22983
-UN	2269	.	NODE_27_length_31923_cov_11.432224	22985	22992
-UN	2270	.	NODE_27_length_31923_cov_11.432224	22995	22996
-UN	2271	.	NODE_27_length_31923_cov_11.432224	22999	23001
-UN	2272	.	NODE_27_length_31923_cov_11.432224	23006	23006
-UN	2273	.	NODE_27_length_31923_cov_11.432224	23011	23011
-UN	2274	.	NODE_27_length_31923_cov_11.432224	23013	23014
-UN	2275	.	NODE_27_length_31923_cov_11.432224	23020	23020
-UN	2276	.	NODE_27_length_31923_cov_11.432224	23022	23050
-UN	2277	.	NODE_27_length_31923_cov_11.432224	23059	23059
-UN	2278	.	NODE_27_length_31923_cov_11.432224	23728	23728
-UN	2279	.	NODE_27_length_31923_cov_11.432224	24358	24358
-UN	2280	.	NODE_27_length_31923_cov_11.432224	24375	24378
-UN	2281	.	NODE_27_length_31923_cov_11.432224	26227	26227
-UN	2282	.	NODE_27_length_31923_cov_11.432224	26229	26229
-UN	2283	.	NODE_27_length_31923_cov_11.432224	26291	26292
-UN	2284	.	NODE_27_length_31923_cov_11.432224	26294	26296
-UN	2285	.	NODE_27_length_31923_cov_11.432224	31413	31413
-UN	2286	.	NODE_27_length_31923_cov_11.432224	31419	31419
-UN	2287	.	NODE_27_length_31923_cov_11.432224	31422	31422
-UN	2288	.	NODE_27_length_31923_cov_11.432224	31432	31433
-UN	2289	.	NODE_27_length_31923_cov_11.432224	31439	31439
-UN	2290	.	NODE_27_length_31923_cov_11.432224	31906	31923
-UN	2291	.	NODE_28_length_29983_cov_12.268120	1	10
-UN	2292	.	NODE_28_length_29983_cov_12.268120	17848	17848
-UN	2293	.	NODE_28_length_29983_cov_12.268120	17851	17851
-UN	2294	.	NODE_28_length_29983_cov_12.268120	29953	29983
-UN	2295	.	NODE_29_length_29686_cov_20.061132	1	50
-UN	2296	.	NODE_29_length_29686_cov_20.061132	29675	29676
-UN	2297	.	NODE_29_length_29686_cov_20.061132	29678	29686
-UN	2298	.	NODE_2_length_517362_cov_10.498810	1	125
-UN	2299	.	NODE_2_length_517362_cov_10.498810	530	530
-UN	2300	.	NODE_2_length_517362_cov_10.498810	541	541
-UN	2301	.	NODE_2_length_517362_cov_10.498810	582	582
-UN	2302	.	NODE_2_length_517362_cov_10.498810	591	597
-UN	2303	.	NODE_2_length_517362_cov_10.498810	599	633
-UN	2304	.	NODE_2_length_517362_cov_10.498810	635	695
-UN	2305	.	NODE_2_length_517362_cov_10.498810	702	702
-UN	2306	.	NODE_2_length_517362_cov_10.498810	706	707
-UN	2307	.	NODE_2_length_517362_cov_10.498810	710	711
-UN	2308	.	NODE_2_length_517362_cov_10.498810	713	714
-UN	2309	.	NODE_2_length_517362_cov_10.498810	716	721
-UN	2310	.	NODE_2_length_517362_cov_10.498810	723	727
-UN	2311	.	NODE_2_length_517362_cov_10.498810	731	731
-UN	2312	.	NODE_2_length_517362_cov_10.498810	733	740
-UN	2313	.	NODE_2_length_517362_cov_10.498810	742	842
-UN	2314	.	NODE_2_length_517362_cov_10.498810	849	849
-UN	2315	.	NODE_2_length_517362_cov_10.498810	852	852
-UN	2316	.	NODE_2_length_517362_cov_10.498810	855	855
-UN	2317	.	NODE_2_length_517362_cov_10.498810	1554	1558
-UN	2318	.	NODE_2_length_517362_cov_10.498810	1560	1568
-UN	2319	.	NODE_2_length_517362_cov_10.498810	1570	1570
-UN	2320	.	NODE_2_length_517362_cov_10.498810	1573	1573
-UN	2321	.	NODE_2_length_517362_cov_10.498810	1615	1615
-UN	2322	.	NODE_2_length_517362_cov_10.498810	1762	1762
-UN	2323	.	NODE_2_length_517362_cov_10.498810	1765	1766
-UN	2324	.	NODE_2_length_517362_cov_10.498810	1768	1768
-UN	2325	.	NODE_2_length_517362_cov_10.498810	1770	1770
-UN	2326	.	NODE_2_length_517362_cov_10.498810	1777	1778
-UN	2327	.	NODE_2_length_517362_cov_10.498810	1780	1780
-UN	2328	.	NODE_2_length_517362_cov_10.498810	1783	1783
-UN	2329	.	NODE_2_length_517362_cov_10.498810	1795	1795
-UN	2330	.	NODE_2_length_517362_cov_10.498810	1798	1798
-UN	2331	.	NODE_2_length_517362_cov_10.498810	1803	1803
-UN	2332	.	NODE_2_length_517362_cov_10.498810	2826	2826
-UN	2333	.	NODE_2_length_517362_cov_10.498810	2828	2829
-UN	2334	.	NODE_2_length_517362_cov_10.498810	2832	2832
-UN	2335	.	NODE_2_length_517362_cov_10.498810	2835	2835
-UN	2336	.	NODE_2_length_517362_cov_10.498810	2840	2840
-UN	2337	.	NODE_2_length_517362_cov_10.498810	2845	2848
-UN	2338	.	NODE_2_length_517362_cov_10.498810	2853	2854
-UN	2339	.	NODE_2_length_517362_cov_10.498810	2857	2859
-UN	2340	.	NODE_2_length_517362_cov_10.498810	2861	2861
-UN	2341	.	NODE_2_length_517362_cov_10.498810	2863	2864
-UN	2342	.	NODE_2_length_517362_cov_10.498810	2868	2871
-UN	2343	.	NODE_2_length_517362_cov_10.498810	2873	2905
-UN	2344	.	NODE_2_length_517362_cov_10.498810	2907	2909
-UN	2345	.	NODE_2_length_517362_cov_10.498810	2913	2916
-UN	2346	.	NODE_2_length_517362_cov_10.498810	2947	2971
-UN	2347	.	NODE_2_length_517362_cov_10.498810	2973	2995
-UN	2348	.	NODE_2_length_517362_cov_10.498810	3318	3318
-UN	2349	.	NODE_2_length_517362_cov_10.498810	3383	3383
-UN	2350	.	NODE_2_length_517362_cov_10.498810	3395	3395
-UN	2351	.	NODE_2_length_517362_cov_10.498810	9582	9588
-UN	2352	.	NODE_2_length_517362_cov_10.498810	9592	9593
-UN	2353	.	NODE_2_length_517362_cov_10.498810	9596	9599
-UN	2354	.	NODE_2_length_517362_cov_10.498810	9601	9601
-UN	2355	.	NODE_2_length_517362_cov_10.498810	9604	9608
-UN	2356	.	NODE_2_length_517362_cov_10.498810	9611	9621
-UN	2357	.	NODE_2_length_517362_cov_10.498810	9623	9628
-UN	2358	.	NODE_2_length_517362_cov_10.498810	9630	9631
-UN	2359	.	NODE_2_length_517362_cov_10.498810	9635	9635
-UN	2360	.	NODE_2_length_517362_cov_10.498810	9638	9638
-UN	2361	.	NODE_2_length_517362_cov_10.498810	9641	9641
-UN	2362	.	NODE_2_length_517362_cov_10.498810	9643	9645
-UN	2363	.	NODE_2_length_517362_cov_10.498810	9647	9647
-UN	2364	.	NODE_2_length_517362_cov_10.498810	9649	9649
-UN	2365	.	NODE_2_length_517362_cov_10.498810	9665	9670
-UN	2366	.	NODE_2_length_517362_cov_10.498810	9672	9676
-UN	2367	.	NODE_2_length_517362_cov_10.498810	9678	9682
-UN	2368	.	NODE_2_length_517362_cov_10.498810	9684	9824
-UN	2369	.	NODE_2_length_517362_cov_10.498810	9832	9832
-UN	2370	.	NODE_2_length_517362_cov_10.498810	9838	9838
-UN	2371	.	NODE_2_length_517362_cov_10.498810	9854	9854
-UN	2372	.	NODE_2_length_517362_cov_10.498810	9858	9858
-UN	2373	.	NODE_2_length_517362_cov_10.498810	9941	9941
-UN	2374	.	NODE_2_length_517362_cov_10.498810	9946	9947
-UN	2375	.	NODE_2_length_517362_cov_10.498810	9949	9949
-UN	2376	.	NODE_2_length_517362_cov_10.498810	19625	19626
-UN	2377	.	NODE_2_length_517362_cov_10.498810	19647	19647
-UN	2378	.	NODE_2_length_517362_cov_10.498810	31455	31455
-UN	2379	.	NODE_2_length_517362_cov_10.498810	31458	31458
-UN	2380	.	NODE_2_length_517362_cov_10.498810	31472	31475
-UN	2381	.	NODE_2_length_517362_cov_10.498810	31478	31478
-UN	2382	.	NODE_2_length_517362_cov_10.498810	31488	31488
-UN	2383	.	NODE_2_length_517362_cov_10.498810	31490	31582
-UN	2384	.	NODE_2_length_517362_cov_10.498810	31584	31590
-UN	2385	.	NODE_2_length_517362_cov_10.498810	31593	31593
-UN	2386	.	NODE_2_length_517362_cov_10.498810	31607	31607
-UN	2387	.	NODE_2_length_517362_cov_10.498810	31620	31621
-UN	2388	.	NODE_2_length_517362_cov_10.498810	31629	31629
-UN	2389	.	NODE_2_length_517362_cov_10.498810	31667	31667
-UN	2390	.	NODE_2_length_517362_cov_10.498810	32618	32634
-UN	2391	.	NODE_2_length_517362_cov_10.498810	32648	32785
-UN	2392	.	NODE_2_length_517362_cov_10.498810	32787	32789
-UN	2393	.	NODE_2_length_517362_cov_10.498810	32791	32791
-UN	2394	.	NODE_2_length_517362_cov_10.498810	32793	32794
-UN	2395	.	NODE_2_length_517362_cov_10.498810	33601	33603
-UN	2396	.	NODE_2_length_517362_cov_10.498810	33613	33613
-UN	2397	.	NODE_2_length_517362_cov_10.498810	33615	33615
-UN	2398	.	NODE_2_length_517362_cov_10.498810	33621	33631
-UN	2399	.	NODE_2_length_517362_cov_10.498810	33633	33645
-UN	2400	.	NODE_2_length_517362_cov_10.498810	33647	33650
-UN	2401	.	NODE_2_length_517362_cov_10.498810	35289	35342
-UN	2402	.	NODE_2_length_517362_cov_10.498810	35347	35350
-UN	2403	.	NODE_2_length_517362_cov_10.498810	35352	35354
-UN	2404	.	NODE_2_length_517362_cov_10.498810	35359	35359
-UN	2405	.	NODE_2_length_517362_cov_10.498810	35365	35365
-UN	2406	.	NODE_2_length_517362_cov_10.498810	35377	35377
-UN	2407	.	NODE_2_length_517362_cov_10.498810	35379	35379
-UN	2408	.	NODE_2_length_517362_cov_10.498810	35387	35387
-UN	2409	.	NODE_2_length_517362_cov_10.498810	35394	35395
-UN	2410	.	NODE_2_length_517362_cov_10.498810	40974	40974
-UN	2411	.	NODE_2_length_517362_cov_10.498810	40977	40977
-UN	2412	.	NODE_2_length_517362_cov_10.498810	40981	40983
-UN	2413	.	NODE_2_length_517362_cov_10.498810	56578	56578
-UN	2414	.	NODE_2_length_517362_cov_10.498810	56580	56580
-UN	2415	.	NODE_2_length_517362_cov_10.498810	56582	56582
-UN	2416	.	NODE_2_length_517362_cov_10.498810	56596	56596
-UN	2417	.	NODE_2_length_517362_cov_10.498810	56601	56603
-UN	2418	.	NODE_2_length_517362_cov_10.498810	56605	56605
-UN	2419	.	NODE_2_length_517362_cov_10.498810	56609	56611
-UN	2420	.	NODE_2_length_517362_cov_10.498810	56615	56617
-UN	2421	.	NODE_2_length_517362_cov_10.498810	56620	56671
-UN	2422	.	NODE_2_length_517362_cov_10.498810	56673	56673
-UN	2423	.	NODE_2_length_517362_cov_10.498810	56675	56675
-UN	2424	.	NODE_2_length_517362_cov_10.498810	56681	56683
-UN	2425	.	NODE_2_length_517362_cov_10.498810	56686	56689
-UN	2426	.	NODE_2_length_517362_cov_10.498810	57438	57439
-UN	2427	.	NODE_2_length_517362_cov_10.498810	57455	57455
-UN	2428	.	NODE_2_length_517362_cov_10.498810	63752	63753
-UN	2429	.	NODE_2_length_517362_cov_10.498810	63758	63759
-UN	2430	.	NODE_2_length_517362_cov_10.498810	63761	63761
-UN	2431	.	NODE_2_length_517362_cov_10.498810	81628	81628
-UN	2432	.	NODE_2_length_517362_cov_10.498810	81642	81642
-UN	2433	.	NODE_2_length_517362_cov_10.498810	87743	87743
-UN	2434	.	NODE_2_length_517362_cov_10.498810	87745	87748
-UN	2435	.	NODE_2_length_517362_cov_10.498810	87750	87750
-UN	2436	.	NODE_2_length_517362_cov_10.498810	87755	87756
-UN	2437	.	NODE_2_length_517362_cov_10.498810	88596	88596
-UN	2438	.	NODE_2_length_517362_cov_10.498810	88599	88599
-UN	2439	.	NODE_2_length_517362_cov_10.498810	88605	88607
-UN	2440	.	NODE_2_length_517362_cov_10.498810	89773	89773
-UN	2441	.	NODE_2_length_517362_cov_10.498810	94038	94039
-UN	2442	.	NODE_2_length_517362_cov_10.498810	94062	94063
-UN	2443	.	NODE_2_length_517362_cov_10.498810	94069	94069
-UN	2444	.	NODE_2_length_517362_cov_10.498810	94104	94104
-UN	2445	.	NODE_2_length_517362_cov_10.498810	94108	94112
-UN	2446	.	NODE_2_length_517362_cov_10.498810	94116	94116
-UN	2447	.	NODE_2_length_517362_cov_10.498810	94129	94132
-UN	2448	.	NODE_2_length_517362_cov_10.498810	99425	99426
-UN	2449	.	NODE_2_length_517362_cov_10.498810	99430	99430
-UN	2450	.	NODE_2_length_517362_cov_10.498810	99438	99438
-UN	2451	.	NODE_2_length_517362_cov_10.498810	99449	99449
-UN	2452	.	NODE_2_length_517362_cov_10.498810	99453	99454
-UN	2453	.	NODE_2_length_517362_cov_10.498810	99456	99456
-UN	2454	.	NODE_2_length_517362_cov_10.498810	99464	99464
-UN	2455	.	NODE_2_length_517362_cov_10.498810	99471	99471
-UN	2456	.	NODE_2_length_517362_cov_10.498810	99474	99474
-UN	2457	.	NODE_2_length_517362_cov_10.498810	99478	99478
-UN	2458	.	NODE_2_length_517362_cov_10.498810	99507	99507
-UN	2459	.	NODE_2_length_517362_cov_10.498810	99509	99509
-UN	2460	.	NODE_2_length_517362_cov_10.498810	99511	99513
-UN	2461	.	NODE_2_length_517362_cov_10.498810	99515	99549
-UN	2462	.	NODE_2_length_517362_cov_10.498810	99555	99555
-UN	2463	.	NODE_2_length_517362_cov_10.498810	99567	99577
-UN	2464	.	NODE_2_length_517362_cov_10.498810	99579	99580
-UN	2465	.	NODE_2_length_517362_cov_10.498810	99582	99582
-UN	2466	.	NODE_2_length_517362_cov_10.498810	99585	99585
-UN	2467	.	NODE_2_length_517362_cov_10.498810	99591	99593
-UN	2468	.	NODE_2_length_517362_cov_10.498810	99596	99596
-UN	2469	.	NODE_2_length_517362_cov_10.498810	99600	99600
-UN	2470	.	NODE_2_length_517362_cov_10.498810	100683	100683
-UN	2471	.	NODE_2_length_517362_cov_10.498810	101124	101124
-UN	2472	.	NODE_2_length_517362_cov_10.498810	101132	101132
-UN	2473	.	NODE_2_length_517362_cov_10.498810	101134	101135
-UN	2474	.	NODE_2_length_517362_cov_10.498810	101141	101141
-UN	2475	.	NODE_2_length_517362_cov_10.498810	101145	101145
-UN	2476	.	NODE_2_length_517362_cov_10.498810	101148	101148
-UN	2477	.	NODE_2_length_517362_cov_10.498810	101150	101150
-UN	2478	.	NODE_2_length_517362_cov_10.498810	101157	101161
-UN	2479	.	NODE_2_length_517362_cov_10.498810	101163	101163
-UN	2480	.	NODE_2_length_517362_cov_10.498810	101165	101165
-UN	2481	.	NODE_2_length_517362_cov_10.498810	101168	101170
-UN	2482	.	NODE_2_length_517362_cov_10.498810	101172	101175
-UN	2483	.	NODE_2_length_517362_cov_10.498810	101182	101183
-UN	2484	.	NODE_2_length_517362_cov_10.498810	101185	101186
-UN	2485	.	NODE_2_length_517362_cov_10.498810	101206	101208
-UN	2486	.	NODE_2_length_517362_cov_10.498810	101210	101215
-UN	2487	.	NODE_2_length_517362_cov_10.498810	101217	101218
-UN	2488	.	NODE_2_length_517362_cov_10.498810	101223	101225
-UN	2489	.	NODE_2_length_517362_cov_10.498810	101228	101229
-UN	2490	.	NODE_2_length_517362_cov_10.498810	101231	101294
-UN	2491	.	NODE_2_length_517362_cov_10.498810	101649	101649
-UN	2492	.	NODE_2_length_517362_cov_10.498810	101652	101652
-UN	2493	.	NODE_2_length_517362_cov_10.498810	101654	101654
-UN	2494	.	NODE_2_length_517362_cov_10.498810	101666	101667
-UN	2495	.	NODE_2_length_517362_cov_10.498810	101669	101669
-UN	2496	.	NODE_2_length_517362_cov_10.498810	101671	101671
-UN	2497	.	NODE_2_length_517362_cov_10.498810	127069	127069
-UN	2498	.	NODE_2_length_517362_cov_10.498810	127088	127088
-UN	2499	.	NODE_2_length_517362_cov_10.498810	127090	127090
-UN	2500	.	NODE_2_length_517362_cov_10.498810	129803	129803
-UN	2501	.	NODE_2_length_517362_cov_10.498810	141901	141901
-UN	2502	.	NODE_2_length_517362_cov_10.498810	143710	143710
-UN	2503	.	NODE_2_length_517362_cov_10.498810	143728	143728
-UN	2504	.	NODE_2_length_517362_cov_10.498810	143740	143740
-UN	2505	.	NODE_2_length_517362_cov_10.498810	143742	143742
-UN	2506	.	NODE_2_length_517362_cov_10.498810	143744	143745
-UN	2507	.	NODE_2_length_517362_cov_10.498810	143747	143747
-UN	2508	.	NODE_2_length_517362_cov_10.498810	143753	143753
-UN	2509	.	NODE_2_length_517362_cov_10.498810	143756	143826
-UN	2510	.	NODE_2_length_517362_cov_10.498810	153736	153736
-UN	2511	.	NODE_2_length_517362_cov_10.498810	162951	162951
-UN	2512	.	NODE_2_length_517362_cov_10.498810	177772	177774
-UN	2513	.	NODE_2_length_517362_cov_10.498810	177777	177777
-UN	2514	.	NODE_2_length_517362_cov_10.498810	177780	177780
-UN	2515	.	NODE_2_length_517362_cov_10.498810	177784	177847
-UN	2516	.	NODE_2_length_517362_cov_10.498810	177872	177884
-UN	2517	.	NODE_2_length_517362_cov_10.498810	186755	186883
-UN	2518	.	NODE_2_length_517362_cov_10.498810	186889	186902
-UN	2519	.	NODE_2_length_517362_cov_10.498810	187067	187114
-UN	2520	.	NODE_2_length_517362_cov_10.498810	209949	209949
-UN	2521	.	NODE_2_length_517362_cov_10.498810	209960	209960
-UN	2522	.	NODE_2_length_517362_cov_10.498810	212561	212561
-UN	2523	.	NODE_2_length_517362_cov_10.498810	212577	212577
-UN	2524	.	NODE_2_length_517362_cov_10.498810	212582	212582
-UN	2525	.	NODE_2_length_517362_cov_10.498810	212600	212636
-UN	2526	.	NODE_2_length_517362_cov_10.498810	222474	222474
-UN	2527	.	NODE_2_length_517362_cov_10.498810	222476	222476
-UN	2528	.	NODE_2_length_517362_cov_10.498810	222483	222483
-UN	2529	.	NODE_2_length_517362_cov_10.498810	222486	222486
-UN	2530	.	NODE_2_length_517362_cov_10.498810	222488	222489
-UN	2531	.	NODE_2_length_517362_cov_10.498810	222493	222501
-UN	2532	.	NODE_2_length_517362_cov_10.498810	222503	222569
-UN	2533	.	NODE_2_length_517362_cov_10.498810	222571	222602
-UN	2534	.	NODE_2_length_517362_cov_10.498810	222604	222660
-UN	2535	.	NODE_2_length_517362_cov_10.498810	231832	231833
-UN	2536	.	NODE_2_length_517362_cov_10.498810	231858	231858
-UN	2537	.	NODE_2_length_517362_cov_10.498810	231871	231871
-UN	2538	.	NODE_2_length_517362_cov_10.498810	231877	231877
-UN	2539	.	NODE_2_length_517362_cov_10.498810	240152	240198
-UN	2540	.	NODE_2_length_517362_cov_10.498810	240203	240204
-UN	2541	.	NODE_2_length_517362_cov_10.498810	240207	240209
-UN	2542	.	NODE_2_length_517362_cov_10.498810	240211	240212
-UN	2543	.	NODE_2_length_517362_cov_10.498810	240216	240216
-UN	2544	.	NODE_2_length_517362_cov_10.498810	240218	240218
-UN	2545	.	NODE_2_length_517362_cov_10.498810	240220	240220
-UN	2546	.	NODE_2_length_517362_cov_10.498810	240238	240269
-UN	2547	.	NODE_2_length_517362_cov_10.498810	240271	240271
-UN	2548	.	NODE_2_length_517362_cov_10.498810	240273	240275
-UN	2549	.	NODE_2_length_517362_cov_10.498810	240277	240277
-UN	2550	.	NODE_2_length_517362_cov_10.498810	240279	240280
-UN	2551	.	NODE_2_length_517362_cov_10.498810	240282	240282
-UN	2552	.	NODE_2_length_517362_cov_10.498810	249407	249407
-UN	2553	.	NODE_2_length_517362_cov_10.498810	249409	249409
-UN	2554	.	NODE_2_length_517362_cov_10.498810	249411	249414
-UN	2555	.	NODE_2_length_517362_cov_10.498810	249417	249417
-UN	2556	.	NODE_2_length_517362_cov_10.498810	249421	249421
-UN	2557	.	NODE_2_length_517362_cov_10.498810	249423	249423
-UN	2558	.	NODE_2_length_517362_cov_10.498810	249425	249425
-UN	2559	.	NODE_2_length_517362_cov_10.498810	251262	251649
-UN	2560	.	NODE_2_length_517362_cov_10.498810	251668	251668
-UN	2561	.	NODE_2_length_517362_cov_10.498810	251674	251674
-UN	2562	.	NODE_2_length_517362_cov_10.498810	251692	251692
-UN	2563	.	NODE_2_length_517362_cov_10.498810	251694	251695
-UN	2564	.	NODE_2_length_517362_cov_10.498810	251697	251698
-UN	2565	.	NODE_2_length_517362_cov_10.498810	251705	251705
-UN	2566	.	NODE_2_length_517362_cov_10.498810	251710	251711
-UN	2567	.	NODE_2_length_517362_cov_10.498810	251913	251913
-UN	2568	.	NODE_2_length_517362_cov_10.498810	251933	251933
-UN	2569	.	NODE_2_length_517362_cov_10.498810	251939	251948
-UN	2570	.	NODE_2_length_517362_cov_10.498810	253273	253273
-UN	2571	.	NODE_2_length_517362_cov_10.498810	254521	254521
-UN	2572	.	NODE_2_length_517362_cov_10.498810	254525	254564
-UN	2573	.	NODE_2_length_517362_cov_10.498810	254716	254716
-UN	2574	.	NODE_2_length_517362_cov_10.498810	254897	254897
-UN	2575	.	NODE_2_length_517362_cov_10.498810	254954	254954
-UN	2576	.	NODE_2_length_517362_cov_10.498810	255110	255110
-UN	2577	.	NODE_2_length_517362_cov_10.498810	255118	255118
-UN	2578	.	NODE_2_length_517362_cov_10.498810	255127	255127
-UN	2579	.	NODE_2_length_517362_cov_10.498810	255129	255129
-UN	2580	.	NODE_2_length_517362_cov_10.498810	255145	255145
-UN	2581	.	NODE_2_length_517362_cov_10.498810	255153	255154
-UN	2582	.	NODE_2_length_517362_cov_10.498810	257322	257322
-UN	2583	.	NODE_2_length_517362_cov_10.498810	257326	257326
-UN	2584	.	NODE_2_length_517362_cov_10.498810	257340	257340
-UN	2585	.	NODE_2_length_517362_cov_10.498810	257346	257346
-UN	2586	.	NODE_2_length_517362_cov_10.498810	257353	257353
-UN	2587	.	NODE_2_length_517362_cov_10.498810	257357	257357
-UN	2588	.	NODE_2_length_517362_cov_10.498810	257361	257362
-UN	2589	.	NODE_2_length_517362_cov_10.498810	257366	257366
-UN	2590	.	NODE_2_length_517362_cov_10.498810	257371	257371
-UN	2591	.	NODE_2_length_517362_cov_10.498810	257374	257375
-UN	2592	.	NODE_2_length_517362_cov_10.498810	262022	262024
-UN	2593	.	NODE_2_length_517362_cov_10.498810	262027	262028
-UN	2594	.	NODE_2_length_517362_cov_10.498810	262038	262038
-UN	2595	.	NODE_2_length_517362_cov_10.498810	262040	262040
-UN	2596	.	NODE_2_length_517362_cov_10.498810	262043	262055
-UN	2597	.	NODE_2_length_517362_cov_10.498810	262058	262058
-UN	2598	.	NODE_2_length_517362_cov_10.498810	262060	262064
-UN	2599	.	NODE_2_length_517362_cov_10.498810	262066	262071
-UN	2600	.	NODE_2_length_517362_cov_10.498810	262172	262172
-UN	2601	.	NODE_2_length_517362_cov_10.498810	265191	265192
-UN	2602	.	NODE_2_length_517362_cov_10.498810	265209	265209
-UN	2603	.	NODE_2_length_517362_cov_10.498810	265213	265216
-UN	2604	.	NODE_2_length_517362_cov_10.498810	265218	265218
-UN	2605	.	NODE_2_length_517362_cov_10.498810	265236	265236
-UN	2606	.	NODE_2_length_517362_cov_10.498810	265332	265332
-UN	2607	.	NODE_2_length_517362_cov_10.498810	265401	265401
-UN	2608	.	NODE_2_length_517362_cov_10.498810	265450	265483
-UN	2609	.	NODE_2_length_517362_cov_10.498810	265485	265486
-UN	2610	.	NODE_2_length_517362_cov_10.498810	265489	265489
-UN	2611	.	NODE_2_length_517362_cov_10.498810	265491	265496
-UN	2612	.	NODE_2_length_517362_cov_10.498810	265524	265524
-UN	2613	.	NODE_2_length_517362_cov_10.498810	265529	265529
-UN	2614	.	NODE_2_length_517362_cov_10.498810	266235	266235
-UN	2615	.	NODE_2_length_517362_cov_10.498810	266246	266247
-UN	2616	.	NODE_2_length_517362_cov_10.498810	266249	266252
-UN	2617	.	NODE_2_length_517362_cov_10.498810	266254	266255
-UN	2618	.	NODE_2_length_517362_cov_10.498810	266258	266259
-UN	2619	.	NODE_2_length_517362_cov_10.498810	266269	266276
-UN	2620	.	NODE_2_length_517362_cov_10.498810	266313	266313
-UN	2621	.	NODE_2_length_517362_cov_10.498810	266320	266320
-UN	2622	.	NODE_2_length_517362_cov_10.498810	266388	266388
-UN	2623	.	NODE_2_length_517362_cov_10.498810	269643	269652
-UN	2624	.	NODE_2_length_517362_cov_10.498810	269682	269683
-UN	2625	.	NODE_2_length_517362_cov_10.498810	269694	269746
-UN	2626	.	NODE_2_length_517362_cov_10.498810	269756	269756
-UN	2627	.	NODE_2_length_517362_cov_10.498810	272677	272677
-UN	2628	.	NODE_2_length_517362_cov_10.498810	272736	272741
-UN	2629	.	NODE_2_length_517362_cov_10.498810	272743	272744
-UN	2630	.	NODE_2_length_517362_cov_10.498810	272746	272747
-UN	2631	.	NODE_2_length_517362_cov_10.498810	273636	273636
-UN	2632	.	NODE_2_length_517362_cov_10.498810	273639	273668
-UN	2633	.	NODE_2_length_517362_cov_10.498810	273679	273679
-UN	2634	.	NODE_2_length_517362_cov_10.498810	273681	273681
-UN	2635	.	NODE_2_length_517362_cov_10.498810	273684	273689
-UN	2636	.	NODE_2_length_517362_cov_10.498810	273693	273694
-UN	2637	.	NODE_2_length_517362_cov_10.498810	273698	273698
-UN	2638	.	NODE_2_length_517362_cov_10.498810	273701	273703
-UN	2639	.	NODE_2_length_517362_cov_10.498810	273706	273707
-UN	2640	.	NODE_2_length_517362_cov_10.498810	273710	273710
-UN	2641	.	NODE_2_length_517362_cov_10.498810	273712	273721
-UN	2642	.	NODE_2_length_517362_cov_10.498810	273726	273726
-UN	2643	.	NODE_2_length_517362_cov_10.498810	273729	273729
-UN	2644	.	NODE_2_length_517362_cov_10.498810	273733	273733
-UN	2645	.	NODE_2_length_517362_cov_10.498810	273738	273740
-UN	2646	.	NODE_2_length_517362_cov_10.498810	273742	273744
-UN	2647	.	NODE_2_length_517362_cov_10.498810	273747	273749
-UN	2648	.	NODE_2_length_517362_cov_10.498810	273760	273760
-UN	2649	.	NODE_2_length_517362_cov_10.498810	273771	273771
-UN	2650	.	NODE_2_length_517362_cov_10.498810	273774	273774
-UN	2651	.	NODE_2_length_517362_cov_10.498810	281677	281677
-UN	2652	.	NODE_2_length_517362_cov_10.498810	293391	293391
-UN	2653	.	NODE_2_length_517362_cov_10.498810	293401	293464
-UN	2654	.	NODE_2_length_517362_cov_10.498810	300271	300271
-UN	2655	.	NODE_2_length_517362_cov_10.498810	300277	300278
-UN	2656	.	NODE_2_length_517362_cov_10.498810	300280	300283
-UN	2657	.	NODE_2_length_517362_cov_10.498810	300285	300285
-UN	2658	.	NODE_2_length_517362_cov_10.498810	300287	300287
-UN	2659	.	NODE_2_length_517362_cov_10.498810	300289	300289
-UN	2660	.	NODE_2_length_517362_cov_10.498810	300294	300294
-UN	2661	.	NODE_2_length_517362_cov_10.498810	300305	300305
-UN	2662	.	NODE_2_length_517362_cov_10.498810	300308	300308
-UN	2663	.	NODE_2_length_517362_cov_10.498810	300319	300319
-UN	2664	.	NODE_2_length_517362_cov_10.498810	300324	300325
-UN	2665	.	NODE_2_length_517362_cov_10.498810	300327	300353
-UN	2666	.	NODE_2_length_517362_cov_10.498810	300356	300356
-UN	2667	.	NODE_2_length_517362_cov_10.498810	300358	300359
-UN	2668	.	NODE_2_length_517362_cov_10.498810	300430	300430
-UN	2669	.	NODE_2_length_517362_cov_10.498810	300433	300433
-UN	2670	.	NODE_2_length_517362_cov_10.498810	300436	300436
-UN	2671	.	NODE_2_length_517362_cov_10.498810	300439	300441
-UN	2672	.	NODE_2_length_517362_cov_10.498810	300445	300445
-UN	2673	.	NODE_2_length_517362_cov_10.498810	302115	302115
-UN	2674	.	NODE_2_length_517362_cov_10.498810	302148	302148
-UN	2675	.	NODE_2_length_517362_cov_10.498810	307528	307530
-UN	2676	.	NODE_2_length_517362_cov_10.498810	307603	307603
-UN	2677	.	NODE_2_length_517362_cov_10.498810	312458	312471
-UN	2678	.	NODE_2_length_517362_cov_10.498810	312475	312481
-UN	2679	.	NODE_2_length_517362_cov_10.498810	312483	312484
-UN	2680	.	NODE_2_length_517362_cov_10.498810	312486	312492
-UN	2681	.	NODE_2_length_517362_cov_10.498810	312508	312508
-UN	2682	.	NODE_2_length_517362_cov_10.498810	312513	312513
-UN	2683	.	NODE_2_length_517362_cov_10.498810	313961	313969
-UN	2684	.	NODE_2_length_517362_cov_10.498810	313971	313972
-UN	2685	.	NODE_2_length_517362_cov_10.498810	313974	313975
-UN	2686	.	NODE_2_length_517362_cov_10.498810	313977	313978
-UN	2687	.	NODE_2_length_517362_cov_10.498810	313988	313989
-UN	2688	.	NODE_2_length_517362_cov_10.498810	318087	318124
-UN	2689	.	NODE_2_length_517362_cov_10.498810	318126	318126
-UN	2690	.	NODE_2_length_517362_cov_10.498810	318128	318131
-UN	2691	.	NODE_2_length_517362_cov_10.498810	318133	318134
-UN	2692	.	NODE_2_length_517362_cov_10.498810	318140	318143
-UN	2693	.	NODE_2_length_517362_cov_10.498810	318149	318149
-UN	2694	.	NODE_2_length_517362_cov_10.498810	318153	318157
-UN	2695	.	NODE_2_length_517362_cov_10.498810	318159	318159
-UN	2696	.	NODE_2_length_517362_cov_10.498810	318161	318163
-UN	2697	.	NODE_2_length_517362_cov_10.498810	318165	318165
-UN	2698	.	NODE_2_length_517362_cov_10.498810	318171	318172
-UN	2699	.	NODE_2_length_517362_cov_10.498810	318175	318177
-UN	2700	.	NODE_2_length_517362_cov_10.498810	318179	318179
-UN	2701	.	NODE_2_length_517362_cov_10.498810	318181	318186
-UN	2702	.	NODE_2_length_517362_cov_10.498810	318189	318189
-UN	2703	.	NODE_2_length_517362_cov_10.498810	318192	318196
-UN	2704	.	NODE_2_length_517362_cov_10.498810	318200	318204
-UN	2705	.	NODE_2_length_517362_cov_10.498810	318206	318218
-UN	2706	.	NODE_2_length_517362_cov_10.498810	318220	318220
-UN	2707	.	NODE_2_length_517362_cov_10.498810	318223	318230
-UN	2708	.	NODE_2_length_517362_cov_10.498810	318232	318232
-UN	2709	.	NODE_2_length_517362_cov_10.498810	318237	318237
-UN	2710	.	NODE_2_length_517362_cov_10.498810	318239	318239
-UN	2711	.	NODE_2_length_517362_cov_10.498810	318241	318247
-UN	2712	.	NODE_2_length_517362_cov_10.498810	318249	318249
-UN	2713	.	NODE_2_length_517362_cov_10.498810	318251	318253
-UN	2714	.	NODE_2_length_517362_cov_10.498810	323630	323630
-UN	2715	.	NODE_2_length_517362_cov_10.498810	323633	323633
-UN	2716	.	NODE_2_length_517362_cov_10.498810	323637	323637
-UN	2717	.	NODE_2_length_517362_cov_10.498810	323641	323641
-UN	2718	.	NODE_2_length_517362_cov_10.498810	323651	323651
-UN	2719	.	NODE_2_length_517362_cov_10.498810	323653	323657
-UN	2720	.	NODE_2_length_517362_cov_10.498810	324352	324352
-UN	2721	.	NODE_2_length_517362_cov_10.498810	328429	328429
-UN	2722	.	NODE_2_length_517362_cov_10.498810	342494	342494
-UN	2723	.	NODE_2_length_517362_cov_10.498810	363634	363634
-UN	2724	.	NODE_2_length_517362_cov_10.498810	366465	366465
-UN	2725	.	NODE_2_length_517362_cov_10.498810	366495	366495
-UN	2726	.	NODE_2_length_517362_cov_10.498810	366516	366516
-UN	2727	.	NODE_2_length_517362_cov_10.498810	366528	366528
-UN	2728	.	NODE_2_length_517362_cov_10.498810	369384	369397
-UN	2729	.	NODE_2_length_517362_cov_10.498810	390467	390474
-UN	2730	.	NODE_2_length_517362_cov_10.498810	390477	390482
-UN	2731	.	NODE_2_length_517362_cov_10.498810	390484	390491
-UN	2732	.	NODE_2_length_517362_cov_10.498810	390494	390494
-UN	2733	.	NODE_2_length_517362_cov_10.498810	390496	390496
-UN	2734	.	NODE_2_length_517362_cov_10.498810	390532	390532
-UN	2735	.	NODE_2_length_517362_cov_10.498810	390909	390909
-UN	2736	.	NODE_2_length_517362_cov_10.498810	390913	390913
-UN	2737	.	NODE_2_length_517362_cov_10.498810	390919	390919
-UN	2738	.	NODE_2_length_517362_cov_10.498810	392002	392035
-UN	2739	.	NODE_2_length_517362_cov_10.498810	392065	392070
-UN	2740	.	NODE_2_length_517362_cov_10.498810	399387	399432
-UN	2741	.	NODE_2_length_517362_cov_10.498810	402334	402334
-UN	2742	.	NODE_2_length_517362_cov_10.498810	413612	413612
-UN	2743	.	NODE_2_length_517362_cov_10.498810	413622	413623
-UN	2744	.	NODE_2_length_517362_cov_10.498810	413627	413627
-UN	2745	.	NODE_2_length_517362_cov_10.498810	416007	416114
-UN	2746	.	NODE_2_length_517362_cov_10.498810	416134	416134
-UN	2747	.	NODE_2_length_517362_cov_10.498810	416150	416162
-UN	2748	.	NODE_2_length_517362_cov_10.498810	416976	416976
-UN	2749	.	NODE_2_length_517362_cov_10.498810	416994	416994
-UN	2750	.	NODE_2_length_517362_cov_10.498810	416999	417000
-UN	2751	.	NODE_2_length_517362_cov_10.498810	417211	417222
-UN	2752	.	NODE_2_length_517362_cov_10.498810	417224	417225
-UN	2753	.	NODE_2_length_517362_cov_10.498810	417228	417228
-UN	2754	.	NODE_2_length_517362_cov_10.498810	417532	417532
-UN	2755	.	NODE_2_length_517362_cov_10.498810	417542	417542
-UN	2756	.	NODE_2_length_517362_cov_10.498810	417548	417549
-UN	2757	.	NODE_2_length_517362_cov_10.498810	417551	417552
-UN	2758	.	NODE_2_length_517362_cov_10.498810	417556	417696
-UN	2759	.	NODE_2_length_517362_cov_10.498810	417701	417751
-UN	2760	.	NODE_2_length_517362_cov_10.498810	419473	419475
-UN	2761	.	NODE_2_length_517362_cov_10.498810	419478	419478
-UN	2762	.	NODE_2_length_517362_cov_10.498810	419480	419480
-UN	2763	.	NODE_2_length_517362_cov_10.498810	419483	419511
-UN	2764	.	NODE_2_length_517362_cov_10.498810	419517	419517
-UN	2765	.	NODE_2_length_517362_cov_10.498810	419520	419521
-UN	2766	.	NODE_2_length_517362_cov_10.498810	419526	419526
-UN	2767	.	NODE_2_length_517362_cov_10.498810	420378	420379
-UN	2768	.	NODE_2_length_517362_cov_10.498810	420382	420383
-UN	2769	.	NODE_2_length_517362_cov_10.498810	420385	420385
-UN	2770	.	NODE_2_length_517362_cov_10.498810	420392	420392
-UN	2771	.	NODE_2_length_517362_cov_10.498810	420406	420406
-UN	2772	.	NODE_2_length_517362_cov_10.498810	420409	420487
-UN	2773	.	NODE_2_length_517362_cov_10.498810	420520	420520
-UN	2774	.	NODE_2_length_517362_cov_10.498810	420588	420588
-UN	2775	.	NODE_2_length_517362_cov_10.498810	420591	420650
-UN	2776	.	NODE_2_length_517362_cov_10.498810	421087	421087
-UN	2777	.	NODE_2_length_517362_cov_10.498810	421103	421103
-UN	2778	.	NODE_2_length_517362_cov_10.498810	421204	421204
-UN	2779	.	NODE_2_length_517362_cov_10.498810	421227	421228
-UN	2780	.	NODE_2_length_517362_cov_10.498810	421231	421231
-UN	2781	.	NODE_2_length_517362_cov_10.498810	421259	421332
-UN	2782	.	NODE_2_length_517362_cov_10.498810	421953	421953
-UN	2783	.	NODE_2_length_517362_cov_10.498810	421956	421956
-UN	2784	.	NODE_2_length_517362_cov_10.498810	421978	421978
-UN	2785	.	NODE_2_length_517362_cov_10.498810	421981	421981
-UN	2786	.	NODE_2_length_517362_cov_10.498810	422065	422183
-UN	2787	.	NODE_2_length_517362_cov_10.498810	422382	422460
-UN	2788	.	NODE_2_length_517362_cov_10.498810	422481	422482
-UN	2789	.	NODE_2_length_517362_cov_10.498810	422486	422486
-UN	2790	.	NODE_2_length_517362_cov_10.498810	422492	422492
-UN	2791	.	NODE_2_length_517362_cov_10.498810	422494	422497
-UN	2792	.	NODE_2_length_517362_cov_10.498810	422499	422501
-UN	2793	.	NODE_2_length_517362_cov_10.498810	422503	422503
-UN	2794	.	NODE_2_length_517362_cov_10.498810	422505	422527
-UN	2795	.	NODE_2_length_517362_cov_10.498810	422551	422552
-UN	2796	.	NODE_2_length_517362_cov_10.498810	422572	422572
-UN	2797	.	NODE_2_length_517362_cov_10.498810	422574	422574
-UN	2798	.	NODE_2_length_517362_cov_10.498810	422579	422579
-UN	2799	.	NODE_2_length_517362_cov_10.498810	422585	422585
-UN	2800	.	NODE_2_length_517362_cov_10.498810	422591	422592
-UN	2801	.	NODE_2_length_517362_cov_10.498810	422604	422604
-UN	2802	.	NODE_2_length_517362_cov_10.498810	422607	422607
-UN	2803	.	NODE_2_length_517362_cov_10.498810	422615	422618
-UN	2804	.	NODE_2_length_517362_cov_10.498810	422630	422630
-UN	2805	.	NODE_2_length_517362_cov_10.498810	422632	422634
-UN	2806	.	NODE_2_length_517362_cov_10.498810	422649	422649
-UN	2807	.	NODE_2_length_517362_cov_10.498810	423965	423965
-UN	2808	.	NODE_2_length_517362_cov_10.498810	423968	423968
-UN	2809	.	NODE_2_length_517362_cov_10.498810	423971	423971
-UN	2810	.	NODE_2_length_517362_cov_10.498810	423976	423978
-UN	2811	.	NODE_2_length_517362_cov_10.498810	423999	423999
-UN	2812	.	NODE_2_length_517362_cov_10.498810	424003	424003
-UN	2813	.	NODE_2_length_517362_cov_10.498810	424011	424012
-UN	2814	.	NODE_2_length_517362_cov_10.498810	424014	424014
-UN	2815	.	NODE_2_length_517362_cov_10.498810	424017	424017
-UN	2816	.	NODE_2_length_517362_cov_10.498810	424025	424025
-UN	2817	.	NODE_2_length_517362_cov_10.498810	424027	424030
-UN	2818	.	NODE_2_length_517362_cov_10.498810	424130	424131
-UN	2819	.	NODE_2_length_517362_cov_10.498810	424144	424144
-UN	2820	.	NODE_2_length_517362_cov_10.498810	424151	424151
-UN	2821	.	NODE_2_length_517362_cov_10.498810	424190	424190
-UN	2822	.	NODE_2_length_517362_cov_10.498810	424198	424199
-UN	2823	.	NODE_2_length_517362_cov_10.498810	424201	424201
-UN	2824	.	NODE_2_length_517362_cov_10.498810	424203	424204
-UN	2825	.	NODE_2_length_517362_cov_10.498810	424206	424208
-UN	2826	.	NODE_2_length_517362_cov_10.498810	424212	424213
-UN	2827	.	NODE_2_length_517362_cov_10.498810	424215	424261
-UN	2828	.	NODE_2_length_517362_cov_10.498810	424299	424299
-UN	2829	.	NODE_2_length_517362_cov_10.498810	424303	424303
-UN	2830	.	NODE_2_length_517362_cov_10.498810	424358	424358
-UN	2831	.	NODE_2_length_517362_cov_10.498810	424366	424367
-UN	2832	.	NODE_2_length_517362_cov_10.498810	424391	424391
-UN	2833	.	NODE_2_length_517362_cov_10.498810	424425	424430
-UN	2834	.	NODE_2_length_517362_cov_10.498810	424432	424433
-UN	2835	.	NODE_2_length_517362_cov_10.498810	424438	424438
-UN	2836	.	NODE_2_length_517362_cov_10.498810	425978	426053
-UN	2837	.	NODE_2_length_517362_cov_10.498810	426083	426083
-UN	2838	.	NODE_2_length_517362_cov_10.498810	435339	435339
-UN	2839	.	NODE_2_length_517362_cov_10.498810	435411	435423
-UN	2840	.	NODE_2_length_517362_cov_10.498810	437676	437676
-UN	2841	.	NODE_2_length_517362_cov_10.498810	437706	437713
-UN	2842	.	NODE_2_length_517362_cov_10.498810	437717	437718
-UN	2843	.	NODE_2_length_517362_cov_10.498810	437720	437720
-UN	2844	.	NODE_2_length_517362_cov_10.498810	437722	437723
-UN	2845	.	NODE_2_length_517362_cov_10.498810	437725	437725
-UN	2846	.	NODE_2_length_517362_cov_10.498810	437731	437731
-UN	2847	.	NODE_2_length_517362_cov_10.498810	443852	443852
-UN	2848	.	NODE_2_length_517362_cov_10.498810	443854	443856
-UN	2849	.	NODE_2_length_517362_cov_10.498810	443858	443860
-UN	2850	.	NODE_2_length_517362_cov_10.498810	443862	443863
-UN	2851	.	NODE_2_length_517362_cov_10.498810	443865	443865
-UN	2852	.	NODE_2_length_517362_cov_10.498810	443867	443867
-UN	2853	.	NODE_2_length_517362_cov_10.498810	443869	443869
-UN	2854	.	NODE_2_length_517362_cov_10.498810	443871	443872
-UN	2855	.	NODE_2_length_517362_cov_10.498810	443874	443874
-UN	2856	.	NODE_2_length_517362_cov_10.498810	443879	443880
-UN	2857	.	NODE_2_length_517362_cov_10.498810	443916	443945
-UN	2858	.	NODE_2_length_517362_cov_10.498810	443948	443948
-UN	2859	.	NODE_2_length_517362_cov_10.498810	443950	443951
-UN	2860	.	NODE_2_length_517362_cov_10.498810	443955	443955
-UN	2861	.	NODE_2_length_517362_cov_10.498810	443957	443957
-UN	2862	.	NODE_2_length_517362_cov_10.498810	443961	443961
-UN	2863	.	NODE_2_length_517362_cov_10.498810	443964	443964
-UN	2864	.	NODE_2_length_517362_cov_10.498810	446459	446459
-UN	2865	.	NODE_2_length_517362_cov_10.498810	446461	446476
-UN	2866	.	NODE_2_length_517362_cov_10.498810	446482	446482
-UN	2867	.	NODE_2_length_517362_cov_10.498810	446488	446489
-UN	2868	.	NODE_2_length_517362_cov_10.498810	446493	446494
-UN	2869	.	NODE_2_length_517362_cov_10.498810	446501	446501
-UN	2870	.	NODE_2_length_517362_cov_10.498810	446504	446504
-UN	2871	.	NODE_2_length_517362_cov_10.498810	446508	446508
-UN	2872	.	NODE_2_length_517362_cov_10.498810	446510	446510
-UN	2873	.	NODE_2_length_517362_cov_10.498810	446513	446513
-UN	2874	.	NODE_2_length_517362_cov_10.498810	446516	446516
-UN	2875	.	NODE_2_length_517362_cov_10.498810	446518	446597
-UN	2876	.	NODE_2_length_517362_cov_10.498810	446611	446679
-UN	2877	.	NODE_2_length_517362_cov_10.498810	448703	448703
-UN	2878	.	NODE_2_length_517362_cov_10.498810	448708	448709
-UN	2879	.	NODE_2_length_517362_cov_10.498810	460314	460316
-UN	2880	.	NODE_2_length_517362_cov_10.498810	460320	460321
-UN	2881	.	NODE_2_length_517362_cov_10.498810	460323	460354
-UN	2882	.	NODE_2_length_517362_cov_10.498810	460356	460357
-UN	2883	.	NODE_2_length_517362_cov_10.498810	463016	463031
-UN	2884	.	NODE_2_length_517362_cov_10.498810	463390	463390
-UN	2885	.	NODE_2_length_517362_cov_10.498810	463393	463393
-UN	2886	.	NODE_2_length_517362_cov_10.498810	463418	463418
-UN	2887	.	NODE_2_length_517362_cov_10.498810	463421	463422
-UN	2888	.	NODE_2_length_517362_cov_10.498810	463425	463425
-UN	2889	.	NODE_2_length_517362_cov_10.498810	463433	463433
-UN	2890	.	NODE_2_length_517362_cov_10.498810	463443	463445
-UN	2891	.	NODE_2_length_517362_cov_10.498810	463447	463448
-UN	2892	.	NODE_2_length_517362_cov_10.498810	463454	463454
-UN	2893	.	NODE_2_length_517362_cov_10.498810	463457	463459
-UN	2894	.	NODE_2_length_517362_cov_10.498810	463461	463462
-UN	2895	.	NODE_2_length_517362_cov_10.498810	463465	463465
-UN	2896	.	NODE_2_length_517362_cov_10.498810	468994	468994
-UN	2897	.	NODE_2_length_517362_cov_10.498810	469028	469028
-UN	2898	.	NODE_2_length_517362_cov_10.498810	469064	469065
-UN	2899	.	NODE_2_length_517362_cov_10.498810	469067	469070
-UN	2900	.	NODE_2_length_517362_cov_10.498810	469079	469254
-UN	2901	.	NODE_2_length_517362_cov_10.498810	469259	469259
-UN	2902	.	NODE_2_length_517362_cov_10.498810	469268	469268
-UN	2903	.	NODE_2_length_517362_cov_10.498810	472079	472087
-UN	2904	.	NODE_2_length_517362_cov_10.498810	472097	472111
-UN	2905	.	NODE_2_length_517362_cov_10.498810	472116	472118
-UN	2906	.	NODE_2_length_517362_cov_10.498810	472765	472765
-UN	2907	.	NODE_2_length_517362_cov_10.498810	487886	487886
-UN	2908	.	NODE_2_length_517362_cov_10.498810	487897	487897
-UN	2909	.	NODE_2_length_517362_cov_10.498810	487900	487900
-UN	2910	.	NODE_2_length_517362_cov_10.498810	487902	487902
-UN	2911	.	NODE_2_length_517362_cov_10.498810	487912	487912
-UN	2912	.	NODE_2_length_517362_cov_10.498810	487937	487950
-UN	2913	.	NODE_2_length_517362_cov_10.498810	487952	487959
-UN	2914	.	NODE_2_length_517362_cov_10.498810	487961	487963
-UN	2915	.	NODE_2_length_517362_cov_10.498810	494923	494923
-UN	2916	.	NODE_2_length_517362_cov_10.498810	494929	494929
-UN	2917	.	NODE_2_length_517362_cov_10.498810	494933	494933
-UN	2918	.	NODE_2_length_517362_cov_10.498810	494938	494938
-UN	2919	.	NODE_2_length_517362_cov_10.498810	494942	494942
-UN	2920	.	NODE_2_length_517362_cov_10.498810	494947	494947
-UN	2921	.	NODE_2_length_517362_cov_10.498810	494951	494951
-UN	2922	.	NODE_2_length_517362_cov_10.498810	494989	494992
-UN	2923	.	NODE_2_length_517362_cov_10.498810	494995	494995
-UN	2924	.	NODE_2_length_517362_cov_10.498810	494997	495018
-UN	2925	.	NODE_2_length_517362_cov_10.498810	495020	495022
-UN	2926	.	NODE_2_length_517362_cov_10.498810	495052	495052
-UN	2927	.	NODE_2_length_517362_cov_10.498810	495911	495911
-UN	2928	.	NODE_2_length_517362_cov_10.498810	495914	495915
-UN	2929	.	NODE_2_length_517362_cov_10.498810	495917	495918
-UN	2930	.	NODE_2_length_517362_cov_10.498810	495923	495925
-UN	2931	.	NODE_2_length_517362_cov_10.498810	495932	495932
-UN	2932	.	NODE_2_length_517362_cov_10.498810	495934	495934
-UN	2933	.	NODE_2_length_517362_cov_10.498810	495937	495940
-UN	2934	.	NODE_2_length_517362_cov_10.498810	495944	495945
-UN	2935	.	NODE_2_length_517362_cov_10.498810	495947	495965
-UN	2936	.	NODE_2_length_517362_cov_10.498810	499352	499365
-UN	2937	.	NODE_2_length_517362_cov_10.498810	506738	506738
-UN	2938	.	NODE_2_length_517362_cov_10.498810	506742	506742
-UN	2939	.	NODE_2_length_517362_cov_10.498810	506752	506752
-UN	2940	.	NODE_2_length_517362_cov_10.498810	507174	507174
-UN	2941	.	NODE_2_length_517362_cov_10.498810	507264	507264
-UN	2942	.	NODE_2_length_517362_cov_10.498810	517344	517345
-UN	2943	.	NODE_2_length_517362_cov_10.498810	517347	517362
-UN	2944	.	NODE_30_length_28734_cov_14.265634	128	128
-UN	2945	.	NODE_30_length_28734_cov_14.265634	468	468
-UN	2946	.	NODE_30_length_28734_cov_14.265634	514	514
-UN	2947	.	NODE_30_length_28734_cov_14.265634	679	679
-UN	2948	.	NODE_30_length_28734_cov_14.265634	935	935
-UN	2949	.	NODE_31_length_24246_cov_18.602098	1	58
-UN	2950	.	NODE_31_length_24246_cov_18.602098	60	61
-UN	2951	.	NODE_31_length_24246_cov_18.602098	64	68
-UN	2952	.	NODE_31_length_24246_cov_18.602098	71	71
-UN	2953	.	NODE_31_length_24246_cov_18.602098	24211	24246
-UN	2954	.	NODE_32_length_19629_cov_8.975131	1	90
-UN	2955	.	NODE_32_length_19629_cov_8.975131	92	96
-UN	2956	.	NODE_32_length_19629_cov_8.975131	98	98
-UN	2957	.	NODE_32_length_19629_cov_8.975131	101	102
-UN	2958	.	NODE_32_length_19629_cov_8.975131	110	110
-UN	2959	.	NODE_32_length_19629_cov_8.975131	112	113
-UN	2960	.	NODE_32_length_19629_cov_8.975131	116	119
-UN	2961	.	NODE_32_length_19629_cov_8.975131	122	122
-UN	2962	.	NODE_32_length_19629_cov_8.975131	131	132
-UN	2963	.	NODE_32_length_19629_cov_8.975131	136	136
-UN	2964	.	NODE_32_length_19629_cov_8.975131	144	144
-UN	2965	.	NODE_32_length_19629_cov_8.975131	156	157
-UN	2966	.	NODE_32_length_19629_cov_8.975131	159	160
-UN	2967	.	NODE_32_length_19629_cov_8.975131	169	169
-UN	2968	.	NODE_32_length_19629_cov_8.975131	177	177
-UN	2969	.	NODE_32_length_19629_cov_8.975131	890	890
-UN	2970	.	NODE_32_length_19629_cov_8.975131	898	898
-UN	2971	.	NODE_32_length_19629_cov_8.975131	902	904
-UN	2972	.	NODE_32_length_19629_cov_8.975131	906	906
-UN	2973	.	NODE_32_length_19629_cov_8.975131	909	956
-UN	2974	.	NODE_32_length_19629_cov_8.975131	958	958
-UN	2975	.	NODE_32_length_19629_cov_8.975131	961	961
-UN	2976	.	NODE_32_length_19629_cov_8.975131	964	964
-UN	2977	.	NODE_32_length_19629_cov_8.975131	2168	2168
-UN	2978	.	NODE_32_length_19629_cov_8.975131	2213	2267
-UN	2979	.	NODE_32_length_19629_cov_8.975131	2276	2276
-UN	2980	.	NODE_32_length_19629_cov_8.975131	3066	3067
-UN	2981	.	NODE_32_length_19629_cov_8.975131	3363	3363
-UN	2982	.	NODE_32_length_19629_cov_8.975131	3374	3374
-UN	2983	.	NODE_32_length_19629_cov_8.975131	3376	3376
-UN	2984	.	NODE_32_length_19629_cov_8.975131	3384	3384
-UN	2985	.	NODE_32_length_19629_cov_8.975131	3386	3387
-UN	2986	.	NODE_32_length_19629_cov_8.975131	3389	3390
-UN	2987	.	NODE_32_length_19629_cov_8.975131	3392	3394
-UN	2988	.	NODE_32_length_19629_cov_8.975131	3397	3397
-UN	2989	.	NODE_32_length_19629_cov_8.975131	3399	3401
-UN	2990	.	NODE_32_length_19629_cov_8.975131	3403	3403
-UN	2991	.	NODE_32_length_19629_cov_8.975131	3405	3405
-UN	2992	.	NODE_32_length_19629_cov_8.975131	3408	3410
-UN	2993	.	NODE_32_length_19629_cov_8.975131	3416	3416
-UN	2994	.	NODE_32_length_19629_cov_8.975131	3418	3418
-UN	2995	.	NODE_32_length_19629_cov_8.975131	3423	3423
-UN	2996	.	NODE_32_length_19629_cov_8.975131	3612	3612
-UN	2997	.	NODE_32_length_19629_cov_8.975131	3615	3615
-UN	2998	.	NODE_32_length_19629_cov_8.975131	3623	3623
-UN	2999	.	NODE_32_length_19629_cov_8.975131	3626	3672
-UN	3000	.	NODE_32_length_19629_cov_8.975131	3674	3679
-UN	3001	.	NODE_32_length_19629_cov_8.975131	3681	3684
-UN	3002	.	NODE_32_length_19629_cov_8.975131	4234	4235
-UN	3003	.	NODE_32_length_19629_cov_8.975131	4238	4238
-UN	3004	.	NODE_32_length_19629_cov_8.975131	4240	4243
-UN	3005	.	NODE_32_length_19629_cov_8.975131	4247	4247
-UN	3006	.	NODE_32_length_19629_cov_8.975131	4249	4249
-UN	3007	.	NODE_32_length_19629_cov_8.975131	4251	4253
-UN	3008	.	NODE_32_length_19629_cov_8.975131	4257	4260
-UN	3009	.	NODE_32_length_19629_cov_8.975131	4263	4333
-UN	3010	.	NODE_32_length_19629_cov_8.975131	4337	4337
-UN	3011	.	NODE_32_length_19629_cov_8.975131	4340	4340
-UN	3012	.	NODE_32_length_19629_cov_8.975131	4342	4344
-UN	3013	.	NODE_32_length_19629_cov_8.975131	4348	4348
-UN	3014	.	NODE_32_length_19629_cov_8.975131	4350	4352
-UN	3015	.	NODE_32_length_19629_cov_8.975131	4354	4354
-UN	3016	.	NODE_32_length_19629_cov_8.975131	4356	4359
-UN	3017	.	NODE_32_length_19629_cov_8.975131	4365	4367
-UN	3018	.	NODE_32_length_19629_cov_8.975131	4370	4371
-UN	3019	.	NODE_32_length_19629_cov_8.975131	4374	4466
-UN	3020	.	NODE_32_length_19629_cov_8.975131	4468	4468
-UN	3021	.	NODE_32_length_19629_cov_8.975131	4470	4470
-UN	3022	.	NODE_32_length_19629_cov_8.975131	4472	4472
-UN	3023	.	NODE_32_length_19629_cov_8.975131	4475	4476
-UN	3024	.	NODE_32_length_19629_cov_8.975131	4481	4481
-UN	3025	.	NODE_32_length_19629_cov_8.975131	4484	4488
-UN	3026	.	NODE_32_length_19629_cov_8.975131	4492	4492
-UN	3027	.	NODE_32_length_19629_cov_8.975131	4550	4550
-UN	3028	.	NODE_32_length_19629_cov_8.975131	4556	4556
-UN	3029	.	NODE_32_length_19629_cov_8.975131	4572	4572
-UN	3030	.	NODE_32_length_19629_cov_8.975131	4657	4881
-UN	3031	.	NODE_32_length_19629_cov_8.975131	4885	4885
-UN	3032	.	NODE_32_length_19629_cov_8.975131	4887	4887
-UN	3033	.	NODE_32_length_19629_cov_8.975131	4889	4889
-UN	3034	.	NODE_32_length_19629_cov_8.975131	4907	4979
-UN	3035	.	NODE_32_length_19629_cov_8.975131	6530	6530
-UN	3036	.	NODE_32_length_19629_cov_8.975131	7130	7130
-UN	3037	.	NODE_32_length_19629_cov_8.975131	8560	8745
-UN	3038	.	NODE_32_length_19629_cov_8.975131	8747	8747
-UN	3039	.	NODE_32_length_19629_cov_8.975131	8752	8752
-UN	3040	.	NODE_32_length_19629_cov_8.975131	8756	8759
-UN	3041	.	NODE_32_length_19629_cov_8.975131	11082	11113
-UN	3042	.	NODE_32_length_19629_cov_8.975131	11115	11115
-UN	3043	.	NODE_32_length_19629_cov_8.975131	11117	11117
-UN	3044	.	NODE_32_length_19629_cov_8.975131	11123	11123
-UN	3045	.	NODE_32_length_19629_cov_8.975131	11127	11128
-UN	3046	.	NODE_32_length_19629_cov_8.975131	12490	12490
-UN	3047	.	NODE_32_length_19629_cov_8.975131	12502	12502
-UN	3048	.	NODE_32_length_19629_cov_8.975131	13162	13165
-UN	3049	.	NODE_32_length_19629_cov_8.975131	13168	13171
-UN	3050	.	NODE_32_length_19629_cov_8.975131	13177	13177
-UN	3051	.	NODE_32_length_19629_cov_8.975131	13180	13181
-UN	3052	.	NODE_32_length_19629_cov_8.975131	13183	13352
-UN	3053	.	NODE_32_length_19629_cov_8.975131	13354	13356
-UN	3054	.	NODE_32_length_19629_cov_8.975131	13361	13361
-UN	3055	.	NODE_32_length_19629_cov_8.975131	13743	13743
-UN	3056	.	NODE_32_length_19629_cov_8.975131	13746	13746
-UN	3057	.	NODE_32_length_19629_cov_8.975131	13755	13756
-UN	3058	.	NODE_32_length_19629_cov_8.975131	13759	13759
-UN	3059	.	NODE_32_length_19629_cov_8.975131	13763	13774
-UN	3060	.	NODE_32_length_19629_cov_8.975131	13782	13783
-UN	3061	.	NODE_32_length_19629_cov_8.975131	13788	13790
-UN	3062	.	NODE_32_length_19629_cov_8.975131	14161	14161
-UN	3063	.	NODE_32_length_19629_cov_8.975131	14163	14164
-UN	3064	.	NODE_32_length_19629_cov_8.975131	14166	14166
-UN	3065	.	NODE_32_length_19629_cov_8.975131	14170	14173
-UN	3066	.	NODE_32_length_19629_cov_8.975131	14175	14177
-UN	3067	.	NODE_32_length_19629_cov_8.975131	14179	14179
-UN	3068	.	NODE_32_length_19629_cov_8.975131	19590	19590
-UN	3069	.	NODE_32_length_19629_cov_8.975131	19604	19605
-UN	3070	.	NODE_32_length_19629_cov_8.975131	19608	19608
-UN	3071	.	NODE_32_length_19629_cov_8.975131	19610	19612
-UN	3072	.	NODE_32_length_19629_cov_8.975131	19614	19614
-UN	3073	.	NODE_32_length_19629_cov_8.975131	19616	19629
-UN	3074	.	NODE_33_length_18057_cov_17.234969	1	1
-UN	3075	.	NODE_33_length_18057_cov_17.234969	3	16
-UN	3076	.	NODE_33_length_18057_cov_17.234969	19	19
-UN	3077	.	NODE_33_length_18057_cov_17.234969	18005	18018
-UN	3078	.	NODE_33_length_18057_cov_17.234969	18020	18057
-UN	3079	.	NODE_34_length_16011_cov_19.071770	1	84
-UN	3080	.	NODE_34_length_16011_cov_19.071770	86	86
-UN	3081	.	NODE_34_length_16011_cov_19.071770	15998	16011
-UN	3082	.	NODE_35_length_13586_cov_17.132476	1	35
-UN	3083	.	NODE_35_length_13586_cov_17.132476	39	39
-UN	3084	.	NODE_35_length_13586_cov_17.132476	13497	13497
-UN	3085	.	NODE_35_length_13586_cov_17.132476	13500	13586
-UN	3086	.	NODE_36_length_12109_cov_16.252963	12049	12049
-UN	3087	.	NODE_36_length_12109_cov_16.252963	12058	12058
-UN	3088	.	NODE_36_length_12109_cov_16.252963	12061	12061
-UN	3089	.	NODE_36_length_12109_cov_16.252963	12063	12068
-UN	3090	.	NODE_36_length_12109_cov_16.252963	12071	12109
-UN	3091	.	NODE_37_length_9310_cov_14.248067	128	128
-UN	3092	.	NODE_37_length_9310_cov_14.248067	9197	9197
-UN	3093	.	NODE_37_length_9310_cov_14.248067	9202	9203
-UN	3094	.	NODE_37_length_9310_cov_14.248067	9207	9207
-UN	3095	.	NODE_37_length_9310_cov_14.248067	9215	9310
-UN	3096	.	NODE_38_length_7502_cov_10.476610	1	58
-UN	3097	.	NODE_38_length_7502_cov_10.476610	1800	1809
-UN	3098	.	NODE_38_length_7502_cov_10.476610	2979	2979
-UN	3099	.	NODE_38_length_7502_cov_10.476610	3002	3002
-UN	3100	.	NODE_38_length_7502_cov_10.476610	7480	7502
-UN	3101	.	NODE_39_length_6347_cov_12.347588	1	26
-UN	3102	.	NODE_39_length_6347_cov_12.347588	6195	6195
-UN	3103	.	NODE_39_length_6347_cov_12.347588	6205	6205
-UN	3104	.	NODE_39_length_6347_cov_12.347588	6210	6210
-UN	3105	.	NODE_39_length_6347_cov_12.347588	6218	6221
-UN	3106	.	NODE_39_length_6347_cov_12.347588	6224	6224
-UN	3107	.	NODE_39_length_6347_cov_12.347588	6233	6233
-UN	3108	.	NODE_39_length_6347_cov_12.347588	6237	6238
-UN	3109	.	NODE_39_length_6347_cov_12.347588	6241	6241
-UN	3110	.	NODE_39_length_6347_cov_12.347588	6251	6251
-UN	3111	.	NODE_39_length_6347_cov_12.347588	6253	6259
-UN	3112	.	NODE_39_length_6347_cov_12.347588	6264	6265
-UN	3113	.	NODE_39_length_6347_cov_12.347588	6267	6269
-UN	3114	.	NODE_39_length_6347_cov_12.347588	6271	6347
-UN	3115	.	NODE_3_length_452535_cov_10.550749	1	20
-UN	3116	.	NODE_3_length_452535_cov_10.550749	28734	28734
-UN	3117	.	NODE_3_length_452535_cov_10.550749	31829	31829
-UN	3118	.	NODE_3_length_452535_cov_10.550749	32595	32655
-UN	3119	.	NODE_3_length_452535_cov_10.550749	39515	39515
-UN	3120	.	NODE_3_length_452535_cov_10.550749	40031	40046
-UN	3121	.	NODE_3_length_452535_cov_10.550749	40050	40053
-UN	3122	.	NODE_3_length_452535_cov_10.550749	40056	40056
-UN	3123	.	NODE_3_length_452535_cov_10.550749	40058	40058
-UN	3124	.	NODE_3_length_452535_cov_10.550749	40060	40060
-UN	3125	.	NODE_3_length_452535_cov_10.550749	40068	40069
-UN	3126	.	NODE_3_length_452535_cov_10.550749	40079	40079
-UN	3127	.	NODE_3_length_452535_cov_10.550749	40085	40085
-UN	3128	.	NODE_3_length_452535_cov_10.550749	40087	40087
-UN	3129	.	NODE_3_length_452535_cov_10.550749	40090	40090
-UN	3130	.	NODE_3_length_452535_cov_10.550749	40092	40093
-UN	3131	.	NODE_3_length_452535_cov_10.550749	40109	40109
-UN	3132	.	NODE_3_length_452535_cov_10.550749	40113	40113
-UN	3133	.	NODE_3_length_452535_cov_10.550749	40116	40116
-UN	3134	.	NODE_3_length_452535_cov_10.550749	40128	40128
-UN	3135	.	NODE_3_length_452535_cov_10.550749	40131	40131
-UN	3136	.	NODE_3_length_452535_cov_10.550749	40157	40159
-UN	3137	.	NODE_3_length_452535_cov_10.550749	40161	40161
-UN	3138	.	NODE_3_length_452535_cov_10.550749	40163	40260
-UN	3139	.	NODE_3_length_452535_cov_10.550749	40267	40282
-UN	3140	.	NODE_3_length_452535_cov_10.550749	40284	40284
-UN	3141	.	NODE_3_length_452535_cov_10.550749	40286	40286
-UN	3142	.	NODE_3_length_452535_cov_10.550749	40291	40292
-UN	3143	.	NODE_3_length_452535_cov_10.550749	40629	40629
-UN	3144	.	NODE_3_length_452535_cov_10.550749	44884	44971
-UN	3145	.	NODE_3_length_452535_cov_10.550749	44974	44974
-UN	3146	.	NODE_3_length_452535_cov_10.550749	44977	44982
-UN	3147	.	NODE_3_length_452535_cov_10.550749	44985	44990
-UN	3148	.	NODE_3_length_452535_cov_10.550749	44992	44999
-UN	3149	.	NODE_3_length_452535_cov_10.550749	45001	45006
-UN	3150	.	NODE_3_length_452535_cov_10.550749	45009	45011
-UN	3151	.	NODE_3_length_452535_cov_10.550749	45991	45992
-UN	3152	.	NODE_3_length_452535_cov_10.550749	45996	45998
-UN	3153	.	NODE_3_length_452535_cov_10.550749	47296	47297
-UN	3154	.	NODE_3_length_452535_cov_10.550749	47300	47300
-UN	3155	.	NODE_3_length_452535_cov_10.550749	47302	47303
-UN	3156	.	NODE_3_length_452535_cov_10.550749	47309	47310
-UN	3157	.	NODE_3_length_452535_cov_10.550749	47312	47312
-UN	3158	.	NODE_3_length_452535_cov_10.550749	47314	47314
-UN	3159	.	NODE_3_length_452535_cov_10.550749	47317	47317
-UN	3160	.	NODE_3_length_452535_cov_10.550749	47323	47324
-UN	3161	.	NODE_3_length_452535_cov_10.550749	47327	47360
-UN	3162	.	NODE_3_length_452535_cov_10.550749	47363	47363
-UN	3163	.	NODE_3_length_452535_cov_10.550749	50448	50449
-UN	3164	.	NODE_3_length_452535_cov_10.550749	50453	50453
-UN	3165	.	NODE_3_length_452535_cov_10.550749	50456	50477
-UN	3166	.	NODE_3_length_452535_cov_10.550749	50479	50484
-UN	3167	.	NODE_3_length_452535_cov_10.550749	50486	50519
-UN	3168	.	NODE_3_length_452535_cov_10.550749	50521	50529
-UN	3169	.	NODE_3_length_452535_cov_10.550749	50531	50531
-UN	3170	.	NODE_3_length_452535_cov_10.550749	50533	50533
-UN	3171	.	NODE_3_length_452535_cov_10.550749	50535	50535
-UN	3172	.	NODE_3_length_452535_cov_10.550749	50538	50538
-UN	3173	.	NODE_3_length_452535_cov_10.550749	51667	51681
-UN	3174	.	NODE_3_length_452535_cov_10.550749	53529	53538
-UN	3175	.	NODE_3_length_452535_cov_10.550749	53542	53566
-UN	3176	.	NODE_3_length_452535_cov_10.550749	53568	54577
-UN	3177	.	NODE_3_length_452535_cov_10.550749	54580	54582
-UN	3178	.	NODE_3_length_452535_cov_10.550749	54584	54584
-UN	3179	.	NODE_3_length_452535_cov_10.550749	55828	55828
-UN	3180	.	NODE_3_length_452535_cov_10.550749	59317	59317
-UN	3181	.	NODE_3_length_452535_cov_10.550749	59336	59336
-UN	3182	.	NODE_3_length_452535_cov_10.550749	59342	59342
-UN	3183	.	NODE_3_length_452535_cov_10.550749	59345	59355
-UN	3184	.	NODE_3_length_452535_cov_10.550749	59358	59361
-UN	3185	.	NODE_3_length_452535_cov_10.550749	59363	59363
-UN	3186	.	NODE_3_length_452535_cov_10.550749	59365	59365
-UN	3187	.	NODE_3_length_452535_cov_10.550749	59368	59368
-UN	3188	.	NODE_3_length_452535_cov_10.550749	59374	59374
-UN	3189	.	NODE_3_length_452535_cov_10.550749	59378	59378
-UN	3190	.	NODE_3_length_452535_cov_10.550749	59380	59380
-UN	3191	.	NODE_3_length_452535_cov_10.550749	59401	59401
-UN	3192	.	NODE_3_length_452535_cov_10.550749	59743	59746
-UN	3193	.	NODE_3_length_452535_cov_10.550749	59748	59748
-UN	3194	.	NODE_3_length_452535_cov_10.550749	59750	59754
-UN	3195	.	NODE_3_length_452535_cov_10.550749	59759	59760
-UN	3196	.	NODE_3_length_452535_cov_10.550749	59762	59762
-UN	3197	.	NODE_3_length_452535_cov_10.550749	59764	60199
-UN	3198	.	NODE_3_length_452535_cov_10.550749	60201	60201
-UN	3199	.	NODE_3_length_452535_cov_10.550749	60203	60203
-UN	3200	.	NODE_3_length_452535_cov_10.550749	60207	60209
-UN	3201	.	NODE_3_length_452535_cov_10.550749	60212	60212
-UN	3202	.	NODE_3_length_452535_cov_10.550749	60279	60279
-UN	3203	.	NODE_3_length_452535_cov_10.550749	82410	82410
-UN	3204	.	NODE_3_length_452535_cov_10.550749	91110	91110
-UN	3205	.	NODE_3_length_452535_cov_10.550749	91142	91142
-UN	3206	.	NODE_3_length_452535_cov_10.550749	91144	91144
-UN	3207	.	NODE_3_length_452535_cov_10.550749	91152	91152
-UN	3208	.	NODE_3_length_452535_cov_10.550749	91154	91154
-UN	3209	.	NODE_3_length_452535_cov_10.550749	91156	91156
-UN	3210	.	NODE_3_length_452535_cov_10.550749	91753	91753
-UN	3211	.	NODE_3_length_452535_cov_10.550749	91766	91766
-UN	3212	.	NODE_3_length_452535_cov_10.550749	91775	91775
-UN	3213	.	NODE_3_length_452535_cov_10.550749	92087	92102
-UN	3214	.	NODE_3_length_452535_cov_10.550749	92177	92206
-UN	3215	.	NODE_3_length_452535_cov_10.550749	92209	92209
-UN	3216	.	NODE_3_length_452535_cov_10.550749	92221	92221
-UN	3217	.	NODE_3_length_452535_cov_10.550749	92223	92223
-UN	3218	.	NODE_3_length_452535_cov_10.550749	92230	92230
-UN	3219	.	NODE_3_length_452535_cov_10.550749	92235	92236
-UN	3220	.	NODE_3_length_452535_cov_10.550749	92251	92251
-UN	3221	.	NODE_3_length_452535_cov_10.550749	92693	92834
-UN	3222	.	NODE_3_length_452535_cov_10.550749	92837	92837
-UN	3223	.	NODE_3_length_452535_cov_10.550749	92839	92839
-UN	3224	.	NODE_3_length_452535_cov_10.550749	92842	92842
-UN	3225	.	NODE_3_length_452535_cov_10.550749	92844	92844
-UN	3226	.	NODE_3_length_452535_cov_10.550749	92847	92848
-UN	3227	.	NODE_3_length_452535_cov_10.550749	92850	92850
-UN	3228	.	NODE_3_length_452535_cov_10.550749	92857	92857
-UN	3229	.	NODE_3_length_452535_cov_10.550749	92882	92903
-UN	3230	.	NODE_3_length_452535_cov_10.550749	93744	93746
-UN	3231	.	NODE_3_length_452535_cov_10.550749	93749	93749
-UN	3232	.	NODE_3_length_452535_cov_10.550749	93753	93753
-UN	3233	.	NODE_3_length_452535_cov_10.550749	93757	93757
-UN	3234	.	NODE_3_length_452535_cov_10.550749	93759	93820
-UN	3235	.	NODE_3_length_452535_cov_10.550749	93823	93827
-UN	3236	.	NODE_3_length_452535_cov_10.550749	93829	93832
-UN	3237	.	NODE_3_length_452535_cov_10.550749	94364	94364
-UN	3238	.	NODE_3_length_452535_cov_10.550749	95585	95585
-UN	3239	.	NODE_3_length_452535_cov_10.550749	95754	95754
-UN	3240	.	NODE_3_length_452535_cov_10.550749	95757	95757
-UN	3241	.	NODE_3_length_452535_cov_10.550749	95759	95759
-UN	3242	.	NODE_3_length_452535_cov_10.550749	95762	95762
-UN	3243	.	NODE_3_length_452535_cov_10.550749	95782	95782
-UN	3244	.	NODE_3_length_452535_cov_10.550749	95849	95849
-UN	3245	.	NODE_3_length_452535_cov_10.550749	96143	96143
-UN	3246	.	NODE_3_length_452535_cov_10.550749	96159	96159
-UN	3247	.	NODE_3_length_452535_cov_10.550749	96166	96166
-UN	3248	.	NODE_3_length_452535_cov_10.550749	96170	96170
-UN	3249	.	NODE_3_length_452535_cov_10.550749	96173	96174
-UN	3250	.	NODE_3_length_452535_cov_10.550749	96176	96176
-UN	3251	.	NODE_3_length_452535_cov_10.550749	96179	96179
-UN	3252	.	NODE_3_length_452535_cov_10.550749	96181	96181
-UN	3253	.	NODE_3_length_452535_cov_10.550749	96184	96184
-UN	3254	.	NODE_3_length_452535_cov_10.550749	96186	96186
-UN	3255	.	NODE_3_length_452535_cov_10.550749	96188	96292
-UN	3256	.	NODE_3_length_452535_cov_10.550749	96358	96383
-UN	3257	.	NODE_3_length_452535_cov_10.550749	96386	96388
-UN	3258	.	NODE_3_length_452535_cov_10.550749	96391	96393
-UN	3259	.	NODE_3_length_452535_cov_10.550749	96397	96397
-UN	3260	.	NODE_3_length_452535_cov_10.550749	96403	96405
-UN	3261	.	NODE_3_length_452535_cov_10.550749	96412	96412
-UN	3262	.	NODE_3_length_452535_cov_10.550749	96415	96416
-UN	3263	.	NODE_3_length_452535_cov_10.550749	96418	96418
-UN	3264	.	NODE_3_length_452535_cov_10.550749	97047	97047
-UN	3265	.	NODE_3_length_452535_cov_10.550749	97240	97240
-UN	3266	.	NODE_3_length_452535_cov_10.550749	97245	97245
-UN	3267	.	NODE_3_length_452535_cov_10.550749	97247	97247
-UN	3268	.	NODE_3_length_452535_cov_10.550749	97265	97265
-UN	3269	.	NODE_3_length_452535_cov_10.550749	97276	97276
-UN	3270	.	NODE_3_length_452535_cov_10.550749	97404	97404
-UN	3271	.	NODE_3_length_452535_cov_10.550749	97406	97406
-UN	3272	.	NODE_3_length_452535_cov_10.550749	97408	97408
-UN	3273	.	NODE_3_length_452535_cov_10.550749	97436	97436
-UN	3274	.	NODE_3_length_452535_cov_10.550749	97443	97444
-UN	3275	.	NODE_3_length_452535_cov_10.550749	98633	98633
-UN	3276	.	NODE_3_length_452535_cov_10.550749	98913	98948
-UN	3277	.	NODE_3_length_452535_cov_10.550749	98957	98957
-UN	3278	.	NODE_3_length_452535_cov_10.550749	98967	98967
-UN	3279	.	NODE_3_length_452535_cov_10.550749	98969	98972
-UN	3280	.	NODE_3_length_452535_cov_10.550749	99800	99800
-UN	3281	.	NODE_3_length_452535_cov_10.550749	99805	99805
-UN	3282	.	NODE_3_length_452535_cov_10.550749	99807	99807
-UN	3283	.	NODE_3_length_452535_cov_10.550749	99809	99812
-UN	3284	.	NODE_3_length_452535_cov_10.550749	99815	99816
-UN	3285	.	NODE_3_length_452535_cov_10.550749	99818	99831
-UN	3286	.	NODE_3_length_452535_cov_10.550749	99833	99834
-UN	3287	.	NODE_3_length_452535_cov_10.550749	99836	99838
-UN	3288	.	NODE_3_length_452535_cov_10.550749	99840	99840
-UN	3289	.	NODE_3_length_452535_cov_10.550749	99845	99845
-UN	3290	.	NODE_3_length_452535_cov_10.550749	99857	99857
-UN	3291	.	NODE_3_length_452535_cov_10.550749	100153	100153
-UN	3292	.	NODE_3_length_452535_cov_10.550749	100177	100177
-UN	3293	.	NODE_3_length_452535_cov_10.550749	100304	100304
-UN	3294	.	NODE_3_length_452535_cov_10.550749	100398	100448
-UN	3295	.	NODE_3_length_452535_cov_10.550749	100453	100453
-UN	3296	.	NODE_3_length_452535_cov_10.550749	100455	100457
-UN	3297	.	NODE_3_length_452535_cov_10.550749	101155	101155
-UN	3298	.	NODE_3_length_452535_cov_10.550749	103195	103196
-UN	3299	.	NODE_3_length_452535_cov_10.550749	103198	103198
-UN	3300	.	NODE_3_length_452535_cov_10.550749	103206	103206
-UN	3301	.	NODE_3_length_452535_cov_10.550749	103266	103266
-UN	3302	.	NODE_3_length_452535_cov_10.550749	103274	103318
-UN	3303	.	NODE_3_length_452535_cov_10.550749	103356	103375
-UN	3304	.	NODE_3_length_452535_cov_10.550749	103377	103377
-UN	3305	.	NODE_3_length_452535_cov_10.550749	103382	103450
-UN	3306	.	NODE_3_length_452535_cov_10.550749	103455	103455
-UN	3307	.	NODE_3_length_452535_cov_10.550749	104377	104377
-UN	3308	.	NODE_3_length_452535_cov_10.550749	104451	104581
-UN	3309	.	NODE_3_length_452535_cov_10.550749	106302	106302
-UN	3310	.	NODE_3_length_452535_cov_10.550749	106304	106328
-UN	3311	.	NODE_3_length_452535_cov_10.550749	106330	106345
-UN	3312	.	NODE_3_length_452535_cov_10.550749	106347	106352
-UN	3313	.	NODE_3_length_452535_cov_10.550749	106354	106370
-UN	3314	.	NODE_3_length_452535_cov_10.550749	106373	106376
-UN	3315	.	NODE_3_length_452535_cov_10.550749	106378	106378
-UN	3316	.	NODE_3_length_452535_cov_10.550749	106383	106389
-UN	3317	.	NODE_3_length_452535_cov_10.550749	106391	106394
-UN	3318	.	NODE_3_length_452535_cov_10.550749	106397	106398
-UN	3319	.	NODE_3_length_452535_cov_10.550749	106400	106400
-UN	3320	.	NODE_3_length_452535_cov_10.550749	106402	106403
-UN	3321	.	NODE_3_length_452535_cov_10.550749	106405	106405
-UN	3322	.	NODE_3_length_452535_cov_10.550749	106408	106408
-UN	3323	.	NODE_3_length_452535_cov_10.550749	106415	106416
-UN	3324	.	NODE_3_length_452535_cov_10.550749	106418	106418
-UN	3325	.	NODE_3_length_452535_cov_10.550749	106438	106439
-UN	3326	.	NODE_3_length_452535_cov_10.550749	106449	106449
-UN	3327	.	NODE_3_length_452535_cov_10.550749	106867	106867
-UN	3328	.	NODE_3_length_452535_cov_10.550749	106869	106875
-UN	3329	.	NODE_3_length_452535_cov_10.550749	106880	106880
-UN	3330	.	NODE_3_length_452535_cov_10.550749	106882	106882
-UN	3331	.	NODE_3_length_452535_cov_10.550749	107775	107775
-UN	3332	.	NODE_3_length_452535_cov_10.550749	107782	107782
-UN	3333	.	NODE_3_length_452535_cov_10.550749	107786	107790
-UN	3334	.	NODE_3_length_452535_cov_10.550749	107794	107794
-UN	3335	.	NODE_3_length_452535_cov_10.550749	107799	107799
-UN	3336	.	NODE_3_length_452535_cov_10.550749	107801	107801
-UN	3337	.	NODE_3_length_452535_cov_10.550749	107812	107812
-UN	3338	.	NODE_3_length_452535_cov_10.550749	107814	107815
-UN	3339	.	NODE_3_length_452535_cov_10.550749	107817	107817
-UN	3340	.	NODE_3_length_452535_cov_10.550749	107819	107819
-UN	3341	.	NODE_3_length_452535_cov_10.550749	107821	107822
-UN	3342	.	NODE_3_length_452535_cov_10.550749	108068	108070
-UN	3343	.	NODE_3_length_452535_cov_10.550749	108072	108142
-UN	3344	.	NODE_3_length_452535_cov_10.550749	108144	108191
-UN	3345	.	NODE_3_length_452535_cov_10.550749	108194	108195
-UN	3346	.	NODE_3_length_452535_cov_10.550749	108204	108205
-UN	3347	.	NODE_3_length_452535_cov_10.550749	108209	108209
-UN	3348	.	NODE_3_length_452535_cov_10.550749	108212	108213
-UN	3349	.	NODE_3_length_452535_cov_10.550749	108247	108247
-UN	3350	.	NODE_3_length_452535_cov_10.550749	108264	108264
-UN	3351	.	NODE_3_length_452535_cov_10.550749	108267	108267
-UN	3352	.	NODE_3_length_452535_cov_10.550749	108284	108284
-UN	3353	.	NODE_3_length_452535_cov_10.550749	108290	108290
-UN	3354	.	NODE_3_length_452535_cov_10.550749	108305	108305
-UN	3355	.	NODE_3_length_452535_cov_10.550749	108310	108310
-UN	3356	.	NODE_3_length_452535_cov_10.550749	108318	108318
-UN	3357	.	NODE_3_length_452535_cov_10.550749	108320	108380
-UN	3358	.	NODE_3_length_452535_cov_10.550749	108389	108389
-UN	3359	.	NODE_3_length_452535_cov_10.550749	108391	108392
-UN	3360	.	NODE_3_length_452535_cov_10.550749	108394	108484
-UN	3361	.	NODE_3_length_452535_cov_10.550749	108486	108487
-UN	3362	.	NODE_3_length_452535_cov_10.550749	108500	108500
-UN	3363	.	NODE_3_length_452535_cov_10.550749	108739	108739
-UN	3364	.	NODE_3_length_452535_cov_10.550749	108821	108833
-UN	3365	.	NODE_3_length_452535_cov_10.550749	108888	108915
-UN	3366	.	NODE_3_length_452535_cov_10.550749	108983	109038
-UN	3367	.	NODE_3_length_452535_cov_10.550749	109649	109756
-UN	3368	.	NODE_3_length_452535_cov_10.550749	109760	109760
-UN	3369	.	NODE_3_length_452535_cov_10.550749	109763	109763
-UN	3370	.	NODE_3_length_452535_cov_10.550749	109766	109809
-UN	3371	.	NODE_3_length_452535_cov_10.550749	109816	109816
-UN	3372	.	NODE_3_length_452535_cov_10.550749	109818	109818
-UN	3373	.	NODE_3_length_452535_cov_10.550749	110154	110154
-UN	3374	.	NODE_3_length_452535_cov_10.550749	110156	110156
-UN	3375	.	NODE_3_length_452535_cov_10.550749	110160	110163
-UN	3376	.	NODE_3_length_452535_cov_10.550749	110168	110168
-UN	3377	.	NODE_3_length_452535_cov_10.550749	110172	110172
-UN	3378	.	NODE_3_length_452535_cov_10.550749	110174	110174
-UN	3379	.	NODE_3_length_452535_cov_10.550749	110181	110182
-UN	3380	.	NODE_3_length_452535_cov_10.550749	110186	110186
-UN	3381	.	NODE_3_length_452535_cov_10.550749	110191	110194
-UN	3382	.	NODE_3_length_452535_cov_10.550749	110197	110197
-UN	3383	.	NODE_3_length_452535_cov_10.550749	111513	111513
-UN	3384	.	NODE_3_length_452535_cov_10.550749	111527	111527
-UN	3385	.	NODE_3_length_452535_cov_10.550749	111530	111530
-UN	3386	.	NODE_3_length_452535_cov_10.550749	111535	111535
-UN	3387	.	NODE_3_length_452535_cov_10.550749	111537	111537
-UN	3388	.	NODE_3_length_452535_cov_10.550749	111539	111540
-UN	3389	.	NODE_3_length_452535_cov_10.550749	111542	111542
-UN	3390	.	NODE_3_length_452535_cov_10.550749	111554	111555
-UN	3391	.	NODE_3_length_452535_cov_10.550749	111558	111559
-UN	3392	.	NODE_3_length_452535_cov_10.550749	111604	111604
-UN	3393	.	NODE_3_length_452535_cov_10.550749	112570	112570
-UN	3394	.	NODE_3_length_452535_cov_10.550749	112591	112591
-UN	3395	.	NODE_3_length_452535_cov_10.550749	112603	112603
-UN	3396	.	NODE_3_length_452535_cov_10.550749	112607	112609
-UN	3397	.	NODE_3_length_452535_cov_10.550749	112613	112613
-UN	3398	.	NODE_3_length_452535_cov_10.550749	112615	112616
-UN	3399	.	NODE_3_length_452535_cov_10.550749	112618	112675
-UN	3400	.	NODE_3_length_452535_cov_10.550749	112678	112678
-UN	3401	.	NODE_3_length_452535_cov_10.550749	112680	112730
-UN	3402	.	NODE_3_length_452535_cov_10.550749	112732	112732
-UN	3403	.	NODE_3_length_452535_cov_10.550749	113567	113567
-UN	3404	.	NODE_3_length_452535_cov_10.550749	113572	113595
-UN	3405	.	NODE_3_length_452535_cov_10.550749	113597	113607
-UN	3406	.	NODE_3_length_452535_cov_10.550749	113611	113611
-UN	3407	.	NODE_3_length_452535_cov_10.550749	113640	113643
-UN	3408	.	NODE_3_length_452535_cov_10.550749	113655	113655
-UN	3409	.	NODE_3_length_452535_cov_10.550749	113662	113663
-UN	3410	.	NODE_3_length_452535_cov_10.550749	113668	113668
-UN	3411	.	NODE_3_length_452535_cov_10.550749	113670	113670
-UN	3412	.	NODE_3_length_452535_cov_10.550749	113673	113674
-UN	3413	.	NODE_3_length_452535_cov_10.550749	113678	113680
-UN	3414	.	NODE_3_length_452535_cov_10.550749	113743	113743
-UN	3415	.	NODE_3_length_452535_cov_10.550749	113760	113839
-UN	3416	.	NODE_3_length_452535_cov_10.550749	113842	113843
-UN	3417	.	NODE_3_length_452535_cov_10.550749	113845	113845
-UN	3418	.	NODE_3_length_452535_cov_10.550749	113850	113851
-UN	3419	.	NODE_3_length_452535_cov_10.550749	113859	113859
-UN	3420	.	NODE_3_length_452535_cov_10.550749	113873	113875
-UN	3421	.	NODE_3_length_452535_cov_10.550749	113878	113878
-UN	3422	.	NODE_3_length_452535_cov_10.550749	113882	114013
-UN	3423	.	NODE_3_length_452535_cov_10.550749	114016	114018
-UN	3424	.	NODE_3_length_452535_cov_10.550749	114020	114022
-UN	3425	.	NODE_3_length_452535_cov_10.550749	114028	114031
-UN	3426	.	NODE_3_length_452535_cov_10.550749	114033	114038
-UN	3427	.	NODE_3_length_452535_cov_10.550749	114043	114045
-UN	3428	.	NODE_3_length_452535_cov_10.550749	114048	114055
-UN	3429	.	NODE_3_length_452535_cov_10.550749	114058	114060
-UN	3430	.	NODE_3_length_452535_cov_10.550749	114065	114065
-UN	3431	.	NODE_3_length_452535_cov_10.550749	114067	114067
-UN	3432	.	NODE_3_length_452535_cov_10.550749	114070	114070
-UN	3433	.	NODE_3_length_452535_cov_10.550749	114072	114074
-UN	3434	.	NODE_3_length_452535_cov_10.550749	114076	114085
-UN	3435	.	NODE_3_length_452535_cov_10.550749	114087	114089
-UN	3436	.	NODE_3_length_452535_cov_10.550749	114091	114091
-UN	3437	.	NODE_3_length_452535_cov_10.550749	114093	114094
-UN	3438	.	NODE_3_length_452535_cov_10.550749	114098	114099
-UN	3439	.	NODE_3_length_452535_cov_10.550749	114101	114101
-UN	3440	.	NODE_3_length_452535_cov_10.550749	114103	114103
-UN	3441	.	NODE_3_length_452535_cov_10.550749	115965	115965
-UN	3442	.	NODE_3_length_452535_cov_10.550749	115967	115967
-UN	3443	.	NODE_3_length_452535_cov_10.550749	115969	115969
-UN	3444	.	NODE_3_length_452535_cov_10.550749	115973	115973
-UN	3445	.	NODE_3_length_452535_cov_10.550749	115977	115977
-UN	3446	.	NODE_3_length_452535_cov_10.550749	115982	116069
-UN	3447	.	NODE_3_length_452535_cov_10.550749	116696	116696
-UN	3448	.	NODE_3_length_452535_cov_10.550749	116740	116740
-UN	3449	.	NODE_3_length_452535_cov_10.550749	116756	116761
-UN	3450	.	NODE_3_length_452535_cov_10.550749	120571	120571
-UN	3451	.	NODE_3_length_452535_cov_10.550749	154626	154626
-UN	3452	.	NODE_3_length_452535_cov_10.550749	154629	154629
-UN	3453	.	NODE_3_length_452535_cov_10.550749	154643	154643
-UN	3454	.	NODE_3_length_452535_cov_10.550749	154690	154690
-UN	3455	.	NODE_3_length_452535_cov_10.550749	154695	154695
-UN	3456	.	NODE_3_length_452535_cov_10.550749	154747	154747
-UN	3457	.	NODE_3_length_452535_cov_10.550749	154929	154929
-UN	3458	.	NODE_3_length_452535_cov_10.550749	154931	154931
-UN	3459	.	NODE_3_length_452535_cov_10.550749	154934	154935
-UN	3460	.	NODE_3_length_452535_cov_10.550749	154938	154940
-UN	3461	.	NODE_3_length_452535_cov_10.550749	154944	154944
-UN	3462	.	NODE_3_length_452535_cov_10.550749	154947	154950
-UN	3463	.	NODE_3_length_452535_cov_10.550749	154952	154953
-UN	3464	.	NODE_3_length_452535_cov_10.550749	155631	155631
-UN	3465	.	NODE_3_length_452535_cov_10.550749	155723	155858
-UN	3466	.	NODE_3_length_452535_cov_10.550749	156267	156267
-UN	3467	.	NODE_3_length_452535_cov_10.550749	157721	157721
-UN	3468	.	NODE_3_length_452535_cov_10.550749	157725	157725
-UN	3469	.	NODE_3_length_452535_cov_10.550749	157752	157752
-UN	3470	.	NODE_3_length_452535_cov_10.550749	157755	157760
-UN	3471	.	NODE_3_length_452535_cov_10.550749	157762	157765
-UN	3472	.	NODE_3_length_452535_cov_10.550749	157774	157774
-UN	3473	.	NODE_3_length_452535_cov_10.550749	157811	157811
-UN	3474	.	NODE_3_length_452535_cov_10.550749	157823	157838
-UN	3475	.	NODE_3_length_452535_cov_10.550749	157841	157841
-UN	3476	.	NODE_3_length_452535_cov_10.550749	160262	160262
-UN	3477	.	NODE_3_length_452535_cov_10.550749	160271	160271
-UN	3478	.	NODE_3_length_452535_cov_10.550749	160273	160273
-UN	3479	.	NODE_3_length_452535_cov_10.550749	160282	160318
-UN	3480	.	NODE_3_length_452535_cov_10.550749	160322	160323
-UN	3481	.	NODE_3_length_452535_cov_10.550749	163118	163118
-UN	3482	.	NODE_3_length_452535_cov_10.550749	163177	163177
-UN	3483	.	NODE_3_length_452535_cov_10.550749	163179	163179
-UN	3484	.	NODE_3_length_452535_cov_10.550749	164404	164428
-UN	3485	.	NODE_3_length_452535_cov_10.550749	166203	166203
-UN	3486	.	NODE_3_length_452535_cov_10.550749	166219	166219
-UN	3487	.	NODE_3_length_452535_cov_10.550749	166224	166224
-UN	3488	.	NODE_3_length_452535_cov_10.550749	168742	168742
-UN	3489	.	NODE_3_length_452535_cov_10.550749	168744	168744
-UN	3490	.	NODE_3_length_452535_cov_10.550749	168753	168753
-UN	3491	.	NODE_3_length_452535_cov_10.550749	168756	168761
-UN	3492	.	NODE_3_length_452535_cov_10.550749	168763	168773
-UN	3493	.	NODE_3_length_452535_cov_10.550749	168775	168777
-UN	3494	.	NODE_3_length_452535_cov_10.550749	168779	168779
-UN	3495	.	NODE_3_length_452535_cov_10.550749	168781	168800
-UN	3496	.	NODE_3_length_452535_cov_10.550749	168803	168807
-UN	3497	.	NODE_3_length_452535_cov_10.550749	168809	168811
-UN	3498	.	NODE_3_length_452535_cov_10.550749	168813	168827
-UN	3499	.	NODE_3_length_452535_cov_10.550749	168830	168830
-UN	3500	.	NODE_3_length_452535_cov_10.550749	168843	168843
-UN	3501	.	NODE_3_length_452535_cov_10.550749	170580	170582
-UN	3502	.	NODE_3_length_452535_cov_10.550749	170584	170584
-UN	3503	.	NODE_3_length_452535_cov_10.550749	170587	170592
-UN	3504	.	NODE_3_length_452535_cov_10.550749	170594	170601
-UN	3505	.	NODE_3_length_452535_cov_10.550749	170603	170610
-UN	3506	.	NODE_3_length_452535_cov_10.550749	170612	170612
-UN	3507	.	NODE_3_length_452535_cov_10.550749	170614	170629
-UN	3508	.	NODE_3_length_452535_cov_10.550749	170631	170632
-UN	3509	.	NODE_3_length_452535_cov_10.550749	170634	170635
-UN	3510	.	NODE_3_length_452535_cov_10.550749	170637	170637
-UN	3511	.	NODE_3_length_452535_cov_10.550749	170639	170639
-UN	3512	.	NODE_3_length_452535_cov_10.550749	170643	170647
-UN	3513	.	NODE_3_length_452535_cov_10.550749	170651	170652
-UN	3514	.	NODE_3_length_452535_cov_10.550749	170654	170656
-UN	3515	.	NODE_3_length_452535_cov_10.550749	170658	170658
-UN	3516	.	NODE_3_length_452535_cov_10.550749	170742	170742
-UN	3517	.	NODE_3_length_452535_cov_10.550749	170757	170757
-UN	3518	.	NODE_3_length_452535_cov_10.550749	170785	170785
-UN	3519	.	NODE_3_length_452535_cov_10.550749	170871	170871
-UN	3520	.	NODE_3_length_452535_cov_10.550749	170916	170916
-UN	3521	.	NODE_3_length_452535_cov_10.550749	170934	170934
-UN	3522	.	NODE_3_length_452535_cov_10.550749	170980	170984
-UN	3523	.	NODE_3_length_452535_cov_10.550749	170986	170986
-UN	3524	.	NODE_3_length_452535_cov_10.550749	170992	171007
-UN	3525	.	NODE_3_length_452535_cov_10.550749	171086	171086
-UN	3526	.	NODE_3_length_452535_cov_10.550749	171098	171098
-UN	3527	.	NODE_3_length_452535_cov_10.550749	171727	171727
-UN	3528	.	NODE_3_length_452535_cov_10.550749	171766	171767
-UN	3529	.	NODE_3_length_452535_cov_10.550749	171769	171769
-UN	3530	.	NODE_3_length_452535_cov_10.550749	171773	171774
-UN	3531	.	NODE_3_length_452535_cov_10.550749	171776	171778
-UN	3532	.	NODE_3_length_452535_cov_10.550749	171780	171782
-UN	3533	.	NODE_3_length_452535_cov_10.550749	171784	171784
-UN	3534	.	NODE_3_length_452535_cov_10.550749	171787	171788
-UN	3535	.	NODE_3_length_452535_cov_10.550749	171791	171791
-UN	3536	.	NODE_3_length_452535_cov_10.550749	172169	172169
-UN	3537	.	NODE_3_length_452535_cov_10.550749	172263	172263
-UN	3538	.	NODE_3_length_452535_cov_10.550749	172643	172643
-UN	3539	.	NODE_3_length_452535_cov_10.550749	184733	184733
-UN	3540	.	NODE_3_length_452535_cov_10.550749	184736	184736
-UN	3541	.	NODE_3_length_452535_cov_10.550749	184743	184743
-UN	3542	.	NODE_3_length_452535_cov_10.550749	188695	188708
-UN	3543	.	NODE_3_length_452535_cov_10.550749	189772	189772
-UN	3544	.	NODE_3_length_452535_cov_10.550749	189781	189781
-UN	3545	.	NODE_3_length_452535_cov_10.550749	193995	193995
-UN	3546	.	NODE_3_length_452535_cov_10.550749	196590	196590
-UN	3547	.	NODE_3_length_452535_cov_10.550749	196774	196774
-UN	3548	.	NODE_3_length_452535_cov_10.550749	196858	196864
-UN	3549	.	NODE_3_length_452535_cov_10.550749	196868	196869
-UN	3550	.	NODE_3_length_452535_cov_10.550749	202800	202800
-UN	3551	.	NODE_3_length_452535_cov_10.550749	202811	202812
-UN	3552	.	NODE_3_length_452535_cov_10.550749	202818	202818
-UN	3553	.	NODE_3_length_452535_cov_10.550749	202826	202826
-UN	3554	.	NODE_3_length_452535_cov_10.550749	202841	202841
-UN	3555	.	NODE_3_length_452535_cov_10.550749	202844	202844
-UN	3556	.	NODE_3_length_452535_cov_10.550749	214346	214346
-UN	3557	.	NODE_3_length_452535_cov_10.550749	214379	214386
-UN	3558	.	NODE_3_length_452535_cov_10.550749	214388	214397
-UN	3559	.	NODE_3_length_452535_cov_10.550749	214402	214402
-UN	3560	.	NODE_3_length_452535_cov_10.550749	216665	216665
-UN	3561	.	NODE_3_length_452535_cov_10.550749	216668	216668
-UN	3562	.	NODE_3_length_452535_cov_10.550749	216670	216673
-UN	3563	.	NODE_3_length_452535_cov_10.550749	216676	216677
-UN	3564	.	NODE_3_length_452535_cov_10.550749	216681	216681
-UN	3565	.	NODE_3_length_452535_cov_10.550749	216685	216686
-UN	3566	.	NODE_3_length_452535_cov_10.550749	216691	216691
-UN	3567	.	NODE_3_length_452535_cov_10.550749	216697	216697
-UN	3568	.	NODE_3_length_452535_cov_10.550749	216699	216702
-UN	3569	.	NODE_3_length_452535_cov_10.550749	216707	216707
-UN	3570	.	NODE_3_length_452535_cov_10.550749	216713	216713
-UN	3571	.	NODE_3_length_452535_cov_10.550749	216716	216716
-UN	3572	.	NODE_3_length_452535_cov_10.550749	216718	216718
-UN	3573	.	NODE_3_length_452535_cov_10.550749	217717	217717
-UN	3574	.	NODE_3_length_452535_cov_10.550749	217733	217733
-UN	3575	.	NODE_3_length_452535_cov_10.550749	217741	217741
-UN	3576	.	NODE_3_length_452535_cov_10.550749	217745	217745
-UN	3577	.	NODE_3_length_452535_cov_10.550749	217763	217764
-UN	3578	.	NODE_3_length_452535_cov_10.550749	217766	217766
-UN	3579	.	NODE_3_length_452535_cov_10.550749	218275	218284
-UN	3580	.	NODE_3_length_452535_cov_10.550749	218288	218291
-UN	3581	.	NODE_3_length_452535_cov_10.550749	218293	218293
-UN	3582	.	NODE_3_length_452535_cov_10.550749	218297	218297
-UN	3583	.	NODE_3_length_452535_cov_10.550749	218299	218299
-UN	3584	.	NODE_3_length_452535_cov_10.550749	218305	218305
-UN	3585	.	NODE_3_length_452535_cov_10.550749	218749	218751
-UN	3586	.	NODE_3_length_452535_cov_10.550749	218753	218753
-UN	3587	.	NODE_3_length_452535_cov_10.550749	218755	218755
-UN	3588	.	NODE_3_length_452535_cov_10.550749	218757	218758
-UN	3589	.	NODE_3_length_452535_cov_10.550749	218763	218763
-UN	3590	.	NODE_3_length_452535_cov_10.550749	218765	218769
-UN	3591	.	NODE_3_length_452535_cov_10.550749	218772	218826
-UN	3592	.	NODE_3_length_452535_cov_10.550749	218828	218831
-UN	3593	.	NODE_3_length_452535_cov_10.550749	218834	218885
-UN	3594	.	NODE_3_length_452535_cov_10.550749	218887	218887
-UN	3595	.	NODE_3_length_452535_cov_10.550749	218889	218891
-UN	3596	.	NODE_3_length_452535_cov_10.550749	218894	218894
-UN	3597	.	NODE_3_length_452535_cov_10.550749	218900	218900
-UN	3598	.	NODE_3_length_452535_cov_10.550749	218904	218904
-UN	3599	.	NODE_3_length_452535_cov_10.550749	220717	220724
-UN	3600	.	NODE_3_length_452535_cov_10.550749	220726	220730
-UN	3601	.	NODE_3_length_452535_cov_10.550749	220732	220763
-UN	3602	.	NODE_3_length_452535_cov_10.550749	220765	220774
-UN	3603	.	NODE_3_length_452535_cov_10.550749	220776	220790
-UN	3604	.	NODE_3_length_452535_cov_10.550749	220793	220799
-UN	3605	.	NODE_3_length_452535_cov_10.550749	220802	220803
-UN	3606	.	NODE_3_length_452535_cov_10.550749	220832	220832
-UN	3607	.	NODE_3_length_452535_cov_10.550749	220834	220834
-UN	3608	.	NODE_3_length_452535_cov_10.550749	220836	220836
-UN	3609	.	NODE_3_length_452535_cov_10.550749	222855	222855
-UN	3610	.	NODE_3_length_452535_cov_10.550749	223596	223596
-UN	3611	.	NODE_3_length_452535_cov_10.550749	223612	223612
-UN	3612	.	NODE_3_length_452535_cov_10.550749	223630	223655
-UN	3613	.	NODE_3_length_452535_cov_10.550749	223657	223659
-UN	3614	.	NODE_3_length_452535_cov_10.550749	223663	223667
-UN	3615	.	NODE_3_length_452535_cov_10.550749	223799	223820
-UN	3616	.	NODE_3_length_452535_cov_10.550749	223849	223854
-UN	3617	.	NODE_3_length_452535_cov_10.550749	236879	236879
-UN	3618	.	NODE_3_length_452535_cov_10.550749	240426	240427
-UN	3619	.	NODE_3_length_452535_cov_10.550749	240429	240429
-UN	3620	.	NODE_3_length_452535_cov_10.550749	240434	240434
-UN	3621	.	NODE_3_length_452535_cov_10.550749	240438	240438
-UN	3622	.	NODE_3_length_452535_cov_10.550749	240440	240441
-UN	3623	.	NODE_3_length_452535_cov_10.550749	240453	240453
-UN	3624	.	NODE_3_length_452535_cov_10.550749	240456	240456
-UN	3625	.	NODE_3_length_452535_cov_10.550749	240461	240461
-UN	3626	.	NODE_3_length_452535_cov_10.550749	240479	240479
-UN	3627	.	NODE_3_length_452535_cov_10.550749	240911	240911
-UN	3628	.	NODE_3_length_452535_cov_10.550749	240913	240913
-UN	3629	.	NODE_3_length_452535_cov_10.550749	240919	240919
-UN	3630	.	NODE_3_length_452535_cov_10.550749	240923	240925
-UN	3631	.	NODE_3_length_452535_cov_10.550749	240927	240927
-UN	3632	.	NODE_3_length_452535_cov_10.550749	240930	240931
-UN	3633	.	NODE_3_length_452535_cov_10.550749	240933	240934
-UN	3634	.	NODE_3_length_452535_cov_10.550749	245344	245345
-UN	3635	.	NODE_3_length_452535_cov_10.550749	245347	245347
-UN	3636	.	NODE_3_length_452535_cov_10.550749	245349	245350
-UN	3637	.	NODE_3_length_452535_cov_10.550749	245352	245352
-UN	3638	.	NODE_3_length_452535_cov_10.550749	245356	245405
-UN	3639	.	NODE_3_length_452535_cov_10.550749	247712	247712
-UN	3640	.	NODE_3_length_452535_cov_10.550749	247720	247720
-UN	3641	.	NODE_3_length_452535_cov_10.550749	247759	247759
-UN	3642	.	NODE_3_length_452535_cov_10.550749	247775	247775
-UN	3643	.	NODE_3_length_452535_cov_10.550749	247794	247794
-UN	3644	.	NODE_3_length_452535_cov_10.550749	249791	249791
-UN	3645	.	NODE_3_length_452535_cov_10.550749	249793	249812
-UN	3646	.	NODE_3_length_452535_cov_10.550749	249845	249845
-UN	3647	.	NODE_3_length_452535_cov_10.550749	252560	252576
-UN	3648	.	NODE_3_length_452535_cov_10.550749	253797	253802
-UN	3649	.	NODE_3_length_452535_cov_10.550749	261423	261444
-UN	3650	.	NODE_3_length_452535_cov_10.550749	261454	261454
-UN	3651	.	NODE_3_length_452535_cov_10.550749	261471	261471
-UN	3652	.	NODE_3_length_452535_cov_10.550749	261491	261508
-UN	3653	.	NODE_3_length_452535_cov_10.550749	261514	261514
-UN	3654	.	NODE_3_length_452535_cov_10.550749	264726	264728
-UN	3655	.	NODE_3_length_452535_cov_10.550749	264739	264747
-UN	3656	.	NODE_3_length_452535_cov_10.550749	264750	264751
-UN	3657	.	NODE_3_length_452535_cov_10.550749	264907	264907
-UN	3658	.	NODE_3_length_452535_cov_10.550749	264960	264960
-UN	3659	.	NODE_3_length_452535_cov_10.550749	264975	264978
-UN	3660	.	NODE_3_length_452535_cov_10.550749	264980	264981
-UN	3661	.	NODE_3_length_452535_cov_10.550749	265558	265558
-UN	3662	.	NODE_3_length_452535_cov_10.550749	266176	266176
-UN	3663	.	NODE_3_length_452535_cov_10.550749	266187	266188
-UN	3664	.	NODE_3_length_452535_cov_10.550749	266212	266212
-UN	3665	.	NODE_3_length_452535_cov_10.550749	266238	266238
-UN	3666	.	NODE_3_length_452535_cov_10.550749	266242	266242
-UN	3667	.	NODE_3_length_452535_cov_10.550749	266244	266245
-UN	3668	.	NODE_3_length_452535_cov_10.550749	266250	266252
-UN	3669	.	NODE_3_length_452535_cov_10.550749	266256	266256
-UN	3670	.	NODE_3_length_452535_cov_10.550749	266260	266260
-UN	3671	.	NODE_3_length_452535_cov_10.550749	266263	266265
-UN	3672	.	NODE_3_length_452535_cov_10.550749	270833	270859
-UN	3673	.	NODE_3_length_452535_cov_10.550749	270861	270863
-UN	3674	.	NODE_3_length_452535_cov_10.550749	270867	270867
-UN	3675	.	NODE_3_length_452535_cov_10.550749	270874	270874
-UN	3676	.	NODE_3_length_452535_cov_10.550749	271389	271389
-UN	3677	.	NODE_3_length_452535_cov_10.550749	271468	271468
-UN	3678	.	NODE_3_length_452535_cov_10.550749	271474	271474
-UN	3679	.	NODE_3_length_452535_cov_10.550749	271535	271535
-UN	3680	.	NODE_3_length_452535_cov_10.550749	271556	271556
-UN	3681	.	NODE_3_length_452535_cov_10.550749	273729	273729
-UN	3682	.	NODE_3_length_452535_cov_10.550749	273737	273737
-UN	3683	.	NODE_3_length_452535_cov_10.550749	273751	273751
-UN	3684	.	NODE_3_length_452535_cov_10.550749	285008	285008
-UN	3685	.	NODE_3_length_452535_cov_10.550749	285358	285358
-UN	3686	.	NODE_3_length_452535_cov_10.550749	285375	285375
-UN	3687	.	NODE_3_length_452535_cov_10.550749	285382	285382
-UN	3688	.	NODE_3_length_452535_cov_10.550749	285402	285402
-UN	3689	.	NODE_3_length_452535_cov_10.550749	293269	293269
-UN	3690	.	NODE_3_length_452535_cov_10.550749	293291	293302
-UN	3691	.	NODE_3_length_452535_cov_10.550749	293309	293342
-UN	3692	.	NODE_3_length_452535_cov_10.550749	294155	294155
-UN	3693	.	NODE_3_length_452535_cov_10.550749	294753	294754
-UN	3694	.	NODE_3_length_452535_cov_10.550749	294761	294761
-UN	3695	.	NODE_3_length_452535_cov_10.550749	294764	294764
-UN	3696	.	NODE_3_length_452535_cov_10.550749	294768	294768
-UN	3697	.	NODE_3_length_452535_cov_10.550749	294771	294772
-UN	3698	.	NODE_3_length_452535_cov_10.550749	294794	294794
-UN	3699	.	NODE_3_length_452535_cov_10.550749	294852	294852
-UN	3700	.	NODE_3_length_452535_cov_10.550749	294864	294864
-UN	3701	.	NODE_3_length_452535_cov_10.550749	294871	294914
-UN	3702	.	NODE_3_length_452535_cov_10.550749	296594	296595
-UN	3703	.	NODE_3_length_452535_cov_10.550749	296598	296656
-UN	3704	.	NODE_3_length_452535_cov_10.550749	297272	297272
-UN	3705	.	NODE_3_length_452535_cov_10.550749	297377	297377
-UN	3706	.	NODE_3_length_452535_cov_10.550749	297380	297381
-UN	3707	.	NODE_3_length_452535_cov_10.550749	297384	297384
-UN	3708	.	NODE_3_length_452535_cov_10.550749	297396	297396
-UN	3709	.	NODE_3_length_452535_cov_10.550749	297398	297398
-UN	3710	.	NODE_3_length_452535_cov_10.550749	297407	297407
-UN	3711	.	NODE_3_length_452535_cov_10.550749	297414	297414
-UN	3712	.	NODE_3_length_452535_cov_10.550749	297418	297418
-UN	3713	.	NODE_3_length_452535_cov_10.550749	297423	297424
-UN	3714	.	NODE_3_length_452535_cov_10.550749	297429	297429
-UN	3715	.	NODE_3_length_452535_cov_10.550749	297434	297434
-UN	3716	.	NODE_3_length_452535_cov_10.550749	319770	319770
-UN	3717	.	NODE_3_length_452535_cov_10.550749	319783	319853
-UN	3718	.	NODE_3_length_452535_cov_10.550749	319862	319862
-UN	3719	.	NODE_3_length_452535_cov_10.550749	332924	332924
-UN	3720	.	NODE_3_length_452535_cov_10.550749	332935	332939
-UN	3721	.	NODE_3_length_452535_cov_10.550749	332943	332943
-UN	3722	.	NODE_3_length_452535_cov_10.550749	332954	332955
-UN	3723	.	NODE_3_length_452535_cov_10.550749	332957	332960
-UN	3724	.	NODE_3_length_452535_cov_10.550749	332962	332962
-UN	3725	.	NODE_3_length_452535_cov_10.550749	332964	332969
-UN	3726	.	NODE_3_length_452535_cov_10.550749	332971	332973
-UN	3727	.	NODE_3_length_452535_cov_10.550749	332976	333041
-UN	3728	.	NODE_3_length_452535_cov_10.550749	341795	341795
-UN	3729	.	NODE_3_length_452535_cov_10.550749	341868	341868
-UN	3730	.	NODE_3_length_452535_cov_10.550749	343588	343588
-UN	3731	.	NODE_3_length_452535_cov_10.550749	344824	344824
-UN	3732	.	NODE_3_length_452535_cov_10.550749	344827	344828
-UN	3733	.	NODE_3_length_452535_cov_10.550749	344830	344830
-UN	3734	.	NODE_3_length_452535_cov_10.550749	344838	344843
-UN	3735	.	NODE_3_length_452535_cov_10.550749	344846	344847
-UN	3736	.	NODE_3_length_452535_cov_10.550749	344850	344851
-UN	3737	.	NODE_3_length_452535_cov_10.550749	344853	344854
-UN	3738	.	NODE_3_length_452535_cov_10.550749	344859	344876
-UN	3739	.	NODE_3_length_452535_cov_10.550749	344914	344914
-UN	3740	.	NODE_3_length_452535_cov_10.550749	346414	346414
-UN	3741	.	NODE_3_length_452535_cov_10.550749	346644	346644
-UN	3742	.	NODE_3_length_452535_cov_10.550749	346649	346650
-UN	3743	.	NODE_3_length_452535_cov_10.550749	346652	346652
-UN	3744	.	NODE_3_length_452535_cov_10.550749	346654	346657
-UN	3745	.	NODE_3_length_452535_cov_10.550749	346659	346668
-UN	3746	.	NODE_3_length_452535_cov_10.550749	348157	348157
-UN	3747	.	NODE_3_length_452535_cov_10.550749	348162	348162
-UN	3748	.	NODE_3_length_452535_cov_10.550749	348172	348173
-UN	3749	.	NODE_3_length_452535_cov_10.550749	348180	348180
-UN	3750	.	NODE_3_length_452535_cov_10.550749	348187	348226
-UN	3751	.	NODE_3_length_452535_cov_10.550749	348228	348228
-UN	3752	.	NODE_3_length_452535_cov_10.550749	348234	348235
-UN	3753	.	NODE_3_length_452535_cov_10.550749	348244	348244
-UN	3754	.	NODE_3_length_452535_cov_10.550749	348253	348253
-UN	3755	.	NODE_3_length_452535_cov_10.550749	348255	348255
-UN	3756	.	NODE_3_length_452535_cov_10.550749	348258	348258
-UN	3757	.	NODE_3_length_452535_cov_10.550749	348260	348260
-UN	3758	.	NODE_3_length_452535_cov_10.550749	348824	348862
-UN	3759	.	NODE_3_length_452535_cov_10.550749	349238	349251
-UN	3760	.	NODE_3_length_452535_cov_10.550749	349253	349279
-UN	3761	.	NODE_3_length_452535_cov_10.550749	349282	349283
-UN	3762	.	NODE_3_length_452535_cov_10.550749	349285	349285
-UN	3763	.	NODE_3_length_452535_cov_10.550749	349289	349289
-UN	3764	.	NODE_3_length_452535_cov_10.550749	349307	349307
-UN	3765	.	NODE_3_length_452535_cov_10.550749	351970	352029
-UN	3766	.	NODE_3_length_452535_cov_10.550749	353926	353926
-UN	3767	.	NODE_3_length_452535_cov_10.550749	354078	354078
-UN	3768	.	NODE_3_length_452535_cov_10.550749	354105	354105
-UN	3769	.	NODE_3_length_452535_cov_10.550749	355174	355174
-UN	3770	.	NODE_3_length_452535_cov_10.550749	355179	355180
-UN	3771	.	NODE_3_length_452535_cov_10.550749	355182	355182
-UN	3772	.	NODE_3_length_452535_cov_10.550749	355188	355207
-UN	3773	.	NODE_3_length_452535_cov_10.550749	355218	355218
-UN	3774	.	NODE_3_length_452535_cov_10.550749	355220	355221
-UN	3775	.	NODE_3_length_452535_cov_10.550749	355235	355235
-UN	3776	.	NODE_3_length_452535_cov_10.550749	355238	355240
-UN	3777	.	NODE_3_length_452535_cov_10.550749	355242	355242
-UN	3778	.	NODE_3_length_452535_cov_10.550749	355248	355249
-UN	3779	.	NODE_3_length_452535_cov_10.550749	355255	355255
-UN	3780	.	NODE_3_length_452535_cov_10.550749	355260	355260
-UN	3781	.	NODE_3_length_452535_cov_10.550749	355266	355266
-UN	3782	.	NODE_3_length_452535_cov_10.550749	355271	355271
-UN	3783	.	NODE_3_length_452535_cov_10.550749	355275	355275
-UN	3784	.	NODE_3_length_452535_cov_10.550749	355283	355283
-UN	3785	.	NODE_3_length_452535_cov_10.550749	355448	355449
-UN	3786	.	NODE_3_length_452535_cov_10.550749	355454	355458
-UN	3787	.	NODE_3_length_452535_cov_10.550749	355460	355467
-UN	3788	.	NODE_3_length_452535_cov_10.550749	355470	355471
-UN	3789	.	NODE_3_length_452535_cov_10.550749	355480	355480
-UN	3790	.	NODE_3_length_452535_cov_10.550749	355514	355514
-UN	3791	.	NODE_3_length_452535_cov_10.550749	355519	355519
-UN	3792	.	NODE_3_length_452535_cov_10.550749	355523	355525
-UN	3793	.	NODE_3_length_452535_cov_10.550749	355527	355530
-UN	3794	.	NODE_3_length_452535_cov_10.550749	355533	355533
-UN	3795	.	NODE_3_length_452535_cov_10.550749	355537	355541
-UN	3796	.	NODE_3_length_452535_cov_10.550749	355587	355587
-UN	3797	.	NODE_3_length_452535_cov_10.550749	356140	356142
-UN	3798	.	NODE_3_length_452535_cov_10.550749	356148	356148
-UN	3799	.	NODE_3_length_452535_cov_10.550749	357555	357555
-UN	3800	.	NODE_3_length_452535_cov_10.550749	360185	360211
-UN	3801	.	NODE_3_length_452535_cov_10.550749	360216	360216
-UN	3802	.	NODE_3_length_452535_cov_10.550749	360218	360221
-UN	3803	.	NODE_3_length_452535_cov_10.550749	360223	360223
-UN	3804	.	NODE_3_length_452535_cov_10.550749	360225	360275
-UN	3805	.	NODE_3_length_452535_cov_10.550749	362130	362131
-UN	3806	.	NODE_3_length_452535_cov_10.550749	362140	362140
-UN	3807	.	NODE_3_length_452535_cov_10.550749	362144	362144
-UN	3808	.	NODE_3_length_452535_cov_10.550749	362147	362149
-UN	3809	.	NODE_3_length_452535_cov_10.550749	362154	362159
-UN	3810	.	NODE_3_length_452535_cov_10.550749	362161	362164
-UN	3811	.	NODE_3_length_452535_cov_10.550749	362166	362169
-UN	3812	.	NODE_3_length_452535_cov_10.550749	371515	371515
-UN	3813	.	NODE_3_length_452535_cov_10.550749	375369	375371
-UN	3814	.	NODE_3_length_452535_cov_10.550749	375374	375388
-UN	3815	.	NODE_3_length_452535_cov_10.550749	375393	375394
-UN	3816	.	NODE_3_length_452535_cov_10.550749	375396	375396
-UN	3817	.	NODE_3_length_452535_cov_10.550749	375401	375402
-UN	3818	.	NODE_3_length_452535_cov_10.550749	375404	375475
-UN	3819	.	NODE_3_length_452535_cov_10.550749	376960	376960
-UN	3820	.	NODE_3_length_452535_cov_10.550749	377157	377157
-UN	3821	.	NODE_3_length_452535_cov_10.550749	377159	377161
-UN	3822	.	NODE_3_length_452535_cov_10.550749	377171	377218
-UN	3823	.	NODE_3_length_452535_cov_10.550749	383911	384057
-UN	3824	.	NODE_3_length_452535_cov_10.550749	384256	384262
-UN	3825	.	NODE_3_length_452535_cov_10.550749	384264	384264
-UN	3826	.	NODE_3_length_452535_cov_10.550749	384266	384273
-UN	3827	.	NODE_3_length_452535_cov_10.550749	384279	384279
-UN	3828	.	NODE_3_length_452535_cov_10.550749	384281	384281
-UN	3829	.	NODE_3_length_452535_cov_10.550749	384284	384284
-UN	3830	.	NODE_3_length_452535_cov_10.550749	384747	384747
-UN	3831	.	NODE_3_length_452535_cov_10.550749	385421	385421
-UN	3832	.	NODE_3_length_452535_cov_10.550749	385427	385428
-UN	3833	.	NODE_3_length_452535_cov_10.550749	385431	385443
-UN	3834	.	NODE_3_length_452535_cov_10.550749	385445	385460
-UN	3835	.	NODE_3_length_452535_cov_10.550749	385542	385543
-UN	3836	.	NODE_3_length_452535_cov_10.550749	386022	386022
-UN	3837	.	NODE_3_length_452535_cov_10.550749	386034	386034
-UN	3838	.	NODE_3_length_452535_cov_10.550749	386072	386072
-UN	3839	.	NODE_3_length_452535_cov_10.550749	386087	386090
-UN	3840	.	NODE_3_length_452535_cov_10.550749	386092	386092
-UN	3841	.	NODE_3_length_452535_cov_10.550749	386096	386096
-UN	3842	.	NODE_3_length_452535_cov_10.550749	386098	386100
-UN	3843	.	NODE_3_length_452535_cov_10.550749	386102	386102
-UN	3844	.	NODE_3_length_452535_cov_10.550749	386106	386112
-UN	3845	.	NODE_3_length_452535_cov_10.550749	386116	386116
-UN	3846	.	NODE_3_length_452535_cov_10.550749	386118	386118
-UN	3847	.	NODE_3_length_452535_cov_10.550749	386120	386121
-UN	3848	.	NODE_3_length_452535_cov_10.550749	386123	386125
-UN	3849	.	NODE_3_length_452535_cov_10.550749	386127	386127
-UN	3850	.	NODE_3_length_452535_cov_10.550749	386129	386131
-UN	3851	.	NODE_3_length_452535_cov_10.550749	386134	386136
-UN	3852	.	NODE_3_length_452535_cov_10.550749	386138	386138
-UN	3853	.	NODE_3_length_452535_cov_10.550749	386141	386141
-UN	3854	.	NODE_3_length_452535_cov_10.550749	386151	386151
-UN	3855	.	NODE_3_length_452535_cov_10.550749	386156	386156
-UN	3856	.	NODE_3_length_452535_cov_10.550749	386169	386171
-UN	3857	.	NODE_3_length_452535_cov_10.550749	386180	386192
-UN	3858	.	NODE_3_length_452535_cov_10.550749	393119	393119
-UN	3859	.	NODE_3_length_452535_cov_10.550749	393121	393121
-UN	3860	.	NODE_3_length_452535_cov_10.550749	395874	395874
-UN	3861	.	NODE_3_length_452535_cov_10.550749	395910	395911
-UN	3862	.	NODE_3_length_452535_cov_10.550749	397154	397154
-UN	3863	.	NODE_3_length_452535_cov_10.550749	397178	397178
-UN	3864	.	NODE_3_length_452535_cov_10.550749	397182	397188
-UN	3865	.	NODE_3_length_452535_cov_10.550749	397190	397194
-UN	3866	.	NODE_3_length_452535_cov_10.550749	397196	397203
-UN	3867	.	NODE_3_length_452535_cov_10.550749	397205	397210
-UN	3868	.	NODE_3_length_452535_cov_10.550749	397212	397212
-UN	3869	.	NODE_3_length_452535_cov_10.550749	397214	397216
-UN	3870	.	NODE_3_length_452535_cov_10.550749	397219	397222
-UN	3871	.	NODE_3_length_452535_cov_10.550749	399574	399575
-UN	3872	.	NODE_3_length_452535_cov_10.550749	399584	399629
-UN	3873	.	NODE_3_length_452535_cov_10.550749	404344	404345
-UN	3874	.	NODE_3_length_452535_cov_10.550749	404368	404368
-UN	3875	.	NODE_3_length_452535_cov_10.550749	404370	404370
-UN	3876	.	NODE_3_length_452535_cov_10.550749	404372	404372
-UN	3877	.	NODE_3_length_452535_cov_10.550749	404374	404374
-UN	3878	.	NODE_3_length_452535_cov_10.550749	404376	404383
-UN	3879	.	NODE_3_length_452535_cov_10.550749	404697	404704
-UN	3880	.	NODE_3_length_452535_cov_10.550749	404706	404708
-UN	3881	.	NODE_3_length_452535_cov_10.550749	404710	404710
-UN	3882	.	NODE_3_length_452535_cov_10.550749	404712	404716
-UN	3883	.	NODE_3_length_452535_cov_10.550749	413146	413148
-UN	3884	.	NODE_3_length_452535_cov_10.550749	413155	413155
-UN	3885	.	NODE_3_length_452535_cov_10.550749	413165	413166
-UN	3886	.	NODE_3_length_452535_cov_10.550749	413173	413173
-UN	3887	.	NODE_3_length_452535_cov_10.550749	415901	415916
-UN	3888	.	NODE_3_length_452535_cov_10.550749	415918	415919
-UN	3889	.	NODE_3_length_452535_cov_10.550749	415921	415921
-UN	3890	.	NODE_3_length_452535_cov_10.550749	415925	415926
-UN	3891	.	NODE_3_length_452535_cov_10.550749	415928	415935
-UN	3892	.	NODE_3_length_452535_cov_10.550749	416572	416572
-UN	3893	.	NODE_3_length_452535_cov_10.550749	419189	419209
-UN	3894	.	NODE_3_length_452535_cov_10.550749	422121	422204
-UN	3895	.	NODE_3_length_452535_cov_10.550749	429180	429217
-UN	3896	.	NODE_3_length_452535_cov_10.550749	429268	429269
-UN	3897	.	NODE_3_length_452535_cov_10.550749	429273	429273
-UN	3898	.	NODE_3_length_452535_cov_10.550749	440796	440797
-UN	3899	.	NODE_3_length_452535_cov_10.550749	440799	440800
-UN	3900	.	NODE_3_length_452535_cov_10.550749	440802	440804
-UN	3901	.	NODE_3_length_452535_cov_10.550749	440806	440806
-UN	3902	.	NODE_3_length_452535_cov_10.550749	440809	440809
-UN	3903	.	NODE_3_length_452535_cov_10.550749	440812	440812
-UN	3904	.	NODE_3_length_452535_cov_10.550749	443902	443919
-UN	3905	.	NODE_3_length_452535_cov_10.550749	443925	443954
-UN	3906	.	NODE_3_length_452535_cov_10.550749	443956	443957
-UN	3907	.	NODE_3_length_452535_cov_10.550749	443961	443961
-UN	3908	.	NODE_3_length_452535_cov_10.550749	443963	443964
-UN	3909	.	NODE_3_length_452535_cov_10.550749	443966	443967
-UN	3910	.	NODE_3_length_452535_cov_10.550749	443969	443969
-UN	3911	.	NODE_3_length_452535_cov_10.550749	443972	443972
-UN	3912	.	NODE_3_length_452535_cov_10.550749	443975	443975
-UN	3913	.	NODE_3_length_452535_cov_10.550749	443977	443979
-UN	3914	.	NODE_3_length_452535_cov_10.550749	443981	443982
-UN	3915	.	NODE_3_length_452535_cov_10.550749	443988	443990
-UN	3916	.	NODE_3_length_452535_cov_10.550749	446198	446198
-UN	3917	.	NODE_3_length_452535_cov_10.550749	448447	448470
-UN	3918	.	NODE_3_length_452535_cov_10.550749	452363	452363
-UN	3919	.	NODE_3_length_452535_cov_10.550749	452366	452366
-UN	3920	.	NODE_3_length_452535_cov_10.550749	452369	452535
-UN	3921	.	NODE_40_length_5854_cov_10.182469	1	61
-UN	3922	.	NODE_40_length_5854_cov_10.182469	3632	3645
-UN	3923	.	NODE_40_length_5854_cov_10.182469	3652	3652
-UN	3924	.	NODE_40_length_5854_cov_10.182469	3658	3658
-UN	3925	.	NODE_40_length_5854_cov_10.182469	3665	3665
-UN	3926	.	NODE_40_length_5854_cov_10.182469	3668	3668
-UN	3927	.	NODE_40_length_5854_cov_10.182469	3717	3720
-UN	3928	.	NODE_40_length_5854_cov_10.182469	3724	3738
-UN	3929	.	NODE_40_length_5854_cov_10.182469	5792	5854
-UN	3930	.	NODE_41_length_5145_cov_11.669390	4973	4973
-UN	3931	.	NODE_41_length_5145_cov_11.669390	4975	4975
-UN	3932	.	NODE_41_length_5145_cov_11.669390	4983	4983
-UN	3933	.	NODE_41_length_5145_cov_11.669390	4986	4986
-UN	3934	.	NODE_41_length_5145_cov_11.669390	4991	4991
-UN	3935	.	NODE_41_length_5145_cov_11.669390	5008	5009
-UN	3936	.	NODE_41_length_5145_cov_11.669390	5011	5011
-UN	3937	.	NODE_41_length_5145_cov_11.669390	5014	5014
-UN	3938	.	NODE_41_length_5145_cov_11.669390	5023	5023
-UN	3939	.	NODE_41_length_5145_cov_11.669390	5029	5029
-UN	3940	.	NODE_41_length_5145_cov_11.669390	5034	5038
-UN	3941	.	NODE_41_length_5145_cov_11.669390	5040	5145
-UN	3942	.	NODE_42_length_4621_cov_16.895861	1	40
-UN	3943	.	NODE_42_length_4621_cov_16.895861	42	42
-UN	3944	.	NODE_42_length_4621_cov_16.895861	44	45
-UN	3945	.	NODE_42_length_4621_cov_16.895861	4575	4621
-UN	3946	.	NODE_43_length_3878_cov_31.107971	1	13
-UN	3947	.	NODE_43_length_3878_cov_31.107971	3869	3878
-UN	3948	.	NODE_44_length_3614_cov_19.053054	1	1
-UN	3949	.	NODE_44_length_3614_cov_19.053054	3564	3564
-UN	3950	.	NODE_44_length_3614_cov_19.053054	3576	3576
-UN	3951	.	NODE_44_length_3614_cov_19.053054	3581	3614
-UN	3952	.	NODE_45_length_3266_cov_14.146862	1	13
-UN	3953	.	NODE_45_length_3266_cov_14.146862	15	15
-UN	3954	.	NODE_45_length_3266_cov_14.146862	209	209
-UN	3955	.	NODE_45_length_3266_cov_14.146862	377	377
-UN	3956	.	NODE_45_length_3266_cov_14.146862	546	546
-UN	3957	.	NODE_45_length_3266_cov_14.146862	556	556
-UN	3958	.	NODE_45_length_3266_cov_14.146862	575	575
-UN	3959	.	NODE_45_length_3266_cov_14.146862	597	597
-UN	3960	.	NODE_45_length_3266_cov_14.146862	600	601
-UN	3961	.	NODE_45_length_3266_cov_14.146862	622	622
-UN	3962	.	NODE_45_length_3266_cov_14.146862	728	728
-UN	3963	.	NODE_45_length_3266_cov_14.146862	732	733
-UN	3964	.	NODE_45_length_3266_cov_14.146862	740	740
-UN	3965	.	NODE_45_length_3266_cov_14.146862	2321	2321
-UN	3966	.	NODE_45_length_3266_cov_14.146862	2884	2884
-UN	3967	.	NODE_45_length_3266_cov_14.146862	3088	3088
-UN	3968	.	NODE_46_length_3035_cov_21.330124	1	18
-UN	3969	.	NODE_46_length_3035_cov_21.330124	20	22
-UN	3970	.	NODE_46_length_3035_cov_21.330124	1951	1951
-UN	3971	.	NODE_46_length_3035_cov_21.330124	2132	2132
-UN	3972	.	NODE_46_length_3035_cov_21.330124	2178	2178
-UN	3973	.	NODE_46_length_3035_cov_21.330124	2460	2460
-UN	3974	.	NODE_46_length_3035_cov_21.330124	2528	2528
-UN	3975	.	NODE_46_length_3035_cov_21.330124	2791	2791
-UN	3976	.	NODE_46_length_3035_cov_21.330124	2814	2814
-UN	3977	.	NODE_46_length_3035_cov_21.330124	3031	3035
-UN	3978	.	NODE_47_length_2981_cov_99.811142	1	123
-UN	3979	.	NODE_47_length_2981_cov_99.811142	2978	2981
-UN	3980	.	NODE_4_length_368643_cov_12.847952	1	77
-UN	3981	.	NODE_4_length_368643_cov_12.847952	28461	28461
-UN	3982	.	NODE_4_length_368643_cov_12.847952	28463	28463
-UN	3983	.	NODE_4_length_368643_cov_12.847952	28466	28466
-UN	3984	.	NODE_4_length_368643_cov_12.847952	62631	62631
-UN	3985	.	NODE_4_length_368643_cov_12.847952	62634	62634
-UN	3986	.	NODE_4_length_368643_cov_12.847952	62640	62640
-UN	3987	.	NODE_4_length_368643_cov_12.847952	62647	62648
-UN	3988	.	NODE_4_length_368643_cov_12.847952	62654	62654
-UN	3989	.	NODE_4_length_368643_cov_12.847952	62658	62663
-UN	3990	.	NODE_4_length_368643_cov_12.847952	62670	62670
-UN	3991	.	NODE_4_length_368643_cov_12.847952	62675	62675
-UN	3992	.	NODE_4_length_368643_cov_12.847952	62678	62678
-UN	3993	.	NODE_4_length_368643_cov_12.847952	62688	62689
-UN	3994	.	NODE_4_length_368643_cov_12.847952	62691	62691
-UN	3995	.	NODE_4_length_368643_cov_12.847952	62694	62696
-UN	3996	.	NODE_4_length_368643_cov_12.847952	62701	62701
-UN	3997	.	NODE_4_length_368643_cov_12.847952	62704	62704
-UN	3998	.	NODE_4_length_368643_cov_12.847952	62821	62822
-UN	3999	.	NODE_4_length_368643_cov_12.847952	62843	62843
-UN	4000	.	NODE_4_length_368643_cov_12.847952	62847	62847
-UN	4001	.	NODE_4_length_368643_cov_12.847952	62858	62859
-UN	4002	.	NODE_4_length_368643_cov_12.847952	62862	62863
-UN	4003	.	NODE_4_length_368643_cov_12.847952	62865	62866
-UN	4004	.	NODE_4_length_368643_cov_12.847952	62888	62888
-UN	4005	.	NODE_4_length_368643_cov_12.847952	62896	62897
-UN	4006	.	NODE_4_length_368643_cov_12.847952	69813	69813
-UN	4007	.	NODE_4_length_368643_cov_12.847952	69820	69820
-UN	4008	.	NODE_4_length_368643_cov_12.847952	69866	69866
-UN	4009	.	NODE_4_length_368643_cov_12.847952	69869	69869
-UN	4010	.	NODE_4_length_368643_cov_12.847952	69871	69871
-UN	4011	.	NODE_4_length_368643_cov_12.847952	69873	69874
-UN	4012	.	NODE_4_length_368643_cov_12.847952	69893	69893
-UN	4013	.	NODE_4_length_368643_cov_12.847952	69895	69896
-UN	4014	.	NODE_4_length_368643_cov_12.847952	69900	69900
-UN	4015	.	NODE_4_length_368643_cov_12.847952	69904	69907
-UN	4016	.	NODE_4_length_368643_cov_12.847952	70627	70627
-UN	4017	.	NODE_4_length_368643_cov_12.847952	70647	70647
-UN	4018	.	NODE_4_length_368643_cov_12.847952	70649	70649
-UN	4019	.	NODE_4_length_368643_cov_12.847952	70661	70661
-UN	4020	.	NODE_4_length_368643_cov_12.847952	70663	70663
-UN	4021	.	NODE_4_length_368643_cov_12.847952	70693	70693
-UN	4022	.	NODE_4_length_368643_cov_12.847952	70705	70707
-UN	4023	.	NODE_4_length_368643_cov_12.847952	70710	70710
-UN	4024	.	NODE_4_length_368643_cov_12.847952	70732	70732
-UN	4025	.	NODE_4_length_368643_cov_12.847952	70734	70734
-UN	4026	.	NODE_4_length_368643_cov_12.847952	70738	70740
-UN	4027	.	NODE_4_length_368643_cov_12.847952	70764	70764
-UN	4028	.	NODE_4_length_368643_cov_12.847952	70770	70771
-UN	4029	.	NODE_4_length_368643_cov_12.847952	70774	70778
-UN	4030	.	NODE_4_length_368643_cov_12.847952	70783	70784
-UN	4031	.	NODE_4_length_368643_cov_12.847952	70806	70806
-UN	4032	.	NODE_4_length_368643_cov_12.847952	70813	70813
-UN	4033	.	NODE_4_length_368643_cov_12.847952	70821	70846
-UN	4034	.	NODE_4_length_368643_cov_12.847952	123418	123418
-UN	4035	.	NODE_4_length_368643_cov_12.847952	123420	123420
-UN	4036	.	NODE_4_length_368643_cov_12.847952	123428	123428
-UN	4037	.	NODE_4_length_368643_cov_12.847952	123430	123433
-UN	4038	.	NODE_4_length_368643_cov_12.847952	123437	123438
-UN	4039	.	NODE_4_length_368643_cov_12.847952	123450	123452
-UN	4040	.	NODE_4_length_368643_cov_12.847952	123477	123477
-UN	4041	.	NODE_4_length_368643_cov_12.847952	123491	123491
-UN	4042	.	NODE_4_length_368643_cov_12.847952	123721	123728
-UN	4043	.	NODE_4_length_368643_cov_12.847952	139595	139600
-UN	4044	.	NODE_4_length_368643_cov_12.847952	148420	148420
-UN	4045	.	NODE_4_length_368643_cov_12.847952	148501	148501
-UN	4046	.	NODE_4_length_368643_cov_12.847952	148504	148518
-UN	4047	.	NODE_4_length_368643_cov_12.847952	148520	148529
-UN	4048	.	NODE_4_length_368643_cov_12.847952	148531	148545
-UN	4049	.	NODE_4_length_368643_cov_12.847952	157496	157496
-UN	4050	.	NODE_4_length_368643_cov_12.847952	164082	164082
-UN	4051	.	NODE_4_length_368643_cov_12.847952	164086	164087
-UN	4052	.	NODE_4_length_368643_cov_12.847952	164091	164092
-UN	4053	.	NODE_4_length_368643_cov_12.847952	164094	164094
-UN	4054	.	NODE_4_length_368643_cov_12.847952	164097	164098
-UN	4055	.	NODE_4_length_368643_cov_12.847952	164100	164100
-UN	4056	.	NODE_4_length_368643_cov_12.847952	164102	164102
-UN	4057	.	NODE_4_length_368643_cov_12.847952	164105	164109
-UN	4058	.	NODE_4_length_368643_cov_12.847952	164111	164111
-UN	4059	.	NODE_4_length_368643_cov_12.847952	164113	164116
-UN	4060	.	NODE_4_length_368643_cov_12.847952	164118	164118
-UN	4061	.	NODE_4_length_368643_cov_12.847952	164120	164121
-UN	4062	.	NODE_4_length_368643_cov_12.847952	164123	164123
-UN	4063	.	NODE_4_length_368643_cov_12.847952	164130	164130
-UN	4064	.	NODE_4_length_368643_cov_12.847952	164132	164135
-UN	4065	.	NODE_4_length_368643_cov_12.847952	164179	164179
-UN	4066	.	NODE_4_length_368643_cov_12.847952	164181	164185
-UN	4067	.	NODE_4_length_368643_cov_12.847952	164187	164189
-UN	4068	.	NODE_4_length_368643_cov_12.847952	164192	164196
-UN	4069	.	NODE_4_length_368643_cov_12.847952	164198	164198
-UN	4070	.	NODE_4_length_368643_cov_12.847952	164210	164210
-UN	4071	.	NODE_4_length_368643_cov_12.847952	164212	164213
-UN	4072	.	NODE_4_length_368643_cov_12.847952	164217	164217
-UN	4073	.	NODE_4_length_368643_cov_12.847952	164219	164220
-UN	4074	.	NODE_4_length_368643_cov_12.847952	164223	164224
-UN	4075	.	NODE_4_length_368643_cov_12.847952	164230	164232
-UN	4076	.	NODE_4_length_368643_cov_12.847952	164238	164239
-UN	4077	.	NODE_4_length_368643_cov_12.847952	166647	166647
-UN	4078	.	NODE_4_length_368643_cov_12.847952	184790	184790
-UN	4079	.	NODE_4_length_368643_cov_12.847952	184877	184877
-UN	4080	.	NODE_4_length_368643_cov_12.847952	203883	203883
-UN	4081	.	NODE_4_length_368643_cov_12.847952	203895	203895
-UN	4082	.	NODE_4_length_368643_cov_12.847952	203906	203906
-UN	4083	.	NODE_4_length_368643_cov_12.847952	203910	203910
-UN	4084	.	NODE_4_length_368643_cov_12.847952	203914	203916
-UN	4085	.	NODE_4_length_368643_cov_12.847952	203918	203920
-UN	4086	.	NODE_4_length_368643_cov_12.847952	203923	203923
-UN	4087	.	NODE_4_length_368643_cov_12.847952	203928	203928
-UN	4088	.	NODE_4_length_368643_cov_12.847952	204157	204157
-UN	4089	.	NODE_4_length_368643_cov_12.847952	219499	219499
-UN	4090	.	NODE_4_length_368643_cov_12.847952	222820	222820
-UN	4091	.	NODE_4_length_368643_cov_12.847952	222897	222897
-UN	4092	.	NODE_4_length_368643_cov_12.847952	222900	222903
-UN	4093	.	NODE_4_length_368643_cov_12.847952	223030	223031
-UN	4094	.	NODE_4_length_368643_cov_12.847952	223035	223036
-UN	4095	.	NODE_4_length_368643_cov_12.847952	269789	269851
-UN	4096	.	NODE_4_length_368643_cov_12.847952	269962	269995
-UN	4097	.	NODE_4_length_368643_cov_12.847952	270056	270056
-UN	4098	.	NODE_4_length_368643_cov_12.847952	270063	270063
-UN	4099	.	NODE_4_length_368643_cov_12.847952	270069	270069
-UN	4100	.	NODE_4_length_368643_cov_12.847952	270077	270077
-UN	4101	.	NODE_4_length_368643_cov_12.847952	270082	270131
-UN	4102	.	NODE_4_length_368643_cov_12.847952	270133	270135
-UN	4103	.	NODE_4_length_368643_cov_12.847952	270139	270139
-UN	4104	.	NODE_4_length_368643_cov_12.847952	270146	270149
-UN	4105	.	NODE_4_length_368643_cov_12.847952	270153	270153
-UN	4106	.	NODE_4_length_368643_cov_12.847952	270158	270159
-UN	4107	.	NODE_4_length_368643_cov_12.847952	270184	270184
-UN	4108	.	NODE_4_length_368643_cov_12.847952	287982	288015
-UN	4109	.	NODE_4_length_368643_cov_12.847952	288018	288022
-UN	4110	.	NODE_4_length_368643_cov_12.847952	288167	288167
-UN	4111	.	NODE_4_length_368643_cov_12.847952	289208	289209
-UN	4112	.	NODE_4_length_368643_cov_12.847952	289219	289219
-UN	4113	.	NODE_4_length_368643_cov_12.847952	289232	289232
-UN	4114	.	NODE_4_length_368643_cov_12.847952	289242	289242
-UN	4115	.	NODE_4_length_368643_cov_12.847952	291300	291301
-UN	4116	.	NODE_4_length_368643_cov_12.847952	291304	291314
-UN	4117	.	NODE_4_length_368643_cov_12.847952	328609	328609
-UN	4118	.	NODE_4_length_368643_cov_12.847952	341038	341038
-UN	4119	.	NODE_4_length_368643_cov_12.847952	344893	344893
-UN	4120	.	NODE_4_length_368643_cov_12.847952	365241	365241
-UN	4121	.	NODE_4_length_368643_cov_12.847952	365248	365248
-UN	4122	.	NODE_4_length_368643_cov_12.847952	365251	365252
-UN	4123	.	NODE_4_length_368643_cov_12.847952	365278	365278
-UN	4124	.	NODE_4_length_368643_cov_12.847952	365284	365284
-UN	4125	.	NODE_4_length_368643_cov_12.847952	365293	365293
-UN	4126	.	NODE_4_length_368643_cov_12.847952	368640	368643
-UN	4127	.	NODE_5_length_279151_cov_14.249853	1	9
-UN	4128	.	NODE_5_length_279151_cov_14.249853	358	358
-UN	4129	.	NODE_5_length_279151_cov_14.249853	21431	21431
-UN	4130	.	NODE_5_length_279151_cov_14.249853	54080	54080
-UN	4131	.	NODE_5_length_279151_cov_14.249853	54089	54089
-UN	4132	.	NODE_5_length_279151_cov_14.249853	54093	54093
-UN	4133	.	NODE_5_length_279151_cov_14.249853	54095	54095
-UN	4134	.	NODE_5_length_279151_cov_14.249853	54113	54114
-UN	4135	.	NODE_5_length_279151_cov_14.249853	54116	54116
-UN	4136	.	NODE_5_length_279151_cov_14.249853	54121	54121
-UN	4137	.	NODE_5_length_279151_cov_14.249853	54126	54126
-UN	4138	.	NODE_5_length_279151_cov_14.249853	54142	54142
-UN	4139	.	NODE_5_length_279151_cov_14.249853	58104	58106
-UN	4140	.	NODE_5_length_279151_cov_14.249853	58111	58111
-UN	4141	.	NODE_5_length_279151_cov_14.249853	58120	58121
-UN	4142	.	NODE_5_length_279151_cov_14.249853	59292	59292
-UN	4143	.	NODE_5_length_279151_cov_14.249853	59309	59309
-UN	4144	.	NODE_5_length_279151_cov_14.249853	59312	59312
-UN	4145	.	NODE_5_length_279151_cov_14.249853	67983	67983
-UN	4146	.	NODE_5_length_279151_cov_14.249853	67985	67987
-UN	4147	.	NODE_5_length_279151_cov_14.249853	67989	67989
-UN	4148	.	NODE_5_length_279151_cov_14.249853	67991	67993
-UN	4149	.	NODE_5_length_279151_cov_14.249853	67996	67996
-UN	4150	.	NODE_5_length_279151_cov_14.249853	68012	68012
-UN	4151	.	NODE_5_length_279151_cov_14.249853	68019	68019
-UN	4152	.	NODE_5_length_279151_cov_14.249853	68021	68021
-UN	4153	.	NODE_5_length_279151_cov_14.249853	68026	68026
-UN	4154	.	NODE_5_length_279151_cov_14.249853	68028	68029
-UN	4155	.	NODE_5_length_279151_cov_14.249853	82507	82507
-UN	4156	.	NODE_5_length_279151_cov_14.249853	82510	82510
-UN	4157	.	NODE_5_length_279151_cov_14.249853	82514	82514
-UN	4158	.	NODE_5_length_279151_cov_14.249853	82516	82516
-UN	4159	.	NODE_5_length_279151_cov_14.249853	82518	82518
-UN	4160	.	NODE_5_length_279151_cov_14.249853	104231	104232
-UN	4161	.	NODE_5_length_279151_cov_14.249853	104234	104235
-UN	4162	.	NODE_5_length_279151_cov_14.249853	104237	104245
-UN	4163	.	NODE_5_length_279151_cov_14.249853	104248	104250
-UN	4164	.	NODE_5_length_279151_cov_14.249853	104253	104261
-UN	4165	.	NODE_5_length_279151_cov_14.249853	104264	104266
-UN	4166	.	NODE_5_length_279151_cov_14.249853	104270	104274
-UN	4167	.	NODE_5_length_279151_cov_14.249853	104277	104277
-UN	4168	.	NODE_5_length_279151_cov_14.249853	104279	104415
-UN	4169	.	NODE_5_length_279151_cov_14.249853	104417	104417
-UN	4170	.	NODE_5_length_279151_cov_14.249853	104419	104419
-UN	4171	.	NODE_5_length_279151_cov_14.249853	104422	104425
-UN	4172	.	NODE_5_length_279151_cov_14.249853	104428	104428
-UN	4173	.	NODE_5_length_279151_cov_14.249853	104430	104430
-UN	4174	.	NODE_5_length_279151_cov_14.249853	130256	130256
-UN	4175	.	NODE_5_length_279151_cov_14.249853	173757	173757
-UN	4176	.	NODE_5_length_279151_cov_14.249853	173760	173763
-UN	4177	.	NODE_5_length_279151_cov_14.249853	173765	173765
-UN	4178	.	NODE_5_length_279151_cov_14.249853	173767	173767
-UN	4179	.	NODE_5_length_279151_cov_14.249853	173770	173775
-UN	4180	.	NODE_5_length_279151_cov_14.249853	173778	173778
-UN	4181	.	NODE_5_length_279151_cov_14.249853	173781	173787
-UN	4182	.	NODE_5_length_279151_cov_14.249853	173794	173797
-UN	4183	.	NODE_5_length_279151_cov_14.249853	173803	173804
-UN	4184	.	NODE_5_length_279151_cov_14.249853	173808	173808
-UN	4185	.	NODE_5_length_279151_cov_14.249853	173815	173815
-UN	4186	.	NODE_5_length_279151_cov_14.249853	232211	232211
-UN	4187	.	NODE_5_length_279151_cov_14.249853	232215	232275
-UN	4188	.	NODE_5_length_279151_cov_14.249853	242814	242814
-UN	4189	.	NODE_5_length_279151_cov_14.249853	242819	242819
-UN	4190	.	NODE_5_length_279151_cov_14.249853	268576	268576
-UN	4191	.	NODE_5_length_279151_cov_14.249853	268605	268605
-UN	4192	.	NODE_5_length_279151_cov_14.249853	268670	268816
-UN	4193	.	NODE_5_length_279151_cov_14.249853	272572	272573
-UN	4194	.	NODE_5_length_279151_cov_14.249853	272658	272658
-UN	4195	.	NODE_5_length_279151_cov_14.249853	279109	279151
-UN	4196	.	NODE_6_length_262854_cov_11.679534	1	56
-UN	4197	.	NODE_6_length_262854_cov_11.679534	12368	12377
-UN	4198	.	NODE_6_length_262854_cov_11.679534	12379	12385
-UN	4199	.	NODE_6_length_262854_cov_11.679534	12391	12392
-UN	4200	.	NODE_6_length_262854_cov_11.679534	12398	12399
-UN	4201	.	NODE_6_length_262854_cov_11.679534	12401	12405
-UN	4202	.	NODE_6_length_262854_cov_11.679534	12422	12422
-UN	4203	.	NODE_6_length_262854_cov_11.679534	12429	12431
-UN	4204	.	NODE_6_length_262854_cov_11.679534	12441	12441
-UN	4205	.	NODE_6_length_262854_cov_11.679534	16443	16444
-UN	4206	.	NODE_6_length_262854_cov_11.679534	17974	17981
-UN	4207	.	NODE_6_length_262854_cov_11.679534	18061	18061
-UN	4208	.	NODE_6_length_262854_cov_11.679534	18077	18077
-UN	4209	.	NODE_6_length_262854_cov_11.679534	18093	18093
-UN	4210	.	NODE_6_length_262854_cov_11.679534	18484	18559
-UN	4211	.	NODE_6_length_262854_cov_11.679534	18563	18591
-UN	4212	.	NODE_6_length_262854_cov_11.679534	18917	18918
-UN	4213	.	NODE_6_length_262854_cov_11.679534	18920	18920
-UN	4214	.	NODE_6_length_262854_cov_11.679534	18925	18925
-UN	4215	.	NODE_6_length_262854_cov_11.679534	18933	18933
-UN	4216	.	NODE_6_length_262854_cov_11.679534	18944	18944
-UN	4217	.	NODE_6_length_262854_cov_11.679534	35707	35732
-UN	4218	.	NODE_6_length_262854_cov_11.679534	35735	35735
-UN	4219	.	NODE_6_length_262854_cov_11.679534	35910	35911
-UN	4220	.	NODE_6_length_262854_cov_11.679534	35916	35916
-UN	4221	.	NODE_6_length_262854_cov_11.679534	35922	35922
-UN	4222	.	NODE_6_length_262854_cov_11.679534	67874	67877
-UN	4223	.	NODE_6_length_262854_cov_11.679534	67882	67882
-UN	4224	.	NODE_6_length_262854_cov_11.679534	67884	67884
-UN	4225	.	NODE_6_length_262854_cov_11.679534	95064	95065
-UN	4226	.	NODE_6_length_262854_cov_11.679534	95140	95141
-UN	4227	.	NODE_6_length_262854_cov_11.679534	95145	95148
-UN	4228	.	NODE_6_length_262854_cov_11.679534	95151	95151
-UN	4229	.	NODE_6_length_262854_cov_11.679534	95154	95160
-UN	4230	.	NODE_6_length_262854_cov_11.679534	95162	95162
-UN	4231	.	NODE_6_length_262854_cov_11.679534	95164	95164
-UN	4232	.	NODE_6_length_262854_cov_11.679534	95166	95167
-UN	4233	.	NODE_6_length_262854_cov_11.679534	100291	100291
-UN	4234	.	NODE_6_length_262854_cov_11.679534	101866	101866
-UN	4235	.	NODE_6_length_262854_cov_11.679534	101870	101870
-UN	4236	.	NODE_6_length_262854_cov_11.679534	101997	102000
-UN	4237	.	NODE_6_length_262854_cov_11.679534	102004	102038
-UN	4238	.	NODE_6_length_262854_cov_11.679534	102102	102102
-UN	4239	.	NODE_6_length_262854_cov_11.679534	104971	104971
-UN	4240	.	NODE_6_length_262854_cov_11.679534	105005	105006
-UN	4241	.	NODE_6_length_262854_cov_11.679534	105008	105008
-UN	4242	.	NODE_6_length_262854_cov_11.679534	105012	105013
-UN	4243	.	NODE_6_length_262854_cov_11.679534	105015	105016
-UN	4244	.	NODE_6_length_262854_cov_11.679534	105021	105021
-UN	4245	.	NODE_6_length_262854_cov_11.679534	105024	105024
-UN	4246	.	NODE_6_length_262854_cov_11.679534	105331	105342
-UN	4247	.	NODE_6_length_262854_cov_11.679534	105344	105346
-UN	4248	.	NODE_6_length_262854_cov_11.679534	105348	105354
-UN	4249	.	NODE_6_length_262854_cov_11.679534	105357	105364
-UN	4250	.	NODE_6_length_262854_cov_11.679534	105366	105367
-UN	4251	.	NODE_6_length_262854_cov_11.679534	105369	105370
-UN	4252	.	NODE_6_length_262854_cov_11.679534	105372	105374
-UN	4253	.	NODE_6_length_262854_cov_11.679534	105377	105377
-UN	4254	.	NODE_6_length_262854_cov_11.679534	105379	105380
-UN	4255	.	NODE_6_length_262854_cov_11.679534	105382	105382
-UN	4256	.	NODE_6_length_262854_cov_11.679534	105384	105386
-UN	4257	.	NODE_6_length_262854_cov_11.679534	105388	105388
-UN	4258	.	NODE_6_length_262854_cov_11.679534	105391	105391
-UN	4259	.	NODE_6_length_262854_cov_11.679534	105394	105397
-UN	4260	.	NODE_6_length_262854_cov_11.679534	105402	105402
-UN	4261	.	NODE_6_length_262854_cov_11.679534	105409	105409
-UN	4262	.	NODE_6_length_262854_cov_11.679534	111820	111847
-UN	4263	.	NODE_6_length_262854_cov_11.679534	111855	111855
-UN	4264	.	NODE_6_length_262854_cov_11.679534	111861	111861
-UN	4265	.	NODE_6_length_262854_cov_11.679534	111864	111865
-UN	4266	.	NODE_6_length_262854_cov_11.679534	111872	111872
-UN	4267	.	NODE_6_length_262854_cov_11.679534	111879	111879
-UN	4268	.	NODE_6_length_262854_cov_11.679534	111881	111881
-UN	4269	.	NODE_6_length_262854_cov_11.679534	111892	111893
-UN	4270	.	NODE_6_length_262854_cov_11.679534	131751	131751
-UN	4271	.	NODE_6_length_262854_cov_11.679534	134405	134405
-UN	4272	.	NODE_6_length_262854_cov_11.679534	134407	134407
-UN	4273	.	NODE_6_length_262854_cov_11.679534	134410	134410
-UN	4274	.	NODE_6_length_262854_cov_11.679534	134413	134426
-UN	4275	.	NODE_6_length_262854_cov_11.679534	134428	134429
-UN	4276	.	NODE_6_length_262854_cov_11.679534	134431	134438
-UN	4277	.	NODE_6_length_262854_cov_11.679534	134440	134441
-UN	4278	.	NODE_6_length_262854_cov_11.679534	134444	134444
-UN	4279	.	NODE_6_length_262854_cov_11.679534	134449	134449
-UN	4280	.	NODE_6_length_262854_cov_11.679534	134453	134453
-UN	4281	.	NODE_6_length_262854_cov_11.679534	134455	134455
-UN	4282	.	NODE_6_length_262854_cov_11.679534	134463	134465
-UN	4283	.	NODE_6_length_262854_cov_11.679534	134472	134472
-UN	4284	.	NODE_6_length_262854_cov_11.679534	134474	134474
-UN	4285	.	NODE_6_length_262854_cov_11.679534	134477	134477
-UN	4286	.	NODE_6_length_262854_cov_11.679534	134479	134480
-UN	4287	.	NODE_6_length_262854_cov_11.679534	134484	134484
-UN	4288	.	NODE_6_length_262854_cov_11.679534	134488	134489
-UN	4289	.	NODE_6_length_262854_cov_11.679534	134493	134493
-UN	4290	.	NODE_6_length_262854_cov_11.679534	134495	134495
-UN	4291	.	NODE_6_length_262854_cov_11.679534	134504	134504
-UN	4292	.	NODE_6_length_262854_cov_11.679534	134513	134513
-UN	4293	.	NODE_6_length_262854_cov_11.679534	136378	136378
-UN	4294	.	NODE_6_length_262854_cov_11.679534	136416	136416
-UN	4295	.	NODE_6_length_262854_cov_11.679534	136434	136434
-UN	4296	.	NODE_6_length_262854_cov_11.679534	137504	137504
-UN	4297	.	NODE_6_length_262854_cov_11.679534	137506	137506
-UN	4298	.	NODE_6_length_262854_cov_11.679534	137512	137512
-UN	4299	.	NODE_6_length_262854_cov_11.679534	137525	137525
-UN	4300	.	NODE_6_length_262854_cov_11.679534	147822	147878
-UN	4301	.	NODE_6_length_262854_cov_11.679534	147881	147881
-UN	4302	.	NODE_6_length_262854_cov_11.679534	147888	147888
-UN	4303	.	NODE_6_length_262854_cov_11.679534	166047	166047
-UN	4304	.	NODE_6_length_262854_cov_11.679534	166115	166441
-UN	4305	.	NODE_6_length_262854_cov_11.679534	170534	170534
-UN	4306	.	NODE_6_length_262854_cov_11.679534	170539	170539
-UN	4307	.	NODE_6_length_262854_cov_11.679534	172943	172943
-UN	4308	.	NODE_6_length_262854_cov_11.679534	172953	172953
-UN	4309	.	NODE_6_length_262854_cov_11.679534	172983	172983
-UN	4310	.	NODE_6_length_262854_cov_11.679534	172987	172987
-UN	4311	.	NODE_6_length_262854_cov_11.679534	180723	180752
-UN	4312	.	NODE_6_length_262854_cov_11.679534	197530	197530
-UN	4313	.	NODE_6_length_262854_cov_11.679534	197532	197532
-UN	4314	.	NODE_6_length_262854_cov_11.679534	197535	197537
-UN	4315	.	NODE_6_length_262854_cov_11.679534	202746	202746
-UN	4316	.	NODE_6_length_262854_cov_11.679534	202750	202750
-UN	4317	.	NODE_6_length_262854_cov_11.679534	202760	202760
-UN	4318	.	NODE_6_length_262854_cov_11.679534	202763	202764
-UN	4319	.	NODE_6_length_262854_cov_11.679534	202766	202769
-UN	4320	.	NODE_6_length_262854_cov_11.679534	202777	202777
-UN	4321	.	NODE_6_length_262854_cov_11.679534	202782	202802
-UN	4322	.	NODE_6_length_262854_cov_11.679534	202812	202812
-UN	4323	.	NODE_6_length_262854_cov_11.679534	203761	203761
-UN	4324	.	NODE_6_length_262854_cov_11.679534	203772	203772
-UN	4325	.	NODE_6_length_262854_cov_11.679534	203778	203778
-UN	4326	.	NODE_6_length_262854_cov_11.679534	203782	203784
-UN	4327	.	NODE_6_length_262854_cov_11.679534	210454	210455
-UN	4328	.	NODE_6_length_262854_cov_11.679534	210476	210476
-UN	4329	.	NODE_6_length_262854_cov_11.679534	210492	210492
-UN	4330	.	NODE_6_length_262854_cov_11.679534	210510	210510
-UN	4331	.	NODE_6_length_262854_cov_11.679534	210512	210512
-UN	4332	.	NODE_6_length_262854_cov_11.679534	210518	210518
-UN	4333	.	NODE_6_length_262854_cov_11.679534	210524	210524
-UN	4334	.	NODE_6_length_262854_cov_11.679534	210527	210527
-UN	4335	.	NODE_6_length_262854_cov_11.679534	210534	210534
-UN	4336	.	NODE_6_length_262854_cov_11.679534	210547	210547
-UN	4337	.	NODE_6_length_262854_cov_11.679534	212252	212252
-UN	4338	.	NODE_6_length_262854_cov_11.679534	212261	212262
-UN	4339	.	NODE_6_length_262854_cov_11.679534	212266	212267
-UN	4340	.	NODE_6_length_262854_cov_11.679534	212269	212269
-UN	4341	.	NODE_6_length_262854_cov_11.679534	212272	212272
-UN	4342	.	NODE_6_length_262854_cov_11.679534	212274	212274
-UN	4343	.	NODE_6_length_262854_cov_11.679534	212281	212281
-UN	4344	.	NODE_6_length_262854_cov_11.679534	212284	212284
-UN	4345	.	NODE_6_length_262854_cov_11.679534	212288	212290
-UN	4346	.	NODE_6_length_262854_cov_11.679534	212418	212418
-UN	4347	.	NODE_6_length_262854_cov_11.679534	212420	212420
-UN	4348	.	NODE_6_length_262854_cov_11.679534	212448	212448
-UN	4349	.	NODE_6_length_262854_cov_11.679534	212456	212456
-UN	4350	.	NODE_6_length_262854_cov_11.679534	212458	212459
-UN	4351	.	NODE_6_length_262854_cov_11.679534	212467	212467
-UN	4352	.	NODE_6_length_262854_cov_11.679534	213209	213209
-UN	4353	.	NODE_6_length_262854_cov_11.679534	213222	213223
-UN	4354	.	NODE_6_length_262854_cov_11.679534	213227	213227
-UN	4355	.	NODE_6_length_262854_cov_11.679534	213375	213375
-UN	4356	.	NODE_6_length_262854_cov_11.679534	213377	213377
-UN	4357	.	NODE_6_length_262854_cov_11.679534	213381	213382
-UN	4358	.	NODE_6_length_262854_cov_11.679534	213386	213386
-UN	4359	.	NODE_6_length_262854_cov_11.679534	213388	213388
-UN	4360	.	NODE_6_length_262854_cov_11.679534	252623	252682
-UN	4361	.	NODE_6_length_262854_cov_11.679534	253039	253039
-UN	4362	.	NODE_6_length_262854_cov_11.679534	253041	253041
-UN	4363	.	NODE_6_length_262854_cov_11.679534	253043	253043
-UN	4364	.	NODE_6_length_262854_cov_11.679534	256919	256920
-UN	4365	.	NODE_6_length_262854_cov_11.679534	256922	256922
-UN	4366	.	NODE_6_length_262854_cov_11.679534	256924	256925
-UN	4367	.	NODE_6_length_262854_cov_11.679534	256928	256928
-UN	4368	.	NODE_6_length_262854_cov_11.679534	256930	256935
-UN	4369	.	NODE_6_length_262854_cov_11.679534	256937	256937
-UN	4370	.	NODE_6_length_262854_cov_11.679534	256943	256943
-UN	4371	.	NODE_6_length_262854_cov_11.679534	256966	256966
-UN	4372	.	NODE_6_length_262854_cov_11.679534	256978	256978
-UN	4373	.	NODE_6_length_262854_cov_11.679534	256988	256989
-UN	4374	.	NODE_6_length_262854_cov_11.679534	256991	257013
-UN	4375	.	NODE_6_length_262854_cov_11.679534	257019	257019
-UN	4376	.	NODE_6_length_262854_cov_11.679534	257023	257023
-UN	4377	.	NODE_6_length_262854_cov_11.679534	262722	262722
-UN	4378	.	NODE_6_length_262854_cov_11.679534	262735	262735
-UN	4379	.	NODE_6_length_262854_cov_11.679534	262743	262743
-UN	4380	.	NODE_6_length_262854_cov_11.679534	262747	262747
-UN	4381	.	NODE_6_length_262854_cov_11.679534	262751	262751
-UN	4382	.	NODE_6_length_262854_cov_11.679534	262755	262756
-UN	4383	.	NODE_6_length_262854_cov_11.679534	262758	262758
-UN	4384	.	NODE_6_length_262854_cov_11.679534	262760	262760
-UN	4385	.	NODE_6_length_262854_cov_11.679534	262762	262762
-UN	4386	.	NODE_6_length_262854_cov_11.679534	262764	262765
-UN	4387	.	NODE_6_length_262854_cov_11.679534	262767	262854
-UN	4388	.	NODE_7_length_217756_cov_10.373227	1	41
-UN	4389	.	NODE_7_length_217756_cov_10.373227	44	55
-UN	4390	.	NODE_7_length_217756_cov_10.373227	2230	2231
-UN	4391	.	NODE_7_length_217756_cov_10.373227	2240	2242
-UN	4392	.	NODE_7_length_217756_cov_10.373227	2251	2251
-UN	4393	.	NODE_7_length_217756_cov_10.373227	2253	2253
-UN	4394	.	NODE_7_length_217756_cov_10.373227	2256	2256
-UN	4395	.	NODE_7_length_217756_cov_10.373227	30561	30561
-UN	4396	.	NODE_7_length_217756_cov_10.373227	30565	30565
-UN	4397	.	NODE_7_length_217756_cov_10.373227	30567	30568
-UN	4398	.	NODE_7_length_217756_cov_10.373227	30574	30574
-UN	4399	.	NODE_7_length_217756_cov_10.373227	30614	30614
-UN	4400	.	NODE_7_length_217756_cov_10.373227	30617	30620
-UN	4401	.	NODE_7_length_217756_cov_10.373227	30622	30623
-UN	4402	.	NODE_7_length_217756_cov_10.373227	30627	30627
-UN	4403	.	NODE_7_length_217756_cov_10.373227	30629	30629
-UN	4404	.	NODE_7_length_217756_cov_10.373227	30631	30633
-UN	4405	.	NODE_7_length_217756_cov_10.373227	30635	30635
-UN	4406	.	NODE_7_length_217756_cov_10.373227	30641	30641
-UN	4407	.	NODE_7_length_217756_cov_10.373227	30644	30644
-UN	4408	.	NODE_7_length_217756_cov_10.373227	30647	30647
-UN	4409	.	NODE_7_length_217756_cov_10.373227	30883	30887
-UN	4410	.	NODE_7_length_217756_cov_10.373227	30889	30892
-UN	4411	.	NODE_7_length_217756_cov_10.373227	32198	32198
-UN	4412	.	NODE_7_length_217756_cov_10.373227	32217	32217
-UN	4413	.	NODE_7_length_217756_cov_10.373227	32836	32837
-UN	4414	.	NODE_7_length_217756_cov_10.373227	32839	32846
-UN	4415	.	NODE_7_length_217756_cov_10.373227	32848	32851
-UN	4416	.	NODE_7_length_217756_cov_10.373227	32853	32854
-UN	4417	.	NODE_7_length_217756_cov_10.373227	32856	32857
-UN	4418	.	NODE_7_length_217756_cov_10.373227	32911	32912
-UN	4419	.	NODE_7_length_217756_cov_10.373227	32916	32917
-UN	4420	.	NODE_7_length_217756_cov_10.373227	32920	32920
-UN	4421	.	NODE_7_length_217756_cov_10.373227	32923	32924
-UN	4422	.	NODE_7_length_217756_cov_10.373227	32933	32933
-UN	4423	.	NODE_7_length_217756_cov_10.373227	32935	32935
-UN	4424	.	NODE_7_length_217756_cov_10.373227	34437	34437
-UN	4425	.	NODE_7_length_217756_cov_10.373227	34440	34440
-UN	4426	.	NODE_7_length_217756_cov_10.373227	34442	34442
-UN	4427	.	NODE_7_length_217756_cov_10.373227	34444	34444
-UN	4428	.	NODE_7_length_217756_cov_10.373227	34459	34459
-UN	4429	.	NODE_7_length_217756_cov_10.373227	34461	34461
-UN	4430	.	NODE_7_length_217756_cov_10.373227	34463	34465
-UN	4431	.	NODE_7_length_217756_cov_10.373227	34469	34471
-UN	4432	.	NODE_7_length_217756_cov_10.373227	34474	34476
-UN	4433	.	NODE_7_length_217756_cov_10.373227	34478	34478
-UN	4434	.	NODE_7_length_217756_cov_10.373227	35153	35153
-UN	4435	.	NODE_7_length_217756_cov_10.373227	49751	49751
-UN	4436	.	NODE_7_length_217756_cov_10.373227	49756	49756
-UN	4437	.	NODE_7_length_217756_cov_10.373227	57672	57673
-UN	4438	.	NODE_7_length_217756_cov_10.373227	57679	57680
-UN	4439	.	NODE_7_length_217756_cov_10.373227	57684	57685
-UN	4440	.	NODE_7_length_217756_cov_10.373227	57688	57689
-UN	4441	.	NODE_7_length_217756_cov_10.373227	57692	57692
-UN	4442	.	NODE_7_length_217756_cov_10.373227	57694	57694
-UN	4443	.	NODE_7_length_217756_cov_10.373227	62550	62550
-UN	4444	.	NODE_7_length_217756_cov_10.373227	63119	63119
-UN	4445	.	NODE_7_length_217756_cov_10.373227	63121	63127
-UN	4446	.	NODE_7_length_217756_cov_10.373227	63129	63130
-UN	4447	.	NODE_7_length_217756_cov_10.373227	63132	63134
-UN	4448	.	NODE_7_length_217756_cov_10.373227	63138	63138
-UN	4449	.	NODE_7_length_217756_cov_10.373227	63141	63141
-UN	4450	.	NODE_7_length_217756_cov_10.373227	63143	63144
-UN	4451	.	NODE_7_length_217756_cov_10.373227	63150	63156
-UN	4452	.	NODE_7_length_217756_cov_10.373227	63159	63160
-UN	4453	.	NODE_7_length_217756_cov_10.373227	63162	63170
-UN	4454	.	NODE_7_length_217756_cov_10.373227	63174	63174
-UN	4455	.	NODE_7_length_217756_cov_10.373227	74294	74294
-UN	4456	.	NODE_7_length_217756_cov_10.373227	74302	74302
-UN	4457	.	NODE_7_length_217756_cov_10.373227	74304	74304
-UN	4458	.	NODE_7_length_217756_cov_10.373227	74308	74308
-UN	4459	.	NODE_7_length_217756_cov_10.373227	74313	74313
-UN	4460	.	NODE_7_length_217756_cov_10.373227	74320	74321
-UN	4461	.	NODE_7_length_217756_cov_10.373227	74323	74325
-UN	4462	.	NODE_7_length_217756_cov_10.373227	74329	74329
-UN	4463	.	NODE_7_length_217756_cov_10.373227	74331	74331
-UN	4464	.	NODE_7_length_217756_cov_10.373227	74335	74335
-UN	4465	.	NODE_7_length_217756_cov_10.373227	74337	74337
-UN	4466	.	NODE_7_length_217756_cov_10.373227	74343	74349
-UN	4467	.	NODE_7_length_217756_cov_10.373227	74351	74352
-UN	4468	.	NODE_7_length_217756_cov_10.373227	74364	74364
-UN	4469	.	NODE_7_length_217756_cov_10.373227	74431	74431
-UN	4470	.	NODE_7_length_217756_cov_10.373227	74866	74868
-UN	4471	.	NODE_7_length_217756_cov_10.373227	74872	74872
-UN	4472	.	NODE_7_length_217756_cov_10.373227	74874	74875
-UN	4473	.	NODE_7_length_217756_cov_10.373227	74879	74879
-UN	4474	.	NODE_7_length_217756_cov_10.373227	74889	74889
-UN	4475	.	NODE_7_length_217756_cov_10.373227	74908	74908
-UN	4476	.	NODE_7_length_217756_cov_10.373227	77645	77647
-UN	4477	.	NODE_7_length_217756_cov_10.373227	77658	77658
-UN	4478	.	NODE_7_length_217756_cov_10.373227	96528	96528
-UN	4479	.	NODE_7_length_217756_cov_10.373227	96530	96531
-UN	4480	.	NODE_7_length_217756_cov_10.373227	97178	97178
-UN	4481	.	NODE_7_length_217756_cov_10.373227	103924	103925
-UN	4482	.	NODE_7_length_217756_cov_10.373227	103927	103928
-UN	4483	.	NODE_7_length_217756_cov_10.373227	103934	103942
-UN	4484	.	NODE_7_length_217756_cov_10.373227	104038	104038
-UN	4485	.	NODE_7_length_217756_cov_10.373227	104063	104063
-UN	4486	.	NODE_7_length_217756_cov_10.373227	104078	104078
-UN	4487	.	NODE_7_length_217756_cov_10.373227	104081	104089
-UN	4488	.	NODE_7_length_217756_cov_10.373227	104091	104092
-UN	4489	.	NODE_7_length_217756_cov_10.373227	104094	104094
-UN	4490	.	NODE_7_length_217756_cov_10.373227	104096	104096
-UN	4491	.	NODE_7_length_217756_cov_10.373227	104099	104099
-UN	4492	.	NODE_7_length_217756_cov_10.373227	109948	109948
-UN	4493	.	NODE_7_length_217756_cov_10.373227	109950	109951
-UN	4494	.	NODE_7_length_217756_cov_10.373227	109964	109965
-UN	4495	.	NODE_7_length_217756_cov_10.373227	109969	109970
-UN	4496	.	NODE_7_length_217756_cov_10.373227	109972	109972
-UN	4497	.	NODE_7_length_217756_cov_10.373227	109974	109975
-UN	4498	.	NODE_7_length_217756_cov_10.373227	109977	109978
-UN	4499	.	NODE_7_length_217756_cov_10.373227	113214	113214
-UN	4500	.	NODE_7_length_217756_cov_10.373227	113241	113246
-UN	4501	.	NODE_7_length_217756_cov_10.373227	113248	113249
-UN	4502	.	NODE_7_length_217756_cov_10.373227	113251	113251
-UN	4503	.	NODE_7_length_217756_cov_10.373227	113254	113255
-UN	4504	.	NODE_7_length_217756_cov_10.373227	113257	113257
-UN	4505	.	NODE_7_length_217756_cov_10.373227	113260	113260
-UN	4506	.	NODE_7_length_217756_cov_10.373227	113262	113262
-UN	4507	.	NODE_7_length_217756_cov_10.373227	113264	113265
-UN	4508	.	NODE_7_length_217756_cov_10.373227	113382	113486
-UN	4509	.	NODE_7_length_217756_cov_10.373227	113500	113603
-UN	4510	.	NODE_7_length_217756_cov_10.373227	113770	113770
-UN	4511	.	NODE_7_length_217756_cov_10.373227	113787	113787
-UN	4512	.	NODE_7_length_217756_cov_10.373227	117493	117493
-UN	4513	.	NODE_7_length_217756_cov_10.373227	117495	117495
-UN	4514	.	NODE_7_length_217756_cov_10.373227	117500	117502
-UN	4515	.	NODE_7_length_217756_cov_10.373227	117522	117522
-UN	4516	.	NODE_7_length_217756_cov_10.373227	120130	120130
-UN	4517	.	NODE_7_length_217756_cov_10.373227	125313	125313
-UN	4518	.	NODE_7_length_217756_cov_10.373227	125315	125316
-UN	4519	.	NODE_7_length_217756_cov_10.373227	125319	125371
-UN	4520	.	NODE_7_length_217756_cov_10.373227	125373	125373
-UN	4521	.	NODE_7_length_217756_cov_10.373227	125375	125375
-UN	4522	.	NODE_7_length_217756_cov_10.373227	125379	125379
-UN	4523	.	NODE_7_length_217756_cov_10.373227	143321	143321
-UN	4524	.	NODE_7_length_217756_cov_10.373227	143327	143327
-UN	4525	.	NODE_7_length_217756_cov_10.373227	143331	143331
-UN	4526	.	NODE_7_length_217756_cov_10.373227	143341	143341
-UN	4527	.	NODE_7_length_217756_cov_10.373227	143343	143344
-UN	4528	.	NODE_7_length_217756_cov_10.373227	143348	143368
-UN	4529	.	NODE_7_length_217756_cov_10.373227	143374	143385
-UN	4530	.	NODE_7_length_217756_cov_10.373227	144075	144075
-UN	4531	.	NODE_7_length_217756_cov_10.373227	144077	144077
-UN	4532	.	NODE_7_length_217756_cov_10.373227	149550	149550
-UN	4533	.	NODE_7_length_217756_cov_10.373227	151336	151336
-UN	4534	.	NODE_7_length_217756_cov_10.373227	151338	151338
-UN	4535	.	NODE_7_length_217756_cov_10.373227	151346	151346
-UN	4536	.	NODE_7_length_217756_cov_10.373227	151348	151348
-UN	4537	.	NODE_7_length_217756_cov_10.373227	151350	151353
-UN	4538	.	NODE_7_length_217756_cov_10.373227	151360	151360
-UN	4539	.	NODE_7_length_217756_cov_10.373227	151421	151431
-UN	4540	.	NODE_7_length_217756_cov_10.373227	151465	151465
-UN	4541	.	NODE_7_length_217756_cov_10.373227	151488	151488
-UN	4542	.	NODE_7_length_217756_cov_10.373227	153110	153110
-UN	4543	.	NODE_7_length_217756_cov_10.373227	153118	153118
-UN	4544	.	NODE_7_length_217756_cov_10.373227	153125	153125
-UN	4545	.	NODE_7_length_217756_cov_10.373227	153130	153130
-UN	4546	.	NODE_7_length_217756_cov_10.373227	153134	153135
-UN	4547	.	NODE_7_length_217756_cov_10.373227	153137	153137
-UN	4548	.	NODE_7_length_217756_cov_10.373227	153141	153141
-UN	4549	.	NODE_7_length_217756_cov_10.373227	153170	153170
-UN	4550	.	NODE_7_length_217756_cov_10.373227	153195	153195
-UN	4551	.	NODE_7_length_217756_cov_10.373227	153202	153202
-UN	4552	.	NODE_7_length_217756_cov_10.373227	153208	153209
-UN	4553	.	NODE_7_length_217756_cov_10.373227	153219	153254
-UN	4554	.	NODE_7_length_217756_cov_10.373227	153900	153900
-UN	4555	.	NODE_7_length_217756_cov_10.373227	153906	153906
-UN	4556	.	NODE_7_length_217756_cov_10.373227	154353	154357
-UN	4557	.	NODE_7_length_217756_cov_10.373227	154362	154375
-UN	4558	.	NODE_7_length_217756_cov_10.373227	154882	154882
-UN	4559	.	NODE_7_length_217756_cov_10.373227	155576	155576
-UN	4560	.	NODE_7_length_217756_cov_10.373227	157171	157181
-UN	4561	.	NODE_7_length_217756_cov_10.373227	157185	157187
-UN	4562	.	NODE_7_length_217756_cov_10.373227	157190	157191
-UN	4563	.	NODE_7_length_217756_cov_10.373227	157219	157220
-UN	4564	.	NODE_7_length_217756_cov_10.373227	157867	157867
-UN	4565	.	NODE_7_length_217756_cov_10.373227	159839	159902
-UN	4566	.	NODE_7_length_217756_cov_10.373227	159934	159934
-UN	4567	.	NODE_7_length_217756_cov_10.373227	166150	166150
-UN	4568	.	NODE_7_length_217756_cov_10.373227	166192	166193
-UN	4569	.	NODE_7_length_217756_cov_10.373227	166201	166201
-UN	4570	.	NODE_7_length_217756_cov_10.373227	166217	166217
-UN	4571	.	NODE_7_length_217756_cov_10.373227	166226	166226
-UN	4572	.	NODE_7_length_217756_cov_10.373227	166228	166229
-UN	4573	.	NODE_7_length_217756_cov_10.373227	166239	166239
-UN	4574	.	NODE_7_length_217756_cov_10.373227	166243	166243
-UN	4575	.	NODE_7_length_217756_cov_10.373227	166249	166249
-UN	4576	.	NODE_7_length_217756_cov_10.373227	166511	166511
-UN	4577	.	NODE_7_length_217756_cov_10.373227	166514	166515
-UN	4578	.	NODE_7_length_217756_cov_10.373227	166517	166521
-UN	4579	.	NODE_7_length_217756_cov_10.373227	166523	166526
-UN	4580	.	NODE_7_length_217756_cov_10.373227	166528	166529
-UN	4581	.	NODE_7_length_217756_cov_10.373227	166531	166541
-UN	4582	.	NODE_7_length_217756_cov_10.373227	166546	166546
-UN	4583	.	NODE_7_length_217756_cov_10.373227	167756	167889
-UN	4584	.	NODE_7_length_217756_cov_10.373227	167891	167892
-UN	4585	.	NODE_7_length_217756_cov_10.373227	167895	167895
-UN	4586	.	NODE_7_length_217756_cov_10.373227	167900	167900
-UN	4587	.	NODE_7_length_217756_cov_10.373227	167903	167908
-UN	4588	.	NODE_7_length_217756_cov_10.373227	167910	167939
-UN	4589	.	NODE_7_length_217756_cov_10.373227	172783	172783
-UN	4590	.	NODE_7_length_217756_cov_10.373227	172786	172786
-UN	4591	.	NODE_7_length_217756_cov_10.373227	172791	172793
-UN	4592	.	NODE_7_length_217756_cov_10.373227	172803	172804
-UN	4593	.	NODE_7_length_217756_cov_10.373227	173156	173156
-UN	4594	.	NODE_7_length_217756_cov_10.373227	173159	173159
-UN	4595	.	NODE_7_length_217756_cov_10.373227	173161	173161
-UN	4596	.	NODE_7_length_217756_cov_10.373227	173403	173403
-UN	4597	.	NODE_7_length_217756_cov_10.373227	173409	173409
-UN	4598	.	NODE_7_length_217756_cov_10.373227	177269	177269
-UN	4599	.	NODE_7_length_217756_cov_10.373227	177276	177278
-UN	4600	.	NODE_7_length_217756_cov_10.373227	177280	177280
-UN	4601	.	NODE_7_length_217756_cov_10.373227	177282	177282
-UN	4602	.	NODE_7_length_217756_cov_10.373227	177430	177430
-UN	4603	.	NODE_7_length_217756_cov_10.373227	180410	180411
-UN	4604	.	NODE_7_length_217756_cov_10.373227	180422	180499
-UN	4605	.	NODE_7_length_217756_cov_10.373227	182444	182444
-UN	4606	.	NODE_7_length_217756_cov_10.373227	182466	182466
-UN	4607	.	NODE_7_length_217756_cov_10.373227	182488	182488
-UN	4608	.	NODE_7_length_217756_cov_10.373227	182494	182496
-UN	4609	.	NODE_7_length_217756_cov_10.373227	182499	182501
-UN	4610	.	NODE_7_length_217756_cov_10.373227	182503	182503
-UN	4611	.	NODE_7_length_217756_cov_10.373227	182505	182505
-UN	4612	.	NODE_7_length_217756_cov_10.373227	182518	182519
-UN	4613	.	NODE_7_length_217756_cov_10.373227	182522	182525
-UN	4614	.	NODE_7_length_217756_cov_10.373227	182528	182528
-UN	4615	.	NODE_7_length_217756_cov_10.373227	182566	182567
-UN	4616	.	NODE_7_length_217756_cov_10.373227	182569	182569
-UN	4617	.	NODE_7_length_217756_cov_10.373227	182571	182572
-UN	4618	.	NODE_7_length_217756_cov_10.373227	213556	213557
-UN	4619	.	NODE_7_length_217756_cov_10.373227	213560	213564
-UN	4620	.	NODE_7_length_217756_cov_10.373227	213566	213572
-UN	4621	.	NODE_7_length_217756_cov_10.373227	213574	213575
-UN	4622	.	NODE_7_length_217756_cov_10.373227	213577	213577
-UN	4623	.	NODE_7_length_217756_cov_10.373227	217052	217052
-UN	4624	.	NODE_7_length_217756_cov_10.373227	217055	217130
-UN	4625	.	NODE_7_length_217756_cov_10.373227	217146	217146
-UN	4626	.	NODE_7_length_217756_cov_10.373227	217564	217564
-UN	4627	.	NODE_7_length_217756_cov_10.373227	217602	217602
-UN	4628	.	NODE_7_length_217756_cov_10.373227	217605	217605
-UN	4629	.	NODE_7_length_217756_cov_10.373227	217610	217756
-UN	4630	.	NODE_8_length_217530_cov_12.850706	1	35
-UN	4631	.	NODE_8_length_217530_cov_12.850706	24656	24702
-UN	4632	.	NODE_8_length_217530_cov_12.850706	25622	25622
-UN	4633	.	NODE_8_length_217530_cov_12.850706	25723	25723
-UN	4634	.	NODE_8_length_217530_cov_12.850706	25950	25950
-UN	4635	.	NODE_8_length_217530_cov_12.850706	25953	26005
-UN	4636	.	NODE_8_length_217530_cov_12.850706	26071	26071
-UN	4637	.	NODE_8_length_217530_cov_12.850706	27739	27739
-UN	4638	.	NODE_8_length_217530_cov_12.850706	27744	27744
-UN	4639	.	NODE_8_length_217530_cov_12.850706	27746	27746
-UN	4640	.	NODE_8_length_217530_cov_12.850706	29027	29027
-UN	4641	.	NODE_8_length_217530_cov_12.850706	29060	29060
-UN	4642	.	NODE_8_length_217530_cov_12.850706	29063	29065
-UN	4643	.	NODE_8_length_217530_cov_12.850706	29067	29067
-UN	4644	.	NODE_8_length_217530_cov_12.850706	29071	29074
-UN	4645	.	NODE_8_length_217530_cov_12.850706	29076	29076
-UN	4646	.	NODE_8_length_217530_cov_12.850706	29078	29080
-UN	4647	.	NODE_8_length_217530_cov_12.850706	29082	29083
-UN	4648	.	NODE_8_length_217530_cov_12.850706	29086	29091
-UN	4649	.	NODE_8_length_217530_cov_12.850706	29334	29353
-UN	4650	.	NODE_8_length_217530_cov_12.850706	29476	29476
-UN	4651	.	NODE_8_length_217530_cov_12.850706	29479	29479
-UN	4652	.	NODE_8_length_217530_cov_12.850706	29487	29488
-UN	4653	.	NODE_8_length_217530_cov_12.850706	29492	29492
-UN	4654	.	NODE_8_length_217530_cov_12.850706	29494	29495
-UN	4655	.	NODE_8_length_217530_cov_12.850706	29504	29505
-UN	4656	.	NODE_8_length_217530_cov_12.850706	29507	29507
-UN	4657	.	NODE_8_length_217530_cov_12.850706	29511	29512
-UN	4658	.	NODE_8_length_217530_cov_12.850706	29515	29516
-UN	4659	.	NODE_8_length_217530_cov_12.850706	29518	29518
-UN	4660	.	NODE_8_length_217530_cov_12.850706	29520	29521
-UN	4661	.	NODE_8_length_217530_cov_12.850706	29525	29525
-UN	4662	.	NODE_8_length_217530_cov_12.850706	29529	29533
-UN	4663	.	NODE_8_length_217530_cov_12.850706	29536	29536
-UN	4664	.	NODE_8_length_217530_cov_12.850706	30014	30014
-UN	4665	.	NODE_8_length_217530_cov_12.850706	30024	30221
-UN	4666	.	NODE_8_length_217530_cov_12.850706	32568	32656
-UN	4667	.	NODE_8_length_217530_cov_12.850706	32660	32660
-UN	4668	.	NODE_8_length_217530_cov_12.850706	32667	32667
-UN	4669	.	NODE_8_length_217530_cov_12.850706	32670	32676
-UN	4670	.	NODE_8_length_217530_cov_12.850706	32685	32685
-UN	4671	.	NODE_8_length_217530_cov_12.850706	33831	33831
-UN	4672	.	NODE_8_length_217530_cov_12.850706	52649	52649
-UN	4673	.	NODE_8_length_217530_cov_12.850706	87271	87273
-UN	4674	.	NODE_8_length_217530_cov_12.850706	87276	87276
-UN	4675	.	NODE_8_length_217530_cov_12.850706	87286	87287
-UN	4676	.	NODE_8_length_217530_cov_12.850706	121187	121187
-UN	4677	.	NODE_8_length_217530_cov_12.850706	121208	121208
-UN	4678	.	NODE_8_length_217530_cov_12.850706	121215	121215
-UN	4679	.	NODE_8_length_217530_cov_12.850706	121249	121249
-UN	4680	.	NODE_8_length_217530_cov_12.850706	165572	165573
-UN	4681	.	NODE_8_length_217530_cov_12.850706	165575	165576
-UN	4682	.	NODE_8_length_217530_cov_12.850706	165582	165585
-UN	4683	.	NODE_8_length_217530_cov_12.850706	165588	165588
-UN	4684	.	NODE_8_length_217530_cov_12.850706	165627	165627
-UN	4685	.	NODE_8_length_217530_cov_12.850706	165695	165695
-UN	4686	.	NODE_8_length_217530_cov_12.850706	198030	198038
-UN	4687	.	NODE_8_length_217530_cov_12.850706	198040	198042
-UN	4688	.	NODE_8_length_217530_cov_12.850706	198044	198048
-UN	4689	.	NODE_8_length_217530_cov_12.850706	198050	198051
-UN	4690	.	NODE_8_length_217530_cov_12.850706	198053	198058
-UN	4691	.	NODE_8_length_217530_cov_12.850706	198060	198064
-UN	4692	.	NODE_8_length_217530_cov_12.850706	198066	198067
-UN	4693	.	NODE_8_length_217530_cov_12.850706	198069	198070
-UN	4694	.	NODE_8_length_217530_cov_12.850706	198072	198072
-UN	4695	.	NODE_8_length_217530_cov_12.850706	198079	198079
-UN	4696	.	NODE_8_length_217530_cov_12.850706	198084	198084
-UN	4697	.	NODE_8_length_217530_cov_12.850706	198086	198086
-UN	4698	.	NODE_8_length_217530_cov_12.850706	198088	198088
-UN	4699	.	NODE_8_length_217530_cov_12.850706	198584	198597
-UN	4700	.	NODE_8_length_217530_cov_12.850706	198599	198599
-UN	4701	.	NODE_8_length_217530_cov_12.850706	198602	198604
-UN	4702	.	NODE_8_length_217530_cov_12.850706	198606	198611
-UN	4703	.	NODE_8_length_217530_cov_12.850706	198615	198615
-UN	4704	.	NODE_8_length_217530_cov_12.850706	198617	198631
-UN	4705	.	NODE_8_length_217530_cov_12.850706	198634	198634
-UN	4706	.	NODE_8_length_217530_cov_12.850706	198636	198638
-UN	4707	.	NODE_8_length_217530_cov_12.850706	198641	198644
-UN	4708	.	NODE_8_length_217530_cov_12.850706	198648	198648
-UN	4709	.	NODE_8_length_217530_cov_12.850706	198652	198654
-UN	4710	.	NODE_8_length_217530_cov_12.850706	198661	198661
-UN	4711	.	NODE_8_length_217530_cov_12.850706	198663	198664
-UN	4712	.	NODE_8_length_217530_cov_12.850706	202062	202062
-UN	4713	.	NODE_8_length_217530_cov_12.850706	202064	202064
-UN	4714	.	NODE_8_length_217530_cov_12.850706	202070	202070
-UN	4715	.	NODE_8_length_217530_cov_12.850706	202078	202079
-UN	4716	.	NODE_8_length_217530_cov_12.850706	202081	202081
-UN	4717	.	NODE_8_length_217530_cov_12.850706	202086	202086
-UN	4718	.	NODE_8_length_217530_cov_12.850706	202178	202179
-UN	4719	.	NODE_8_length_217530_cov_12.850706	217474	217474
-UN	4720	.	NODE_8_length_217530_cov_12.850706	217476	217476
-UN	4721	.	NODE_8_length_217530_cov_12.850706	217483	217483
-UN	4722	.	NODE_8_length_217530_cov_12.850706	217487	217487
-UN	4723	.	NODE_8_length_217530_cov_12.850706	217491	217491
-UN	4724	.	NODE_8_length_217530_cov_12.850706	217499	217507
-UN	4725	.	NODE_8_length_217530_cov_12.850706	217509	217512
-UN	4726	.	NODE_8_length_217530_cov_12.850706	217515	217530
-UN	4727	.	NODE_9_length_197629_cov_13.429418	1	5
-UN	4728	.	NODE_9_length_197629_cov_13.429418	8	13
-UN	4729	.	NODE_9_length_197629_cov_13.429418	431	431
-UN	4730	.	NODE_9_length_197629_cov_13.429418	500	500
-UN	4731	.	NODE_9_length_197629_cov_13.429418	506	506
-UN	4732	.	NODE_9_length_197629_cov_13.429418	518	518
-UN	4733	.	NODE_9_length_197629_cov_13.429418	548	548
-UN	4734	.	NODE_9_length_197629_cov_13.429418	4632	4651
-UN	4735	.	NODE_9_length_197629_cov_13.429418	4653	4654
-UN	4736	.	NODE_9_length_197629_cov_13.429418	4656	4656
-UN	4737	.	NODE_9_length_197629_cov_13.429418	4658	4663
-UN	4738	.	NODE_9_length_197629_cov_13.429418	4665	4665
-UN	4739	.	NODE_9_length_197629_cov_13.429418	4667	4668
-UN	4740	.	NODE_9_length_197629_cov_13.429418	29246	29246
-UN	4741	.	NODE_9_length_197629_cov_13.429418	29259	29259
-UN	4742	.	NODE_9_length_197629_cov_13.429418	29279	29284
-UN	4743	.	NODE_9_length_197629_cov_13.429418	29457	29472
-UN	4744	.	NODE_9_length_197629_cov_13.429418	38048	38048
-UN	4745	.	NODE_9_length_197629_cov_13.429418	42307	42308
-UN	4746	.	NODE_9_length_197629_cov_13.429418	44078	44079
-UN	4747	.	NODE_9_length_197629_cov_13.429418	44088	44088
-UN	4748	.	NODE_9_length_197629_cov_13.429418	44093	44094
-UN	4749	.	NODE_9_length_197629_cov_13.429418	44096	44097
-UN	4750	.	NODE_9_length_197629_cov_13.429418	44105	44105
-UN	4751	.	NODE_9_length_197629_cov_13.429418	44108	44108
-UN	4752	.	NODE_9_length_197629_cov_13.429418	44118	44118
-UN	4753	.	NODE_9_length_197629_cov_13.429418	44121	44121
-UN	4754	.	NODE_9_length_197629_cov_13.429418	44123	44123
-UN	4755	.	NODE_9_length_197629_cov_13.429418	44125	44127
-UN	4756	.	NODE_9_length_197629_cov_13.429418	44133	44135
-UN	4757	.	NODE_9_length_197629_cov_13.429418	44138	44138
-UN	4758	.	NODE_9_length_197629_cov_13.429418	44144	44144
-UN	4759	.	NODE_9_length_197629_cov_13.429418	44152	44152
-UN	4760	.	NODE_9_length_197629_cov_13.429418	44158	44159
-UN	4761	.	NODE_9_length_197629_cov_13.429418	44291	44291
-UN	4762	.	NODE_9_length_197629_cov_13.429418	44294	44306
-UN	4763	.	NODE_9_length_197629_cov_13.429418	44311	44312
-UN	4764	.	NODE_9_length_197629_cov_13.429418	44315	44389
-UN	4765	.	NODE_9_length_197629_cov_13.429418	44394	44395
-UN	4766	.	NODE_9_length_197629_cov_13.429418	44411	44411
-UN	4767	.	NODE_9_length_197629_cov_13.429418	45744	45744
-UN	4768	.	NODE_9_length_197629_cov_13.429418	46110	46110
-UN	4769	.	NODE_9_length_197629_cov_13.429418	46113	46113
-UN	4770	.	NODE_9_length_197629_cov_13.429418	46120	46121
-UN	4771	.	NODE_9_length_197629_cov_13.429418	46127	46127
-UN	4772	.	NODE_9_length_197629_cov_13.429418	46146	46148
-UN	4773	.	NODE_9_length_197629_cov_13.429418	46150	46151
-UN	4774	.	NODE_9_length_197629_cov_13.429418	46156	46160
-UN	4775	.	NODE_9_length_197629_cov_13.429418	46164	46164
-UN	4776	.	NODE_9_length_197629_cov_13.429418	46167	46168
-UN	4777	.	NODE_9_length_197629_cov_13.429418	46170	46170
-UN	4778	.	NODE_9_length_197629_cov_13.429418	53961	53961
-UN	4779	.	NODE_9_length_197629_cov_13.429418	53968	53971
-UN	4780	.	NODE_9_length_197629_cov_13.429418	53973	53976
-UN	4781	.	NODE_9_length_197629_cov_13.429418	53978	53978
-UN	4782	.	NODE_9_length_197629_cov_13.429418	53989	53989
-UN	4783	.	NODE_9_length_197629_cov_13.429418	53999	54000
-UN	4784	.	NODE_9_length_197629_cov_13.429418	54002	54002
-UN	4785	.	NODE_9_length_197629_cov_13.429418	54005	54005
-UN	4786	.	NODE_9_length_197629_cov_13.429418	54010	54010
-UN	4787	.	NODE_9_length_197629_cov_13.429418	54016	54016
-UN	4788	.	NODE_9_length_197629_cov_13.429418	54019	54021
-UN	4789	.	NODE_9_length_197629_cov_13.429418	54023	54023
-UN	4790	.	NODE_9_length_197629_cov_13.429418	54029	54034
-UN	4791	.	NODE_9_length_197629_cov_13.429418	54038	54040
-UN	4792	.	NODE_9_length_197629_cov_13.429418	54042	54045
-UN	4793	.	NODE_9_length_197629_cov_13.429418	54050	54052
-UN	4794	.	NODE_9_length_197629_cov_13.429418	54055	54058
-UN	4795	.	NODE_9_length_197629_cov_13.429418	54060	54063
-UN	4796	.	NODE_9_length_197629_cov_13.429418	54065	54066
-UN	4797	.	NODE_9_length_197629_cov_13.429418	54068	54076
-UN	4798	.	NODE_9_length_197629_cov_13.429418	54078	54156
-UN	4799	.	NODE_9_length_197629_cov_13.429418	54170	54170
-UN	4800	.	NODE_9_length_197629_cov_13.429418	54178	54179
-UN	4801	.	NODE_9_length_197629_cov_13.429418	54182	54183
-UN	4802	.	NODE_9_length_197629_cov_13.429418	54185	54185
-UN	4803	.	NODE_9_length_197629_cov_13.429418	54457	54459
-UN	4804	.	NODE_9_length_197629_cov_13.429418	54461	54461
-UN	4805	.	NODE_9_length_197629_cov_13.429418	58010	58091
-UN	4806	.	NODE_9_length_197629_cov_13.429418	67310	67310
-UN	4807	.	NODE_9_length_197629_cov_13.429418	72779	72779
-UN	4808	.	NODE_9_length_197629_cov_13.429418	119419	119423
-UN	4809	.	NODE_9_length_197629_cov_13.429418	119425	119426
-UN	4810	.	NODE_9_length_197629_cov_13.429418	119431	119431
-UN	4811	.	NODE_9_length_197629_cov_13.429418	119434	119437
-UN	4812	.	NODE_9_length_197629_cov_13.429418	119440	119447
-UN	4813	.	NODE_9_length_197629_cov_13.429418	119449	119453
-UN	4814	.	NODE_9_length_197629_cov_13.429418	119455	119455
-UN	4815	.	NODE_9_length_197629_cov_13.429418	119460	119465
-UN	4816	.	NODE_9_length_197629_cov_13.429418	119468	119468
-UN	4817	.	NODE_9_length_197629_cov_13.429418	119470	119471
-UN	4818	.	NODE_9_length_197629_cov_13.429418	119474	119474
-UN	4819	.	NODE_9_length_197629_cov_13.429418	119477	119477
-UN	4820	.	NODE_9_length_197629_cov_13.429418	119807	119807
-UN	4821	.	NODE_9_length_197629_cov_13.429418	151783	151783
-UN	4822	.	NODE_9_length_197629_cov_13.429418	152471	152471
-UN	4823	.	NODE_9_length_197629_cov_13.429418	152476	152477
-UN	4824	.	NODE_9_length_197629_cov_13.429418	173716	173717
-UN	4825	.	NODE_9_length_197629_cov_13.429418	173722	173723
-UN	4826	.	NODE_9_length_197629_cov_13.429418	173726	173728
-UN	4827	.	NODE_9_length_197629_cov_13.429418	173734	173736
-UN	4828	.	NODE_9_length_197629_cov_13.429418	173738	173738
-UN	4829	.	NODE_9_length_197629_cov_13.429418	173744	173748
-UN	4830	.	NODE_9_length_197629_cov_13.429418	173750	173750
-UN	4831	.	NODE_9_length_197629_cov_13.429418	173753	173753
-UN	4832	.	NODE_9_length_197629_cov_13.429418	173756	173756
-UN	4833	.	NODE_9_length_197629_cov_13.429418	173761	173763
-UN	4834	.	NODE_9_length_197629_cov_13.429418	173765	173766
-UN	4835	.	NODE_9_length_197629_cov_13.429418	173768	173769
-UN	4836	.	NODE_9_length_197629_cov_13.429418	173775	173775
-UN	4837	.	NODE_9_length_197629_cov_13.429418	173777	173777
-UN	4838	.	NODE_9_length_197629_cov_13.429418	173779	173780
-UN	4839	.	NODE_9_length_197629_cov_13.429418	173782	173785
-UN	4840	.	NODE_9_length_197629_cov_13.429418	185887	185888
-UN	4841	.	NODE_9_length_197629_cov_13.429418	185893	185898
-UN	4842	.	NODE_9_length_197629_cov_13.429418	185904	185904
-UN	4843	.	NODE_9_length_197629_cov_13.429418	185906	185911
-UN	4844	.	NODE_9_length_197629_cov_13.429418	186582	186583
-UN	4845	.	NODE_9_length_197629_cov_13.429418	186596	186596
-UN	4846	.	NODE_9_length_197629_cov_13.429418	186600	186600
-UN	4847	.	NODE_9_length_197629_cov_13.429418	186603	186612
-UN	4848	.	NODE_9_length_197629_cov_13.429418	186617	186617
-UN	4849	.	NODE_9_length_197629_cov_13.429418	186621	186621
-UN	4850	.	NODE_9_length_197629_cov_13.429418	197558	197629
+#=COMMAND	../../tools/breseq-0.32.1-Linux-x86_64/bin/breseq --reference ../data/prokka/14964/14964b_S37_L001_R1_001/14964b_S37_L001_R1_001.gff --num-processors 6 --output ../data/breseq/14964/14964c_S38_L001_R1_001.fastq.gz ../data/reads/14964//14964c_S38_L001_R1_001.fastq.gz ../data/reads/14964//14964c_S38_L001_R2_001.fastq.gz
+#=REFSEQ	../data/prokka/14964/14964b_S37_L001_R1_001/14964b_S37_L001_R1_001.gff
+#=READSEQ	../data/reads/14964//14964c_S38_L001_R1_001.fastq.gz
+#=READSEQ	../data/reads/14964//14964c_S38_L001_R2_001.fastq.gz
+#=CONVERTED-BASES	223896321
+#=CONVERTED-READS	1058146
+#=INPUT-BASES	223916434
+#=INPUT-READS	1058406
+#=MAPPED-BASES	176953894
+#=MAPPED-READS	897227
+SNP	1	31	NODE_100_length_4298_cov_18.099497	4132	C
+SNP	2	32	NODE_100_length_4298_cov_18.099497	4171	T
+SNP	3	38	NODE_105_length_3310_cov_17.106189	33	A
+SNP	4	39	NODE_105_length_3310_cov_17.106189	40	A
+SNP	5	40	NODE_105_length_3310_cov_17.106189	60	T
+SUB	6	41,42,43	NODE_105_length_3310_cov_17.106189	78	3	CGT
+SNP	7	44	NODE_105_length_3310_cov_17.106189	92	T
+SNP	8	45	NODE_105_length_3310_cov_17.106189	97	C
+SNP	9	46	NODE_105_length_3310_cov_17.106189	153	T
+SNP	10	47	NODE_105_length_3310_cov_17.106189	215	G
+INS	11	48	NODE_105_length_3310_cov_17.106189	227	G
+SNP	12	89	NODE_16_length_101228_cov_13.975534	100249	G
+INS	13	172	NODE_30_length_54368_cov_15.321712	45375	G
+DEL	14	305,306,307,308,309,310,311,312,313	NODE_52_length_28997_cov_14.175476	21	9
+SNP	15	314	NODE_57_length_25591_cov_17.529414	17	G
+SNP	16	315	NODE_57_length_25591_cov_17.529414	79	G
+SNP	17	316	NODE_57_length_25591_cov_17.529414	89	A
+SNP	18	317	NODE_57_length_25591_cov_17.529414	119	C
+SNP	19	318	NODE_57_length_25591_cov_17.529414	121	C
+SNP	20	319	NODE_57_length_25591_cov_17.529414	128	C
+SNP	21	320	NODE_57_length_25591_cov_17.529414	140	C
+SNP	22	321	NODE_57_length_25591_cov_17.529414	144	C
+SNP	23	322	NODE_57_length_25591_cov_17.529414	165	T
+SNP	24	323	NODE_57_length_25591_cov_17.529414	191	C
+SNP	25	324	NODE_57_length_25591_cov_17.529414	209	A
+INS	26	325	NODE_57_length_25591_cov_17.529414	238	A
+SNP	27	326	NODE_57_length_25591_cov_17.529414	250	T
+SNP	28	328	NODE_57_length_25591_cov_17.529414	274	G
+SNP	29	345	NODE_5_length_126675_cov_12.099970	22994	T
+INS	30	638	NODE_67_length_17417_cov_16.557604	17303	CCCAGCCGT	repeat_length=9	repeat_new_copies=2	repeat_ref_copies=1	repeat_seq=CCCAGCCGT
+RA	31	.	NODE_100_length_4298_cov_18.099497	4132	0	T	C	bias_e_value=3451320	bias_p_value=0.736963	consensus_score=545.3	fisher_strand_p_value=0.876893	frequency=1	ks_quality_p_value=0.420902	major_base=C	major_cov=103/117	major_frequency=8.118e-01	minor_base=T	minor_cov=23/28	new_cov=103/117	polymorphism_frequency=8.118e-01	polymorphism_score=109.2	prediction=consensus	ref_cov=23/28	total_cov=126/145
+RA	32	.	NODE_100_length_4298_cov_18.099497	4171	0	C	T	bias_e_value=4176730	bias_p_value=0.891861	consensus_score=559.2	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.572596	major_base=T	major_cov=111/124	major_frequency=8.640e-01	minor_base=C	minor_cov=18/19	new_cov=111/124	polymorphism_frequency=8.640e-01	polymorphism_score=76.9	prediction=consensus	ref_cov=18/19	total_cov=129/144
+RA	33	.	NODE_100_length_4298_cov_18.099497	4237	0	A	C	bias_e_value=2612300	bias_p_value=0.557806	consensus_reject=FREQUENCY_CUTOFF	consensus_score=294.0	fisher_strand_p_value=0.223938	frequency=3.598e-01	ks_quality_p_value=0.996333	major_base=A	major_cov=76/77	major_frequency=6.402e-01	minor_base=C	minor_cov=35/51	new_cov=35/51	polymorphism_frequency=3.598e-01	polymorphism_score=236.4	prediction=polymorphism	ref_cov=76/77	total_cov=111/129
+RA	34	.	NODE_100_length_4298_cov_18.099497	4253	0	A	G	bias_e_value=4676500	bias_p_value=0.998577	consensus_reject=FREQUENCY_CUTOFF	consensus_score=232.0	fisher_strand_p_value=1	frequency=2.632e-01	ks_quality_p_value=0.947126	major_base=A	major_cov=55/57	major_frequency=7.368e-01	minor_base=G	minor_cov=19/21	new_cov=19/21	polymorphism_frequency=2.632e-01	polymorphism_score=87.5	prediction=polymorphism	ref_cov=55/57	total_cov=74/83
+RA	35	.	NODE_101_length_4082_cov_21.352212	3955	0	C	T	bias_e_value=3721740	bias_p_value=0.794706	consensus_reject=FREQUENCY_CUTOFF	consensus_score=61.9	fisher_strand_p_value=0.787406	frequency=3.333e-01	ks_quality_p_value=0.548812	major_base=C	major_cov=18/22	major_frequency=6.667e-01	minor_base=T	minor_cov=10/10	new_cov=10/10	polymorphism_frequency=3.333e-01	polymorphism_score=42.7	prediction=polymorphism	ref_cov=18/22	total_cov=28/32
+RA	36	.	NODE_105_length_3310_cov_17.106189	3	0	T	G	bias_e_value=2661540	bias_p_value=0.568319	consensus_reject=FREQUENCY_CUTOFF	consensus_score=329.2	fisher_strand_p_value=1	frequency=7.975e-01	ks_quality_p_value=0.2302	major_base=G	major_cov=61/65	major_frequency=7.975e-01	minor_base=T	minor_cov=15/17	new_cov=61/65	polymorphism_frequency=7.975e-01	polymorphism_score=78.6	prediction=polymorphism	ref_cov=15/17	total_cov=76/82
+RA	37	.	NODE_105_length_3310_cov_17.106189	5	0	T	C	bias_e_value=3616390	bias_p_value=0.77221	consensus_reject=FREQUENCY_CUTOFF	consensus_score=293.7	fisher_strand_p_value=1	frequency=7.949e-01	ks_quality_p_value=0.406267	major_base=C	major_cov=59/65	major_frequency=7.949e-01	minor_base=T	minor_cov=15/17	new_cov=59/65	polymorphism_frequency=7.949e-01	polymorphism_score=68.7	prediction=polymorphism	ref_cov=15/17	total_cov=76/82
+RA	38	.	NODE_105_length_3310_cov_17.106189	33	0	G	A	bias_e_value=3532600	bias_p_value=0.754318	consensus_score=327.2	fisher_strand_p_value=0.428584	frequency=1	ks_quality_p_value=0.902795	major_base=A	major_cov=65/72	major_frequency=8.155e-01	minor_base=G	minor_cov=12/19	new_cov=65/72	polymorphism_frequency=8.155e-01	polymorphism_score=59.0	prediction=consensus	ref_cov=12/19	total_cov=78/91
+RA	39	.	NODE_105_length_3310_cov_17.106189	40	0	T	A	bias_e_value=3875590	bias_p_value=0.827557	consensus_score=403.6	fisher_strand_p_value=0.515339	frequency=1	ks_quality_p_value=0.918987	major_base=A	major_cov=65/69	major_frequency=8.428e-01	minor_base=T	minor_cov=10/15	new_cov=65/69	polymorphism_frequency=8.428e-01	polymorphism_score=57.6	prediction=consensus	ref_cov=10/15	total_cov=76/85
+RA	40	.	NODE_105_length_3310_cov_17.106189	60	0	C	T	bias_e_value=4351500	bias_p_value=0.929178	consensus_score=351.3	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.648079	major_base=T	major_cov=62/68	major_frequency=8.609e-01	minor_base=C	minor_cov=10/11	new_cov=62/68	polymorphism_frequency=8.609e-01	polymorphism_score=40.9	prediction=consensus	ref_cov=10/11	total_cov=72/79
+RA	41	.	NODE_105_length_3310_cov_17.106189	78	0	A	C	bias_e_value=3796190	bias_p_value=0.810604	consensus_score=415.5	fisher_strand_p_value=0.452269	frequency=1	ks_quality_p_value=0.998523	major_base=C	major_cov=66/64	major_frequency=8.784e-01	minor_base=A	minor_cov=7/11	new_cov=66/64	polymorphism_frequency=8.784e-01	polymorphism_score=31.8	prediction=consensus	ref_cov=7/11	total_cov=73/75
+RA	42	.	NODE_105_length_3310_cov_17.106189	79	0	A	G	bias_e_value=4543390	bias_p_value=0.970153	consensus_score=371.8	fisher_strand_p_value=0.802516	frequency=1	ks_quality_p_value=0.9543	major_base=G	major_cov=65/65	major_frequency=8.784e-01	minor_base=A	minor_cov=8/10	new_cov=65/65	polymorphism_frequency=8.784e-01	polymorphism_score=31.7	prediction=consensus	ref_cov=8/10	total_cov=73/75
+RA	43	.	NODE_105_length_3310_cov_17.106189	80	0	G	T	bias_e_value=3917120	bias_p_value=0.836426	consensus_score=391.4	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.485659	major_base=T	major_cov=65/66	major_frequency=8.851e-01	minor_base=G	minor_cov=8/9	new_cov=65/66	polymorphism_frequency=8.851e-01	polymorphism_score=34.2	prediction=consensus	ref_cov=8/9	total_cov=73/75
+RA	44	.	NODE_105_length_3310_cov_17.106189	92	0	C	T	bias_e_value=3364970	bias_p_value=0.718524	consensus_score=372.4	fisher_strand_p_value=0.478895	frequency=1	ks_quality_p_value=0.733013	major_base=T	major_cov=69/70	major_frequency=8.742e-01	minor_base=C	minor_cov=8/12	new_cov=69/70	polymorphism_frequency=8.742e-01	polymorphism_score=36.4	prediction=consensus	ref_cov=8/12	total_cov=77/83
+RA	45	.	NODE_105_length_3310_cov_17.106189	97	0	T	C	bias_e_value=3369040	bias_p_value=0.719394	consensus_score=394.0	fisher_strand_p_value=0.478895	frequency=1	ks_quality_p_value=0.734749	major_base=C	major_cov=69/70	major_frequency=8.742e-01	minor_base=T	minor_cov=8/12	new_cov=69/70	polymorphism_frequency=8.742e-01	polymorphism_score=35.4	prediction=consensus	ref_cov=8/12	total_cov=77/82
+RA	46	.	NODE_105_length_3310_cov_17.106189	153	0	C	T	bias_e_value=4650060	bias_p_value=0.99293	consensus_score=483.4	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.883468	major_base=T	major_cov=87/87	major_frequency=8.832e-01	minor_base=C	minor_cov=11/12	new_cov=87/87	polymorphism_frequency=8.832e-01	polymorphism_score=40.5	prediction=consensus	ref_cov=11/12	total_cov=98/99
+RA	47	.	NODE_105_length_3310_cov_17.106189	215	0	A	G	bias_e_value=2924830	bias_p_value=0.624541	consensus_score=525.0	fisher_strand_p_value=0.272207	frequency=1	ks_quality_p_value=0.99476	major_base=G	major_cov=92/84	major_frequency=8.844e-01	minor_base=A	minor_cov=9/14	new_cov=92/84	polymorphism_frequency=8.844e-01	polymorphism_score=32.5	prediction=consensus	ref_cov=9/14	total_cov=102/98
+RA	48	.	NODE_105_length_3310_cov_17.106189	226	1	.	G	bias_e_value=4206140	bias_p_value=0.898141	consensus_score=547.5	fisher_strand_p_value=0.584063	frequency=1	ks_quality_p_value=1	major_base=G	major_cov=86/77	major_frequency=8.191e-01	minor_base=.	minor_cov=17/19	new_cov=86/77	polymorphism_frequency=8.191e-01	polymorphism_score=116.8	prediction=consensus	ref_cov=17/19	total_cov=104/98
+RA	49	.	NODE_111_length_2684_cov_16.927259	149	0	G	A	bias_e_value=4661330	bias_p_value=0.995337	consensus_reject=FREQUENCY_CUTOFF	consensus_score=78.6	fisher_strand_p_value=1	frequency=6.974e-01	ks_quality_p_value=0.904998	major_base=A	major_cov=26/27	major_frequency=6.974e-01	minor_base=G	minor_cov=12/11	new_cov=26/27	polymorphism_frequency=6.974e-01	polymorphism_score=48.2	prediction=polymorphism	ref_cov=12/11	total_cov=38/38
+RA	50	.	NODE_111_length_2684_cov_16.927259	154	0	G	A	bias_e_value=4118670	bias_p_value=0.879462	consensus_reject=FREQUENCY_CUTOFF	consensus_score=91.9	fisher_strand_p_value=0.608594	frequency=7.237e-01	ks_quality_p_value=0.905518	major_base=A	major_cov=26/29	major_frequency=7.237e-01	minor_base=G	minor_cov=12/9	new_cov=26/29	polymorphism_frequency=7.237e-01	polymorphism_score=48.2	prediction=polymorphism	ref_cov=12/9	total_cov=38/38
+RA	51	.	NODE_111_length_2684_cov_16.927259	170	0	T	A	bias_e_value=4584480	bias_p_value=0.978927	consensus_reject=FREQUENCY_CUTOFF	consensus_score=96.6	fisher_strand_p_value=0.801856	frequency=7.027e-01	ks_quality_p_value=1	major_base=A	major_cov=26/26	major_frequency=7.027e-01	minor_base=T	minor_cov=12/10	new_cov=26/26	polymorphism_frequency=7.027e-01	polymorphism_score=57.0	prediction=polymorphism	ref_cov=12/10	total_cov=38/38
+RA	52	.	NODE_111_length_2684_cov_16.927259	191	0	C	T	bias_e_value=4331970	bias_p_value=0.925008	consensus_reject=FREQUENCY_CUTOFF	consensus_score=51.6	fisher_strand_p_value=0.638624	frequency=6.400e-01	ks_quality_p_value=1	major_base=T	major_cov=22/26	major_frequency=6.400e-01	minor_base=C	minor_cov=14/13	new_cov=22/26	polymorphism_frequency=6.400e-01	polymorphism_score=61.7	prediction=polymorphism	ref_cov=14/13	total_cov=36/39
+RA	53	.	NODE_111_length_2684_cov_16.927259	208	0	A	G	bias_e_value=3799830	bias_p_value=0.811381	consensus_reject=FREQUENCY_CUTOFF	consensus_score=54.8	fisher_strand_p_value=0.45891	frequency=6.667e-01	ks_quality_p_value=0.986207	major_base=G	major_cov=21/27	major_frequency=6.667e-01	minor_base=A	minor_cov=13/11	new_cov=21/27	polymorphism_frequency=6.667e-01	polymorphism_score=53.4	prediction=polymorphism	ref_cov=13/11	total_cov=34/38
+RA	54	.	NODE_111_length_2684_cov_16.927259	233	0	G	A	bias_e_value=1291430	bias_p_value=0.27576	consensus_reject=FREQUENCY_CUTOFF	consensus_score=43.6	fisher_strand_p_value=0.447725	frequency=6.667e-01	ks_quality_p_value=0.173145	major_base=A	major_cov=19/27	major_frequency=6.667e-01	minor_base=G	minor_cov=12/11	new_cov=19/27	polymorphism_frequency=6.667e-01	polymorphism_score=56.3	prediction=polymorphism	ref_cov=12/11	total_cov=31/38
+RA	55	.	NODE_111_length_2684_cov_16.927259	263	0	C	T	bias_e_value=2035770	bias_p_value=0.434699	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.8	fisher_strand_p_value=0.201575	frequency=6.418e-01	ks_quality_p_value=0.744483	major_base=T	major_cov=17/26	major_frequency=6.418e-01	minor_base=C	minor_cov=14/10	new_cov=17/26	polymorphism_frequency=6.418e-01	polymorphism_score=56.1	prediction=polymorphism	ref_cov=14/10	total_cov=31/36
+RA	56	.	NODE_111_length_2684_cov_16.927259	275	0	A	G	bias_e_value=2025980	bias_p_value=0.43261	consensus_reject=FREQUENCY_CUTOFF	consensus_score=16.7	fisher_strand_p_value=0.218401	frequency=6.029e-01	ks_quality_p_value=0.682091	major_base=G	major_cov=16/25	major_frequency=6.029e-01	minor_base=A	minor_cov=15/12	new_cov=16/25	polymorphism_frequency=6.029e-01	polymorphism_score=61.7	prediction=polymorphism	ref_cov=15/12	total_cov=31/37
+RA	57	.	NODE_111_length_2684_cov_16.927259	278	0	G	A	bias_e_value=912034	bias_p_value=0.194747	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.5	fisher_strand_p_value=0.121116	frequency=6.250e-01	ks_quality_p_value=0.399018	major_base=A	major_cov=16/24	major_frequency=6.250e-01	minor_base=G	minor_cov=15/9	new_cov=16/24	polymorphism_frequency=6.250e-01	polymorphism_score=56.4	prediction=polymorphism	ref_cov=15/9	total_cov=31/35
+RA	58	.	NODE_111_length_2684_cov_16.927259	296	0	C	T	bias_e_value=1584380	bias_p_value=0.338313	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-1.3	fisher_strand_p_value=0.216194	frequency=5.455e-01	ks_quality_p_value=0.478852	major_base=T	major_cov=15/21	major_frequency=5.455e-01	minor_base=C	minor_cov=18/12	new_cov=15/21	polymorphism_frequency=5.455e-01	polymorphism_score=76.1	prediction=polymorphism	ref_cov=18/12	total_cov=33/34
+RA	59	.	NODE_111_length_2684_cov_16.927259	299	0	T	G	bias_e_value=996384	bias_p_value=0.212758	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.7	fisher_strand_p_value=0.0865813	frequency=5.672e-01	ks_quality_p_value=0.628227	major_base=G	major_cov=15/23	major_frequency=5.672e-01	minor_base=T	minor_cov=18/11	new_cov=15/23	polymorphism_frequency=5.672e-01	polymorphism_score=76.9	prediction=polymorphism	ref_cov=18/11	total_cov=33/34
+RA	60	.	NODE_111_length_2684_cov_16.927259	317	0	C	T	bias_e_value=186769	bias_p_value=0.0398809	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.1	fisher_strand_p_value=0.136145	frequency=5.692e-01	ks_quality_p_value=0.0486889	major_base=T	major_cov=15/22	major_frequency=5.692e-01	minor_base=C	minor_cov=17/11	new_cov=15/22	polymorphism_frequency=5.692e-01	polymorphism_score=69.8	prediction=polymorphism	ref_cov=17/11	total_cov=33/34
+RA	61	.	NODE_111_length_2684_cov_16.927259	322	0	A	C	bias_e_value=1076540	bias_p_value=0.229875	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.1	fisher_strand_p_value=0.0779158	frequency=5.469e-01	ks_quality_p_value=0.77495	major_base=C	major_cov=13/22	major_frequency=5.469e-01	minor_base=A	minor_cov=18/11	new_cov=13/22	polymorphism_frequency=5.469e-01	polymorphism_score=79.7	prediction=polymorphism	ref_cov=18/11	total_cov=31/34
+RA	62	.	NODE_111_length_2684_cov_16.927259	334	0	A	G	bias_e_value=1985570	bias_p_value=0.423979	consensus_reject=FREQUENCY_CUTOFF	consensus_score=12.9	fisher_strand_p_value=0.156983	frequency=5.811e-01	ks_quality_p_value=0.920307	major_base=G	major_cov=18/25	major_frequency=5.811e-01	minor_base=A	minor_cov=19/12	new_cov=18/25	polymorphism_frequency=5.811e-01	polymorphism_score=74.4	prediction=polymorphism	ref_cov=19/12	total_cov=37/38
+RA	63	.	NODE_111_length_2684_cov_16.927259	353	0	G	A	bias_e_value=2888340	bias_p_value=0.616749	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.7	fisher_strand_p_value=0.264866	frequency=6.098e-01	ks_quality_p_value=1	major_base=A	major_cov=23/27	major_frequency=6.098e-01	minor_base=G	minor_cov=19/13	new_cov=23/27	polymorphism_frequency=6.098e-01	polymorphism_score=74.0	prediction=polymorphism	ref_cov=19/13	total_cov=42/40
+RA	64	.	NODE_111_length_2684_cov_16.927259	371	0	A	G	bias_e_value=2029490	bias_p_value=0.433358	consensus_reject=FREQUENCY_CUTOFF	consensus_score=42.7	fisher_strand_p_value=0.264566	frequency=6.235e-01	ks_quality_p_value=0.564558	major_base=G	major_cov=24/29	major_frequency=6.235e-01	minor_base=A	minor_cov=19/13	new_cov=24/29	polymorphism_frequency=6.235e-01	polymorphism_score=77.9	prediction=polymorphism	ref_cov=19/13	total_cov=43/42
+RA	65	.	NODE_111_length_2684_cov_16.927259	414	0	T	C	bias_e_value=4613610	bias_p_value=0.985148	consensus_reject=FREQUENCY_CUTOFF	consensus_score=42.1	fisher_strand_p_value=0.832678	frequency=5.978e-01	ks_quality_p_value=1	major_base=C	major_cov=25/30	major_frequency=5.978e-01	minor_base=T	minor_cov=18/19	new_cov=25/30	polymorphism_frequency=5.978e-01	polymorphism_score=85.2	prediction=polymorphism	ref_cov=18/19	total_cov=43/49
+RA	66	.	NODE_111_length_2684_cov_16.927259	623	0	T	C	bias_e_value=4683000	bias_p_value=0.999965	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=4.6	fisher_strand_p_value=1	frequency=4.624e-01	ks_quality_p_value=0.991623	major_base=T	major_cov=26/24	major_frequency=5.376e-01	minor_base=C	minor_cov=23/20	new_cov=23/20	polymorphism_frequency=4.624e-01	polymorphism_score=114.3	prediction=polymorphism	ref_cov=26/24	total_cov=49/45
+RA	67	.	NODE_111_length_2684_cov_16.927259	635	0	A	G	bias_e_value=2868260	bias_p_value=0.612461	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.9	fisher_strand_p_value=0.835033	frequency=4.505e-01	ks_quality_p_value=0.313345	major_base=A	major_cov=27/23	major_frequency=5.495e-01	minor_base=G	minor_cov=21/20	new_cov=21/20	polymorphism_frequency=4.505e-01	polymorphism_score=108.6	prediction=polymorphism	ref_cov=27/23	total_cov=48/43
+RA	68	.	NODE_111_length_2684_cov_16.927259	665	0	G	A	bias_e_value=3840570	bias_p_value=0.820079	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.2	fisher_strand_p_value=0.539913	frequency=5.521e-01	ks_quality_p_value=0.858883	major_base=A	major_cov=27/26	major_frequency=5.521e-01	minor_base=G	minor_cov=25/18	new_cov=27/26	polymorphism_frequency=5.521e-01	polymorphism_score=113.5	prediction=polymorphism	ref_cov=25/18	total_cov=52/45
+RA	69	.	NODE_111_length_2684_cov_16.927259	670	0	T	G	bias_e_value=4673010	bias_p_value=0.997832	consensus_reject=FREQUENCY_CUTOFF	consensus_score=40.6	fisher_strand_p_value=1	frequency=5.455e-01	ks_quality_p_value=0.934877	major_base=G	major_cov=28/26	major_frequency=5.455e-01	minor_base=T	minor_cov=24/21	new_cov=28/26	polymorphism_frequency=5.455e-01	polymorphism_score=128.6	prediction=polymorphism	ref_cov=24/21	total_cov=52/47
+RA	70	.	NODE_111_length_2684_cov_16.927259	2106	0	C	T	bias_e_value=3597540	bias_p_value=0.768185	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.3	fisher_strand_p_value=0.823564	frequency=4.268e-01	ks_quality_p_value=0.487911	major_base=C	major_cov=22/25	major_frequency=5.732e-01	minor_base=T	minor_cov=18/17	new_cov=18/17	polymorphism_frequency=4.268e-01	polymorphism_score=88.2	prediction=polymorphism	ref_cov=22/25	total_cov=40/42
+RA	71	.	NODE_111_length_2684_cov_16.927259	2112	0	A	C	bias_e_value=4469110	bias_p_value=0.954291	consensus_reject=FREQUENCY_CUTOFF	consensus_score=26.6	fisher_strand_p_value=0.82569	frequency=4.217e-01	ks_quality_p_value=0.863887	major_base=A	major_cov=23/25	major_frequency=5.783e-01	minor_base=C	minor_cov=18/17	new_cov=18/17	polymorphism_frequency=4.217e-01	polymorphism_score=98.1	prediction=polymorphism	ref_cov=23/25	total_cov=41/42
+RA	72	.	NODE_111_length_2684_cov_16.927259	2119	0	G	A	bias_e_value=4633920	bias_p_value=0.989483	consensus_reject=FREQUENCY_CUTOFF	consensus_score=46.2	fisher_strand_p_value=1	frequency=3.896e-01	ks_quality_p_value=0.858519	major_base=G	major_cov=22/25	major_frequency=6.104e-01	minor_base=A	minor_cov=14/16	new_cov=14/16	polymorphism_frequency=3.896e-01	polymorphism_score=74.4	prediction=polymorphism	ref_cov=22/25	total_cov=36/41
+RA	73	.	NODE_111_length_2684_cov_16.927259	2125	0	G	C	bias_e_value=4579130	bias_p_value=0.977784	consensus_reject=FREQUENCY_CUTOFF	consensus_score=84.6	fisher_strand_p_value=0.804448	frequency=3.200e-01	ks_quality_p_value=0.990438	major_base=G	major_cov=24/27	major_frequency=6.800e-01	minor_base=C	minor_cov=10/14	new_cov=10/14	polymorphism_frequency=3.200e-01	polymorphism_score=65.0	prediction=polymorphism	ref_cov=24/27	total_cov=35/41
+RA	74	.	NODE_111_length_2684_cov_16.927259	2138	0	T	C	bias_e_value=3758300	bias_p_value=0.802513	consensus_reject=FREQUENCY_CUTOFF	consensus_score=112.7	fisher_strand_p_value=0.538865	frequency=2.031e-01	ks_quality_p_value=0.819433	major_base=T	major_cov=26/25	major_frequency=7.969e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=2.031e-01	polymorphism_score=26.5	prediction=polymorphism	ref_cov=26/25	total_cov=31/33
+RA	75	.	NODE_111_length_2684_cov_16.927259	2144	0	T	C	bias_e_value=2792470	bias_p_value=0.596277	consensus_reject=FREQUENCY_CUTOFF	consensus_score=105.1	fisher_strand_p_value=0.537403	frequency=2.097e-01	ks_quality_p_value=0.464803	major_base=T	major_cov=25/24	major_frequency=7.903e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=2.097e-01	polymorphism_score=24.6	prediction=polymorphism	ref_cov=25/24	total_cov=30/32
+RA	76	.	NODE_114_length_2255_cov_20.287124	2239	0	T	.	bias_e_value=4659280	bias_p_value=0.994899	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.6	fisher_strand_p_value=1	frequency=4.706e-01	ks_quality_p_value=0.900707	major_base=T	major_cov=6/3	major_frequency=5.294e-01	minor_base=.	minor_cov=5/3	new_cov=5/3	polymorphism_frequency=4.706e-01	polymorphism_score=25.2	prediction=polymorphism	ref_cov=6/3	total_cov=11/6
+RA	77	.	NODE_114_length_2255_cov_20.287124	2240	0	G	.	bias_e_value=801878	bias_p_value=0.171225	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.6	fisher_strand_p_value=0.606643	frequency=6.250e-01	ks_quality_p_value=0.0672055	major_base=.	major_cov=7/3	major_frequency=6.250e-01	minor_base=G	minor_cov=3/3	new_cov=7/3	polymorphism_frequency=6.250e-01	polymorphism_score=26.7	prediction=polymorphism	ref_cov=3/3	total_cov=11/6
+RA	78	.	NODE_114_length_2255_cov_20.287124	2241	0	C	.	bias_e_value=1704830	bias_p_value=0.364033	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-1.3	fisher_strand_p_value=0.643665	frequency=5.882e-01	ks_quality_p_value=0.178886	major_base=.	major_cov=7/3	major_frequency=5.882e-01	minor_base=C	minor_cov=4/3	new_cov=7/3	polymorphism_frequency=5.882e-01	polymorphism_score=28.8	prediction=polymorphism	ref_cov=4/3	total_cov=11/6
+RA	79	.	NODE_114_length_2255_cov_20.287124	2242	0	C	.	bias_e_value=1704830	bias_p_value=0.364033	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-1.5	fisher_strand_p_value=0.643665	frequency=5.882e-01	ks_quality_p_value=0.178886	major_base=.	major_cov=7/3	major_frequency=5.882e-01	minor_base=C	minor_cov=4/3	new_cov=7/3	polymorphism_frequency=5.882e-01	polymorphism_score=29.3	prediction=polymorphism	ref_cov=4/3	total_cov=11/6
+RA	80	.	NODE_114_length_2255_cov_20.287124	2243	0	A	.	bias_e_value=2093170	bias_p_value=0.446957	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.3	fisher_strand_p_value=0.643665	frequency=5.882e-01	ks_quality_p_value=0.243304	major_base=.	major_cov=7/3	major_frequency=5.882e-01	minor_base=A	minor_cov=4/3	new_cov=7/3	polymorphism_frequency=5.882e-01	polymorphism_score=29.7	prediction=polymorphism	ref_cov=4/3	total_cov=11/6
+RA	81	.	NODE_114_length_2255_cov_20.287124	2244	0	G	.	bias_e_value=801878	bias_p_value=0.171225	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.4	fisher_strand_p_value=0.606643	frequency=6.250e-01	ks_quality_p_value=0.0672055	major_base=.	major_cov=7/3	major_frequency=6.250e-01	minor_base=G	minor_cov=3/3	new_cov=7/3	polymorphism_frequency=6.250e-01	polymorphism_score=26.9	prediction=polymorphism	ref_cov=3/3	total_cov=11/6
+RA	82	.	NODE_12_length_110741_cov_15.264017	110614	0	C	T	bias_e_value=2418010	bias_p_value=0.516319	consensus_reject=FREQUENCY_CUTOFF	consensus_score=371.0	fisher_strand_p_value=0.246203	frequency=2.678e-01	ks_quality_p_value=0.798361	major_base=C	major_cov=78/97	major_frequency=7.322e-01	minor_base=T	minor_cov=34/30	new_cov=34/30	polymorphism_frequency=2.678e-01	polymorphism_score=147.7	prediction=polymorphism	ref_cov=78/97	total_cov=114/128
+RA	83	.	NODE_13_length_103247_cov_14.490700	103001	0	A	G	bias_e_value=4403350	bias_p_value=0.940251	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.7	fisher_strand_p_value=1	frequency=2.258e-01	ks_quality_p_value=0.674866	major_base=A	major_cov=16/8	major_frequency=7.742e-01	minor_base=G	minor_cov=5/2	new_cov=5/2	polymorphism_frequency=2.258e-01	polymorphism_score=10.9	prediction=polymorphism	ref_cov=16/8	total_cov=22/10
+RA	84	.	NODE_14_length_103178_cov_15.034750	212	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=51.8	fisher_strand_p_value=1	frequency=2.353e-01	ks_quality_p_value=1	major_base=C	major_cov=15/11	major_frequency=7.647e-01	minor_base=T	minor_cov=5/3	new_cov=5/3	polymorphism_frequency=2.353e-01	polymorphism_score=12.9	prediction=polymorphism	ref_cov=15/11	total_cov=20/14
+RA	85	.	NODE_15_length_101355_cov_14.151885	128	0	T	C	bias_e_value=4043120	bias_p_value=0.86333	consensus_reject=FREQUENCY_CUTOFF	consensus_score=223.4	fisher_strand_p_value=0.773465	frequency=6.605e-01	ks_quality_p_value=0.678849	major_base=C	major_cov=74/68	major_frequency=6.605e-01	minor_base=T	minor_cov=40/33	new_cov=74/68	polymorphism_frequency=6.605e-01	polymorphism_score=178.9	prediction=polymorphism	ref_cov=40/33	total_cov=114/101
+RA	86	.	NODE_15_length_101355_cov_14.151885	63553	0	C	G	bias_e_value=1346060	bias_p_value=0.287426	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=7.6	fisher_strand_p_value=0.451498	frequency=4.138e-01	ks_quality_p_value=0.181919	major_base=C	major_cov=8/9	major_frequency=5.862e-01	minor_base=G	minor_cov=8/4	new_cov=8/4	polymorphism_frequency=4.138e-01	polymorphism_score=29.7	prediction=polymorphism	ref_cov=8/9	total_cov=16/15
+RA	87	.	NODE_15_length_101355_cov_14.151885	63560	0	T	C	bias_e_value=2589760	bias_p_value=0.552993	consensus_reject=FREQUENCY_CUTOFF	consensus_score=11.8	fisher_strand_p_value=0.457794	frequency=3.548e-01	ks_quality_p_value=0.480399	major_base=T	major_cov=9/11	major_frequency=6.452e-01	minor_base=C	minor_cov=7/4	new_cov=7/4	polymorphism_frequency=3.548e-01	polymorphism_score=22.1	prediction=polymorphism	ref_cov=9/11	total_cov=16/15
+RA	88	.	NODE_15_length_101355_cov_14.151885	63563	0	C	G	bias_e_value=3747930	bias_p_value=0.800297	consensus_reject=FREQUENCY_CUTOFF	consensus_score=16.6	fisher_strand_p_value=0.457794	frequency=3.548e-01	ks_quality_p_value=0.95865	major_base=C	major_cov=9/11	major_frequency=6.452e-01	minor_base=G	minor_cov=7/4	new_cov=7/4	polymorphism_frequency=3.548e-01	polymorphism_score=24.0	prediction=polymorphism	ref_cov=9/11	total_cov=16/15
+RA	89	.	NODE_16_length_101228_cov_13.975534	100249	0	A	G	consensus_score=21.0	frequency=1	major_base=G	major_cov=8/5	major_frequency=1.000e+00	minor_base=N	minor_cov=0/0	new_cov=8/5	polymorphism_frequency=1.000e+00	polymorphism_score=NA	prediction=consensus	ref_cov=0/0	total_cov=8/5
+RA	90	.	NODE_19_length_95039_cov_14.544662	271	1	.	C	bias_e_value=4682150	bias_p_value=0.999782	consensus_reject=FREQUENCY_CUTOFF	consensus_score=122.6	fisher_strand_p_value=1	frequency=5.797e-01	ks_quality_p_value=0.979205	major_base=C	major_cov=18/22	major_frequency=5.797e-01	minor_base=.	minor_cov=13/16	new_cov=18/22	polymorphism_frequency=5.797e-01	polymorphism_score=108.0	prediction=polymorphism	ref_cov=13/16	total_cov=31/38
+RA	91	.	NODE_19_length_95039_cov_14.544662	69422	0	T	C	bias_e_value=300065	bias_p_value=0.064073	consensus_reject=FREQUENCY_CUTOFF	consensus_score=42.4	fisher_strand_p_value=0.0117741	frequency=3.684e-01	ks_quality_p_value=1	major_base=T	major_cov=12/12	major_frequency=6.316e-01	minor_base=C	minor_cov=1/13	new_cov=1/13	polymorphism_frequency=3.684e-01	polymorphism_score=19.1	prediction=polymorphism	ref_cov=12/12	total_cov=13/29
+RA	92	.	NODE_19_length_95039_cov_14.544662	69464	0	A	G	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=336.8	fisher_strand_p_value=1	frequency=4.425e-01	ks_quality_p_value=1	major_base=A	major_cov=204/218	major_frequency=5.575e-01	minor_base=G	minor_cov=162/173	new_cov=162/173	polymorphism_frequency=4.425e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=204/218	total_cov=373/395
+RA	93	.	NODE_19_length_95039_cov_14.544662	69470	0	T	C	bias_e_value=4405630	bias_p_value=0.940737	consensus_reject=FREQUENCY_CUTOFF	consensus_score=627.8	fisher_strand_p_value=0.676104	frequency=4.116e-01	ks_quality_p_value=1	major_base=T	major_cov=249/250	major_frequency=5.884e-01	minor_base=C	minor_cov=169/180	new_cov=169/180	polymorphism_frequency=4.116e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=249/250	total_cov=418/431
+RA	94	.	NODE_19_length_95039_cov_14.544662	69479	0	G	T	bias_e_value=4582940	bias_p_value=0.978598	consensus_reject=FREQUENCY_CUTOFF	consensus_score=773.1	fisher_strand_p_value=0.834504	frequency=4.058e-01	ks_quality_p_value=0.959098	major_base=G	major_cov=249/259	major_frequency=5.942e-01	minor_base=T	minor_cov=167/180	new_cov=167/180	polymorphism_frequency=4.058e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=249/259	total_cov=418/443
+RA	95	.	NODE_19_length_95039_cov_14.544662	69485	0	A	C	bias_e_value=8887.7	bias_p_value=0.0018978	consensus_reject=FREQUENCY_CUTOFF	consensus_score=672.1	fisher_strand_p_value=0.783061	frequency=4.050e-01	ks_quality_p_value=0.000254562	major_base=A	major_cov=258/262	major_frequency=5.950e-01	minor_base=C	minor_cov=172/182	new_cov=172/182	polymorphism_frequency=4.050e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=258/262	total_cov=433/455
+RA	96	.	NODE_19_length_95039_cov_14.544662	69488	0	G	A	bias_e_value=4616810	bias_p_value=0.98583	consensus_reject=FREQUENCY_CUTOFF	consensus_score=680.7	fisher_strand_p_value=0.836447	frequency=4.110e-01	ks_quality_p_value=1	major_base=G	major_cov=252/261	major_frequency=5.890e-01	minor_base=A	minor_cov=173/185	new_cov=173/185	polymorphism_frequency=4.110e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=252/261	total_cov=426/450
+RA	97	.	NODE_19_length_95039_cov_14.544662	69491	0	A	T	bias_e_value=3745690	bias_p_value=0.799819	consensus_reject=FREQUENCY_CUTOFF	consensus_score=883.8	fisher_strand_p_value=0.632866	frequency=3.987e-01	ks_quality_p_value=0.692538	major_base=A	major_cov=270/267	major_frequency=6.013e-01	minor_base=T	minor_cov=173/183	new_cov=173/183	polymorphism_frequency=3.987e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=270/267	total_cov=445/462
+RA	98	.	NODE_19_length_95039_cov_14.544662	69503	0	A	T	bias_e_value=4584390	bias_p_value=0.978909	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=1.4	fisher_strand_p_value=0.801774	frequency=5.469e-01	ks_quality_p_value=1	major_base=T	major_cov=284/276	major_frequency=5.469e-01	minor_base=A	minor_cov=231/233	new_cov=284/276	polymorphism_frequency=5.469e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=231/233	total_cov=516/514
+RA	99	.	NODE_19_length_95039_cov_14.544662	69527	0	T	G	bias_e_value=4589600	bias_p_value=0.980019	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1054.7	fisher_strand_p_value=0.850598	frequency=6.781e-01	ks_quality_p_value=0.948596	major_base=G	major_cov=396/392	major_frequency=6.781e-01	minor_base=T	minor_cov=185/189	new_cov=396/392	polymorphism_frequency=6.781e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=185/189	total_cov=582/584
+RA	100	.	NODE_19_length_95039_cov_14.544662	69562	0	C	T	bias_e_value=2284200	bias_p_value=0.487747	consensus_reject=FREQUENCY_CUTOFF	consensus_score=282.2	fisher_strand_p_value=0.242164	frequency=5.662e-01	ks_quality_p_value=0.741093	major_base=T	major_cov=483/411	major_frequency=5.662e-01	minor_base=C	minor_cov=349/336	new_cov=483/411	polymorphism_frequency=5.662e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=349/336	total_cov=832/753
+RA	101	.	NODE_19_length_95039_cov_14.544662	69566	0	G	C	bias_e_value=2329850	bias_p_value=0.497495	consensus_reject=FREQUENCY_CUTOFF	consensus_score=466.0	fisher_strand_p_value=0.185235	frequency=5.780e-01	ks_quality_p_value=0.999774	major_base=C	major_cov=497/418	major_frequency=5.780e-01	minor_base=G	minor_cov=340/328	new_cov=497/418	polymorphism_frequency=5.780e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=340/328	total_cov=838/753
+RA	102	.	NODE_19_length_95039_cov_14.544662	69569	0	C	G	bias_e_value=2889080	bias_p_value=0.616906	consensus_reject=FREQUENCY_CUTOFF	consensus_score=458.5	fisher_strand_p_value=0.264985	frequency=5.787e-01	ks_quality_p_value=1	major_base=G	major_cov=499/427	major_frequency=5.787e-01	minor_base=C	minor_cov=344/330	new_cov=499/427	polymorphism_frequency=5.787e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=344/330	total_cov=846/762
+RA	103	.	NODE_19_length_95039_cov_14.544662	69577	0	C	G	bias_e_value=3455940	bias_p_value=0.737948	consensus_reject=FREQUENCY_CUTOFF	consensus_score=649.9	fisher_strand_p_value=0.370076	frequency=5.915e-01	ks_quality_p_value=1	major_base=G	major_cov=532/457	major_frequency=5.915e-01	minor_base=C	minor_cov=352/331	new_cov=532/457	polymorphism_frequency=5.915e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=352/331	total_cov=886/793
+RA	104	.	NODE_19_length_95039_cov_14.544662	69578	0	C	T	bias_e_value=2010000	bias_p_value=0.429196	consensus_reject=FREQUENCY_CUTOFF	consensus_score=580.7	fisher_strand_p_value=0.147183	frequency=5.892e-01	ks_quality_p_value=1	major_base=T	major_cov=534/444	major_frequency=5.892e-01	minor_base=C	minor_cov=347/335	new_cov=534/444	polymorphism_frequency=5.892e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=347/335	total_cov=885/793
+RA	105	.	NODE_19_length_95039_cov_14.544662	69592	0	G	T	bias_e_value=2293750	bias_p_value=0.489786	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1079.6	fisher_strand_p_value=0.180655	frequency=6.197e-01	ks_quality_p_value=1	major_base=T	major_cov=587/487	major_frequency=6.197e-01	minor_base=G	minor_cov=338/321	new_cov=587/487	polymorphism_frequency=6.197e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=338/321	total_cov=930/814
+RA	106	.	NODE_19_length_95039_cov_14.544662	69600	0	G	C	bias_e_value=2809850	bias_p_value=0.599989	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2028.3	fisher_strand_p_value=0.252472	frequency=6.996e-01	ks_quality_p_value=1	major_base=C	major_cov=613/512	major_frequency=6.996e-01	minor_base=G	minor_cov=248/235	new_cov=613/512	polymorphism_frequency=6.996e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=248/235	total_cov=952/828
+RA	107	.	NODE_19_length_95039_cov_14.544662	69605	0	T	C	bias_e_value=1984550	bias_p_value=0.423762	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1405.8	fisher_strand_p_value=0.150714	frequency=6.391e-01	ks_quality_p_value=0.957844	major_base=C	major_cov=627/508	major_frequency=6.391e-01	minor_base=T	minor_cov=331/310	new_cov=627/508	polymorphism_frequency=6.391e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=331/310	total_cov=965/836
+RA	108	.	NODE_19_length_95039_cov_14.544662	69608	0	G	C	bias_e_value=1225660	bias_p_value=0.261717	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1322.7	fisher_strand_p_value=0.0952551	frequency=6.319e-01	ks_quality_p_value=0.756977	major_base=C	major_cov=625/508	major_frequency=6.319e-01	minor_base=G	minor_cov=337/323	new_cov=625/508	polymorphism_frequency=6.319e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=337/323	total_cov=964/835
+RA	109	.	NODE_19_length_95039_cov_14.544662	69613	0	G	T	bias_e_value=1038520	bias_p_value=0.221756	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1464.6	fisher_strand_p_value=0.0575132	frequency=6.393e-01	ks_quality_p_value=1	major_base=T	major_cov=649/526	major_frequency=6.393e-01	minor_base=G	minor_cov=335/328	new_cov=649/526	polymorphism_frequency=6.393e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=335/328	total_cov=988/858
+RA	110	.	NODE_19_length_95039_cov_14.544662	69629	0	A	T	bias_e_value=1976500	bias_p_value=0.422044	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2368.3	fisher_strand_p_value=0.143474	frequency=7.211e-01	ks_quality_p_value=1	major_base=T	major_cov=673/555	major_frequency=7.211e-01	minor_base=A	minor_cov=241/234	new_cov=673/555	polymorphism_frequency=7.211e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=241/234	total_cov=1005/889
+RA	111	.	NODE_19_length_95039_cov_14.544662	69638	0	C	A	bias_e_value=1270640	bias_p_value=0.27132	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1535.6	fisher_strand_p_value=0.0757929	frequency=6.358e-01	ks_quality_p_value=1	major_base=A	major_cov=648/546	major_frequency=6.358e-01	minor_base=C	minor_cov=342/342	new_cov=648/546	polymorphism_frequency=6.358e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=342/342	total_cov=991/891
+RA	112	.	NODE_19_length_95039_cov_14.544662	69644	0	T	C	bias_e_value=2472210	bias_p_value=0.527892	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2964.6	fisher_strand_p_value=0.263061	frequency=7.511e-01	ks_quality_p_value=0.774545	major_base=C	major_cov=756/662	major_frequency=7.511e-01	minor_base=T	minor_cov=236/234	new_cov=756/662	polymorphism_frequency=7.511e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=236/234	total_cov=993/899
+RA	113	.	NODE_19_length_95039_cov_14.544662	69648	0	C	T	bias_e_value=959632	bias_p_value=0.204911	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1564.4	fisher_strand_p_value=0.109651	frequency=6.522e-01	ks_quality_p_value=0.471683	major_base=T	major_cov=669/559	major_frequency=6.522e-01	minor_base=C	minor_cov=331/324	new_cov=669/559	polymorphism_frequency=6.522e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=331/324	total_cov=1001/891
+RA	114	.	NODE_19_length_95039_cov_14.544662	69653	0	T	G	bias_e_value=1911210	bias_p_value=0.408101	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1702.6	fisher_strand_p_value=0.179989	frequency=6.495e-01	ks_quality_p_value=0.75774	major_base=G	major_cov=674/573	major_frequency=6.495e-01	minor_base=T	minor_cov=342/331	new_cov=674/573	polymorphism_frequency=6.495e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=342/331	total_cov=1018/907
+RA	115	.	NODE_19_length_95039_cov_14.544662	69655	0	T	G	bias_e_value=2858780	bias_p_value=0.610438	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1748.7	fisher_strand_p_value=0.27309	frequency=6.440e-01	ks_quality_p_value=0.952609	major_base=G	major_cov=669/570	major_frequency=6.440e-01	minor_base=T	minor_cov=352/333	new_cov=669/570	polymorphism_frequency=6.440e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=352/333	total_cov=1033/913
+RA	116	.	NODE_19_length_95039_cov_14.544662	69686	0	A	G	bias_e_value=2858190	bias_p_value=0.610312	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1981.5	fisher_strand_p_value=0.382303	frequency=6.744e-01	ks_quality_p_value=0.68023	major_base=G	major_cov=696/611	major_frequency=6.744e-01	minor_base=A	minor_cov=322/309	new_cov=696/611	polymorphism_frequency=6.744e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=322/309	total_cov=1029/930
+RA	117	.	NODE_19_length_95039_cov_14.544662	69689	0	T	C	bias_e_value=3822670	bias_p_value=0.816257	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2041.5	fisher_strand_p_value=0.495437	frequency=6.787e-01	ks_quality_p_value=0.926019	major_base=C	major_cov=702/612	major_frequency=6.787e-01	minor_base=T	minor_cov=322/300	new_cov=702/612	polymorphism_frequency=6.787e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=322/300	total_cov=1028/928
+RA	118	.	NODE_19_length_95039_cov_14.544662	69698	0	A	C	bias_e_value=4153290	bias_p_value=0.886854	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2226.8	fisher_strand_p_value=0.593544	frequency=6.821e-01	ks_quality_p_value=0.949785	major_base=C	major_cov=715/624	major_frequency=6.821e-01	minor_base=A	minor_cov=325/299	new_cov=715/624	polymorphism_frequency=6.821e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=325/299	total_cov=1042/929
+RA	119	.	NODE_19_length_95039_cov_14.544662	69704	0	G	A	bias_e_value=3827960	bias_p_value=0.817387	consensus_reject=FREQUENCY_CUTOFF	consensus_score=3535.6	fisher_strand_p_value=0.555386	frequency=2.274e-01	ks_quality_p_value=0.828679	major_base=G	major_cov=814/722	major_frequency=7.726e-01	minor_base=A	minor_cov=247/205	new_cov=247/205	polymorphism_frequency=2.274e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=814/722	total_cov=1071/936
+RA	120	.	NODE_19_length_95039_cov_14.544662	69707	0	G	T	bias_e_value=4627280	bias_p_value=0.988067	consensus_reject=FREQUENCY_CUTOFF	consensus_score=901.3	fisher_strand_p_value=0.892453	frequency=4.441e-01	ks_quality_p_value=0.951919	major_base=G	major_cov=596/517	major_frequency=5.559e-01	minor_base=T	minor_cov=473/416	new_cov=473/416	polymorphism_frequency=4.441e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=596/517	total_cov=1081/943
+RA	121	.	NODE_19_length_95039_cov_14.544662	69737	0	A	G	bias_e_value=4122600	bias_p_value=0.880302	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1925.6	fisher_strand_p_value=0.811633	frequency=6.708e-01	ks_quality_p_value=0.680733	major_base=G	major_cov=728/617	major_frequency=6.708e-01	minor_base=A	minor_cov=353/307	new_cov=728/617	polymorphism_frequency=6.708e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=353/307	total_cov=1092/928
+RA	122	.	NODE_19_length_95039_cov_14.544662	69740	0	C	G	bias_e_value=4635450	bias_p_value=0.98981	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2057.1	fisher_strand_p_value=0.920505	frequency=6.859e-01	ks_quality_p_value=0.935007	major_base=G	major_cov=698/588	major_frequency=6.859e-01	minor_base=C	minor_cov=318/271	new_cov=698/588	polymorphism_frequency=6.859e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=318/271	total_cov=1023/865
+RA	123	.	NODE_19_length_95039_cov_14.544662	69743	0	A	G	bias_e_value=4574910	bias_p_value=0.976883	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2088.5	fisher_strand_p_value=0.801257	frequency=6.940e-01	ks_quality_p_value=0.989486	major_base=G	major_cov=705/592	major_frequency=6.940e-01	minor_base=A	minor_cov=307/265	new_cov=705/592	polymorphism_frequency=6.940e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=307/265	total_cov=1023/867
+RA	124	.	NODE_19_length_95039_cov_14.544662	69755	0	T	C	bias_e_value=4645970	bias_p_value=0.992057	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2878.4	fisher_strand_p_value=0.876637	frequency=7.501e-01	ks_quality_p_value=1	major_base=C	major_cov=820/684	major_frequency=7.501e-01	minor_base=T	minor_cov=271/230	new_cov=820/684	polymorphism_frequency=7.501e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=271/230	total_cov=1098/925
+RA	125	.	NODE_19_length_95039_cov_14.544662	69796	0	G	A	bias_e_value=3690550	bias_p_value=0.788046	consensus_reject=FREQUENCY_CUTOFF	consensus_score=467.5	fisher_strand_p_value=0.55348	frequency=4.783e-01	ks_quality_p_value=0.766577	major_base=G	major_cov=538/471	major_frequency=5.217e-01	minor_base=A	minor_cov=480/445	new_cov=480/445	polymorphism_frequency=4.783e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=538/471	total_cov=1034/920
+RA	126	.	NODE_19_length_95039_cov_14.544662	69799	0	A	G	bias_e_value=2096550	bias_p_value=0.447678	consensus_reject=FREQUENCY_CUTOFF	consensus_score=234.9	fisher_strand_p_value=0.411843	frequency=4.839e-01	ks_quality_p_value=0.381201	major_base=A	major_cov=533/463	major_frequency=5.161e-01	minor_base=G	minor_cov=482/452	new_cov=482/452	polymorphism_frequency=4.839e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=533/463	total_cov=1031/925
+RA	127	.	NODE_19_length_95039_cov_14.544662	69802	0	T	G	bias_e_value=3751890	bias_p_value=0.801143	consensus_reject=FREQUENCY_CUTOFF	consensus_score=556.4	fisher_strand_p_value=0.442138	frequency=4.738e-01	ks_quality_p_value=0.994921	major_base=T	major_cov=552/483	major_frequency=5.262e-01	minor_base=G	minor_cov=480/452	new_cov=480/452	polymorphism_frequency=4.738e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=552/483	total_cov=1045/936
+RA	128	.	NODE_19_length_95039_cov_14.544662	69807	0	C	T	bias_e_value=25820.2	bias_p_value=0.0055134	consensus_reject=FREQUENCY_CUTOFF	consensus_score=2247.4	fisher_strand_p_value=0.600699	frequency=7.354e-01	ks_quality_p_value=0.00110328	major_base=T	major_cov=727/657	major_frequency=7.354e-01	minor_base=C	minor_cov=269/229	new_cov=727/657	polymorphism_frequency=7.354e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=269/229	total_cov=1014/894
+RA	129	.	NODE_19_length_95039_cov_14.544662	69838	0	A	G	bias_e_value=2860330	bias_p_value=0.610768	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1338.4	fisher_strand_p_value=0.433813	frequency=6.731e-01	ks_quality_p_value=0.600241	major_base=G	major_cov=497/481	major_frequency=6.731e-01	minor_base=A	minor_cov=252/223	new_cov=497/481	polymorphism_frequency=6.731e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=252/223	total_cov=923/834
+RA	130	.	NODE_19_length_95039_cov_14.544662	69904	0	G	A	bias_e_value=3009040	bias_p_value=0.642522	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1786.7	fisher_strand_p_value=0.943007	frequency=7.844e-01	ks_quality_p_value=0.302031	major_base=A	major_cov=451/455	major_frequency=7.844e-01	minor_base=G	minor_cov=123/126	new_cov=451/455	polymorphism_frequency=7.844e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=123/126	total_cov=582/581
+RA	131	.	NODE_19_length_95039_cov_14.544662	69922	0	T	C	bias_e_value=2334610	bias_p_value=0.498511	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1616.3	fisher_strand_p_value=0.878408	frequency=7.837e-01	ks_quality_p_value=0.211515	major_base=C	major_cov=391/399	major_frequency=7.837e-01	minor_base=T	minor_cov=106/112	new_cov=391/399	polymorphism_frequency=7.837e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=106/112	total_cov=517/514
+RA	132	.	NODE_19_length_95039_cov_14.544662	69943	0	A	G	bias_e_value=1115880	bias_p_value=0.238274	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1135.3	fisher_strand_p_value=0.334093	frequency=7.208e-01	ks_quality_p_value=0.189766	major_base=G	major_cov=334/314	major_frequency=7.208e-01	minor_base=A	minor_cov=120/131	new_cov=334/314	polymorphism_frequency=7.208e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=120/131	total_cov=458/446
+RA	133	.	NODE_19_length_95039_cov_14.544662	69973	0	A	G	bias_e_value=2345040	bias_p_value=0.500738	consensus_reject=FREQUENCY_CUTOFF	consensus_score=1075.2	fisher_strand_p_value=0.189183	frequency=2.654e-01	ks_quality_p_value=0.989107	major_base=A	major_cov=276/283	major_frequency=7.346e-01	minor_base=G	minor_cov=111/91	new_cov=111/91	polymorphism_frequency=2.654e-01	polymorphism_score=inf	prediction=polymorphism	ref_cov=276/283	total_cov=397/375
+RA	134	.	NODE_19_length_95039_cov_14.544662	70009	0	G	T	bias_e_value=2945350	bias_p_value=0.628923	consensus_reject=FREQUENCY_CUTOFF	consensus_score=94.7	fisher_strand_p_value=0.2953	frequency=2.436e-01	ks_quality_p_value=0.928379	major_base=G	major_cov=28/31	major_frequency=7.564e-01	minor_base=T	minor_cov=12/7	new_cov=12/7	polymorphism_frequency=2.436e-01	polymorphism_score=34.9	prediction=polymorphism	ref_cov=28/31	total_cov=41/38
+RA	135	.	NODE_19_length_95039_cov_14.544662	70018	0	A	G	bias_e_value=4528290	bias_p_value=0.966928	consensus_reject=FREQUENCY_CUTOFF	consensus_score=87.9	fisher_strand_p_value=0.770901	frequency=2.239e-01	ks_quality_p_value=0.978198	major_base=A	major_cov=24/28	major_frequency=7.761e-01	minor_base=G	minor_cov=8/7	new_cov=8/7	polymorphism_frequency=2.239e-01	polymorphism_score=27.5	prediction=polymorphism	ref_cov=24/28	total_cov=35/35
+RA	136	.	NODE_19_length_95039_cov_14.544662	70024	0	T	A	bias_e_value=3310920	bias_p_value=0.706983	consensus_reject=FREQUENCY_CUTOFF	consensus_score=103.9	fisher_strand_p_value=0.776647	frequency=2.286e-01	ks_quality_p_value=0.438003	major_base=T	major_cov=26/28	major_frequency=7.714e-01	minor_base=A	minor_cov=9/7	new_cov=9/7	polymorphism_frequency=2.286e-01	polymorphism_score=37.3	prediction=polymorphism	ref_cov=26/28	total_cov=37/35
+RA	137	.	NODE_19_length_95039_cov_14.544662	70033	0	A	G	bias_e_value=3478300	bias_p_value=0.742723	consensus_reject=FREQUENCY_CUTOFF	consensus_score=87.7	fisher_strand_p_value=0.37491	frequency=2.381e-01	ks_quality_p_value=1	major_base=A	major_cov=24/24	major_frequency=7.619e-01	minor_base=G	minor_cov=10/5	new_cov=10/5	polymorphism_frequency=2.381e-01	polymorphism_score=26.3	prediction=polymorphism	ref_cov=24/24	total_cov=34/29
+RA	138	.	NODE_1_length_283677_cov_14.144514	9284	0	C	.	bias_e_value=1218970	bias_p_value=0.260287	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.6	fisher_strand_p_value=0.326149	frequency=3.704e-01	ks_quality_p_value=0.219418	major_base=C	major_cov=2/15	major_frequency=6.296e-01	minor_base=.	minor_cov=3/7	new_cov=3/7	polymorphism_frequency=3.704e-01	polymorphism_score=33.1	prediction=polymorphism	ref_cov=2/15	total_cov=5/22
+RA	139	.	NODE_26_length_58186_cov_16.047693	21	0	C	.	bias_e_value=4399450	bias_p_value=0.939418	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.6	fisher_strand_p_value=0.691355	frequency=5.455e-01	ks_quality_p_value=0.973096	major_base=.	major_cov=6/6	major_frequency=5.455e-01	minor_base=C	minor_cov=4/6	new_cov=6/6	polymorphism_frequency=5.455e-01	polymorphism_score=43.8	prediction=polymorphism	ref_cov=4/6	total_cov=10/12
+RA	140	.	NODE_26_length_58186_cov_16.047693	22	0	T	.	bias_e_value=1579130	bias_p_value=0.337192	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.2	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=0.103031	major_base=T	major_cov=5/6	major_frequency=5.000e-01	minor_base=.	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=5.000e-01	polymorphism_score=37.3	prediction=polymorphism	ref_cov=5/6	total_cov=10/12
+RA	141	.	NODE_26_length_58186_cov_16.047693	23	0	G	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-6.3	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=1	major_base=.	major_cov=5/6	major_frequency=5.000e-01	minor_base=G	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=5.000e-01	polymorphism_score=46.2	prediction=polymorphism	ref_cov=5/6	total_cov=10/12
+RA	142	.	NODE_26_length_58186_cov_16.047693	24	0	G	.	bias_e_value=2684170	bias_p_value=0.573152	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.1	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=0.233506	major_base=G	major_cov=5/6	major_frequency=5.000e-01	minor_base=.	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=5.000e-01	polymorphism_score=39.5	prediction=polymorphism	ref_cov=5/6	total_cov=10/12
+RA	143	.	NODE_26_length_58186_cov_16.047693	25	0	G	.	bias_e_value=4372540	bias_p_value=0.933671	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=3.5	fisher_strand_p_value=0.691355	frequency=5.455e-01	ks_quality_p_value=0.952672	major_base=.	major_cov=6/6	major_frequency=5.455e-01	minor_base=G	minor_cov=4/6	new_cov=6/6	polymorphism_frequency=5.455e-01	polymorphism_score=42.3	prediction=polymorphism	ref_cov=4/6	total_cov=10/12
+RA	144	.	NODE_26_length_58186_cov_16.047693	26	0	A	.	bias_e_value=2772970	bias_p_value=0.592114	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.2	fisher_strand_p_value=1	frequency=4.583e-01	ks_quality_p_value=0.246798	major_base=A	major_cov=6/7	major_frequency=5.417e-01	minor_base=.	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=4.583e-01	polymorphism_score=36.8	prediction=polymorphism	ref_cov=6/7	total_cov=11/13
+RA	145	.	NODE_26_length_58186_cov_16.047693	27	0	C	.	bias_e_value=1780330	bias_p_value=0.380155	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.6	fisher_strand_p_value=1	frequency=4.583e-01	ks_quality_p_value=0.122714	major_base=C	major_cov=6/7	major_frequency=5.417e-01	minor_base=.	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=4.583e-01	polymorphism_score=38.9	prediction=polymorphism	ref_cov=6/7	total_cov=11/13
+RA	146	.	NODE_26_length_58186_cov_16.047693	28	0	G	.	bias_e_value=3862590	bias_p_value=0.824782	consensus_reject=FREQUENCY_CUTOFF	consensus_score=30.0	fisher_strand_p_value=1	frequency=4.583e-01	ks_quality_p_value=0.469896	major_base=G	major_cov=6/7	major_frequency=5.417e-01	minor_base=.	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=4.583e-01	polymorphism_score=38.9	prediction=polymorphism	ref_cov=6/7	total_cov=11/13
+RA	147	.	NODE_26_length_58186_cov_16.047693	29	0	G	.	bias_e_value=4635960	bias_p_value=0.989919	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.2	fisher_strand_p_value=1	frequency=4.583e-01	ks_quality_p_value=0.86141	major_base=G	major_cov=6/7	major_frequency=5.417e-01	minor_base=.	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=4.583e-01	polymorphism_score=38.9	prediction=polymorphism	ref_cov=6/7	total_cov=11/13
+RA	148	.	NODE_26_length_58186_cov_16.047693	57745	0	A	G	bias_e_value=3235390	bias_p_value=0.690854	consensus_reject=FREQUENCY_CUTOFF	consensus_score=85.2	fisher_strand_p_value=0.527941	frequency=2.321e-01	ks_quality_p_value=0.616572	major_base=A	major_cov=23/20	major_frequency=7.679e-01	minor_base=G	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=2.321e-01	polymorphism_score=22.5	prediction=polymorphism	ref_cov=23/20	total_cov=29/28
+RA	149	.	NODE_26_length_58186_cov_16.047693	57815	0	A	G	bias_e_value=4060000	bias_p_value=0.866934	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.8	fisher_strand_p_value=0.787081	frequency=3.860e-01	ks_quality_p_value=0.674272	major_base=A	major_cov=18/17	major_frequency=6.140e-01	minor_base=G	minor_cov=10/12	new_cov=10/12	polymorphism_frequency=3.860e-01	polymorphism_score=53.8	prediction=polymorphism	ref_cov=18/17	total_cov=28/29
+RA	150	.	NODE_26_length_58186_cov_16.047693	57906	0	A	G	bias_e_value=1078380	bias_p_value=0.230266	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.6	fisher_strand_p_value=0.160125	frequency=5.000e-01	ks_quality_p_value=0.377958	major_base=A	major_cov=24/13	major_frequency=5.000e-01	minor_base=G	minor_cov=17/20	new_cov=17/20	polymorphism_frequency=5.000e-01	polymorphism_score=92.2	prediction=polymorphism	ref_cov=24/13	total_cov=41/35
+RA	151	.	NODE_26_length_58186_cov_16.047693	57953	0	A	G	bias_e_value=945696	bias_p_value=0.201935	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.2	fisher_strand_p_value=0.365471	frequency=4.675e-01	ks_quality_p_value=0.138777	major_base=A	major_cov=24/17	major_frequency=5.325e-01	minor_base=G	minor_cov=17/19	new_cov=17/19	polymorphism_frequency=4.675e-01	polymorphism_score=96.4	prediction=polymorphism	ref_cov=24/17	total_cov=41/36
+RA	152	.	NODE_26_length_58186_cov_16.047693	57975	0	G	T	bias_e_value=3327520	bias_p_value=0.710527	consensus_reject=FREQUENCY_CUTOFF	consensus_score=43.0	fisher_strand_p_value=0.465856	frequency=4.000e-01	ks_quality_p_value=0.737299	major_base=G	major_cov=24/18	major_frequency=6.000e-01	minor_base=T	minor_cov=13/15	new_cov=13/15	polymorphism_frequency=4.000e-01	polymorphism_score=77.3	prediction=polymorphism	ref_cov=24/18	total_cov=37/33
+RA	153	.	NODE_26_length_58186_cov_16.047693	57989	0	T	C	bias_e_value=4515020	bias_p_value=0.964096	consensus_reject=FREQUENCY_CUTOFF	consensus_score=58.7	fisher_strand_p_value=0.803721	frequency=3.571e-01	ks_quality_p_value=0.926052	major_base=T	major_cov=24/21	major_frequency=6.429e-01	minor_base=C	minor_cov=12/13	new_cov=12/13	polymorphism_frequency=3.571e-01	polymorphism_score=60.5	prediction=polymorphism	ref_cov=24/21	total_cov=38/34
+RA	154	.	NODE_26_length_58186_cov_16.047693	58059	0	A	T	bias_e_value=4158070	bias_p_value=0.887876	consensus_reject=FREQUENCY_CUTOFF	consensus_score=111.0	fisher_strand_p_value=0.737402	frequency=2.075e-01	ks_quality_p_value=0.766917	major_base=A	major_cov=23/19	major_frequency=7.925e-01	minor_base=T	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=2.075e-01	polymorphism_score=25.0	prediction=polymorphism	ref_cov=23/19	total_cov=29/25
+RA	155	.	NODE_27_length_57054_cov_15.850440	3234	0	C	T	bias_e_value=2434250	bias_p_value=0.519787	consensus_reject=FREQUENCY_CUTOFF	consensus_score=96.1	fisher_strand_p_value=0.745814	frequency=2.182e-01	ks_quality_p_value=0.266417	major_base=C	major_cov=21/22	major_frequency=7.818e-01	minor_base=T	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.182e-01	polymorphism_score=23.6	prediction=polymorphism	ref_cov=21/22	total_cov=29/27
+RA	156	.	NODE_27_length_57054_cov_15.850440	3239	0	C	A	bias_e_value=4257560	bias_p_value=0.909119	consensus_reject=FREQUENCY_CUTOFF	consensus_score=113.4	fisher_strand_p_value=0.748183	frequency=2.143e-01	ks_quality_p_value=0.808867	major_base=C	major_cov=22/22	major_frequency=7.857e-01	minor_base=A	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.143e-01	polymorphism_score=25.1	prediction=polymorphism	ref_cov=22/22	total_cov=29/27
+RA	157	.	NODE_27_length_57054_cov_15.850440	3290	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=103.0	fisher_strand_p_value=1	frequency=2.687e-01	ks_quality_p_value=1	major_base=C	major_cov=23/26	major_frequency=7.313e-01	minor_base=T	minor_cov=9/9	new_cov=9/9	polymorphism_frequency=2.687e-01	polymorphism_score=35.3	prediction=polymorphism	ref_cov=23/26	total_cov=32/35
+RA	158	.	NODE_27_length_57054_cov_15.850440	3302	0	G	A	bias_e_value=4669580	bias_p_value=0.997098	consensus_reject=FREQUENCY_CUTOFF	consensus_score=87.1	fisher_strand_p_value=1	frequency=2.879e-01	ks_quality_p_value=0.924794	major_base=G	major_cov=23/24	major_frequency=7.121e-01	minor_base=A	minor_cov=10/9	new_cov=10/9	polymorphism_frequency=2.879e-01	polymorphism_score=39.5	prediction=polymorphism	ref_cov=23/24	total_cov=33/33
+RA	159	.	NODE_27_length_57054_cov_15.850440	3304	0	A	G	bias_e_value=4641490	bias_p_value=0.991101	consensus_reject=FREQUENCY_CUTOFF	consensus_score=77.1	fisher_strand_p_value=1	frequency=2.923e-01	ks_quality_p_value=0.869594	major_base=A	major_cov=23/23	major_frequency=7.077e-01	minor_base=G	minor_cov=9/10	new_cov=9/10	polymorphism_frequency=2.923e-01	polymorphism_score=38.7	prediction=polymorphism	ref_cov=23/23	total_cov=33/33
+RA	160	.	NODE_27_length_57054_cov_15.850440	3306	0	T	C	bias_e_value=4458410	bias_p_value=0.952007	consensus_reject=FREQUENCY_CUTOFF	consensus_score=82.1	fisher_strand_p_value=1	frequency=2.836e-01	ks_quality_p_value=0.706633	major_base=T	major_cov=24/24	major_frequency=7.164e-01	minor_base=C	minor_cov=10/9	new_cov=10/9	polymorphism_frequency=2.836e-01	polymorphism_score=42.2	prediction=polymorphism	ref_cov=24/24	total_cov=34/33
+RA	161	.	NODE_27_length_57054_cov_15.850440	3315	0	G	A	bias_e_value=4166010	bias_p_value=0.88957	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.9	fisher_strand_p_value=0.791694	frequency=3.492e-01	ks_quality_p_value=0.718097	major_base=G	major_cov=23/18	major_frequency=6.508e-01	minor_base=A	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=3.492e-01	polymorphism_score=52.0	prediction=polymorphism	ref_cov=23/18	total_cov=34/29
+RA	162	.	NODE_27_length_57054_cov_15.850440	3338	0	T	C	bias_e_value=4682290	bias_p_value=0.999813	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.6	fisher_strand_p_value=1	frequency=3.438e-01	ks_quality_p_value=0.980708	major_base=T	major_cov=21/21	major_frequency=6.562e-01	minor_base=C	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=3.438e-01	polymorphism_score=49.8	prediction=polymorphism	ref_cov=21/21	total_cov=34/32
+RA	163	.	NODE_27_length_57054_cov_15.850440	3356	0	C	G	bias_e_value=3234030	bias_p_value=0.690565	consensus_reject=FREQUENCY_CUTOFF	consensus_score=75.5	fisher_strand_p_value=1	frequency=3.284e-01	ks_quality_p_value=0.325256	major_base=C	major_cov=23/22	major_frequency=6.716e-01	minor_base=G	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=3.284e-01	polymorphism_score=58.8	prediction=polymorphism	ref_cov=23/22	total_cov=34/33
+RA	164	.	NODE_27_length_57054_cov_15.850440	3360	0	A	G	bias_e_value=3883850	bias_p_value=0.829322	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.3	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=0.475959	major_base=A	major_cov=23/21	major_frequency=6.667e-01	minor_base=G	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=3.333e-01	polymorphism_score=50.0	prediction=polymorphism	ref_cov=23/21	total_cov=34/32
+RA	165	.	NODE_27_length_57054_cov_15.850440	3365	0	T	C	bias_e_value=2004750	bias_p_value=0.428075	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.3	fisher_strand_p_value=1	frequency=3.793e-01	ks_quality_p_value=0.146598	major_base=T	major_cov=19/17	major_frequency=6.207e-01	minor_base=C	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=3.793e-01	polymorphism_score=52.5	prediction=polymorphism	ref_cov=19/17	total_cov=30/29
+RA	166	.	NODE_27_length_57054_cov_15.850440	3368	0	C	T	bias_e_value=4656220	bias_p_value=0.994245	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.1	fisher_strand_p_value=1	frequency=4.074e-01	ks_quality_p_value=0.894651	major_base=C	major_cov=17/15	major_frequency=5.926e-01	minor_base=T	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=4.074e-01	polymorphism_score=48.6	prediction=polymorphism	ref_cov=17/15	total_cov=28/26
+RA	167	.	NODE_27_length_57054_cov_15.850440	3377	0	C	T	bias_e_value=2347830	bias_p_value=0.501333	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.4	fisher_strand_p_value=0.792494	frequency=4.068e-01	ks_quality_p_value=0.236567	major_base=C	major_cov=18/17	major_frequency=5.932e-01	minor_base=T	minor_cov=11/13	new_cov=11/13	polymorphism_frequency=4.068e-01	polymorphism_score=52.5	prediction=polymorphism	ref_cov=18/17	total_cov=29/30
+RA	168	.	NODE_27_length_57054_cov_15.850440	3383	0	G	C	bias_e_value=3410850	bias_p_value=0.728322	consensus_reject=FREQUENCY_CUTOFF	consensus_score=21.2	fisher_strand_p_value=1	frequency=4.068e-01	ks_quality_p_value=0.360516	major_base=G	major_cov=16/19	major_frequency=5.932e-01	minor_base=C	minor_cov=11/13	new_cov=11/13	polymorphism_frequency=4.068e-01	polymorphism_score=68.6	prediction=polymorphism	ref_cov=16/19	total_cov=28/32
+RA	169	.	NODE_27_length_57054_cov_15.850440	3391	0	G	A	bias_e_value=4410370	bias_p_value=0.941749	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.9	fisher_strand_p_value=1	frequency=4.068e-01	ks_quality_p_value=0.678704	major_base=G	major_cov=17/18	major_frequency=5.932e-01	minor_base=A	minor_cov=11/13	new_cov=11/13	polymorphism_frequency=4.068e-01	polymorphism_score=54.4	prediction=polymorphism	ref_cov=17/18	total_cov=28/32
+RA	170	.	NODE_2_length_147675_cov_14.669945	147548	0	T	G	bias_e_value=4680700	bias_p_value=0.999474	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=7.4	fisher_strand_p_value=1	frequency=5.484e-01	ks_quality_p_value=0.967732	major_base=G	major_cov=7/10	major_frequency=5.484e-01	minor_base=T	minor_cov=6/8	new_cov=7/10	polymorphism_frequency=5.484e-01	polymorphism_score=29.7	prediction=polymorphism	ref_cov=6/8	total_cov=13/18
+RA	171	.	NODE_30_length_54368_cov_15.321712	128	0	C	A	bias_e_value=1823240	bias_p_value=0.389318	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.3	fisher_strand_p_value=0.268948	frequency=5.577e-01	ks_quality_p_value=0.472653	major_base=A	major_cov=14/15	major_frequency=5.577e-01	minor_base=C	minor_cov=15/8	new_cov=14/15	polymorphism_frequency=5.577e-01	polymorphism_score=66.6	prediction=polymorphism	ref_cov=15/8	total_cov=29/23
+RA	172	.	NODE_30_length_54368_cov_15.321712	45375	1	.	G	consensus_score=75.3	frequency=1	major_base=G	major_cov=11/13	major_frequency=1.000e+00	minor_base=N	minor_cov=0/0	new_cov=11/13	polymorphism_frequency=1.000e+00	polymorphism_score=NA	prediction=consensus	ref_cov=0/0	total_cov=11/13
+RA	173	.	NODE_37_length_46345_cov_16.260072	128	0	T	C	bias_e_value=3713910	bias_p_value=0.793034	consensus_reject=FREQUENCY_CUTOFF	consensus_score=93.1	fisher_strand_p_value=0.735119	frequency=2.075e-01	ks_quality_p_value=0.585144	major_base=T	major_cov=20/22	major_frequency=7.925e-01	minor_base=C	minor_cov=4/7	new_cov=4/7	polymorphism_frequency=2.075e-01	polymorphism_score=21.3	prediction=polymorphism	ref_cov=20/22	total_cov=24/29
+RA	174	.	NODE_37_length_46345_cov_16.260072	158	0	C	T	bias_e_value=3372620	bias_p_value=0.720158	consensus_reject=FREQUENCY_CUTOFF	consensus_score=105.9	fisher_strand_p_value=0.736345	frequency=2.000e-01	ks_quality_p_value=0.478852	major_base=C	major_cov=21/23	major_frequency=8.000e-01	minor_base=T	minor_cov=4/7	new_cov=4/7	polymorphism_frequency=2.000e-01	polymorphism_score=20.6	prediction=polymorphism	ref_cov=21/23	total_cov=25/30
+RA	175	.	NODE_37_length_46345_cov_16.260072	190	0	C	A	bias_e_value=4428950	bias_p_value=0.945716	consensus_reject=FREQUENCY_CUTOFF	consensus_score=131.8	fisher_strand_p_value=1	frequency=2.174e-01	ks_quality_p_value=0.689146	major_base=C	major_cov=26/28	major_frequency=7.826e-01	minor_base=A	minor_cov=7/8	new_cov=7/8	polymorphism_frequency=2.174e-01	polymorphism_score=35.7	prediction=polymorphism	ref_cov=26/28	total_cov=34/36
+RA	176	.	NODE_37_length_46345_cov_16.260072	220	0	G	A	bias_e_value=4473900	bias_p_value=0.955315	consensus_reject=FREQUENCY_CUTOFF	consensus_score=108.7	fisher_strand_p_value=1	frequency=2.763e-01	ks_quality_p_value=0.716352	major_base=G	major_cov=28/27	major_frequency=7.237e-01	minor_base=A	minor_cov=10/11	new_cov=10/11	polymorphism_frequency=2.763e-01	polymorphism_score=45.6	prediction=polymorphism	ref_cov=28/27	total_cov=38/40
+RA	177	.	NODE_38_length_44979_cov_14.853875	347	0	T	C	bias_e_value=2067230	bias_p_value=0.441416	consensus_reject=FREQUENCY_CUTOFF	consensus_score=26.9	fisher_strand_p_value=0.158409	frequency=5.714e-01	ks_quality_p_value=0.969852	major_base=C	major_cov=18/10	major_frequency=5.714e-01	minor_base=T	minor_cov=9/12	new_cov=18/10	polymorphism_frequency=5.714e-01	polymorphism_score=51.4	prediction=polymorphism	ref_cov=9/12	total_cov=27/22
+RA	178	.	NODE_38_length_44979_cov_14.853875	348	0	T	G	bias_e_value=1940470	bias_p_value=0.414349	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.1	fisher_strand_p_value=0.144135	frequency=5.625e-01	ks_quality_p_value=0.968112	major_base=G	major_cov=18/9	major_frequency=5.625e-01	minor_base=T	minor_cov=9/12	new_cov=18/9	polymorphism_frequency=5.625e-01	polymorphism_score=50.2	prediction=polymorphism	ref_cov=9/12	total_cov=27/22
+RA	179	.	NODE_38_length_44979_cov_14.853875	371	0	T	A	bias_e_value=2792650	bias_p_value=0.596316	consensus_reject=FREQUENCY_CUTOFF	consensus_score=22.7	fisher_strand_p_value=0.278061	frequency=5.849e-01	ks_quality_p_value=0.898417	major_base=A	major_cov=19/12	major_frequency=5.849e-01	minor_base=T	minor_cov=10/12	new_cov=19/12	polymorphism_frequency=5.849e-01	polymorphism_score=61.3	prediction=polymorphism	ref_cov=10/12	total_cov=31/24
+RA	180	.	NODE_38_length_44979_cov_14.853875	411	0	A	G	bias_e_value=3958400	bias_p_value=0.84524	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.7	fisher_strand_p_value=0.606028	frequency=5.968e-01	ks_quality_p_value=0.821878	major_base=G	major_cov=21/16	major_frequency=5.968e-01	minor_base=A	minor_cov=12/13	new_cov=21/16	polymorphism_frequency=5.968e-01	polymorphism_score=59.1	prediction=polymorphism	ref_cov=12/13	total_cov=33/29
+RA	181	.	NODE_38_length_44979_cov_14.853875	418	0	A	G	bias_e_value=3700050	bias_p_value=0.790074	consensus_reject=FREQUENCY_CUTOFF	consensus_score=17.8	fisher_strand_p_value=0.623422	frequency=5.692e-01	ks_quality_p_value=0.684382	major_base=G	major_cov=21/16	major_frequency=5.692e-01	minor_base=A	minor_cov=14/14	new_cov=21/16	polymorphism_frequency=5.692e-01	polymorphism_score=67.3	prediction=polymorphism	ref_cov=14/14	total_cov=35/30
+RA	182	.	NODE_38_length_44979_cov_14.853875	427	0	C	T	bias_e_value=4103230	bias_p_value=0.876165	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.7	fisher_strand_p_value=0.593588	frequency=6.207e-01	ks_quality_p_value=0.919164	major_base=T	major_cov=21/15	major_frequency=6.207e-01	minor_base=C	minor_cov=11/11	new_cov=21/15	polymorphism_frequency=6.207e-01	polymorphism_score=52.5	prediction=polymorphism	ref_cov=11/11	total_cov=32/26
+RA	183	.	NODE_38_length_44979_cov_14.853875	443	0	G	A	bias_e_value=2232470	bias_p_value=0.476702	consensus_reject=FREQUENCY_CUTOFF	consensus_score=44.6	fisher_strand_p_value=0.421513	frequency=6.557e-01	ks_quality_p_value=0.410669	major_base=A	major_cov=24/16	major_frequency=6.557e-01	minor_base=G	minor_cov=10/11	new_cov=24/16	polymorphism_frequency=6.557e-01	polymorphism_score=51.9	prediction=polymorphism	ref_cov=10/11	total_cov=35/27
+RA	184	.	NODE_38_length_44979_cov_14.853875	449	0	G	A	bias_e_value=4193910	bias_p_value=0.895529	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.0	fisher_strand_p_value=0.589979	frequency=6.271e-01	ks_quality_p_value=0.981803	major_base=A	major_cov=22/15	major_frequency=6.271e-01	minor_base=G	minor_cov=11/11	new_cov=22/15	polymorphism_frequency=6.271e-01	polymorphism_score=52.3	prediction=polymorphism	ref_cov=11/11	total_cov=33/26
+RA	185	.	NODE_38_length_44979_cov_14.853875	471	0	T	G	bias_e_value=2865260	bias_p_value=0.611822	consensus_reject=FREQUENCY_CUTOFF	consensus_score=40.6	fisher_strand_p_value=0.274786	frequency=6.429e-01	ks_quality_p_value=0.950475	major_base=G	major_cov=22/14	major_frequency=6.429e-01	minor_base=T	minor_cov=9/11	new_cov=22/14	polymorphism_frequency=6.429e-01	polymorphism_score=51.9	prediction=polymorphism	ref_cov=9/11	total_cov=31/26
+RA	186	.	NODE_38_length_44979_cov_14.853875	509	0	A	T	bias_e_value=3958860	bias_p_value=0.845338	consensus_reject=FREQUENCY_CUTOFF	consensus_score=53.7	fisher_strand_p_value=0.498222	frequency=7.143e-01	ks_quality_p_value=1	major_base=T	major_cov=19/11	major_frequency=7.143e-01	minor_base=A	minor_cov=6/6	new_cov=19/11	polymorphism_frequency=7.143e-01	polymorphism_score=26.1	prediction=polymorphism	ref_cov=6/6	total_cov=25/17
+RA	187	.	NODE_38_length_44979_cov_14.853875	623	0	T	C	bias_e_value=2052470	bias_p_value=0.438266	consensus_reject=FREQUENCY_CUTOFF	consensus_score=21.1	fisher_strand_p_value=0.175039	frequency=3.889e-01	ks_quality_p_value=0.86813	major_base=T	major_cov=12/10	major_frequency=6.111e-01	minor_base=C	minor_cov=11/3	new_cov=11/3	polymorphism_frequency=3.889e-01	polymorphism_score=32.6	prediction=polymorphism	ref_cov=12/10	total_cov=23/13
+RA	188	.	NODE_38_length_44979_cov_14.853875	645	0	C	T	bias_e_value=2739860	bias_p_value=0.585043	consensus_reject=FREQUENCY_CUTOFF	consensus_score=33.1	fisher_strand_p_value=0.24922	frequency=3.333e-01	ks_quality_p_value=0.970152	major_base=C	major_cov=12/10	major_frequency=6.667e-01	minor_base=T	minor_cov=9/2	new_cov=9/2	polymorphism_frequency=3.333e-01	polymorphism_score=22.2	prediction=polymorphism	ref_cov=12/10	total_cov=21/12
+RA	189	.	NODE_38_length_44979_cov_14.853875	647	0	T	C	bias_e_value=2739860	bias_p_value=0.585043	consensus_reject=FREQUENCY_CUTOFF	consensus_score=31.4	fisher_strand_p_value=0.24922	frequency=3.333e-01	ks_quality_p_value=0.970152	major_base=T	major_cov=12/10	major_frequency=6.667e-01	minor_base=C	minor_cov=9/2	new_cov=9/2	polymorphism_frequency=3.333e-01	polymorphism_score=21.2	prediction=polymorphism	ref_cov=12/10	total_cov=21/12
+RA	190	.	NODE_38_length_44979_cov_14.853875	663	0	T	C	bias_e_value=2214420	bias_p_value=0.472846	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.8	fisher_strand_p_value=0.178184	frequency=3.333e-01	ks_quality_p_value=0.959189	major_base=T	major_cov=8/8	major_frequency=6.667e-01	minor_base=C	minor_cov=7/1	new_cov=7/1	polymorphism_frequency=3.333e-01	polymorphism_score=13.6	prediction=polymorphism	ref_cov=8/8	total_cov=15/9
+RA	191	.	NODE_38_length_44979_cov_14.853875	44952	0	C	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-2.6	fisher_strand_p_value=1	frequency=5.714e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=5.714e-01	minor_base=C	minor_cov=3/3	new_cov=5/3	polymorphism_frequency=5.714e-01	polymorphism_score=26.0	prediction=polymorphism	ref_cov=3/3	total_cov=9/6
+RA	192	.	NODE_38_length_44979_cov_14.853875	44953	0	C	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.1	fisher_strand_p_value=1	frequency=5.333e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=5.333e-01	minor_base=C	minor_cov=4/3	new_cov=5/3	polymorphism_frequency=5.333e-01	polymorphism_score=27.8	prediction=polymorphism	ref_cov=4/3	total_cov=9/6
+RA	193	.	NODE_38_length_44979_cov_14.853875	44954	0	G	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.0	fisher_strand_p_value=1	frequency=5.333e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=5.333e-01	minor_base=G	minor_cov=4/3	new_cov=5/3	polymorphism_frequency=5.333e-01	polymorphism_score=27.5	prediction=polymorphism	ref_cov=4/3	total_cov=9/6
+RA	194	.	NODE_38_length_44979_cov_14.853875	44955	0	T	.	bias_e_value=4658130	bias_p_value=0.994654	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.8	fisher_strand_p_value=1	frequency=5.714e-01	ks_quality_p_value=0.898397	major_base=.	major_cov=5/3	major_frequency=5.714e-01	minor_base=T	minor_cov=3/3	new_cov=5/3	polymorphism_frequency=5.714e-01	polymorphism_score=26.3	prediction=polymorphism	ref_cov=3/3	total_cov=8/6
+RA	195	.	NODE_38_length_44979_cov_14.853875	44956	0	C	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.7	fisher_strand_p_value=1	frequency=6.667e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=6.667e-01	minor_base=C	minor_cov=2/2	new_cov=5/3	polymorphism_frequency=6.667e-01	polymorphism_score=12.9	prediction=polymorphism	ref_cov=2/2	total_cov=7/5
+RA	196	.	NODE_38_length_44979_cov_14.853875	44957	0	C	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.9	fisher_strand_p_value=1	frequency=6.667e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=6.667e-01	minor_base=C	minor_cov=2/2	new_cov=5/3	polymorphism_frequency=6.667e-01	polymorphism_score=12.8	prediction=polymorphism	ref_cov=2/2	total_cov=7/5
+RA	197	.	NODE_38_length_44979_cov_14.853875	44958	0	C	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.6	fisher_strand_p_value=1	frequency=6.667e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=6.667e-01	minor_base=C	minor_cov=2/2	new_cov=5/3	polymorphism_frequency=6.667e-01	polymorphism_score=13.0	prediction=polymorphism	ref_cov=2/2	total_cov=7/5
+RA	198	.	NODE_38_length_44979_cov_14.853875	44959	0	A	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=6.6	fisher_strand_p_value=1	frequency=6.667e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=6.667e-01	minor_base=A	minor_cov=2/2	new_cov=5/3	polymorphism_frequency=6.667e-01	polymorphism_score=14.3	prediction=polymorphism	ref_cov=2/2	total_cov=7/5
+RA	199	.	NODE_38_length_44979_cov_14.853875	44960	0	G	.	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=8.9	fisher_strand_p_value=1	frequency=6.667e-01	ks_quality_p_value=1	major_base=.	major_cov=5/3	major_frequency=6.667e-01	minor_base=G	minor_cov=2/2	new_cov=5/3	polymorphism_frequency=6.667e-01	polymorphism_score=13.4	prediction=polymorphism	ref_cov=2/2	total_cov=7/5
+RA	200	.	NODE_42_length_40690_cov_13.862091	35	0	T	C	bias_e_value=4122380	bias_p_value=0.880255	consensus_reject=FREQUENCY_CUTOFF	consensus_score=186.5	fisher_strand_p_value=0.683102	frequency=2.602e-01	ks_quality_p_value=0.808701	major_base=T	major_cov=41/50	major_frequency=7.398e-01	minor_base=C	minor_cov=16/16	new_cov=16/16	polymorphism_frequency=2.602e-01	polymorphism_score=73.6	prediction=polymorphism	ref_cov=41/50	total_cov=57/67
+RA	201	.	NODE_42_length_40690_cov_13.862091	40519	0	G	A	bias_e_value=3690630	bias_p_value=0.788063	consensus_reject=FREQUENCY_CUTOFF	consensus_score=85.5	fisher_strand_p_value=0.46893	frequency=2.000e-01	ks_quality_p_value=0.904837	major_base=G	major_cov=18/18	major_frequency=8.000e-01	minor_base=A	minor_cov=3/6	new_cov=3/6	polymorphism_frequency=2.000e-01	polymorphism_score=14.7	prediction=polymorphism	ref_cov=18/18	total_cov=21/24
+RA	202	.	NODE_42_length_40690_cov_13.862091	40532	0	T	C	bias_e_value=3977730	bias_p_value=0.849367	consensus_reject=FREQUENCY_CUTOFF	consensus_score=56.9	fisher_strand_p_value=0.528371	frequency=2.889e-01	ks_quality_p_value=0.953977	major_base=T	major_cov=16/16	major_frequency=7.111e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=2.889e-01	polymorphism_score=26.5	prediction=polymorphism	ref_cov=16/16	total_cov=21/24
+RA	203	.	NODE_43_length_40579_cov_15.811653	40311	0	G	A	bias_e_value=3517550	bias_p_value=0.751104	consensus_reject=FREQUENCY_CUTOFF	consensus_score=45.5	fisher_strand_p_value=1	frequency=2.979e-01	ks_quality_p_value=0.383554	major_base=G	major_cov=18/15	major_frequency=7.021e-01	minor_base=A	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=2.979e-01	polymorphism_score=29.4	prediction=polymorphism	ref_cov=18/15	total_cov=26/21
+RA	204	.	NODE_43_length_40579_cov_15.811653	40314	0	C	T	bias_e_value=3674730	bias_p_value=0.784667	consensus_reject=FREQUENCY_CUTOFF	consensus_score=49.3	fisher_strand_p_value=1	frequency=2.979e-01	ks_quality_p_value=0.420366	major_base=C	major_cov=18/15	major_frequency=7.021e-01	minor_base=T	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=2.979e-01	polymorphism_score=28.6	prediction=polymorphism	ref_cov=18/15	total_cov=26/21
+RA	205	.	NODE_4_length_134155_cov_14.571649	133959	0	T	C	bias_e_value=3637620	bias_p_value=0.776743	consensus_reject=FREQUENCY_CUTOFF	consensus_score=27.4	fisher_strand_p_value=0.425276	frequency=3.333e-01	ks_quality_p_value=0.967216	major_base=T	major_cov=6/14	major_frequency=6.667e-01	minor_base=C	minor_cov=5/5	new_cov=5/5	polymorphism_frequency=3.333e-01	polymorphism_score=20.8	prediction=polymorphism	ref_cov=6/14	total_cov=11/19
+RA	206	.	NODE_4_length_134155_cov_14.571649	134069	0	A	G	bias_e_value=4469680	bias_p_value=0.954414	consensus_reject=FREQUENCY_CUTOFF	consensus_score=18.4	fisher_strand_p_value=0.841132	frequency=5.253e-01	ks_quality_p_value=0.848457	major_base=G	major_cov=26/26	major_frequency=5.253e-01	minor_base=A	minor_cov=22/25	new_cov=26/26	polymorphism_frequency=5.253e-01	polymorphism_score=123.7	prediction=polymorphism	ref_cov=22/25	total_cov=48/51
+RA	207	.	NODE_4_length_134155_cov_14.571649	134075	0	T	C	bias_e_value=3881810	bias_p_value=0.828885	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.1	fisher_strand_p_value=0.517792	frequency=4.941e-01	ks_quality_p_value=0.918072	major_base=T	major_cov=19/24	major_frequency=5.059e-01	minor_base=C	minor_cov=22/20	new_cov=22/20	polymorphism_frequency=4.941e-01	polymorphism_score=116.9	prediction=polymorphism	ref_cov=19/24	total_cov=41/44
+RA	208	.	NODE_4_length_134155_cov_14.571649	134084	0	G	T	bias_e_value=2572410	bias_p_value=0.549289	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.8	fisher_strand_p_value=0.51249	frequency=5.000e-01	ks_quality_p_value=0.424373	major_base=T	major_cov=22/20	major_frequency=5.000e-01	minor_base=G	minor_cov=18/24	new_cov=22/20	polymorphism_frequency=5.000e-01	polymorphism_score=135.3	prediction=polymorphism	ref_cov=18/24	total_cov=40/44
+RA	209	.	NODE_4_length_134155_cov_14.571649	134090	0	A	C	bias_e_value=4001470	bias_p_value=0.854436	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-4.0	fisher_strand_p_value=0.653888	frequency=4.625e-01	ks_quality_p_value=0.782296	major_base=A	major_cov=19/24	major_frequency=5.375e-01	minor_base=C	minor_cov=19/18	new_cov=19/18	polymorphism_frequency=4.625e-01	polymorphism_score=109.5	prediction=polymorphism	ref_cov=19/24	total_cov=38/42
+RA	210	.	NODE_4_length_134155_cov_14.571649	134093	0	G	A	bias_e_value=4327860	bias_p_value=0.924132	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.3	fisher_strand_p_value=0.644657	frequency=4.474e-01	ks_quality_p_value=0.98762	major_base=G	major_cov=18/24	major_frequency=5.526e-01	minor_base=A	minor_cov=17/17	new_cov=17/17	polymorphism_frequency=4.474e-01	polymorphism_score=86.4	prediction=polymorphism	ref_cov=18/24	total_cov=36/41
+RA	211	.	NODE_4_length_134155_cov_14.571649	134096	0	A	T	bias_e_value=4138910	bias_p_value=0.883785	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=7.8	fisher_strand_p_value=0.651179	frequency=4.416e-01	ks_quality_p_value=0.857564	major_base=A	major_cov=19/24	major_frequency=5.584e-01	minor_base=T	minor_cov=17/17	new_cov=17/17	polymorphism_frequency=4.416e-01	polymorphism_score=103.0	prediction=polymorphism	ref_cov=19/24	total_cov=36/41
+RA	212	.	NODE_4_length_134155_cov_14.571649	134108	0	A	T	bias_e_value=4008610	bias_p_value=0.855961	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=0.5	fisher_strand_p_value=0.81094	frequency=4.848e-01	ks_quality_p_value=0.633606	major_base=A	major_cov=17/17	major_frequency=5.152e-01	minor_base=T	minor_cov=17/15	new_cov=17/15	polymorphism_frequency=4.848e-01	polymorphism_score=101.3	prediction=polymorphism	ref_cov=17/17	total_cov=34/32
+RA	213	.	NODE_51_length_30791_cov_13.838932	27424	0	A	G	bias_e_value=4373260	bias_p_value=0.933825	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.6	fisher_strand_p_value=1	frequency=2.143e-01	ks_quality_p_value=0.659003	major_base=A	major_cov=16/17	major_frequency=7.857e-01	minor_base=G	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=2.143e-01	polymorphism_score=13.1	prediction=polymorphism	ref_cov=16/17	total_cov=20/22
+RA	214	.	NODE_51_length_30791_cov_13.838932	27431	0	C	A	bias_e_value=3902900	bias_p_value=0.833389	consensus_reject=FREQUENCY_CUTOFF	consensus_score=65.3	fisher_strand_p_value=0.513633	frequency=2.667e-01	ks_quality_p_value=0.937399	major_base=C	major_cov=15/18	major_frequency=7.333e-01	minor_base=A	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.667e-01	polymorphism_score=24.1	prediction=polymorphism	ref_cov=15/18	total_cov=22/23
+RA	215	.	NODE_51_length_30791_cov_13.838932	27433	0	G	A	bias_e_value=4462720	bias_p_value=0.952927	consensus_reject=FREQUENCY_CUTOFF	consensus_score=63.4	fisher_strand_p_value=0.727907	frequency=2.558e-01	ks_quality_p_value=0.974434	major_base=G	major_cov=14/18	major_frequency=7.442e-01	minor_base=A	minor_cov=6/5	new_cov=6/5	polymorphism_frequency=2.558e-01	polymorphism_score=19.7	prediction=polymorphism	ref_cov=14/18	total_cov=22/23
+RA	216	.	NODE_51_length_30791_cov_13.838932	27439	0	C	T	bias_e_value=2783710	bias_p_value=0.594407	consensus_reject=FREQUENCY_CUTOFF	consensus_score=74.2	fisher_strand_p_value=0.722238	frequency=2.174e-01	ks_quality_p_value=0.343988	major_base=C	major_cov=17/19	major_frequency=7.826e-01	minor_base=T	minor_cov=6/4	new_cov=6/4	polymorphism_frequency=2.174e-01	polymorphism_score=17.7	prediction=polymorphism	ref_cov=17/19	total_cov=23/24
+RA	217	.	NODE_51_length_30791_cov_13.838932	27440	0	C	T	bias_e_value=3551970	bias_p_value=0.758455	consensus_reject=FREQUENCY_CUTOFF	consensus_score=73.1	fisher_strand_p_value=0.739967	frequency=2.340e-01	ks_quality_p_value=0.528815	major_base=C	major_cov=17/19	major_frequency=7.660e-01	minor_base=T	minor_cov=6/5	new_cov=6/5	polymorphism_frequency=2.340e-01	polymorphism_score=21.4	prediction=polymorphism	ref_cov=17/19	total_cov=23/24
+RA	218	.	NODE_51_length_30791_cov_13.838932	27441	0	T	G	bias_e_value=2868090	bias_p_value=0.612425	consensus_reject=FREQUENCY_CUTOFF	consensus_score=61.0	fisher_strand_p_value=0.727907	frequency=2.558e-01	ks_quality_p_value=0.359423	major_base=T	major_cov=14/18	major_frequency=7.442e-01	minor_base=G	minor_cov=6/5	new_cov=6/5	polymorphism_frequency=2.558e-01	polymorphism_score=26.1	prediction=polymorphism	ref_cov=14/18	total_cov=23/24
+RA	219	.	NODE_51_length_30791_cov_13.838932	27443	0	G	C	bias_e_value=3839290	bias_p_value=0.819806	consensus_reject=FREQUENCY_CUTOFF	consensus_score=81.7	fisher_strand_p_value=0.739967	frequency=2.340e-01	ks_quality_p_value=0.6262	major_base=G	major_cov=17/19	major_frequency=7.660e-01	minor_base=C	minor_cov=6/5	new_cov=6/5	polymorphism_frequency=2.340e-01	polymorphism_score=26.9	prediction=polymorphism	ref_cov=17/19	total_cov=23/24
+RA	220	.	NODE_51_length_30791_cov_13.838932	27453	0	G	A	bias_e_value=4520020	bias_p_value=0.965164	consensus_reject=FREQUENCY_CUTOFF	consensus_score=49.2	fisher_strand_p_value=0.763677	frequency=3.333e-01	ks_quality_p_value=0.979382	major_base=G	major_cov=14/18	major_frequency=6.667e-01	minor_base=A	minor_cov=8/8	new_cov=8/8	polymorphism_frequency=3.333e-01	polymorphism_score=34.5	prediction=polymorphism	ref_cov=14/18	total_cov=25/26
+RA	221	.	NODE_51_length_30791_cov_13.838932	27455	0	A	G	bias_e_value=4673350	bias_p_value=0.997905	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.2	fisher_strand_p_value=1	frequency=3.200e-01	ks_quality_p_value=0.935966	major_base=A	major_cov=16/18	major_frequency=6.800e-01	minor_base=G	minor_cov=8/8	new_cov=8/8	polymorphism_frequency=3.200e-01	polymorphism_score=34.1	prediction=polymorphism	ref_cov=16/18	total_cov=25/26
+RA	222	.	NODE_51_length_30791_cov_13.838932	27463	0	G	A	bias_e_value=4128880	bias_p_value=0.881642	consensus_reject=FREQUENCY_CUTOFF	consensus_score=33.1	fisher_strand_p_value=0.591905	frequency=4.035e-01	ks_quality_p_value=0.937263	major_base=G	major_cov=16/18	major_frequency=5.965e-01	minor_base=A	minor_cov=13/10	new_cov=13/10	polymorphism_frequency=4.035e-01	polymorphism_score=53.2	prediction=polymorphism	ref_cov=16/18	total_cov=30/28
+RA	223	.	NODE_51_length_30791_cov_13.838932	27486	0	G	A	bias_e_value=4670640	bias_p_value=0.997324	consensus_reject=FREQUENCY_CUTOFF	consensus_score=44.1	fisher_strand_p_value=1	frequency=6.250e-01	ks_quality_p_value=0.927743	major_base=A	major_cov=21/19	major_frequency=6.250e-01	minor_base=G	minor_cov=13/11	new_cov=21/19	polymorphism_frequency=6.250e-01	polymorphism_score=55.7	prediction=polymorphism	ref_cov=13/11	total_cov=34/30
+RA	224	.	NODE_51_length_30791_cov_13.838932	27487	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=42.5	fisher_strand_p_value=1	frequency=6.094e-01	ks_quality_p_value=1	major_base=T	major_cov=21/18	major_frequency=6.094e-01	minor_base=C	minor_cov=13/12	new_cov=21/18	polymorphism_frequency=6.094e-01	polymorphism_score=56.7	prediction=polymorphism	ref_cov=13/12	total_cov=34/30
+RA	225	.	NODE_51_length_30791_cov_13.838932	27491	0	A	C	bias_e_value=4682420	bias_p_value=0.99984	consensus_reject=FREQUENCY_CUTOFF	consensus_score=67.7	fisher_strand_p_value=1	frequency=6.308e-01	ks_quality_p_value=0.98215	major_base=C	major_cov=21/20	major_frequency=6.308e-01	minor_base=A	minor_cov=13/11	new_cov=21/20	polymorphism_frequency=6.308e-01	polymorphism_score=59.5	prediction=polymorphism	ref_cov=13/11	total_cov=34/31
+RA	226	.	NODE_51_length_30791_cov_13.838932	27494	0	C	T	bias_e_value=4540130	bias_p_value=0.969458	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.7	fisher_strand_p_value=0.798161	frequency=6.349e-01	ks_quality_p_value=0.956265	major_base=T	major_cov=21/19	major_frequency=6.349e-01	minor_base=C	minor_cov=13/10	new_cov=21/19	polymorphism_frequency=6.349e-01	polymorphism_score=53.2	prediction=polymorphism	ref_cov=13/10	total_cov=34/31
+RA	227	.	NODE_51_length_30791_cov_13.838932	27503	0	T	C	bias_e_value=4576610	bias_p_value=0.977246	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.1	fisher_strand_p_value=0.794402	frequency=6.615e-01	ks_quality_p_value=1	major_base=C	major_cov=21/22	major_frequency=6.615e-01	minor_base=T	minor_cov=12/10	new_cov=21/22	polymorphism_frequency=6.615e-01	polymorphism_score=46.1	prediction=polymorphism	ref_cov=12/10	total_cov=33/33
+RA	228	.	NODE_51_length_30791_cov_13.838932	27513	0	A	G	bias_e_value=4573770	bias_p_value=0.976639	consensus_reject=FREQUENCY_CUTOFF	consensus_score=59.8	fisher_strand_p_value=0.804933	frequency=6.377e-01	ks_quality_p_value=0.983666	major_base=G	major_cov=21/23	major_frequency=6.377e-01	minor_base=A	minor_cov=13/12	new_cov=21/23	polymorphism_frequency=6.377e-01	polymorphism_score=57.1	prediction=polymorphism	ref_cov=13/12	total_cov=34/35
+RA	229	.	NODE_51_length_30791_cov_13.838932	27526	0	A	G	bias_e_value=4293880	bias_p_value=0.916876	consensus_reject=FREQUENCY_CUTOFF	consensus_score=76.3	fisher_strand_p_value=0.621034	frequency=6.620e-01	ks_quality_p_value=1	major_base=G	major_cov=22/25	major_frequency=6.620e-01	minor_base=A	minor_cov=13/11	new_cov=22/25	polymorphism_frequency=6.620e-01	polymorphism_score=52.5	prediction=polymorphism	ref_cov=13/11	total_cov=35/36
+RA	230	.	NODE_51_length_30791_cov_13.838932	27527	0	T	C	bias_e_value=3392920	bias_p_value=0.724492	consensus_reject=FREQUENCY_CUTOFF	consensus_score=84.5	fisher_strand_p_value=0.602562	frequency=6.957e-01	ks_quality_p_value=0.592107	major_base=C	major_cov=23/25	major_frequency=6.957e-01	minor_base=T	minor_cov=12/9	new_cov=23/25	polymorphism_frequency=6.957e-01	polymorphism_score=46.2	prediction=polymorphism	ref_cov=12/9	total_cov=35/36
+RA	231	.	NODE_51_length_30791_cov_13.838932	27528	0	C	A	bias_e_value=4190980	bias_p_value=0.894902	consensus_reject=FREQUENCY_CUTOFF	consensus_score=80.7	fisher_strand_p_value=0.611349	frequency=6.714e-01	ks_quality_p_value=0.945608	major_base=A	major_cov=22/25	major_frequency=6.714e-01	minor_base=C	minor_cov=13/10	new_cov=22/25	polymorphism_frequency=6.714e-01	polymorphism_score=59.6	prediction=polymorphism	ref_cov=13/10	total_cov=35/36
+RA	232	.	NODE_51_length_30791_cov_13.838932	27530	0	G	A	bias_e_value=4270280	bias_p_value=0.911836	consensus_reject=FREQUENCY_CUTOFF	consensus_score=69.4	fisher_strand_p_value=0.621034	frequency=6.620e-01	ks_quality_p_value=0.98326	major_base=A	major_cov=22/25	major_frequency=6.620e-01	minor_base=G	minor_cov=13/11	new_cov=22/25	polymorphism_frequency=6.620e-01	polymorphism_score=56.0	prediction=polymorphism	ref_cov=13/11	total_cov=35/36
+RA	233	.	NODE_51_length_30791_cov_13.838932	27532	0	G	A	bias_e_value=4334300	bias_p_value=0.925506	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.0	fisher_strand_p_value=0.800122	frequency=6.714e-01	ks_quality_p_value=0.799548	major_base=A	major_cov=22/25	major_frequency=6.714e-01	minor_base=G	minor_cov=12/11	new_cov=22/25	polymorphism_frequency=6.714e-01	polymorphism_score=54.8	prediction=polymorphism	ref_cov=12/11	total_cov=35/36
+RA	234	.	NODE_51_length_30791_cov_13.838932	27535	0	A	G	bias_e_value=4578830	bias_p_value=0.97772	consensus_reject=FREQUENCY_CUTOFF	consensus_score=74.9	fisher_strand_p_value=0.807921	frequency=6.575e-01	ks_quality_p_value=0.985832	major_base=G	major_cov=23/25	major_frequency=6.575e-01	minor_base=A	minor_cov=13/12	new_cov=23/25	polymorphism_frequency=6.575e-01	polymorphism_score=56.9	prediction=polymorphism	ref_cov=13/12	total_cov=36/37
+RA	235	.	NODE_51_length_30791_cov_13.838932	27563	0	G	C	bias_e_value=4590330	bias_p_value=0.980177	consensus_reject=FREQUENCY_CUTOFF	consensus_score=125.7	fisher_strand_p_value=0.807611	frequency=7.089e-01	ks_quality_p_value=1	major_base=C	major_cov=27/29	major_frequency=7.089e-01	minor_base=G	minor_cov=12/11	new_cov=27/29	polymorphism_frequency=7.089e-01	polymorphism_score=58.6	prediction=polymorphism	ref_cov=12/11	total_cov=39/40
+RA	236	.	NODE_51_length_30791_cov_13.838932	27564	0	G	A	bias_e_value=4590330	bias_p_value=0.980177	consensus_reject=FREQUENCY_CUTOFF	consensus_score=106.6	fisher_strand_p_value=0.807611	frequency=7.089e-01	ks_quality_p_value=1	major_base=A	major_cov=27/29	major_frequency=7.089e-01	minor_base=G	minor_cov=12/11	new_cov=27/29	polymorphism_frequency=7.089e-01	polymorphism_score=50.4	prediction=polymorphism	ref_cov=12/11	total_cov=39/40
+RA	237	.	NODE_51_length_30791_cov_13.838932	27567	0	A	T	bias_e_value=4583480	bias_p_value=0.978712	consensus_reject=FREQUENCY_CUTOFF	consensus_score=133.3	fisher_strand_p_value=0.801755	frequency=7.273e-01	ks_quality_p_value=0.998918	major_base=T	major_cov=27/29	major_frequency=7.273e-01	minor_base=A	minor_cov=11/10	new_cov=27/29	polymorphism_frequency=7.273e-01	polymorphism_score=55.5	prediction=polymorphism	ref_cov=11/10	total_cov=38/40
+RA	238	.	NODE_51_length_30791_cov_13.838932	27569	0	C	T	bias_e_value=4574520	bias_p_value=0.976801	consensus_reject=FREQUENCY_CUTOFF	consensus_score=104.7	fisher_strand_p_value=0.800739	frequency=7.200e-01	ks_quality_p_value=0.989683	major_base=T	major_cov=26/28	major_frequency=7.200e-01	minor_base=C	minor_cov=11/10	new_cov=26/28	polymorphism_frequency=7.200e-01	polymorphism_score=46.9	prediction=polymorphism	ref_cov=11/10	total_cov=37/39
+RA	239	.	NODE_51_length_30791_cov_13.838932	27602	0	G	A	bias_e_value=4672300	bias_p_value=0.99768	consensus_reject=FREQUENCY_CUTOFF	consensus_score=96.7	fisher_strand_p_value=1	frequency=7.385e-01	ks_quality_p_value=0.932654	major_base=A	major_cov=24/24	major_frequency=7.385e-01	minor_base=G	minor_cov=9/8	new_cov=24/24	polymorphism_frequency=7.385e-01	polymorphism_score=36.6	prediction=polymorphism	ref_cov=9/8	total_cov=33/32
+RA	240	.	NODE_51_length_30791_cov_13.838932	27620	0	T	G	bias_e_value=4517100	bias_p_value=0.96454	consensus_reject=FREQUENCY_CUTOFF	consensus_score=96.6	fisher_strand_p_value=1	frequency=7.302e-01	ks_quality_p_value=0.745794	major_base=G	major_cov=23/23	major_frequency=7.302e-01	minor_base=T	minor_cov=9/8	new_cov=23/23	polymorphism_frequency=7.302e-01	polymorphism_score=40.7	prediction=polymorphism	ref_cov=9/8	total_cov=32/31
+RA	241	.	NODE_51_length_30791_cov_13.838932	27627	0	A	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=77.5	fisher_strand_p_value=1	frequency=6.721e-01	ks_quality_p_value=1	major_base=C	major_cov=21/20	major_frequency=6.721e-01	minor_base=A	minor_cov=11/9	new_cov=21/20	polymorphism_frequency=6.721e-01	polymorphism_score=51.7	prediction=polymorphism	ref_cov=11/9	total_cov=32/30
+RA	242	.	NODE_51_length_30791_cov_13.838932	27629	0	T	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=62.1	fisher_strand_p_value=1	frequency=6.508e-01	ks_quality_p_value=1	major_base=C	major_cov=21/20	major_frequency=6.508e-01	minor_base=T	minor_cov=11/11	new_cov=21/20	polymorphism_frequency=6.508e-01	polymorphism_score=47.8	prediction=polymorphism	ref_cov=11/11	total_cov=32/31
+RA	243	.	NODE_51_length_30791_cov_13.838932	27635	0	T	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=66.6	fisher_strand_p_value=1	frequency=6.557e-01	ks_quality_p_value=1	major_base=C	major_cov=20/20	major_frequency=6.557e-01	minor_base=T	minor_cov=11/10	new_cov=20/20	polymorphism_frequency=6.557e-01	polymorphism_score=43.8	prediction=polymorphism	ref_cov=11/10	total_cov=31/30
+RA	244	.	NODE_51_length_30791_cov_13.838932	27637	0	A	G	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=67.5	fisher_strand_p_value=1	frequency=6.667e-01	ks_quality_p_value=1	major_base=G	major_cov=20/20	major_frequency=6.667e-01	minor_base=A	minor_cov=10/10	new_cov=20/20	polymorphism_frequency=6.667e-01	polymorphism_score=41.8	prediction=polymorphism	ref_cov=10/10	total_cov=30/30
+RA	245	.	NODE_51_length_30791_cov_13.838932	27638	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=54.7	fisher_strand_p_value=1	frequency=6.452e-01	ks_quality_p_value=1	major_base=T	major_cov=20/20	major_frequency=6.452e-01	minor_base=C	minor_cov=11/11	new_cov=20/20	polymorphism_frequency=6.452e-01	polymorphism_score=50.8	prediction=polymorphism	ref_cov=11/11	total_cov=31/31
+RA	246	.	NODE_51_length_30791_cov_13.838932	27641	0	G	A	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=53.9	fisher_strand_p_value=1	frequency=6.452e-01	ks_quality_p_value=1	major_base=A	major_cov=20/20	major_frequency=6.452e-01	minor_base=G	minor_cov=11/11	new_cov=20/20	polymorphism_frequency=6.452e-01	polymorphism_score=51.6	prediction=polymorphism	ref_cov=11/11	total_cov=31/31
+RA	247	.	NODE_51_length_30791_cov_13.838932	27655	0	G	C	bias_e_value=4670660	bias_p_value=0.997329	consensus_reject=FREQUENCY_CUTOFF	consensus_score=54.7	fisher_strand_p_value=1	frequency=6.441e-01	ks_quality_p_value=0.927806	major_base=C	major_cov=19/19	major_frequency=6.441e-01	minor_base=G	minor_cov=10/11	new_cov=19/19	polymorphism_frequency=6.441e-01	polymorphism_score=58.8	prediction=polymorphism	ref_cov=10/11	total_cov=29/30
+RA	248	.	NODE_51_length_30791_cov_13.838932	27657	0	G	A	bias_e_value=4444110	bias_p_value=0.948955	consensus_reject=FREQUENCY_CUTOFF	consensus_score=43.1	fisher_strand_p_value=1	frequency=6.441e-01	ks_quality_p_value=0.697995	major_base=A	major_cov=19/19	major_frequency=6.441e-01	minor_base=G	minor_cov=10/11	new_cov=19/19	polymorphism_frequency=6.441e-01	polymorphism_score=49.9	prediction=polymorphism	ref_cov=10/11	total_cov=29/30
+RA	249	.	NODE_51_length_30791_cov_13.838932	27658	0	A	C	bias_e_value=4479050	bias_p_value=0.956416	consensus_reject=FREQUENCY_CUTOFF	consensus_score=54.7	fisher_strand_p_value=1	frequency=6.441e-01	ks_quality_p_value=0.719673	major_base=C	major_cov=19/19	major_frequency=6.441e-01	minor_base=A	minor_cov=10/11	new_cov=19/19	polymorphism_frequency=6.441e-01	polymorphism_score=55.2	prediction=polymorphism	ref_cov=10/11	total_cov=29/30
+RA	250	.	NODE_51_length_30791_cov_13.838932	27663	0	A	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=57.5	fisher_strand_p_value=1	frequency=6.167e-01	ks_quality_p_value=1	major_base=C	major_cov=19/18	major_frequency=6.167e-01	minor_base=A	minor_cov=11/12	new_cov=19/18	polymorphism_frequency=6.167e-01	polymorphism_score=56.4	prediction=polymorphism	ref_cov=11/12	total_cov=30/31
+RA	251	.	NODE_51_length_30791_cov_13.838932	27665	0	C	T	bias_e_value=4400910	bias_p_value=0.939729	consensus_reject=FREQUENCY_CUTOFF	consensus_score=47.8	fisher_strand_p_value=0.793036	frequency=6.333e-01	ks_quality_p_value=0.849322	major_base=T	major_cov=19/19	major_frequency=6.333e-01	minor_base=C	minor_cov=10/12	new_cov=19/19	polymorphism_frequency=6.333e-01	polymorphism_score=49.2	prediction=polymorphism	ref_cov=10/12	total_cov=30/31
+RA	252	.	NODE_51_length_30791_cov_13.838932	27673	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.7	fisher_strand_p_value=1	frequency=5.417e-01	ks_quality_p_value=1	major_base=T	major_cov=13/13	major_frequency=5.417e-01	minor_base=C	minor_cov=11/11	new_cov=13/13	polymorphism_frequency=5.417e-01	polymorphism_score=48.5	prediction=polymorphism	ref_cov=11/11	total_cov=24/25
+RA	253	.	NODE_51_length_30791_cov_13.838932	27674	0	G	A	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=3.5	fisher_strand_p_value=1	frequency=5.306e-01	ks_quality_p_value=1	major_base=A	major_cov=13/13	major_frequency=5.306e-01	minor_base=G	minor_cov=11/12	new_cov=13/13	polymorphism_frequency=5.306e-01	polymorphism_score=56.1	prediction=polymorphism	ref_cov=11/12	total_cov=24/25
+RA	254	.	NODE_51_length_30791_cov_13.838932	27677	0	G	C	bias_e_value=4558000	bias_p_value=0.973272	consensus_reject=FREQUENCY_CUTOFF	consensus_score=11.3	fisher_strand_p_value=0.77993	frequency=5.417e-01	ks_quality_p_value=0.997381	major_base=C	major_cov=13/13	major_frequency=5.417e-01	minor_base=G	minor_cov=10/12	new_cov=13/13	polymorphism_frequency=5.417e-01	polymorphism_score=62.6	prediction=polymorphism	ref_cov=10/12	total_cov=24/25
+RA	255	.	NODE_51_length_30791_cov_13.838932	27687	0	G	A	bias_e_value=4135310	bias_p_value=0.883016	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.4	fisher_strand_p_value=0.777512	frequency=5.102e-01	ks_quality_p_value=0.716531	major_base=A	major_cov=13/12	major_frequency=5.102e-01	minor_base=G	minor_cov=11/13	new_cov=13/12	polymorphism_frequency=5.102e-01	polymorphism_score=60.5	prediction=polymorphism	ref_cov=11/13	total_cov=24/25
+RA	256	.	NODE_51_length_30791_cov_13.838932	27693	0	C	G	bias_e_value=4683170	bias_p_value=1	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-0.7	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=1	major_base=G	major_cov=12/11	major_frequency=5.000e-01	minor_base=C	minor_cov=11/12	new_cov=12/11	polymorphism_frequency=5.000e-01	polymorphism_score=61.8	prediction=polymorphism	ref_cov=11/12	total_cov=23/23
+RA	257	.	NODE_51_length_30791_cov_13.838932	27695	0	G	A	bias_e_value=4678870	bias_p_value=0.999082	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.8	fisher_strand_p_value=1	frequency=5.000e-01	ks_quality_p_value=0.957453	major_base=A	major_cov=12/11	major_frequency=5.000e-01	minor_base=G	minor_cov=11/12	new_cov=12/11	polymorphism_frequency=5.000e-01	polymorphism_score=55.5	prediction=polymorphism	ref_cov=11/12	total_cov=23/23
+RA	258	.	NODE_51_length_30791_cov_13.838932	27696	0	G	A	bias_e_value=4532090	bias_p_value=0.96774	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.9	fisher_strand_p_value=0.768311	frequency=5.111e-01	ks_quality_p_value=0.985266	major_base=A	major_cov=12/11	major_frequency=5.111e-01	minor_base=G	minor_cov=10/12	new_cov=12/11	polymorphism_frequency=5.111e-01	polymorphism_score=56.7	prediction=polymorphism	ref_cov=10/12	total_cov=22/23
+RA	259	.	NODE_51_length_30791_cov_13.838932	27697	0	G	C	bias_e_value=4351670	bias_p_value=0.929216	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.3	fisher_strand_p_value=0.768311	frequency=5.111e-01	ks_quality_p_value=0.843624	major_base=C	major_cov=12/11	major_frequency=5.111e-01	minor_base=G	minor_cov=10/12	new_cov=12/11	polymorphism_frequency=5.111e-01	polymorphism_score=63.3	prediction=polymorphism	ref_cov=10/12	total_cov=22/23
+RA	260	.	NODE_51_length_30791_cov_13.838932	27710	0	G	C	bias_e_value=4189610	bias_p_value=0.894609	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-5.9	fisher_strand_p_value=0.768311	frequency=4.889e-01	ks_quality_p_value=0.751732	major_base=G	major_cov=10/13	major_frequency=5.111e-01	minor_base=C	minor_cov=11/11	new_cov=11/11	polymorphism_frequency=4.889e-01	polymorphism_score=63.3	prediction=polymorphism	ref_cov=10/13	total_cov=21/24
+RA	261	.	NODE_51_length_30791_cov_13.838932	27713	0	G	C	bias_e_value=4643650	bias_p_value=0.991562	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-1.8	fisher_strand_p_value=1	frequency=4.773e-01	ks_quality_p_value=0.872936	major_base=G	major_cov=10/13	major_frequency=5.227e-01	minor_base=C	minor_cov=10/11	new_cov=10/11	polymorphism_frequency=4.773e-01	polymorphism_score=61.7	prediction=polymorphism	ref_cov=10/13	total_cov=21/24
+RA	262	.	NODE_51_length_30791_cov_13.838932	27716	0	G	A	bias_e_value=4546740	bias_p_value=0.970868	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.8	fisher_strand_p_value=0.768542	frequency=4.444e-01	ks_quality_p_value=1	major_base=G	major_cov=11/14	major_frequency=5.556e-01	minor_base=A	minor_cov=10/10	new_cov=10/10	polymorphism_frequency=4.444e-01	polymorphism_score=43.4	prediction=polymorphism	ref_cov=11/14	total_cov=21/24
+RA	263	.	NODE_51_length_30791_cov_13.838932	27719	0	A	G	bias_e_value=4638120	bias_p_value=0.990381	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.9	fisher_strand_p_value=1	frequency=4.318e-01	ks_quality_p_value=0.864546	major_base=A	major_cov=11/14	major_frequency=5.682e-01	minor_base=G	minor_cov=9/10	new_cov=9/10	polymorphism_frequency=4.318e-01	polymorphism_score=45.4	prediction=polymorphism	ref_cov=11/14	total_cov=21/24
+RA	264	.	NODE_51_length_30791_cov_13.838932	27728	0	T	C	bias_e_value=2807960	bias_p_value=0.599586	consensus_reject=FREQUENCY_CUTOFF	consensus_score=43.9	fisher_strand_p_value=1	frequency=3.400e-01	ks_quality_p_value=0.25218	major_base=T	major_cov=17/16	major_frequency=6.600e-01	minor_base=C	minor_cov=9/8	new_cov=9/8	polymorphism_frequency=3.400e-01	polymorphism_score=38.5	prediction=polymorphism	ref_cov=17/16	total_cov=26/24
+RA	265	.	NODE_51_length_30791_cov_13.838932	27729	0	T	C	bias_e_value=4165940	bias_p_value=0.889555	consensus_reject=FREQUENCY_CUTOFF	consensus_score=46.6	fisher_strand_p_value=1	frequency=3.400e-01	ks_quality_p_value=0.568487	major_base=T	major_cov=17/16	major_frequency=6.600e-01	minor_base=C	minor_cov=9/8	new_cov=9/8	polymorphism_frequency=3.400e-01	polymorphism_score=35.1	prediction=polymorphism	ref_cov=17/16	total_cov=26/24
+RA	266	.	NODE_51_length_30791_cov_13.838932	27731	0	T	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=46.9	fisher_strand_p_value=1	frequency=3.404e-01	ks_quality_p_value=0.999657	major_base=T	major_cov=15/16	major_frequency=6.596e-01	minor_base=C	minor_cov=8/8	new_cov=8/8	polymorphism_frequency=3.404e-01	polymorphism_score=35.2	prediction=polymorphism	ref_cov=15/16	total_cov=24/24
+RA	267	.	NODE_51_length_30791_cov_13.838932	27734	0	C	T	bias_e_value=4679240	bias_p_value=0.999162	consensus_reject=FREQUENCY_CUTOFF	consensus_score=87.1	fisher_strand_p_value=1	frequency=2.128e-01	ks_quality_p_value=0.959332	major_base=C	major_cov=18/19	major_frequency=7.872e-01	minor_base=T	minor_cov=5/5	new_cov=5/5	polymorphism_frequency=2.128e-01	polymorphism_score=17.2	prediction=polymorphism	ref_cov=18/19	total_cov=24/24
+RA	268	.	NODE_51_length_30791_cov_13.838932	27743	0	A	C	bias_e_value=4682050	bias_p_value=0.999762	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.1	fisher_strand_p_value=1	frequency=3.404e-01	ks_quality_p_value=0.978276	major_base=A	major_cov=15/16	major_frequency=6.596e-01	minor_base=C	minor_cov=8/8	new_cov=8/8	polymorphism_frequency=3.404e-01	polymorphism_score=41.0	prediction=polymorphism	ref_cov=15/16	total_cov=23/24
+RA	269	.	NODE_51_length_30791_cov_13.838932	27749	0	C	T	bias_e_value=4447950	bias_p_value=0.949774	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.2	fisher_strand_p_value=0.758826	frequency=3.111e-01	ks_quality_p_value=0.922852	major_base=C	major_cov=15/16	major_frequency=6.889e-01	minor_base=T	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=3.111e-01	polymorphism_score=28.7	prediction=polymorphism	ref_cov=15/16	total_cov=21/24
+RA	270	.	NODE_51_length_30791_cov_13.838932	27751	0	C	T	bias_e_value=4534470	bias_p_value=0.968249	consensus_reject=FREQUENCY_CUTOFF	consensus_score=56.6	fisher_strand_p_value=0.758826	frequency=3.111e-01	ks_quality_p_value=1	major_base=C	major_cov=15/16	major_frequency=6.889e-01	minor_base=T	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=3.111e-01	polymorphism_score=27.9	prediction=polymorphism	ref_cov=15/16	total_cov=21/24
+RA	271	.	NODE_51_length_30791_cov_13.838932	27752	0	G	C	bias_e_value=4447950	bias_p_value=0.949774	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.1	fisher_strand_p_value=0.758826	frequency=3.111e-01	ks_quality_p_value=0.922852	major_base=G	major_cov=15/16	major_frequency=6.889e-01	minor_base=C	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=3.111e-01	polymorphism_score=37.3	prediction=polymorphism	ref_cov=15/16	total_cov=21/24
+RA	272	.	NODE_51_length_30791_cov_13.838932	27754	0	A	G	bias_e_value=4534470	bias_p_value=0.968249	consensus_reject=FREQUENCY_CUTOFF	consensus_score=52.1	fisher_strand_p_value=0.758826	frequency=3.111e-01	ks_quality_p_value=1	major_base=A	major_cov=15/16	major_frequency=6.889e-01	minor_base=G	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=3.111e-01	polymorphism_score=29.2	prediction=polymorphism	ref_cov=15/16	total_cov=21/24
+RA	273	.	NODE_51_length_30791_cov_13.838932	27755	0	G	C	bias_e_value=4354130	bias_p_value=0.92974	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.2	fisher_strand_p_value=0.758826	frequency=3.111e-01	ks_quality_p_value=0.855764	major_base=G	major_cov=15/16	major_frequency=6.889e-01	minor_base=C	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=3.111e-01	polymorphism_score=34.6	prediction=polymorphism	ref_cov=15/16	total_cov=21/24
+RA	274	.	NODE_51_length_30791_cov_13.838932	27758	0	T	C	bias_e_value=4384510	bias_p_value=0.936228	consensus_reject=FREQUENCY_CUTOFF	consensus_score=54.2	fisher_strand_p_value=0.753933	frequency=3.043e-01	ks_quality_p_value=0.881812	major_base=T	major_cov=16/16	major_frequency=6.957e-01	minor_base=C	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=3.043e-01	polymorphism_score=28.8	prediction=polymorphism	ref_cov=16/16	total_cov=23/24
+RA	275	.	NODE_51_length_30791_cov_13.838932	27761	0	A	G	bias_e_value=4509080	bias_p_value=0.962828	consensus_reject=FREQUENCY_CUTOFF	consensus_score=58.7	fisher_strand_p_value=0.751642	frequency=2.979e-01	ks_quality_p_value=0.984555	major_base=A	major_cov=17/16	major_frequency=7.021e-01	minor_base=G	minor_cov=6/8	new_cov=6/8	polymorphism_frequency=2.979e-01	polymorphism_score=27.5	prediction=polymorphism	ref_cov=17/16	total_cov=23/24
+RA	276	.	NODE_51_length_30791_cov_13.838932	27773	0	T	G	bias_e_value=2232770	bias_p_value=0.476764	consensus_reject=FREQUENCY_CUTOFF	consensus_score=66.7	fisher_strand_p_value=0.173368	frequency=2.683e-01	ks_quality_p_value=0.998671	major_base=T	major_cov=16/14	major_frequency=7.317e-01	minor_base=G	minor_cov=3/8	new_cov=3/8	polymorphism_frequency=2.683e-01	polymorphism_score=26.4	prediction=polymorphism	ref_cov=16/14	total_cov=19/22
+RA	277	.	NODE_51_length_30791_cov_13.838932	27774	0	A	G	bias_e_value=1905280	bias_p_value=0.406836	consensus_reject=FREQUENCY_CUTOFF	consensus_score=62.9	fisher_strand_p_value=0.175324	frequency=2.558e-01	ks_quality_p_value=0.774286	major_base=A	major_cov=17/15	major_frequency=7.442e-01	minor_base=G	minor_cov=3/8	new_cov=3/8	polymorphism_frequency=2.558e-01	polymorphism_score=21.9	prediction=polymorphism	ref_cov=17/15	total_cov=20/23
+RA	278	.	NODE_51_length_30791_cov_13.838932	27781	0	T	A	bias_e_value=2412870	bias_p_value=0.515222	consensus_reject=FREQUENCY_CUTOFF	consensus_score=75.7	fisher_strand_p_value=0.284164	frequency=2.381e-01	ks_quality_p_value=0.689338	major_base=T	major_cov=17/15	major_frequency=7.619e-01	minor_base=A	minor_cov=3/7	new_cov=3/7	polymorphism_frequency=2.381e-01	polymorphism_score=24.5	prediction=polymorphism	ref_cov=17/15	total_cov=20/22
+RA	279	.	NODE_51_length_30791_cov_13.838932	28219	0	G	C	bias_e_value=4679190	bias_p_value=0.999151	consensus_reject=FREQUENCY_CUTOFF	consensus_score=34.3	fisher_strand_p_value=1	frequency=2.609e-01	ks_quality_p_value=0.959087	major_base=G	major_cov=7/10	major_frequency=7.391e-01	minor_base=C	minor_cov=3/3	new_cov=3/3	polymorphism_frequency=2.609e-01	polymorphism_score=11.5	prediction=polymorphism	ref_cov=7/10	total_cov=10/13
+RA	280	.	NODE_51_length_30791_cov_13.838932	28223	0	A	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.0	fisher_strand_p_value=1	frequency=2.609e-01	ks_quality_p_value=1	major_base=A	major_cov=7/10	major_frequency=7.391e-01	minor_base=T	minor_cov=3/3	new_cov=3/3	polymorphism_frequency=2.609e-01	polymorphism_score=10.9	prediction=polymorphism	ref_cov=7/10	total_cov=10/13
+RA	281	.	NODE_51_length_30791_cov_13.838932	28232	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=30.7	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=1	major_base=C	major_cov=9/11	major_frequency=6.667e-01	minor_base=T	minor_cov=4/6	new_cov=4/6	polymorphism_frequency=3.333e-01	polymorphism_score=19.2	prediction=polymorphism	ref_cov=9/11	total_cov=13/18
+RA	282	.	NODE_51_length_30791_cov_13.838932	28235	0	A	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=22.5	fisher_strand_p_value=1	frequency=3.871e-01	ks_quality_p_value=0.999717	major_base=A	major_cov=8/11	major_frequency=6.129e-01	minor_base=C	minor_cov=5/7	new_cov=5/7	polymorphism_frequency=3.871e-01	polymorphism_score=25.3	prediction=polymorphism	ref_cov=8/11	total_cov=13/18
+RA	283	.	NODE_51_length_30791_cov_13.838932	28238	0	C	G	bias_e_value=4476210	bias_p_value=0.955807	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.9	fisher_strand_p_value=0.717831	frequency=3.548e-01	ks_quality_p_value=1	major_base=C	major_cov=9/11	major_frequency=6.452e-01	minor_base=G	minor_cov=4/7	new_cov=4/7	polymorphism_frequency=3.548e-01	polymorphism_score=27.8	prediction=polymorphism	ref_cov=9/11	total_cov=13/18
+RA	284	.	NODE_51_length_30791_cov_13.838932	28269	0	G	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.5	fisher_strand_p_value=1	frequency=4.194e-01	ks_quality_p_value=1	major_base=G	major_cov=8/10	major_frequency=5.806e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.194e-01	polymorphism_score=35.6	prediction=polymorphism	ref_cov=8/10	total_cov=13/18
+RA	285	.	NODE_51_length_30791_cov_13.838932	28273	0	A	C	bias_e_value=4575140	bias_p_value=0.976933	consensus_reject=FREQUENCY_CUTOFF	consensus_score=10.8	fisher_strand_p_value=1	frequency=4.194e-01	ks_quality_p_value=0.793048	major_base=A	major_cov=8/10	major_frequency=5.806e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.194e-01	polymorphism_score=35.8	prediction=polymorphism	ref_cov=8/10	total_cov=13/18
+RA	286	.	NODE_51_length_30791_cov_13.838932	28280	0	T	C	bias_e_value=4213920	bias_p_value=0.899802	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.5	fisher_strand_p_value=0.710729	frequency=4.483e-01	ks_quality_p_value=0.826148	major_base=T	major_cov=8/8	major_frequency=5.517e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.483e-01	polymorphism_score=29.6	prediction=polymorphism	ref_cov=8/8	total_cov=13/16
+RA	287	.	NODE_51_length_30791_cov_13.838932	28283	0	C	T	bias_e_value=4426160	bias_p_value=0.945121	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=4.9	fisher_strand_p_value=0.710729	frequency=4.483e-01	ks_quality_p_value=0.967387	major_base=C	major_cov=8/8	major_frequency=5.517e-01	minor_base=T	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.483e-01	polymorphism_score=30.2	prediction=polymorphism	ref_cov=8/8	total_cov=13/16
+RA	288	.	NODE_51_length_30791_cov_13.838932	28287	0	G	A	bias_e_value=4471890	bias_p_value=0.954885	consensus_reject=FREQUENCY_CUTOFF	consensus_score=12.1	fisher_strand_p_value=0.716841	frequency=4.194e-01	ks_quality_p_value=0.997522	major_base=G	major_cov=9/9	major_frequency=5.806e-01	minor_base=A	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.194e-01	polymorphism_score=29.8	prediction=polymorphism	ref_cov=9/9	total_cov=14/17
+RA	289	.	NODE_51_length_30791_cov_13.838932	28288	0	G	C	bias_e_value=4474670	bias_p_value=0.955478	consensus_reject=FREQUENCY_CUTOFF	consensus_score=13.4	fisher_strand_p_value=0.716841	frequency=4.194e-01	ks_quality_p_value=1	major_base=G	major_cov=9/9	major_frequency=5.806e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.194e-01	polymorphism_score=36.5	prediction=polymorphism	ref_cov=9/9	total_cov=14/17
+RA	290	.	NODE_51_length_30791_cov_13.838932	28289	0	G	C	bias_e_value=4474670	bias_p_value=0.955478	consensus_reject=FREQUENCY_CUTOFF	consensus_score=13.1	fisher_strand_p_value=0.716841	frequency=4.194e-01	ks_quality_p_value=1	major_base=G	major_cov=9/9	major_frequency=5.806e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=4.194e-01	polymorphism_score=36.8	prediction=polymorphism	ref_cov=9/9	total_cov=14/17
+RA	291	.	NODE_51_length_30791_cov_13.838932	28295	0	T	C	bias_e_value=3521660	bias_p_value=0.751982	consensus_reject=FREQUENCY_CUTOFF	consensus_score=13.1	fisher_strand_p_value=0.722107	frequency=3.939e-01	ks_quality_p_value=0.53243	major_base=T	major_cov=10/10	major_frequency=6.061e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=3.939e-01	polymorphism_score=30.6	prediction=polymorphism	ref_cov=10/10	total_cov=15/18
+RA	292	.	NODE_51_length_30791_cov_13.838932	28307	0	C	A	bias_e_value=3416060	bias_p_value=0.729434	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.5	fisher_strand_p_value=0.728237	frequency=3.824e-01	ks_quality_p_value=0.496553	major_base=C	major_cov=10/11	major_frequency=6.176e-01	minor_base=A	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=3.824e-01	polymorphism_score=34.0	prediction=polymorphism	ref_cov=10/11	total_cov=15/19
+RA	293	.	NODE_51_length_30791_cov_13.838932	28310	0	G	C	bias_e_value=4312560	bias_p_value=0.920863	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.2	fisher_strand_p_value=0.728237	frequency=3.824e-01	ks_quality_p_value=0.864453	major_base=G	major_cov=10/11	major_frequency=6.176e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=3.824e-01	polymorphism_score=35.5	prediction=polymorphism	ref_cov=10/11	total_cov=15/19
+RA	294	.	NODE_51_length_30791_cov_13.838932	28311	0	G	A	bias_e_value=4451130	bias_p_value=0.950452	consensus_reject=FREQUENCY_CUTOFF	consensus_score=21.5	fisher_strand_p_value=0.728237	frequency=3.824e-01	ks_quality_p_value=0.96424	major_base=G	major_cov=10/11	major_frequency=6.176e-01	minor_base=A	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=3.824e-01	polymorphism_score=29.0	prediction=polymorphism	ref_cov=10/11	total_cov=15/19
+RA	295	.	NODE_51_length_30791_cov_13.838932	28313	0	G	C	bias_e_value=3189760	bias_p_value=0.681112	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.7	fisher_strand_p_value=0.737196	frequency=3.714e-01	ks_quality_p_value=0.42992	major_base=G	major_cov=10/12	major_frequency=6.286e-01	minor_base=C	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=3.714e-01	polymorphism_score=36.2	prediction=polymorphism	ref_cov=10/12	total_cov=15/20
+RA	296	.	NODE_51_length_30791_cov_13.838932	28323	0	G	A	bias_e_value=1991280	bias_p_value=0.425199	consensus_reject=FREQUENCY_CUTOFF	consensus_score=14.7	fisher_strand_p_value=1	frequency=3.939e-01	ks_quality_p_value=0.145104	major_base=G	major_cov=9/11	major_frequency=6.061e-01	minor_base=A	minor_cov=5/8	new_cov=5/8	polymorphism_frequency=3.939e-01	polymorphism_score=29.8	prediction=polymorphism	ref_cov=9/11	total_cov=14/19
+RA	297	.	NODE_51_length_30791_cov_13.838932	28331	0	A	C	bias_e_value=4679960	bias_p_value=0.999314	consensus_reject=FREQUENCY_CUTOFF	consensus_score=22.8	fisher_strand_p_value=1	frequency=3.750e-01	ks_quality_p_value=0.963194	major_base=A	major_cov=9/11	major_frequency=6.250e-01	minor_base=C	minor_cov=5/7	new_cov=5/7	polymorphism_frequency=3.750e-01	polymorphism_score=32.3	prediction=polymorphism	ref_cov=9/11	total_cov=14/18
+RA	298	.	NODE_51_length_30791_cov_13.838932	28337	0	G	C	bias_e_value=4393070	bias_p_value=0.938054	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.6	fisher_strand_p_value=1	frequency=3.548e-01	ks_quality_p_value=0.669338	major_base=G	major_cov=9/11	major_frequency=6.452e-01	minor_base=C	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=3.548e-01	polymorphism_score=28.5	prediction=polymorphism	ref_cov=9/11	total_cov=14/17
+RA	299	.	NODE_51_length_30791_cov_13.838932	28341	0	G	A	bias_e_value=1732690	bias_p_value=0.369983	consensus_reject=FREQUENCY_CUTOFF	consensus_score=35.5	fisher_strand_p_value=1	frequency=2.903e-01	ks_quality_p_value=0.11791	major_base=G	major_cov=10/12	major_frequency=7.097e-01	minor_base=A	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=2.903e-01	polymorphism_score=17.5	prediction=polymorphism	ref_cov=10/12	total_cov=14/17
+RA	300	.	NODE_51_length_30791_cov_13.838932	28342	0	A	G	bias_e_value=2127980	bias_p_value=0.45439	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.8	fisher_strand_p_value=1	frequency=3.000e-01	ks_quality_p_value=0.160643	major_base=A	major_cov=9/12	major_frequency=7.000e-01	minor_base=G	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=3.000e-01	polymorphism_score=18.4	prediction=polymorphism	ref_cov=9/12	total_cov=14/17
+RA	301	.	NODE_51_length_30791_cov_13.838932	28343	0	A	T	bias_e_value=1732690	bias_p_value=0.369983	consensus_reject=FREQUENCY_CUTOFF	consensus_score=38.6	fisher_strand_p_value=1	frequency=2.903e-01	ks_quality_p_value=0.11791	major_base=A	major_cov=10/12	major_frequency=7.097e-01	minor_base=T	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=2.903e-01	polymorphism_score=22.7	prediction=polymorphism	ref_cov=10/12	total_cov=14/17
+RA	302	.	NODE_51_length_30791_cov_13.838932	28347	0	G	A	bias_e_value=4491650	bias_p_value=0.959105	consensus_reject=FREQUENCY_CUTOFF	consensus_score=32.5	fisher_strand_p_value=1	frequency=3.000e-01	ks_quality_p_value=0.727996	major_base=G	major_cov=10/11	major_frequency=7.000e-01	minor_base=A	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=3.000e-01	polymorphism_score=17.5	prediction=polymorphism	ref_cov=10/11	total_cov=14/16
+RA	303	.	NODE_51_length_30791_cov_13.838932	28356	0	G	A	bias_e_value=4474180	bias_p_value=0.955375	consensus_reject=FREQUENCY_CUTOFF	consensus_score=21.6	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=0.716531	major_base=G	major_cov=9/9	major_frequency=6.667e-01	minor_base=A	minor_cov=4/5	new_cov=4/5	polymorphism_frequency=3.333e-01	polymorphism_score=17.8	prediction=polymorphism	ref_cov=9/9	total_cov=13/14
+RA	304	.	NODE_51_length_30791_cov_13.838932	28361	0	G	C	bias_e_value=4530510	bias_p_value=0.967403	consensus_reject=FREQUENCY_CUTOFF	consensus_score=31.7	fisher_strand_p_value=1	frequency=2.800e-01	ks_quality_p_value=0.755784	major_base=G	major_cov=9/9	major_frequency=7.200e-01	minor_base=C	minor_cov=3/4	new_cov=3/4	polymorphism_frequency=2.800e-01	polymorphism_score=15.5	prediction=polymorphism	ref_cov=9/9	total_cov=12/13
+RA	305	.	NODE_52_length_28997_cov_14.175476	21	0	C	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=C	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.2	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	306	.	NODE_52_length_28997_cov_14.175476	22	0	T	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=35.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=T	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.1	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	307	.	NODE_52_length_28997_cov_14.175476	23	0	G	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=G	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.3	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	308	.	NODE_52_length_28997_cov_14.175476	24	0	G	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=G	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.3	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	309	.	NODE_52_length_28997_cov_14.175476	25	0	G	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=G	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.3	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	310	.	NODE_52_length_28997_cov_14.175476	26	0	A	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=35.6	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=A	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.1	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	311	.	NODE_52_length_28997_cov_14.175476	27	0	C	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=C	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.4	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	312	.	NODE_52_length_28997_cov_14.175476	28	0	G	.	bias_e_value=3776520	bias_p_value=0.806404	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.981982	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=G	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.3	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	313	.	NODE_52_length_28997_cov_14.175476	29	0	G	.	bias_e_value=3807110	bias_p_value=0.812935	consensus_score=37.8	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=1	major_base=.	major_cov=4/6	major_frequency=9.091e-01	minor_base=G	minor_cov=1/0	new_cov=4/6	polymorphism_frequency=9.091e-01	polymorphism_score=-1.8	prediction=consensus	ref_cov=1/0	total_cov=5/6
+RA	314	.	NODE_57_length_25591_cov_17.529414	17	0	T	G	bias_e_value=3758830	bias_p_value=0.802626	consensus_score=346.5	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.441702	major_base=G	major_cov=63/69	major_frequency=8.049e-01	minor_base=T	minor_cov=15/17	new_cov=63/69	polymorphism_frequency=8.049e-01	polymorphism_score=79.2	prediction=consensus	ref_cov=15/17	total_cov=78/86
+RA	315	.	NODE_57_length_25591_cov_17.529414	79	0	A	G	bias_e_value=3459330	bias_p_value=0.738674	consensus_score=415.8	fisher_strand_p_value=0.716387	frequency=1	ks_quality_p_value=0.517606	major_base=G	major_cov=81/84	major_frequency=8.209e-01	minor_base=A	minor_cov=19/17	new_cov=81/84	polymorphism_frequency=8.209e-01	polymorphism_score=75.3	prediction=consensus	ref_cov=19/17	total_cov=103/101
+RA	316	.	NODE_57_length_25591_cov_17.529414	89	0	G	A	bias_e_value=4683170	bias_p_value=1	consensus_score=395.4	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=1	major_base=A	major_cov=79/80	major_frequency=8.196e-01	minor_base=G	minor_cov=18/17	new_cov=79/80	polymorphism_frequency=8.196e-01	polymorphism_score=70.3	prediction=consensus	ref_cov=18/17	total_cov=99/97
+RA	317	.	NODE_57_length_25591_cov_17.529414	119	0	T	C	bias_e_value=4615730	bias_p_value=0.9856	consensus_score=391.4	fisher_strand_p_value=0.835163	frequency=1	ks_quality_p_value=1	major_base=C	major_cov=70/74	major_frequency=8.421e-01	minor_base=T	minor_cov=14/13	new_cov=70/74	polymorphism_frequency=8.421e-01	polymorphism_score=49.7	prediction=consensus	ref_cov=14/13	total_cov=84/88
+RA	318	.	NODE_57_length_25591_cov_17.529414	121	0	A	C	bias_e_value=4601210	bias_p_value=0.982499	consensus_score=424.8	fisher_strand_p_value=0.835163	frequency=1	ks_quality_p_value=0.980457	major_base=C	major_cov=70/74	major_frequency=8.421e-01	minor_base=A	minor_cov=14/13	new_cov=70/74	polymorphism_frequency=8.421e-01	polymorphism_score=57.7	prediction=consensus	ref_cov=14/13	total_cov=84/88
+RA	319	.	NODE_57_length_25591_cov_17.529414	128	0	T	C	bias_e_value=4551940	bias_p_value=0.97198	consensus_score=387.8	fisher_strand_p_value=0.844062	frequency=1	ks_quality_p_value=0.915583	major_base=C	major_cov=73/79	major_frequency=8.306e-01	minor_base=T	minor_cov=16/15	new_cov=73/79	polymorphism_frequency=8.306e-01	polymorphism_score=59.0	prediction=consensus	ref_cov=16/15	total_cov=89/94
+RA	320	.	NODE_57_length_25591_cov_17.529414	140	0	T	C	bias_e_value=4409110	bias_p_value=0.94148	consensus_score=369.2	fisher_strand_p_value=0.679606	frequency=1	ks_quality_p_value=0.997653	major_base=C	major_cov=67/74	major_frequency=8.343e-01	minor_base=T	minor_cov=15/13	new_cov=67/74	polymorphism_frequency=8.343e-01	polymorphism_score=52.1	prediction=consensus	ref_cov=15/13	total_cov=82/89
+RA	321	.	NODE_57_length_25591_cov_17.529414	144	0	T	C	bias_e_value=3461580	bias_p_value=0.739154	consensus_score=372.7	fisher_strand_p_value=0.409301	frequency=1	ks_quality_p_value=0.907133	major_base=C	major_cov=67/77	major_frequency=8.421e-01	minor_base=T	minor_cov=15/12	new_cov=67/77	polymorphism_frequency=8.421e-01	polymorphism_score=50.9	prediction=consensus	ref_cov=15/12	total_cov=82/89
+RA	322	.	NODE_57_length_25591_cov_17.529414	165	0	C	T	bias_e_value=4344020	bias_p_value=0.927581	consensus_score=328.8	fisher_strand_p_value=0.645381	frequency=1	ks_quality_p_value=0.99851	major_base=T	major_cov=61/69	major_frequency=8.553e-01	minor_base=C	minor_cov=12/10	new_cov=61/69	polymorphism_frequency=8.553e-01	polymorphism_score=34.7	prediction=consensus	ref_cov=12/10	total_cov=78/79
+RA	323	.	NODE_57_length_25591_cov_17.529414	191	0	T	C	bias_e_value=4682330	bias_p_value=0.999822	consensus_score=325.5	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.981196	major_base=C	major_cov=63/68	major_frequency=8.618e-01	minor_base=T	minor_cov=10/11	new_cov=63/68	polymorphism_frequency=8.618e-01	polymorphism_score=33.3	prediction=consensus	ref_cov=10/11	total_cov=74/80
+RA	324	.	NODE_57_length_25591_cov_17.529414	209	0	G	A	bias_e_value=4675360	bias_p_value=0.998332	consensus_score=317.1	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=0.942795	major_base=A	major_cov=58/66	major_frequency=8.986e-01	minor_base=G	minor_cov=7/7	new_cov=58/66	polymorphism_frequency=8.986e-01	polymorphism_score=20.4	prediction=consensus	ref_cov=7/7	total_cov=65/74
+RA	325	.	NODE_57_length_25591_cov_17.529414	237	1	.	A	bias_e_value=3739130	bias_p_value=0.79842	consensus_score=235.2	fisher_strand_p_value=0.436591	frequency=1	ks_quality_p_value=1	major_base=A	major_cov=40/44	major_frequency=8.317e-01	minor_base=.	minor_cov=10/7	new_cov=40/44	polymorphism_frequency=8.317e-01	polymorphism_score=47.8	prediction=consensus	ref_cov=10/7	total_cov=50/52
+RA	326	.	NODE_57_length_25591_cov_17.529414	250	0	C	T	bias_e_value=4567150	bias_p_value=0.975227	consensus_score=178.2	fisher_strand_p_value=0.785833	frequency=1	ks_quality_p_value=1	major_base=T	major_cov=41/43	major_frequency=8.400e-01	minor_base=C	minor_cov=9/7	new_cov=41/43	polymorphism_frequency=8.400e-01	polymorphism_score=22.6	prediction=consensus	ref_cov=9/7	total_cov=50/50
+RA	327	.	NODE_57_length_25591_cov_17.529414	271	0	C	G	bias_e_value=4539620	bias_p_value=0.969348	consensus_reject=FREQUENCY_CUTOFF	consensus_score=93.4	fisher_strand_p_value=0.769334	frequency=7.971e-01	ks_quality_p_value=0.991566	major_base=G	major_cov=28/27	major_frequency=7.971e-01	minor_base=C	minor_cov=8/6	new_cov=28/27	polymorphism_frequency=7.971e-01	polymorphism_score=26.0	prediction=polymorphism	ref_cov=8/6	total_cov=38/33
+RA	328	.	NODE_57_length_25591_cov_17.529414	274	0	T	G	bias_e_value=4683170	bias_p_value=1	consensus_score=98.9	fisher_strand_p_value=1	frequency=1	ks_quality_p_value=1	major_base=G	major_cov=30/27	major_frequency=8.028e-01	minor_base=T	minor_cov=8/6	new_cov=30/27	polymorphism_frequency=8.028e-01	polymorphism_score=22.5	prediction=consensus	ref_cov=8/6	total_cov=38/33
+RA	329	.	NODE_57_length_25591_cov_17.529414	281	0	T	G	bias_e_value=4167040	bias_p_value=0.889791	consensus_reject=FREQUENCY_CUTOFF	consensus_score=71.7	fisher_strand_p_value=0.568904	frequency=7.576e-01	ks_quality_p_value=1	major_base=G	major_cov=26/24	major_frequency=7.576e-01	minor_base=T	minor_cov=10/6	new_cov=26/24	polymorphism_frequency=7.576e-01	polymorphism_score=27.2	prediction=polymorphism	ref_cov=10/6	total_cov=36/31
+RA	330	.	NODE_57_length_25591_cov_17.529414	298	0	C	A	bias_e_value=4682540	bias_p_value=0.999865	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.5	fisher_strand_p_value=1	frequency=6.613e-01	ks_quality_p_value=0.983613	major_base=A	major_cov=22/19	major_frequency=6.613e-01	minor_base=C	minor_cov=11/10	new_cov=22/19	polymorphism_frequency=6.613e-01	polymorphism_score=42.0	prediction=polymorphism	ref_cov=11/10	total_cov=33/29
+RA	331	.	NODE_57_length_25591_cov_17.529414	310	0	T	C	bias_e_value=1615150	bias_p_value=0.344884	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-0.8	fisher_strand_p_value=1	frequency=5.614e-01	ks_quality_p_value=0.10644	major_base=C	major_cov=16/16	major_frequency=5.614e-01	minor_base=T	minor_cov=12/13	new_cov=16/16	polymorphism_frequency=5.614e-01	polymorphism_score=57.2	prediction=polymorphism	ref_cov=12/13	total_cov=30/30
+RA	332	.	NODE_57_length_25591_cov_17.529414	337	0	A	C	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=61.2	fisher_strand_p_value=1	frequency=4.038e-01	ks_quality_p_value=1	major_base=A	major_cov=15/16	major_frequency=5.962e-01	minor_base=C	minor_cov=10/11	new_cov=10/11	polymorphism_frequency=4.038e-01	polymorphism_score=52.2	prediction=polymorphism	ref_cov=15/16	total_cov=25/28
+RA	333	.	NODE_57_length_25591_cov_17.529414	358	0	T	G	bias_e_value=4520180	bias_p_value=0.965198	consensus_reject=FREQUENCY_CUTOFF	consensus_score=90.4	fisher_strand_p_value=0.768298	frequency=3.077e-01	ks_quality_p_value=0.973644	major_base=T	major_cov=18/18	major_frequency=6.923e-01	minor_base=G	minor_cov=7/9	new_cov=7/9	polymorphism_frequency=3.077e-01	polymorphism_score=36.8	prediction=polymorphism	ref_cov=18/18	total_cov=25/27
+RA	334	.	NODE_57_length_25591_cov_17.529414	367	0	C	G	bias_e_value=4475720	bias_p_value=0.955704	consensus_reject=FREQUENCY_CUTOFF	consensus_score=93.8	fisher_strand_p_value=0.768298	frequency=3.077e-01	ks_quality_p_value=0.933909	major_base=C	major_cov=18/18	major_frequency=6.923e-01	minor_base=G	minor_cov=7/9	new_cov=7/9	polymorphism_frequency=3.077e-01	polymorphism_score=41.7	prediction=polymorphism	ref_cov=18/18	total_cov=25/27
+RA	335	.	NODE_57_length_25591_cov_17.529414	369	0	T	C	bias_e_value=4546440	bias_p_value=0.970804	consensus_reject=FREQUENCY_CUTOFF	consensus_score=79.0	fisher_strand_p_value=0.768298	frequency=3.077e-01	ks_quality_p_value=1	major_base=T	major_cov=18/18	major_frequency=6.923e-01	minor_base=C	minor_cov=7/9	new_cov=7/9	polymorphism_frequency=3.077e-01	polymorphism_score=29.5	prediction=polymorphism	ref_cov=18/18	total_cov=25/27
+RA	336	.	NODE_57_length_25591_cov_17.529414	389	0	T	A	bias_e_value=3369800	bias_p_value=0.719556	consensus_reject=FREQUENCY_CUTOFF	consensus_score=111.6	fisher_strand_p_value=0.352023	frequency=2.642e-01	ks_quality_p_value=1	major_base=T	major_cov=21/18	major_frequency=7.358e-01	minor_base=A	minor_cov=5/9	new_cov=5/9	polymorphism_frequency=2.642e-01	polymorphism_score=28.0	prediction=polymorphism	ref_cov=21/18	total_cov=27/27
+RA	337	.	NODE_57_length_25591_cov_17.529414	396	0	A	G	bias_e_value=4508520	bias_p_value=0.962708	consensus_reject=FREQUENCY_CUTOFF	consensus_score=107.9	fisher_strand_p_value=0.739635	frequency=2.115e-01	ks_quality_p_value=1	major_base=A	major_cov=22/19	major_frequency=7.885e-01	minor_base=G	minor_cov=5/6	new_cov=5/6	polymorphism_frequency=2.115e-01	polymorphism_score=12.3	prediction=polymorphism	ref_cov=22/19	total_cov=27/25
+RA	338	.	NODE_58_length_25496_cov_10.583468	128	0	T	G	bias_e_value=4647240	bias_p_value=0.992328	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=6.1	fisher_strand_p_value=1	frequency=4.500e-01	ks_quality_p_value=0.878717	major_base=T	major_cov=11/11	major_frequency=5.500e-01	minor_base=G	minor_cov=9/9	new_cov=9/9	polymorphism_frequency=4.500e-01	polymorphism_score=51.2	prediction=polymorphism	ref_cov=11/11	total_cov=20/20
+RA	339	.	NODE_58_length_25496_cov_10.583468	2505	0	T	C	bias_e_value=4682590	bias_p_value=0.999877	consensus_reject=FREQUENCY_CUTOFF	consensus_score=86.6	fisher_strand_p_value=1	frequency=2.083e-01	ks_quality_p_value=0.984335	major_base=T	major_cov=18/20	major_frequency=7.917e-01	minor_base=C	minor_cov=5/5	new_cov=5/5	polymorphism_frequency=2.083e-01	polymorphism_score=16.4	prediction=polymorphism	ref_cov=18/20	total_cov=24/25
+RA	340	.	NODE_59_length_24902_cov_17.459859	23926	0	T	G	bias_e_value=4141240	bias_p_value=0.884281	consensus_reject=FREQUENCY_CUTOFF	consensus_score=68.3	fisher_strand_p_value=1	frequency=3.382e-01	ks_quality_p_value=0.559281	major_base=T	major_cov=23/22	major_frequency=6.618e-01	minor_base=G	minor_cov=11/12	new_cov=11/12	polymorphism_frequency=3.382e-01	polymorphism_score=61.2	prediction=polymorphism	ref_cov=23/22	total_cov=34/34
+RA	341	.	NODE_59_length_24902_cov_17.459859	24193	0	C	T	bias_e_value=4376370	bias_p_value=0.934489	consensus_reject=FREQUENCY_CUTOFF	consensus_score=119.4	fisher_strand_p_value=0.714785	frequency=6.538e-01	ks_quality_p_value=0.924194	major_base=T	major_cov=42/43	major_frequency=6.538e-01	minor_base=C	minor_cov=24/21	new_cov=42/43	polymorphism_frequency=6.538e-01	polymorphism_score=112.8	prediction=polymorphism	ref_cov=24/21	total_cov=67/64
+RA	342	.	NODE_59_length_24902_cov_17.459859	24222	0	T	C	bias_e_value=4344340	bias_p_value=0.92765	consensus_reject=FREQUENCY_CUTOFF	consensus_score=122.5	fisher_strand_p_value=1	frequency=6.338e-01	ks_quality_p_value=0.644578	major_base=C	major_cov=44/46	major_frequency=6.338e-01	minor_base=T	minor_cov=26/26	new_cov=44/46	polymorphism_frequency=6.338e-01	polymorphism_score=126.5	prediction=polymorphism	ref_cov=26/26	total_cov=70/72
+RA	343	.	NODE_59_length_24902_cov_17.459859	24354	0	G	A	bias_e_value=4494620	bias_p_value=0.95974	consensus_reject=FREQUENCY_CUTOFF	consensus_score=183.7	fisher_strand_p_value=0.86335	frequency=6.879e-01	ks_quality_p_value=0.845547	major_base=A	major_cov=56/52	major_frequency=6.879e-01	minor_base=G	minor_cov=24/25	new_cov=56/52	polymorphism_frequency=6.879e-01	polymorphism_score=118.8	prediction=polymorphism	ref_cov=24/25	total_cov=80/77
+RA	344	.	NODE_59_length_24902_cov_17.459859	24492	0	C	T	bias_e_value=4520590	bias_p_value=0.965284	consensus_reject=FREQUENCY_CUTOFF	consensus_score=139.8	fisher_strand_p_value=1	frequency=3.636e-01	ks_quality_p_value=0.748347	major_base=C	major_cov=50/48	major_frequency=6.364e-01	minor_base=T	minor_cov=29/27	new_cov=29/27	polymorphism_frequency=3.636e-01	polymorphism_score=138.3	prediction=polymorphism	ref_cov=50/48	total_cov=79/75
+RA	345	.	NODE_5_length_126675_cov_12.099970	22994	0	C	T	bias_e_value=3184590	bias_p_value=0.680007	consensus_score=13.5	fisher_strand_p_value=0.454545	frequency=1	ks_quality_p_value=0.695144	major_base=T	major_cov=4/5	major_frequency=8.182e-01	minor_base=C	minor_cov=2/0	new_cov=4/5	polymorphism_frequency=8.182e-01	polymorphism_score=-3.5	prediction=consensus	ref_cov=2/0	total_cov=6/5
+RA	346	.	NODE_5_length_126675_cov_12.099970	126492	0	C	T	bias_e_value=4045030	bias_p_value=0.863738	consensus_reject=FREQUENCY_CUTOFF	consensus_score=255.5	fisher_strand_p_value=0.526337	frequency=3.657e-01	ks_quality_p_value=0.99879	major_base=C	major_cov=82/88	major_frequency=6.343e-01	minor_base=T	minor_cov=43/55	new_cov=43/55	polymorphism_frequency=3.657e-01	polymorphism_score=229.1	prediction=polymorphism	ref_cov=82/88	total_cov=125/143
+RA	347	.	NODE_66_length_17581_cov_14.912971	9421	0	G	A	bias_e_value=4450970	bias_p_value=0.950418	consensus_reject=FREQUENCY_CUTOFF	consensus_score=42.2	fisher_strand_p_value=1	frequency=4.312e-01	ks_quality_p_value=0.7021	major_base=G	major_cov=26/36	major_frequency=5.688e-01	minor_base=A	minor_cov=19/28	new_cov=19/28	polymorphism_frequency=4.312e-01	polymorphism_score=118.6	prediction=polymorphism	ref_cov=26/36	total_cov=45/64
+RA	348	.	NODE_66_length_17581_cov_14.912971	9430	0	T	G	bias_e_value=4683050	bias_p_value=0.999976	consensus_reject=FREQUENCY_CUTOFF	consensus_score=41.4	fisher_strand_p_value=1	frequency=4.340e-01	ks_quality_p_value=0.993024	major_base=T	major_cov=25/35	major_frequency=5.660e-01	minor_base=G	minor_cov=19/27	new_cov=19/27	polymorphism_frequency=4.340e-01	polymorphism_score=126.8	prediction=polymorphism	ref_cov=25/35	total_cov=45/62
+RA	349	.	NODE_66_length_17581_cov_14.912971	9437	0	A	C	bias_e_value=4017070	bias_p_value=0.857767	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.1	fisher_strand_p_value=1	frequency=4.112e-01	ks_quality_p_value=0.516539	major_base=A	major_cov=27/36	major_frequency=5.888e-01	minor_base=C	minor_cov=18/26	new_cov=18/26	polymorphism_frequency=4.112e-01	polymorphism_score=127.1	prediction=polymorphism	ref_cov=27/36	total_cov=46/62
+RA	350	.	NODE_66_length_17581_cov_14.912971	9442	0	C	T	bias_e_value=4132530	bias_p_value=0.882423	consensus_reject=FREQUENCY_CUTOFF	consensus_score=52.6	fisher_strand_p_value=1	frequency=4.112e-01	ks_quality_p_value=0.556099	major_base=C	major_cov=27/36	major_frequency=5.888e-01	minor_base=T	minor_cov=18/26	new_cov=18/26	polymorphism_frequency=4.112e-01	polymorphism_score=109.5	prediction=polymorphism	ref_cov=27/36	total_cov=46/62
+RA	351	.	NODE_66_length_17581_cov_14.912971	9454	0	A	C	bias_e_value=4435120	bias_p_value=0.947034	consensus_reject=FREQUENCY_CUTOFF	consensus_score=58.5	fisher_strand_p_value=0.839679	frequency=3.922e-01	ks_quality_p_value=0.824969	major_base=A	major_cov=25/37	major_frequency=6.078e-01	minor_base=C	minor_cov=17/23	new_cov=17/23	polymorphism_frequency=3.922e-01	polymorphism_score=115.1	prediction=polymorphism	ref_cov=25/37	total_cov=42/60
+RA	352	.	NODE_66_length_17581_cov_14.912971	9460	0	T	C	bias_e_value=4368340	bias_p_value=0.932775	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.4	fisher_strand_p_value=0.836473	frequency=3.861e-01	ks_quality_p_value=0.78484	major_base=T	major_cov=25/37	major_frequency=6.139e-01	minor_base=C	minor_cov=17/22	new_cov=17/22	polymorphism_frequency=3.861e-01	polymorphism_score=98.5	prediction=polymorphism	ref_cov=25/37	total_cov=42/60
+RA	353	.	NODE_66_length_17581_cov_14.912971	9463	0	C	A	bias_e_value=4296190	bias_p_value=0.917369	consensus_reject=FREQUENCY_CUTOFF	consensus_score=76.5	fisher_strand_p_value=0.680959	frequency=3.663e-01	ks_quality_p_value=0.913523	major_base=C	major_cov=25/39	major_frequency=6.337e-01	minor_base=A	minor_cov=16/21	new_cov=16/21	polymorphism_frequency=3.663e-01	polymorphism_score=100.4	prediction=polymorphism	ref_cov=25/39	total_cov=42/60
+RA	354	.	NODE_66_length_17581_cov_14.912971	9465	0	T	C	bias_e_value=4092360	bias_p_value=0.873845	consensus_reject=FREQUENCY_CUTOFF	consensus_score=60.9	fisher_strand_p_value=1	frequency=3.900e-01	ks_quality_p_value=0.541798	major_base=T	major_cov=25/36	major_frequency=6.100e-01	minor_base=C	minor_cov=16/23	new_cov=16/23	polymorphism_frequency=3.900e-01	polymorphism_score=98.8	prediction=polymorphism	ref_cov=25/36	total_cov=42/59
+RA	355	.	NODE_66_length_17581_cov_14.912971	9488	0	C	G	bias_e_value=4607380	bias_p_value=0.983816	consensus_reject=FREQUENCY_CUTOFF	consensus_score=56.4	fisher_strand_p_value=0.825568	frequency=3.933e-01	ks_quality_p_value=1	major_base=C	major_cov=21/33	major_frequency=6.067e-01	minor_base=G	minor_cov=15/20	new_cov=15/20	polymorphism_frequency=3.933e-01	polymorphism_score=96.9	prediction=polymorphism	ref_cov=21/33	total_cov=38/54
+RA	356	.	NODE_66_length_17581_cov_14.912971	9489	0	A	C	bias_e_value=4493180	bias_p_value=0.959431	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.3	fisher_strand_p_value=0.82951	frequency=3.871e-01	ks_quality_p_value=0.878863	major_base=A	major_cov=23/34	major_frequency=6.129e-01	minor_base=C	minor_cov=16/20	new_cov=16/20	polymorphism_frequency=3.871e-01	polymorphism_score=104.4	prediction=polymorphism	ref_cov=23/34	total_cov=39/55
+RA	357	.	NODE_66_length_17581_cov_14.912971	9497	0	T	A	bias_e_value=4261390	bias_p_value=0.909938	consensus_reject=FREQUENCY_CUTOFF	consensus_score=75.6	fisher_strand_p_value=0.651807	frequency=3.409e-01	ks_quality_p_value=0.930972	major_base=T	major_cov=22/36	major_frequency=6.591e-01	minor_base=A	minor_cov=13/17	new_cov=13/17	polymorphism_frequency=3.409e-01	polymorphism_score=82.9	prediction=polymorphism	ref_cov=22/36	total_cov=37/53
+RA	358	.	NODE_66_length_17581_cov_14.912971	9499	0	C	A	bias_e_value=4407690	bias_p_value=0.941178	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.7	fisher_strand_p_value=0.821888	frequency=3.448e-01	ks_quality_p_value=0.823998	major_base=C	major_cov=23/34	major_frequency=6.552e-01	minor_base=A	minor_cov=13/17	new_cov=13/17	polymorphism_frequency=3.448e-01	polymorphism_score=73.8	prediction=polymorphism	ref_cov=23/34	total_cov=36/51
+RA	359	.	NODE_66_length_17581_cov_14.912971	9511	0	A	.	bias_e_value=1468110	bias_p_value=0.313487	consensus_reject=FREQUENCY_CUTOFF	consensus_score=154.1	fisher_strand_p_value=0.293604	frequency=2.568e-01	ks_quality_p_value=0.316176	major_base=A	major_cov=21/34	major_frequency=7.432e-01	minor_base=.	minor_cov=10/9	new_cov=10/9	polymorphism_frequency=2.568e-01	polymorphism_score=62.6	prediction=polymorphism	ref_cov=21/34	total_cov=31/45
+RA	360	.	NODE_66_length_17581_cov_14.912971	9516	0	T	C	bias_e_value=4215300	bias_p_value=0.900096	consensus_reject=FREQUENCY_CUTOFF	consensus_score=59.3	fisher_strand_p_value=0.611193	frequency=3.288e-01	ks_quality_p_value=0.961595	major_base=T	major_cov=18/31	major_frequency=6.712e-01	minor_base=C	minor_cov=11/13	new_cov=11/13	polymorphism_frequency=3.288e-01	polymorphism_score=54.2	prediction=polymorphism	ref_cov=18/31	total_cov=29/44
+RA	361	.	NODE_66_length_17581_cov_14.912971	9555	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=58.7	fisher_strand_p_value=1	frequency=3.433e-01	ks_quality_p_value=1	major_base=C	major_cov=17/27	major_frequency=6.567e-01	minor_base=T	minor_cov=9/14	new_cov=9/14	polymorphism_frequency=3.433e-01	polymorphism_score=48.3	prediction=polymorphism	ref_cov=17/27	total_cov=26/41
+RA	362	.	NODE_66_length_17581_cov_14.912971	9569	0	G	A	bias_e_value=4617380	bias_p_value=0.985951	consensus_reject=FREQUENCY_CUTOFF	consensus_score=75.9	fisher_strand_p_value=1	frequency=2.500e-01	ks_quality_p_value=0.837128	major_base=G	major_cov=17/28	major_frequency=7.500e-01	minor_base=A	minor_cov=6/9	new_cov=6/9	polymorphism_frequency=2.500e-01	polymorphism_score=28.4	prediction=polymorphism	ref_cov=17/28	total_cov=23/38
+RA	363	.	NODE_66_length_17581_cov_14.912971	9571	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=101.3	fisher_strand_p_value=1	frequency=2.388e-01	ks_quality_p_value=1	major_base=C	major_cov=20/31	major_frequency=7.612e-01	minor_base=T	minor_cov=6/10	new_cov=6/10	polymorphism_frequency=2.388e-01	polymorphism_score=25.8	prediction=polymorphism	ref_cov=20/31	total_cov=26/41
+RA	364	.	NODE_66_length_17581_cov_14.912971	9597	0	T	C	bias_e_value=4426770	bias_p_value=0.945252	consensus_reject=FREQUENCY_CUTOFF	consensus_score=81.0	fisher_strand_p_value=0.791275	frequency=2.857e-01	ks_quality_p_value=0.869358	major_base=T	major_cov=23/27	major_frequency=7.143e-01	minor_base=C	minor_cov=8/12	new_cov=8/12	polymorphism_frequency=2.857e-01	polymorphism_score=43.2	prediction=polymorphism	ref_cov=23/27	total_cov=31/39
+RA	365	.	NODE_66_length_17581_cov_14.912971	9653	0	G	A	bias_e_value=4519490	bias_p_value=0.96505	consensus_reject=FREQUENCY_CUTOFF	consensus_score=108.3	fisher_strand_p_value=0.81302	frequency=3.086e-01	ks_quality_p_value=0.91946	major_base=G	major_cov=25/31	major_frequency=6.914e-01	minor_base=A	minor_cov=12/13	new_cov=12/13	polymorphism_frequency=3.086e-01	polymorphism_score=55.8	prediction=polymorphism	ref_cov=25/31	total_cov=37/44
+RA	366	.	NODE_66_length_17581_cov_14.912971	9657	0	A	G	bias_e_value=2090090	bias_p_value=0.446298	consensus_reject=FREQUENCY_CUTOFF	consensus_score=110.5	fisher_strand_p_value=1	frequency=2.875e-01	ks_quality_p_value=0.156251	major_base=A	major_cov=26/31	major_frequency=7.125e-01	minor_base=G	minor_cov=10/13	new_cov=10/13	polymorphism_frequency=2.875e-01	polymorphism_score=54.6	prediction=polymorphism	ref_cov=26/31	total_cov=36/44
+RA	367	.	NODE_66_length_17581_cov_14.912971	9658	0	C	T	bias_e_value=3758850	bias_p_value=0.802631	consensus_reject=FREQUENCY_CUTOFF	consensus_score=117.2	fisher_strand_p_value=1	frequency=2.875e-01	ks_quality_p_value=0.441708	major_base=C	major_cov=26/31	major_frequency=7.125e-01	minor_base=T	minor_cov=10/13	new_cov=10/13	polymorphism_frequency=2.875e-01	polymorphism_score=53.2	prediction=polymorphism	ref_cov=26/31	total_cov=36/44
+RA	368	.	NODE_66_length_17581_cov_14.912971	9711	0	C	G	bias_e_value=2686380	bias_p_value=0.573624	consensus_reject=FREQUENCY_CUTOFF	consensus_score=109.6	fisher_strand_p_value=1	frequency=3.488e-01	ks_quality_p_value=0.233831	major_base=C	major_cov=27/29	major_frequency=6.512e-01	minor_base=G	minor_cov=14/16	new_cov=14/16	polymorphism_frequency=3.488e-01	polymorphism_score=85.3	prediction=polymorphism	ref_cov=27/29	total_cov=41/45
+RA	369	.	NODE_66_length_17581_cov_14.912971	9763	0	C	T	bias_e_value=3502520	bias_p_value=0.747895	consensus_reject=FREQUENCY_CUTOFF	consensus_score=76.0	fisher_strand_p_value=0.687779	frequency=4.118e-01	ks_quality_p_value=0.552823	major_base=C	major_cov=28/32	major_frequency=5.882e-01	minor_base=T	minor_cov=22/20	new_cov=22/20	polymorphism_frequency=4.118e-01	polymorphism_score=107.3	prediction=polymorphism	ref_cov=28/32	total_cov=50/55
+RA	370	.	NODE_66_length_17581_cov_14.912971	9772	0	G	A	bias_e_value=3004880	bias_p_value=0.641633	consensus_reject=FREQUENCY_CUTOFF	consensus_score=95.2	fisher_strand_p_value=0.594618	frequency=4.231e-01	ks_quality_p_value=0.477804	major_base=G	major_cov=35/40	major_frequency=5.769e-01	minor_base=A	minor_cov=29/26	new_cov=29/26	polymorphism_frequency=4.231e-01	polymorphism_score=137.6	prediction=polymorphism	ref_cov=35/40	total_cov=64/66
+RA	371	.	NODE_66_length_17581_cov_14.912971	9780	0	G	A	bias_e_value=4632330	bias_p_value=0.989145	consensus_reject=FREQUENCY_CUTOFF	consensus_score=44.2	fisher_strand_p_value=0.856319	frequency=4.918e-01	ks_quality_p_value=1	major_base=G	major_cov=29/33	major_frequency=5.082e-01	minor_base=A	minor_cov=30/30	new_cov=30/30	polymorphism_frequency=4.918e-01	polymorphism_score=150.0	prediction=polymorphism	ref_cov=29/33	total_cov=60/63
+RA	372	.	NODE_66_length_17581_cov_14.912971	9797	0	G	A	bias_e_value=3941980	bias_p_value=0.841733	consensus_reject=FREQUENCY_CUTOFF	consensus_score=11.4	fisher_strand_p_value=1	frequency=5.238e-01	ks_quality_p_value=0.493086	major_base=A	major_cov=34/32	major_frequency=5.238e-01	minor_base=G	minor_cov=30/30	new_cov=34/32	polymorphism_frequency=5.238e-01	polymorphism_score=163.0	prediction=polymorphism	ref_cov=30/30	total_cov=64/63
+RA	373	.	NODE_66_length_17581_cov_14.912971	9869	0	G	A	bias_e_value=4593340	bias_p_value=0.980819	consensus_reject=FREQUENCY_CUTOFF	consensus_score=59.9	fisher_strand_p_value=1	frequency=5.932e-01	ks_quality_p_value=0.810643	major_base=A	major_cov=38/32	major_frequency=5.932e-01	minor_base=G	minor_cov=26/22	new_cov=38/32	polymorphism_frequency=5.932e-01	polymorphism_score=122.6	prediction=polymorphism	ref_cov=26/22	total_cov=64/55
+RA	374	.	NODE_66_length_17581_cov_14.912971	9880	0	A	C	bias_e_value=4141340	bias_p_value=0.884304	consensus_reject=FREQUENCY_CUTOFF	consensus_score=45.7	fisher_strand_p_value=0.856455	frequency=5.645e-01	ks_quality_p_value=0.653064	major_base=C	major_cov=37/33	major_frequency=5.645e-01	minor_base=A	minor_cov=27/27	new_cov=37/33	polymorphism_frequency=5.645e-01	polymorphism_score=149.5	prediction=polymorphism	ref_cov=27/27	total_cov=64/60
+RA	375	.	NODE_66_length_17581_cov_14.912971	9904	0	C	T	bias_e_value=4366190	bias_p_value=0.932315	consensus_reject=FREQUENCY_CUTOFF	consensus_score=25.1	fisher_strand_p_value=0.697145	frequency=5.524e-01	ks_quality_p_value=0.940127	major_base=T	major_cov=31/27	major_frequency=5.524e-01	minor_base=C	minor_cov=23/24	new_cov=31/27	polymorphism_frequency=5.524e-01	polymorphism_score=120.4	prediction=polymorphism	ref_cov=23/24	total_cov=55/51
+RA	376	.	NODE_66_length_17581_cov_14.912971	9916	0	G	A	bias_e_value=3767120	bias_p_value=0.804395	consensus_reject=FREQUENCY_CUTOFF	consensus_score=29.5	fisher_strand_p_value=0.443874	frequency=5.455e-01	ks_quality_p_value=1	major_base=A	major_cov=33/27	major_frequency=5.455e-01	minor_base=G	minor_cov=23/27	new_cov=33/27	polymorphism_frequency=5.455e-01	polymorphism_score=127.4	prediction=polymorphism	ref_cov=23/27	total_cov=56/54
+RA	377	.	NODE_66_length_17581_cov_14.912971	9955	1	.	G	bias_e_value=4434190	bias_p_value=0.946836	consensus_reject=FREQUENCY_CUTOFF	consensus_score=162.5	fisher_strand_p_value=0.692171	frequency=5.098e-01	ks_quality_p_value=1	major_base=G	major_cov=28/24	major_frequency=5.098e-01	minor_base=.	minor_cov=24/26	new_cov=28/24	polymorphism_frequency=5.098e-01	polymorphism_score=193.3	prediction=polymorphism	ref_cov=24/26	total_cov=52/50
+RA	378	.	NODE_66_length_17581_cov_14.912971	9957	0	A	C	bias_e_value=4622270	bias_p_value=0.986996	consensus_reject=FREQUENCY_CUTOFF	consensus_score=19.6	fisher_strand_p_value=0.843123	frequency=5.050e-01	ks_quality_p_value=1	major_base=C	major_cov=27/24	major_frequency=5.050e-01	minor_base=A	minor_cov=25/25	new_cov=27/24	polymorphism_frequency=5.050e-01	polymorphism_score=133.2	prediction=polymorphism	ref_cov=25/25	total_cov=52/50
+RA	379	.	NODE_66_length_17581_cov_14.912971	10029	0	T	C	bias_e_value=705892	bias_p_value=0.15073	consensus_reject=FREQUENCY_CUTOFF	consensus_score=59.2	fisher_strand_p_value=1	frequency=3.918e-01	ks_quality_p_value=0.0345223	major_base=T	major_cov=28/31	major_frequency=6.082e-01	minor_base=C	minor_cov=18/20	new_cov=18/20	polymorphism_frequency=3.918e-01	polymorphism_score=93.1	prediction=polymorphism	ref_cov=28/31	total_cov=48/51
+RA	380	.	NODE_66_length_17581_cov_14.912971	10201	0	T	C	bias_e_value=1507310	bias_p_value=0.321857	consensus_reject=FREQUENCY_CUTOFF	consensus_score=98.5	fisher_strand_p_value=0.518495	frequency=3.299e-01	ks_quality_p_value=0.185884	major_base=T	major_cov=31/34	major_frequency=6.701e-01	minor_base=C	minor_cov=18/14	new_cov=18/14	polymorphism_frequency=3.299e-01	polymorphism_score=77.4	prediction=polymorphism	ref_cov=31/34	total_cov=50/48
+RA	381	.	NODE_66_length_17581_cov_14.912971	10390	0	G	T	bias_e_value=4449230	bias_p_value=0.950048	consensus_reject=FREQUENCY_CUTOFF	consensus_score=28.1	fisher_strand_p_value=0.826666	frequency=4.524e-01	ks_quality_p_value=0.848051	major_base=G	major_cov=24/22	major_frequency=5.476e-01	minor_base=T	minor_cov=18/20	new_cov=18/20	polymorphism_frequency=4.524e-01	polymorphism_score=103.1	prediction=polymorphism	ref_cov=24/22	total_cov=42/42
+RA	382	.	NODE_66_length_17581_cov_14.912971	10802	0	T	C	bias_e_value=4202950	bias_p_value=0.897458	consensus_reject=FREQUENCY_CUTOFF	consensus_score=62.6	fisher_strand_p_value=1	frequency=2.553e-01	ks_quality_p_value=0.582795	major_base=T	major_cov=18/17	major_frequency=7.447e-01	minor_base=C	minor_cov=6/6	new_cov=6/6	polymorphism_frequency=2.553e-01	polymorphism_score=22.5	prediction=polymorphism	ref_cov=18/17	total_cov=26/23
+RA	383	.	NODE_66_length_17581_cov_14.912971	10803	0	G	A	bias_e_value=2391850	bias_p_value=0.510733	consensus_reject=FREQUENCY_CUTOFF	consensus_score=58.9	fisher_strand_p_value=1	frequency=2.708e-01	ks_quality_p_value=0.193143	major_base=G	major_cov=18/17	major_frequency=7.292e-01	minor_base=A	minor_cov=7/6	new_cov=7/6	polymorphism_frequency=2.708e-01	polymorphism_score=26.5	prediction=polymorphism	ref_cov=18/17	total_cov=25/23
+RA	384	.	NODE_66_length_17581_cov_14.912971	10815	0	T	C	bias_e_value=4431620	bias_p_value=0.946286	consensus_reject=FREQUENCY_CUTOFF	consensus_score=59.2	fisher_strand_p_value=1	frequency=2.766e-01	ks_quality_p_value=0.69068	major_base=T	major_cov=17/17	major_frequency=7.234e-01	minor_base=C	minor_cov=7/6	new_cov=7/6	polymorphism_frequency=2.766e-01	polymorphism_score=24.0	prediction=polymorphism	ref_cov=17/17	total_cov=25/23
+RA	385	.	NODE_79_length_12438_cov_13.711153	41	0	G	T	bias_e_value=1406070	bias_p_value=0.300239	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=9.7	fisher_strand_p_value=1	frequency=2.857e-01	ks_quality_p_value=0.087327	major_base=G	major_cov=6/9	major_frequency=7.143e-01	minor_base=T	minor_cov=3/3	new_cov=3/3	polymorphism_frequency=2.857e-01	polymorphism_score=12.5	prediction=polymorphism	ref_cov=6/9	total_cov=9/12
+RA	386	.	NODE_79_length_12438_cov_13.711153	49	0	T	C	bias_e_value=3447370	bias_p_value=0.73612	consensus_reject=FREQUENCY_CUTOFF	consensus_score=17.5	fisher_strand_p_value=0.682838	frequency=3.077e-01	ks_quality_p_value=0.539279	major_base=T	major_cov=7/11	major_frequency=6.923e-01	minor_base=C	minor_cov=4/4	new_cov=4/4	polymorphism_frequency=3.077e-01	polymorphism_score=15.7	prediction=polymorphism	ref_cov=7/11	total_cov=11/15
+RA	387	.	NODE_79_length_12438_cov_13.711153	95	0	T	G	bias_e_value=2399870	bias_p_value=0.512446	consensus_reject=FREQUENCY_CUTOFF	consensus_score=54.8	fisher_strand_p_value=0.727907	frequency=2.558e-01	ks_quality_p_value=0.266774	major_base=T	major_cov=14/18	major_frequency=7.442e-01	minor_base=G	minor_cov=6/5	new_cov=6/5	polymorphism_frequency=2.558e-01	polymorphism_score=25.0	prediction=polymorphism	ref_cov=14/18	total_cov=20/23
+RA	388	.	NODE_7_length_119377_cov_13.596419	119250	0	A	T	bias_e_value=3598910	bias_p_value=0.768477	consensus_reject=FREQUENCY_CUTOFF	consensus_score=49.5	fisher_strand_p_value=0.559203	frequency=3.400e-01	ks_quality_p_value=0.719142	major_base=A	major_cov=16/17	major_frequency=6.600e-01	minor_base=T	minor_cov=10/7	new_cov=10/7	polymorphism_frequency=3.400e-01	polymorphism_score=48.5	prediction=polymorphism	ref_cov=16/17	total_cov=26/24
+RA	389	.	NODE_81_length_10055_cov_13.632454	450	0	T	C	bias_e_value=4681430	bias_p_value=0.999628	consensus_reject=FREQUENCY_CUTOFF	consensus_score=71.2	fisher_strand_p_value=1	frequency=2.340e-01	ks_quality_p_value=0.972866	major_base=T	major_cov=18/18	major_frequency=7.660e-01	minor_base=C	minor_cov=6/5	new_cov=6/5	polymorphism_frequency=2.340e-01	polymorphism_score=19.9	prediction=polymorphism	ref_cov=18/18	total_cov=24/23
+RA	390	.	NODE_81_length_10055_cov_13.632454	458	0	A	G	bias_e_value=2537010	bias_p_value=0.541729	consensus_reject=FREQUENCY_CUTOFF	consensus_score=77.4	fisher_strand_p_value=0.496204	frequency=2.041e-01	ks_quality_p_value=0.428389	major_base=A	major_cov=18/21	major_frequency=7.959e-01	minor_base=G	minor_cov=6/4	new_cov=6/4	polymorphism_frequency=2.041e-01	polymorphism_score=19.0	prediction=polymorphism	ref_cov=18/21	total_cov=24/25
+RA	391	.	NODE_81_length_10055_cov_13.632454	513	0	C	T	bias_e_value=3406450	bias_p_value=0.727381	consensus_reject=FREQUENCY_CUTOFF	consensus_score=46.8	fisher_strand_p_value=0.743703	frequency=2.927e-01	ks_quality_p_value=0.483521	major_base=C	major_cov=15/14	major_frequency=7.073e-01	minor_base=T	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.927e-01	polymorphism_score=24.6	prediction=polymorphism	ref_cov=15/14	total_cov=22/19
+RA	392	.	NODE_81_length_10055_cov_13.632454	525	0	A	G	bias_e_value=2310910	bias_p_value=0.493451	consensus_reject=FREQUENCY_CUTOFF	consensus_score=48.3	fisher_strand_p_value=0.744912	frequency=2.791e-01	ks_quality_p_value=0.245404	major_base=A	major_cov=16/15	major_frequency=7.209e-01	minor_base=G	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.791e-01	polymorphism_score=24.6	prediction=polymorphism	ref_cov=16/15	total_cov=23/20
+RA	393	.	NODE_81_length_10055_cov_13.632454	528	0	G	A	bias_e_value=3560450	bias_p_value=0.760265	consensus_reject=FREQUENCY_CUTOFF	consensus_score=50.2	fisher_strand_p_value=1	frequency=2.857e-01	ks_quality_p_value=0.393241	major_base=G	major_cov=16/14	major_frequency=7.143e-01	minor_base=A	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.857e-01	polymorphism_score=22.9	prediction=polymorphism	ref_cov=16/14	total_cov=23/19
+RA	394	.	NODE_81_length_10055_cov_13.632454	546	0	C	T	bias_e_value=2110210	bias_p_value=0.450595	consensus_reject=FREQUENCY_CUTOFF	consensus_score=41.7	fisher_strand_p_value=0.743703	frequency=2.927e-01	ks_quality_p_value=0.213223	major_base=C	major_cov=15/14	major_frequency=7.073e-01	minor_base=T	minor_cov=7/5	new_cov=7/5	polymorphism_frequency=2.927e-01	polymorphism_score=23.9	prediction=polymorphism	ref_cov=15/14	total_cov=22/19
+RA	395	.	NODE_81_length_10055_cov_13.632454	549	0	T	G	bias_e_value=4048190	bias_p_value=0.864413	consensus_reject=FREQUENCY_CUTOFF	consensus_score=39.0	fisher_strand_p_value=1	frequency=3.333e-01	ks_quality_p_value=0.526752	major_base=T	major_cov=13/13	major_frequency=6.667e-01	minor_base=G	minor_cov=7/6	new_cov=7/6	polymorphism_frequency=3.333e-01	polymorphism_score=29.8	prediction=polymorphism	ref_cov=13/13	total_cov=22/19
+RA	396	.	NODE_81_length_10055_cov_13.632454	567	0	C	T	bias_e_value=4262050	bias_p_value=0.910079	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.4	fisher_strand_p_value=0.719	frequency=2.632e-01	ks_quality_p_value=0.844363	major_base=C	major_cov=14/14	major_frequency=7.368e-01	minor_base=T	minor_cov=6/4	new_cov=6/4	polymorphism_frequency=2.632e-01	polymorphism_score=14.2	prediction=polymorphism	ref_cov=14/14	total_cov=20/19
+RA	397	.	NODE_81_length_10055_cov_13.632454	584	0	A	G	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=56.6	fisher_strand_p_value=1	frequency=2.647e-01	ks_quality_p_value=1	major_base=A	major_cov=13/12	major_frequency=7.353e-01	minor_base=G	minor_cov=5/4	new_cov=5/4	polymorphism_frequency=2.647e-01	polymorphism_score=11.1	prediction=polymorphism	ref_cov=13/12	total_cov=19/17
+RA	398	.	NODE_81_length_10055_cov_13.632454	873	0	T	C	bias_e_value=3868560	bias_p_value=0.826056	consensus_reject=FREQUENCY_CUTOFF	consensus_score=73.9	fisher_strand_p_value=0.477132	frequency=2.045e-01	ks_quality_p_value=0.98838	major_base=T	major_cov=17/18	major_frequency=7.955e-01	minor_base=C	minor_cov=3/6	new_cov=3/6	polymorphism_frequency=2.045e-01	polymorphism_score=11.3	prediction=polymorphism	ref_cov=17/18	total_cov=20/25
+RA	399	.	NODE_81_length_10055_cov_13.632454	885	0	A	G	bias_e_value=4527670	bias_p_value=0.966796	consensus_reject=FREQUENCY_CUTOFF	consensus_score=73.0	fisher_strand_p_value=0.753626	frequency=3.000e-01	ks_quality_p_value=1	major_base=A	major_cov=15/20	major_frequency=7.000e-01	minor_base=G	minor_cov=5/10	new_cov=5/10	polymorphism_frequency=3.000e-01	polymorphism_score=24.6	prediction=polymorphism	ref_cov=15/20	total_cov=22/30
+RA	400	.	NODE_81_length_10055_cov_13.632454	915	0	G	A	bias_e_value=3858430	bias_p_value=0.823894	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.8	fisher_strand_p_value=0.602982	frequency=3.385e-01	ks_quality_p_value=0.777339	major_base=G	major_cov=19/24	major_frequency=6.615e-01	minor_base=A	minor_cov=8/14	new_cov=8/14	polymorphism_frequency=3.385e-01	polymorphism_score=45.0	prediction=polymorphism	ref_cov=19/24	total_cov=27/39
+RA	401	.	NODE_81_length_10055_cov_13.632454	935	1	.	C	bias_e_value=4490710	bias_p_value=0.958905	consensus_reject=FREQUENCY_CUTOFF	consensus_score=102.6	fisher_strand_p_value=0.78999	frequency=3.443e-01	ks_quality_p_value=0.920727	major_base=.	major_cov=17/23	major_frequency=6.557e-01	minor_base=C	minor_cov=8/13	new_cov=8/13	polymorphism_frequency=3.443e-01	polymorphism_score=87.3	prediction=polymorphism	ref_cov=17/23	total_cov=25/36
+RA	402	.	NODE_81_length_10055_cov_13.632454	944	0	A	G	bias_e_value=4636590	bias_p_value=0.990053	consensus_reject=FREQUENCY_CUTOFF	consensus_score=46.0	fisher_strand_p_value=1	frequency=4.127e-01	ks_quality_p_value=0.862313	major_base=A	major_cov=16/21	major_frequency=5.873e-01	minor_base=G	minor_cov=11/15	new_cov=11/15	polymorphism_frequency=4.127e-01	polymorphism_score=63.3	prediction=polymorphism	ref_cov=16/21	total_cov=28/36
+RA	403	.	NODE_81_length_10055_cov_13.632454	947	0	C	T	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=53.3	fisher_strand_p_value=1	frequency=4.262e-01	ks_quality_p_value=1	major_base=C	major_cov=16/19	major_frequency=5.738e-01	minor_base=T	minor_cov=11/15	new_cov=11/15	polymorphism_frequency=4.262e-01	polymorphism_score=54.0	prediction=polymorphism	ref_cov=16/19	total_cov=28/37
+RA	404	.	NODE_81_length_10055_cov_13.632454	981	0	C	T	bias_e_value=4378390	bias_p_value=0.934921	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=7.7	fisher_strand_p_value=0.668259	frequency=5.465e-01	ks_quality_p_value=0.990102	major_base=T	major_cov=23/24	major_frequency=5.465e-01	minor_base=C	minor_cov=17/22	new_cov=23/24	polymorphism_frequency=5.465e-01	polymorphism_score=95.4	prediction=polymorphism	ref_cov=17/22	total_cov=40/48
+RA	405	.	NODE_81_length_10055_cov_13.632454	994	0	G	A	bias_e_value=4503620	bias_p_value=0.961662	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=2.0	fisher_strand_p_value=1	frequency=6.042e-01	ks_quality_p_value=0.736194	major_base=A	major_cov=27/31	major_frequency=6.042e-01	minor_base=G	minor_cov=17/21	new_cov=27/31	polymorphism_frequency=6.042e-01	polymorphism_score=97.6	prediction=polymorphism	ref_cov=17/21	total_cov=44/52
+RA	406	.	NODE_81_length_10055_cov_13.632454	1000	0	G	C	bias_e_value=4253090	bias_p_value=0.908166	consensus_reject=FREQUENCY_CUTOFF	consensus_score=11.4	fisher_strand_p_value=1	frequency=6.289e-01	ks_quality_p_value=0.603288	major_base=C	major_cov=29/32	major_frequency=6.289e-01	minor_base=G	minor_cov=17/19	new_cov=29/32	polymorphism_frequency=6.289e-01	polymorphism_score=98.6	prediction=polymorphism	ref_cov=17/19	total_cov=46/52
+RA	407	.	NODE_81_length_10055_cov_13.632454	1013	0	T	C	bias_e_value=4617870	bias_p_value=0.986058	consensus_reject=FREQUENCY_CUTOFF	consensus_score=15.9	fisher_strand_p_value=0.843674	frequency=6.168e-01	ks_quality_p_value=0.992952	major_base=C	major_cov=32/34	major_frequency=6.168e-01	minor_base=T	minor_cov=21/20	new_cov=32/34	polymorphism_frequency=6.168e-01	polymorphism_score=100.2	prediction=polymorphism	ref_cov=21/20	total_cov=54/56
+RA	408	.	NODE_81_length_10055_cov_13.632454	1019	0	T	C	bias_e_value=4010560	bias_p_value=0.856378	consensus_reject=FREQUENCY_CUTOFF	consensus_score=23.4	fisher_strand_p_value=1	frequency=6.204e-01	ks_quality_p_value=0.514443	major_base=C	major_cov=32/35	major_frequency=6.204e-01	minor_base=T	minor_cov=20/21	new_cov=32/35	polymorphism_frequency=6.204e-01	polymorphism_score=96.2	prediction=polymorphism	ref_cov=20/21	total_cov=53/56
+RA	409	.	NODE_81_length_10055_cov_13.632454	1049	0	G	A	bias_e_value=4683170	bias_p_value=1	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.6	fisher_strand_p_value=1	frequency=6.121e-01	ks_quality_p_value=1	major_base=A	major_cov=34/37	major_frequency=6.121e-01	minor_base=G	minor_cov=21/24	new_cov=34/37	polymorphism_frequency=6.121e-01	polymorphism_score=107.0	prediction=polymorphism	ref_cov=21/24	total_cov=55/61
+RA	410	.	NODE_81_length_10055_cov_13.632454	1080	0	G	A	bias_e_value=4682780	bias_p_value=0.999917	consensus_reject=FREQUENCY_CUTOFF	consensus_score=44.7	fisher_strand_p_value=1	frequency=6.466e-01	ks_quality_p_value=0.987165	major_base=A	major_cov=36/39	major_frequency=6.466e-01	minor_base=G	minor_cov=19/22	new_cov=36/39	polymorphism_frequency=6.466e-01	polymorphism_score=100.8	prediction=polymorphism	ref_cov=19/22	total_cov=55/61
+RA	411	.	NODE_82_length_10033_cov_18.448819	9618	0	T	C	bias_e_value=1371190	bias_p_value=0.292792	consensus_reject=FREQUENCY_CUTOFF	consensus_score=55.3	fisher_strand_p_value=0.21701	frequency=3.472e-01	ks_quality_p_value=0.388436	major_base=T	major_cov=22/25	major_frequency=6.528e-01	minor_base=C	minor_cov=16/9	new_cov=16/9	polymorphism_frequency=3.472e-01	polymorphism_score=61.5	prediction=polymorphism	ref_cov=22/25	total_cov=38/34
+RA	412	.	NODE_82_length_10033_cov_18.448819	9736	0	T	C	bias_e_value=2745680	bias_p_value=0.586286	consensus_reject=FREQUENCY_CUTOFF	consensus_score=97.2	fisher_strand_p_value=0.244928	frequency=2.459e-01	ks_quality_p_value=0.99073	major_base=T	major_cov=22/24	major_frequency=7.541e-01	minor_base=C	minor_cov=10/5	new_cov=10/5	polymorphism_frequency=2.459e-01	polymorphism_score=28.4	prediction=polymorphism	ref_cov=22/24	total_cov=32/29
+RA	413	.	NODE_82_length_10033_cov_18.448819	9740	0	T	C	bias_e_value=4491700	bias_p_value=0.959117	consensus_reject=FREQUENCY_CUTOFF	consensus_score=441.5	fisher_strand_p_value=0.73897	frequency=7.900e-01	ks_quality_p_value=0.985197	major_base=C	major_cov=76/97	major_frequency=7.900e-01	minor_base=T	minor_cov=22/24	new_cov=76/97	polymorphism_frequency=7.900e-01	polymorphism_score=100.1	prediction=polymorphism	ref_cov=22/24	total_cov=98/121
+RA	414	.	NODE_82_length_10033_cov_18.448819	9806	0	T	C	bias_e_value=3444060	bias_p_value=0.735411	consensus_reject=FREQUENCY_CUTOFF	consensus_score=166.6	fisher_strand_p_value=0.600195	frequency=6.711e-01	ks_quality_p_value=0.612355	major_base=C	major_cov=41/61	major_frequency=6.711e-01	minor_base=T	minor_cov=23/27	new_cov=41/61	polymorphism_frequency=6.711e-01	polymorphism_score=121.2	prediction=polymorphism	ref_cov=23/27	total_cov=67/88
+RA	415	.	NODE_82_length_10033_cov_18.448819	9825	0	C	A	bias_e_value=3888530	bias_p_value=0.830321	consensus_reject=FREQUENCY_CUTOFF	consensus_score=123.4	fisher_strand_p_value=0.592919	frequency=6.403e-01	ks_quality_p_value=0.805012	major_base=A	major_cov=36/53	major_frequency=6.403e-01	minor_base=C	minor_cov=23/27	new_cov=36/53	polymorphism_frequency=6.403e-01	polymorphism_score=131.8	prediction=polymorphism	ref_cov=23/27	total_cov=59/80
+RA	416	.	NODE_82_length_10033_cov_18.448819	9840	0	T	C	bias_e_value=2564640	bias_p_value=0.547629	consensus_reject=FREQUENCY_CUTOFF	consensus_score=123.8	fisher_strand_p_value=0.364555	frequency=6.493e-01	ks_quality_p_value=0.593603	major_base=C	major_cov=35/52	major_frequency=6.493e-01	minor_base=T	minor_cov=23/24	new_cov=35/52	polymorphism_frequency=6.493e-01	polymorphism_score=114.3	prediction=polymorphism	ref_cov=23/24	total_cov=58/76
+RA	417	.	NODE_82_length_10033_cov_18.448819	9876	0	A	G	bias_e_value=1927670	bias_p_value=0.411616	consensus_reject=FREQUENCY_CUTOFF	consensus_score=20.3	fisher_strand_p_value=0.448202	frequency=5.536e-01	ks_quality_p_value=0.308243	major_base=G	major_cov=25/37	major_frequency=5.536e-01	minor_base=A	minor_cov=24/26	new_cov=25/37	polymorphism_frequency=5.536e-01	polymorphism_score=126.9	prediction=polymorphism	ref_cov=24/26	total_cov=50/65
+RA	418	.	NODE_82_length_10033_cov_18.448819	9886	0	T	G	bias_e_value=2956470	bias_p_value=0.631297	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=1.9	fisher_strand_p_value=0.666517	frequency=4.824e-01	ks_quality_p_value=0.414078	major_base=T	major_cov=20/24	major_frequency=5.176e-01	minor_base=G	minor_cov=21/20	new_cov=21/20	polymorphism_frequency=4.824e-01	polymorphism_score=122.9	prediction=polymorphism	ref_cov=20/24	total_cov=41/45
+RA	419	.	NODE_82_length_10033_cov_18.448819	9893	0	T	C	bias_e_value=3911920	bias_p_value=0.835316	consensus_reject=FREQUENCY_CUTOFF	consensus_score=17.9	fisher_strand_p_value=0.635598	frequency=4.444e-01	ks_quality_p_value=0.761685	major_base=T	major_cov=18/22	major_frequency=5.556e-01	minor_base=C	minor_cov=17/15	new_cov=17/15	polymorphism_frequency=4.444e-01	polymorphism_score=81.6	prediction=polymorphism	ref_cov=18/22	total_cov=35/37
+RA	420	.	NODE_82_length_10033_cov_18.448819	9906	0	T	C	bias_e_value=4441810	bias_p_value=0.948463	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.8	fisher_strand_p_value=1	frequency=2.273e-01	ks_quality_p_value=0.696632	major_base=T	major_cov=15/19	major_frequency=7.727e-01	minor_base=C	minor_cov=5/5	new_cov=5/5	polymorphism_frequency=2.273e-01	polymorphism_score=19.4	prediction=polymorphism	ref_cov=15/19	total_cov=21/24
+RA	421	.	NODE_85_length_8716_cov_15.515427	128	0	T	C	bias_e_value=316261	bias_p_value=0.0675314	consensus_reject=FREQUENCY_CUTOFF	consensus_score=18.5	fisher_strand_p_value=0.775906	frequency=5.600e-01	ks_quality_p_value=0.0161856	major_base=C	major_cov=12/16	major_frequency=5.600e-01	minor_base=T	minor_cov=11/11	new_cov=12/16	polymorphism_frequency=5.600e-01	polymorphism_score=54.1	prediction=polymorphism	ref_cov=11/11	total_cov=23/29
+RA	422	.	NODE_85_length_8716_cov_15.515427	169	0	T	C	bias_e_value=1207490	bias_p_value=0.257837	consensus_reject=FREQUENCY_CUTOFF	consensus_score=30.9	fisher_strand_p_value=1	frequency=3.585e-01	ks_quality_p_value=0.0706362	major_base=T	major_cov=15/19	major_frequency=6.415e-01	minor_base=C	minor_cov=9/10	new_cov=9/10	polymorphism_frequency=3.585e-01	polymorphism_score=47.1	prediction=polymorphism	ref_cov=15/19	total_cov=24/29
+RA	423	.	NODE_85_length_8716_cov_15.515427	3937	0	T	A	bias_e_value=1323060	bias_p_value=0.282515	consensus_reject=FREQUENCY_CUTOFF	consensus_score=51.0	fisher_strand_p_value=0.402569	frequency=4.086e-01	ks_quality_p_value=0.199173	major_base=T	major_cov=25/30	major_frequency=5.914e-01	minor_base=A	minor_cov=21/17	new_cov=21/17	polymorphism_frequency=4.086e-01	polymorphism_score=116.1	prediction=polymorphism	ref_cov=25/30	total_cov=46/47
+RA	424	.	NODE_85_length_8716_cov_15.515427	5506	0	T	A	bias_e_value=3196750	bias_p_value=0.682603	consensus_reject=FREQUENCY_CUTOFF	consensus_score=56.3	fisher_strand_p_value=0.749896	frequency=3.333e-01	ks_quality_p_value=0.424373	major_base=T	major_cov=14/14	major_frequency=6.667e-01	minor_base=A	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=3.333e-01	polymorphism_score=38.9	prediction=polymorphism	ref_cov=14/14	total_cov=23/20
+RA	425	.	NODE_85_length_8716_cov_15.515427	5508	0	C	A	bias_e_value=2908310	bias_p_value=0.621014	consensus_reject=FREQUENCY_CUTOFF	consensus_score=53.9	fisher_strand_p_value=1	frequency=3.415e-01	ks_quality_p_value=0.268091	major_base=C	major_cov=14/13	major_frequency=6.585e-01	minor_base=A	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=3.415e-01	polymorphism_score=37.5	prediction=polymorphism	ref_cov=14/13	total_cov=22/19
+RA	426	.	NODE_85_length_8716_cov_15.515427	5516	0	A	.	bias_e_value=2141500	bias_p_value=0.457277	consensus_reject=FREQUENCY_CUTOFF	consensus_score=77.6	fisher_strand_p_value=1	frequency=3.256e-01	ks_quality_p_value=0.162226	major_base=A	major_cov=15/14	major_frequency=6.744e-01	minor_base=.	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=3.256e-01	polymorphism_score=46.4	prediction=polymorphism	ref_cov=15/14	total_cov=23/20
+RA	427	.	NODE_85_length_8716_cov_15.515427	5525	0	T	C	bias_e_value=3264650	bias_p_value=0.697103	consensus_reject=FREQUENCY_CUTOFF	consensus_score=35.0	fisher_strand_p_value=1	frequency=3.684e-01	ks_quality_p_value=0.331124	major_base=T	major_cov=13/11	major_frequency=6.316e-01	minor_base=C	minor_cov=8/6	new_cov=8/6	polymorphism_frequency=3.684e-01	polymorphism_score=32.9	prediction=polymorphism	ref_cov=13/11	total_cov=21/17
+RA	428	.	NODE_85_length_8716_cov_15.515427	5564	0	C	T	bias_e_value=1507270	bias_p_value=0.321848	consensus_reject=FREQUENCY_CUTOFF	consensus_score=24.2	fisher_strand_p_value=0.55031	frequency=4.444e-01	ks_quality_p_value=0.175131	major_base=C	major_cov=12/13	major_frequency=5.556e-01	minor_base=T	minor_cov=12/8	new_cov=12/8	polymorphism_frequency=4.444e-01	polymorphism_score=50.3	prediction=polymorphism	ref_cov=12/13	total_cov=24/21
+RA	429	.	NODE_85_length_8716_cov_15.515427	5578	0	G	A	bias_e_value=1345610	bias_p_value=0.287328	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=3.8	fisher_strand_p_value=0.0851511	frequency=5.435e-01	ks_quality_p_value=0.964137	major_base=A	major_cov=15/10	major_frequency=5.435e-01	minor_base=G	minor_cov=7/14	new_cov=15/10	polymorphism_frequency=5.435e-01	polymorphism_score=52.3	prediction=polymorphism	ref_cov=7/14	total_cov=22/24
+RA	430	.	NODE_85_length_8716_cov_15.515427	5580	0	C	T	bias_e_value=266817	bias_p_value=0.0569737	consensus_reject=FREQUENCY_CUTOFF	consensus_score=13.3	fisher_strand_p_value=0.146807	frequency=5.000e-01	ks_quality_p_value=0.0694835	major_base=C	major_cov=8/16	major_frequency=5.000e-01	minor_base=T	minor_cov=14/10	new_cov=14/10	polymorphism_frequency=5.000e-01	polymorphism_score=60.8	prediction=polymorphism	ref_cov=8/16	total_cov=23/26
+RA	431	.	NODE_85_length_8716_cov_15.515427	5662	0	G	A	bias_e_value=2759660	bias_p_value=0.589271	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=5.4	fisher_strand_p_value=0.244772	frequency=5.946e-01	ks_quality_p_value=1	major_base=A	major_cov=24/20	major_frequency=5.946e-01	minor_base=G	minor_cov=12/18	new_cov=24/20	polymorphism_frequency=5.946e-01	polymorphism_score=75.6	prediction=polymorphism	ref_cov=12/18	total_cov=36/38
+RA	432	.	NODE_85_length_8716_cov_15.515427	5666	0	A	G	bias_e_value=2642050	bias_p_value=0.564158	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=6.8	fisher_strand_p_value=0.244772	frequency=5.946e-01	ks_quality_p_value=0.928941	major_base=G	major_cov=24/20	major_frequency=5.946e-01	minor_base=A	minor_cov=12/18	new_cov=24/20	polymorphism_frequency=5.946e-01	polymorphism_score=74.1	prediction=polymorphism	ref_cov=12/18	total_cov=36/38
+RA	433	.	NODE_85_length_8716_cov_15.515427	5667	0	C	T	bias_e_value=2874830	bias_p_value=0.613865	consensus_reject=SCORE_CUTOFF,FREQUENCY_CUTOFF	consensus_score=-3.1	fisher_strand_p_value=0.262702	frequency=5.641e-01	ks_quality_p_value=1	major_base=T	major_cov=24/20	major_frequency=5.641e-01	minor_base=C	minor_cov=14/20	new_cov=24/20	polymorphism_frequency=5.641e-01	polymorphism_score=88.0	prediction=polymorphism	ref_cov=14/20	total_cov=38/40
+RA	434	.	NODE_85_length_8716_cov_15.515427	5752	0	T	A	bias_e_value=2625570	bias_p_value=0.560639	consensus_reject=FREQUENCY_CUTOFF	consensus_score=44.1	fisher_strand_p_value=0.344648	frequency=4.366e-01	ks_quality_p_value=0.652872	major_base=T	major_cov=17/23	major_frequency=5.634e-01	minor_base=A	minor_cov=17/14	new_cov=17/14	polymorphism_frequency=4.366e-01	polymorphism_score=96.6	prediction=polymorphism	ref_cov=17/23	total_cov=35/37
+RA	435	.	NODE_8_length_116180_cov_13.950471	116053	0	C	T	bias_e_value=4623990	bias_p_value=0.987364	consensus_reject=FREQUENCY_CUTOFF	consensus_score=336.8	fisher_strand_p_value=0.857285	frequency=2.155e-01	ks_quality_p_value=0.98602	major_base=C	major_cov=65/77	major_frequency=7.845e-01	minor_base=T	minor_cov=17/22	new_cov=17/22	polymorphism_frequency=2.155e-01	polymorphism_score=82.9	prediction=polymorphism	ref_cov=65/77	total_cov=85/99
+RA	436	.	NODE_93_length_5868_cov_13.626720	5821	0	C	T	bias_e_value=4339030	bias_p_value=0.926516	consensus_reject=FREQUENCY_CUTOFF	consensus_score=72.8	fisher_strand_p_value=0.689282	frequency=2.105e-01	ks_quality_p_value=0.931413	major_base=C	major_cov=11/19	major_frequency=7.895e-01	minor_base=T	minor_cov=2/6	new_cov=2/6	polymorphism_frequency=2.105e-01	polymorphism_score=11.5	prediction=polymorphism	ref_cov=11/19	total_cov=13/25
+RA	437	.	NODE_93_length_5868_cov_13.626720	5845	0	C	A	bias_e_value=2944510	bias_p_value=0.628743	consensus_reject=FREQUENCY_CUTOFF	consensus_score=70.1	fisher_strand_p_value=0.391628	frequency=2.000e-01	ks_quality_p_value=0.699673	major_base=C	major_cov=10/18	major_frequency=8.000e-01	minor_base=A	minor_cov=1/6	new_cov=1/6	polymorphism_frequency=2.000e-01	polymorphism_score=13.2	prediction=polymorphism	ref_cov=10/18	total_cov=11/24
+RA	438	.	NODE_93_length_5868_cov_13.626720	5848	0	G	C	bias_e_value=936439	bias_p_value=0.199958	consensus_reject=FREQUENCY_CUTOFF	consensus_score=65.7	fisher_strand_p_value=0.391628	frequency=2.000e-01	ks_quality_p_value=0.127819	major_base=G	major_cov=10/18	major_frequency=8.000e-01	minor_base=C	minor_cov=1/6	new_cov=1/6	polymorphism_frequency=2.000e-01	polymorphism_score=14.4	prediction=polymorphism	ref_cov=10/18	total_cov=11/24
+MC	439	.	NODE_100_length_4298_cov_18.099497	1	91	0	67	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=14	right_outside_cov=16
+MC	440	.	NODE_102_length_3706_cov_16.815870	3688	3706	0	0	left_inside_cov=0	left_outside_cov=114	right_inside_cov=0	right_outside_cov=NA
+MC	441	.	NODE_103_length_3518_cov_18.030080	3489	3518	5	0	left_inside_cov=8	left_outside_cov=12	right_inside_cov=0	right_outside_cov=NA
+MC	442	.	NODE_107_length_2924_cov_14.682159	2764	2924	0	0	left_inside_cov=19	left_outside_cov=23	right_inside_cov=0	right_outside_cov=NA
+MC	443	.	NODE_108_length_2807_cov_27.150746	2700	2807	50	0	left_inside_cov=27	left_outside_cov=28	right_inside_cov=0	right_outside_cov=NA
+MC	444	.	NODE_111_length_2684_cov_16.927259	2519	2684	0	0	left_inside_cov=21	left_outside_cov=24	right_inside_cov=0	right_outside_cov=NA
+MC	445	.	NODE_13_length_103247_cov_14.490700	103184	103247	0	0	left_inside_cov=1	left_outside_cov=19	right_inside_cov=0	right_outside_cov=NA
+MC	446	.	NODE_15_length_101355_cov_14.151885	1	13	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=191
+MC	447	.	NODE_16_length_101228_cov_13.975534	101177	101228	0	0	left_inside_cov=6	left_outside_cov=8	right_inside_cov=0	right_outside_cov=NA
+MC	448	.	NODE_17_length_101305_cov_14.841270	1	126	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=57
+MC	449	.	NODE_18_length_96021_cov_13.512201	95896	96021	0	0	left_inside_cov=1	left_outside_cov=31	right_inside_cov=0	right_outside_cov=NA
+MC	450	.	NODE_19_length_95039_cov_14.544662	95020	95039	0	0	left_inside_cov=6	left_outside_cov=8	right_inside_cov=0	right_outside_cov=NA
+MC	451	.	NODE_20_length_91803_cov_13.571807	1	124	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=1	right_outside_cov=46
+MC	452	.	NODE_20_length_91803_cov_13.571807	91698	91803	84	0	left_inside_cov=6	left_outside_cov=8	right_inside_cov=0	right_outside_cov=NA
+MC	453	.	NODE_21_length_76114_cov_15.178807	1	36	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=6	right_outside_cov=7
+MC	454	.	NODE_24_length_67417_cov_14.021177	1	22	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=404
+MC	455	.	NODE_25_length_66569_cov_15.079347	66446	66569	0	0	left_inside_cov=0	left_outside_cov=38	right_inside_cov=0	right_outside_cov=NA
+MC	456	.	NODE_27_length_57054_cov_15.850440	1	25	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=5	right_outside_cov=6
+MC	457	.	NODE_27_length_57054_cov_15.850440	56928	57054	0	0	left_inside_cov=0	left_outside_cov=32	right_inside_cov=0	right_outside_cov=NA
+MC	458	.	NODE_28_length_56931_cov_14.380994	56913	56931	0	0	left_inside_cov=0	left_outside_cov=18	right_inside_cov=0	right_outside_cov=NA
+MC	459	.	NODE_29_length_55434_cov_15.728913	1	64	0	8	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=4	right_outside_cov=6
+MC	460	.	NODE_2_length_147675_cov_14.669945	1	112	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=5	right_outside_cov=9
+MC	461	.	NODE_31_length_54289_cov_15.493963	54284	54289	0	0	left_inside_cov=0	left_outside_cov=12	right_inside_cov=0	right_outside_cov=NA
+MC	462	.	NODE_33_length_47526_cov_14.069959	1	21	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=17
+MC	463	.	NODE_33_length_47526_cov_14.069959	47525	47526	0	0	left_inside_cov=0	left_outside_cov=44	right_inside_cov=0	right_outside_cov=NA
+MC	464	.	NODE_35_length_47249_cov_15.872607	1	124	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=1	right_outside_cov=70
+MC	465	.	NODE_36_length_47173_cov_14.140182	1	21	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=173
+MC	466	.	NODE_3_length_137951_cov_14.578034	137931	137951	0	0	left_inside_cov=0	left_outside_cov=25	right_inside_cov=0	right_outside_cov=NA
+MC	467	.	NODE_42_length_40690_cov_13.862091	1	34	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=126
+MC	468	.	NODE_42_length_40690_cov_13.862091	40671	40690	0	0	left_inside_cov=0	left_outside_cov=27	right_inside_cov=0	right_outside_cov=NA
+MC	469	.	NODE_44_length_35932_cov_16.504957	1	118	0	94	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=8	right_outside_cov=10
+MC	470	.	NODE_51_length_30791_cov_13.838932	30665	30791	0	0	left_inside_cov=3	left_outside_cov=63	right_inside_cov=0	right_outside_cov=NA
+MC	471	.	NODE_57_length_25591_cov_17.529414	1	10	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=5	right_outside_cov=166
+MC	472	.	NODE_58_length_25496_cov_10.583468	25404	25496	0	0	left_inside_cov=4	left_outside_cov=6	right_inside_cov=0	right_outside_cov=NA
+MC	473	.	NODE_63_length_20046_cov_15.377931	20044	20046	0	0	left_inside_cov=0	left_outside_cov=19	right_inside_cov=0	right_outside_cov=NA
+MC	474	.	NODE_68_length_16873_cov_16.542458	1	125	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=60
+MC	475	.	NODE_69_length_16640_cov_15.272270	16618	16640	0	0	left_inside_cov=1	left_outside_cov=15	right_inside_cov=0	right_outside_cov=NA
+MC	476	.	NODE_71_length_15514_cov_16.357120	15503	15514	7	0	left_inside_cov=1	left_outside_cov=10	right_inside_cov=0	right_outside_cov=NA
+MC	477	.	NODE_72_length_15467_cov_17.402086	1	9	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=7	right_outside_cov=11
+MC	478	.	NODE_72_length_15467_cov_17.402086	15341	15467	0	0	left_inside_cov=2	left_outside_cov=41	right_inside_cov=0	right_outside_cov=NA
+MC	479	.	NODE_73_length_15178_cov_17.144841	15053	15178	0	0	left_inside_cov=2	left_outside_cov=49	right_inside_cov=0	right_outside_cov=NA
+MC	480	.	NODE_74_length_15083_cov_14.230275	1	123	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=33
+MC	481	.	NODE_74_length_15083_cov_14.230275	14960	15083	0	0	left_inside_cov=0	left_outside_cov=41	right_inside_cov=0	right_outside_cov=NA
+MC	482	.	NODE_75_length_13923_cov_14.970136	13797	13923	0	0	left_inside_cov=1	left_outside_cov=34	right_inside_cov=0	right_outside_cov=NA
+MC	483	.	NODE_77_length_12679_cov_15.989006	12590	12679	32	0	left_inside_cov=13	left_outside_cov=16	right_inside_cov=0	right_outside_cov=NA
+MC	484	.	NODE_78_length_12648_cov_13.287517	1	30	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=22
+MC	485	.	NODE_78_length_12648_cov_13.287517	12524	12648	0	0	left_inside_cov=2	left_outside_cov=43	right_inside_cov=0	right_outside_cov=NA
+MC	486	.	NODE_79_length_12438_cov_13.711153	1	15	0	5	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=4	right_outside_cov=6
+MC	487	.	NODE_79_length_12438_cov_13.711153	12322	12438	59	0	left_inside_cov=1	left_outside_cov=38	right_inside_cov=0	right_outside_cov=NA
+MC	488	.	NODE_81_length_10055_cov_13.632454	10035	10055	0	0	left_inside_cov=0	left_outside_cov=62	right_inside_cov=0	right_outside_cov=NA
+MC	489	.	NODE_82_length_10033_cov_18.448819	1	17	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=60
+MC	490	.	NODE_82_length_10033_cov_18.448819	9912	10033	0	0	left_inside_cov=3	left_outside_cov=57	right_inside_cov=0	right_outside_cov=NA
+MC	491	.	NODE_84_length_8933_cov_13.067227	1	4	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=197
+MC	492	.	NODE_85_length_8716_cov_15.515427	8592	8716	0	0	left_inside_cov=0	left_outside_cov=60	right_inside_cov=0	right_outside_cov=NA
+MC	493	.	NODE_87_length_7911_cov_15.112025	1	124	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=1	right_outside_cov=56
+MC	494	.	NODE_88_length_7888_cov_14.965984	7886	7888	0	0	left_inside_cov=0	left_outside_cov=20	right_inside_cov=0	right_outside_cov=NA
+MC	495	.	NODE_8_length_116180_cov_13.950471	1	38	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=4	right_outside_cov=5
+MC	496	.	NODE_90_length_6611_cov_21.446175	1	60	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=18	right_outside_cov=21
+MC	497	.	NODE_91_length_6326_cov_14.081142	6299	6326	0	0	left_inside_cov=0	left_outside_cov=28	right_inside_cov=0	right_outside_cov=NA
+MC	498	.	NODE_92_length_6138_cov_19.022792	1	2	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=141
+MC	499	.	NODE_92_length_6138_cov_19.022792	6101	6138	0	0	left_inside_cov=11	left_outside_cov=14	right_inside_cov=0	right_outside_cov=NA
+MC	500	.	NODE_93_length_5868_cov_13.626720	1	126	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=38
+MC	501	.	NODE_93_length_5868_cov_13.626720	5852	5868	0	0	left_inside_cov=0	left_outside_cov=37	right_inside_cov=0	right_outside_cov=NA
+MC	502	.	NODE_94_length_5665_cov_21.343084	5617	5665	0	0	left_inside_cov=8	left_outside_cov=10	right_inside_cov=0	right_outside_cov=NA
+MC	503	.	NODE_96_length_5246_cov_16.543661	1	1	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=24
+MC	504	.	NODE_96_length_5246_cov_16.543661	5122	5246	0	0	left_inside_cov=0	left_outside_cov=72	right_inside_cov=0	right_outside_cov=NA
+MC	505	.	NODE_97_length_4374_cov_16.302096	1	9	0	0	left_inside_cov=0	left_outside_cov=NA	right_inside_cov=0	right_outside_cov=48
+MC	506	.	NODE_99_length_4324_cov_632.709793	4198	4324	0	0	left_inside_cov=17	left_outside_cov=717	right_inside_cov=0	right_outside_cov=NA
+MC	507	.	NODE_9_length_116042_cov_14.301376	116023	116042	0	0	left_inside_cov=4	left_outside_cov=10	right_inside_cov=0	right_outside_cov=NA
+JC	508	.	NODE_100_length_4298_cov_18.099497	3975	1	NODE_59_length_24902_cov_17.459859	24112	-1	0	alignment_overlap=1	coverage_minus=4	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=1.291e-01	junction_possible_overlap_registers=209	key=NODE_100_length_4298_cov_18.099497__3975__1__NODE_59_length_24902_cov_17.459859__24113__-1__1____301__301__0__0	max_left=243	max_left_minus=215	max_left_plus=243	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=87	max_min_right_minus=87	max_min_right_plus=73	max_pos_hash_score=420	max_right=87	max_right_minus=87	max_right_plus=73	neg_log10_pos_hash_p_value=4.0	new_junction_coverage=0.25	new_junction_read_count=10	polymorphism_frequency=1.291e-01	pos_hash_score=5	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.80	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=28	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=2.38	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=107	side_2_redundant=0	total_non_overlap_reads=8
+JC	509	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_102_length_3706_cov_16.815870	20	1	0	alignment_overlap=19	coverage_minus=0	coverage_plus=3	flanking_left=198	flanking_right=301	frequency=3.776e-01	junction_possible_overlap_registers=191	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_102_length_3706_cov_16.815870__1__1__19____198__301__0__0	max_left=64	max_left_minus=0	max_left_plus=64	max_min_left=64	max_min_left_minus=0	max_min_left_plus=64	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=384	max_right=255	max_right_minus=0	max_right_plus=255	neg_log10_pos_hash_p_value=4.5	new_junction_coverage=0.24	new_junction_read_count=8	polymorphism_frequency=3.776e-01	pos_hash_score=3	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=19	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=191	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=3
+JC	510	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_102_length_3706_cov_16.815870	3687	-1	0	alignment_overlap=19	coverage_minus=32	coverage_plus=35	flanking_left=198	flanking_right=301	frequency=1	junction_possible_overlap_registers=191	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_102_length_3706_cov_16.815870__3706__-1__19____198__301__0__0	max_left=198	max_left_minus=194	max_left_plus=198	max_min_left=106	max_min_left_minus=31	max_min_left_plus=106	max_min_right=139	max_min_right_minus=130	max_min_right_plus=139	max_pos_hash_score=384	max_right=259	max_right_minus=259	max_right_plus=236	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.91	new_junction_read_count=97	polymorphism_frequency=8.803e-01	pos_hash_score=47	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=19	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=191	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=67
+JC	511	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_28_length_56931_cov_14.380994	56912	-1	0	alignment_overlap=19	coverage_minus=2	coverage_plus=2	flanking_left=198	flanking_right=301	frequency=5.482e-01	junction_possible_overlap_registers=191	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_28_length_56931_cov_14.380994__56931__-1__19____198__301__0__0	max_left=62	max_left_minus=62	max_left_plus=15	max_min_left=62	max_min_left_minus=62	max_min_left_plus=15	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=384	max_right=272	max_right_minus=270	max_right_plus=272	neg_log10_pos_hash_p_value=2.4	new_junction_coverage=0.51	new_junction_read_count=16	polymorphism_frequency=5.482e-01	pos_hash_score=4	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=19	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=191	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=4
+JC	512	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_3_length_137951_cov_14.578034	137930	-1	0	alignment_overlap=21	coverage_minus=6	coverage_plus=6	flanking_left=196	flanking_right=301	frequency=6.277e-01	junction_possible_overlap_registers=189	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_3_length_137951_cov_14.578034__137951__-1__21____196__301__0__0	max_left=134	max_left_minus=65	max_left_plus=134	max_min_left=134	max_min_left_minus=65	max_min_left_plus=134	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=380	max_right=239	max_right_minus=239	max_right_plus=238	neg_log10_pos_hash_p_value=1.2	new_junction_coverage=0.70	new_junction_read_count=22	polymorphism_frequency=6.277e-01	pos_hash_score=11	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=21	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=189	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=12
+JC	513	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_69_length_16640_cov_15.272270	16620	-1	0	alignment_overlap=20	coverage_minus=2	coverage_plus=2	flanking_left=197	flanking_right=301	frequency=3.479e-01	junction_possible_overlap_registers=190	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_69_length_16640_cov_15.272270__16640__-1__20____197__301__0__0	max_left=132	max_left_minus=132	max_left_plus=55	max_min_left=132	max_min_left_minus=132	max_min_left_plus=55	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=382	max_right=259	max_right_minus=259	max_right_plus=225	neg_log10_pos_hash_p_value=3.7	new_junction_coverage=0.22	new_junction_read_count=7	polymorphism_frequency=3.479e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=20	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=190	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=4
+JC	514	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_81_length_10055_cov_13.632454	10034	-1	0	alignment_overlap=21	coverage_minus=7	coverage_plus=9	flanking_left=196	flanking_right=301	frequency=1	junction_possible_overlap_registers=189	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_81_length_10055_cov_13.632454__10055__-1__21____196__301__0__0	max_left=170	max_left_minus=149	max_left_plus=170	max_min_left=65	max_min_left_minus=65	max_min_left_plus=65	max_min_right=107	max_min_right_minus=86	max_min_right_plus=107	max_pos_hash_score=380	max_right=278	max_right_minus=278	max_right_plus=233	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=1.78	new_junction_read_count=54	polymorphism_frequency=8.054e-01	pos_hash_score=16	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=21	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=189	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=16
+JC	515	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_86_length_8606_cov_16.106852	8589	-1	0	alignment_overlap=17	coverage_minus=2	coverage_plus=4	flanking_left=200	flanking_right=301	frequency=4.522e-01	junction_possible_overlap_registers=193	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_86_length_8606_cov_16.106852__8606__-1__17____200__301__0__0	max_left=98	max_left_minus=25	max_left_plus=98	max_min_left=98	max_min_left_minus=25	max_min_left_plus=98	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=388	max_right=270	max_right_minus=270	max_right_plus=259	neg_log10_pos_hash_p_value=3.4	new_junction_coverage=0.30	new_junction_read_count=11	polymorphism_frequency=4.522e-01	pos_hash_score=6	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=17	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=193	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=6
+JC	516	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_88_length_7888_cov_14.965984	7868	-1	0	alignment_overlap=20	coverage_minus=4	coverage_plus=2	flanking_left=197	flanking_right=301	frequency=4.561e-01	junction_possible_overlap_registers=190	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_88_length_7888_cov_14.965984__7888__-1__20____197__301__0__0	max_left=59	max_left_minus=21	max_left_plus=59	max_min_left=59	max_min_left_minus=21	max_min_left_plus=59	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=382	max_right=262	max_right_minus=262	max_right_plus=221	neg_log10_pos_hash_p_value=3.3	new_junction_coverage=0.36	new_junction_read_count=11	polymorphism_frequency=4.561e-01	pos_hash_score=5	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=20	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=190	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=6
+JC	517	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_93_length_5868_cov_13.626720	21	1	0	alignment_overlap=20	coverage_minus=2	coverage_plus=2	flanking_left=197	flanking_right=301	frequency=4.325e-01	junction_possible_overlap_registers=190	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_93_length_5868_cov_13.626720__1__1__20____197__301__0__0	max_left=68	max_left_minus=61	max_left_plus=68	max_min_left=68	max_min_left_minus=61	max_min_left_plus=68	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=382	max_right=212	max_right_minus=188	max_right_plus=212	neg_log10_pos_hash_p_value=3.1	new_junction_coverage=0.33	new_junction_read_count=10	polymorphism_frequency=4.325e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=20	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=190	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=4
+JC	518	.	NODE_100_length_4298_cov_18.099497	4082	1	NODE_93_length_5868_cov_13.626720	5851	-1	0	alignment_overlap=17	coverage_minus=9	coverage_plus=9	flanking_left=200	flanking_right=301	frequency=7.352e-01	junction_possible_overlap_registers=193	key=NODE_100_length_4298_cov_18.099497__4082__1__NODE_93_length_5868_cov_13.626720__5868__-1__17____200__301__0__0	max_left=172	max_left_minus=135	max_left_plus=172	max_min_left=137	max_min_left_minus=135	max_min_left_plus=137	max_min_right=90	max_min_right_minus=0	max_min_right_plus=90	max_pos_hash_score=388	max_right=279	max_right_minus=259	max_right_plus=279	neg_log10_pos_hash_p_value=0.8	new_junction_coverage=1.20	new_junction_read_count=37	polymorphism_frequency=7.352e-01	pos_hash_score=17	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.83	side_1_overlap=17	side_1_possible_overlap_registers=210	side_1_read_count=29	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=193	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=18
+JC	519	.	NODE_101_length_4082_cov_21.352212	1	1	NODE_12_length_110741_cov_15.264017	110613	1	0	alignment_overlap=117	coverage_minus=7	coverage_plus=7	flanking_left=301	flanking_right=129	frequency=1	junction_possible_overlap_registers=93	key=NODE_101_length_4082_cov_21.352212__1__1__NODE_12_length_110741_cov_15.264017__110496__1__117____301__129__0__0	max_left=140	max_left_minus=122	max_left_plus=140	max_min_left=72	max_min_left_minus=67	max_min_left_plus=72	max_min_right=85	max_min_right_minus=67	max_min_right_plus=85	max_pos_hash_score=188	max_right=111	max_right_minus=99	max_right_plus=111	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=0.88	new_junction_read_count=18	polymorphism_frequency=8.571e-01	pos_hash_score=14	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=117	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.39	side_2_overlap=0	side_2_possible_overlap_registers=93	side_2_read_count=6	side_2_redundant=0	total_non_overlap_reads=14
+JC	520	.	NODE_101_length_4082_cov_21.352212	3869	1	NODE_85_length_8716_cov_15.515427	3863	1	-3	alignment_overlap=-3	coverage_minus=11	coverage_plus=10	flanking_left=214	flanking_right=301	frequency=3.971e-01	junction_possible_overlap_registers=207	key=NODE_101_length_4082_cov_21.352212__3869__1__NODE_85_length_8716_cov_15.515427__3863__1__-3__TAA__214__301__0__0	max_left=214	max_left_minus=208	max_left_plus=214	max_min_left=105	max_min_left_minus=105	max_min_left_plus=86	max_min_right=123	max_min_right_minus=90	max_min_right_plus=123	max_pos_hash_score=416	max_right=288	max_right_minus=288	max_right_plus=214	neg_log10_pos_hash_p_value=0.9	new_junction_coverage=0.52	new_junction_read_count=25	polymorphism_frequency=3.971e-01	pos_hash_score=17	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.69	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=40	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.92	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=37	side_2_redundant=0	total_non_overlap_reads=21	unique_read_sequence=TAA
+JC	521	.	NODE_101_length_4082_cov_21.352212	4082	-1	NODE_111_length_2684_cov_16.927259	93	-1	-121	alignment_overlap=-121	coverage_minus=6	coverage_plus=11	flanking_left=301	flanking_right=93	frequency=1	junction_possible_overlap_registers=89	key=NODE_101_length_4082_cov_21.352212__4082__-1__NODE_111_length_2684_cov_16.927259__93__-1__-121__ATGAGCGTCAGGGCAAAACACCAAAAGCCTCTCCGATAACACCAGAACAAATCGAAATACGTGAGCTGAGGAAAAAGCTACAACGCATTGAAATGGAGAATGAAATATTAAAAAAGGCTAC__301__93__0__1	max_left=162	max_left_minus=80	max_left_plus=162	max_min_left=88	max_min_left_minus=80	max_min_left_plus=88	max_min_right=44	max_min_right_minus=12	max_min_right_plus=44	max_pos_hash_score=180	max_right=93	max_right_minus=93	max_right_plus=89	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=0.83	new_junction_read_count=18	polymorphism_frequency=1.000e+00	pos_hash_score=14	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=17	unique_read_sequence=ATGAGCGTCAGGGCAAAACACCAAAAGCCTCTCCGATAACACCAGAACAAATCGAAATACGTGAGCTGAGGAAAAAGCTACAACGCATTGAAATGGAGAATGAAATATTAAAAAAGGCTAC
+JC	522	.	NODE_102_length_3706_cov_16.815870	1	1	NODE_12_length_110741_cov_15.264017	110613	1	0	alignment_overlap=125	coverage_minus=1	coverage_plus=3	flanking_left=301	flanking_right=129	frequency=7.000e-01	junction_possible_overlap_registers=85	key=NODE_102_length_3706_cov_16.815870__1__1__NODE_12_length_110741_cov_15.264017__110488__1__125____301__129__0__0	max_left=111	max_left_minus=111	max_left_plus=92	max_min_left=59	max_min_left_minus=0	max_min_left_plus=59	max_min_right=80	max_min_right_minus=64	max_min_right_plus=80	max_pos_hash_score=172	max_right=116	max_right_minus=64	max_right_plus=116	neg_log10_pos_hash_p_value=1.1	new_junction_coverage=0.47	new_junction_read_count=7	polymorphism_frequency=7.000e-01	pos_hash_score=4	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.43	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=6	side_2_redundant=0	total_non_overlap_reads=4
+JC	523	.	NODE_103_length_3518_cov_18.030080	1	1	NODE_12_length_110741_cov_15.264017	110615	1	0	alignment_overlap=119	coverage_minus=13	coverage_plus=15	flanking_left=301	flanking_right=127	frequency=1	junction_possible_overlap_registers=91	key=NODE_103_length_3518_cov_18.030080__1__1__NODE_12_length_110741_cov_15.264017__110496__1__119____301__127__0__0	max_left=160	max_left_minus=159	max_left_plus=160	max_min_left=85	max_min_left_minus=8	max_min_left_plus=85	max_min_right=83	max_min_right_minus=71	max_min_right_plus=83	max_pos_hash_score=184	max_right=103	max_right_minus=97	max_right_plus=103	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.10	new_junction_read_count=37	polymorphism_frequency=9.250e-01	pos_hash_score=27	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=119	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.40	side_2_overlap=0	side_2_possible_overlap_registers=91	side_2_read_count=6	side_2_redundant=0	total_non_overlap_reads=28
+JC	524	.	NODE_104_length_3448_cov_21.387233	66	-1	NODE_6_length_126390_cov_15.114040	126390	-1	0	alignment_overlap=6	coverage_minus=1	coverage_plus=6	flanking_left=66	flanking_right=301	frequency=1	junction_possible_overlap_registers=204	key=NODE_104_length_3448_cov_21.387233__72__-1__NODE_6_length_126390_cov_15.114040__126390__-1__6____66__301__1__0	max_left=20	max_left_minus=2	max_left_plus=20	max_min_left=20	max_min_left_minus=2	max_min_left_plus=20	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=410	max_right=291	max_right_minus=179	max_right_plus=291	neg_log10_pos_hash_p_value=2.2	new_junction_coverage=0.21	new_junction_read_count=9	polymorphism_frequency=1.000e+00	pos_hash_score=6	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=6	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=7
+JC	525	.	NODE_104_length_3448_cov_21.387233	69	-1	NODE_76_length_13241_cov_14.331173	13241	-1	0	alignment_overlap=3	coverage_minus=3	coverage_plus=4	flanking_left=69	flanking_right=301	frequency=1	junction_possible_overlap_registers=207	key=NODE_104_length_3448_cov_21.387233__72__-1__NODE_76_length_13241_cov_14.331173__13241__-1__3____69__301__1__0	max_left=64	max_left_minus=64	max_left_plus=64	max_min_left=64	max_min_left_minus=64	max_min_left_plus=64	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=254	max_right_minus=225	max_right_plus=254	neg_log10_pos_hash_p_value=2.1	new_junction_coverage=0.17	new_junction_read_count=7	polymorphism_frequency=1.000e+00	pos_hash_score=7	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=3	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=7
+JC	526	.	NODE_104_length_3448_cov_21.387233	86	1	NODE_19_length_95039_cov_14.544662	69440	1	-8	alignment_overlap=-8	coverage_minus=5	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=1.787e-01	junction_possible_overlap_registers=202	key=NODE_104_length_3448_cov_21.387233__86__1__NODE_19_length_95039_cov_14.544662__69440__1__-8__CCCAGCCG__301__301__0__0	max_left=177	max_left_minus=159	max_left_plus=177	max_min_left=143	max_min_left_minus=0	max_min_left_plus=143	max_min_right=141	max_min_right_minus=141	max_min_right_plus=125	max_pos_hash_score=406	max_right=157	max_right_minus=141	max_right_plus=157	neg_log10_pos_hash_p_value=2.8	new_junction_coverage=0.20	new_junction_read_count=9	polymorphism_frequency=1.787e-01	pos_hash_score=5	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.43	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=22	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.58	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=64	side_2_redundant=0	total_non_overlap_reads=9	unique_read_sequence=CCCAGCCG
+JC	527	.	NODE_105_length_3310_cov_17.106189	1	1	NODE_57_length_25591_cov_17.529414	11	1	0	alignment_overlap=10	coverage_minus=65	coverage_plus=69	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=200	key=NODE_105_length_3310_cov_17.106189__1__1__NODE_57_length_25591_cov_17.529414__1__1__10____301__301__0__0	max_left=259	max_left_minus=236	max_left_plus=259	max_min_left=141	max_min_left_minus=128	max_min_left_plus=141	max_min_right=140	max_min_right_minus=133	max_min_right_plus=140	max_pos_hash_score=402	max_right=288	max_right_minus=288	max_right_plus=274	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.69	new_junction_read_count=152	polymorphism_frequency=1.000e+00	pos_hash_score=89	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=10	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=200	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=134
+JC	528	.	NODE_105_length_3310_cov_17.106189	246	-1	NODE_15_length_101355_cov_14.151885	14	1	0	alignment_overlap=13	coverage_minus=84	coverage_plus=79	flanking_left=233	flanking_right=301	frequency=1	junction_possible_overlap_registers=197	key=NODE_105_length_3310_cov_17.106189__246__-1__NODE_15_length_101355_cov_14.151885__1__1__13____233__301__0__0	max_left=228	max_left_minus=217	max_left_plus=228	max_min_left=136	max_min_left_minus=136	max_min_left_plus=136	max_min_right=137	max_min_right_minus=129	max_min_right_plus=137	max_pos_hash_score=396	max_right=282	max_right_minus=282	max_right_plus=281	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=3.96	new_junction_read_count=176	polymorphism_frequency=9.306e-01	pos_hash_score=104	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.46	side_1_overlap=13	side_1_possible_overlap_registers=210	side_1_read_count=28	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=197	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=163
+JC	529	.	NODE_105_length_3310_cov_17.106189	561	-1	NODE_27_length_57054_cov_15.850440	3227	1	-2	alignment_overlap=-2	coverage_minus=1	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=7.473e-02	junction_possible_overlap_registers=208	key=NODE_105_length_3310_cov_17.106189__561__-1__NODE_27_length_57054_cov_15.850440__3227__1__-2__AG__301__301__0__0	max_left=197	max_left_minus=189	max_left_plus=197	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=122	max_min_right_minus=106	max_min_right_plus=122	max_pos_hash_score=418	max_right=122	max_right_minus=106	max_right_plus=122	neg_log10_pos_hash_p_value=3.0	new_junction_coverage=0.08	new_junction_read_count=4	polymorphism_frequency=7.473e-02	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.90	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=55	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.12	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=45	side_2_redundant=0	total_non_overlap_reads=4	unique_read_sequence=AG
+JC	530	.	NODE_106_length_3173_cov_19.546619	1	1	NODE_19_length_95039_cov_14.544662	69974	-1	0	alignment_overlap=22	coverage_minus=3	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=2.807e-01	junction_possible_overlap_registers=188	key=NODE_106_length_3173_cov_19.546619__1__1__NODE_19_length_95039_cov_14.544662__69996__-1__22____301__301__0__0	max_left=250	max_left_minus=231	max_left_plus=250	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=45	max_min_right_minus=45	max_min_right_plus=43	max_pos_hash_score=378	max_right=45	max_right_minus=45	max_right_plus=43	neg_log10_pos_hash_p_value=2.9	new_junction_coverage=0.35	new_junction_read_count=16	polymorphism_frequency=2.807e-01	pos_hash_score=4	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=22	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=2.26	side_2_overlap=0	side_2_possible_overlap_registers=188	side_2_read_count=82	side_2_redundant=0	total_non_overlap_reads=5
+JC	531	.	NODE_106_length_3173_cov_19.546619	3173	-1	NODE_4_length_134155_cov_14.571649	134063	1	0	alignment_overlap=5	coverage_minus=8	coverage_plus=4	flanking_left=301	flanking_right=93	frequency=5.405e-01	junction_possible_overlap_registers=205	key=NODE_106_length_3173_cov_19.546619__3173__-1__NODE_4_length_134155_cov_14.571649__134058__1__5____301__93__0__0	max_left=288	max_left_minus=288	max_left_plus=257	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=84	max_min_right_minus=84	max_min_right_plus=67	max_pos_hash_score=412	max_right=84	max_right_minus=84	max_right_plus=67	neg_log10_pos_hash_p_value=1.3	new_junction_coverage=0.42	new_junction_read_count=20	polymorphism_frequency=5.405e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=5	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.00	side_2_overlap=0	side_2_possible_overlap_registers=205	side_2_read_count=34	side_2_redundant=0	total_non_overlap_reads=12
+JC	532	.	NODE_107_length_2924_cov_14.682159	1	1	NODE_12_length_110741_cov_15.264017	110612	1	0	alignment_overlap=126	coverage_minus=6	coverage_plus=9	flanking_left=301	flanking_right=130	frequency=1	junction_possible_overlap_registers=84	key=NODE_107_length_2924_cov_14.682159__1__1__NODE_12_length_110741_cov_15.264017__110486__1__126____301__130__0__0	max_left=165	max_left_minus=128	max_left_plus=165	max_min_left=76	max_min_left_minus=75	max_min_left_plus=76	max_min_right=68	max_min_right_minus=52	max_min_right_plus=68	max_pos_hash_score=170	max_right=127	max_right_minus=127	max_right_plus=117	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.17	new_junction_read_count=17	polymorphism_frequency=8.500e-01	pos_hash_score=14	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.43	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=6	side_2_redundant=0	total_non_overlap_reads=15
+JC	533	.	NODE_108_length_2807_cov_27.150746	1	1	NODE_53_length_28637_cov_18.413399	27837	1	0	alignment_overlap=127	coverage_minus=11	coverage_plus=9	flanking_left=301	flanking_right=301	frequency=7.273e-01	junction_possible_overlap_registers=83	key=NODE_108_length_2807_cov_27.150746__1__1__NODE_53_length_28637_cov_18.413399__27710__1__127____301__301__0__0	max_left=160	max_left_minus=120	max_left_plus=160	max_min_left=80	max_min_left_minus=78	max_min_left_plus=80	max_min_right=81	max_min_right_minus=81	max_min_right_plus=58	max_pos_hash_score=168	max_right=172	max_right_minus=118	max_right_plus=172	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=0.87	new_junction_read_count=20	polymorphism_frequency=7.273e-01	pos_hash_score=19	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.89	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=15	side_2_redundant=0	total_non_overlap_reads=20
+JC	534	.	NODE_109_length_2784_cov_17.981935	2784	-1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=125	coverage_minus=9	coverage_plus=8	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=85	key=NODE_109_length_2784_cov_17.981935__2784__-1__NODE_67_length_17417_cov_16.557604__17195__1__125____301__98__0__0	max_left=140	max_left_minus=120	max_left_plus=140	max_min_left=84	max_min_left_minus=84	max_min_left_plus=26	max_min_right=84	max_min_right_minus=84	max_min_right_plus=80	max_pos_hash_score=172	max_right=93	max_right_minus=93	max_right_plus=80	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=1.12	new_junction_read_count=21	polymorphism_frequency=1.000e+00	pos_hash_score=13	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=17
+JC	535	.	NODE_10_length_114371_cov_14.708256	114371	-1	NODE_69_length_16640_cov_15.272270	97	-1	0	alignment_overlap=30	coverage_minus=11	coverage_plus=13	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=180	key=NODE_10_length_114371_cov_14.708256__114371__-1__NODE_69_length_16640_cov_15.272270__127__-1__30____301__97__0__1	max_left=247	max_left_minus=228	max_left_plus=247	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=80	max_min_right_minus=68	max_min_right_plus=80	max_pos_hash_score=362	max_right=80	max_right_minus=68	max_right_plus=80	neg_log10_pos_hash_p_value=0.9	new_junction_coverage=0.80	new_junction_read_count=24	polymorphism_frequency=1.000e+00	pos_hash_score=14	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=30	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=24
+JC	536	.	NODE_110_length_2687_cov_21.693359	1	1	NODE_8_length_116180_cov_13.950471	115825	1	0	alignment_overlap=127	coverage_minus=11	coverage_plus=11	flanking_left=301	flanking_right=301	frequency=7.719e-01	junction_possible_overlap_registers=83	key=NODE_110_length_2687_cov_21.693359__1__1__NODE_8_length_116180_cov_13.950471__115698__1__127____301__301__0__0	max_left=170	max_left_minus=111	max_left_plus=170	max_min_left=83	max_min_left_minus=69	max_min_left_plus=83	max_min_right=83	max_min_right_minus=83	max_min_right_plus=50	max_pos_hash_score=168	max_right=171	max_right_minus=171	max_right_plus=103	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.25	new_junction_read_count=22	polymorphism_frequency=7.719e-01	pos_hash_score=17	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.99	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=13	side_2_redundant=0	total_non_overlap_reads=22
+JC	537	.	NODE_110_length_2687_cov_21.693359	2673	-1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=3	coverage_plus=0	flanking_left=301	flanking_right=123	frequency=1	junction_possible_overlap_registers=206	key=NODE_110_length_2687_cov_21.693359__2673__-1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=179	max_left_minus=179	max_left_plus=0	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=123	max_min_right_minus=123	max_min_right_plus=0	max_pos_hash_score=414	max_right=123	max_right_minus=123	max_right_plus=0	neg_log10_pos_hash_p_value=3.4	new_junction_coverage=0.14	new_junction_read_count=7	polymorphism_frequency=8.254e-01	pos_hash_score=3	prediction=consensus	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.04	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=2	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=3
+JC	538	.	NODE_110_length_2687_cov_21.693359	2687	-1	NODE_77_length_12679_cov_15.989006	95	-1	0	alignment_overlap=2	coverage_minus=6	coverage_plus=3	flanking_left=301	flanking_right=95	frequency=1	junction_possible_overlap_registers=208	key=NODE_110_length_2687_cov_21.693359__2687__-1__NODE_77_length_12679_cov_15.989006__97__-1__2____301__95__0__1	max_left=296	max_left_minus=296	max_left_plus=250	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=58	max_min_right_minus=48	max_min_right_plus=58	max_pos_hash_score=418	max_right=58	max_right_minus=48	max_right_plus=58	neg_log10_pos_hash_p_value=2.5	new_junction_coverage=0.27	new_junction_read_count=13	polymorphism_frequency=1.000e+00	pos_hash_score=9	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=2	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=9
+JC	539	.	NODE_111_length_2684_cov_16.927259	82	1	NODE_59_length_24902_cov_17.459859	24038	1	0	alignment_overlap=14	coverage_minus=20	coverage_plus=23	flanking_left=301	flanking_right=301	frequency=4.941e-01	junction_possible_overlap_registers=196	key=NODE_111_length_2684_cov_16.927259__82__1__NODE_59_length_24902_cov_17.459859__24024__1__14____301__301__0__0	max_left=257	max_left_minus=225	max_left_plus=257	max_min_left=88	max_min_left_minus=88	max_min_left_plus=83	max_min_right=129	max_min_right_minus=122	max_min_right_plus=129	max_pos_hash_score=394	max_right=264	max_right_minus=264	max_right_plus=241	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.11	new_junction_read_count=46	polymorphism_frequency=4.941e-01	pos_hash_score=39	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.28	side_1_overlap=14	side_1_possible_overlap_registers=210	side_1_read_count=12	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.97	side_2_overlap=0	side_2_possible_overlap_registers=196	side_2_read_count=83	side_2_redundant=0	total_non_overlap_reads=43
+JC	540	.	NODE_111_length_2684_cov_16.927259	692	-1	NODE_111_length_2684_cov_16.927259	2073	1	-6	alignment_overlap=-6	coverage_minus=25	coverage_plus=23	flanking_left=301	flanking_right=301	frequency=5.536e-01	junction_possible_overlap_registers=204	key=NODE_111_length_2684_cov_16.927259__692__-1__NODE_111_length_2684_cov_16.927259__2073__1__-6__CAGGGT__301__301__0__0	max_left=292	max_left_minus=272	max_left_plus=292	max_min_left=82	max_min_left_minus=82	max_min_left_plus=82	max_min_right=138	max_min_right_minus=138	max_min_right_plus=126	max_pos_hash_score=410	max_right=138	max_right_minus=138	max_right_plus=131	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.18	new_junction_read_count=50	polymorphism_frequency=5.536e-01	pos_hash_score=37	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.01	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=44	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.90	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=39	side_2_redundant=0	total_non_overlap_reads=48	unique_read_sequence=CAGGGT
+JC	541	.	NODE_112_length_2616_cov_21.133789	1	1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=125	coverage_minus=14	coverage_plus=7	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=85	key=NODE_112_length_2616_cov_21.133789__1__1__NODE_67_length_17417_cov_16.557604__17195__1__125____301__98__0__0	max_left=155	max_left_minus=155	max_left_plus=138	max_min_left=77	max_min_left_minus=64	max_min_left_plus=77	max_min_right=78	max_min_right_minus=78	max_min_right_plus=62	max_pos_hash_score=172	max_right=98	max_right_minus=98	max_right_plus=97	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=1.13	new_junction_read_count=22	polymorphism_frequency=1.000e+00	pos_hash_score=14	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=21
+JC	542	.	NODE_113_length_2327_cov_24.734091	1	1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=106	coverage_minus=17	coverage_plus=12	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=104	key=NODE_113_length_2327_cov_24.734091__1__1__NODE_67_length_17417_cov_16.557604__17214__1__106____301__98__0__0	max_left=179	max_left_minus=165	max_left_plus=179	max_min_left=20	max_min_left_minus=20	max_min_left_plus=20	max_min_right=97	max_min_right_minus=65	max_min_right_plus=97	max_pos_hash_score=210	max_right=98	max_right_minus=98	max_right_plus=97	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.12	new_junction_read_count=35	polymorphism_frequency=1.000e+00	pos_hash_score=25	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=106	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=104	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=29
+JC	543	.	NODE_113_length_2327_cov_24.734091	2327	-1	NODE_4_length_134155_cov_14.571649	772	-1	0	alignment_overlap=127	coverage_minus=10	coverage_plus=7	flanking_left=301	flanking_right=301	frequency=6.786e-01	junction_possible_overlap_registers=83	key=NODE_113_length_2327_cov_24.734091__2327__-1__NODE_4_length_134155_cov_14.571649__899__-1__127____301__301__0__0	max_left=157	max_left_minus=154	max_left_plus=157	max_min_left=64	max_min_left_minus=64	max_min_left_plus=48	max_min_right=75	max_min_right_minus=75	max_min_right_plus=20	max_pos_hash_score=168	max_right=143	max_right_minus=142	max_right_plus=143	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=0.84	new_junction_read_count=19	polymorphism_frequency=6.786e-01	pos_hash_score=16	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.31	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=18	side_2_redundant=0	total_non_overlap_reads=17
+JC	544	.	NODE_114_length_2255_cov_20.287124	1	1	NODE_19_length_95039_cov_14.544662	69458	1	0	alignment_overlap=121	coverage_minus=21	coverage_plus=21	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=89	key=NODE_114_length_2255_cov_20.287124__1__1__NODE_19_length_95039_cov_14.544662__69337__1__121____301__301__0__0	max_left=163	max_left_minus=163	max_left_plus=145	max_min_left=69	max_min_left_minus=69	max_min_left_plus=68	max_min_right=67	max_min_right_minus=37	max_min_right_plus=67	max_pos_hash_score=180	max_right=168	max_right_minus=168	max_right_plus=168	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.85	new_junction_read_count=61	polymorphism_frequency=8.714e-01	pos_hash_score=31	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=121	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.05	side_2_overlap=0	side_2_possible_overlap_registers=89	side_2_read_count=18	side_2_redundant=0	total_non_overlap_reads=42
+JC	545	.	NODE_114_length_2255_cov_20.287124	2244	-1	NODE_19_length_95039_cov_14.544662	69440	1	-3	alignment_overlap=-3	coverage_minus=7	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=2.223e-01	junction_possible_overlap_registers=207	key=NODE_114_length_2255_cov_20.287124__2244__-1__NODE_19_length_95039_cov_14.544662__69440__1__-3__CCG__301__301__0__0	max_left=246	max_left_minus=246	max_left_plus=241	max_min_left=148	max_min_left_minus=148	max_min_left_plus=0	max_min_right=98	max_min_right_minus=98	max_min_right_plus=75	max_pos_hash_score=416	max_right=158	max_right_minus=158	max_right_plus=75	neg_log10_pos_hash_p_value=1.9	new_junction_coverage=0.20	new_junction_read_count=10	polymorphism_frequency=2.223e-01	pos_hash_score=9	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.12	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=7	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.58	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=64	side_2_redundant=0	total_non_overlap_reads=10	unique_read_sequence=CCG
+JC	546	.	NODE_115_length_2216_cov_1568.510292	1	1	NODE_115_length_2216_cov_1568.510292	2089	-1	0	alignment_overlap=127	coverage_minus=663	coverage_plus=633	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=83	key=NODE_115_length_2216_cov_1568.510292__1__1__NODE_115_length_2216_cov_1568.510292__2216__-1__127____301__301__0__0	max_left=172	max_left_minus=172	max_left_plus=168	max_min_left=85	max_min_left_minus=79	max_min_left_plus=85	max_min_right=86	max_min_right_minus=86	max_min_right_plus=78	max_pos_hash_score=168	max_right=173	max_right_minus=173	max_right_plus=170	neg_log10_pos_hash_p_value=-0.0	new_junction_coverage=1.16	new_junction_read_count=1363	polymorphism_frequency=1.000e+00	pos_hash_score=191	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=1296
+JC	547	.	NODE_115_length_2216_cov_1568.510292	2028	-1	NODE_115_length_2216_cov_1568.510292	2032	1	0	alignment_overlap=3	coverage_minus=2	coverage_plus=1	flanking_left=301	flanking_right=185	frequency=4.494e-03	junction_possible_overlap_registers=207	key=NODE_115_length_2216_cov_1568.510292__2028__-1__NODE_115_length_2216_cov_1568.510292__2029__1__3____301__185__0__0	max_left=273	max_left_minus=273	max_left_plus=81	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=41	max_min_right_minus=41	max_min_right_plus=41	max_pos_hash_score=416	max_right=41	max_right_minus=41	max_right_plus=41	neg_log10_pos_hash_p_value=66.6	new_junction_coverage=0.00	new_junction_read_count=6	polymorphism_frequency=4.494e-03	pos_hash_score=3	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.46	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=1374	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.44	side_2_overlap=0	side_2_possible_overlap_registers=207	side_2_read_count=1304	side_2_redundant=0	total_non_overlap_reads=3
+JC	548	.	NODE_116_length_2105_cov_17.985844	1	1	NODE_12_length_110741_cov_15.264017	110614	1	0	alignment_overlap=118	coverage_minus=5	coverage_plus=8	flanking_left=301	flanking_right=128	frequency=1	junction_possible_overlap_registers=92	key=NODE_116_length_2105_cov_17.985844__1__1__NODE_12_length_110741_cov_15.264017__110496__1__118____301__128__0__0	max_left=150	max_left_minus=144	max_left_plus=150	max_min_left=91	max_min_left_minus=91	max_min_left_plus=79	max_min_right=89	max_min_right_minus=89	max_min_right_plus=55	max_pos_hash_score=186	max_right=120	max_right_minus=92	max_right_plus=120	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=0.81	new_junction_read_count=15	polymorphism_frequency=8.333e-01	pos_hash_score=11	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=118	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.40	side_2_overlap=0	side_2_possible_overlap_registers=92	side_2_read_count=6	side_2_redundant=0	total_non_overlap_reads=13
+JC	549	.	NODE_116_length_2105_cov_17.985844	2105	-1	NODE_19_length_95039_cov_14.544662	69458	1	0	alignment_overlap=5	coverage_minus=5	coverage_plus=5	flanking_left=301	flanking_right=301	frequency=3.091e-01	junction_possible_overlap_registers=205	key=NODE_116_length_2105_cov_17.985844__2105__-1__NODE_19_length_95039_cov_14.544662__69453__1__5____301__301__0__0	max_left=292	max_left_minus=292	max_left_plus=195	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=140	max_min_right_minus=108	max_min_right_plus=140	max_pos_hash_score=412	max_right=140	max_right_minus=108	max_right_plus=140	neg_log10_pos_hash_p_value=1.9	new_junction_coverage=0.38	new_junction_read_count=17	polymorphism_frequency=3.091e-01	pos_hash_score=9	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=5	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.92	side_2_overlap=0	side_2_possible_overlap_registers=205	side_2_read_count=76	side_2_redundant=0	total_non_overlap_reads=10
+JC	550	.	NODE_11_length_111322_cov_13.734862	1	1	NODE_12_length_110741_cov_15.264017	110615	1	0	alignment_overlap=0	coverage_minus=5	coverage_plus=4	flanking_left=301	flanking_right=127	frequency=7.857e-01	junction_possible_overlap_registers=210	key=NODE_11_length_111322_cov_13.734862__1__1__NODE_12_length_110741_cov_15.264017__110615__1__0____301__127__0__0	max_left=255	max_left_minus=255	max_left_plus=244	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=127	max_min_right_minus=127	max_min_right_plus=102	max_pos_hash_score=422	max_right=127	max_right_minus=127	max_right_plus=102	neg_log10_pos_hash_p_value=1.6	new_junction_coverage=0.33	new_junction_read_count=11	polymorphism_frequency=7.857e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.17	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=6	side_2_redundant=0	total_non_overlap_reads=9
+JC	551	.	NODE_11_length_111322_cov_13.734862	111322	-1	NODE_69_length_16640_cov_15.272270	97	-1	0	alignment_overlap=30	coverage_minus=9	coverage_plus=10	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=180	key=NODE_11_length_111322_cov_13.734862__111322__-1__NODE_69_length_16640_cov_15.272270__127__-1__30____301__97__0__1	max_left=263	max_left_minus=257	max_left_plus=263	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=97	max_min_right_minus=97	max_min_right_plus=90	max_pos_hash_score=362	max_right=97	max_right_minus=97	max_right_plus=90	neg_log10_pos_hash_p_value=0.5	new_junction_coverage=0.86	new_junction_read_count=25	polymorphism_frequency=1.000e+00	pos_hash_score=18	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=30	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=19
+JC	552	.	NODE_12_length_110741_cov_15.264017	201	-1	NODE_50_length_30961_cov_14.443407	30961	-1	-31	alignment_overlap=-31	coverage_minus=14	coverage_plus=15	flanking_left=201	flanking_right=301	frequency=7.578e-01	junction_possible_overlap_registers=179	key=NODE_12_length_110741_cov_15.264017__201__-1__NODE_50_length_30961_cov_14.443407__30961__-1__-31__TGCGACGCGCTTTAGCGCACTGTCGCGAGGT__201__301__0__0	max_left=194	max_left_minus=181	max_left_plus=194	max_min_left=121	max_min_left_minus=61	max_min_left_plus=121	max_min_right=108	max_min_right_minus=89	max_min_right_plus=108	max_pos_hash_score=360	max_right=256	max_right_minus=256	max_right_plus=225	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=1.56	new_junction_read_count=44	polymorphism_frequency=7.578e-01	pos_hash_score=25	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.95	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=33	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=29	unique_read_sequence=TGCGACGCGCTTTAGCGCACTGTCGCGAGGT
+JC	553	.	NODE_12_length_110741_cov_15.264017	110487	1	NODE_27_length_57054_cov_15.850440	56927	-1	0	alignment_overlap=127	coverage_minus=3	coverage_plus=5	flanking_left=128	flanking_right=301	frequency=7.270e-01	junction_possible_overlap_registers=83	key=NODE_12_length_110741_cov_15.264017__110487__1__NODE_27_length_57054_cov_15.850440__57054__-1__127____128__301__0__0	max_left=81	max_left_minus=66	max_left_plus=81	max_min_left=81	max_min_left_minus=39	max_min_left_plus=81	max_min_right=26	max_min_right_minus=26	max_min_right_plus=0	max_pos_hash_score=168	max_right=156	max_right_minus=146	max_right_plus=156	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=0.68	new_junction_read_count=10	polymorphism_frequency=7.270e-01	pos_hash_score=7	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	554	.	NODE_12_length_110741_cov_15.264017	110488	1	NODE_17_length_101305_cov_14.841270	127	1	0	alignment_overlap=126	coverage_minus=4	coverage_plus=11	flanking_left=128	flanking_right=301	frequency=1	junction_possible_overlap_registers=84	key=NODE_12_length_110741_cov_15.264017__110488__1__NODE_17_length_101305_cov_14.841270__1__1__126____128__301__0__0	max_left=128	max_left_minus=110	max_left_plus=128	max_min_left=84	max_min_left_minus=77	max_min_left_plus=84	max_min_right=65	max_min_right_minus=65	max_min_right_plus=47	max_pos_hash_score=170	max_right=162	max_right_minus=79	max_right_plus=162	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.29	new_junction_read_count=18	polymorphism_frequency=8.257e-01	pos_hash_score=15	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=15
+JC	555	.	NODE_12_length_110741_cov_15.264017	110488	1	NODE_20_length_91803_cov_13.571807	125	1	0	alignment_overlap=124	coverage_minus=9	coverage_plus=6	flanking_left=130	flanking_right=301	frequency=1	junction_possible_overlap_registers=86	key=NODE_12_length_110741_cov_15.264017__110488__1__NODE_20_length_91803_cov_13.571807__1__1__124____130__301__0__0	max_left=127	max_left_minus=127	max_left_plus=58	max_min_left=68	max_min_left_minus=68	max_min_left_plus=58	max_min_right=86	max_min_right_minus=86	max_min_right_plus=0	max_pos_hash_score=174	max_right=173	max_right_minus=166	max_right_plus=173	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.26	new_junction_read_count=17	polymorphism_frequency=8.138e-01	pos_hash_score=13	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=15
+JC	556	.	NODE_12_length_110741_cov_15.264017	110488	1	NODE_25_length_66569_cov_15.079347	66445	-1	0	alignment_overlap=124	coverage_minus=6	coverage_plus=10	flanking_left=130	flanking_right=301	frequency=1	junction_possible_overlap_registers=86	key=NODE_12_length_110741_cov_15.264017__110488__1__NODE_25_length_66569_cov_15.079347__66569__-1__124____130__301__0__0	max_left=122	max_left_minus=122	max_left_plus=114	max_min_left=83	max_min_left_minus=70	max_min_left_plus=83	max_min_right=81	max_min_right_minus=67	max_min_right_plus=81	max_pos_hash_score=174	max_right=166	max_right_minus=107	max_right_plus=166	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.11	new_junction_read_count=16	polymorphism_frequency=8.044e-01	pos_hash_score=15	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=16
+JC	557	.	NODE_12_length_110741_cov_15.264017	110488	1	NODE_35_length_47249_cov_15.872607	125	1	0	alignment_overlap=124	coverage_minus=11	coverage_plus=14	flanking_left=130	flanking_right=301	frequency=1	junction_possible_overlap_registers=86	key=NODE_12_length_110741_cov_15.264017__110488__1__NODE_35_length_47249_cov_15.872607__1__1__124____130__301__0__0	max_left=113	max_left_minus=96	max_left_plus=113	max_min_left=76	max_min_left_minus=76	max_min_left_plus=41	max_min_right=81	max_min_right_minus=81	max_min_right_plus=79	max_pos_hash_score=174	max_right=148	max_right_minus=148	max_right_plus=148	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.80	new_junction_read_count=26	polymorphism_frequency=8.698e-01	pos_hash_score=22	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=25
+JC	558	.	NODE_12_length_110741_cov_15.264017	110488	1	NODE_39_length_44291_cov_16.995834	298	-1	0	alignment_overlap=1	coverage_minus=7	coverage_plus=8	flanking_left=253	flanking_right=298	frequency=4.269e-01	junction_possible_overlap_registers=209	key=NODE_12_length_110741_cov_15.264017__110488__1__NODE_39_length_44291_cov_16.995834__299__-1__1____253__298__0__0	max_left=253	max_left_minus=228	max_left_plus=253	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=133	max_min_right_minus=133	max_min_right_plus=126	max_pos_hash_score=420	max_right=133	max_right_minus=133	max_right_plus=126	neg_log10_pos_hash_p_value=0.8	new_junction_coverage=0.84	new_junction_read_count=32	polymorphism_frequency=4.269e-01	pos_hash_score=15	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.59	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=67	side_2_redundant=0	total_non_overlap_reads=15
+JC	559	.	NODE_12_length_110741_cov_15.264017	110488	1	NODE_93_length_5868_cov_13.626720	127	1	0	alignment_overlap=126	coverage_minus=5	coverage_plus=3	flanking_left=128	flanking_right=301	frequency=6.780e-01	junction_possible_overlap_registers=84	key=NODE_12_length_110741_cov_15.264017__110488__1__NODE_93_length_5868_cov_13.626720__1__1__126____128__301__0__0	max_left=115	max_left_minus=115	max_left_plus=90	max_min_left=74	max_min_left_minus=74	max_min_left_plus=68	max_min_right=84	max_min_right_minus=71	max_min_right_plus=84	max_pos_hash_score=170	max_right=106	max_right_minus=90	max_right_plus=106	neg_log10_pos_hash_p_value=0.5	new_junction_coverage=0.60	new_junction_read_count=8	polymorphism_frequency=6.780e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	560	.	NODE_12_length_110741_cov_15.264017	110496	1	NODE_79_length_12438_cov_13.711153	12321	-1	0	alignment_overlap=117	coverage_minus=3	coverage_plus=3	flanking_left=129	flanking_right=301	frequency=5.878e-01	junction_possible_overlap_registers=93	key=NODE_12_length_110741_cov_15.264017__110496__1__NODE_79_length_12438_cov_13.711153__12438__-1__117____129__301__0__0	max_left=111	max_left_minus=100	max_left_plus=111	max_min_left=80	max_min_left_minus=80	max_min_left_plus=19	max_min_right=84	max_min_right_minus=84	max_min_right_plus=72	max_pos_hash_score=188	max_right=163	max_right_minus=115	max_right_plus=163	neg_log10_pos_hash_p_value=0.8	new_junction_coverage=0.39	new_junction_read_count=6	polymorphism_frequency=5.878e-01	pos_hash_score=6	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.55	side_1_overlap=117	side_1_possible_overlap_registers=210	side_1_read_count=19	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=93	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=6
+JC	561	.	NODE_12_length_110741_cov_15.264017	110591	1	NODE_69_length_16640_cov_15.272270	16617	-1	0	alignment_overlap=23	coverage_minus=1	coverage_plus=4	flanking_left=128	flanking_right=301	frequency=7.238e-01	junction_possible_overlap_registers=187	key=NODE_12_length_110741_cov_15.264017__110591__1__NODE_69_length_16640_cov_15.272270__16640__-1__23____128__301__0__0	max_left=96	max_left_minus=96	max_left_plus=95	max_min_left=96	max_min_left_minus=96	max_min_left_plus=95	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=376	max_right=222	max_right_minus=159	max_right_plus=222	neg_log10_pos_hash_p_value=2.3	new_junction_coverage=0.23	new_junction_read_count=7	polymorphism_frequency=7.238e-01	pos_hash_score=4	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.17	side_1_overlap=23	side_1_possible_overlap_registers=210	side_1_read_count=6	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=187	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=5
+JC	562	.	NODE_12_length_110741_cov_15.264017	110612	1	NODE_33_length_47526_cov_14.069959	47524	-1	0	alignment_overlap=2	coverage_minus=8	coverage_plus=7	flanking_left=128	flanking_right=301	frequency=1	junction_possible_overlap_registers=208	key=NODE_12_length_110741_cov_15.264017__110612__1__NODE_33_length_47526_cov_14.069959__47526__-1__2____128__301__0__0	max_left=126	max_left_minus=108	max_left_plus=126	max_min_left=126	max_min_left_minus=108	max_min_left_plus=126	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=418	max_right=247	max_right_minus=242	max_right_plus=247	neg_log10_pos_hash_p_value=0.9	new_junction_coverage=1.20	new_junction_read_count=40	polymorphism_frequency=9.309e-01	pos_hash_score=14	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.17	side_1_overlap=2	side_1_possible_overlap_registers=210	side_1_read_count=6	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=208	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=15
+JC	563	.	NODE_12_length_110741_cov_15.264017	110615	1	NODE_56_length_25922_cov_15.201628	1	1	0	alignment_overlap=0	coverage_minus=50	coverage_plus=48	flanking_left=127	flanking_right=301	frequency=1	junction_possible_overlap_registers=210	key=NODE_12_length_110741_cov_15.264017__110615__1__NODE_56_length_25922_cov_15.201628__1__1__0____127__301__0__0	max_left=127	max_left_minus=126	max_left_plus=127	max_min_left=126	max_min_left_minus=126	max_min_left_plus=102	max_min_right=102	max_min_right_minus=100	max_min_right_plus=102	max_pos_hash_score=422	max_right=250	max_right_minus=250	max_right_plus=229	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=4.21	new_junction_read_count=148	polymorphism_frequency=9.801e-01	pos_hash_score=63	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.17	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=6	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=98
+JC	564	.	NODE_13_length_103247_cov_14.490700	102884	1	NODE_13_length_103247_cov_14.490700	103183	-1	0	alignment_overlap=64	coverage_minus=6	coverage_plus=3	flanking_left=300	flanking_right=301	frequency=5.027e-01	junction_possible_overlap_registers=146	key=NODE_13_length_103247_cov_14.490700__102884__1__NODE_13_length_103247_cov_14.490700__103247__-1__64____300__301__0__0	max_left=50	max_left_minus=50	max_left_plus=50	max_min_left=13	max_min_left_minus=13	max_min_left_plus=0	max_min_right=27	max_min_right_minus=27	max_min_right_plus=27	max_pos_hash_score=294	max_right=233	max_right_minus=233	max_right_plus=27	neg_log10_pos_hash_p_value=1.2	new_junction_coverage=0.53	new_junction_read_count=13	polymorphism_frequency=5.027e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.05	side_1_overlap=64	side_1_possible_overlap_registers=210	side_1_read_count=37	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=146	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
+JC	565	.	NODE_14_length_103178_cov_15.034750	79	-1	NODE_55_length_26213_cov_16.694242	26213	-1	0	alignment_overlap=41	coverage_minus=6	coverage_plus=2	flanking_left=79	flanking_right=301	frequency=1	junction_possible_overlap_registers=169	key=NODE_14_length_103178_cov_15.034750__120__-1__NODE_55_length_26213_cov_16.694242__26213__-1__41____79__301__1__0	max_left=79	max_left_minus=77	max_left_plus=79	max_min_left=79	max_min_left_minus=77	max_min_left_plus=79	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=340	max_right=241	max_right_minus=241	max_right_plus=173	neg_log10_pos_hash_p_value=1.6	new_junction_coverage=0.55	new_junction_read_count=17	polymorphism_frequency=1.000e+00	pos_hash_score=8	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=41	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	566	.	NODE_15_length_101355_cov_14.151885	327	-1	NODE_18_length_96021_cov_13.512201	95895	-1	0	alignment_overlap=126	coverage_minus=7	coverage_plus=5	flanking_left=201	flanking_right=301	frequency=4.348e-01	junction_possible_overlap_registers=84	key=NODE_15_length_101355_cov_14.151885__327__-1__NODE_18_length_96021_cov_13.512201__96021__-1__126____201__301__0__0	max_left=94	max_left_minus=94	max_left_plus=70	max_min_left=83	max_min_left_minus=83	max_min_left_plus=70	max_min_right=66	max_min_right_minus=66	max_min_right_plus=26	max_pos_hash_score=170	max_right=133	max_right_minus=114	max_right_plus=133	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=0.93	new_junction_read_count=12	polymorphism_frequency=4.348e-01	pos_hash_score=11	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.35	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=78	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=12
+JC	567	.	NODE_15_length_101355_cov_14.151885	327	-1	NODE_72_length_15467_cov_17.402086	15340	-1	0	alignment_overlap=127	coverage_minus=4	coverage_plus=5	flanking_left=200	flanking_right=301	frequency=3.935e-01	junction_possible_overlap_registers=83	key=NODE_15_length_101355_cov_14.151885__327__-1__NODE_72_length_15467_cov_17.402086__15467__-1__127____200__301__0__0	max_left=123	max_left_minus=82	max_left_plus=123	max_min_left=82	max_min_left_minus=82	max_min_left_plus=47	max_min_right=62	max_min_right_minus=0	max_min_right_plus=62	max_pos_hash_score=168	max_right=163	max_right_minus=125	max_right_plus=163	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=0.69	new_junction_read_count=10	polymorphism_frequency=3.935e-01	pos_hash_score=9	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.35	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=78	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
+JC	568	.	NODE_15_length_101355_cov_14.151885	328	-1	NODE_51_length_30791_cov_13.838932	30664	-1	0	alignment_overlap=127	coverage_minus=13	coverage_plus=13	flanking_left=201	flanking_right=301	frequency=6.278e-01	junction_possible_overlap_registers=83	key=NODE_15_length_101355_cov_14.151885__328__-1__NODE_51_length_30791_cov_13.838932__30791__-1__127____201__301__0__0	max_left=160	max_left_minus=153	max_left_plus=160	max_min_left=83	max_min_left_minus=64	max_min_left_plus=83	max_min_right=74	max_min_right_minus=74	max_min_right_plus=74	max_pos_hash_score=168	max_right=161	max_right_minus=145	max_right_plus=161	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.97	new_junction_read_count=26	polymorphism_frequency=6.278e-01	pos_hash_score=23	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.35	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=78	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=26
+JC	569	.	NODE_15_length_101355_cov_14.151885	101355	-1	NODE_67_length_17417_cov_16.557604	17321	1	0	alignment_overlap=126	coverage_minus=9	coverage_plus=7	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=84	key=NODE_15_length_101355_cov_14.151885__101355__-1__NODE_67_length_17417_cov_16.557604__17195__1__126____301__97__0__0	max_left=152	max_left_minus=152	max_left_plus=139	max_min_left=84	max_min_left_minus=84	max_min_left_plus=78	max_min_right=81	max_min_right_minus=63	max_min_right_plus=81	max_pos_hash_score=170	max_right=97	max_right_minus=97	max_right_plus=96	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.39	new_junction_read_count=22	polymorphism_frequency=1.000e+00	pos_hash_score=16	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=16
+JC	570	.	NODE_16_length_101228_cov_13.975534	1	1	NODE_77_length_12679_cov_15.989006	22	-1	-69	alignment_overlap=-69	coverage_minus=5	coverage_plus=1	flanking_left=301	flanking_right=22	frequency=1	junction_possible_overlap_registers=141	key=NODE_16_length_101228_cov_13.975534__1__1__NODE_77_length_12679_cov_15.989006__22__-1__-69__TTCAGGTTATGCCGCTCAATTCGCTGCGTATATCGCTTGCTGATTACGTGCAGCTTTCCCTTCAGGCGG__301__22__0__1	max_left=226	max_left_minus=226	max_left_plus=208	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=9	max_min_right_minus=9	max_min_right_plus=9	max_pos_hash_score=284	max_right=9	max_right_minus=9	max_right_plus=9	neg_log10_pos_hash_p_value=1.8	new_junction_coverage=0.32	new_junction_read_count=8	polymorphism_frequency=1.000e+00	pos_hash_score=5	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=6	unique_read_sequence=TTCAGGTTATGCCGCTCAATTCGCTGCGTATATCGCTTGCTGATTACGTGCAGCTTTCCCTTCAGGCGG
+JC	571	.	NODE_19_length_95039_cov_14.544662	69424	1	NODE_42_length_40690_cov_13.862091	35	1	0	alignment_overlap=34	coverage_minus=23	coverage_plus=31	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=176	key=NODE_19_length_95039_cov_14.544662__69424__1__NODE_42_length_40690_cov_13.862091__1__1__34____301__301__0__0	max_left=264	max_left_minus=264	max_left_plus=258	max_min_left=119	max_min_left_minus=119	max_min_left_plus=116	max_min_right=101	max_min_right_minus=101	max_min_right_plus=85	max_pos_hash_score=354	max_right=211	max_right_minus=185	max_right_plus=211	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=3.82	new_junction_read_count=119	polymorphism_frequency=8.606e-01	pos_hash_score=46	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.13	side_1_overlap=34	side_1_possible_overlap_registers=210	side_1_read_count=46	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=176	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=54
+JC	572	.	NODE_19_length_95039_cov_14.544662	69440	1	NODE_54_length_26467_cov_16.661465	13	1	-3	alignment_overlap=-3	coverage_minus=4	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=2.916e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69440__1__NODE_54_length_26467_cov_16.661465__13__1__-3__CGG__301__301__0__0	max_left=143	max_left_minus=123	max_left_plus=143	max_min_left=143	max_min_left_minus=123	max_min_left_plus=143	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=198	max_right_minus=198	max_right_plus=195	neg_log10_pos_hash_p_value=2.5	new_junction_coverage=0.36	new_junction_read_count=14	polymorphism_frequency=2.916e-01	pos_hash_score=6	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.58	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=64	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.13	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=5	side_2_redundant=0	total_non_overlap_reads=6	unique_read_sequence=CGG
+JC	573	.	NODE_19_length_95039_cov_14.544662	69440	1	NODE_64_length_19814_cov_16.454158	37	1	-3	alignment_overlap=-3	coverage_minus=4	coverage_plus=6	flanking_left=301	flanking_right=301	frequency=1.935e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69440__1__NODE_64_length_19814_cov_16.454158__37__1__-3__CGG__301__301__0__0	max_left=145	max_left_minus=123	max_left_plus=145	max_min_left=145	max_min_left_minus=123	max_min_left_plus=145	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=233	max_right_minus=209	max_right_plus=233	neg_log10_pos_hash_p_value=1.7	new_junction_coverage=0.27	new_junction_read_count=11	polymorphism_frequency=1.935e-01	pos_hash_score=10	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.58	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=64	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.71	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=29	side_2_redundant=0	total_non_overlap_reads=10	unique_read_sequence=CGG
+JC	574	.	NODE_19_length_95039_cov_14.544662	69440	1	NODE_70_length_15614_cov_13.589075	12	1	-3	alignment_overlap=-3	coverage_minus=7	coverage_plus=6	flanking_left=301	flanking_right=301	frequency=3.365e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69440__1__NODE_70_length_15614_cov_13.589075__12__1__-3__CGG__301__301__0__0	max_left=155	max_left_minus=155	max_left_plus=127	max_min_left=144	max_min_left_minus=144	max_min_left_plus=127	max_min_right=151	max_min_right_minus=151	max_min_right_plus=0	max_pos_hash_score=416	max_right=242	max_right_minus=242	max_right_plus=237	neg_log10_pos_hash_p_value=1.2	new_junction_coverage=0.50	new_junction_read_count=18	polymorphism_frequency=3.365e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.58	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=64	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.25	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=8	side_2_redundant=0	total_non_overlap_reads=13	unique_read_sequence=CGG
+JC	575	.	NODE_19_length_95039_cov_14.544662	69440	1	NODE_71_length_15514_cov_16.357120	15502	-1	-3	alignment_overlap=-3	coverage_minus=4	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=1.998e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69440__1__NODE_71_length_15514_cov_16.357120__15502__-1__-3__CGG__301__301__0__0	max_left=119	max_left_minus=119	max_left_plus=119	max_min_left=119	max_min_left_minus=119	max_min_left_plus=119	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=244	max_right_minus=244	max_right_plus=189	neg_log10_pos_hash_p_value=1.8	new_junction_coverage=0.21	new_junction_read_count=8	polymorphism_frequency=1.998e-01	pos_hash_score=8	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.58	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=64	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.03	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=8	unique_read_sequence=CGG
+JC	576	.	NODE_19_length_95039_cov_14.544662	69440	1	NODE_90_length_6611_cov_21.446175	6599	-1	-3	alignment_overlap=-3	coverage_minus=2	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=1.066e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69440__1__NODE_90_length_6611_cov_21.446175__6599__-1__-3__CGG__301__301__0__0	max_left=136	max_left_minus=136	max_left_plus=117	max_min_left=136	max_min_left_minus=136	max_min_left_plus=117	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=245	max_right_minus=245	max_right_plus=225	neg_log10_pos_hash_p_value=3.1	new_junction_coverage=0.09	new_junction_read_count=4	polymorphism_frequency=1.066e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.58	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=64	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.08	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=4	side_2_redundant=0	total_non_overlap_reads=4	unique_read_sequence=CGG
+JC	577	.	NODE_19_length_95039_cov_14.544662	69453	1	NODE_31_length_54289_cov_15.493963	54283	-1	0	alignment_overlap=6	coverage_minus=2	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=2.296e-01	junction_possible_overlap_registers=204	key=NODE_19_length_95039_cov_14.544662__69453__1__NODE_31_length_54289_cov_15.493963__54289__-1__6____301__301__0__0	max_left=130	max_left_minus=130	max_left_plus=103	max_min_left=130	max_min_left_minus=130	max_min_left_plus=103	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=410	max_right=253	max_right_minus=191	max_right_plus=253	neg_log10_pos_hash_p_value=2.6	new_junction_coverage=0.29	new_junction_read_count=11	polymorphism_frequency=2.296e-01	pos_hash_score=5	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.87	side_1_overlap=6	side_1_possible_overlap_registers=210	side_1_read_count=76	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=204	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=5
+JC	578	.	NODE_19_length_95039_cov_14.544662	69453	1	NODE_63_length_20046_cov_15.377931	20043	-1	0	alignment_overlap=3	coverage_minus=3	coverage_plus=5	flanking_left=301	flanking_right=301	frequency=3.365e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69453__1__NODE_63_length_20046_cov_15.377931__20046__-1__3____301__301__0__0	max_left=134	max_left_minus=134	max_left_plus=131	max_min_left=134	max_min_left_minus=134	max_min_left_plus=131	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=270	max_right_minus=270	max_right_plus=238	neg_log10_pos_hash_p_value=2.1	new_junction_coverage=0.50	new_junction_read_count=19	polymorphism_frequency=3.365e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.87	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=76	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=207	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	579	.	NODE_19_length_95039_cov_14.544662	69453	1	NODE_68_length_16873_cov_16.542458	4	1	0	alignment_overlap=3	coverage_minus=1	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=3.592e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69453__1__NODE_68_length_16873_cov_16.542458__1__1__3____301__301__0__0	max_left=6	max_left_minus=6	max_left_plus=3	max_min_left=6	max_min_left_minus=6	max_min_left_plus=3	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=292	max_right_minus=209	max_right_plus=292	neg_log10_pos_hash_p_value=3.5	new_junction_coverage=0.53	new_junction_read_count=21	polymorphism_frequency=3.592e-01	pos_hash_score=3	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.87	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=76	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=207	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=3
+JC	580	.	NODE_19_length_95039_cov_14.544662	69453	1	NODE_84_length_8933_cov_13.067227	5	1	0	alignment_overlap=4	coverage_minus=64	coverage_plus=67	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=206	key=NODE_19_length_95039_cov_14.544662__69453__1__NODE_84_length_8933_cov_13.067227__1__1__4____301__301__0__0	max_left=288	max_left_minus=288	max_left_plus=278	max_min_left=105	max_min_left_minus=105	max_min_left_plus=35	max_min_right=128	max_min_right_minus=128	max_min_right_plus=115	max_pos_hash_score=414	max_right=273	max_right_minus=209	max_right_plus=273	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=5.09	new_junction_read_count=191	polymorphism_frequency=8.367e-01	pos_hash_score=68	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.87	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=76	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=131
+JC	581	.	NODE_19_length_95039_cov_14.544662	69453	1	NODE_90_length_6611_cov_21.446175	4	1	0	alignment_overlap=3	coverage_minus=4	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=2.107e-01	junction_possible_overlap_registers=207	key=NODE_19_length_95039_cov_14.544662__69453__1__NODE_90_length_6611_cov_21.446175__1__1__3____301__301__0__0	max_left=104	max_left_minus=102	max_left_plus=104	max_min_left=104	max_min_left_minus=102	max_min_left_plus=104	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=289	max_right_minus=239	max_right_plus=289	neg_log10_pos_hash_p_value=2.1	new_junction_coverage=0.22	new_junction_read_count=10	polymorphism_frequency=2.107e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.87	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=76	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=207	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	582	.	NODE_19_length_95039_cov_14.544662	69993	-1	NODE_33_length_47526_cov_14.069959	22	1	0	alignment_overlap=21	coverage_minus=4	coverage_plus=5	flanking_left=301	flanking_right=301	frequency=2.980e-01	junction_possible_overlap_registers=189	key=NODE_19_length_95039_cov_14.544662__69993__-1__NODE_33_length_47526_cov_14.069959__1__1__21____301__301__0__0	max_left=66	max_left_minus=41	max_left_plus=66	max_min_left=66	max_min_left_minus=41	max_min_left_plus=66	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=380	max_right=253	max_right_minus=245	max_right_plus=253	neg_log10_pos_hash_p_value=1.5	new_junction_coverage=0.51	new_junction_read_count=17	polymorphism_frequency=2.980e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.20	side_1_overlap=21	side_1_possible_overlap_registers=210	side_1_read_count=89	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=189	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
+JC	583	.	NODE_19_length_95039_cov_14.544662	69993	-1	NODE_36_length_47173_cov_14.140182	22	1	0	alignment_overlap=21	coverage_minus=53	coverage_plus=67	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=189	key=NODE_19_length_95039_cov_14.544662__69993__-1__NODE_36_length_47173_cov_14.140182__1__1__21____301__301__0__0	max_left=272	max_left_minus=272	max_left_plus=266	max_min_left=124	max_min_left_minus=114	max_min_left_plus=124	max_min_right=116	max_min_right_minus=107	max_min_right_plus=116	max_pos_hash_score=380	max_right=266	max_right_minus=259	max_right_plus=266	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=5.07	new_junction_read_count=167	polymorphism_frequency=8.066e-01	pos_hash_score=88	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.20	side_1_overlap=21	side_1_possible_overlap_registers=210	side_1_read_count=89	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=189	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=120
+JC	584	.	NODE_19_length_95039_cov_14.544662	69993	-1	NODE_42_length_40690_cov_13.862091	40670	-1	0	alignment_overlap=20	coverage_minus=6	coverage_plus=6	flanking_left=301	flanking_right=301	frequency=3.636e-01	junction_possible_overlap_registers=190	key=NODE_19_length_95039_cov_14.544662__69993__-1__NODE_42_length_40690_cov_13.862091__40690__-1__20____301__301__0__0	max_left=161	max_left_minus=103	max_left_plus=161	max_min_left=103	max_min_left_minus=103	max_min_left_plus=67	max_min_right=120	max_min_right_minus=0	max_min_right_plus=120	max_pos_hash_score=382	max_right=224	max_right_minus=224	max_right_plus=213	neg_log10_pos_hash_p_value=1.2	new_junction_coverage=0.68	new_junction_read_count=23	polymorphism_frequency=3.636e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.20	side_1_overlap=20	side_1_possible_overlap_registers=210	side_1_read_count=89	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=190	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=12
+JC	585	.	NODE_19_length_95039_cov_14.544662	69996	-1	NODE_24_length_67417_cov_14.021177	23	1	0	alignment_overlap=22	coverage_minus=98	coverage_plus=93	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=188	key=NODE_19_length_95039_cov_14.544662__69996__-1__NODE_24_length_67417_cov_14.021177__1__1__22____301__301__0__0	max_left=275	max_left_minus=275	max_left_plus=273	max_min_left=91	max_min_left_minus=48	max_min_left_plus=91	max_min_right=113	max_min_right_minus=102	max_min_right_plus=113	max_pos_hash_score=378	max_right=270	max_right_minus=257	max_right_plus=270	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=11.14	new_junction_read_count=366	polymorphism_frequency=9.048e-01	pos_hash_score=90	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=2.12	side_1_overlap=22	side_1_possible_overlap_registers=210	side_1_read_count=86	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=188	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=191
+JC	586	.	NODE_19_length_95039_cov_14.544662	70100	-1	NODE_59_length_24902_cov_17.459859	24112	-1	0	alignment_overlap=1	coverage_minus=4	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=1.119e-01	junction_possible_overlap_registers=209	key=NODE_19_length_95039_cov_14.544662__70100__-1__NODE_59_length_24902_cov_17.459859__24113__-1__1____301__301__0__0	max_left=243	max_left_minus=215	max_left_plus=243	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=87	max_min_right_minus=87	max_min_right_plus=73	max_pos_hash_score=420	max_right=87	max_right_minus=87	max_right_plus=73	neg_log10_pos_hash_p_value=2.8	new_junction_coverage=0.23	new_junction_read_count=10	polymorphism_frequency=1.119e-01	pos_hash_score=5	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.28	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=52	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=2.38	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=107	side_2_redundant=0	total_non_overlap_reads=8
+JC	587	.	NODE_20_length_91803_cov_13.571807	18657	1	NODE_20_length_91803_cov_13.571807	18827	1	0	alignment_overlap=8	coverage_minus=1	coverage_plus=2	flanking_left=301	flanking_right=301	frequency=1.361e-01	junction_possible_overlap_registers=202	key=NODE_20_length_91803_cov_13.571807__18657__1__NODE_20_length_91803_cov_13.571807__18819__1__8____301__301__0__0	max_left=78	max_left_minus=78	max_left_plus=78	max_min_left=1	max_min_left_minus=0	max_min_left_plus=1	max_min_right=68	max_min_right_minus=68	max_min_right_plus=68	max_pos_hash_score=406	max_right=291	max_right_minus=68	max_right_plus=291	neg_log10_pos_hash_p_value=3.2	new_junction_coverage=0.10	new_junction_read_count=3	polymorphism_frequency=1.361e-01	pos_hash_score=3	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.77	side_1_overlap=8	side_1_possible_overlap_registers=210	side_1_read_count=24	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.50	side_2_overlap=0	side_2_possible_overlap_registers=202	side_2_read_count=15	side_2_redundant=0	total_non_overlap_reads=3
+JC	588	.	NODE_22_length_71800_cov_14.700166	71800	-1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=125	coverage_minus=11	coverage_plus=6	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=85	key=NODE_22_length_71800_cov_14.700166__71800__-1__NODE_67_length_17417_cov_16.557604__17195__1__125____301__98__0__0	max_left=167	max_left_minus=114	max_left_plus=167	max_min_left=82	max_min_left_minus=82	max_min_left_plus=0	max_min_right=80	max_min_right_minus=80	max_min_right_plus=80	max_pos_hash_score=172	max_right=98	max_right_minus=98	max_right_plus=80	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=1.23	new_junction_read_count=20	polymorphism_frequency=1.000e+00	pos_hash_score=11	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=17
+JC	589	.	NODE_23_length_68402_cov_16.331424	68402	-1	NODE_4_length_134155_cov_14.571649	134063	1	0	alignment_overlap=5	coverage_minus=8	coverage_plus=5	flanking_left=301	flanking_right=93	frequency=5.750e-01	junction_possible_overlap_registers=205	key=NODE_23_length_68402_cov_16.331424__68402__-1__NODE_4_length_134155_cov_14.571649__134058__1__5____301__93__0__0	max_left=294	max_left_minus=253	max_left_plus=294	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=79	max_min_right_minus=79	max_min_right_plus=63	max_pos_hash_score=412	max_right=79	max_right_minus=79	max_right_plus=63	neg_log10_pos_hash_p_value=1.3	new_junction_coverage=0.64	new_junction_read_count=23	polymorphism_frequency=5.750e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=5	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.00	side_2_overlap=0	side_2_possible_overlap_registers=205	side_2_read_count=34	side_2_redundant=0	total_non_overlap_reads=13
+JC	590	.	NODE_25_length_66569_cov_15.079347	1	1	NODE_79_length_12438_cov_13.711153	124	-1	0	alignment_overlap=3	coverage_minus=2	coverage_plus=5	flanking_left=301	flanking_right=124	frequency=1	junction_possible_overlap_registers=207	key=NODE_25_length_66569_cov_15.079347__1__1__NODE_79_length_12438_cov_13.711153__127__-1__3____301__124__0__1	max_left=287	max_left_minus=253	max_left_plus=287	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=44	max_min_right_minus=44	max_min_right_plus=42	max_pos_hash_score=416	max_right=44	max_right_minus=44	max_right_plus=42	neg_log10_pos_hash_p_value=2.5	new_junction_coverage=0.60	new_junction_read_count=21	polymorphism_frequency=1.000e+00	pos_hash_score=5	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=repeat	side_2_continuation=0	side_2_coverage=NA	side_2_overlap=0	side_2_possible_overlap_registers=NA	side_2_read_count=NA	side_2_redundant=1	total_non_overlap_reads=7
+JC	591	.	NODE_26_length_58186_cov_16.047693	17	1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=7	coverage_plus=5	flanking_left=301	flanking_right=123	frequency=7.257e-01	junction_possible_overlap_registers=206	key=NODE_26_length_58186_cov_16.047693__17__1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=246	max_left_minus=215	max_left_plus=246	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=123	max_min_right_minus=123	max_min_right_plus=104	max_pos_hash_score=414	max_right=123	max_right_minus=123	max_right_plus=104	neg_log10_pos_hash_p_value=1.6	new_junction_coverage=0.31	new_junction_read_count=13	polymorphism_frequency=7.257e-01	pos_hash_score=11	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.23	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=9	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=12
+JC	592	.	NODE_27_length_57054_cov_15.850440	3227	1	NODE_39_length_44291_cov_16.995834	44162	1	0	alignment_overlap=0	coverage_minus=6	coverage_plus=4	flanking_left=301	flanking_right=130	frequency=2.500e-01	junction_possible_overlap_registers=210	key=NODE_27_length_57054_cov_15.850440__3227__1__NODE_39_length_44291_cov_16.995834__44162__1__0____301__130__0__0	max_left=292	max_left_minus=292	max_left_plus=232	max_min_left=123	max_min_left_minus=123	max_min_left_plus=1	max_min_right=130	max_min_right_minus=130	max_min_right_plus=84	max_pos_hash_score=422	max_right=130	max_right_minus=130	max_right_plus=123	neg_log10_pos_hash_p_value=1.6	new_junction_coverage=0.27	new_junction_read_count=11	polymorphism_frequency=2.500e-01	pos_hash_score=9	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.12	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=45	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.50	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=21	side_2_redundant=0	total_non_overlap_reads=10
+JC	593	.	NODE_28_length_56931_cov_14.380994	1	1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=125	coverage_minus=7	coverage_plus=2	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=85	key=NODE_28_length_56931_cov_14.380994__1__1__NODE_67_length_17417_cov_16.557604__17195__1__125____301__98__0__0	max_left=107	max_left_minus=107	max_left_plus=74	max_min_left=86	max_min_left_minus=86	max_min_left_plus=74	max_min_right=65	max_min_right_minus=65	max_min_right_plus=35	max_pos_hash_score=172	max_right=98	max_right_minus=98	max_right_plus=79	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=0.62	new_junction_read_count=10	polymorphism_frequency=1.000e+00	pos_hash_score=7	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
+JC	594	.	NODE_29_length_55434_cov_15.728913	55434	-1	NODE_5_length_126675_cov_12.099970	126371	1	0	alignment_overlap=126	coverage_minus=7	coverage_plus=8	flanking_left=301	flanking_right=301	frequency=7.234e-01	junction_possible_overlap_registers=84	key=NODE_29_length_55434_cov_15.728913__55434__-1__NODE_5_length_126675_cov_12.099970__126245__1__126____301__301__0__0	max_left=128	max_left_minus=128	max_left_plus=116	max_min_left=79	max_min_left_minus=71	max_min_left_plus=79	max_min_right=72	max_min_right_minus=72	max_min_right_plus=70	max_pos_hash_score=170	max_right=115	max_right_minus=94	max_right_plus=115	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.19	new_junction_read_count=17	polymorphism_frequency=7.234e-01	pos_hash_score=13	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=13	side_2_redundant=0	total_non_overlap_reads=15
+JC	595	.	NODE_30_length_54368_cov_15.321712	264	-1	NODE_85_length_8716_cov_15.515427	255	-1	0	alignment_overlap=0	coverage_minus=17	coverage_plus=13	flanking_left=264	flanking_right=255	frequency=4.800e-01	junction_possible_overlap_registers=210	key=NODE_30_length_54368_cov_15.321712__264__-1__NODE_85_length_8716_cov_15.515427__255__-1__0____264__255__0__0	max_left=264	max_left_minus=235	max_left_plus=264	max_min_left=136	max_min_left_minus=136	max_min_left_plus=132	max_min_right=48	max_min_right_minus=48	max_min_right_plus=37	max_pos_hash_score=422	max_right=244	max_right_minus=244	max_right_plus=168	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=1.11	new_junction_read_count=42	polymorphism_frequency=4.800e-01	pos_hash_score=27	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.44	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=51	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=40	side_2_redundant=0	total_non_overlap_reads=30
+JC	596	.	NODE_31_length_54289_cov_15.493963	18	1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=2	coverage_plus=3	flanking_left=301	flanking_right=123	frequency=1	junction_possible_overlap_registers=206	key=NODE_31_length_54289_cov_15.493963__18__1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=241	max_left_minus=203	max_left_plus=241	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=97	max_min_right_minus=97	max_min_right_plus=63	max_pos_hash_score=414	max_right=97	max_right_minus=97	max_right_plus=63	neg_log10_pos_hash_p_value=2.9	new_junction_coverage=0.17	new_junction_read_count=7	polymorphism_frequency=8.760e-01	pos_hash_score=4	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.03	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=5
+JC	597	.	NODE_32_length_51549_cov_13.273424	1	1	NODE_67_length_17417_cov_16.557604	17321	1	0	alignment_overlap=126	coverage_minus=9	coverage_plus=7	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=84	key=NODE_32_length_51549_cov_13.273424__1__1__NODE_67_length_17417_cov_16.557604__17195__1__126____301__97__0__0	max_left=164	max_left_minus=164	max_left_plus=143	max_min_left=77	max_min_left_minus=77	max_min_left_plus=20	max_min_right=79	max_min_right_minus=72	max_min_right_plus=79	max_pos_hash_score=170	max_right=97	max_right_minus=97	max_right_plus=79	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.15	new_junction_read_count=18	polymorphism_frequency=1.000e+00	pos_hash_score=15	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=16
+JC	598	.	NODE_35_length_47249_cov_15.872607	47233	-1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=2	coverage_plus=1	flanking_left=301	flanking_right=123	frequency=6.933e-01	junction_possible_overlap_registers=206	key=NODE_35_length_47249_cov_15.872607__47233__-1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=205	max_left_minus=205	max_left_plus=201	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=121	max_min_right_minus=121	max_min_right_plus=90	max_pos_hash_score=414	max_right=121	max_right_minus=121	max_right_plus=90	neg_log10_pos_hash_p_value=3.4	new_junction_coverage=0.25	new_junction_read_count=10	polymorphism_frequency=6.933e-01	pos_hash_score=3	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.22	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=8	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=3
+JC	599	.	NODE_37_length_46345_cov_16.260072	46345	-1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=125	coverage_minus=16	coverage_plus=12	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=85	key=NODE_37_length_46345_cov_16.260072__46345__-1__NODE_67_length_17417_cov_16.557604__17195__1__125____301__98__0__0	max_left=168	max_left_minus=168	max_left_plus=141	max_min_left=70	max_min_left_minus=70	max_min_left_plus=11	max_min_right=80	max_min_right_minus=78	max_min_right_plus=80	max_pos_hash_score=172	max_right=98	max_right_minus=98	max_right_plus=88	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=3.00	new_junction_read_count=52	polymorphism_frequency=1.000e+00	pos_hash_score=22	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=28
+JC	600	.	NODE_38_length_44979_cov_14.853875	296	1	NODE_82_length_10033_cov_18.448819	9613	1	0	alignment_overlap=1	coverage_minus=8	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=4.256e-01	junction_possible_overlap_registers=209	key=NODE_38_length_44979_cov_14.853875__296__1__NODE_82_length_10033_cov_18.448819__9612__1__1____301__301__0__0	max_left=162	max_left_minus=162	max_left_plus=146	max_min_left=146	max_min_left_minus=99	max_min_left_plus=146	max_min_right=138	max_min_right_minus=138	max_min_right_plus=0	max_pos_hash_score=420	max_right=267	max_right_minus=267	max_right_plus=196	neg_log10_pos_hash_p_value=1.7	new_junction_coverage=0.60	new_junction_read_count=27	polymorphism_frequency=4.256e-01	pos_hash_score=11	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.71	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=26	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.88	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=47	side_2_redundant=0	total_non_overlap_reads=12
+JC	601	.	NODE_38_length_44979_cov_14.853875	44964	-1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=5	coverage_plus=3	flanking_left=301	flanking_right=123	frequency=1	junction_possible_overlap_registers=206	key=NODE_38_length_44979_cov_14.853875__44964__-1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=223	max_left_minus=214	max_left_plus=223	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=123	max_min_right_minus=123	max_min_right_plus=89	max_pos_hash_score=414	max_right=123	max_right_minus=123	max_right_plus=89	neg_log10_pos_hash_p_value=2.3	new_junction_coverage=0.20	new_junction_read_count=8	polymorphism_frequency=8.898e-01	pos_hash_score=7	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.03	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=8
+JC	602	.	NODE_39_length_44291_cov_16.995834	290	1	NODE_4_length_134155_cov_14.571649	133937	1	0	alignment_overlap=0	coverage_minus=0	coverage_plus=4	flanking_left=301	flanking_right=219	frequency=1.455e-01	junction_possible_overlap_registers=210	key=NODE_39_length_44291_cov_16.995834__290__1__NODE_4_length_134155_cov_14.571649__133937__1__0____301__219__0__0	max_left=2	max_left_minus=0	max_left_plus=2	max_min_left=2	max_min_left_minus=0	max_min_left_plus=2	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=422	max_right=207	max_right_minus=0	max_right_plus=207	neg_log10_pos_hash_p_value=2.4	new_junction_coverage=0.21	new_junction_read_count=8	polymorphism_frequency=1.455e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.73	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=73	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.60	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=21	side_2_redundant=0	total_non_overlap_reads=4
+JC	603	.	NODE_40_length_43453_cov_15.657365	43453	-1	NODE_67_length_17417_cov_16.557604	17321	1	0	alignment_overlap=126	coverage_minus=8	coverage_plus=3	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=84	key=NODE_40_length_43453_cov_15.657365__43453__-1__NODE_67_length_17417_cov_16.557604__17195__1__126____301__97__0__0	max_left=131	max_left_minus=131	max_left_plus=86	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=79	max_min_right_minus=79	max_min_right_plus=52	max_pos_hash_score=170	max_right=79	max_right_minus=79	max_right_plus=52	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=0.80	new_junction_read_count=13	polymorphism_frequency=1.000e+00	pos_hash_score=9	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=11
+JC	604	.	NODE_41_length_43009_cov_14.470174	1	1	NODE_85_length_8716_cov_15.515427	127	-1	-3	alignment_overlap=-3	coverage_minus=147	coverage_plus=156	flanking_left=301	flanking_right=127	frequency=1	junction_possible_overlap_registers=207	key=NODE_41_length_43009_cov_14.470174__1__1__NODE_85_length_8716_cov_15.515427__127__-1__-3__CTG__301__127__0__0	max_left=273	max_left_minus=273	max_left_plus=257	max_min_left=111	max_min_left_minus=109	max_min_left_plus=111	max_min_right=97	max_min_right_minus=97	max_min_right_plus=95	max_pos_hash_score=416	max_right=127	max_right_minus=127	max_right_plus=123	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=11.67	new_junction_read_count=428	polymorphism_frequency=9.720e-01	pos_hash_score=108	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.62	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=25	side_2_redundant=0	total_non_overlap_reads=303	unique_read_sequence=CTG
+JC	605	.	NODE_41_length_43009_cov_14.470174	43009	-1	NODE_4_length_134155_cov_14.571649	134064	1	0	alignment_overlap=35	coverage_minus=8	coverage_plus=8	flanking_left=301	flanking_right=92	frequency=5.405e-01	junction_possible_overlap_registers=175	key=NODE_41_length_43009_cov_14.470174__43009__-1__NODE_4_length_134155_cov_14.571649__134029__1__35____301__92__0__0	max_left=261	max_left_minus=261	max_left_plus=229	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=92	max_min_right_minus=92	max_min_right_plus=78	max_pos_hash_score=352	max_right=92	max_right_minus=92	max_right_plus=78	neg_log10_pos_hash_p_value=0.9	new_junction_coverage=0.69	new_junction_read_count=20	polymorphism_frequency=5.405e-01	pos_hash_score=13	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=35	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.17	side_2_overlap=0	side_2_possible_overlap_registers=175	side_2_read_count=34	side_2_redundant=0	total_non_overlap_reads=16
+JC	606	.	NODE_45_length_35052_cov_14.023908	35052	-1	NODE_67_length_17417_cov_16.557604	17321	1	0	alignment_overlap=126	coverage_minus=4	coverage_plus=3	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=84	key=NODE_45_length_35052_cov_14.023908__35052__-1__NODE_67_length_17417_cov_16.557604__17195__1__126____301__97__0__0	max_left=138	max_left_minus=104	max_left_plus=138	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=71	max_min_right_minus=71	max_min_right_plus=67	max_pos_hash_score=170	max_right=71	max_right_minus=71	max_right_plus=67	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=0.62	new_junction_read_count=10	polymorphism_frequency=1.000e+00	pos_hash_score=7	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=7
+JC	607	.	NODE_46_length_34516_cov_15.055308	1	1	NODE_67_length_17417_cov_16.557604	17319	1	0	alignment_overlap=124	coverage_minus=8	coverage_plus=6	flanking_left=301	flanking_right=99	frequency=1	junction_possible_overlap_registers=86	key=NODE_46_length_34516_cov_15.055308__1__1__NODE_67_length_17417_cov_16.557604__17195__1__124____301__99__0__0	max_left=158	max_left_minus=157	max_left_plus=158	max_min_left=85	max_min_left_minus=85	max_min_left_plus=78	max_min_right=81	max_min_right_minus=72	max_min_right_plus=81	max_pos_hash_score=174	max_right=98	max_right_minus=89	max_right_plus=98	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=1.01	new_junction_read_count=17	polymorphism_frequency=1.000e+00	pos_hash_score=13	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=14
+JC	608	.	NODE_46_length_34516_cov_15.055308	34516	-1	NODE_67_length_17417_cov_16.557604	17321	1	0	alignment_overlap=126	coverage_minus=12	coverage_plus=6	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=84	key=NODE_46_length_34516_cov_15.055308__34516__-1__NODE_67_length_17417_cov_16.557604__17195__1__126____301__97__0__0	max_left=125	max_left_minus=125	max_left_plus=80	max_min_left=81	max_min_left_minus=81	max_min_left_plus=79	max_min_right=85	max_min_right_minus=85	max_min_right_plus=36	max_pos_hash_score=170	max_right=97	max_right_minus=97	max_right_plus=96	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.28	new_junction_read_count=21	polymorphism_frequency=1.000e+00	pos_hash_score=17	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=18
+JC	609	.	NODE_47_length_33776_cov_12.835270	33776	-1	NODE_4_length_134155_cov_14.571649	134062	1	0	alignment_overlap=4	coverage_minus=3	coverage_plus=4	flanking_left=301	flanking_right=94	frequency=3.929e-01	junction_possible_overlap_registers=206	key=NODE_47_length_33776_cov_12.835270__33776__-1__NODE_4_length_134155_cov_14.571649__134058__1__4____301__94__0__0	max_left=268	max_left_minus=268	max_left_plus=260	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=80	max_min_right_minus=80	max_min_right_plus=80	max_pos_hash_score=414	max_right=80	max_right_minus=80	max_right_plus=80	neg_log10_pos_hash_p_value=2.1	new_junction_coverage=0.35	new_junction_read_count=11	polymorphism_frequency=3.929e-01	pos_hash_score=6	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.00	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=34	side_2_redundant=0	total_non_overlap_reads=7
+JC	610	.	NODE_48_length_33391_cov_14.154191	33391	-1	NODE_67_length_17417_cov_16.557604	17321	1	0	alignment_overlap=126	coverage_minus=6	coverage_plus=1	flanking_left=301	flanking_right=97	frequency=1	junction_possible_overlap_registers=84	key=NODE_48_length_33391_cov_14.154191__33391__-1__NODE_67_length_17417_cov_16.557604__17195__1__126____301__97__0__0	max_left=153	max_left_minus=153	max_left_plus=114	max_min_left=66	max_min_left_minus=66	max_min_left_plus=0	max_min_right=76	max_min_right_minus=76	max_min_right_plus=61	max_pos_hash_score=170	max_right=94	max_right_minus=94	max_right_plus=61	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=0.81	new_junction_read_count=13	polymorphism_frequency=1.000e+00	pos_hash_score=7	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=7
+JC	611	.	NODE_4_length_134155_cov_14.571649	1	1	NODE_5_length_126675_cov_12.099970	126675	-1	-1	alignment_overlap=-1	coverage_minus=111	coverage_plus=114	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=209	key=NODE_4_length_134155_cov_14.571649__1__1__NODE_5_length_126675_cov_12.099970__126675__-1__-1__C__301__301__0__0	max_left=298	max_left_minus=297	max_left_plus=298	max_min_left=139	max_min_left_minus=139	max_min_left_plus=128	max_min_right=146	max_min_right_minus=146	max_min_right_plus=138	max_pos_hash_score=420	max_right=282	max_right_minus=282	max_right_plus=273	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=6.91	new_junction_read_count=231	polymorphism_frequency=1.000e+00	pos_hash_score=142	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=225	unique_read_sequence=C
+JC	612	.	NODE_4_length_134155_cov_14.571649	899	-1	NODE_96_length_5246_cov_16.543661	5121	-1	0	alignment_overlap=125	coverage_minus=12	coverage_plus=11	flanking_left=301	flanking_right=301	frequency=6.890e-01	junction_possible_overlap_registers=85	key=NODE_4_length_134155_cov_14.571649__899__-1__NODE_96_length_5246_cov_16.543661__5246__-1__125____301__301__0__0	max_left=162	max_left_minus=162	max_left_plus=152	max_min_left=73	max_min_left_minus=48	max_min_left_plus=73	max_min_right=67	max_min_right_minus=67	max_min_right_plus=22	max_pos_hash_score=172	max_right=157	max_right_minus=138	max_right_plus=157	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.88	new_junction_read_count=26	polymorphism_frequency=6.890e-01	pos_hash_score=20	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.67	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=58	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=23
+JC	613	.	NODE_4_length_134155_cov_14.571649	133937	1	NODE_52_length_28997_cov_14.175476	28864	-1	0	alignment_overlap=0	coverage_minus=4	coverage_plus=0	flanking_left=219	flanking_right=301	frequency=2.388e-01	junction_possible_overlap_registers=210	key=NODE_4_length_134155_cov_14.571649__133937__1__NODE_52_length_28997_cov_14.175476__28864__-1__0____219__301__0__0	max_left=207	max_left_minus=207	max_left_plus=0	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=2	max_min_right_minus=2	max_min_right_plus=0	max_pos_hash_score=422	max_right=2	max_right_minus=2	max_right_plus=0	neg_log10_pos_hash_p_value=2.7	new_junction_coverage=0.23	new_junction_read_count=8	polymorphism_frequency=2.388e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.60	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=21	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.89	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=30	side_2_redundant=0	total_non_overlap_reads=4
+JC	614	.	NODE_4_length_134155_cov_14.571649	133937	1	NODE_71_length_15514_cov_16.357120	1134	1	0	alignment_overlap=0	coverage_minus=4	coverage_plus=0	flanking_left=219	flanking_right=301	frequency=1.538e-01	junction_possible_overlap_registers=210	key=NODE_4_length_134155_cov_14.571649__133937__1__NODE_71_length_15514_cov_16.357120__1134__1__0____219__301__0__0	max_left=207	max_left_minus=207	max_left_plus=0	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=2	max_min_right_minus=2	max_min_right_plus=0	max_pos_hash_score=422	max_right=2	max_right_minus=2	max_right_plus=0	neg_log10_pos_hash_p_value=2.7	new_junction_coverage=0.23	new_junction_read_count=8	polymorphism_frequency=1.538e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.60	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=21	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.92	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=67	side_2_redundant=0	total_non_overlap_reads=4
+JC	615	.	NODE_52_length_28997_cov_14.175476	17	1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=4	coverage_plus=5	flanking_left=301	flanking_right=123	frequency=1	junction_possible_overlap_registers=206	key=NODE_52_length_28997_cov_14.175476__17__1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=242	max_left_minus=181	max_left_plus=242	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=123	max_min_right_minus=123	max_min_right_plus=105	max_pos_hash_score=414	max_right=123	max_right_minus=123	max_right_plus=105	neg_log10_pos_hash_p_value=1.8	new_junction_coverage=0.26	new_junction_read_count=10	polymorphism_frequency=9.099e-01	pos_hash_score=8	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.03	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=9
+JC	616	.	NODE_52_length_28997_cov_14.175476	28997	-1	NODE_85_length_8716_cov_15.515427	128	-1	0	alignment_overlap=0	coverage_minus=5	coverage_plus=8	flanking_left=301	flanking_right=128	frequency=5.902e-01	junction_possible_overlap_registers=210	key=NODE_52_length_28997_cov_14.175476__28997__-1__NODE_85_length_8716_cov_15.515427__128__-1__0____301__128__0__0	max_left=267	max_left_minus=267	max_left_plus=243	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=124	max_min_right_minus=110	max_min_right_plus=124	max_pos_hash_score=422	max_right=124	max_right_minus=110	max_right_plus=124	neg_log10_pos_hash_p_value=1.2	new_junction_coverage=0.49	new_junction_read_count=18	polymorphism_frequency=5.902e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.62	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=25	side_2_redundant=0	total_non_overlap_reads=13
+JC	617	.	NODE_53_length_28637_cov_18.413399	17	1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=3	coverage_plus=3	flanking_left=301	flanking_right=123	frequency=7.647e-01	junction_possible_overlap_registers=206	key=NODE_53_length_28637_cov_18.413399__17__1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=233	max_left_minus=233	max_left_plus=206	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=122	max_min_right_minus=91	max_min_right_plus=122	max_pos_hash_score=414	max_right=122	max_right_minus=91	max_right_plus=122	neg_log10_pos_hash_p_value=3.1	new_junction_coverage=0.18	new_junction_read_count=8	polymorphism_frequency=7.647e-01	pos_hash_score=4	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.09	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=4	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=6
+JC	618	.	NODE_55_length_26213_cov_16.694242	1	1	NODE_8_length_116180_cov_13.950471	115826	1	0	alignment_overlap=127	coverage_minus=4	coverage_plus=3	flanking_left=301	flanking_right=301	frequency=5.926e-01	junction_possible_overlap_registers=83	key=NODE_55_length_26213_cov_16.694242__1__1__NODE_8_length_116180_cov_13.950471__115699__1__127____301__301__0__0	max_left=128	max_left_minus=128	max_left_plus=120	max_min_left=64	max_min_left_minus=0	max_min_left_plus=64	max_min_right=72	max_min_right_minus=72	max_min_right_plus=53	max_pos_hash_score=168	max_right=110	max_right_minus=72	max_right_plus=110	neg_log10_pos_hash_p_value=0.7	new_junction_coverage=0.54	new_junction_read_count=8	polymorphism_frequency=5.926e-01	pos_hash_score=6	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.84	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=11	side_2_redundant=0	total_non_overlap_reads=7
+JC	619	.	NODE_56_length_25922_cov_15.201628	25922	-1	NODE_67_length_17417_cov_16.557604	17320	1	0	alignment_overlap=125	coverage_minus=4	coverage_plus=5	flanking_left=301	flanking_right=98	frequency=1	junction_possible_overlap_registers=85	key=NODE_56_length_25922_cov_15.201628__25922__-1__NODE_67_length_17417_cov_16.557604__17195__1__125____301__98__0__0	max_left=161	max_left_minus=150	max_left_plus=161	max_min_left=85	max_min_left_minus=85	max_min_left_plus=79	max_min_right=72	max_min_right_minus=72	max_min_right_plus=50	max_pos_hash_score=172	max_right=97	max_right_minus=90	max_right_plus=97	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=0.54	new_junction_read_count=9	polymorphism_frequency=1.000e+00	pos_hash_score=9	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
+JC	620	.	NODE_58_length_25496_cov_10.583468	250	-1	NODE_66_length_17581_cov_14.912971	9252	1	0	alignment_overlap=0	coverage_minus=10	coverage_plus=11	flanking_left=250	flanking_right=301	frequency=3.866e-01	junction_possible_overlap_registers=210	key=NODE_58_length_25496_cov_10.583468__250__-1__NODE_66_length_17581_cov_14.912971__9252__1__0____250__301__0__0	max_left=233	max_left_minus=221	max_left_plus=233	max_min_left=116	max_min_left_minus=116	max_min_left_plus=54	max_min_right=134	max_min_right_minus=134	max_min_right_plus=134	max_pos_hash_score=422	max_right=255	max_right_minus=230	max_right_plus=255	neg_log10_pos_hash_p_value=0.5	new_junction_coverage=0.66	new_junction_read_count=23	polymorphism_frequency=3.866e-01	pos_hash_score=18	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.97	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=28	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.11	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=45	side_2_redundant=0	total_non_overlap_reads=21
+JC	621	.	NODE_58_length_25496_cov_10.583468	2473	1	NODE_78_length_12648_cov_13.287517	31	1	0	alignment_overlap=30	coverage_minus=6	coverage_plus=4	flanking_left=301	flanking_right=301	frequency=4.866e-01	junction_possible_overlap_registers=180	key=NODE_58_length_25496_cov_10.583468__2473__1__NODE_78_length_12648_cov_13.287517__1__1__30____301__301__0__0	max_left=84	max_left_minus=72	max_left_plus=84	max_min_left=84	max_min_left_minus=72	max_min_left_plus=84	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=362	max_right=269	max_right_minus=269	max_right_plus=257	neg_log10_pos_hash_p_value=1.4	new_junction_coverage=0.46	new_junction_read_count=13	polymorphism_frequency=4.866e-01	pos_hash_score=7	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.11	side_1_overlap=30	side_1_possible_overlap_registers=210	side_1_read_count=32	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=180	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=10
+JC	622	.	NODE_59_length_24902_cov_17.459859	24902	-1	NODE_81_length_10055_cov_13.632454	1	1	-1	alignment_overlap=-1	coverage_minus=48	coverage_plus=40	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=209	key=NODE_59_length_24902_cov_17.459859__24902__-1__NODE_81_length_10055_cov_13.632454__1__1__-1__T__301__301__0__0	max_left=283	max_left_minus=277	max_left_plus=283	max_min_left=147	max_min_left_minus=147	max_min_left_plus=137	max_min_right=138	max_min_right_minus=136	max_min_right_plus=138	max_pos_hash_score=420	max_right=290	max_right_minus=290	max_right_plus=271	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=3.92	new_junction_read_count=152	polymorphism_frequency=1.000e+00	pos_hash_score=57	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=88	unique_read_sequence=T
+JC	623	.	NODE_5_length_126675_cov_12.099970	126245	1	NODE_73_length_15178_cov_17.144841	15052	-1	0	alignment_overlap=126	coverage_minus=3	coverage_plus=7	flanking_left=301	flanking_right=301	frequency=5.941e-01	junction_possible_overlap_registers=84	key=NODE_5_length_126675_cov_12.099970__126245__1__NODE_73_length_15178_cov_17.144841__15178__-1__126____301__301__0__0	max_left=119	max_left_minus=65	max_left_plus=119	max_min_left=87	max_min_left_minus=0	max_min_left_plus=87	max_min_right=57	max_min_right_minus=56	max_min_right_plus=57	max_pos_hash_score=170	max_right=111	max_right_minus=56	max_right_plus=111	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=0.84	new_junction_read_count=12	polymorphism_frequency=5.941e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.26	side_1_overlap=126	side_1_possible_overlap_registers=210	side_1_read_count=41	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=84	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=10
+JC	624	.	NODE_5_length_126675_cov_12.099970	126245	1	NODE_85_length_8716_cov_15.515427	8591	-1	0	alignment_overlap=125	coverage_minus=13	coverage_plus=11	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=85	key=NODE_5_length_126675_cov_12.099970__126245__1__NODE_85_length_8716_cov_15.515427__8716__-1__125____301__301__0__0	max_left=172	max_left_minus=154	max_left_plus=172	max_min_left=78	max_min_left_minus=78	max_min_left_plus=60	max_min_right=56	max_min_right_minus=56	max_min_right_plus=56	max_pos_hash_score=172	max_right=173	max_right_minus=173	max_right_plus=137	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.66	new_junction_read_count=39	polymorphism_frequency=8.246e-01	pos_hash_score=23	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.26	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=41	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=24
+JC	625	.	NODE_60_length_24778_cov_13.817938	24778	-1	NODE_67_length_17417_cov_16.557604	17319	1	0	alignment_overlap=124	coverage_minus=5	coverage_plus=8	flanking_left=301	flanking_right=99	frequency=1	junction_possible_overlap_registers=86	key=NODE_60_length_24778_cov_13.817938__24778__-1__NODE_67_length_17417_cov_16.557604__17195__1__124____301__99__0__0	max_left=165	max_left_minus=133	max_left_plus=165	max_min_left=73	max_min_left_minus=62	max_min_left_plus=73	max_min_right=81	max_min_right_minus=78	max_min_right_plus=81	max_pos_hash_score=174	max_right=99	max_right_minus=99	max_right_plus=81	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=0.86	new_junction_read_count=14	polymorphism_frequency=1.000e+00	pos_hash_score=11	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=13
+JC	626	.	NODE_61_length_23958_cov_16.322311	17	1	NODE_67_length_17417_cov_16.557604	17295	1	0	alignment_overlap=4	coverage_minus=3	coverage_plus=5	flanking_left=301	flanking_right=123	frequency=1	junction_possible_overlap_registers=206	key=NODE_61_length_23958_cov_16.322311__17__1__NODE_67_length_17417_cov_16.557604__17291__1__4____301__123__0__0	max_left=239	max_left_minus=165	max_left_plus=239	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=105	max_min_right_minus=105	max_min_right_plus=105	max_pos_hash_score=414	max_right=105	max_right_minus=105	max_right_plus=105	neg_log10_pos_hash_p_value=2.3	new_junction_coverage=0.19	new_junction_read_count=8	polymorphism_frequency=8.023e-01	pos_hash_score=7	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.08	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=3	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=8
+JC	627	.	NODE_62_length_21842_cov_17.701174	21716	1	NODE_82_length_10033_cov_18.448819	18	1	0	alignment_overlap=17	coverage_minus=3	coverage_plus=5	flanking_left=110	flanking_right=301	frequency=7.655e-01	junction_possible_overlap_registers=193	key=NODE_62_length_21842_cov_17.701174__21716__1__NODE_82_length_10033_cov_18.448819__1__1__17____110__301__0__0	max_left=110	max_left_minus=84	max_left_plus=110	max_min_left=110	max_min_left_minus=84	max_min_left_plus=110	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=388	max_right=271	max_right_minus=271	max_right_plus=195	neg_log10_pos_hash_p_value=2.5	new_junction_coverage=1.09	new_junction_read_count=54	polymorphism_frequency=7.655e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.66	side_1_overlap=17	side_1_possible_overlap_registers=210	side_1_read_count=36	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=193	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	628	.	NODE_66_length_17581_cov_14.912971	9395	1	NODE_97_length_4374_cov_16.302096	10	1	0	alignment_overlap=9	coverage_minus=13	coverage_plus=28	flanking_left=301	flanking_right=301	frequency=6.376e-01	junction_possible_overlap_registers=201	key=NODE_66_length_17581_cov_14.912971__9395__1__NODE_97_length_4374_cov_16.302096__1__1__9____301__301__0__0	max_left=243	max_left_minus=238	max_left_plus=243	max_min_left=130	max_min_left_minus=130	max_min_left_plus=107	max_min_right=133	max_min_right_minus=113	max_min_right_plus=133	max_pos_hash_score=404	max_right=283	max_right_minus=283	max_right_plus=258	neg_log10_pos_hash_p_value=0.1	new_junction_coverage=1.08	new_junction_read_count=48	polymorphism_frequency=6.376e-01	pos_hash_score=37	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.41	side_1_overlap=9	side_1_possible_overlap_registers=210	side_1_read_count=57	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=201	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=41
+JC	629	.	NODE_67_length_17417_cov_16.557604	17193	1	NODE_75_length_13923_cov_14.970136	13796	-1	0	alignment_overlap=127	coverage_minus=5	coverage_plus=5	flanking_left=98	flanking_right=301	frequency=7.253e-01	junction_possible_overlap_registers=83	key=NODE_67_length_17417_cov_16.557604__17193__1__NODE_75_length_13923_cov_14.970136__13923__-1__127____98__301__0__0	max_left=98	max_left_minus=80	max_left_plus=98	max_min_left=76	max_min_left_minus=76	max_min_left_plus=13	max_min_right=78	max_min_right_minus=57	max_min_right_plus=78	max_pos_hash_score=168	max_right=166	max_right_minus=138	max_right_plus=166	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=0.73	new_junction_read_count=12	polymorphism_frequency=7.253e-01	pos_hash_score=10	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=10
+JC	630	.	NODE_67_length_17417_cov_16.557604	17194	1	NODE_68_length_16873_cov_16.542458	126	1	0	alignment_overlap=125	coverage_minus=6	coverage_plus=7	flanking_left=99	flanking_right=301	frequency=1	junction_possible_overlap_registers=85	key=NODE_67_length_17417_cov_16.557604__17194__1__NODE_68_length_16873_cov_16.542458__1__1__125____99__301__0__0	max_left=69	max_left_minus=69	max_left_plus=69	max_min_left=69	max_min_left_minus=69	max_min_left_plus=69	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=172	max_right=170	max_right_minus=146	max_right_plus=170	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=1.33	new_junction_read_count=23	polymorphism_frequency=8.317e-01	pos_hash_score=13	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=13
+JC	631	.	NODE_67_length_17417_cov_16.557604	17194	1	NODE_71_length_15514_cov_16.357120	970	1	0	alignment_overlap=1	coverage_minus=2	coverage_plus=2	flanking_left=223	flanking_right=301	frequency=1.722e-01	junction_possible_overlap_registers=209	key=NODE_67_length_17417_cov_16.557604__17194__1__NODE_71_length_15514_cov_16.357120__969__1__1____223__301__0__0	max_left=221	max_left_minus=193	max_left_plus=221	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=119	max_min_right_minus=119	max_min_right_plus=114	max_pos_hash_score=420	max_right=119	max_right_minus=119	max_right_plus=114	neg_log10_pos_hash_p_value=2.7	new_junction_coverage=0.20	new_junction_read_count=8	polymorphism_frequency=1.722e-01	pos_hash_score=4	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.55	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=54	side_2_redundant=0	total_non_overlap_reads=4
+JC	632	.	NODE_67_length_17417_cov_16.557604	17194	1	NODE_74_length_15083_cov_14.230275	124	1	0	alignment_overlap=123	coverage_minus=5	coverage_plus=6	flanking_left=101	flanking_right=301	frequency=6.978e-01	junction_possible_overlap_registers=87	key=NODE_67_length_17417_cov_16.557604__17194__1__NODE_74_length_15083_cov_14.230275__1__1__123____101__301__0__0	max_left=100	max_left_minus=100	max_left_plus=95	max_min_left=82	max_min_left_minus=56	max_min_left_plus=82	max_min_right=70	max_min_right_minus=70	max_min_right_plus=70	max_pos_hash_score=176	max_right=142	max_right_minus=142	max_right_plus=142	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=0.68	new_junction_read_count=11	polymorphism_frequency=6.978e-01	pos_hash_score=11	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=123	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=87	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=11
+JC	633	.	NODE_67_length_17417_cov_16.557604	17194	1	NODE_87_length_7911_cov_15.112025	125	1	0	alignment_overlap=124	coverage_minus=11	coverage_plus=9	flanking_left=100	flanking_right=301	frequency=1	junction_possible_overlap_registers=86	key=NODE_67_length_17417_cov_16.557604__17194__1__NODE_87_length_7911_cov_15.112025__1__1__124____100__301__0__0	max_left=99	max_left_minus=99	max_left_plus=97	max_min_left=82	max_min_left_minus=82	max_min_left_plus=72	max_min_right=87	max_min_right_minus=31	max_min_right_plus=87	max_pos_hash_score=174	max_right=165	max_right_minus=165	max_right_plus=151	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=1.69	new_junction_read_count=29	polymorphism_frequency=8.603e-01	pos_hash_score=18	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=20
+JC	634	.	NODE_67_length_17417_cov_16.557604	17195	1	NODE_74_length_15083_cov_14.230275	14959	-1	0	alignment_overlap=124	coverage_minus=3	coverage_plus=6	flanking_left=99	flanking_right=301	frequency=7.182e-01	junction_possible_overlap_registers=86	key=NODE_67_length_17417_cov_16.557604__17195__1__NODE_74_length_15083_cov_14.230275__15083__-1__124____99__301__0__0	max_left=99	max_left_minus=80	max_left_plus=99	max_min_left=80	max_min_left_minus=80	max_min_left_plus=64	max_min_right=54	max_min_right_minus=0	max_min_right_plus=54	max_pos_hash_score=174	max_right=120	max_right_minus=96	max_right_plus=120	neg_log10_pos_hash_p_value=0.4	new_junction_coverage=0.75	new_junction_read_count=12	polymorphism_frequency=7.182e-01	pos_hash_score=9	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=124	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=86	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=9
+JC	635	.	NODE_67_length_17417_cov_16.557604	17195	1	NODE_78_length_12648_cov_13.287517	12523	-1	0	alignment_overlap=125	coverage_minus=4	coverage_plus=4	flanking_left=98	flanking_right=301	frequency=6.824e-01	junction_possible_overlap_registers=85	key=NODE_67_length_17417_cov_16.557604__17195__1__NODE_78_length_12648_cov_13.287517__12648__-1__125____98__301__0__0	max_left=97	max_left_minus=97	max_left_plus=62	max_min_left=65	max_min_left_minus=65	max_min_left_plus=62	max_min_right=78	max_min_right_minus=78	max_min_right_plus=0	max_pos_hash_score=172	max_right=169	max_right_minus=141	max_right_plus=169	neg_log10_pos_hash_p_value=0.6	new_junction_coverage=0.59	new_junction_read_count=10	polymorphism_frequency=6.824e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=125	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=85	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=8
+JC	636	.	NODE_67_length_17417_cov_16.557604	17195	1	NODE_82_length_10033_cov_18.448819	9911	-1	0	alignment_overlap=122	coverage_minus=5	coverage_plus=8	flanking_left=101	flanking_right=301	frequency=7.568e-01	junction_possible_overlap_registers=88	key=NODE_67_length_17417_cov_16.557604__17195__1__NODE_82_length_10033_cov_18.448819__10033__-1__122____101__301__0__0	max_left=101	max_left_minus=100	max_left_plus=101	max_min_left=88	max_min_left_minus=41	max_min_left_plus=88	max_min_right=78	max_min_right_minus=78	max_min_right_plus=59	max_pos_hash_score=178	max_right=163	max_right_minus=163	max_right_plus=144	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=0.72	new_junction_read_count=15	polymorphism_frequency=7.568e-01	pos_hash_score=12	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.50	side_1_overlap=122	side_1_possible_overlap_registers=210	side_1_read_count=23	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=88	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=13
+JC	637	.	NODE_67_length_17417_cov_16.557604	17266	1	NODE_7_length_119377_cov_13.596419	119200	1	0	alignment_overlap=1	coverage_minus=9	coverage_plus=5	flanking_left=151	flanking_right=178	frequency=5.495e-01	junction_possible_overlap_registers=209	key=NODE_67_length_17417_cov_16.557604__17266__1__NODE_7_length_119377_cov_13.596419__119199__1__1____151__178__0__0	max_left=151	max_left_minus=118	max_left_plus=151	max_min_left=118	max_min_left_minus=118	max_min_left_plus=117	max_min_right=33	max_min_right_minus=33	max_min_right_plus=33	max_pos_hash_score=420	max_right=178	max_right_minus=178	max_right_plus=147	neg_log10_pos_hash_p_value=1.0	new_junction_coverage=0.65	new_junction_read_count=25	polymorphism_frequency=5.495e-01	pos_hash_score=14	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.04	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=2	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.25	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=39	side_2_redundant=0	total_non_overlap_reads=14
+JC	638	.	NODE_67_length_17417_cov_16.557604	17290	-1	NODE_67_length_17417_cov_16.557604	17291	1	-9	alignment_overlap=-9	coverage_minus=18	coverage_plus=11	flanking_left=301	flanking_right=127	frequency=1	junction_possible_overlap_registers=201	key=NODE_67_length_17417_cov_16.557604__17290__-1__NODE_67_length_17417_cov_16.557604__17291__1__-9__CCGTCCCAG__301__127__0__0	max_left=285	max_left_minus=285	max_left_plus=246	max_min_left=70	max_min_left_minus=70	max_min_left_plus=70	max_min_right=127	max_min_right_minus=127	max_min_right_plus=111	max_pos_hash_score=378	max_right=127	max_right_minus=127	max_right_plus=125	neg_log10_pos_hash_p_value=0.3	new_junction_coverage=1.50	new_junction_read_count=66	polymorphism_frequency=9.852e-01	pos_hash_score=27	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=13	side_1_coverage=0.02	side_1_overlap=0	side_1_possible_overlap_registers=197	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.02	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=1	side_2_redundant=0	total_non_overlap_reads=29	unique_read_sequence=CCGTCCCAG
+JC	639	.	NODE_67_length_17417_cov_16.557604	17291	1	NODE_68_length_16873_cov_16.542458	16853	-1	0	alignment_overlap=4	coverage_minus=4	coverage_plus=3	flanking_left=123	flanking_right=301	frequency=1	junction_possible_overlap_registers=206	key=NODE_67_length_17417_cov_16.557604__17291__1__NODE_68_length_16873_cov_16.542458__16857__-1__4____123__301__0__0	max_left=121	max_left_minus=105	max_left_plus=121	max_min_left=121	max_min_left_minus=105	max_min_left_plus=121	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=414	max_right=243	max_right_minus=213	max_right_plus=243	neg_log10_pos_hash_p_value=2.3	new_junction_coverage=0.24	new_junction_read_count=10	polymorphism_frequency=8.703e-01	pos_hash_score=7	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.02	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.05	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=2	side_2_redundant=0	total_non_overlap_reads=7
+JC	640	.	NODE_67_length_17417_cov_16.557604	17291	1	NODE_6_length_126390_cov_15.114040	126368	-1	0	alignment_overlap=4	coverage_minus=2	coverage_plus=4	flanking_left=123	flanking_right=301	frequency=1	junction_possible_overlap_registers=206	key=NODE_67_length_17417_cov_16.557604__17291__1__NODE_6_length_126390_cov_15.114040__126372__-1__4____123__301__0__0	max_left=123	max_left_minus=105	max_left_plus=123	max_min_left=123	max_min_left_minus=105	max_min_left_plus=123	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=414	max_right=200	max_right_minus=200	max_right_plus=196	neg_log10_pos_hash_p_value=2.7	new_junction_coverage=0.25	new_junction_read_count=10	polymorphism_frequency=8.703e-01	pos_hash_score=4	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.02	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.06	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=2	side_2_redundant=0	total_non_overlap_reads=6
+JC	641	.	NODE_67_length_17417_cov_16.557604	17291	1	NODE_83_length_9041_cov_13.273839	20	1	0	alignment_overlap=4	coverage_minus=3	coverage_plus=6	flanking_left=123	flanking_right=301	frequency=7.148e-01	junction_possible_overlap_registers=206	key=NODE_67_length_17417_cov_16.557604__17291__1__NODE_83_length_9041_cov_13.273839__16__1__4____123__301__0__0	max_left=123	max_left_minus=100	max_left_plus=123	max_min_left=123	max_min_left_minus=100	max_min_left_plus=123	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=414	max_right=199	max_right_minus=198	max_right_plus=199	neg_log10_pos_hash_p_value=2.0	new_junction_coverage=0.25	new_junction_read_count=10	polymorphism_frequency=7.148e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.02	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.20	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=7	side_2_redundant=0	total_non_overlap_reads=9
+JC	642	.	NODE_67_length_17417_cov_16.557604	17291	1	NODE_84_length_8933_cov_13.067227	8883	-1	-9	alignment_overlap=-9	coverage_minus=5	coverage_plus=4	flanking_left=127	flanking_right=301	frequency=7.601e-01	junction_possible_overlap_registers=188	key=NODE_67_length_17417_cov_16.557604__17291__1__NODE_84_length_8933_cov_13.067227__8883__-1__-9__CTGGGACGG__127__301__0__0	max_left=127	max_left_minus=109	max_left_plus=127	max_min_left=127	max_min_left_minus=109	max_min_left_plus=127	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=378	max_right=262	max_right_minus=218	max_right_plus=262	neg_log10_pos_hash_p_value=1.9	new_junction_coverage=0.33	new_junction_read_count=12	polymorphism_frequency=7.601e-01	pos_hash_score=8	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.02	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=13	side_2_coverage=0.21	side_2_overlap=0	side_2_possible_overlap_registers=197	side_2_read_count=7	side_2_redundant=0	total_non_overlap_reads=9	unique_read_sequence=CTGGGACGG
+JC	643	.	NODE_67_length_17417_cov_16.557604	17291	1	NODE_9_length_116042_cov_14.301376	116022	-1	0	alignment_overlap=4	coverage_minus=1	coverage_plus=4	flanking_left=123	flanking_right=301	frequency=7.067e-01	junction_possible_overlap_registers=206	key=NODE_67_length_17417_cov_16.557604__17291__1__NODE_9_length_116042_cov_14.301376__116026__-1__4____123__301__0__0	max_left=123	max_left_minus=61	max_left_plus=123	max_min_left=123	max_min_left_minus=61	max_min_left_plus=123	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=414	max_right=185	max_right_minus=144	max_right_plus=185	neg_log10_pos_hash_p_value=2.7	new_junction_coverage=0.15	new_junction_read_count=6	polymorphism_frequency=7.067e-01	pos_hash_score=5	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.02	side_1_overlap=4	side_1_possible_overlap_registers=210	side_1_read_count=1	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.12	side_2_overlap=0	side_2_possible_overlap_registers=206	side_2_read_count=4	side_2_redundant=0	total_non_overlap_reads=5
+JC	644	.	NODE_69_length_16640_cov_15.272270	127	-1	NODE_91_length_6326_cov_14.081142	6298	-1	0	alignment_overlap=28	coverage_minus=8	coverage_plus=7	flanking_left=99	flanking_right=301	frequency=7.713e-01	junction_possible_overlap_registers=182	key=NODE_69_length_16640_cov_15.272270__127__-1__NODE_91_length_6326_cov_14.081142__6326__-1__28____99__301__0__0	max_left=95	max_left_minus=80	max_left_plus=95	max_min_left=95	max_min_left_minus=80	max_min_left_plus=95	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=366	max_right=263	max_right_minus=263	max_right_plus=263	neg_log10_pos_hash_p_value=0.8	new_junction_coverage=0.65	new_junction_read_count=19	polymorphism_frequency=7.713e-01	pos_hash_score=14	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.37	side_1_overlap=28	side_1_possible_overlap_registers=210	side_1_read_count=13	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=182	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=15
+JC	645	.	NODE_69_length_16640_cov_15.272270	16640	-1	NODE_79_length_12438_cov_13.711153	124	-1	0	alignment_overlap=3	coverage_minus=2	coverage_plus=1	flanking_left=301	flanking_right=124	frequency=2.800e-01	junction_possible_overlap_registers=207	key=NODE_69_length_16640_cov_15.272270__16640__-1__NODE_79_length_12438_cov_13.711153__127__-1__3____301__124__0__0	max_left=276	max_left_minus=242	max_left_plus=276	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=55	max_min_right_minus=55	max_min_right_plus=21	max_pos_hash_score=416	max_right=55	max_right_minus=55	max_right_plus=21	neg_log10_pos_hash_p_value=3.1	new_junction_coverage=0.20	new_junction_read_count=7	polymorphism_frequency=2.800e-01	pos_hash_score=3	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.04	side_2_overlap=0	side_2_possible_overlap_registers=207	side_2_read_count=36	side_2_redundant=0	total_non_overlap_reads=3
+JC	646	.	NODE_75_length_13923_cov_14.970136	1	1	NODE_8_length_116180_cov_13.950471	115947	1	-32	alignment_overlap=-32	coverage_minus=0	coverage_plus=7	flanking_left=301	flanking_right=234	frequency=1.145e-01	junction_possible_overlap_registers=178	key=NODE_75_length_13923_cov_14.970136__1__1__NODE_8_length_116180_cov_13.950471__115947__1__-32__ATACATTCCACTTTCAGCGAATGAAAGAAGCT__301__234__0__0	max_left=250	max_left_minus=0	max_left_plus=250	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=58	max_min_right_minus=0	max_min_right_plus=58	max_pos_hash_score=358	max_right=58	max_right_minus=0	max_right_plus=58	neg_log10_pos_hash_p_value=1.8	new_junction_coverage=0.27	new_junction_read_count=8	polymorphism_frequency=1.145e-01	pos_hash_score=6	prediction=polymorphism	reject=FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=0	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=4.40	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=146	side_2_redundant=0	total_non_overlap_reads=7	unique_read_sequence=ATACATTCCACTTTCAGCGAATGAAAGAAGCT
+JC	647	.	NODE_77_length_12679_cov_15.989006	22	-1	NODE_9_length_116042_cov_14.301376	1	1	-69	alignment_overlap=-69	coverage_minus=0	coverage_plus=3	flanking_left=22	flanking_right=301	frequency=1	junction_possible_overlap_registers=141	key=NODE_77_length_12679_cov_15.989006__22__-1__NODE_9_length_116042_cov_14.301376__1__1__-69__CCGCCTGAAGGGAAAGCTGCACGTAATCAGCAAGCGATATACGCAGCGAATTGAGCGGCATAACCTGAA__22__301__1__0	max_left=22	max_left_minus=0	max_left_plus=22	max_min_left=22	max_min_left_minus=0	max_min_left_plus=22	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=284	max_right=222	max_right_minus=0	max_right_plus=222	neg_log10_pos_hash_p_value=2.5	new_junction_coverage=0.16	new_junction_read_count=4	polymorphism_frequency=1.000e+00	pos_hash_score=3	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=3	unique_read_sequence=CCGCCTGAAGGGAAAGCTGCACGTAATCAGCAAGCGATATACGCAGCGAATTGAGCGGCATAACCTGAA
+JC	648	.	NODE_79_length_12438_cov_13.711153	125	-1	NODE_94_length_5665_cov_21.343084	1	1	0	alignment_overlap=2	coverage_minus=4	coverage_plus=3	flanking_left=125	flanking_right=301	frequency=1	junction_possible_overlap_registers=208	key=NODE_79_length_12438_cov_13.711153__127__-1__NODE_94_length_5665_cov_21.343084__1__1__2____125__301__1__0	max_left=45	max_left_minus=45	max_left_plus=37	max_min_left=45	max_min_left_minus=45	max_min_left_plus=37	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=418	max_right=282	max_right_minus=271	max_right_plus=282	neg_log10_pos_hash_p_value=2.0	new_junction_coverage=0.34	new_junction_read_count=15	polymorphism_frequency=1.000e+00	pos_hash_score=7	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=2	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=7
+JC	649	.	NODE_79_length_12438_cov_13.711153	127	-1	NODE_86_length_8606_cov_16.106852	8606	-1	0	alignment_overlap=0	coverage_minus=2	coverage_plus=4	flanking_left=127	flanking_right=301	frequency=1	junction_possible_overlap_registers=210	key=NODE_79_length_12438_cov_13.711153__127__-1__NODE_86_length_8606_cov_16.106852__8606__-1__0____127__301__1__0	max_left=98	max_left_minus=25	max_left_plus=98	max_min_left=98	max_min_left_minus=25	max_min_left_plus=98	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=422	max_right=287	max_right_minus=287	max_right_plus=276	neg_log10_pos_hash_p_value=2.3	new_junction_coverage=0.28	new_junction_read_count=11	polymorphism_frequency=1.000e+00	pos_hash_score=6	prediction=consensus	side_1_annotate_key=repeat	side_1_continuation=0	side_1_coverage=NA	side_1_overlap=0	side_1_read_count=NA	side_1_redundant=1	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=210	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=6
+JC	650	.	NODE_79_length_12438_cov_13.711153	127	-1	NODE_88_length_7888_cov_14.965984	7885	-1	0	alignment_overlap=3	coverage_minus=4	coverage_plus=1	flanking_left=124	flanking_right=301	frequency=5.299e-01	junction_possible_overlap_registers=207	key=NODE_79_length_12438_cov_13.711153__127__-1__NODE_88_length_7888_cov_14.965984__7888__-1__3____124__301__0__0	max_left=21	max_left_minus=21	max_left_plus=21	max_min_left=21	max_min_left_minus=21	max_min_left_plus=21	max_min_right=0	max_min_right_minus=0	max_min_right_plus=0	max_pos_hash_score=416	max_right=279	max_right_minus=279	max_right_plus=142	neg_log10_pos_hash_p_value=2.8	new_junction_coverage=0.60	new_junction_read_count=20	polymorphism_frequency=5.299e-01	pos_hash_score=4	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.03	side_1_overlap=3	side_1_possible_overlap_registers=210	side_1_read_count=36	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=207	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=5
+JC	651	.	NODE_82_length_10033_cov_18.448819	9737	1	NODE_92_length_6138_cov_19.022792	3	1	0	alignment_overlap=2	coverage_minus=44	coverage_plus=67	flanking_left=295	flanking_right=301	frequency=1	junction_possible_overlap_registers=208	key=NODE_82_length_10033_cov_18.448819__9737__1__NODE_92_length_6138_cov_19.022792__1__1__2____295__301__0__0	max_left=173	max_left_minus=162	max_left_plus=173	max_min_left=146	max_min_left_minus=107	max_min_left_plus=146	max_min_right=137	max_min_right_minus=132	max_min_right_plus=137	max_pos_hash_score=418	max_right=295	max_right_minus=293	max_right_plus=295	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.74	new_junction_read_count=139	polymorphism_frequency=8.671e-01	pos_hash_score=65	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.80	side_1_overlap=2	side_1_possible_overlap_registers=210	side_1_read_count=43	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=208	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=111
+JC	652	.	NODE_82_length_10033_cov_18.448819	9737	1	NODE_96_length_5246_cov_16.543661	2	1	0	alignment_overlap=1	coverage_minus=8	coverage_plus=15	flanking_left=296	flanking_right=301	frequency=5.287e-01	junction_possible_overlap_registers=209	key=NODE_82_length_10033_cov_18.448819__9737__1__NODE_96_length_5246_cov_16.543661__1__1__1____296__301__0__0	max_left=138	max_left_minus=66	max_left_plus=138	max_min_left=138	max_min_left_minus=66	max_min_left_plus=138	max_min_right=138	max_min_right_minus=0	max_min_right_plus=138	max_pos_hash_score=420	max_right=294	max_right_minus=256	max_right_plus=294	neg_log10_pos_hash_p_value=0.5	new_junction_coverage=0.55	new_junction_read_count=24	polymorphism_frequency=5.287e-01	pos_hash_score=21	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.80	side_1_overlap=1	side_1_possible_overlap_registers=210	side_1_read_count=43	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=209	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=23
+JC	653	.	NODE_8_length_116180_cov_13.950471	115912	-1	NODE_8_length_116180_cov_13.950471	115957	1	0	alignment_overlap=10	coverage_minus=28	coverage_plus=30	flanking_left=301	flanking_right=224	frequency=3.475e-01	junction_possible_overlap_registers=200	key=NODE_8_length_116180_cov_13.950471__115912__-1__NODE_8_length_116180_cov_13.950471__115947__1__10____301__224__0__0	max_left=204	max_left_minus=198	max_left_plus=204	max_min_left=113	max_min_left_minus=102	max_min_left_plus=113	max_min_right=142	max_min_right_minus=142	max_min_right_plus=91	max_pos_hash_score=402	max_right=224	max_right_minus=224	max_right_plus=202	neg_log10_pos_hash_p_value=0.0	new_junction_coverage=2.18	new_junction_read_count=69	polymorphism_frequency=3.475e-01	pos_hash_score=44	prediction=polymorphism	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=3.73	side_1_overlap=10	side_1_possible_overlap_registers=210	side_1_read_count=124	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=4.46	side_2_overlap=0	side_2_possible_overlap_registers=200	side_2_read_count=141	side_2_redundant=0	total_non_overlap_reads=58
+JC	654	.	NODE_99_length_4324_cov_632.709793	1	1	NODE_99_length_4324_cov_632.709793	4197	-1	0	alignment_overlap=127	coverage_minus=139	coverage_plus=96	flanking_left=301	flanking_right=301	frequency=1	junction_possible_overlap_registers=83	key=NODE_99_length_4324_cov_632.709793__1__1__NODE_99_length_4324_cov_632.709793__4324__-1__127____301__301__0__0	max_left=165	max_left_minus=165	max_left_plus=165	max_min_left=86	max_min_left_minus=71	max_min_left_plus=86	max_min_right=84	max_min_right_minus=83	max_min_right_plus=84	max_pos_hash_score=168	max_right=173	max_right_minus=173	max_right_plus=169	neg_log10_pos_hash_p_value=0.2	new_junction_coverage=0.50	new_junction_read_count=244	polymorphism_frequency=1.000e+00	pos_hash_score=102	prediction=consensus	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=0.00	side_1_overlap=127	side_1_possible_overlap_registers=210	side_1_read_count=0	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=0.00	side_2_overlap=0	side_2_possible_overlap_registers=83	side_2_read_count=0	side_2_redundant=0	total_non_overlap_reads=235
+JC	655	.	NODE_99_length_4324_cov_632.709793	2989	-1	NODE_99_length_4324_cov_632.709793	2993	1	0	alignment_overlap=2	coverage_minus=5	coverage_plus=1	flanking_left=301	flanking_right=301	frequency=4.333e-03	junction_possible_overlap_registers=208	key=NODE_99_length_4324_cov_632.709793__2989__-1__NODE_99_length_4324_cov_632.709793__2991__1__2____301__301__0__0	max_left=298	max_left_minus=298	max_left_plus=85	max_min_left=0	max_min_left_minus=0	max_min_left_plus=0	max_min_right=70	max_min_right_minus=70	max_min_right_plus=70	max_pos_hash_score=418	max_right=70	max_right_minus=70	max_right_plus=70	neg_log10_pos_hash_p_value=15.4	new_junction_coverage=0.01	new_junction_read_count=8	polymorphism_frequency=4.333e-03	pos_hash_score=5	prediction=polymorphism	reject=COVERAGE_EVENNESS_SKEW,FREQUENCY_CUTOFF	side_1_annotate_key=gene	side_1_continuation=0	side_1_coverage=1.50	side_1_overlap=2	side_1_possible_overlap_registers=210	side_1_read_count=1837	side_1_redundant=0	side_2_annotate_key=gene	side_2_continuation=0	side_2_coverage=1.53	side_2_overlap=0	side_2_possible_overlap_registers=208	side_2_read_count=1857	side_2_redundant=0	total_non_overlap_reads=6
+UN	656	.	NODE_100_length_4298_cov_18.099497	1	27
+UN	657	.	NODE_100_length_4298_cov_18.099497	31	31
+UN	658	.	NODE_100_length_4298_cov_18.099497	33	33
+UN	659	.	NODE_100_length_4298_cov_18.099497	39	39
+UN	660	.	NODE_100_length_4298_cov_18.099497	47	50
+UN	661	.	NODE_100_length_4298_cov_18.099497	60	61
+UN	662	.	NODE_100_length_4298_cov_18.099497	4298	4298
+UN	663	.	NODE_102_length_3706_cov_16.815870	7	7
+UN	664	.	NODE_102_length_3706_cov_16.815870	3688	3706
+UN	665	.	NODE_103_length_3518_cov_18.030080	3504	3518
+UN	666	.	NODE_104_length_3448_cov_21.387233	1	19
+UN	667	.	NODE_104_length_3448_cov_21.387233	22	22
+UN	668	.	NODE_104_length_3448_cov_21.387233	3345	3448
+UN	669	.	NODE_105_length_3310_cov_17.106189	3283	3310
+UN	670	.	NODE_107_length_2924_cov_14.682159	2851	2851
+UN	671	.	NODE_107_length_2924_cov_14.682159	2856	2856
+UN	672	.	NODE_107_length_2924_cov_14.682159	2858	2859
+UN	673	.	NODE_107_length_2924_cov_14.682159	2864	2865
+UN	674	.	NODE_107_length_2924_cov_14.682159	2867	2873
+UN	675	.	NODE_107_length_2924_cov_14.682159	2875	2924
+UN	676	.	NODE_108_length_2807_cov_27.150746	2769	2807
+UN	677	.	NODE_109_length_2784_cov_17.981935	1	54
+UN	678	.	NODE_109_length_2784_cov_17.981935	56	58
+UN	679	.	NODE_109_length_2784_cov_17.981935	63	63
+UN	680	.	NODE_109_length_2784_cov_17.981935	91	91
+UN	681	.	NODE_10_length_114371_cov_14.708256	1	16
+UN	682	.	NODE_10_length_114371_cov_14.708256	4151	4151
+UN	683	.	NODE_10_length_114371_cov_14.708256	4153	4153
+UN	684	.	NODE_10_length_114371_cov_14.708256	4156	4156
+UN	685	.	NODE_10_length_114371_cov_14.708256	4189	4189
+UN	686	.	NODE_10_length_114371_cov_14.708256	4192	4192
+UN	687	.	NODE_10_length_114371_cov_14.708256	4196	4196
+UN	688	.	NODE_10_length_114371_cov_14.708256	4199	4201
+UN	689	.	NODE_10_length_114371_cov_14.708256	4206	4207
+UN	690	.	NODE_10_length_114371_cov_14.708256	29922	29923
+UN	691	.	NODE_10_length_114371_cov_14.708256	32496	32496
+UN	692	.	NODE_10_length_114371_cov_14.708256	32503	32505
+UN	693	.	NODE_10_length_114371_cov_14.708256	32513	32513
+UN	694	.	NODE_10_length_114371_cov_14.708256	32517	32517
+UN	695	.	NODE_10_length_114371_cov_14.708256	32521	32521
+UN	696	.	NODE_10_length_114371_cov_14.708256	53770	53770
+UN	697	.	NODE_10_length_114371_cov_14.708256	53782	53782
+UN	698	.	NODE_10_length_114371_cov_14.708256	53784	53785
+UN	699	.	NODE_10_length_114371_cov_14.708256	53795	53795
+UN	700	.	NODE_10_length_114371_cov_14.708256	53799	53801
+UN	701	.	NODE_10_length_114371_cov_14.708256	53803	53803
+UN	702	.	NODE_10_length_114371_cov_14.708256	53805	53805
+UN	703	.	NODE_10_length_114371_cov_14.708256	53811	53811
+UN	704	.	NODE_10_length_114371_cov_14.708256	53813	53813
+UN	705	.	NODE_10_length_114371_cov_14.708256	53822	53822
+UN	706	.	NODE_10_length_114371_cov_14.708256	53827	53827
+UN	707	.	NODE_10_length_114371_cov_14.708256	53831	53831
+UN	708	.	NODE_10_length_114371_cov_14.708256	53841	53842
+UN	709	.	NODE_10_length_114371_cov_14.708256	53848	53851
+UN	710	.	NODE_10_length_114371_cov_14.708256	53853	53854
+UN	711	.	NODE_10_length_114371_cov_14.708256	53857	53858
+UN	712	.	NODE_10_length_114371_cov_14.708256	53861	53861
+UN	713	.	NODE_10_length_114371_cov_14.708256	53863	53865
+UN	714	.	NODE_111_length_2684_cov_16.927259	1	53
+UN	715	.	NODE_111_length_2684_cov_16.927259	296	296
+UN	716	.	NODE_111_length_2684_cov_16.927259	299	299
+UN	717	.	NODE_111_length_2684_cov_16.927259	317	317
+UN	718	.	NODE_111_length_2684_cov_16.927259	322	322
+UN	719	.	NODE_111_length_2684_cov_16.927259	623	623
+UN	720	.	NODE_111_length_2684_cov_16.927259	2599	2599
+UN	721	.	NODE_111_length_2684_cov_16.927259	2613	2684
+UN	722	.	NODE_112_length_2616_cov_21.133789	2616	2616
+UN	723	.	NODE_114_length_2255_cov_20.287124	2240	2244
+UN	724	.	NODE_114_length_2255_cov_20.287124	2255	2255
+UN	725	.	NODE_115_length_2216_cov_1568.510292	2205	2216
+UN	726	.	NODE_11_length_111322_cov_13.734862	21220	21220
+UN	727	.	NODE_11_length_111322_cov_13.734862	21223	21223
+UN	728	.	NODE_11_length_111322_cov_13.734862	21230	21242
+UN	729	.	NODE_11_length_111322_cov_13.734862	21244	21246
+UN	730	.	NODE_11_length_111322_cov_13.734862	21249	21252
+UN	731	.	NODE_11_length_111322_cov_13.734862	21254	21256
+UN	732	.	NODE_11_length_111322_cov_13.734862	21261	21263
+UN	733	.	NODE_11_length_111322_cov_13.734862	21268	21270
+UN	734	.	NODE_11_length_111322_cov_13.734862	70707	70707
+UN	735	.	NODE_11_length_111322_cov_13.734862	81535	81665
+UN	736	.	NODE_12_length_110741_cov_15.264017	1	5
+UN	737	.	NODE_12_length_110741_cov_15.264017	39037	39037
+UN	738	.	NODE_12_length_110741_cov_15.264017	39039	39039
+UN	739	.	NODE_12_length_110741_cov_15.264017	39041	39042
+UN	740	.	NODE_12_length_110741_cov_15.264017	39051	39051
+UN	741	.	NODE_12_length_110741_cov_15.264017	39067	39068
+UN	742	.	NODE_12_length_110741_cov_15.264017	39083	39083
+UN	743	.	NODE_12_length_110741_cov_15.264017	39163	39164
+UN	744	.	NODE_12_length_110741_cov_15.264017	39167	39168
+UN	745	.	NODE_12_length_110741_cov_15.264017	39170	39170
+UN	746	.	NODE_12_length_110741_cov_15.264017	39172	39172
+UN	747	.	NODE_12_length_110741_cov_15.264017	39179	39179
+UN	748	.	NODE_12_length_110741_cov_15.264017	39181	39181
+UN	749	.	NODE_12_length_110741_cov_15.264017	39183	39183
+UN	750	.	NODE_12_length_110741_cov_15.264017	39186	39194
+UN	751	.	NODE_12_length_110741_cov_15.264017	39198	39201
+UN	752	.	NODE_12_length_110741_cov_15.264017	39206	39212
+UN	753	.	NODE_12_length_110741_cov_15.264017	39214	39216
+UN	754	.	NODE_12_length_110741_cov_15.264017	40110	40110
+UN	755	.	NODE_12_length_110741_cov_15.264017	40112	40115
+UN	756	.	NODE_12_length_110741_cov_15.264017	40117	40117
+UN	757	.	NODE_12_length_110741_cov_15.264017	40123	40123
+UN	758	.	NODE_12_length_110741_cov_15.264017	40127	40127
+UN	759	.	NODE_12_length_110741_cov_15.264017	80568	80571
+UN	760	.	NODE_12_length_110741_cov_15.264017	80573	80573
+UN	761	.	NODE_12_length_110741_cov_15.264017	80576	80576
+UN	762	.	NODE_12_length_110741_cov_15.264017	110738	110741
+UN	763	.	NODE_13_length_103247_cov_14.490700	1	13
+UN	764	.	NODE_13_length_103247_cov_14.490700	16	16
+UN	765	.	NODE_13_length_103247_cov_14.490700	18	18
+UN	766	.	NODE_13_length_103247_cov_14.490700	93988	93988
+UN	767	.	NODE_13_length_103247_cov_14.490700	96753	96753
+UN	768	.	NODE_13_length_103247_cov_14.490700	96755	96756
+UN	769	.	NODE_13_length_103247_cov_14.490700	96758	96759
+UN	770	.	NODE_13_length_103247_cov_14.490700	96780	96821
+UN	771	.	NODE_13_length_103247_cov_14.490700	100240	100243
+UN	772	.	NODE_13_length_103247_cov_14.490700	103184	103247
+UN	773	.	NODE_14_length_103178_cov_15.034750	1	3
+UN	774	.	NODE_14_length_103178_cov_15.034750	103149	103150
+UN	775	.	NODE_14_length_103178_cov_15.034750	103152	103178
+UN	776	.	NODE_15_length_101355_cov_14.151885	1	13
+UN	777	.	NODE_15_length_101355_cov_14.151885	5120	5120
+UN	778	.	NODE_15_length_101355_cov_14.151885	63401	63401
+UN	779	.	NODE_15_length_101355_cov_14.151885	63553	63553
+UN	780	.	NODE_16_length_101228_cov_13.975534	5723	5723
+UN	781	.	NODE_16_length_101228_cov_13.975534	5729	5729
+UN	782	.	NODE_16_length_101228_cov_13.975534	5731	5731
+UN	783	.	NODE_16_length_101228_cov_13.975534	5733	5733
+UN	784	.	NODE_16_length_101228_cov_13.975534	5738	5739
+UN	785	.	NODE_16_length_101228_cov_13.975534	5741	5744
+UN	786	.	NODE_16_length_101228_cov_13.975534	5746	5749
+UN	787	.	NODE_16_length_101228_cov_13.975534	5751	5756
+UN	788	.	NODE_16_length_101228_cov_13.975534	5767	5768
+UN	789	.	NODE_16_length_101228_cov_13.975534	20582	20587
+UN	790	.	NODE_16_length_101228_cov_13.975534	20678	20689
+UN	791	.	NODE_16_length_101228_cov_13.975534	54397	54397
+UN	792	.	NODE_16_length_101228_cov_13.975534	101202	101228
+UN	793	.	NODE_17_length_101305_cov_14.841270	1	126
+UN	794	.	NODE_17_length_101305_cov_14.841270	92116	92116
+UN	795	.	NODE_17_length_101305_cov_14.841270	92118	92121
+UN	796	.	NODE_17_length_101305_cov_14.841270	92124	92140
+UN	797	.	NODE_17_length_101305_cov_14.841270	92144	92145
+UN	798	.	NODE_17_length_101305_cov_14.841270	92147	92148
+UN	799	.	NODE_17_length_101305_cov_14.841270	92150	92151
+UN	800	.	NODE_17_length_101305_cov_14.841270	92154	92155
+UN	801	.	NODE_17_length_101305_cov_14.841270	92157	92157
+UN	802	.	NODE_17_length_101305_cov_14.841270	92159	92159
+UN	803	.	NODE_17_length_101305_cov_14.841270	92164	92164
+UN	804	.	NODE_17_length_101305_cov_14.841270	92168	92169
+UN	805	.	NODE_17_length_101305_cov_14.841270	92171	92171
+UN	806	.	NODE_17_length_101305_cov_14.841270	92173	92174
+UN	807	.	NODE_17_length_101305_cov_14.841270	92177	92180
+UN	808	.	NODE_17_length_101305_cov_14.841270	92182	92182
+UN	809	.	NODE_17_length_101305_cov_14.841270	92184	92185
+UN	810	.	NODE_17_length_101305_cov_14.841270	92192	92192
+UN	811	.	NODE_17_length_101305_cov_14.841270	92195	92197
+UN	812	.	NODE_17_length_101305_cov_14.841270	92199	92199
+UN	813	.	NODE_17_length_101305_cov_14.841270	92202	92202
+UN	814	.	NODE_17_length_101305_cov_14.841270	92205	92205
+UN	815	.	NODE_17_length_101305_cov_14.841270	101281	101305
+UN	816	.	NODE_18_length_96021_cov_13.512201	1	21
+UN	817	.	NODE_18_length_96021_cov_13.512201	27	27
+UN	818	.	NODE_18_length_96021_cov_13.512201	19423	19423
+UN	819	.	NODE_18_length_96021_cov_13.512201	22659	22659
+UN	820	.	NODE_18_length_96021_cov_13.512201	22662	22664
+UN	821	.	NODE_18_length_96021_cov_13.512201	22666	22667
+UN	822	.	NODE_18_length_96021_cov_13.512201	22673	22682
+UN	823	.	NODE_18_length_96021_cov_13.512201	58850	58850
+UN	824	.	NODE_18_length_96021_cov_13.512201	79275	79275
+UN	825	.	NODE_18_length_96021_cov_13.512201	95896	96021
+UN	826	.	NODE_19_length_95039_cov_14.544662	1	1
+UN	827	.	NODE_19_length_95039_cov_14.544662	12488	12492
+UN	828	.	NODE_19_length_95039_cov_14.544662	69503	69503
+UN	829	.	NODE_19_length_95039_cov_14.544662	80078	80078
+UN	830	.	NODE_19_length_95039_cov_14.544662	95016	95039
+UN	831	.	NODE_1_length_283677_cov_14.144514	1	36
+UN	832	.	NODE_1_length_283677_cov_14.144514	38	38
+UN	833	.	NODE_1_length_283677_cov_14.144514	25456	25456
+UN	834	.	NODE_1_length_283677_cov_14.144514	25465	25465
+UN	835	.	NODE_1_length_283677_cov_14.144514	25477	25477
+UN	836	.	NODE_1_length_283677_cov_14.144514	25480	25524
+UN	837	.	NODE_1_length_283677_cov_14.144514	25527	25532
+UN	838	.	NODE_1_length_283677_cov_14.144514	25534	25534
+UN	839	.	NODE_1_length_283677_cov_14.144514	25536	25536
+UN	840	.	NODE_1_length_283677_cov_14.144514	25539	25554
+UN	841	.	NODE_1_length_283677_cov_14.144514	25562	25562
+UN	842	.	NODE_1_length_283677_cov_14.144514	28307	28307
+UN	843	.	NODE_1_length_283677_cov_14.144514	59642	59714
+UN	844	.	NODE_1_length_283677_cov_14.144514	59716	59752
+UN	845	.	NODE_1_length_283677_cov_14.144514	59756	59757
+UN	846	.	NODE_1_length_283677_cov_14.144514	59760	59760
+UN	847	.	NODE_1_length_283677_cov_14.144514	59774	59774
+UN	848	.	NODE_1_length_283677_cov_14.144514	62383	62384
+UN	849	.	NODE_1_length_283677_cov_14.144514	62386	62387
+UN	850	.	NODE_1_length_283677_cov_14.144514	62389	62390
+UN	851	.	NODE_1_length_283677_cov_14.144514	62397	62397
+UN	852	.	NODE_1_length_283677_cov_14.144514	62399	62408
+UN	853	.	NODE_1_length_283677_cov_14.144514	62410	62413
+UN	854	.	NODE_1_length_283677_cov_14.144514	62446	62451
+UN	855	.	NODE_1_length_283677_cov_14.144514	119025	119025
+UN	856	.	NODE_1_length_283677_cov_14.144514	205419	205419
+UN	857	.	NODE_1_length_283677_cov_14.144514	205430	205437
+UN	858	.	NODE_1_length_283677_cov_14.144514	205457	205470
+UN	859	.	NODE_1_length_283677_cov_14.144514	205530	205569
+UN	860	.	NODE_1_length_283677_cov_14.144514	208338	208338
+UN	861	.	NODE_1_length_283677_cov_14.144514	208340	208341
+UN	862	.	NODE_1_length_283677_cov_14.144514	208343	208401
+UN	863	.	NODE_1_length_283677_cov_14.144514	208406	208406
+UN	864	.	NODE_1_length_283677_cov_14.144514	208415	208415
+UN	865	.	NODE_1_length_283677_cov_14.144514	208417	208417
+UN	866	.	NODE_1_length_283677_cov_14.144514	208456	208456
+UN	867	.	NODE_1_length_283677_cov_14.144514	208463	208464
+UN	868	.	NODE_1_length_283677_cov_14.144514	275356	275356
+UN	869	.	NODE_1_length_283677_cov_14.144514	283637	283677
+UN	870	.	NODE_20_length_91803_cov_13.571807	1	124
+UN	871	.	NODE_20_length_91803_cov_13.571807	59938	59942
+UN	872	.	NODE_20_length_91803_cov_13.571807	59945	59946
+UN	873	.	NODE_20_length_91803_cov_13.571807	59948	59948
+UN	874	.	NODE_20_length_91803_cov_13.571807	59950	59950
+UN	875	.	NODE_20_length_91803_cov_13.571807	59952	59952
+UN	876	.	NODE_20_length_91803_cov_13.571807	59954	59954
+UN	877	.	NODE_20_length_91803_cov_13.571807	59961	59961
+UN	878	.	NODE_20_length_91803_cov_13.571807	59964	59964
+UN	879	.	NODE_20_length_91803_cov_13.571807	59967	59967
+UN	880	.	NODE_20_length_91803_cov_13.571807	59971	59971
+UN	881	.	NODE_20_length_91803_cov_13.571807	59975	59983
+UN	882	.	NODE_20_length_91803_cov_13.571807	59985	59987
+UN	883	.	NODE_20_length_91803_cov_13.571807	59989	59990
+UN	884	.	NODE_20_length_91803_cov_13.571807	59993	60002
+UN	885	.	NODE_20_length_91803_cov_13.571807	60005	60005
+UN	886	.	NODE_20_length_91803_cov_13.571807	60155	60155
+UN	887	.	NODE_20_length_91803_cov_13.571807	60181	60181
+UN	888	.	NODE_20_length_91803_cov_13.571807	60188	60188
+UN	889	.	NODE_20_length_91803_cov_13.571807	60192	60192
+UN	890	.	NODE_20_length_91803_cov_13.571807	60272	60272
+UN	891	.	NODE_20_length_91803_cov_13.571807	60281	60282
+UN	892	.	NODE_20_length_91803_cov_13.571807	60284	60284
+UN	893	.	NODE_20_length_91803_cov_13.571807	60326	60338
+UN	894	.	NODE_20_length_91803_cov_13.571807	60343	60343
+UN	895	.	NODE_20_length_91803_cov_13.571807	60346	60400
+UN	896	.	NODE_20_length_91803_cov_13.571807	63291	63291
+UN	897	.	NODE_20_length_91803_cov_13.571807	91704	91704
+UN	898	.	NODE_20_length_91803_cov_13.571807	91711	91711
+UN	899	.	NODE_20_length_91803_cov_13.571807	91714	91738
+UN	900	.	NODE_20_length_91803_cov_13.571807	91740	91740
+UN	901	.	NODE_20_length_91803_cov_13.571807	91742	91748
+UN	902	.	NODE_20_length_91803_cov_13.571807	91751	91803
+UN	903	.	NODE_21_length_76114_cov_15.178807	1	20
+UN	904	.	NODE_21_length_76114_cov_15.178807	22	22
+UN	905	.	NODE_21_length_76114_cov_15.178807	25	25
+UN	906	.	NODE_21_length_76114_cov_15.178807	28	33
+UN	907	.	NODE_21_length_76114_cov_15.178807	54	54
+UN	908	.	NODE_21_length_76114_cov_15.178807	63397	63429
+UN	909	.	NODE_21_length_76114_cov_15.178807	76102	76114
+UN	910	.	NODE_22_length_71800_cov_14.700166	1	37
+UN	911	.	NODE_23_length_68402_cov_16.331424	1	1
+UN	912	.	NODE_24_length_67417_cov_14.021177	1	22
+UN	913	.	NODE_24_length_67417_cov_14.021177	60510	60510
+UN	914	.	NODE_24_length_67417_cov_14.021177	60519	60519
+UN	915	.	NODE_24_length_67417_cov_14.021177	60530	60530
+UN	916	.	NODE_24_length_67417_cov_14.021177	61704	61704
+UN	917	.	NODE_24_length_67417_cov_14.021177	61717	61717
+UN	918	.	NODE_24_length_67417_cov_14.021177	61720	61721
+UN	919	.	NODE_24_length_67417_cov_14.021177	61724	61733
+UN	920	.	NODE_24_length_67417_cov_14.021177	61735	61738
+UN	921	.	NODE_24_length_67417_cov_14.021177	61740	61744
+UN	922	.	NODE_24_length_67417_cov_14.021177	61746	61749
+UN	923	.	NODE_24_length_67417_cov_14.021177	67402	67417
+UN	924	.	NODE_25_length_66569_cov_15.079347	4496	4503
+UN	925	.	NODE_25_length_66569_cov_15.079347	4506	4508
+UN	926	.	NODE_25_length_66569_cov_15.079347	4511	4512
+UN	927	.	NODE_25_length_66569_cov_15.079347	4514	4517
+UN	928	.	NODE_25_length_66569_cov_15.079347	66446	66569
+UN	929	.	NODE_26_length_58186_cov_16.047693	1	2
+UN	930	.	NODE_26_length_58186_cov_16.047693	21	21
+UN	931	.	NODE_26_length_58186_cov_16.047693	23	23
+UN	932	.	NODE_26_length_58186_cov_16.047693	25	25
+UN	933	.	NODE_26_length_58186_cov_16.047693	57906	57906
+UN	934	.	NODE_26_length_58186_cov_16.047693	57953	57953
+UN	935	.	NODE_26_length_58186_cov_16.047693	58178	58180
+UN	936	.	NODE_26_length_58186_cov_16.047693	58182	58186
+UN	937	.	NODE_27_length_57054_cov_15.850440	1	24
+UN	938	.	NODE_27_length_57054_cov_15.850440	26	26
+UN	939	.	NODE_27_length_57054_cov_15.850440	28	28
+UN	940	.	NODE_27_length_57054_cov_15.850440	34858	34858
+UN	941	.	NODE_27_length_57054_cov_15.850440	56928	57054
+UN	942	.	NODE_28_length_56931_cov_14.380994	19822	19846
+UN	943	.	NODE_28_length_56931_cov_14.380994	19848	19849
+UN	944	.	NODE_28_length_56931_cov_14.380994	19851	19888
+UN	945	.	NODE_28_length_56931_cov_14.380994	19891	19891
+UN	946	.	NODE_28_length_56931_cov_14.380994	19893	19904
+UN	947	.	NODE_28_length_56931_cov_14.380994	19906	19906
+UN	948	.	NODE_28_length_56931_cov_14.380994	19908	19938
+UN	949	.	NODE_28_length_56931_cov_14.380994	19952	19952
+UN	950	.	NODE_28_length_56931_cov_14.380994	39361	39361
+UN	951	.	NODE_28_length_56931_cov_14.380994	56913	56931
+UN	952	.	NODE_29_length_55434_cov_15.728913	1	66
+UN	953	.	NODE_29_length_55434_cov_15.728913	73	73
+UN	954	.	NODE_29_length_55434_cov_15.728913	86	86
+UN	955	.	NODE_2_length_147675_cov_14.669945	1	113
+UN	956	.	NODE_2_length_147675_cov_14.669945	3648	3648
+UN	957	.	NODE_2_length_147675_cov_14.669945	3655	3657
+UN	958	.	NODE_2_length_147675_cov_14.669945	3660	3661
+UN	959	.	NODE_2_length_147675_cov_14.669945	3664	3688
+UN	960	.	NODE_2_length_147675_cov_14.669945	31682	31684
+UN	961	.	NODE_2_length_147675_cov_14.669945	31686	31689
+UN	962	.	NODE_2_length_147675_cov_14.669945	31693	31694
+UN	963	.	NODE_2_length_147675_cov_14.669945	136030	136035
+UN	964	.	NODE_2_length_147675_cov_14.669945	136037	136037
+UN	965	.	NODE_2_length_147675_cov_14.669945	136039	136040
+UN	966	.	NODE_2_length_147675_cov_14.669945	136042	136042
+UN	967	.	NODE_2_length_147675_cov_14.669945	136057	136057
+UN	968	.	NODE_2_length_147675_cov_14.669945	136085	136085
+UN	969	.	NODE_2_length_147675_cov_14.669945	147548	147548
+UN	970	.	NODE_2_length_147675_cov_14.669945	147675	147675
+UN	971	.	NODE_30_length_54368_cov_15.321712	1	3
+UN	972	.	NODE_30_length_54368_cov_15.321712	54338	54368
+UN	973	.	NODE_31_length_54289_cov_15.493963	1	17
+UN	974	.	NODE_31_length_54289_cov_15.493963	27	27
+UN	975	.	NODE_31_length_54289_cov_15.493963	54284	54289
+UN	976	.	NODE_32_length_51549_cov_13.273424	51529	51531
+UN	977	.	NODE_32_length_51549_cov_13.273424	51533	51549
+UN	978	.	NODE_33_length_47526_cov_14.069959	1	21
+UN	979	.	NODE_33_length_47526_cov_14.069959	22816	22817
+UN	980	.	NODE_33_length_47526_cov_14.069959	22819	22819
+UN	981	.	NODE_33_length_47526_cov_14.069959	22826	22826
+UN	982	.	NODE_33_length_47526_cov_14.069959	22841	22841
+UN	983	.	NODE_33_length_47526_cov_14.069959	22850	22850
+UN	984	.	NODE_33_length_47526_cov_14.069959	22939	22939
+UN	985	.	NODE_33_length_47526_cov_14.069959	47525	47526
+UN	986	.	NODE_34_length_47461_cov_14.955930	1	1
+UN	987	.	NODE_34_length_47461_cov_14.955930	5	6
+UN	988	.	NODE_34_length_47461_cov_14.955930	10	10
+UN	989	.	NODE_34_length_47461_cov_14.955930	13	13
+UN	990	.	NODE_34_length_47461_cov_14.955930	47418	47461
+UN	991	.	NODE_35_length_47249_cov_15.872607	1	124
+UN	992	.	NODE_35_length_47249_cov_15.872607	47249	47249
+UN	993	.	NODE_36_length_47173_cov_14.140182	1	21
+UN	994	.	NODE_36_length_47173_cov_14.140182	47155	47156
+UN	995	.	NODE_36_length_47173_cov_14.140182	47159	47173
+UN	996	.	NODE_37_length_46345_cov_16.260072	1	1
+UN	997	.	NODE_38_length_44979_cov_14.853875	1	33
+UN	998	.	NODE_38_length_44979_cov_14.853875	37	37
+UN	999	.	NODE_38_length_44979_cov_14.853875	44952	44960
+UN	1000	.	NODE_38_length_44979_cov_14.853875	44965	44979
+UN	1001	.	NODE_39_length_44291_cov_16.995834	1	26
+UN	1002	.	NODE_39_length_44291_cov_16.995834	30	46
+UN	1003	.	NODE_39_length_44291_cov_16.995834	48	51
+UN	1004	.	NODE_39_length_44291_cov_16.995834	59	59
+UN	1005	.	NODE_39_length_44291_cov_16.995834	12717	12717
+UN	1006	.	NODE_39_length_44291_cov_16.995834	44266	44266
+UN	1007	.	NODE_39_length_44291_cov_16.995834	44268	44291
+UN	1008	.	NODE_3_length_137951_cov_14.578034	1	1
+UN	1009	.	NODE_3_length_137951_cov_14.578034	111753	111777
+UN	1010	.	NODE_3_length_137951_cov_14.578034	137931	137951
+UN	1011	.	NODE_40_length_43453_cov_15.657365	1	1
+UN	1012	.	NODE_41_length_43009_cov_14.470174	10997	10997
+UN	1013	.	NODE_42_length_40690_cov_13.862091	1	34
+UN	1014	.	NODE_42_length_40690_cov_13.862091	40671	40690
+UN	1015	.	NODE_43_length_40579_cov_15.811653	1	9
+UN	1016	.	NODE_43_length_40579_cov_15.811653	16	16
+UN	1017	.	NODE_43_length_40579_cov_15.811653	40572	40579
+UN	1018	.	NODE_44_length_35932_cov_16.504957	1	70
+UN	1019	.	NODE_44_length_35932_cov_16.504957	78	78
+UN	1020	.	NODE_44_length_35932_cov_16.504957	80	80
+UN	1021	.	NODE_44_length_35932_cov_16.504957	85	85
+UN	1022	.	NODE_44_length_35932_cov_16.504957	91	91
+UN	1023	.	NODE_44_length_35932_cov_16.504957	35921	35924
+UN	1024	.	NODE_44_length_35932_cov_16.504957	35926	35927
+UN	1025	.	NODE_44_length_35932_cov_16.504957	35929	35932
+UN	1026	.	NODE_45_length_35052_cov_14.023908	1	2
+UN	1027	.	NODE_45_length_35052_cov_14.023908	12941	12941
+UN	1028	.	NODE_47_length_33776_cov_12.835270	1	33
+UN	1029	.	NODE_47_length_33776_cov_12.835270	35	37
+UN	1030	.	NODE_47_length_33776_cov_12.835270	39	50
+UN	1031	.	NODE_47_length_33776_cov_12.835270	52	52
+UN	1032	.	NODE_47_length_33776_cov_12.835270	28565	28565
+UN	1033	.	NODE_48_length_33391_cov_14.154191	1	44
+UN	1034	.	NODE_48_length_33391_cov_14.154191	24946	24958
+UN	1035	.	NODE_49_length_33308_cov_14.723788	1	1
+UN	1036	.	NODE_49_length_33308_cov_14.723788	33282	33308
+UN	1037	.	NODE_4_length_134155_cov_14.571649	3326	3326
+UN	1038	.	NODE_4_length_134155_cov_14.571649	3356	3356
+UN	1039	.	NODE_4_length_134155_cov_14.571649	11784	11784
+UN	1040	.	NODE_4_length_134155_cov_14.571649	11828	11828
+UN	1041	.	NODE_4_length_134155_cov_14.571649	134075	134075
+UN	1042	.	NODE_4_length_134155_cov_14.571649	134084	134084
+UN	1043	.	NODE_4_length_134155_cov_14.571649	134090	134090
+UN	1044	.	NODE_4_length_134155_cov_14.571649	134096	134096
+UN	1045	.	NODE_4_length_134155_cov_14.571649	134108	134108
+UN	1046	.	NODE_4_length_134155_cov_14.571649	134154	134155
+UN	1047	.	NODE_50_length_30961_cov_14.443407	1	44
+UN	1048	.	NODE_51_length_30791_cov_13.838932	1	20
+UN	1049	.	NODE_51_length_30791_cov_13.838932	22	22
+UN	1050	.	NODE_51_length_30791_cov_13.838932	44	44
+UN	1051	.	NODE_51_length_30791_cov_13.838932	26247	26247
+UN	1052	.	NODE_51_length_30791_cov_13.838932	26251	26251
+UN	1053	.	NODE_51_length_30791_cov_13.838932	27674	27674
+UN	1054	.	NODE_51_length_30791_cov_13.838932	27687	27687
+UN	1055	.	NODE_51_length_30791_cov_13.838932	27693	27693
+UN	1056	.	NODE_51_length_30791_cov_13.838932	27695	27697
+UN	1057	.	NODE_51_length_30791_cov_13.838932	27710	27710
+UN	1058	.	NODE_51_length_30791_cov_13.838932	27713	27713
+UN	1059	.	NODE_51_length_30791_cov_13.838932	28280	28280
+UN	1060	.	NODE_51_length_30791_cov_13.838932	28283	28283
+UN	1061	.	NODE_51_length_30791_cov_13.838932	30665	30791
+UN	1062	.	NODE_52_length_28997_cov_14.175476	1	16
+UN	1063	.	NODE_53_length_28637_cov_18.413399	1	27
+UN	1064	.	NODE_53_length_28637_cov_18.413399	28626	28626
+UN	1065	.	NODE_53_length_28637_cov_18.413399	28636	28637
+UN	1066	.	NODE_54_length_26467_cov_16.661465	1	12
+UN	1067	.	NODE_54_length_26467_cov_16.661465	26445	26467
+UN	1068	.	NODE_57_length_25591_cov_17.529414	1	10
+UN	1069	.	NODE_57_length_25591_cov_17.529414	310	310
+UN	1070	.	NODE_57_length_25591_cov_17.529414	25519	25591
+UN	1071	.	NODE_58_length_25496_cov_10.583468	1	4
+UN	1072	.	NODE_58_length_25496_cov_10.583468	128	128
+UN	1073	.	NODE_58_length_25496_cov_10.583468	16244	16244
+UN	1074	.	NODE_58_length_25496_cov_10.583468	17456	17465
+UN	1075	.	NODE_58_length_25496_cov_10.583468	17536	17537
+UN	1076	.	NODE_58_length_25496_cov_10.583468	17543	17543
+UN	1077	.	NODE_58_length_25496_cov_10.583468	17546	17546
+UN	1078	.	NODE_58_length_25496_cov_10.583468	17705	17718
+UN	1079	.	NODE_58_length_25496_cov_10.583468	17720	17785
+UN	1080	.	NODE_58_length_25496_cov_10.583468	17794	17796
+UN	1081	.	NODE_58_length_25496_cov_10.583468	17801	17801
+UN	1082	.	NODE_58_length_25496_cov_10.583468	17819	17819
+UN	1083	.	NODE_58_length_25496_cov_10.583468	17848	17849
+UN	1084	.	NODE_58_length_25496_cov_10.583468	25033	25033
+UN	1085	.	NODE_58_length_25496_cov_10.583468	25035	25035
+UN	1086	.	NODE_58_length_25496_cov_10.583468	25040	25059
+UN	1087	.	NODE_58_length_25496_cov_10.583468	25061	25061
+UN	1088	.	NODE_58_length_25496_cov_10.583468	25140	25140
+UN	1089	.	NODE_58_length_25496_cov_10.583468	25143	25143
+UN	1090	.	NODE_58_length_25496_cov_10.583468	25303	25303
+UN	1091	.	NODE_58_length_25496_cov_10.583468	25375	25375
+UN	1092	.	NODE_58_length_25496_cov_10.583468	25382	25382
+UN	1093	.	NODE_58_length_25496_cov_10.583468	25386	25386
+UN	1094	.	NODE_58_length_25496_cov_10.583468	25390	25390
+UN	1095	.	NODE_58_length_25496_cov_10.583468	25394	25394
+UN	1096	.	NODE_58_length_25496_cov_10.583468	25398	25398
+UN	1097	.	NODE_58_length_25496_cov_10.583468	25403	25496
+UN	1098	.	NODE_59_length_24902_cov_17.459859	1	22
+UN	1099	.	NODE_5_length_126675_cov_12.099970	1	2
+UN	1100	.	NODE_5_length_126675_cov_12.099970	12637	12645
+UN	1101	.	NODE_5_length_126675_cov_12.099970	12648	12673
+UN	1102	.	NODE_5_length_126675_cov_12.099970	12675	12917
+UN	1103	.	NODE_5_length_126675_cov_12.099970	14021	14021
+UN	1104	.	NODE_5_length_126675_cov_12.099970	14468	14468
+UN	1105	.	NODE_5_length_126675_cov_12.099970	14797	14797
+UN	1106	.	NODE_5_length_126675_cov_12.099970	14808	14808
+UN	1107	.	NODE_5_length_126675_cov_12.099970	14819	14819
+UN	1108	.	NODE_5_length_126675_cov_12.099970	14821	14827
+UN	1109	.	NODE_5_length_126675_cov_12.099970	14913	14913
+UN	1110	.	NODE_5_length_126675_cov_12.099970	14918	14919
+UN	1111	.	NODE_5_length_126675_cov_12.099970	14924	14925
+UN	1112	.	NODE_5_length_126675_cov_12.099970	14931	14931
+UN	1113	.	NODE_5_length_126675_cov_12.099970	21355	21355
+UN	1114	.	NODE_5_length_126675_cov_12.099970	21357	21357
+UN	1115	.	NODE_5_length_126675_cov_12.099970	22346	22378
+UN	1116	.	NODE_5_length_126675_cov_12.099970	22548	22549
+UN	1117	.	NODE_5_length_126675_cov_12.099970	22559	22559
+UN	1118	.	NODE_5_length_126675_cov_12.099970	22567	22567
+UN	1119	.	NODE_5_length_126675_cov_12.099970	22570	22570
+UN	1120	.	NODE_5_length_126675_cov_12.099970	22573	22573
+UN	1121	.	NODE_5_length_126675_cov_12.099970	22581	22581
+UN	1122	.	NODE_5_length_126675_cov_12.099970	22586	22586
+UN	1123	.	NODE_5_length_126675_cov_12.099970	22590	22591
+UN	1124	.	NODE_5_length_126675_cov_12.099970	22593	22593
+UN	1125	.	NODE_5_length_126675_cov_12.099970	22595	22595
+UN	1126	.	NODE_5_length_126675_cov_12.099970	22597	22599
+UN	1127	.	NODE_5_length_126675_cov_12.099970	22602	22602
+UN	1128	.	NODE_5_length_126675_cov_12.099970	22654	22654
+UN	1129	.	NODE_5_length_126675_cov_12.099970	22671	22708
+UN	1130	.	NODE_5_length_126675_cov_12.099970	22779	22779
+UN	1131	.	NODE_5_length_126675_cov_12.099970	22783	22783
+UN	1132	.	NODE_5_length_126675_cov_12.099970	22786	22786
+UN	1133	.	NODE_5_length_126675_cov_12.099970	22800	22800
+UN	1134	.	NODE_5_length_126675_cov_12.099970	22802	22802
+UN	1135	.	NODE_5_length_126675_cov_12.099970	22818	22818
+UN	1136	.	NODE_5_length_126675_cov_12.099970	22821	22821
+UN	1137	.	NODE_5_length_126675_cov_12.099970	23003	23004
+UN	1138	.	NODE_5_length_126675_cov_12.099970	23007	23007
+UN	1139	.	NODE_5_length_126675_cov_12.099970	23014	23014
+UN	1140	.	NODE_5_length_126675_cov_12.099970	23017	23018
+UN	1141	.	NODE_5_length_126675_cov_12.099970	23021	23021
+UN	1142	.	NODE_5_length_126675_cov_12.099970	23024	23028
+UN	1143	.	NODE_5_length_126675_cov_12.099970	23034	23034
+UN	1144	.	NODE_5_length_126675_cov_12.099970	23036	23036
+UN	1145	.	NODE_5_length_126675_cov_12.099970	23039	23039
+UN	1146	.	NODE_5_length_126675_cov_12.099970	23041	23041
+UN	1147	.	NODE_5_length_126675_cov_12.099970	23043	23043
+UN	1148	.	NODE_5_length_126675_cov_12.099970	23045	23046
+UN	1149	.	NODE_5_length_126675_cov_12.099970	23049	23049
+UN	1150	.	NODE_5_length_126675_cov_12.099970	23051	23058
+UN	1151	.	NODE_5_length_126675_cov_12.099970	23060	23060
+UN	1152	.	NODE_5_length_126675_cov_12.099970	23062	23136
+UN	1153	.	NODE_5_length_126675_cov_12.099970	23138	23138
+UN	1154	.	NODE_5_length_126675_cov_12.099970	23140	23141
+UN	1155	.	NODE_5_length_126675_cov_12.099970	23144	23145
+UN	1156	.	NODE_5_length_126675_cov_12.099970	23147	23148
+UN	1157	.	NODE_5_length_126675_cov_12.099970	23153	23153
+UN	1158	.	NODE_5_length_126675_cov_12.099970	23170	23170
+UN	1159	.	NODE_5_length_126675_cov_12.099970	23180	23180
+UN	1160	.	NODE_5_length_126675_cov_12.099970	24277	24277
+UN	1161	.	NODE_5_length_126675_cov_12.099970	24279	24279
+UN	1162	.	NODE_5_length_126675_cov_12.099970	24283	24283
+UN	1163	.	NODE_5_length_126675_cov_12.099970	24285	24287
+UN	1164	.	NODE_5_length_126675_cov_12.099970	24289	24290
+UN	1165	.	NODE_5_length_126675_cov_12.099970	24292	24292
+UN	1166	.	NODE_5_length_126675_cov_12.099970	24295	24295
+UN	1167	.	NODE_5_length_126675_cov_12.099970	24299	24299
+UN	1168	.	NODE_5_length_126675_cov_12.099970	24307	24308
+UN	1169	.	NODE_5_length_126675_cov_12.099970	24316	24317
+UN	1170	.	NODE_5_length_126675_cov_12.099970	24320	24321
+UN	1171	.	NODE_5_length_126675_cov_12.099970	24361	24361
+UN	1172	.	NODE_5_length_126675_cov_12.099970	24380	24380
+UN	1173	.	NODE_5_length_126675_cov_12.099970	24485	24790
+UN	1174	.	NODE_5_length_126675_cov_12.099970	24797	24797
+UN	1175	.	NODE_5_length_126675_cov_12.099970	24990	25023
+UN	1176	.	NODE_5_length_126675_cov_12.099970	25030	25030
+UN	1177	.	NODE_5_length_126675_cov_12.099970	25166	25166
+UN	1178	.	NODE_5_length_126675_cov_12.099970	25170	25171
+UN	1179	.	NODE_5_length_126675_cov_12.099970	25180	25183
+UN	1180	.	NODE_5_length_126675_cov_12.099970	25191	25191
+UN	1181	.	NODE_5_length_126675_cov_12.099970	25198	25198
+UN	1182	.	NODE_5_length_126675_cov_12.099970	25204	25458
+UN	1183	.	NODE_5_length_126675_cov_12.099970	25460	25471
+UN	1184	.	NODE_5_length_126675_cov_12.099970	25473	25510
+UN	1185	.	NODE_5_length_126675_cov_12.099970	25513	25513
+UN	1186	.	NODE_5_length_126675_cov_12.099970	25515	25517
+UN	1187	.	NODE_5_length_126675_cov_12.099970	25519	25519
+UN	1188	.	NODE_5_length_126675_cov_12.099970	25523	25529
+UN	1189	.	NODE_5_length_126675_cov_12.099970	25532	25532
+UN	1190	.	NODE_5_length_126675_cov_12.099970	25536	25536
+UN	1191	.	NODE_5_length_126675_cov_12.099970	25539	25544
+UN	1192	.	NODE_5_length_126675_cov_12.099970	47536	47536
+UN	1193	.	NODE_5_length_126675_cov_12.099970	123140	123329
+UN	1194	.	NODE_5_length_126675_cov_12.099970	123331	123391
+UN	1195	.	NODE_5_length_126675_cov_12.099970	123401	123402
+UN	1196	.	NODE_5_length_126675_cov_12.099970	123405	123405
+UN	1197	.	NODE_5_length_126675_cov_12.099970	123407	123408
+UN	1198	.	NODE_5_length_126675_cov_12.099970	123410	123410
+UN	1199	.	NODE_5_length_126675_cov_12.099970	123428	123428
+UN	1200	.	NODE_5_length_126675_cov_12.099970	123431	123431
+UN	1201	.	NODE_5_length_126675_cov_12.099970	123448	123449
+UN	1202	.	NODE_5_length_126675_cov_12.099970	123476	123476
+UN	1203	.	NODE_60_length_24778_cov_13.817938	1	30
+UN	1204	.	NODE_60_length_24778_cov_13.817938	32	48
+UN	1205	.	NODE_60_length_24778_cov_13.817938	50	63
+UN	1206	.	NODE_60_length_24778_cov_13.817938	66	66
+UN	1207	.	NODE_60_length_24778_cov_13.817938	8743	8743
+UN	1208	.	NODE_60_length_24778_cov_13.817938	8803	8803
+UN	1209	.	NODE_61_length_23958_cov_16.322311	1	16
+UN	1210	.	NODE_61_length_23958_cov_16.322311	23932	23958
+UN	1211	.	NODE_62_length_21842_cov_17.701174	1	4
+UN	1212	.	NODE_62_length_21842_cov_17.701174	21827	21828
+UN	1213	.	NODE_62_length_21842_cov_17.701174	21832	21842
+UN	1214	.	NODE_63_length_20046_cov_15.377931	1	26
+UN	1215	.	NODE_63_length_20046_cov_15.377931	20044	20046
+UN	1216	.	NODE_64_length_19814_cov_16.454158	1	1
+UN	1217	.	NODE_64_length_19814_cov_16.454158	3239	3240
+UN	1218	.	NODE_64_length_19814_cov_16.454158	3248	3248
+UN	1219	.	NODE_64_length_19814_cov_16.454158	3250	3251
+UN	1220	.	NODE_64_length_19814_cov_16.454158	3254	3254
+UN	1221	.	NODE_64_length_19814_cov_16.454158	3275	3275
+UN	1222	.	NODE_64_length_19814_cov_16.454158	3285	3285
+UN	1223	.	NODE_64_length_19814_cov_16.454158	19765	19767
+UN	1224	.	NODE_64_length_19814_cov_16.454158	19771	19772
+UN	1225	.	NODE_64_length_19814_cov_16.454158	19775	19775
+UN	1226	.	NODE_64_length_19814_cov_16.454158	19777	19777
+UN	1227	.	NODE_64_length_19814_cov_16.454158	19779	19785
+UN	1228	.	NODE_64_length_19814_cov_16.454158	19789	19790
+UN	1229	.	NODE_64_length_19814_cov_16.454158	19794	19814
+UN	1230	.	NODE_65_length_18411_cov_15.244203	1	18
+UN	1231	.	NODE_65_length_18411_cov_15.244203	21	21
+UN	1232	.	NODE_65_length_18411_cov_15.244203	25	25
+UN	1233	.	NODE_65_length_18411_cov_15.244203	27	27
+UN	1234	.	NODE_65_length_18411_cov_15.244203	30	30
+UN	1235	.	NODE_65_length_18411_cov_15.244203	34	34
+UN	1236	.	NODE_65_length_18411_cov_15.244203	36	37
+UN	1237	.	NODE_65_length_18411_cov_15.244203	43	45
+UN	1238	.	NODE_65_length_18411_cov_15.244203	49	49
+UN	1239	.	NODE_65_length_18411_cov_15.244203	52	54
+UN	1240	.	NODE_65_length_18411_cov_15.244203	18385	18411
+UN	1241	.	NODE_66_length_17581_cov_14.912971	1	82
+UN	1242	.	NODE_66_length_17581_cov_14.912971	17564	17581
+UN	1243	.	NODE_67_length_17417_cov_16.557604	1	16
+UN	1244	.	NODE_67_length_17417_cov_16.557604	18	19
+UN	1245	.	NODE_67_length_17417_cov_16.557604	25	25
+UN	1246	.	NODE_67_length_17417_cov_16.557604	8355	8355
+UN	1247	.	NODE_67_length_17417_cov_16.557604	17417	17417
+UN	1248	.	NODE_68_length_16873_cov_16.542458	1	125
+UN	1249	.	NODE_68_length_16873_cov_16.542458	16854	16873
+UN	1250	.	NODE_69_length_16640_cov_15.272270	1	18
+UN	1251	.	NODE_69_length_16640_cov_15.272270	16618	16640
+UN	1252	.	NODE_6_length_126390_cov_15.114040	1	11
+UN	1253	.	NODE_6_length_126390_cov_15.114040	15	15
+UN	1254	.	NODE_6_length_126390_cov_15.114040	36666	36666
+UN	1255	.	NODE_6_length_126390_cov_15.114040	36671	36671
+UN	1256	.	NODE_6_length_126390_cov_15.114040	36675	36675
+UN	1257	.	NODE_6_length_126390_cov_15.114040	36691	36691
+UN	1258	.	NODE_6_length_126390_cov_15.114040	36697	36697
+UN	1259	.	NODE_6_length_126390_cov_15.114040	36712	36716
+UN	1260	.	NODE_6_length_126390_cov_15.114040	36720	36722
+UN	1261	.	NODE_70_length_15614_cov_13.589075	1	1
+UN	1262	.	NODE_70_length_15614_cov_13.589075	15595	15614
+UN	1263	.	NODE_71_length_15514_cov_16.357120	1	32
+UN	1264	.	NODE_71_length_15514_cov_16.357120	15503	15514
+UN	1265	.	NODE_72_length_15467_cov_17.402086	1	9
+UN	1266	.	NODE_72_length_15467_cov_17.402086	15341	15467
+UN	1267	.	NODE_73_length_15178_cov_17.144841	1	32
+UN	1268	.	NODE_73_length_15178_cov_17.144841	35	35
+UN	1269	.	NODE_73_length_15178_cov_17.144841	43	43
+UN	1270	.	NODE_73_length_15178_cov_17.144841	45	45
+UN	1271	.	NODE_73_length_15178_cov_17.144841	15053	15178
+UN	1272	.	NODE_74_length_15083_cov_14.230275	1	123
+UN	1273	.	NODE_74_length_15083_cov_14.230275	9483	9517
+UN	1274	.	NODE_74_length_15083_cov_14.230275	9789	9792
+UN	1275	.	NODE_74_length_15083_cov_14.230275	9797	9797
+UN	1276	.	NODE_74_length_15083_cov_14.230275	9811	9811
+UN	1277	.	NODE_74_length_15083_cov_14.230275	9814	9814
+UN	1278	.	NODE_74_length_15083_cov_14.230275	9819	9819
+UN	1279	.	NODE_74_length_15083_cov_14.230275	9826	9826
+UN	1280	.	NODE_74_length_15083_cov_14.230275	9834	9834
+UN	1281	.	NODE_74_length_15083_cov_14.230275	14960	15083
+UN	1282	.	NODE_75_length_13923_cov_14.970136	13797	13923
+UN	1283	.	NODE_76_length_13241_cov_14.331173	1	11
+UN	1284	.	NODE_77_length_12679_cov_15.989006	1	14
+UN	1285	.	NODE_77_length_12679_cov_15.989006	25	25
+UN	1286	.	NODE_77_length_12679_cov_15.989006	12644	12679
+UN	1287	.	NODE_78_length_12648_cov_13.287517	1	30
+UN	1288	.	NODE_78_length_12648_cov_13.287517	12524	12648
+UN	1289	.	NODE_79_length_12438_cov_13.711153	1	19
+UN	1290	.	NODE_79_length_12438_cov_13.711153	41	41
+UN	1291	.	NODE_79_length_12438_cov_13.711153	5690	5691
+UN	1292	.	NODE_79_length_12438_cov_13.711153	5694	5694
+UN	1293	.	NODE_79_length_12438_cov_13.711153	5709	5709
+UN	1294	.	NODE_79_length_12438_cov_13.711153	5712	5712
+UN	1295	.	NODE_79_length_12438_cov_13.711153	5715	5715
+UN	1296	.	NODE_79_length_12438_cov_13.711153	5717	5717
+UN	1297	.	NODE_79_length_12438_cov_13.711153	5720	5720
+UN	1298	.	NODE_79_length_12438_cov_13.711153	12322	12438
+UN	1299	.	NODE_7_length_119377_cov_13.596419	1	12
+UN	1300	.	NODE_7_length_119377_cov_13.596419	119372	119377
+UN	1301	.	NODE_80_length_11334_cov_15.516909	1	1
+UN	1302	.	NODE_80_length_11334_cov_15.516909	11316	11334
+UN	1303	.	NODE_81_length_10055_cov_13.632454	981	981
+UN	1304	.	NODE_81_length_10055_cov_13.632454	994	994
+UN	1305	.	NODE_81_length_10055_cov_13.632454	10035	10055
+UN	1306	.	NODE_82_length_10033_cov_18.448819	1	17
+UN	1307	.	NODE_82_length_10033_cov_18.448819	9886	9886
+UN	1308	.	NODE_82_length_10033_cov_18.448819	9912	10033
+UN	1309	.	NODE_83_length_9041_cov_13.273839	1	1
+UN	1310	.	NODE_83_length_9041_cov_13.273839	9007	9007
+UN	1311	.	NODE_83_length_9041_cov_13.273839	9009	9009
+UN	1312	.	NODE_83_length_9041_cov_13.273839	9011	9041
+UN	1313	.	NODE_84_length_8933_cov_13.067227	1	4
+UN	1314	.	NODE_84_length_8933_cov_13.067227	8930	8930
+UN	1315	.	NODE_84_length_8933_cov_13.067227	8932	8933
+UN	1316	.	NODE_85_length_8716_cov_15.515427	1	4
+UN	1317	.	NODE_85_length_8716_cov_15.515427	5578	5578
+UN	1318	.	NODE_85_length_8716_cov_15.515427	5662	5662
+UN	1319	.	NODE_85_length_8716_cov_15.515427	5666	5667
+UN	1320	.	NODE_85_length_8716_cov_15.515427	8592	8716
+UN	1321	.	NODE_86_length_8606_cov_16.106852	1	22
+UN	1322	.	NODE_86_length_8606_cov_16.106852	25	25
+UN	1323	.	NODE_86_length_8606_cov_16.106852	28	29
+UN	1324	.	NODE_86_length_8606_cov_16.106852	33	33
+UN	1325	.	NODE_87_length_7911_cov_15.112025	1	124
+UN	1326	.	NODE_87_length_7911_cov_15.112025	7840	7843
+UN	1327	.	NODE_87_length_7911_cov_15.112025	7849	7850
+UN	1328	.	NODE_87_length_7911_cov_15.112025	7852	7852
+UN	1329	.	NODE_87_length_7911_cov_15.112025	7854	7860
+UN	1330	.	NODE_87_length_7911_cov_15.112025	7863	7882
+UN	1331	.	NODE_87_length_7911_cov_15.112025	7884	7886
+UN	1332	.	NODE_87_length_7911_cov_15.112025	7888	7911
+UN	1333	.	NODE_88_length_7888_cov_14.965984	1	11
+UN	1334	.	NODE_88_length_7888_cov_14.965984	13	25
+UN	1335	.	NODE_88_length_7888_cov_14.965984	7886	7888
+UN	1336	.	NODE_89_length_7514_cov_13.340869	1	61
+UN	1337	.	NODE_89_length_7514_cov_13.340869	63	69
+UN	1338	.	NODE_89_length_7514_cov_13.340869	7508	7514
+UN	1339	.	NODE_8_length_116180_cov_13.950471	1	39
+UN	1340	.	NODE_8_length_116180_cov_13.950471	41	41
+UN	1341	.	NODE_8_length_116180_cov_13.950471	45	46
+UN	1342	.	NODE_8_length_116180_cov_13.950471	52057	52057
+UN	1343	.	NODE_8_length_116180_cov_13.950471	70432	70434
+UN	1344	.	NODE_8_length_116180_cov_13.950471	70448	70450
+UN	1345	.	NODE_8_length_116180_cov_13.950471	70452	70452
+UN	1346	.	NODE_8_length_116180_cov_13.950471	70455	70455
+UN	1347	.	NODE_8_length_116180_cov_13.950471	70461	70461
+UN	1348	.	NODE_8_length_116180_cov_13.950471	70516	70516
+UN	1349	.	NODE_8_length_116180_cov_13.950471	116180	116180
+UN	1350	.	NODE_90_length_6611_cov_21.446175	1	3
+UN	1351	.	NODE_90_length_6611_cov_21.446175	6554	6554
+UN	1352	.	NODE_90_length_6611_cov_21.446175	6571	6611
+UN	1353	.	NODE_91_length_6326_cov_14.081142	1	12
+UN	1354	.	NODE_91_length_6326_cov_14.081142	6299	6326
+UN	1355	.	NODE_92_length_6138_cov_19.022792	1	2
+UN	1356	.	NODE_92_length_6138_cov_19.022792	6108	6138
+UN	1357	.	NODE_93_length_5868_cov_13.626720	1	126
+UN	1358	.	NODE_93_length_5868_cov_13.626720	5852	5868
+UN	1359	.	NODE_94_length_5665_cov_21.343084	5625	5665
+UN	1360	.	NODE_95_length_5581_cov_23.978181	1	15
+UN	1361	.	NODE_95_length_5581_cov_23.978181	5563	5581
+UN	1362	.	NODE_96_length_5246_cov_16.543661	1	1
+UN	1363	.	NODE_96_length_5246_cov_16.543661	5122	5246
+UN	1364	.	NODE_97_length_4374_cov_16.302096	1	9
+UN	1365	.	NODE_97_length_4374_cov_16.302096	4374	4374
+UN	1366	.	NODE_98_length_4367_cov_21.630425	1	31
+UN	1367	.	NODE_98_length_4367_cov_21.630425	4339	4339
+UN	1368	.	NODE_98_length_4367_cov_21.630425	4342	4343
+UN	1369	.	NODE_98_length_4367_cov_21.630425	4345	4349
+UN	1370	.	NODE_98_length_4367_cov_21.630425	4351	4352
+UN	1371	.	NODE_98_length_4367_cov_21.630425	4354	4367
+UN	1372	.	NODE_99_length_4324_cov_632.709793	4293	4324
+UN	1373	.	NODE_9_length_116042_cov_14.301376	27748	27748
+UN	1374	.	NODE_9_length_116042_cov_14.301376	27751	27751
+UN	1375	.	NODE_9_length_116042_cov_14.301376	27769	27769
+UN	1376	.	NODE_9_length_116042_cov_14.301376	27771	27771
+UN	1377	.	NODE_9_length_116042_cov_14.301376	116023	116042
