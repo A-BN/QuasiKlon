@@ -6,42 +6,35 @@
 #' @export
 
 library(dplyr)
-
+library(tidyr)
 gd_subtract <-
-	function(gd_list, reference = 0) {
-		# Get merged list TODO = as argument?
-		gd_df <- gd_merge(gd_list)
-		
-		gd_subtract_result <-
-			gd_df %>%
-				group_by(type, position) %>%
-				summarize(n()) %>%
-				filter(`n()` > 1) %>%
-				View()
-		
-		# parcours chaque gd
-			# si tu rencontres une mutation (= position + type + new_seq + size ?)
-			# qui est aussi presente chez la reference, supprime la
-		
-		# exporte ce nouveau dataframe (voire output-le)
-		
-		if(reference == 0) {
-			# Don't use that block please
-			reference = gd_df[gd_origin==unique(gd_origin)[1]]
-		}
-		
-		for (gd_file in gd_list) {
-			tmp_df <-
-				gd_load(gd_file)
-			tmp_df <-
-				tmp_df %>%
-					dplyr::mutate(gd_origin = 
-						strsplit(basename(gd_file), '.')[1] # Remove extension (if there is one and path)
-					) 
-			
-			rbind(gd_df, tmp_df)
-		}
+	function(gd_merged, ref_name, filtered_out = TRUE) {
+	  ref_name <- stringr::str_remove(string = ref_name, pattern = "\\.gd")
+	  invert_thre <- length(unique(gd_merged$origin)) / 2
+	  gd_merged <-
+	  gd_merged %>%
+	    # select(-evidence_id, -parent_ids) %>%
+	    mutate(unique_id = paste(type, seq_id, position, sep = "|")) %>%
+	    mutate(in_ref = unique_id %in% unique_id[origin == ref_name]) %>%
+	    group_by(unique_id) %>%
+	    mutate(mutated_ref = if_else(condition = !(in_ref) & n() > invert_thre, 
+	                                 true = TRUE, 
+	                                 false = FALSE)) %>%
+	    select(-unique_id)
+	  
+	  if(! filtered_out) return(gd_merged)
+	  
+    gd_out <- 
+      gd_merged %>%
+      filter(! in_ref) %>%
+      mutate(origin = if_else(condition = mutated_ref, true = ref_name, false = origin)) %>%
+      distinct() %>% # An 'inverted' mutation is present n times w/ n being the number of gd it was present in.
+      select(-in_ref, -mutated_ref)
+   return(gd_out)   
 	}
 
-gd_list = list('R/output.gd', 'R/output_b.gd')
-gd_merge(gd_list)
+
+gd_list <- list.files(path = "~/Desktop/variants/patient_13/", pattern = ".*.gd", full.names = TRUE, recursive = TRUE)
+bla <- gd_merge(gd_list)
+ref_name <- "ref.gd"
+gd_subtract(gd_merged = bla, ref_name = "ref.gd", filtered_out = TRUE)
