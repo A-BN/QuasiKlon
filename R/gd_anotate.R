@@ -1,26 +1,17 @@
-#' @author A-BN / A-AB
-#' @date 2018/07/11
-#' @description gff_parser() returns annotation from a list of mutation from df
-#' @param gff_file is gff3 reference from breseq/data and subtracted comes from the gd_substract() function
+#' gff_parser() returns annotation from a list of mutation from df
+#'
+#' @param gff_file path to gff3 reference file from breseq/data
+#' @param subtracted come from gd_substract()
+#'
 #' @return a data frame containing for each mutation a row with anotation
 #' @export
-
-library(readr)
-library(ape)
-library(stringr)
-library(tidyr)
-library(rtracklayer)
-library(fastaUtils)
-library(seqinr)
-library(Biostrings)
-library(XVector) # subseq needs it
-
-
+#'
+#' @examples
 gd_anotate <-
 	function(gff_file, subtracted) {
 		# Cut gff3 file from breseq in two: the second one is the fasta
 		gff_total <- read_file(gff_file) %>%
-			str_split(string = ., pattern = "##FASTA")
+			stringr::str_split(string = ., pattern = "##FASTA")
 		
 		write(gff_total[[1]][2], file="/tmp/fasta.delete")
 		
@@ -28,12 +19,11 @@ gd_anotate <-
 		my_ref <- rtracklayer::import.gff3(gff_file)
 		
 		# Open fasta
-		#my_fasta <- seqinr::read.fasta(file = "/tmp/fasta.delete", as.string=TRUE)
 		my_fasta <- Biostrings::readDNAStringSet(filepath = "/tmp/fasta.delete")
 		
 		subtracted <-
 			subtracted %>%
-				filter(unique_id != "NA|NA|NA")
+				dplyr::filter(unique_id != "NA|NA|NA")
 		
 		
 		# Left join metadata from gff on subtracted data frame
@@ -48,7 +38,7 @@ gd_anotate <-
 		my_gd_df <- cbind(my_gd_df, ID = my_ref@elementMetadata[nearest_feat, c("ID")])
 		
 		## Preparing the result dataframe
-		my_gd_df <- left_join(x = as.data.frame(my_gd_df), 
+		my_gd_df <- dplyr::left_join(x = as.data.frame(my_gd_df), 
 							  y = as.data.frame(my_ref), 
 							  by = 'ID', 
 							  suffix = c("_mut", "_ref"))
@@ -56,66 +46,55 @@ gd_anotate <-
 		# Reset size for SNP, INS et SUB		
 		my_gd_df <-
 			my_gd_df %>%
-				mutate(size = case_when(type_mut == "SNP" ~ as.double(1),
+				dplyr::mutate(size = dplyr::case_when(type_mut == "SNP" ~ as.double(1),
 										type_mut == "INS" | type_mut == "SUB" ~ as.double(nchar(new_seq)),
 										TRUE ~ as.double(size))) %>%
-				rowwise() %>%
-				mutate(ref_seq = as.character(subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
+				dplyr::rowwise() %>%
+				dplyr::mutate(ref_seq = as.character(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
 													 start = start_mut, 
 													 width = size))) %>%
-				select(ref_seq, new_seq, size, type_mut, everything(), -unique_id, -seqnames_ref, -width_mut, -evidence_id, -parent_ids, -score, -phase, -source, -locus_tag, -note)
+				dplyr::select(ref_seq, new_seq, size, type_mut, everything(), -unique_id, -seqnames_ref, -width_mut, -evidence_id, -parent_ids, -score, -phase, -source, -locus_tag, -note)
 		
 		# Get codon pos
 		my_gd_df <-
 			my_gd_df %>%
-				mutate(codon_start = if_else(condition = (type_mut == "SNP"),
+				dplyr::mutate(codon_start = dplyr::if_else(condition = (type_mut == "SNP"),
 											true = start_mut - start_ref,
 											false = NA_integer_)) %>% 
-				mutate(codon_pos = case_when(codon_start %% 3 == 2 ~ 1, # In a 1-based world, pos %% 3 + 1
+				dplyr::mutate(codon_pos = dplyr::case_when(codon_start %% 3 == 2 ~ 1, # In a 1-based world, pos %% 3 + 1
 											 codon_start %% 3 == 0 ~ 2, # don't gave us 1 2 3 but 3 1 2,
 											 codon_start %% 3 == 1 ~ 3, # this mutate rearrange that (without + 1)
 											 TRUE ~ as.double(NA))) %>% # If not a SNP
 									  							
-				mutate(codon_start = case_when(codon_pos == 1 ~ codon_start,
+				dplyr::mutate(codon_start = dplyr::case_when(codon_pos == 1 ~ codon_start,
 											   codon_pos == 2 ~ as.integer(codon_start - 1),
 											   codon_pos == 3 ~ as.integer(codon_start - 2),
 											   TRUE ~ NA_integer_)) %>% # If not a SNP
-				mutate(codon_ref = if_else(condition = (type_mut == "SNP"),
-										   true = as.character(subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
+				dplyr::mutate(codon_ref = dplyr::if_else(condition = (type_mut == "SNP"),
+										   true = as.character(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
 										   						   start = start_mut,
 										   						   width = 3)),
 										   false = NA_character_)) %>%
-				mutate(codon_mut = if_else(condition = (type_mut == "SNP"),
-										   true = str_replace(string = codon_ref,
+				dplyr::mutate(codon_mut = dplyr::if_else(condition = (type_mut == "SNP"),
+										   true = stringr::str_replace(string = codon_ref,
 											   pattern =  paste0("(.{", codon_pos - 1, "}).{1}(.{", 3 - codon_pos, "})"),
 											   replacement =  paste0("\\1", new_seq, "\\2")),
 										   false = NA_character_))
 		
-		#my_gd_df <-
+		my_gd_df <-
 			my_gd_df %>%
-				mutate(aa_ref = ifelse(test = (type_mut == "SNP"), # if_else don't work : it looks like it evaluated the DNAStringSet with NA
+				dplyr::mutate(aa_ref = dplyr::ifelse(test = (type_mut == "SNP"), # if_else don't work : it looks like it evaluated the DNAStringSet with NA
 										yes = as.character(
 											Biostrings::translate(x = Biostrings::DNAStringSet(codon_ref))),
 										no = NA_character_)) %>%
-				mutate(aa_mut = ifelse(test = (type_mut == "SNP"),
+				dplyr::mutate(aa_mut = dplyr::ifelse(test = (type_mut == "SNP"),
 										yes = as.character(
 											Biostrings::translate(x = Biostrings::DNAStringSet(codon_mut))),
 										no = NA_character_)) %>%
-				mutate(is_syn = if_else(condition = (type_mut == "SNP"),
+				dplyr::mutate(is_syn = dplyr::if_else(condition = (type_mut == "SNP"),
 										true = (aa_ref == aa_mut),
 					   					false = NA)) %>%
-				select(origin, gene, product, is_syn, aa_ref, aa_mut, codon_ref, codon_mut, codon_pos, ref_seq, new_seq, size, type_mut, everything())	%>%
-				identity()
+				dplyr::select(origin, gene, product, type_mut, is_syn, aa_ref, aa_mut, codon_ref, codon_mut, codon_pos, ref_seq, new_seq, size, everything()) %>%
 			
 			return(my_gd_df)
-		
-		# Todo get the type of mutation (syn or not?)
-		
 	}
-
-gd_list <- list.files(path = "~/Desktop", pattern = ".*.gd", full.names = TRUE)
-subtracted <- gd_subtract(gd_merged = gd_merge(gd_list), ref_name = "output_d.gd", filtered_out = TRUE)
-gff_file <- '~/Desktop/reference.gff3'
-
-tada <- gd_anotate(gff_file = gff_file, subtracted = subtracted)
-tada %>% View()
