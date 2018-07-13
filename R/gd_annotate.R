@@ -87,7 +87,7 @@ gd_anotate <-
 											Biostrings::translate(x = Biostrings::DNAStringSet(codon_ref))),
 										no = NA_character_)) %>%
 				dplyr::mutate(aa_mut = dplyr::ifelse(test = (type_mut == "SNP"),
-										yes = as.character(
+													 yes = as.character(
 											Biostrings::translate(x = Biostrings::DNAStringSet(codon_mut))),
 										no = NA_character_)) %>%
 				dplyr::mutate(is_syn = dplyr::if_else(condition = (type_mut == "SNP"),

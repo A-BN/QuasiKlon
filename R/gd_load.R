@@ -21,7 +21,8 @@ gd_load <-
 		unwanted_types <-
 			c("MOB","RA", "MC", "JC", "UN")
 
-		gd_in <- readr::read_delim(gd_file, # Raw data frame with few columns called wrongly                         delim = "\t",
+		gd_in <- readr::read_delim(gd_file, # Raw data frame with few columns called wrongly    
+						 delim = "\t",
                          comment ='#',
                          col_names = gd_colnames,
                          col_types = gd_coltypes)
