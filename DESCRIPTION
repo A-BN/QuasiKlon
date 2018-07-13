@@ -13,6 +13,8 @@ Depends: R (>= 3.4.3),
   rtracklayer,
   seqinr,
   Biostrings,
+  GenomicRanges,
+  IRanges,
   XVector
 License: GPL3
 Encoding: UTF-8

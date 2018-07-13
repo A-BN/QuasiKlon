@@ -1,4 +1,4 @@
-#' gff_parser() returns annotation from a list of mutation from df
+#' gff_annotate() returns annotation from a list of mutation from df
 #'
 #' @param gff_file path to gff3 reference file from breseq/data
 #' @param subtracted come from gd_substract()
@@ -26,7 +26,7 @@ gd_anotate <-
 		
 		
 		# Left join metadata from gff on subtracted data frame
-		my_gd <- makeGRangesFromDataFrame(df = subtracted, keep.extra.columns = TRUE, 
+		my_gd <- GenomicRanges::makeGRangesFromDataFrame(df = subtracted, keep.extra.columns = TRUE, 
 			start.field = "position", end.field = "position", seqnames.field = "seq_id")
 		
 		nearest_feat <- IRanges::nearest(x = my_gd, subject = my_ref, ignore.strand = TRUE)
