@@ -1,8 +1,8 @@
 #' @author A-BN / A-AB
 #' @date 2018/07/11
-#' @description gff_parser() return annotation from a list of mutation from df
-#' @param ???
-#' @return a data frame
+#' @description gff_parser() returns annotation from a list of mutation from df
+#' @param gff_file is gff3 reference from breseq/data and subtracted comes from the gd_substract() function
+#' @return a data frame containing for each mutation a row with anotation
 #' @export
 
 library(readr)
@@ -12,6 +12,8 @@ library(tidyr)
 library(rtracklayer)
 library(fastaUtils)
 library(seqinr)
+library(Biostrings)
+library(XVector) # subseq needs it
 
 
 gd_anotate <-
@@ -64,26 +66,38 @@ gd_anotate <-
 				select(ref_seq, new_seq, size, type_mut, everything(), -unique_id, -seqnames_ref, -width_mut, -evidence_id, -parent_ids, -score, -phase, -source, -locus_tag, -note)
 		
 		# Get codon pos
-	#	my_gd_df <-
+		my_gd_df <-
 			my_gd_df %>%
 				filter(type_mut == "SNP") %>%
 				mutate(codon_start = start_mut - start_ref) %>% 
-				mutate(codon_pos = codon_start %% 3) %>% # to explain
+				mutate(codon_pos = case_when(codon_start %% 3 == 2 ~ 1,
+											 codon_start %% 3 == 0 ~ 2,
+											 codon_start %% 3 == 1 ~ 3
+									)) %>% # to explain
 				mutate(codon_start = case_when(codon_pos == 1 ~ codon_start,
 											   codon_pos == 2 ~ as.integer(codon_start - 1),
 											   codon_pos == 3 ~ as.integer(codon_start - 2))) %>%
 				mutate(codon_ref = as.character(subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
-													 start = codon_start,
+													 start = start_mut,
 													 width = 3))) %>%
 				mutate(codon_mut = str_replace(string = codon_ref,
 											   pattern =  paste0("(.{", codon_pos - 1, "}).{1}(.{", 3 - codon_pos, "})"),
-											   replacement =  paste0("\\1", new_seq, "\\2"))) %>%
+											   replacement =  paste0("\\1", new_seq, "\\2")))
+			#	mutate(aa_ref = as.character(Biostrings::translate(x = DNAStringSet(my_gd_df$codon_ref)))) %>%
+			#	mutate(aa_mut = as.character(translate(x = DNAStringSet(my_gd_df$codon_mut)))) %>%
+			#	mutate(is_syn = (codon_ref == codon_mut)) %>%
+		
+		my_gd_df <-
+			my_gd_df %>%
+				mutate(aa_ref = as.character(Biostrings::translate(x = Biostrings::DNAStringSet(codon_ref)))) %>%
+				mutate(aa_mut = as.character(Biostrings::translate(x = Biostrings::DNAStringSet(codon_mut)))) %>%
+				mutate(is_syn = (aa_ref == aa_mut)) %>%
 				select(ref_seq, new_seq, size, type_mut, codon_pos, codon_ref, codon_mut, everything())	%>%
-				View
+				identity()
+		
+			my_gd_df %>% select(ref_seq, new_seq, codon_pos, codon_ref, codon_mut, aa_ref, aa_mut, is_syn) %>% View	
 			
-			as.character(translate(x = DNAStringSet(my_gd_df$codon_ref)))
-			
-			return(.)
+			return(my_gd_df)
 		
 		# Todo get the type of mutation (syn or not?)
 		
@@ -92,8 +106,7 @@ gd_anotate <-
 	}
 
 gd_list <- list.files(path = "~/Desktop", pattern = ".*.gd", full.names = TRUE)
-bla <- gd_merge(gd_list)
-subtracted <- gd_subtract(gd_merged = bla, ref_name = "output_d.gd", filtered_out = TRUE)
+subtracted <- gd_subtract(gd_merged = gd_merge(gd_list), ref_name = "output_d.gd", filtered_out = TRUE)
 gff_file <- '~/Desktop/reference.gff3'
 
 gd_anotate(gff_file = gff_file, subtracted = subtracted)
