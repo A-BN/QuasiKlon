@@ -19,9 +19,3 @@ gd_merge <-
     gd_merge_df <- do.call(what = rbind, args = gd_merge_df)
     return(gd_merge_df)
   }
-
-
-gd_list <- 
-  # c('example_gd/output.gd', 'example_gd/output_b.gd', 'example_gd/output_c.gd')
-  list.files(path = "./example_gd/", pattern = ".*.gd", full.names = TRUE)
-bla <- gd_merge(gd_list)

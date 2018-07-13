@@ -7,6 +7,7 @@
 
 library(dplyr)
 library(tidyr)
+
 gd_subtract <-
 	function(gd_merged, ref_name, filtered_out = TRUE) {
 	  ref_name <- stringr::str_remove(string = ref_name, pattern = "\\.gd")
@@ -33,8 +34,3 @@ gd_subtract <-
    return(gd_out)   
 	}
 
-
-gd_list <- list.files(path = "~/Desktop/variants/patient_13/", pattern = ".*.gd", full.names = TRUE, recursive = TRUE)
-bla <- gd_merge(gd_list)
-ref_name <- "ref.gd"
-gd_subtract(gd_merged = bla, ref_name = "ref.gd", filtered_out = TRUE)

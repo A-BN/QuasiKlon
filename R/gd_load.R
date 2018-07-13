@@ -61,8 +61,3 @@ gd_load <-
    if(nrow(gd_df) == 0) gd_df[1, ] <- NA
     return(gd_df)
   }
-
-gd_file <- "example_gd/fewmut.gd"
-gd_list <- list.files(path = "./example_gd/", pattern = ".*.gd", full.names = TRUE)
-gd_load(gd_file = gd_file)
-lapply(X = gd_list, gd_load)
