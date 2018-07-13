@@ -68,40 +68,48 @@ gd_anotate <-
 		# Get codon pos
 		my_gd_df <-
 			my_gd_df %>%
-				filter(type_mut == "SNP") %>%
-				mutate(codon_start = start_mut - start_ref) %>% 
-				mutate(codon_pos = case_when(codon_start %% 3 == 2 ~ 1,
-											 codon_start %% 3 == 0 ~ 2,
-											 codon_start %% 3 == 1 ~ 3
-									)) %>% # to explain
+				mutate(codon_start = if_else(condition = (type_mut == "SNP"),
+											true = start_mut - start_ref,
+											false = NA_integer_)) %>% 
+				mutate(codon_pos = case_when(codon_start %% 3 == 2 ~ 1, # In a 1-based world, pos %% 3 + 1
+											 codon_start %% 3 == 0 ~ 2, # don't gave us 1 2 3 but 3 1 2,
+											 codon_start %% 3 == 1 ~ 3, # this mutate rearrange that (without + 1)
+											 TRUE ~ as.double(NA))) %>% # If not a SNP
+									  							
 				mutate(codon_start = case_when(codon_pos == 1 ~ codon_start,
 											   codon_pos == 2 ~ as.integer(codon_start - 1),
-											   codon_pos == 3 ~ as.integer(codon_start - 2))) %>%
-				mutate(codon_ref = as.character(subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
-													 start = start_mut,
-													 width = 3))) %>%
-				mutate(codon_mut = str_replace(string = codon_ref,
+											   codon_pos == 3 ~ as.integer(codon_start - 2),
+											   TRUE ~ NA_integer_)) %>% # If not a SNP
+				mutate(codon_ref = if_else(condition = (type_mut == "SNP"),
+										   true = as.character(subseq(my_fasta[(names(my_fasta) == seqnames_mut)], 
+										   						   start = start_mut,
+										   						   width = 3)),
+										   false = NA_character_)) %>%
+				mutate(codon_mut = if_else(condition = (type_mut == "SNP"),
+										   true = str_replace(string = codon_ref,
 											   pattern =  paste0("(.{", codon_pos - 1, "}).{1}(.{", 3 - codon_pos, "})"),
-											   replacement =  paste0("\\1", new_seq, "\\2")))
-			#	mutate(aa_ref = as.character(Biostrings::translate(x = DNAStringSet(my_gd_df$codon_ref)))) %>%
-			#	mutate(aa_mut = as.character(translate(x = DNAStringSet(my_gd_df$codon_mut)))) %>%
-			#	mutate(is_syn = (codon_ref == codon_mut)) %>%
+											   replacement =  paste0("\\1", new_seq, "\\2")),
+										   false = NA_character_))
 		
-		my_gd_df <-
+		#my_gd_df <-
 			my_gd_df %>%
-				mutate(aa_ref = as.character(Biostrings::translate(x = Biostrings::DNAStringSet(codon_ref)))) %>%
-				mutate(aa_mut = as.character(Biostrings::translate(x = Biostrings::DNAStringSet(codon_mut)))) %>%
-				mutate(is_syn = (aa_ref == aa_mut)) %>%
-				select(ref_seq, new_seq, size, type_mut, codon_pos, codon_ref, codon_mut, everything())	%>%
+				mutate(aa_ref = ifelse(test = (type_mut == "SNP"), # if_else don't work : it looks like it evaluated the DNAStringSet with NA
+										yes = as.character(
+											Biostrings::translate(x = Biostrings::DNAStringSet(codon_ref))),
+										no = NA_character_)) %>%
+				mutate(aa_mut = ifelse(test = (type_mut == "SNP"),
+										yes = as.character(
+											Biostrings::translate(x = Biostrings::DNAStringSet(codon_mut))),
+										no = NA_character_)) %>%
+				mutate(is_syn = if_else(condition = (type_mut == "SNP"),
+										true = (aa_ref == aa_mut),
+					   					false = NA)) %>%
+				select(origin, gene, product, is_syn, aa_ref, aa_mut, codon_ref, codon_mut, codon_pos, ref_seq, new_seq, size, type_mut, everything())	%>%
 				identity()
-		
-			my_gd_df %>% select(ref_seq, new_seq, codon_pos, codon_ref, codon_mut, aa_ref, aa_mut, is_syn) %>% View	
 			
 			return(my_gd_df)
 		
 		# Todo get the type of mutation (syn or not?)
-		
-		
 		
 	}
 
@@ -109,4 +117,5 @@ gd_list <- list.files(path = "~/Desktop", pattern = ".*.gd", full.names = TRUE)
 subtracted <- gd_subtract(gd_merged = gd_merge(gd_list), ref_name = "output_d.gd", filtered_out = TRUE)
 gff_file <- '~/Desktop/reference.gff3'
 
-gd_anotate(gff_file = gff_file, subtracted = subtracted)
+tada <- gd_anotate(gff_file = gff_file, subtracted = subtracted)
+tada %>% View()
