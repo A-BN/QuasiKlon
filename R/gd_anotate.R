@@ -5,8 +5,7 @@
 #'
 #' @return a data frame containing for each mutation a row with anotation
 #' @export
-#'
-#' @examples
+
 gd_anotate <-
 	function(gff_file, subtracted) {
 		# Cut gff3 file from breseq in two: the second one is the fasta

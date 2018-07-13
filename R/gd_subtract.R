@@ -6,6 +6,7 @@
 #'
 #' @return a dataframe
 #' @export
+
 gd_subtract <-
 	function(gd_merged, ref_name, filtered_out = TRUE) {
 		 ref_name <- stringr::str_remove(string = ref_name, pattern = "\\.gd")

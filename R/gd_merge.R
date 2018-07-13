@@ -4,6 +4,7 @@
 #'
 #' @return a data frame containing each mutation from each gd files indexed by a new origin col
 #' @export
+
 gd_merge <-
 	function(gd_list) {
 		gd_merge_df <- list()
