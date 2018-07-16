@@ -9,7 +9,7 @@ gd_anotate(gff_file, subtracted)
 \arguments{
 \item{gff_file}{path to gff3 reference file from breseq/data}
 
-\item{subtracted}{come from gd_substract()}
+\item{subtracted}{comes from gd_substract()}
 }
 \value{
 a data frame containing for each mutation a row with anotation
