@@ -1,11 +1,11 @@
 Package: QuasiKlon
-Title: Transform gd file from Breseq in usable data 
+Title: What the Package Does (one line, title case)
 Version: 0.0.0.9000
 Authors@R: c(
 	person("Antoine", "Bridier-Nahmias", email = "antoine.bridier-nahmias@inserm.fr", role = c("aut", "cre")), 
 	person("Adrien", "Albaladejo", email = "adrien.albaladejo@gmail.com", role = "aut"))
 Description: Analyse gd file from breseq, get difference between gd and reference, annotate from gff3 and plot into a phylogenic tree
-Depends: R (>= 3.4.3), 
+Depends: R (>= 3.4.4), 
   dplyr,
   readr,
   stringr,
@@ -16,7 +16,7 @@ Depends: R (>= 3.4.3),
   GenomicRanges,
   IRanges,
   XVector
-License: GPL3
+License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1.9000
