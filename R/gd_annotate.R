@@ -93,7 +93,7 @@ gd_annotate <-
 														 codon_pos == 3 ~ dplyr::if_else(condition = strand_ref == "+",
 														 						 true = as.integer(start_mut - 2),
 														 						 false = start_mut),
-														 TRUE ~ NA_integer_)) %>% # If not a SNP
+														 TRUE ~ NA_integer_)) # If not a SNP
 
 		my_gd_df <-
 			my_gd_df %>%
@@ -127,7 +127,7 @@ gd_annotate <-
 			dplyr::mutate(is_syn = dplyr::if_else(condition = (type_mut == "SNP"),
 												  true = (aa_ref == aa_mut),
 												  false = NA)) %>%
-			dplyr::select(origin, type_mut, is_syn, aa_ref, aa_mut, codon_ref, codon_mut, codon_pos, ref_seq, new_seq, ID, everything())
+			dplyr::select(origin, type_mut, is_syn, aa_ref, aa_mut, codon_ref, codon_mut, codon_pos, new_seq, ID, everything())
 
 		# Add in the dataframe the value filled with NA except for the origin
 		# With this backuped data, the dataframe contains every sample (even those without any mutation)
