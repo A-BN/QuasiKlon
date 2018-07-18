@@ -93,40 +93,25 @@ gd_annotate <-
 														 codon_pos == 3 ~ dplyr::if_else(condition = strand_ref == "+",
 														 						 true = as.integer(start_mut - 2),
 														 						 false = start_mut),
-														 TRUE ~ NA_integer_)) # If not a SNP
+														 TRUE ~ NA_integer_)) %>% # If not a SNP
 
-			tmp <-
-				my_gd_df %>%
-				dplyr::mutate(codon_ref = dplyr::if_else(condition = type_mut == "SNP",
-														 true = as.character(XVector::subseq(my_fasta[seqnames_mut == names(my_fasta)],
-																	   start = codon_start,
-																	   end = NA,
-																	   width = 3)),
-														 false = as.character(NA))) %>%
-				View()
-
-			# Test
-			for(my_name in names(my_fasta))
-			{
-				if(my_name %in% my_gd_df$seqnames_mut) print(paste("Yeah for", my_name))
-			}
-
-			# working: XVector::subseq(my_fasta[(names(my_fasta) %in% "NODE_21_length_37901_cov_10.907529")], start = 23, width = 3)
-
-			dplyr::mutate(codon_ref = dplyr::if_else(condition = (type_mut == "SNP"), # mutate_impl(.data, dots) : Evaluation error: subscript is a logical vector with out-of-bounds TRUE values
-													 true = (dplyr::if_else(condition = (strand_ref == "+"),
-													 			   true = as.character(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
+		my_gd_df <-
+			my_gd_df %>%
+			rowwise() %>%
+			dplyr::mutate(codon_ref = ifelse(test = (type_mut == "SNP"), # mutate_impl(.data, dots) : Evaluation error: subscript is a logical vector with out-of-bounds TRUE values
+													 yes = (ifelse(test = (strand_ref == "+"),
+													 			   yes = as.character(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
 													 									start = codon_start,
 													 									width = 3)),
-													 			   false = Biostrings::reverseComplement(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
+													 			   no = Biostrings::reverseComplement(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
 													 			   									 start = codon_start,
 													 			   									 width = 3)))),
-													 false = NA_character_)) #%>%
-			dplyr::mutate(codon_mut = dplyr::if_else(condition = (type_mut == "SNP"),
-													 true = stringr::str_replace(string = codon_ref,
+													 no = NA_character_)) %>%
+			dplyr::mutate(codon_mut = ifelse(test = (type_mut == "SNP"),
+													 yes = stringr::str_replace(string = codon_ref,
 													 							pattern =  paste0("(.{", codon_pos - 1, "}).{1}(.{", 3 - codon_pos, "})"),
 													 							replacement =  paste0("\\1", new_seq, "\\2")),
-													 false = NA_character_))
+													 no = NA_character_))
 
 
 		my_gd_df <-
