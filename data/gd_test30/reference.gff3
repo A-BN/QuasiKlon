@@ -1,0 +1,8 @@
+##gff-version 3
+##sequence-region	NODE_theone	1	30
+##original-file-name	NODE_1_length_851671_cov_12.025352	../data/prokka/51830/51830d_S4_L001_R1_001/51830d_S4_L001_R1_001.gff
+NODE_theone	GERARD:2000	CDS	2	10	.	+	0	ID=DD1;Name=FeatPlus
+NODE_theone	GERARD:2000	CDS	18	29	.	-	0	ID=DD2;Name=FeatLess
+##FASTA
+>NODE_theone
+TTATGCACTAGCGTCAGATAGGCTAGTATG
