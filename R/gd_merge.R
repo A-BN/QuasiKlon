@@ -9,7 +9,7 @@ gd_merge <-
 	function(gd_list) {
 		gd_merge_df <- list()
 		for (i in 1:length(gd_list)) {
-			curr_name <- 
+			curr_name <-
 			stringr::str_replace(string = gd_list[[i]], pattern = ".*/(.*)\\.gd", replacement = "\\1")
 			gd_merge_df[[i]] <- gd_load(gd_list[[i]])
 			gd_merge_df[[i]]$origin <- curr_name

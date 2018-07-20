@@ -33,10 +33,12 @@ gd_subtract <-
 
 	gd_out <-
 		gd_merged %>%
-			dplyr::filter(! in_ref) %>%
-			dplyr::mutate(origin = dplyr::if_else(condition = mutated_ref, true = ref_name, false = origin)) %>%
-			dplyr::distinct() %>% # An 'inverted' mutation is present n times w/ n being the number of gd it was present in.
-			dplyr::select(-in_ref, -mutated_ref)
+			dplyr::filter(origin == ref_name | ! in_ref)
+			# Invert mutated ref by reverting the origin of one of the appearing mutation
+			# We comment it because we are not sur of pertinence of removing the two possibility
+			# dplyr::mutate(origin = dplyr::if_else(condition = mutated_ref, true = ref_name, false = origin))
+			# dplyr::distinct() %>% # An 'inverted' mutation is present n times w/ n being the number of gd it was present in.
+			# dplyr::select(-in_ref, -mutated_ref)
 
 	# absent_ori_df <- as_tibble(t(c(rep(NA,5),unique(gd_merged$origin)[!(unique(gd_merged$origin) %in% gd_out$origin)], NA)))
 	# names(absent_ori_df) <- names(gd_out)

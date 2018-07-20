@@ -22,11 +22,11 @@ gd_annotate <-
 
 		# They will be reinjected in the final df
 		na_backup <- subtracted$origin[is.na(subtracted$type)]
-
 		subtracted <-
 			subtracted %>%
 			ungroup() %>%
 			dplyr::filter(!is.na(unique_id))
+
 
 
 		# Left join metadata from gff on subtracted data frame
@@ -75,10 +75,10 @@ gd_annotate <-
 			# In gff3, negative strands have there start_ref and end_ref inversed (start_ref < end_ref)
 			# We're looking for an elegant and math-based solution, please help us save this part of the code
 			dplyr::mutate(codon_pos = dplyr::if_else(condition = (type_mut == "SNP"),
-													   true = dplyr::case_when(strand_ref == "+" ~ start_mut - start_ref,
-													   				 	strand_ref == "-" ~ end_ref - start_mut,
-													   				 	TRUE ~ NA_integer_),
-													   false = NA_integer_)) %>%
+													 true = dplyr::case_when(strand_ref == "+" ~ start_mut - start_ref,
+													   				 		 strand_ref == "-" ~ end_ref - start_mut,
+													   				 		 TRUE ~ NA_integer_),
+													 false = NA_integer_)) %>%
 			dplyr::mutate(codon_pos = dplyr::case_when(codon_pos %% 3 == 2 ~ 3,
 													   codon_pos %% 3 == 0 ~ 1,
 													   codon_pos %% 3 == 1 ~ 2,
@@ -87,31 +87,37 @@ gd_annotate <-
 			# If you have mutation on pos 2, you need to take 3 nucleotides beginning one position before the mutation
 			# If your on the negative strand, you have to think opposite: pos 1 need to get the two preceding nucleotides
 			dplyr::mutate(codon_start = dplyr::case_when(codon_pos == 1 ~ dplyr::if_else(condition = (strand_ref == "+"),
-																				  true = start_mut,
-																				  false = as.integer(start_mut - 2)),
+																				  		 true = start_mut,
+																				  		 false = as.integer(start_mut - 2)),
 														 codon_pos == 2 ~ as.integer(start_mut - 1),
 														 codon_pos == 3 ~ dplyr::if_else(condition = strand_ref == "+",
-														 						 true = as.integer(start_mut - 2),
-														 						 false = start_mut),
+														 								 true = as.integer(start_mut - 2),
+														 								 false = start_mut),
 														 TRUE ~ NA_integer_)) # If not a SNP
 
 		my_gd_df <-
 			my_gd_df %>%
 			rowwise() %>%
 			dplyr::mutate(codon_ref = ifelse(test = (type_mut == "SNP"), # mutate_impl(.data, dots) : Evaluation error: subscript is a logical vector with out-of-bounds TRUE values
-													 yes = (ifelse(test = (strand_ref == "+"),
-													 			   yes = as.character(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
-													 									start = codon_start,
-													 									width = 3)),
-													 			   no = Biostrings::reverseComplement(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
-													 			   									 start = codon_start,
-													 			   									 width = 3)))),
-													 no = NA_character_)) %>%
+											 yes = (ifelse(test = (strand_ref == "+"),
+													 	   yes = as.character(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
+													 						  start = codon_start,
+													 						  width = 3)),
+													 	   no = Biostrings::reverseComplement(XVector::subseq(my_fasta[(names(my_fasta) == seqnames_mut)],
+													 			   							  start = codon_start,
+													 			   							  width = 3)))),
+											 no = NA_character_)) %>%
 			dplyr::mutate(codon_mut = ifelse(test = (type_mut == "SNP"),
-													 yes = stringr::str_replace(string = codon_ref,
-													 							pattern =  paste0("(.{", codon_pos - 1, "}).{1}(.{", 3 - codon_pos, "})"),
-													 							replacement =  paste0("\\1", new_seq, "\\2")),
-													 no = NA_character_))
+											 yes = stringr::str_replace(string = codon_ref,
+													 					pattern =  paste0("(.{", codon_pos - 1, "}).{1}(.{", 3 - codon_pos, "})"),
+													 					replacement =  paste0("\\1",
+													 										  dplyr::if_else(condition = strand_ref == "+",
+													 										  			     true = new_seq,
+													 										  			     false =  as.character(
+													 										  			     	Biostrings::complement(
+													 										  			     		Biostrings::DNAStringSet(new_seq)))),
+													 										  "\\2")),
+											 no = NA_character_))
 
 
 		my_gd_df <-
@@ -137,5 +143,5 @@ gd_annotate <-
 			my_gd_df$origin[nrow(my_gd_df)] <- to_insert
 		}
 
-		return(my_gd_df)
+		return(as.data.frame(my_gd_df))
 	}
