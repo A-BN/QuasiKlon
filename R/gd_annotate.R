@@ -114,7 +114,7 @@ gd_annotate <-
 													 										  dplyr::if_else(condition = strand_ref == "+",
 													 										  			     true = new_seq,
 													 										  			     false =  as.character(
-													 										  			     	Biostrings::complement(
+													 										  			     	Biostrings::complement( # we keep the nucleotide -
 													 										  			     		Biostrings::DNAStringSet(new_seq)))),
 													 										  "\\2")),
 											 no = NA_character_))
@@ -134,6 +134,26 @@ gd_annotate <-
 												  true = (aa_ref == aa_mut),
 												  false = NA)) %>%
 			dplyr::select(origin, type_mut, is_syn, aa_ref, aa_mut, codon_ref, codon_mut, codon_pos, new_seq, ID, everything())
+
+
+		# Hotfix/Shall not be done here but easier to implement
+		# Simplify sample name
+		my_gd_df <-
+			my_gd_df %>%
+			mutate(origin = stringr::str_extract(origin, "^[^_]+"))
+		# One row for one mutation with a column giving each sample where you can found mutation
+		my_gd_df <-
+			my_gd_df %>%
+				# Next line make an unique id of mutation (unique_id is not unique)
+				# summarize(count_mut = n()) %>%
+				#unite(., oriigin, origin) %>%
+				rowwise() %>%
+				# NOT WORKING
+				mutate(samples =
+					   	paste(unique(my_gd_df$origin[my_gd_df$codon_ref==codon_ref&
+					   							my_gd_df$codon_mut==codon_mut&
+					   							my_gd_df$unique_id==unique_id]), collapse=" | ")) %>%
+				distinct(codon_ref, codon_mut, unique_id, .keep_all = TRUE) # Keep the first of each group_by
 
 		# Add in the dataframe the value filled with NA except for the origin
 		# With this backuped data, the dataframe contains every sample (even those without any mutation)

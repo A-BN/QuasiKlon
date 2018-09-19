@@ -12,7 +12,7 @@ gd_subtract <-
 		 ref_name <- stringr::str_remove(string = ref_name, pattern = "\\.gd")
 
 		 # If mutation is in more than half gd but not present in ref, we consider the mutation to be in the ref
-		 #
+		 # TODO the subtract is made before annotation, some mutation at same position are not the same, shall be done later
 		 invert_thre <- length(unique(gd_merged$origin)) / 2
 		 gd_merged <-
 			 gd_merged %>%
@@ -29,11 +29,9 @@ gd_subtract <-
 
 	if(! filtered_out) return(gd_merged)
 
-
-
 	gd_out <-
 		gd_merged %>%
-			dplyr::filter(origin == ref_name | ! in_ref)
+			dplyr::filter(origin != ref_name & ! in_ref)
 			# Invert mutated ref by reverting the origin of one of the appearing mutation
 			# We comment it because we are not sur of pertinence of removing the two possibility
 			# dplyr::mutate(origin = dplyr::if_else(condition = mutated_ref, true = ref_name, false = origin))

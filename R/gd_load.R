@@ -7,7 +7,7 @@
 
 gd_load <-
 	function(gd_file) {
-		gd_colnames <- 
+		gd_colnames <-
 			c('type', 'evidence_id', 'parent_ids', 'seq_id', 'position', 'NewOrSize', 'SizeOrNew')
 		gd_coltypes <-
 			cols(type = col_character(),
@@ -16,27 +16,27 @@ gd_load <-
 					seq_id = col_character(),
 					position = col_integer(),
 					NewOrSize = col_character(),
-					SizeOrNew = col_character() 
+					SizeOrNew = col_character()
 				)
 		unwanted_types <-
 			c("MOB","RA", "MC", "JC", "UN")
 
-		gd_in <- readr::read_delim(gd_file, # Raw data frame with few columns called wrongly    
+		gd_in <- readr::read_delim(gd_file, # Raw data frame with few columns called wrongly
 						 delim = "\t",
                          comment ='#',
                          col_names = gd_colnames,
                          col_types = gd_coltypes)
-    
+
 		if(nrow(gd_in) == 0){
-			gd_in <- data.frame(type = NA_character_, 
-                          evidence_id = NA_character_, 
-                          parent_ids = NA_character_, 
-                          seq_id = NA_character_, 
-                          position = NA_integer_, 
-                          NewOrSize = NA_character_, 
-                          SizeOrNew = NA_character_, 
+			gd_in <- data.frame(type = NA_character_,
+                          evidence_id = NA_character_,
+                          parent_ids = NA_character_,
+                          seq_id = NA_character_,
+                          position = NA_integer_,
+                          NewOrSize = NA_character_,
+                          SizeOrNew = NA_character_,
                           stringsAsFactors = FALSE)
-    }
+    	}
 	gd_df <- # Arranged data frame
 		gd_in %>%
 	        dplyr::filter(! type %in% unwanted_types) %>%
@@ -56,6 +56,6 @@ gd_load <-
 	          TRUE ~ NA_character_))) %>%
 	        dplyr::select(-NewOrSize, -SizeOrNew)
 	  if(nrow(gd_df) == 0) gd_df[1, ] <- NA
-	
+
 	return(gd_df)
   }
